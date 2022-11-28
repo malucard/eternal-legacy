@@ -1,0 +1,3299 @@
+[00000070] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 6
+[0000007b] fe: varop VAR_(28_0a)_a0_fe (14) := (00) VAR_(28_0a)_83_14
+[00000087]  0: 
+[00000088] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000094] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[000000a0] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 6
+[000000ab]  0: 
+[000000ac]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 000000c0 (0002)
+[000000ba] 10: 
+[000000bb] 1c: cmd1C
+[000000bc]  0: 
+[000000bd]  7: goto7 000000cb (0003)
+[000000c0] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[000000cb]  0: 
+[000000cc]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 000000dc (0005)
+[000000da] 10: 
+[000000db] 18: cmd18
+[000000dc] 10: 
+[000000dd] 1b: dayIntro 00000000 BGCAL6.cps
+[000000e4] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 185
+[000000f0] 10: 
+[000000f1]  6: playBGM 14
+[000000f5] 10: 
+[000000f6] 18: cmd18
+[000000f7] 10: 
+[000000f8] 1a: cmd1A 1
+[000000fc] 10: 
+[000000fd]  1: cmd1 25
+[00000102] 10: 
+[00000103] 19: 
+[00000104] ff: text 00
+{textColor 0 2}The date has already changed to the 6th.  {textColor 0 2}Though Izumi-san had been talking about something this whole time, I mainly ignored her while occasionally grunting in agreement.   {textColor 0 2}――Delusion.{delay 30}――Fantasy.{delay 30}――Illusion.  {textColor 0 2}Those words run around my head. 
+{textColor 0 2}――The bell.  {textColor 0 2}I had strongly desired to destroy that bell.   {textColor 0 2}――The cards.  {textColor 0 2}I firmly desired not to play cards.   {textColor 0 2}Is that why the bell and cards disappeared?  {textColor 0 2}Are my thoughts warping reality? 
+{textColor 0 2}――The shrine.  {textColor 0 2}On the afternoon of the 2nd, at the cherry blossom trees, Izumi-san lied.  {textColor 0 2}"There is no shrine."  {textColor 0 2}If that's the case, then did the shrine disappear because Izumi-san strongly wished for it?   {textColor 0 2}... No... That might not be it. 
+{textColor 0 2}"It would be good if there was no shrine."{delay 30} ――I might have been the one to strongly wish for that.   {textColor 0 2}"There is no shrine."{delay 30} ――That lie might have been a thought that I wanted to believe in. 
+{textColor 0 2}――By wishing from the bottom of my heart, lies can become the truth...  {textColor 0 2}――And my mental state at those times...  {textColor 0 2}In other words, the bell, cards, and shrine were annihilated, just as I had wished. 
+{textColor 0 2}The firm thoughts in my mind produced a new reality...   {textColor 0 2}Everything in this scene right before my eyes now was created by my delusion...  {textColor 0 2}――Is this{delay 30}――an "illusion"? 
+
+
+[00000107] 10: 
+[00000108]  2: cmd2 5
+[0000010c] 10: 
+[0000010d] 18: cmd18
+[0000010e] 10: 
+[0000010f] 1a: cmd1A 0
+[00000113] 10: 
+[00000114]  7: stopBGM
+[00000115] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 186
+[00000121] 10: 
+[00000122] 10: bgload 00000000 BG07NR 0 1
+[0000012f] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 0
+[0000013a] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 5
+[00000145] 10: 
+[00000146] 17: showClock
+[00000147] 10: 
+[00000148]  6: playBGM 9
+[0000014c] 10: 
+[0000014d] 11: fgload 0 00000000 IZ06BB 1 3
+[0000015d] 10: 
+[0000015e]  b: playVoice I26D000
+[00000167] 10: 
+[00000168] 19: 
+[00000169] ff: text 01
+{textColor 1 8}【Izumi】 "Makoto-kun? Makoto-kun?" 
+{textColor 0 0}【Makoto】 "... Huh? Wh-What?" 
+
+
+[0000016c] 10: 
+[0000016d]  b: playVoice I26D001
+[00000176] 10: 
+[00000177] 19: 
+[00000178] ff: text 02
+{textColor 1 8}【Izumi】 "Are you really okay?" 
+{textColor 0 0}【Makoto】 "Yeah... umm, what were we talking about?" 
+
+
+[0000017b] 10: 
+[0000017c] 11: fgload 0 00000000 IZ01BB 1 3
+[0000018c] 10: 
+[0000018d]  b: playVoice I26D002
+[00000196] 10: 
+[00000197] 19: 
+[00000198] ff: text 03
+{textColor 1 8}【Izumi】 "――Star sand!" 
+
+
+[0000019b] 10: 
+[0000019c]  b: playVoice I26D003
+[000001a5] 10: 
+[000001a6] 19: 
+[000001a7] ff: text 04
+{textColor 1 8}【Izumi】 "We were talking about the 'star sand' Haruka gave me this afternoon!" 
+{textColor 0 0}【Makoto】 "Ah, I see... Haruka's star sand..." 
+{textColor 0 2}(... Haruka{delay 15}'s...?) 
+{textColor 0 0}【Makoto】 "Ha ha ha..." 
+{textColor 0 2}For now, I fake a laugh...  {textColor 0 2}... or at least, I'd planned to. 
+
+
+[000001aa] 10: 
+[000001ab] 11: fgload 0 00000000 IZ02BB 1 3
+[000001bb] 10: 
+[000001bc]  b: playVoice I26D004
+[000001c5] 10: 
+[000001c6] 19: 
+[000001c7] ff: text 05
+{textColor 1 8}【Izumi】 "Shall I pull on your face?" 
+{textColor 0 2}Izumi-san pinches my cheek with the fingers on her right hand as she says this. 
+
+
+[000001ca] 10: 
+[000001cb]  7: stopBGM
+[000001cc] 10: 
+[000001cd] 19: 
+[000001ce] ff: text 06
+{textColor 0 2}Her fingers are thin and flexible...  {textColor 0 2}There is a gentle warmth coming from them...  {textColor 0 2}Warmth... 
+
+
+[000001d1] 10: 
+[000001d2]  f: removeBG 1 0 1
+[000001dc] 10: 
+[000001dd]  b: playVoice REV007
+[000001e5] 10: 
+[000001e6] 19: 
+[000001e7] ff: text 07
+{textColor 1 8}【Izumi】 "Don't forget this warmth, all right?" 
+
+
+[000001ea] 10: 
+[000001eb]  b: playVoice REV008
+[000001f3] 10: 
+[000001f4] 19: 
+[000001f5] ff: text 08
+{textColor 1 8}【Izumi】 "Don't forget... my existence, okay?" 
+
+
+[000001f8] 10: 
+[000001f9] 10: bgload 00000000 BG07NR 0 1
+[00000206] 10: 
+[00000207]  6: playBGM 20
+[0000020c] 10: 
+[0000020d] 19: 
+[0000020e] ff: text 09
+{textColor 0 2}(That's right...) 
+{textColor 0 2}(Why the hell have I been thinking about all of this stupid crap...?) 
+{textColor 0 2}("I believe in Izumi-san's warmth"...) 
+{textColor 0 2}("I'll always be by Izumi-san's side"...) 
+{textColor 0 2}(――I swore those things, didn't I?!) 
+{textColor 0 2}Izumi-san is right here! 
+{textColor 0 2}She's looking at me with that kind and gentle gaze! 
+{textColor 0 2}The warmth of her fingertips reaches my heart. 
+{textColor 0 2}All this delusion crap is pointless... 
+{textColor 0 2}No, those things no longer matter to me... 
+{textColor 0 2}There's no need to think about them! 
+{textColor 0 2}I just need to settle things with Izumi-san! 
+{textColor 0 0}【Makoto】 "――Izumi-san!" 
+
+
+[00000211] 10: 
+[00000212] 11: fgload 0 00000000 IZ11BB 1 3
+[00000222] 10: 
+[00000223]  b: playVoice I26D005
+[0000022c] 10: 
+[0000022d] 19: 
+[0000022e] ff: text 0a
+{textColor 1 8}【Izumi】 "... Huh!?" 
+{textColor 0 2}I firmly take the hand she was pinching my cheek with. 
+{textColor 0 0}【Makoto】 "Let's go!" 
+
+
+[00000231] 10: 
+[00000232]  b: playVoice I26D006
+[0000023b] 10: 
+[0000023c] 19: 
+[0000023d] ff: text 0b
+{textColor 1 8}【Izumi】 "G-Go... where?" 
+{textColor 0 2}I say nothing, and stand up. 
+
+
+[00000240] 10: 
+[00000241]  8: playSFX SE004 1
+[0000024b] 10: 
+[0000024c] 10: bgload 00000000 BG06NR 4 1
+[00000259] 10: 
+[0000025a] 19: 
+[0000025b] ff: text 0c
+{textColor 0 2}I tug Izumi-san's hand, and forcefully begin walking. 
+
+
+[0000025e] 10: 
+[0000025f]  9: stopSFX
+[00000260] 10: 
+[00000261] 11: fgload 0 00000000 IZ11BBN 1 3
+[00000271] 10: 
+[00000272]  b: playVoice I26D007
+[0000027b] 10: 
+[0000027c] 19: 
+[0000027d] ff: text 0d
+{textColor 1 8}【Izumi】 "M-Makoto-kun..." 
+
+
+[00000280] 10: 
+[00000281]  f: removeBG 0 4 2
+[0000028b] 10: 
+[0000028c] 10: bgload 00000000 BG13NR 4 1
+[00000299] 10: 
+[0000029a] 11: fgload 0 00000000 IZ06BBN 1 3
+[000002aa] 10: 
+[000002ab]  b: playVoice I26D008
+[000002b4] 10: 
+[000002b5] 19: 
+[000002b6] ff: text 0e
+{textColor 1 8}【Izumi】 "Hey, just where... do you plan on going?" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000002b9] 10: 
+[000002ba] 12: removeFG 0 3
+[000002c1] 10: 
+[000002c2] 19: 
+[000002c3] ff: text 0f
+{textColor 0 2}I silently continue walking. 
+{textColor 0 2}There is no moon or stars in the night sky tonight, and the darkness is as thick as snow. 
+{textColor 0 2}I steadily advance as if I'm cutting down the darkness. 
+{textColor 0 2}A slightly tingling sensation comes from my palm... 
+{textColor 0 2}It's Izumi-san's gentle warmth, which passes into through me... 
+
+
+[000002c6] 10: 
+[000002c7]  f: removeBG 0 4 2
+[000002d1] 10: 
+[000002d2] 10: bgload 00000000 BG17NR 4 1
+[000002df] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 0
+[000002ea] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 27
+[000002f6] 10: 
+[000002f7] 17: showClock
+[000002f8] 10: 
+[000002f9] 11: fgload 0 00000000 IZ11BBN 1 3
+[00000309] 10: 
+[0000030a]  b: playVoice I26D009
+[00000313] 10: 
+[00000314] 19: 
+[00000315] ff: text 10
+{textColor 1 8}【Izumi】 "Princess Beach..." 
+{textColor 0 2}Izumi-san lets go of my hand, and turns towards me. 
+
+
+[00000318] 10: 
+[00000319] 11: fgload 0 00000000 IZ06BBN 1 3
+[00000329] 10: 
+[0000032a]  b: playVoice I26D010
+[00000333] 10: 
+[00000334] 19: 
+[00000335] ff: text 11
+{textColor 1 8}【Izumi】 "Makoto-kun... why... did we come here?" 
+
+
+[00000338] 10: 
+[00000339]  8: playSFX SE024 1
+[00000343] 10: 
+[00000344] 19: 
+[00000345] ff: text 12
+{textColor 0 2}We can hear the sound of the waves breaking against the rock walls. 
+{textColor 0 2}The white sand at the shore has hardened from the waves. 
+{textColor 0 2}I kick away the sand at my feet with my toes several times. 
+{textColor 0 2}Izumi-san is patiently waiting for my reply. 
+
+
+[00000348] 10: 
+[00000349]  9: stopSFX
+[0000034a] 10: 
+[0000034b] 19: 
+[0000034c] ff: text 13
+{textColor 0 0}【Makoto】 "Izumi-san..." 
+{textColor 0 0}【Makoto】 "There's something I have to tell you." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "Right now..." 
+{textColor 0 0}【Makoto】 "I have my response to the words you said that day,{delay 15} under{delay 15} the starry sky." 
+{textColor 0 0}【Makoto】 "Right here... right now..." 
+{textColor 0 2}Izumi-san furrows her eyebrows tightly. 
+{textColor 0 2}She bites down on her lip. 
+{textColor 0 2}Her gaze loses its calm, and sways back and forth. 
+{textColor 0 0}【Makoto】 "I..." 
+{textColor 0 0}【Makoto】 "I also..." 
+{textColor 0 0}【Makoto】 "Izumi-san... all this time, I've-" 
+
+
+[0000034f] 10: 
+[00000350] 12: removeFG 0 3
+[00000357] 10: 
+[00000358]  7: stopBGM
+[00000359] 10: 
+[0000035a] 19: 
+[0000035b] ff: text 14
+{textColor 0 2}Just then, all of the sudden....  {textColor 0 2}Izumi-san quickly stretches out her index finger and places it over my lips. 
+
+
+[0000035e] 10: 
+[0000035f] 11: fgload 0 00000000 IZ05BBN 1 3
+[0000036f] 10: 
+[00000370]  b: playVoice I26D011
+[00000379] 10: 
+[0000037a] 19: 
+[0000037b] ff: text 15
+{textColor 1 8}【Izumi】 "No... 
+
+
+[0000037e] 10: 
+[0000037f]  b: playVoice I26D012
+[00000388] 10: 
+[00000389] 19: 
+[0000038a] ff: text 16
+{textColor 1 8}【Izumi】 "Don't say... any more..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000038d] 10: 
+[0000038e]  b: playVoice I26D013
+[00000397] 10: 
+[00000398] 19: 
+[00000399] ff: text 17
+{textColor 1 8}【Izumi】 "I don't want to hear it..." 
+
+
+[0000039c] 10: 
+[0000039d] 11: fgload 0 00000000 IZ06BBN 1 3
+[000003ad] 10: 
+[000003ae]  b: playVoice I26D014
+[000003b7] 10: 
+[000003b8] 19: 
+[000003b9] ff: text 18
+{textColor 1 8}【Izumi】 "Because it'll make me sad..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000003bc] 10: 
+[000003bd]  b: playVoice I26D015
+[000003c6] 10: 
+[000003c7] 19: 
+[000003c8] ff: text 19
+{textColor 1 8}【Izumi】 "Please..." 
+
+
+[000003cb] 10: 
+[000003cc]  b: playVoice I26D016
+[000003d5] 10: 
+[000003d6] 19: 
+[000003d7] ff: text 1a
+{textColor 1 8}【Izumi】 "Don't condemn me..." 
+
+
+[000003da] 10: 
+[000003db]  b: playVoice I26D017
+[000003e4] 10: 
+[000003e5] 19: 
+[000003e6] ff: text 1b
+{textColor 1 8}【Izumi】 "... any further..." 
+
+
+[000003e9] 10: 
+[000003ea] 11: fgload 0 00000000 IZ08BBN 1 3
+[000003fa] 10: 
+[000003fb] 19: 
+[000003fc] ff: text 1c
+{textColor 0 2}As she says this, Izumi-san pulls back her finger. 
+
+
+[000003ff] 10: 
+[00000400] 12: removeFG 0 3
+[00000407] 10: 
+[00000408]  8: playSFX SE024 1
+[00000412] 10: 
+[00000413] 19: 
+[00000414] ff: text 1d
+{textColor 0 2}She slowly turns around, and walks on the beach. 
+{textColor 0 2}She takes off her shoes while walking, and goes barefoot. 
+{textColor 0 2}She gently places her feet in the waves that are washing ashore. 
+{textColor 0 2}I can see her back as she quietly stands on the beach... 
+{textColor 0 2}Her thin shoulders are moving slightly... 
+{textColor 0 2}Izumi-san bends over, and brings her hands to her feet, still in the waves. 
+{textColor 0 2}Water begins to spill out from her palms... 
+
+
+[00000417] 10: 
+[00000418]  9: stopSFX
+[00000419] 10: 
+[0000041a]  b: playVoice I26D018
+[00000423] 10: 
+[00000424] 19: 
+[00000425] ff: text 1e
+{textColor 1 8}【Izumi】 "... Ah..." 
+{textColor 0 2}I hear her faint voice in between the sound of the waves. 
+
+
+[00000428] 10: 
+[00000429]  b: playVoice I26D019
+[00000432] 10: 
+[00000433] 19: 
+[00000434] ff: text 1f
+{textColor 1 8}【Izumi】 "Makoto-kun... look." 
+{textColor 0 2}She extends her palm towards me. 
+{textColor 0 2}I walk over to her as if she's guiding me. 
+
+
+[00000437] 10: 
+[00000438]  b: playVoice I26D020
+[00000441] 10: 
+[00000442] 19: 
+[00000443] ff: text 20
+{textColor 1 8}【Izumi】 "I found one..." 
+
+
+[00000446] 10: 
+[00000447]  b: playVoice I26D021
+[00000450] 10: 
+[00000451] 19: 
+[00000452] ff: text 21
+{textColor 1 8}【Izumi】 "... A star sand..." 
+{textColor 0 2}Looking closely, I see a pure white grain of sand on her wet palm. 
+{textColor 0 2}It's in the shape of shining star... It's like Leo... 
+{textColor 0 2}Izumi-san closes the hand with the "star sand" in it, and uses her other hand to search through her pocket. 
+{textColor 0 2}The thing she takes out is as big as her thumb... 
+
+
+[00000455] 10: 
+[00000456] 10: bgload 00000000 EV_AL06B 0 1
+[00000463] 10: 
+[00000464] 19: 
+[00000465] ff: text 22
+{textColor 0 2}――A small glass bottle.  {textColor 0 2}Inside, there are two small stars shining. 
+{textColor 0 0}【Makoto】 "... Two of them?" 
+
+
+[00000468] 10: 
+[00000469] 10: bgload 00000000 BG17NR 0 1
+[00000476] 10: 
+[00000477] 11: fgload 0 00000000 IZ01BBN 1 3
+[00000487] 10: 
+[00000488]  b: playVoice I26D022
+[00000491] 10: 
+[00000492] 19: 
+[00000493] ff: text 23
+{textColor 1 8}【Izumi】 "Makoto-kun... so you really weren't listening." 
+{textColor 0 0}【Makoto】 "...?" 
+
+
+[00000496] 10: 
+[00000497]  b: playVoice I26D023
+[000004a0] 10: 
+[000004a1] 19: 
+[000004a2] ff: text 24
+{textColor 1 8}【Izumi】 "This afternoon, Haruka gave one to me..." 
+
+
+[000004a5] 10: 
+[000004a6]  b: playVoice I26D024
+[000004af] 10: 
+[000004b0] 19: 
+[000004b1] ff: text 25
+{textColor 1 8}【Izumi】 "It washed up at the pier in the harbor..." 
+
+
+[000004b4] 10: 
+[000004b5]  b: playVoice I26D025
+[000004be] 10: 
+[000004bf] 19: 
+[000004c0] ff: text 26
+{textColor 1 8}【Izumi】 "It's just a small grain..." 
+{textColor 0 2}Izumi-san takes the cork off the small bottle, and puts the "star sand" she just picked up into it. 
+{textColor 0 2}The grain of sand sinks to the bottom of the bottle together with the other small grains in Izumi-san's hand. 
+
+
+[000004c3] 10: 
+[000004c4] 10: bgload 00000000 EV_AL06C 0 1
+[000004d1] 10: 
+[000004d2]  6: playBGM 12
+[000004d6] 10: 
+[000004d7] 19: 
+[000004d8] ff: text 27
+{textColor 0 2}――The three grains of stars... 
+{textColor 0 2}The star sand that Kurumi picked up...  {textColor 0 2}The star sand that Haruka picked up...  {textColor 0 2}The star sand that Izumi-san picked up... 
+{textColor 0 2}The three stars, huddled close to each other, shine brightly in the blue, transparent water. 
+
+
+[000004db] 10: 
+[000004dc] 10: bgload 00000000 BG17NR 0 1
+[000004e9] 10: 
+[000004ea] 19: 
+[000004eb] ff: text 28
+{textColor 0 2}Something cold hits my forehead. 
+{textColor 0 2}When I look up, I see rain falling from the sky. 
+
+
+[000004ee] 10: 
+[000004ef]  1: cmd1 26
+[000004f4] 10: 
+[000004f5] 11: fgload 0 00000000 IZ01BBN 1 3
+[00000505] 10: 
+[00000506]  b: playVoice I26D026
+[0000050f] 10: 
+[00000510] 19: 
+[00000511] ff: text 29
+{textColor 1 8}【Izumi】 "Rain..." 
+{textColor 0 2}Izumi-san mutters this, and looks up at the sky. 
+{textColor 0 2}The raindrops are small, like powdered snow. 
+
+
+[00000514] 10: 
+[00000515] 11: fgload 0 00000000 IZ02BBN 1 3
+[00000525] 10: 
+[00000526]  b: playVoice I26D027
+[0000052f] 10: 
+[00000530] 19: 
+[00000531] ff: text 2a
+{textColor 1 8}【Izumi】 "Rain, huh..." 
+{textColor 0 2}She softly closes her eyes, and bathes her whole body in the raindrops. 
+{textColor 0 2}The pouring rain makes her body look like it's almost glowing. 
+{textColor 0 2}I've reached my limit. 
+{textColor 0 2}Seeing her beautiful figure clad in water has made my heart restless. 
+{textColor 0 0}【Makoto】 "Izumi-san... I-" 
+{textColor 0 2}My words spontaneously flow out. 
+
+
+[00000534] 10: 
+[00000535] 11: fgload 0 00000000 IZ11BBN 1 3
+[00000545] 10: 
+[00000546] 19: 
+[00000547] ff: text 2b
+{textColor 0 2}Izumi-san reaches out her finger again, and tries to cover my mouth. 
+{textColor 0 0}【Makoto】 "Izumi-san!" 
+
+
+[0000054a] 10: 
+[0000054b] 12: removeFG 0 3
+[00000552] 10: 
+[00000553] 19: 
+[00000554] ff: text 2c
+{textColor 0 2}I grab Izumi-san's wrist, and embrace her. 
+{textColor 0 0}【Makoto】 "――I love you!" 
+{textColor 0 0}【Makoto】 "――I've loved you all this time!" 
+
+
+[00000557] 10: 
+[00000558]  b: playVoice I26D028
+[00000561] 10: 
+[00000562] 19: 
+[00000563] ff: text 2d
+{textColor 1 8}【Izumi】 "... Why...?" 
+
+
+[00000566] 10: 
+[00000567]  b: playVoice I26D029
+[00000570] 10: 
+[00000571] 19: 
+[00000572] ff: text 2e
+{textColor 1 8}【Izumi】 "... Why are you saying that...?" 
+{textColor 0 2}Her lips are pressed against my chest... 
+{textColor 0 2}Her voice echoes within my body. 
+
+
+[00000575] 10: 
+[00000576]  b: playVoice I26D030
+[0000057f] 10: 
+[00000580] 19: 
+[00000581] ff: text 2f
+{textColor 1 8}【Izumi】 "... Even though I didn't want to hear it..." 
+
+
+[00000584] 10: 
+[00000585]  b: playVoice I26D031
+[0000058e] 10: 
+[0000058f] 19: 
+[00000590] ff: text 30
+{textColor 1 8}【Izumi】 "... Even though... I'd already given up..." 
+
+
+[00000593] 10: 
+[00000594]  b: playVoice I26D032
+[0000059d] 10: 
+[0000059e] 19: 
+[0000059f] ff: text 31
+{textColor 1 8}【Izumi】 "Even though..." 
+
+
+[000005a2] 10: 
+[000005a3]  b: playVoice I26D033
+[000005ac] 10: 
+[000005ad] 19: 
+[000005ae] ff: text 32
+{textColor 1 8}【Izumi】 "... I don't have the qualifications to answer your feelings!" 
+{textColor 0 2}Her voice is trembling... 
+{textColor 0 2}Her breathing is ragged and hot... 
+{textColor 0 2}Her thin shoulders are shaking unsteadily... 
+{textColor 0 2}Izumi-san is crying in my chest... 
+
+
+[000005b1] 10: 
+[000005b2]  b: playVoice I26D034
+[000005bb] 10: 
+[000005bc] 19: 
+[000005bd] ff: text 33
+{textColor 1 8}【Izumi】 "... Makoto-kun ... I was the one who got you caught up in all of this... It's all my fault." 
+
+
+[000005c0] 10: 
+[000005c1]  b: playVoice I26D035
+[000005ca] 10: 
+[000005cb] 19: 
+[000005cc] ff: text 34
+{textColor 1 8}【Izumi】 "... Ever since this worthless experiment began... I've been... deceiving you..." 
+
+
+[000005cf] 10: 
+[000005d0]  b: playVoice I26D036
+[000005d9] 10: 
+[000005da] 19: 
+[000005db] ff: text 35
+{textColor 1 8}【Izumi】 "... And in the end... at that cliff... you..." 
+{textColor 0 0}【Makoto】 "You're wrong!" 
+{textColor 0 0}【Makoto】 "You're wrong, Izumi-san!" 
+{textColor 0 0}【Makoto】 "That was my fault!" 
+{textColor 0 0}【Makoto】 "It was because I couldn't save you!" 
+
+
+[000005de] 10: 
+[000005df]  b: playVoice I26D037
+[000005e8] 10: 
+[000005e9] 19: 
+[000005ea] ff: text 36
+{textColor 1 8}【Izumi】 "――Stop!" 
+{textColor 0 0}【Makoto】 "I don't want to see you sad anymore!" 
+{textColor 0 0}【Makoto】 "No matter what happens, I will protect you until the end!" 
+{textColor 0 0}【Makoto】 "――Because I love you!" 
+{textColor 0 0}【Makoto】 "――Because I love you more than anyone else!" 
+
+
+[000005ed] 10: 
+[000005ee]  b: playVoice I26D038
+[000005f7] 10: 
+[000005f8] 19: 
+[000005f9] ff: text 37
+{textColor 1 8}【Izumi】 "Stop it already!" 
+
+
+[000005fc] 10: 
+[000005fd]  b: playVoice I26D039
+[00000606] 10: 
+[00000607] 19: 
+[00000608] ff: text 38
+{textColor 1 8}【Izumi】 "Stop talking..." 
+
+
+[0000060b] 10: 
+[0000060c]  b: playVoice I26D040
+[00000615] 10: 
+[00000616] 19: 
+[00000617] ff: text 39
+{textColor 1 8}【Izumi】 "Please... stop..." 
+
+
+[0000061a] 10: 
+[0000061b]  b: playVoice I26D041
+[00000624] 10: 
+[00000625] 19: 
+[00000626] ff: text 3a
+{textColor 1 8}【Izumi】 "Don't say... another word... 
+{textColor 0 2}Izumi-san struggles as she tries to break free from me. 
+{textColor 0 2}I tightly hold on to her, accepting all of Izumi-san. 
+
+
+[00000629] 10: 
+[0000062a]  b: playVoice I26D042
+[00000633] 10: 
+[00000634] 19: 
+[00000635] ff: text 3b
+{textColor 1 8}【Izumi】 "... Let me go..." 
+
+
+[00000638] 10: 
+[00000639]  b: playVoice I26D043
+[00000642] 10: 
+[00000643] 19: 
+[00000644] ff: text 3c
+{textColor 1 8}【Izumi】 "... Let me go... Let me go..." 
+{textColor 0 0}【Makoto】 "How many times do I have to tell you...?" 
+{textColor 0 0}【Makoto】 "I'll say it over and over again... until you understand..." 
+{textColor 0 0}【Makoto】 "Izumi-san... I lo-" 
+
+
+[00000647] 10: 
+[00000648]  b: playVoice I26D044
+[00000651] 10: 
+[00000652] 19: 
+[00000653] ff: text 3d
+{textColor 1 8}【Izumi】 "... Just... stop it..." 
+
+
+[00000656] 10: 
+[00000657]  2: cmd2 6
+[0000065b] 10: 
+[0000065c] 10: bgload 00000000 EV_IZ07B 0 1
+[00000669] 10: 
+[0000066a] 19: 
+[0000066b] ff: text 3e
+{textColor 0 2}My mouth... is blocked up...  {textColor 0 2}... by Izumi-san's wet lips... 
+{textColor 0 2}The tip of her nose brushes against my cheek.  {textColor 0 2}She brushes the nape of my neck with her soft palm. 
+{textColor 0 2}Cold raindrops flow into and dissolve in my mouth.  {textColor 0 2}Our two bodies, drenched with water, become one. 
+{textColor 0 2}Izumi-san's heartbeat overlaps with the loud echo of my own. 
+{textColor 0 2}My body is boiling with heat...  {textColor 0 2}Her warmth is scorching my chest. 
+{textColor 0 2}――Warmth...  {textColor 0 2}――The proof that we're right here, right now. 
+{textColor 0 2}I hold her tightly in my arms, something I've waited too long to do. 
+{textColor 0 2}Izumi-san's breaths are short and hot as she presses her lips against mine. 
+{textColor 0 2}It's as if we're confirming each other's existences... 
+{textColor 0 2}To prove that we won't disappear... 
+{textColor 0 2}"Express your feelings on the Cape of Affection,{delay 15} and carry out those feelings at the Cove of Love." 
+{textColor 0 2}Right now...{delay 30} we're...  {textColor 0 2}――carrying out our feelings. 
+
+
+[0000066e] 10: 
+[0000066f]  f: removeBG 0 0 0
+[00000679] 10: 
+[0000067a]  7: stopBGM
+[0000067b] 10: 
+[0000067c] 19: 
+[0000067d] ff: text 3f
+{textColor 0 2}... ... ... 
+
+
+[00000680] 10: 
+[00000681]  f: removeBG 1 0 1
+[0000068b] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000697] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[000006a3] 10: 
+[000006a4]  6: playBGM 16
+[000006a9] 10: 
+[000006aa] 19: 
+[000006ab] ff: text 40
+{textColor 0 2}We part our lips, but continue to embrace each other. 
+{textColor 0 2}Our bodies become drenched as the rain intensifies. 
+{textColor 0 2}Izumi-san buries her face in my chest as she closes her sleepy eyes. 
+{textColor 0 2}Her gently repeated breaths are calm, as if she were sleeping. 
+
+
+[000006ae] 10: 
+[000006af]  b: playVoice I26D045
+[000006b8] 10: 
+[000006b9] 19: 
+[000006ba] ff: text 41
+{textColor 1 8}【Izumi】 "Makoto-kun..." 
+{textColor 0 2}Izumi-san quietly opens her eyes. 
+
+
+[000006bd] 10: 
+[000006be]  b: playVoice I26D046
+[000006c7] 10: 
+[000006c8] 19: 
+[000006c9] ff: text 42
+{textColor 1 8}【Izumi】 "I'll... give this to you..." 
+{textColor 0 2}She opens her palm in the space between us while bending her stiff arms. 
+
+
+[000006cc] 10: 
+[000006cd] 10: bgload 00000000 EV_AL06C 0 1
+[000006da] 10: 
+[000006db] 19: 
+[000006dc] ff: text 43
+{textColor 0 2}――It's the small glass bottle.  {textColor 0 2}The one with the three stars inside. 
+
+
+[000006df] 10: 
+[000006e0]  f: removeBG 1 0 1
+[000006ea] 10: 
+[000006eb] 19: 
+[000006ec] ff: text 44
+{textColor 0 0}【Makoto】 "Why... are you giving me something that's so precious to you...?" 
+
+
+[000006ef] 10: 
+[000006f0]  b: playVoice I26D047
+[000006f9] 10: 
+[000006fa] 19: 
+[000006fb] ff: text 45
+{textColor 1 8}【Izumi】 "I'm giving it to you because it's precious..." 
+
+
+[000006fe] 10: 
+[000006ff]  b: playVoice I26D048
+[00000708] 10: 
+[00000709] 19: 
+[0000070a] ff: text 46
+{textColor 1 8}【Izumi】 "I want you to take this..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000070d] 10: 
+[0000070e]  b: playVoice I26D049
+[00000717] 10: 
+[00000718] 19: 
+[00000719] ff: text 47
+{textColor 1 8}【Izumi】 "When I'm in your arms like this, I get the same feeling as I do in at those times..." 
+
+
+[0000071c] 10: 
+[0000071d]  b: playVoice I26D050
+[00000726] 10: 
+[00000727] 19: 
+[00000728] ff: text 48
+{textColor 1 8}【Izumi】 "When I'm floating on the water calmly and leisurely..." 
+
+
+[0000072b] 10: 
+[0000072c]  b: playVoice I26D051
+[00000735] 10: 
+[00000736] 19: 
+[00000737] ff: text 49
+{textColor 1 8}【Izumi】 "It's like I'm being wrapped up in your kindness..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000073a] 10: 
+[0000073b]  b: playVoice I26D052
+[00000744] 10: 
+[00000745] 19: 
+[00000746] ff: text 4a
+{textColor 1 8}【Izumi】 "... So... take it." 
+
+
+[00000749] 10: 
+[0000074a]  b: playVoice I26D053
+[00000753] 10: 
+[00000754] 19: 
+[00000755] ff: text 4b
+{textColor 1 8}【Izumi】 "My precious... memory..." 
+{textColor 0 2}I move one of my arms that's wrapped around Izumi-san's back away from her. 
+{textColor 0 2}Izumi-san places the small bottle in my palm. 
+{textColor 0 2}The three stars in my hand...{delay 15} emit a white radiance... 
+
+
+[00000758] 10: 
+[00000759]  f: removeBG 0 0 2
+[00000763] 10: 
+[00000764]  7: stopBGM
+[00000765] 10: 
+[00000766] 19: 
+[00000767] ff: text 4c
+{textColor 0 2}... ... ... 
+
+
+[0000076a] 10: 
+[0000076b] 10: bgload 00000000 BG13ZNR 0 1
+[00000778] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 0
+[00000783] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 51
+[0000078f] 10: 
+[00000790] 17: showClock
+[00000791] 10: 
+[00000792]  1: cmd1 26
+[00000797] 10: 
+[00000798] 11: fgload 0 00000000 IZ01BBN 1 3
+[000007a8] 10: 
+[000007a9]  6: playBGM 5
+[000007ad] 10: 
+[000007ae] 19: 
+[000007af] ff: text 4d
+{textColor 0 2}We leave Princess Beach, and walk for a short bit on the coastline road. 
+{textColor 0 2}I stop at the base of the hill road that leads to the lodge. 
+{textColor 0 0}【Makoto】 "I'm soaked, and I didn't bring a change of clothes, so..." 
+{textColor 0 0}【Makoto】 "Why don't you go on ahead back to Lunabeach?" 
+
+
+[000007b2] 10: 
+[000007b3] 11: fgload 0 00000000 IZ06BBN 1 3
+[000007c3] 10: 
+[000007c4] 19: 
+[000007c5] ff: text 4e
+{textColor 0 2}The instant I say this, an uneasy expression forms on Izumi-san's face. 
+{textColor 0 0}【Makoto】 "It's all right! I'll be back soon!" 
+
+
+[000007c8] 10: 
+[000007c9]  b: playVoice I26D054
+[000007d2] 10: 
+[000007d3] 19: 
+[000007d4] ff: text 4f
+{textColor 1 8}【Izumi】 "Huuh〜? ... I don't want to..." 
+{textColor 0 0}【Makoto】 "Why not?" 
+
+
+[000007d7] 10: 
+[000007d8] 11: fgload 0 00000000 IZ03BBN 1 3
+[000007e8] 10: 
+[000007e9]  b: playVoice I26D055
+[000007f2] 10: 
+[000007f3] 19: 
+[000007f4] ff: text 50
+{textColor 1 8}【Izumi】 "Because... I want to be by your side♪" 
+
+
+[000007f7] 10: 
+[000007f8]  b: playVoice I26D056
+[00000801] 10: 
+[00000802] 19: 
+[00000803] ff: text 51
+{textColor 1 8}【Izumi】 "I'll go to the lodge with you♪" 
+
+
+[00000806] 10: 
+[00000807] 12: removeFG 0 3
+[0000080e] 10: 
+[0000080f] 19: 
+[00000810] ff: text 52
+{textColor 0 2}Izumi-san says this, and lunges for my arm. 
+{textColor 0 2}Our soaked arms are now intertwined. 
+{textColor 0 2}It's a little embarrassing. 
+{textColor 0 0}【Makoto】 "Man... Well, if you say so..." 
+
+
+[00000813] 10: 
+[00000814] 11: fgload 0 00000000 IZ07BBN 1 3
+[00000824] 10: 
+[00000825]  b: playVoice I26D057
+[0000082e] 10: 
+[0000082f] 19: 
+[00000830] ff: text 53
+{textColor 1 8}【Izumi】 "Hee hee♪" 
+{textColor 0 2}Izumi-san gives an innocent smile. 
+
+
+[00000833] 10: 
+[00000834]  7: stopBGM
+[00000835] 10: 
+[00000836] 19: 
+[00000837] ff: text 54
+{textColor 0 2}――Then, a second later! 
+
+
+[0000083a] 10: 
+[0000083b] 11: fgload 0 00000000 IZ11BBN 1 3
+[0000084b] 10: 
+[0000084c] 12: removeFG 0 3
+[00000853] 10: 
+[00000854] 19: 
+[00000855] ff: text 55
+{textColor 0 2}Izumi-san's knees suddenly lose strength. 
+{textColor 0 2}I reflexively support her staggering body by embracing it with one arm. 
+{textColor 0 0}【Makoto】 "A-Are you all right, Izumi-san?" 
+
+
+[00000858] 10: 
+[00000859] 11: fgload 0 00000000 IZ08BBN 1 3
+[00000869] 10: 
+[0000086a]  b: playVoice I26D058
+[00000873] 10: 
+[00000874] 19: 
+[00000875] ff: text 56
+{textColor 1 8}【Izumi】 Y-Yes..." 
+{textColor 0 2}I feel heat emanating from her thin body. 
+{textColor 0 0}【Makoto】 "You caught a cold, didn't you?" 
+
+
+[00000878] 10: 
+[00000879] 11: fgload 0 00000000 IZ11BBN 1 3
+[00000889] 10: 
+[0000088a]  b: playVoice I26D059
+[00000893] 10: 
+[00000894] 19: 
+[00000895] ff: text 57
+{textColor 1 8}【Izumi】 "Th-That's... A-A-A-ACHOO!" 
+
+
+[00000898] 10: 
+[00000899] 11: fgload 0 00000000 IZ03BBN 1 3
+[000008a9] 10: 
+[000008aa]  b: playVoice I26D060
+[000008b3] 10: 
+[000008b4] 19: 
+[000008b5] ff: text 58
+{textColor 1 8}【Izumi】 "That's not true." 
+{textColor 0 0}【Makoto】 "You just sneezed right now!" 
+
+
+[000008b8] 10: 
+[000008b9] 11: fgload 0 00000000 IZ07BBN 1 3
+[000008c9] 10: 
+[000008ca]  b: playVoice I26D061
+[000008d3] 10: 
+[000008d4] 19: 
+[000008d5] ff: text 59
+{textColor 1 8}【Izumi】 "Hee hee hee, I'm serious! ... I'm seriously all right!" 
+
+
+[000008d8] 10: 
+[000008d9]  b: playVoice I26D062
+[000008e2] 10: 
+[000008e3] 19: 
+[000008e4] ff: text 5a
+{textColor 1 8}【Izumi】 "It's not a big deal at all!" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000008e7] 10: 
+[000008e8] 11: fgload 0 00000000 IZ02BBN 1 3
+[000008f8] 10: 
+[000008f9]  b: playVoice I26D063
+[00000902] 10: 
+[00000903] 19: 
+[00000904] ff: text 5b
+{textColor 1 8}【Izumi】 "Hey? Let's hurry up... and go, okay?" 
+
+
+[00000907] 10: 
+[00000908] 12: removeFG 0 3
+[0000090f] 10: 
+[00000910] 19: 
+[00000911] ff: text 5c
+{textColor 0 2}Izumi-san pulls my arm, and begins walking up the hill road... 
+
+
+[00000914] 10: 
+[00000915]  2: cmd2 6
+[00000919] 10: 
+[0000091a]  f: removeBG 0 4 2
+[00000924] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 187
+[00000930] 10: 
+[00000931] 10: bgload 00000000 BG02NR 4 1
+[0000093e] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[00000949] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 10
+[00000954] 10: 
+[00000955] 17: showClock
+[00000956] 10: 
+[00000957]  6: playBGM 8
+[0000095b] 10: 
+[0000095c] 19: 
+[0000095d] ff: text 5d
+{textColor 0 2}I quietly open the door, and enter the living room. 
+{textColor 0 2}The lights are on. 
+{textColor 0 2}But I don't see anyone, or hear anyone talking. 
+{textColor 0 0}【Makoto】 "Then I'll go get a change of clothes." 
+{textColor 0 0}【Makoto】 "Oh, right... and maybe a shower while I'm at it..." 
+
+
+[00000960] 10: 
+[00000961] 11: fgload 0 00000000 IZ01BB 1 3
+[00000971] 10: 
+[00000972]  b: playVoice I26D064
+[0000097b] 10: 
+[0000097c] 19: 
+[0000097d] ff: text 5e
+{textColor 1 8}【Izumi】 "You're going to get wet on the way back anyway, so wouldn't it be better if you took a shower at the shop?" 
+{textColor 0 0}【Makoto】 "Yeah, you're right." 
+{textColor 0 0}【Makoto】 "Well then, just wait a minute." 
+
+
+[00000980] 10: 
+[00000981] 12: removeFG 0 3
+[00000988] 10: 
+[00000989] 19: 
+[0000098a] ff: text 5f
+{textColor 0 2}Leaving with those words, I head towards my room. 
+{textColor 0 2}When I look back, I see Izumi-san leaning on the front door, waiting. 
+{textColor 0 2}Her face looks flushed, like all the blood's rushed to her head... 
+{textColor 0 2}(So she is a bit feverish after all...) 
+{textColor 0 2}As I think this, I open the door to my room. 
+
+
+[0000098d] 10: 
+[0000098e]  8: playSFX SE002 1
+[00000998] 10: 
+[00000999]  a: waitForSFX
+[0000099a] 10: 
+[0000099b] 10: bgload 00000000 BG01NR 4 1
+[000009a8] 10: 
+[000009a9] 19: 
+[000009aa] ff: text 60
+{textColor 0 2}(...) 
+{textColor 0 2}(...) 
+{textColor 0 2}(...) 
+
+
+[000009ad] 10: 
+[000009ae]  7: stopBGM
+[000009af] 10: 
+[000009b0] 19: 
+[000009b1] ff: text 61
+{textColor 0 2}(... Huh?) 
+
+
+[000009b4] 10: 
+[000009b5] 10: bgload 00000000 EV_KY05 0 1
+[000009c2] 10: 
+[000009c3] 19: 
+[000009c4] ff: text 62
+{textColor 0 2}For some reason, Kurumi's there. 
+{textColor 0 2}She's in the middle of changing her clothes. 
+{textColor 0 2}Her back is turned to me, but all of her upper clothes are raised over her head. 
+{textColor 0 2}I can see her smooth... white back. 
+{textColor 0 2}――And immediately after that! 
+
+
+[000009c7] 10: 
+[000009c8]  b: playVoice I26D065
+[000009d1] 10: 
+[000009d2] 19: 
+[000009d3] ff: text 63
+{textColor 1 7}【Kurumi】 "NOOOOOOOOOO!!" 
+
+
+[000009d6] 10: 
+[000009d7]  b: playVoice I26D066
+[000009e0] 10: 
+[000009e1] 19: 
+[000009e2] ff: text 64
+{textColor 1 7}【Kurumi】 "Lech! Deviant! Pervert! Molester!" 
+{textColor 0 2}Her screams finally bring me back to reality. 
+{textColor 0 2}I forcefully shut the door as I panic. 
+
+
+[000009e5] 10: 
+[000009e6]  8: playSFX SE000 1
+[000009f0] 10: 
+[000009f1] 10: bgload 00000000 BG02NR 4 1
+[000009fe] 10: 
+[000009ff] 19: 
+[00000a00] ff: text 65
+{textColor 0 2}(Wh-Why was Kurumi in my room, changing her clothes...?) 
+
+
+[00000a03] 10: 
+[00000a04]  9: stopSFX
+[00000a05] 10: 
+[00000a06] 19: 
+[00000a07] ff: text 66
+{textColor 0 2}(... Changing{delay 15}...{delay 30} her clothes...) 
+{textColor 0 2}――What!? 
+{textColor 0 2}... On Kurumi's back...  {textColor 0 2}... there was...  {textColor 0 2}... no scar... 
+
+
+[00000a0a] 10: 
+[00000a0b]  6: playBGM 14
+[00000a0f] 10: 
+[00000a10] 11: fgload 0 00000000 IZ06BA 1 3
+[00000a20] 10: 
+[00000a21]  b: playVoice I26D067
+[00000a2a] 10: 
+[00000a2b] 19: 
+[00000a2c] ff: text 67
+{textColor 1 8}【Izumi】 "What's wrong, Makoto-kun?" 
+{textColor 0 2}Having notice my change in behavior, Izumi-san comes rushing over to me. 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}But I'm unable to say the words. 
+{textColor 0 2}This event has left my mind in a state of mass disarray. 
+{textColor 0 2}(Calm down... calm down...) 
+{textColor 0 2}(I have to think about this calmly...) 
+{textColor 0 2}(Calmly... calmly...) 
+{textColor 0 2}But I don't get time to think. 
+
+
+[00000a2f] 10: 
+[00000a30]  8: playSFX SE000 1
+[00000a3a] 10: 
+[00000a3b] 19: 
+[00000a3c] ff: text 68
+{textColor 0 2}With violent force, Kurumi comes bursting out of the room. 
+
+
+[00000a3f] 10: 
+[00000a40]  9: stopSFX
+[00000a41] 10: 
+[00000a42] 13: moveFG 0 0
+[00000a49] 10: 
+[00000a4a] 11: fgload 1 00000000 KU04AA 2 3
+[00000a5a] 10: 
+[00000a5b]  b: playVoice I26D068
+[00000a64] 10: 
+[00000a65] 19: 
+[00000a66] ff: text 69
+{textColor 1 7}【Kurumi】 "Geez, what were you thinking!?" 
+
+
+[00000a69] 10: 
+[00000a6a]  b: playVoice I26D069
+[00000a73] 10: 
+[00000a74] 19: 
+[00000a75] ff: text 6a
+{textColor 1 7}【Kurumi】 "At least knock first..." 
+
+
+[00000a78] 10: 
+[00000a79] 11: fgload 1 00000000 KU01AA 2 3
+[00000a89] 10: 
+[00000a8a]  b: playVoice I26D070
+[00000a93] 10: 
+[00000a94] 19: 
+[00000a95] ff: text 6b
+{textColor 1 7}【Kurumi】 "... Oh, Onee-chan." 
+
+
+[00000a98] 10: 
+[00000a99]  b: playVoice I26D071
+[00000aa2] 10: 
+[00000aa3] 19: 
+[00000aa4] ff: text 6c
+{textColor 1 7}【Kurumi】 "What's wrong, you two? How'd you get so soaked?" 
+{textColor 0 2}Kurumi looks back and forth between me and Izumi-san's faces. 
+
+
+[00000aa7] 10: 
+[00000aa8]  b: playVoice I26D072
+[00000ab1] 10: 
+[00000ab2] 19: 
+[00000ab3] ff: text 6d
+{textColor 1 8}【Izumi】 "Hey, did something happen?" 
+
+
+[00000ab6] 10: 
+[00000ab7]  b: playVoice I26D073
+[00000ac0] 10: 
+[00000ac1] 19: 
+[00000ac2] ff: text 6e
+{textColor 1 7}【Kurumi】 "'Did something happen'... What do you mean?" 
+
+
+[00000ac5] 10: 
+[00000ac6]  b: playVoice I26D074
+[00000acf] 10: 
+[00000ad0] 19: 
+[00000ad1] ff: text 6f
+{textColor 1 8}【Izumi】 "Just now, you screamed really loudly, didn't you?" 
+
+
+[00000ad4] 10: 
+[00000ad5] 11: fgload 1 00000000 KU10AA 2 3
+[00000ae5] 10: 
+[00000ae6]  b: playVoice I26D075
+[00000aef] 10: 
+[00000af0] 19: 
+[00000af1] ff: text 70
+{textColor 1 7}【Kurumi】 "Ah, that's right!" 
+
+
+[00000af4] 10: 
+[00000af5] 11: fgload 1 00000000 KU05AA 2 3
+[00000b05] 10: 
+[00000b06]  b: playVoice I26D076
+[00000b0f] 10: 
+[00000b10] 19: 
+[00000b11] ff: text 71
+{textColor 1 7}【Kurumi】 "Did you know? Umm, umm... Kurumi knows he peeked!" 
+
+
+[00000b14] 10: 
+[00000b15]  b: playVoice I26D077
+[00000b1e] 10: 
+[00000b1f] 19: 
+[00000b20] ff: text 72
+{textColor 1 7}【Kurumi】 "He suddenly peeked at her while she was changing her clothes!" 
+
+
+[00000b23] 10: 
+[00000b24]  b: playVoice I26D078
+[00000b2d] 10: 
+[00000b2e] 19: 
+[00000b2f] ff: text 73
+{textColor 1 8}【Izumi】 "Who peeked?" 
+
+
+[00000b32] 10: 
+[00000b33]  b: playVoice I26D079
+[00000b3c] 10: 
+[00000b3d] 19: 
+[00000b3e] ff: text 74
+{textColor 1 7}【Kurumi】 "'Who'? That's obvious, isn't it?" 
+{textColor 0 2}Kurumi quickly points at me... 
+
+
+[00000b41] 10: 
+[00000b42] 11: fgload 1 00000000 KU04AA 2 3
+[00000b52] 10: 
+[00000b53]  b: playVoice I26D080
+[00000b5c] 10: 
+[00000b5d] 19: 
+[00000b5e] ff: text 75
+{textColor 1 7}【Kurumi】 "――It was Makoto-kun!" 
+
+
+[00000b61] 10: 
+[00000b62] 11: fgload 0 00000000 IZ11BA 0 3
+[00000b72] 10: 
+[00000b73]  b: playVoice I26D080B
+[00000b7d] 10: 
+[00000b7e] 19: 
+[00000b7f] ff: text 76
+{textColor 1 8}【Izumi】 "!?" 
+{textColor 0 0}【Makoto】 "!?" 
+
+
+[00000b82] 10: 
+[00000b83]  b: playVoice I26D081
+[00000b8c] 10: 
+[00000b8d] 19: 
+[00000b8e] ff: text 77
+{textColor 1 8}【Izumi】 "... Makoto... kun?" 
+
+
+[00000b91] 10: 
+[00000b92]  b: playVoice I26D082
+[00000b9b] 10: 
+[00000b9c] 19: 
+[00000b9d] ff: text 78
+{textColor 1 8}【Izumi】 "Kurumi... why are you calling him 'Makoto-kun'...?" 
+
+
+[00000ba0] 10: 
+[00000ba1] 11: fgload 1 00000000 KU01AA 2 3
+[00000bb1] 10: 
+[00000bb2]  b: playVoice I26D083
+[00000bbb] 10: 
+[00000bbc] 19: 
+[00000bbd] ff: text 79
+{textColor 1 7}【Kurumi】 "Huh? Did Kurumi say something weird?" 
+
+
+[00000bc0] 10: 
+[00000bc1]  b: playVoice I26D084
+[00000bca] 10: 
+[00000bcb] 19: 
+[00000bcc] ff: text 7a
+{textColor 1 7}【Kurumi】 "Makoto-kun's the same age as Kurumi, so it's fine, isn't it?" 
+{textColor 0 0}【Makoto】 "'The same age'...?" 
+
+
+[00000bcf] 10: 
+[00000bd0]  b: playVoice I26D085
+[00000bd9] 10: 
+[00000bda] 19: 
+[00000bdb] ff: text 7b
+{textColor 1 7}【Kurumi】 "After all, Kurumi's ... twenty years old." 
+
+
+[00000bde] 10: 
+[00000bdf] 11: fgload 1 00000000 KU02AA 2 3
+[00000bef] 10: 
+[00000bf0]  b: playVoice I26D086
+[00000bf9] 10: 
+[00000bfa] 19: 
+[00000bfb] ff: text 7c
+{textColor 1 7}【Kurumi】 "She'll turn 21 this year, so until then, she's the same age as Makoto-kun, right?" 
+
+
+[00000bfe] 10: 
+[00000bff]  7: stopBGM
+[00000c00] 10: 
+[00000c01] 19: 
+[00000c02] ff: text 7d
+{textColor 0 2}At that instant{delay 30}... time stops. 
+{textColor 0 2}My body is frozen all over, feeling like it could shatter at any second. 
+
+
+[00000c05] 10: 
+[00000c06]  6: playBGM 10
+[00000c0a] 10: 
+[00000c0b] 19: 
+[00000c0c] ff: text 7e
+{textColor 0 2}(The scar on Kurumi's back...{delay 15} has disappeared...) 
+{textColor 0 2}(Her age is twenty...{delay 15} and the shrine is gone...) 
+{textColor 0 2}(Kurumi's past...{delay 15} has changed...) 
+{textColor 0 2}(The history where she was kidnapped...{delay 15} has been erased...) 
+{textColor 0 2}(In this history...) 
+{textColor 0 2}(――Kurumi was never kidnapped!) 
+{textColor 0 2}I take a deep breath, but I can't exhale. 
+{textColor 0 2}To say nothing less of my voice, which also won't come out. 
+{textColor 0 2}(Then――what about Haruka!?) 
+{textColor 0 2}(――What about Haruka's existence!?) 
+{textColor 0 2}(If Kurumi wasn't kidnapped, then...) 
+{textColor 0 2}(If that "three year blank" never happened, then...) 
+{textColor 0 2}(――Does that mean that Haruka――doesn't exist in this history!?) 
+
+
+[00000c0f] 10: 
+[00000c10] 15: removeAllFG 3
+[00000c14] 10: 
+[00000c15] 19: 
+[00000c16] ff: text 7f
+{textColor 0 2}I break into a run. 
+{textColor 0 2}I throw open the door to Haruka's room with all my strength. 
+
+
+[00000c19] 10: 
+[00000c1a]  8: playSFX SE000 1
+[00000c24] 10: 
+[00000c25]  f: removeBG 0 4 1
+[00000c2f] 10: 
+[00000c30] 19: 
+[00000c31] ff: text 80
+{textColor 0 2}On the bed is...  {textColor 0 2}... Okuhiko? 
+
+
+[00000c34] 10: 
+[00000c35]  9: stopSFX
+[00000c36] 10: 
+[00000c37] 19: 
+[00000c38] ff: text 81
+{textColor 0 2}Okuhiko is sleeping on the bed, snoring slightly. 
+{textColor 0 2}(Why is Okuhiko in a place like this!?) 
+{textColor 0 2}But right now, I don't have time to think about that. 
+{textColor 0 2}I look around the room, but there's no sign of Haruka. 
+{textColor 0 2}I turn around, and run into Yuka's room. 
+
+
+[00000c3b] 10: 
+[00000c3c]  8: playSFX SE001 1
+[00000c46] 10: 
+[00000c47] 10: bgload 00000000 BG36NN 4 1
+[00000c54] 10: 
+[00000c55] 19: 
+[00000c56] ff: text 82
+{textColor 0 2}The instant I open the door, my nose is assaulted by the stench of alcohol. 
+
+
+[00000c59] 10: 
+[00000c5a]  9: stopSFX
+[00000c5b] 10: 
+[00000c5c]  b: playVoice I26D087
+[00000c65] 10: 
+[00000c66] 19: 
+[00000c67] ff: text 83
+{textColor 1 4}【Yuka】 "Zzz..." 
+{textColor 0 2}Yuka is widely stretched out on the bed. 
+{textColor 0 2}Besides her are several empty beer cans, scattered around her.  
+{textColor 0 2}Haruka's not in this room either. 
+
+
+[00000c6a] 10: 
+[00000c6b] 10: bgload 00000000 BG02NR 4 1
+[00000c78] 10: 
+[00000c79] 19: 
+[00000c7a] ff: text 84
+{textColor 0 2}I return to the living room, and frantically search everywhere in the lodge for clues. 
+{textColor 0 2}I look in the bathroom,{delay 15} the restroom,{delay 15} the kitchen,{delay 15} and the loft, but Haruka is nowhere to be found. 
+{textColor 0 2}(It can't be... Haruka can't really be...) 
+{textColor 0 2}I stand stock still, and turn towards the other two. 
+
+
+[00000c7d] 10: 
+[00000c7e] 14: multifgload2 00000000 KU08AA 2 00000000 IZ11BA 3
+[00000c91] 10: 
+[00000c92] 19: 
+[00000c93] ff: text 85
+{textColor 0 2}Izumi-san clearly has no idea what's going on. 
+{textColor 0 2}Kurumi looks scared of me because of my frenzied state. 
+
+
+[00000c96] 10: 
+[00000c97] 15: removeAllFG 3
+[00000c9b] 10: 
+[00000c9c] 19: 
+[00000c9d] ff: text 86
+{textColor 0 2}I grab Izumi-san's hand, and rush out of the lodge... 
+
+
+[00000ca0] 10: 
+[00000ca1]  8: playSFX SE000 1
+[00000cab] 10: 
+[00000cac]  a: waitForSFX
+[00000cad] 10: 
+[00000cae]  f: removeBG 0 4 2
+[00000cb8] 10: 
+[00000cb9] 10: bgload 00000000 BG12NR 4 1
+[00000cc6] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[00000cd1] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 23
+[00000cdd] 10: 
+[00000cde] 17: showClock
+[00000cdf] 10: 
+[00000ce0]  1: cmd1 26
+[00000ce5] 10: 
+[00000ce6]  8: playSFX SE030 1
+[00000cf0] 10: 
+[00000cf1] 19: 
+[00000cf2] ff: text 87
+{textColor 0 2}I run down the hill road, which has become so slippery from the rain that it feels like I'm rolling down it. 
+
+
+[00000cf5] 10: 
+[00000cf6]  9: stopSFX
+[00000cf7] 10: 
+[00000cf8] 11: fgload 0 00000000 IZ11BBN 1 3
+[00000d08] 10: 
+[00000d09]  b: playVoice I26D088
+[00000d12] 10: 
+[00000d13] 19: 
+[00000d14] ff: text 88
+{textColor 1 8}【Izumi】 "Makoto-kun! What's going on!?" 
+
+
+[00000d17] 10: 
+[00000d18]  b: playVoice I26D089
+[00000d21] 10: 
+[00000d22] 19: 
+[00000d23] ff: text 89
+{textColor 1 8}【Izumi】 "If you don't properly explain, then I can't understand!" 
+{textColor 0 2}I come to a halt, and firmly grab Izumi-san's shoulders. 
+{textColor 0 0}【Makoto】 "Haruka's...{delay 15} Haruka's...{delay 15} Haruka's..." 
+
+
+[00000d26] 10: 
+[00000d27] 11: fgload 0 00000000 IZ06BBN 1 3
+[00000d37] 10: 
+[00000d38]  b: playVoice I26D090
+[00000d41] 10: 
+[00000d42] 19: 
+[00000d43] ff: text 8a
+{textColor 1 8}【Izumi】 "Hey, calm down..." 
+
+
+[00000d46] 10: 
+[00000d47]  b: playVoice I26D091
+[00000d50] 10: 
+[00000d51] 19: 
+[00000d52] ff: text 8b
+{textColor 1 8}【Izumi】 "Just... what happened!?" 
+{textColor 0 2}Izumi-san's face is stiff from the extreme tension. 
+{textColor 0 0}【Makoto】 "The scar's...{delay 15} the scar's..." 
+{textColor 0 0}【Makoto】 "The scar on Kurumi's back has disappeared!" 
+
+
+[00000d55] 10: 
+[00000d56] 11: fgload 0 00000000 IZ11BBN 1 3
+[00000d66] 10: 
+[00000d67] 19: 
+[00000d68] ff: text 8c
+{textColor 0 2}Izumi-san is dumbfounded, her gaze piercing my eyes. 
+{textColor 0 0}【Makoto】 "There's no doubting it! I saw it with my own eyes!" 
+{textColor 0 0}【Makoto】 "There was no scar on Kurumi's back..." 
+{textColor 0 0}【Makoto】 "It's all... my fault..." 
+{textColor 0 0}【Makoto】 "The disappearance of the bell, the disappearance of the cards, and the disappearance of the shrine." 
+{textColor 0 0}【Makoto】 "It's all because of my thoughts..." 
+
+
+[00000d6b] 10: 
+[00000d6c]  b: playVoice I26D092
+[00000d75] 10: 
+[00000d76] 19: 
+[00000d77] ff: text 8d
+{textColor 1 8}【Izumi】 "Huh!? W-Wait a minute, Makoto-kun!" 
+
+
+[00000d7a]  0: 
+[00000d7b]  a: condJump 00 VAR_(28_1e)_a1_36 (28) != (15) (81)->1 (15) (00)  * 00000db2 (0006)
+[00000d89] 10: 
+[00000d8a]  b: playVoice I26D093
+[00000d93] 10: 
+[00000d94] 19: 
+[00000d95] ff: text 8e
+{textColor 1 8}【Izumi】 "What do you mean by... 'the disappearance of the shrine'?" 
+{textColor 0 0}【Makoto】 "I hid that from you... I didn't want to make you worried..." 
+
+
+[00000d98] 10: 
+[00000d99] 11: fgload 0 00000000 IZ06BBN 1 3
+[00000da9] 10: 
+[00000daa] 19: 
+[00000dab] ff: text 8f
+{textColor 1 8}【Izumi】 "...?" 
+
+
+[00000dae]  0: 
+[00000daf]  7: goto7 00000e13 (0007)
+[00000db2] 10: 
+[00000db3]  b: playVoice I26D094
+[00000dbc] 10: 
+[00000dbd] 19: 
+[00000dbe] ff: text 90
+{textColor 1 8}【Izumi】 "What do you mean, 'the disappearance of the bell'?" 
+
+
+[00000dc1] 10: 
+[00000dc2]  b: playVoice I26D095
+[00000dcb] 10: 
+[00000dcc] 19: 
+[00000dcd] ff: text 91
+{textColor 1 8}【Izumi】 "What do you mean, 'the disappearance of the shrine'?" 
+{textColor 0 0}【Makoto】 "I hid them from you... I didn't want to make you worried..." 
+
+
+[00000dd0] 10: 
+[00000dd1] 11: fgload 0 00000000 IZ06BBN 1 3
+[00000de1] 10: 
+[00000de2] 19: 
+[00000de3] ff: text 92
+{textColor 1 8}【Izumi】 "...?" 
+{textColor 0 0}【Makoto】 "I found the bell on the night of the 1st..." 
+{textColor 0 0}【Makoto】 "I found it on Moon Beach, just like last time, and tried to smash it with a piece of concrete..." 
+{textColor 0 0}【Makoto】 "But... when I flipped the concrete over..." 
+
+
+[00000de6] 10: 
+[00000de7]  b: playVoice I26D096
+[00000df0] 10: 
+[00000df1] 19: 
+[00000df2] ff: text 93
+{textColor 1 8}【Izumi】 "... The bell... disappeared?" 
+{textColor 0 0}【Makoto】 "Yeah..." 
+
+
+[00000df5] 10: 
+[00000df6]  b: playVoice I26D097
+[00000dff] 10: 
+[00000e00] 19: 
+[00000e01] ff: text 94
+{textColor 1 8}【Izumi】 "The bell... disappeared..." 
+{textColor 0 2}Izumi-san repeats herself. 
+{textColor 0 2}She vacantly stares into space, motionless like stone. 
+
+
+[00000e04] 10: 
+[00000e05]  b: playVoice I26D098
+[00000e0e] 10: 
+[00000e0f] 19: 
+[00000e10] ff: text 95
+{textColor 1 8}【Izumi】 "Then what about the 'disappearance of the shrine'!?" 
+
+
+[00000e13] 10: 
+[00000e14] 19: 
+[00000e15] ff: text 96
+{textColor 0 0}【Makoto】 "This afternoon... I went... down the same road... up the same stone staircase..." 
+
+
+[00000e18] 10: 
+[00000e19] 11: fgload 0 00000000 IZ11BBN 1 3
+[00000e29] 10: 
+[00000e2a]  b: playVoice I26D099
+[00000e33] 10: 
+[00000e34] 19: 
+[00000e35] ff: text 97
+{textColor 1 8}【Izumi】 "You went――to the Shiki no Mori Shrine!?" 
+{textColor 0 0}【Makoto】 "――But it was gone!" 
+{textColor 0 0}【Makoto】 "There was no shrine there!" 
+
+
+[00000e38] 10: 
+[00000e39]  8: playSFX SE030 1
+[00000e43] 10: 
+[00000e44] 19: 
+[00000e45] ff: text 98
+{textColor 0 2}The rain continues to fall. 
+{textColor 0 2}The cold rain mercilessly strikes down on us, slowly sapping away our warmth. 
+{textColor 0 0}【Makoto】 "... I... I..." 
+{textColor 0 0}【Makoto】 "I firmly thought about how I wanted to destroy that bell..." 
+{textColor 0 0}【Makoto】 "I firmly thought that 'I absolutely don't want to play cards'..." 
+{textColor 0 0}【Makoto】 "When I touched Kurumi's scar――I firmly thought that――'This thing should just disappear!'" 
+{textColor 0 0}【Makoto】 "I think the shrine disappeared for the same reason..." 
+{textColor 0 0}【Makoto】 "In order to erase Kurumi's scar... in order to erase that 'three year blank'..." 
+{textColor 0 0}【Makoto】 "I erased the existence of the shrine from this history!" 
+{textColor 0 2}"If The Third Trait's been proven, then I can erase that three year blank from history." 
+{textColor 0 0}【Makoto】 "You said something like that at the pool last night, didn't you?" 
+{textColor 0 0}【Makoto】 "And that's... how it is..." 
+{textColor 0 0}【Makoto】 "Everything's...{delay 15} my fault..." 
+
+
+[00000e48] 10: 
+[00000e49]  9: stopSFX
+[00000e4a] 10: 
+[00000e4b] 11: fgload 0 00000000 IZ06BBN 1 3
+[00000e5b] 10: 
+[00000e5c]  b: playVoice I26D100
+[00000e65] 10: 
+[00000e66] 19: 
+[00000e67] ff: text 99
+{textColor 1 8}【Izumi】 "Then in this history, Kurumi wasn't kidnapped!?" 
+{textColor 0 0}【Makoto】 "Yeah... that's why she said she was 'twenty years old'..." 
+{textColor 0 0}【Makoto】 "Because the 'three year blank' disappeared..." 
+{textColor 0 0}【Makoto】 "No, to put it more accurately, the 'three year blank' was buried!" 
+
+
+[00000e6a] 10: 
+[00000e6b] 11: fgload 0 00000000 IZ08BBN 1 3
+[00000e7b] 10: 
+[00000e7c]  b: playVoice I26D101
+[00000e85] 10: 
+[00000e86] 19: 
+[00000e87] ff: text 9a
+{textColor 1 8}【Izumi】 "Such... such a thing..." 
+{textColor 0 0}【Makoto】 "I don't want to believe it, but it's all the truth!" 
+{textColor 0 0}【Makoto】 "The bell disappeared, the shrine disappeared, the scar on Kurumi's scar disappeared..." 
+{textColor 0 0}【Makoto】 "So the next thing that'll disappear is..." 
+
+
+[00000e8a] 10: 
+[00000e8b] 11: fgload 0 00000000 IZ11BBN 1 3
+[00000e9b] 10: 
+[00000e9c]  b: playVoice I26D102
+[00000ea5] 10: 
+[00000ea6] 19: 
+[00000ea7] ff: text 9b
+{textColor 1 8}【Izumi】 "――Haruka!?" 
+
+
+[00000eaa] 10: 
+[00000eab] 12: removeFG 0 3
+[00000eb2] 10: 
+[00000eb3]  8: playSFX SE040 1
+[00000ebd] 10: 
+[00000ebe] 19: 
+[00000ebf] ff: text 9c
+{textColor 0 2}We break off into a run again. 
+{textColor 0 2}We run as fast as we can, as if we're trying our hardest to push our way through the pouring rain. 
+{textColor 0 2}The intense sound of the rainfall echoes in my trembling chest... 
+
+
+[00000ec2] 10: 
+[00000ec3]  9: stopSFX
+[00000ec4] 10: 
+[00000ec5]  2: cmd2 6
+[00000ec9] 10: 
+[00000eca]  f: removeBG 0 4 2
+[00000ed4] 10: 
+[00000ed5]  7: stopBGM
+[00000ed6] 10: 
+[00000ed7] 10: bgload 00000000 BG13NR 4 1
+[00000ee4] 10: 
+[00000ee5]  6: playBGM 13
+[00000ee9] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[00000ef4] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 38
+[00000f00] 10: 
+[00000f01] 17: showClock
+[00000f02] 10: 
+[00000f03]  1: cmd1 26
+[00000f08] 10: 
+[00000f09] 19: 
+[00000f0a] ff: text 9d
+{textColor 0 2}When we arrive at the coastline road, I speak to Izumi-san. 
+{textColor 0 0}【Makoto】 "Izumi-san, you look around here! Check Princess Beach, Viewpoint Park, Moon Beach..." 
+
+
+[00000f0d] 10: 
+[00000f0e] 11: fgload 0 00000000 IZ05BBN 1 3
+[00000f1e] 10: 
+[00000f1f]  b: playVoice I26D103
+[00000f28] 10: 
+[00000f29] 19: 
+[00000f2a] ff: text 9e
+{textColor 1 8}【Izumi】 "Yes, I understand..." 
+{textColor 0 0}【Makoto】 "I'll go look around the harbor. I'm gonna borrow the bike at the shop!" 
+
+
+[00000f2d] 10: 
+[00000f2e]  b: playVoice I26D104
+[00000f37] 10: 
+[00000f38] 19: 
+[00000f39] ff: text 9f
+{textColor 1 8}【Izumi】 "Yes..." 
+{textColor 0 2}Izumi-san gives a deep nod. 
+
+
+[00000f3c] 10: 
+[00000f3d] 12: removeFG 0 3
+[00000f44] 10: 
+[00000f45] 19: 
+[00000f46] ff: text a0
+{textColor 0 2}With that, I start running to the east, while Izumi-san starts running to the west. 
+
+
+[00000f49] 10: 
+[00000f4a] 10: bgload 00000000 BG13ZNR 4 1
+[00000f57] 10: 
+[00000f58]  8: playSFX SE030 1
+[00000f62] 10: 
+[00000f63] 19: 
+[00000f64] ff: text a1
+{textColor 0 2}Filled with determination, I kick off the wet asphalt as I continue to run east. 
+{textColor 0 2}While running in the darkness, I stare straight ahead, but because of the heavy downpour, my field of vision is very limited. 
+{textColor 0 0}【Makoto】 "HARUKAAA!" 
+{textColor 0 2}I shout, but my voice is drowned out by the roaring of the rain. 
+{textColor 0 2}Suddenly, I trip on the wet road, but I block my fall with a hand. 
+{textColor 0 2}I quickly get back up and continue to run. 
+{textColor 0 2}There are no gaps between the raindrops. It's as if I'm running through a flooding river. 
+
+
+[00000f67] 10: 
+[00000f68]  2: cmd2 6
+[00000f6c] 10: 
+[00000f6d]  f: removeBG 0 4 2
+[00000f77] 10: 
+[00000f78] 10: bgload 00000000 BG06NR 4 1
+[00000f85] 10: 
+[00000f86]  1: cmd1 26
+[00000f8b] 10: 
+[00000f8c] 19: 
+[00000f8d] ff: text a2
+{textColor 0 2}I finally arrive at Lunabeach. 
+{textColor 0 2}But I have no time to catch my breath. 
+{textColor 0 2}I jump onto the bike parked on the side, and pump the pedals with all my strength. 
+
+
+[00000f90] 10: 
+[00000f91] 10: bgload 00000000 BG14NR 4 1
+[00000f9e] 10: 
+[00000f9f] 19: 
+[00000fa0] ff: text a3
+{textColor 0 2}I pierce through the raining, heavy darkness like a speeding bullet... 
+{textColor 0 2}The large raindrops beat against my whole body. 
+{textColor 0 2}(... Haruka...) 
+{textColor 0 2}(... Where is Haruka... right now...) 
+
+
+[00000fa3] 10: 
+[00000fa4] 10: bgload 00000000 BG11NR 4 1
+[00000fb1] 10: 
+[00000fb2] 19: 
+[00000fb3] ff: text a4
+{textColor 0 2}(... She couldn't have really... disappeared, could she...?) 
+{textColor 0 2}(... Does Haruka no longer... exist in this world...?) 
+
+
+[00000fb6] 10: 
+[00000fb7] 10: bgload 00000000 BG10NR 4 1
+[00000fc4] 10: 
+[00000fc5] 19: 
+[00000fc6] ff: text a5
+{textColor 0 2}(――No, that's wrong!) 
+{textColor 0 2} (――I won't accept such a ridiculous thing!) 
+{textColor 0 2}(――Haruka is definitely here!) 
+{textColor 0 2}(――She's definitely... somewhere!) 
+
+
+[00000fc9] 10: 
+[00000fca] 10: bgload 00000000 BG15NR 4 1
+[00000fd7] 10: 
+[00000fd8] 19: 
+[00000fd9] ff: text a6
+{textColor 0 2}I hit the brakes, and get off the bike. 
+{textColor 0 2}I stand in the middle of the pier, and look around. 
+{textColor 0 2}She's not here... 
+{textColor 0 2}Haruka isn't here either... 
+{textColor 0 2}The crashing waves become a black fog that envelops my body. 
+{textColor 0 2}The roar of the billows of waves that feel like they could shake the earth echoes in the rain. 
+
+
+[00000fdc] 10: 
+[00000fdd]  2: cmd2 6
+[00000fe1] 10: 
+[00000fe2]  f: removeBG 0 0 2
+[00000fec] 10: 
+[00000fed]  9: stopSFX
+[00000fee] 10: 
+[00000fef] 19: 
+[00000ff0] ff: text a7
+{textColor 0 2}... ... ... 
+
+
+[00000ff3] 10: 
+[00000ff4] 10: bgload 00000000 BG10NR 4 1
+[00001001] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 2
+[0000100c] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 12
+[00001017] 10: 
+[00001018] 17: showClock
+[00001019] 10: 
+[0000101a]  1: cmd1 26
+[0000101f] 10: 
+[00001020] 19: 
+[00001021] ff: text a8
+{textColor 0 2}I get back on the bike, and go back on the road. 
+
+
+[00001024] 10: 
+[00001025] 10: bgload 00000000 BG11NR 4 1
+[00001032] 10: 
+[00001033] 19: 
+[00001034] ff: text a9
+{textColor 0 2}The shopping district is like a ghost town... 
+
+
+[00001037] 10: 
+[00001038] 10: bgload 00000000 BG14NR 4 1
+[00001045] 10: 
+[00001046] 19: 
+[00001047] ff: text aa
+{textColor 0 2}Although the wet road makes me lose control of the handles, I keep pedaling with everything I've got... 
+
+
+[0000104a] 10: 
+[0000104b] 10: bgload 00000000 BG13NR 4 1
+[00001058] 10: 
+[00001059] 19: 
+[0000105a] ff: text ab
+{textColor 0 2}I plow through the coastline road. 
+{textColor 0 2}The piercing cold rain has numbed all sensation in my limbs. 
+{textColor 0 2}But my legs don't stop. 
+{textColor 0 2}I keep on pedaling with all my might even though I'm out of breath. 
+
+
+[0000105d] 10: 
+[0000105e]  7: stopBGM
+[0000105f] 10: 
+[00001060] 19: 
+[00001061] ff: text ac
+{textColor 0 2}――Then all of sudden! 
+{textColor 0 2}A sudden curve appears in front of me! 
+{textColor 0 2}I slam on the bike's brakes, but it's too late. 
+{textColor 0 2}The rear wheel slips on the wet asphalt, and my body goes dancing in midair. 
+
+
+[00001064] 10: 
+[00001065]  8: playSFX SE063 1
+[0000106f] 10: 
+[00001070]  1: cmd1 1
+[00001074] 10: 
+[00001075]  1: cmd1 4
+[00001079] 10: 
+[0000107a] 19: 
+[0000107b] ff: text ad
+{textColor 0 2}I roll on the water...  {textColor 0 2}Before long, I land face-up...  {textColor 0 2}My body stops... 
+
+
+[0000107e] 10: 
+[0000107f]  9: stopSFX
+[00001080] 10: 
+[00001081] 19: 
+[00001082] ff: text ae
+{textColor 0 2}... 
+
+
+[00001085] 10: 
+[00001086]  2: cmd2 6
+[0000108a] 10: 
+[0000108b]  f: removeBG 0 0 0
+[00001095] 10: 
+[00001096]  8: playSFX SE030 1
+[000010a0] 10: 
+[000010a1] 19: 
+[000010a2] ff: text af
+{textColor 0 2}The rain falls. 
+{textColor 0 2}It comes falling endlessly from the black sky. 
+{textColor 0 2}My hot breaths turn white, floating in the air. 
+{textColor 0 2}My back has frozen. 
+
+
+[000010a5] 10: 
+[000010a6]  b: playVoice I26D105
+[000010af] 10: 
+[000010b0] 19: 
+[000010b1] ff: text b0
+{textColor 1 5}【Haruka】 "Makoto..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000010b4] 10: 
+[000010b5]  b: playVoice I26D106
+[000010be] 10: 
+[000010bf] 19: 
+[000010c0] ff: text b1
+{textColor 1 5}【Haruka】 "Are you okay?" 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}As I lie sprawled out on the road, Haruka looks at me. 
+{textColor 0 0}【Makoto】 "... Haruka..." 
+
+
+[000010c3] 10: 
+[000010c4]  b: playVoice I26D107
+[000010cd] 10: 
+[000010ce] 19: 
+[000010cf] ff: text b2
+{textColor 1 5}【Haruka】 "... Hmm?" 
+{textColor 0 0}【Makoto】 "... Haruka..." 
+
+
+[000010d2] 10: 
+[000010d3]  b: playVoice I26D108
+[000010dc] 10: 
+[000010dd] 19: 
+[000010de] ff: text b3
+{textColor 1 5}【Haruka】 "... What?" 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[000010e1] 10: 
+[000010e2]  9: stopSFX
+[000010e3] 10: 
+[000010e4] 19: 
+[000010e5] ff: text b4
+{textColor 0 0}【Makoto】 "――H-HARUKA!!?" 
+{textColor 0 2}I spring up to my feet with a shout. 
+
+
+[000010e8] 10: 
+[000010e9] 10: bgload 00000000 BG13NR 0 1
+[000010f6] 10: 
+[000010f7]  1: cmd1 26
+[000010fc] 10: 
+[000010fd] 11: fgload 0 00000000 HA11ABN 1 3
+[0000110d] 10: 
+[0000110e]  6: playBGM 2
+[00001112] 10: 
+[00001113]  b: playVoice I26D109
+[0000111c] 10: 
+[0000111d] 19: 
+[0000111e] ff: text b5
+{textColor 1 5}【Haruka】 "Wh-What's wrong, Makoto...?" 
+{textColor 0 2}I say nothing, and embrace Haruka. 
+
+
+[00001121] 10: 
+[00001122]  b: playVoice I26D110
+[0000112b] 10: 
+[0000112c] 19: 
+[0000112d] ff: text b6
+{textColor 1 5}【Haruka】 "Ma-Makoto..." 
+{textColor 0 2}My sudden action has left Haruka perplexed. 
+{textColor 0 2}I can hear the loud pounding of her heart in her chest. 
+
+
+[00001130] 10: 
+[00001131]  b: playVoice I26D111
+[0000113a] 10: 
+[0000113b] 19: 
+[0000113c] ff: text b7
+{textColor 1 5}【Haruka】 "H-Hey? Seriously... what's wrong?" 
+{textColor 0 0}【Makoto】 "... No... it's nothing... it's nothing..." 
+{textColor 0 0}【Makoto】 "It's just..." 
+{textColor 0 0}【Makoto】 "I'm so happy..." 
+
+
+[0000113f] 10: 
+[00001140]  b: playVoice I26D112
+[00001149] 10: 
+[0000114a] 19: 
+[0000114b] ff: text b8
+{textColor 1 5}【Haruka】 "Huh?" 
+{textColor 0 0}【Makoto】 "You're here..." 
+{textColor 0 0}【Makoto】 "I'm so glad... that you're... here..." 
+{textColor 0 2}Our bodies are overlapping with each other... 
+{textColor 0 2}I can feel warmth coming from Haruka's soaked body. 
+
+
+[0000114e] 10: 
+[0000114f]  b: playVoice I26D113
+[00001158] 10: 
+[00001159] 19: 
+[0000115a] ff: text b9
+{textColor 1 5}【Haruka】 "I-I'm sorry... I don't really understand." 
+{textColor 0 0}【Makoto】 "It's fine... it's all right if you don't understand..." 
+{textColor 0 0}【Makoto】 "All that matters... is that you're here..." 
+{textColor 0 2}In my arms, the bewildered Haruka draws back a little. 
+{textColor 0 2}I can feel her back faintly trembling. 
+{textColor 0 0}【Makoto】 "But what are you doing in a place like this? You don't even have an umbrella..." 
+
+
+[0000115d] 10: 
+[0000115e] 11: fgload 0 00000000 HA01ABN 1 3
+[0000116e] 10: 
+[0000116f]  b: playVoice I26D114
+[00001178] 10: 
+[00001179] 19: 
+[0000117a] ff: text ba
+{textColor 1 5}【Haruka】 "Y-Yes..." 
+
+
+[0000117d] 10: 
+[0000117e]  b: playVoice I26D115
+[00001187] 10: 
+[00001188] 19: 
+[00001189] ff: text bb
+{textColor 1 5}【Haruka】 "... Because I also... was happy..." 
+{textColor 0 0}【Makoto】 "... Huh?" 
+
+
+[0000118c] 10: 
+[0000118d]  b: playVoice I26D116
+[00001196] 10: 
+[00001197] 19: 
+[00001198] ff: text bc
+{textColor 1 5}【Haruka】 "... From... the rain..." 
+
+
+[0000119b] 10: 
+[0000119c] 12: removeFG 0 3
+[000011a3] 10: 
+[000011a4] 19: 
+[000011a5] ff: text bd
+{textColor 0 2}Haruka says this, and looks up at the night sky. 
+{textColor 0 2}Her face is covered in transparent drops of water. 
+{textColor 0 2}A gentle smile rises to her face. 
+{textColor 0 2}In that instant, Haruka exudes a charming aura. 
+
+
+[000011a8] 10: 
+[000011a9] 11: fgload 0 00000000 HA02ABN 1 3
+[000011b9] 10: 
+[000011ba]  b: playVoice I26D117
+[000011c3] 10: 
+[000011c4] 19: 
+[000011c5] ff: text be
+{textColor 1 5}【Haruka】 "Makoto..." 
+{textColor 0 2}Haruka mutters this, and wraps her hand around my back. 
+
+
+[000011c8] 10: 
+[000011c9]  b: playVoice I26D118
+[000011d2] 10: 
+[000011d3] 19: 
+[000011d4] ff: text bf
+{textColor 1 5}【Haruka】 "Your chest... there's something mysterious about it..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000011d7] 10: 
+[000011d8]  b: playVoice I26D119
+[000011e1] 10: 
+[000011e2] 19: 
+[000011e3] ff: text c0
+{textColor 1 5}【Haruka】 "It's warm... and gentle..." 
+
+
+[000011e6] 10: 
+[000011e7]  b: playVoice I26D120
+[000011f0] 10: 
+[000011f1] 19: 
+[000011f2] ff: text c1
+{textColor 1 5}【Haruka】 "It feels like... I'm lightly floating..." 
+{textColor 0 2}I gently stroke Haruka's wet hair with one hand. 
+{textColor 0 2}Haruka glances up at my face... 
+{textColor 0 2}She gives me an innocent, embarrassed smile. 
+
+
+[000011f5] 10: 
+[000011f6]  2: cmd2 6
+[000011fa] 10: 
+[000011fb]  f: removeBG 0 0 2
+[00001205] 10: 
+[00001206]  7: stopBGM
+[00001207] 10: 
+[00001208] 19: 
+[00001209] ff: text c2
+{textColor 0 2}... ... ... 
+
+
+[0000120c] 10: 
+[0000120d] 10: bgload 00000000 BG13NR 0 1
+[0000121a] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 2
+[00001225] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 49
+[00001231] 10: 
+[00001232] 17: showClock
+[00001233] 10: 
+[00001234]  6: playBGM 16
+[00001239] 10: 
+[0000123a]  1: cmd1 26
+[0000123f] 10: 
+[00001240]  8: playSFX SE030 1
+[0000124a] 10: 
+[0000124b] 19: 
+[0000124c] ff: text c3
+{textColor 0 2}Haruka and I begin walking towards the west in the downpour. 
+{textColor 0 2}Once Haruka goes back to the lodge, I have to look for Izumi-san... 
+{textColor 0 2}Haruka enjoys bathing in the rain as I continue to push the bike. 
+{textColor 0 2}Before I know it, I've completely calmed down. 
+{textColor 0 2}But the moment I regain my cool, I feel pain in various places over my body. 
+{textColor 0 2}It's probably because I fell from the bike earlier. 
+{textColor 0 2}In particular, I have throbbing pain on my right knee. 
+{textColor 0 2}Suddenly, I decide to look there... 
+
+
+[0000124f] 10: 
+[00001250]  9: stopSFX
+[00001251] 10: 
+[00001252] 19: 
+[00001253] ff: text c4
+{textColor 0 2}(Ugh...) 
+{textColor 0 2}My pants have torn at the knees, and I can see fresh red blood gushing out of it. 
+{textColor 0 0}【Makoto】 "Say, Haruka? Could you hold on to the bike for a minute?" 
+
+
+[00001256] 10: 
+[00001257] 11: fgload 0 00000000 HA11AAN 1 3
+[00001267] 10: 
+[00001268]  b: playVoice I26D121
+[00001271] 10: 
+[00001272] 19: 
+[00001273] ff: text c5
+{textColor 1 5}【Haruka】 "Huh?" 
+{textColor 0 0}【Makoto】 "It seems I completely scraped my knee..." 
+
+
+[00001276] 10: 
+[00001277] 11: fgload 0 00000000 HA08AAN 1 3
+[00001287] 10: 
+[00001288]  b: playVoice I26D122
+[00001291] 10: 
+[00001292] 19: 
+[00001293] ff: text c6
+{textColor 1 5}【Haruka】 "You're right..." 
+{textColor 0 2}Haruka is firmly staring at my right knee. 
+{textColor 0 2}I entrust the bike to Haruka, and try to check my wounds. 
+
+
+[00001296] 10: 
+[00001297]  7: stopBGM
+[00001298] 10: 
+[00001299] 19: 
+[0000129a] ff: text c7
+{textColor 0 2}However... 
+
+
+[0000129d] 10: 
+[0000129e] 12: removeFG 0 3
+[000012a5] 10: 
+[000012a6]  8: playSFX SE142 1
+[000012b0] 10: 
+[000012b1] 19: 
+[000012b2] ff: text c8
+{textColor 0 2}The bike... falls... 
+
+
+[000012b5] 10: 
+[000012b6]  9: stopSFX
+[000012b7] 10: 
+[000012b8] 11: fgload 0 00000000 HA11AAN 1 3
+[000012c8] 10: 
+[000012c9]  b: playVoice I26D123
+[000012d2] 10: 
+[000012d3] 19: 
+[000012d4] ff: text c9
+{textColor 1 5}【Haruka】 "H-Huh?" 
+
+
+[000012d7] 10: 
+[000012d8]  b: playVoice I26D124
+[000012e1] 10: 
+[000012e2] 19: 
+[000012e3] ff: text ca
+{textColor 1 5}【Haruka】 "My hand seems to have slipped..." 
+{textColor 0 2}Her hands slipped... 
+{textColor 0 2}That's not what it looked like to me. 
+{textColor 0 2}... What I did see... 
+{textColor 0 2}... when I entrusted the bike to Haruka...  {textColor 0 2}... were the handles...  {textColor 0 2}... apparently slipping right through...  {textColor 0 2}... Haruka's hands... 
+{textColor 0 2}Haruka slowly bends over, and tries to pick up the bike. 
+
+
+[000012e6] 10: 
+[000012e7]  8: playSFX SE030 1
+[000012f1] 10: 
+[000012f2]  1: cmd1 19
+[000012f7] 10: 
+[000012f8] 12: removeFG 0 3
+[000012ff] 10: 
+[00001300] 19: 
+[00001301] ff: text cb
+{textColor 0 2}The pouring rain looks like it's beginning to be soaked up by Haruka's back. 
+{textColor 0 2}Her figure looks like it's beginning to fade into the white mist. 
+{textColor 0 0}【Makoto】 "... Ha... Haruka..." 
+{textColor 0 2}I gently stretch my hand out to try to touch her back. 
+
+
+[00001304] 10: 
+[00001305]  9: stopSFX
+[00001306] 10: 
+[00001307] 19: 
+[00001308] ff: text cc
+{textColor 0 2}――However! 
+
+
+[0000130b] 10: 
+[0000130c] 11: fgload 0 00000000 HA11AAN 1 3
+[0000131c] 10: 
+[0000131d]  b: playVoice I26D125
+[00001326] 10: 
+[00001327] 19: 
+[00001328] ff: text cd
+{textColor 1 5}【Haruka】 "Ah!" 
+
+
+[0000132b] 10: 
+[0000132c] 12: removeFG 0 3
+[00001333] 10: 
+[00001334] 19: 
+[00001335] ff: text ce
+{textColor 0 2}Haruka gasps, and suddenly runs to the east. 
+{textColor 0 2}My palm is left in midair, grasping at empty space. 
+{textColor 0 2}Haruka's back gradually gets farther and farther away... 
+{textColor 0 2}... Haruka's... back... 
+{textColor 0 0}【Makoto】 "Haruka!" 
+{textColor 0 2}I chase after Haruka, running as fast as I can... 
+{textColor 0 2}Haruka has stopped in the middle of the street, crouched over, trying to hold something in her arms. 
+
+
+[00001338] 10: 
+[00001339]  2: cmd2 0
+[0000133d] 10: 
+[0000133e]  2: cmd2 6
+[00001342] 10: 
+[00001343] 10: bgload 00000000 EV_IZ06A 0 1
+[00001350] 10: 
+[00001351]  6: playBGM 14
+[00001355]  0: 
+[00001356]  5: delay 60
+[0000135b] 10: 
+[0000135c] 19: 
+[0000135d] ff: text cf
+{textColor 0 2}――It's Izumi-san!! 
+{textColor 0 2}Izumi-san is collapsed on the wet road, completely limp. 
+{textColor 0 2}I quickly run over to them. 
+{textColor 0 2}I lift Izumi-san up into my arms, and shake her body. 
+{textColor 0 0}【Makoto】 "Izumi-san! Izumi-san!" 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 2}Izumi-san has completely lost consciousness. 
+{textColor 0 2}Her body is burning hot. 
+{textColor 0 2}Her temperature is extremely high... 
+{textColor 0 2}(I've got to get Izumi-san back to the lodge...) 
+
+
+[00001360] 10: 
+[00001361]  7: stopBGM
+[00001362] 10: 
+[00001363] 19: 
+[00001364] ff: text d0
+{textColor 0 2}Just as I try to stand up! 
+
+
+[00001367] 10: 
+[00001368] 10: bgload 00000000 BG13NR 0 1
+[00001375] 10: 
+[00001376]  1: cmd1 26
+[0000137b] 10: 
+[0000137c]  f: removeBG 1 0 3
+[00001386] 10: 
+[00001387] 10: bgload 00000000 BG13NR 0 3
+[00001394] 10: 
+[00001395] 19: 
+[00001396] ff: text d1
+{textColor 0 2}――A white light shines from down the road! 
+
+
+[00001399] 10: 
+[0000139a]  6: playBGM 7
+[0000139e] 10: 
+[0000139f] 19: 
+[000013a0] ff: text d2
+{textColor 0 2}It's the headlights of a car... 
+{textColor 0 2}I see a bright red car coming this way from the other side of the curve, driving extremely fast. 
+
+
+[000013a3]  0: 
+[000013a4]  a: condJump 00 VAR_(28_32)_a1_35 (3c) != (29) (81)->1 (29) (08) || VAR_(28_32)_a1_36 (3c) != (29) (81)->1 (29) (08) || VAR_(28_32)_a1_03 (3c) <  (29) (8b)->11 (29) (00)  * 000013f5 (000d)
+[000013c8] 10: 
+[000013c9] 19: 
+[000013ca] ff: text d3
+{textColor 0 2}(――At this rate, Izumi-san will...!!!) 
+
+[000013cd] ff: text d4
+{textColor 0 2}{choiceOpt 1 -> Take Izumi-san to the edge of the street! }{choiceOpt 2 -> Stop the car! }
+
+[000013d0] 10: 
+[000013d1]  3: choice v_a1_08 00 00
+[000013d6]  0: 
+[000013d7]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000013ed (000a)
+[000013e5]  0: 
+[000013e6]  7: goto7 00001459 (0014)
+[000013e9]  0: 
+[000013ea]  7: goto7 000013f1 (000b)
+[000013ed]  0: 
+[000013ee]  7: goto7 000015ed (0017)
+[000013f1]  0: 
+[000013f2]  7: goto7 00001459 (0012)
+[000013f5]  0: 
+[000013f6]  a: condJump 00 VAR_(28_32)_a1_35 (3c) != (29) (80)->0 (29) (08) || VAR_(28_32)_a1_36 (3c) != (29) (80)->0 (29) (00)  * 00001450 (0011)
+[0000140f] 10: 
+[00001410] 19: 
+[00001411] ff: text d5
+{textColor 0 2}(――At this rate, Izumi-san will...!!!) 
+{textColor 0 2}I put my hands around Izumi-san's sides, and lift her body up. 
+{textColor 0 2}I try dragging her body to the edge of the road... 
+
+
+[00001414] 10: 
+[00001415]  1: cmd1 2
+[00001419] 10: 
+[0000141a]  1: cmd1 5
+[0000141e] 10: 
+[0000141f] 19: 
+[00001420] ff: text d6
+{textColor 0 2}... But I trip on something, and fall flat on the ground. 
+{textColor 0 2}Lying by my feet is that "fragment of concrete"... 
+{textColor 0 0}【Makoto】 "!" 
+{textColor 0 2}I don't have time to speak. 
+
+[00001423] ff: text d7
+{textColor 0 2}{choiceOpt 1 -> I've got to move her! }{choiceOpt 2 -> Think of another way. }
+
+[00001426] 10: 
+[00001427]  3: choice v_a1_08 00 00
+[0000142c]  0: 
+[0000142d]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00001443 (000e)
+[0000143b]  0: 
+[0000143c]  7: goto7 000018b2 (0018)
+[0000143f]  0: 
+[00001440]  7: goto7 0000144c (000f)
+[00001443] 10: 
+[00001444] 19: 
+[00001445] ff: text d8
+{textColor 0 2}(... There must... there must be another way!) 
+{textColor 0 2}My thoughts instantly begins to kick into high gear. 
+{textColor 0 2}The car gets closer and closer. 
+{textColor 0 2}It's moving as fast as a bolt of lightning. 
+{textColor 0 2}(――Calm down! ――Calm down and think!) 
+{textColor 0 2}――And as soon as I think that! 
+
+
+[00001448]  0: 
+[00001449]  7: goto7 0000146d (0015)
+[0000144c]  0: 
+[0000144d]  7: goto7 00001459 (0012)
+[00001450] 10: 
+[00001451] 19: 
+[00001452] ff: text d9
+{textColor 0 2}(――At this rate, Izumi-san will...!!!) 
+
+
+[00001455]  0: 
+[00001456]  7: goto7 00001459 (0014)
+[00001459] 10: 
+[0000145a] 19: 
+[0000145b] ff: text da
+{textColor 0 2}I put my hands around Izumi-san's sides, and lift her body up. 
+{textColor 0 2}I try dragging her body to the edge of the road... 
+
+
+[0000145e] 10: 
+[0000145f]  1: cmd1 2
+[00001463] 10: 
+[00001464]  1: cmd1 5
+[00001468] 10: 
+[00001469] 19: 
+[0000146a] ff: text db
+{textColor 0 2}... But I trip on something, and fall flat on the ground. 
+{textColor 0 2}Lying by my feet is that "fragment of concrete"... 
+{textColor 0 0}【Makoto】 "!" 
+{textColor 0 2}I don't have time to speak. 
+{textColor 0 2}The car gets closer and closer. 
+{textColor 0 2}It's moving as fast as a bolt of lightning. 
+{textColor 0 2}(――Calm down! ――Calm down and think!) 
+{textColor 0 2}――And as soon as I think that! 
+
+
+[0000146d] 10: 
+[0000146e] 19: 
+[0000146f] ff: text dc
+{textColor 0 2}Haruka rushes out in the middle of the road! 
+{textColor 0 2}She waves her hands widely as she boldly blocks the path of the car! 
+
+
+[00001472] 10: 
+[00001473]  8: playSFX SE140 1
+[0000147d] 10: 
+[0000147e] 19: 
+[0000147f] ff: text dd
+{textColor 0 2}Finally noticing her, the driver quickly slams the brakes. 
+{textColor 0 2}The tires screech. 
+{textColor 0 2}The car slides on the wet road... 
+{textColor 0 2}It still hasn't slowed down. 
+
+
+[00001482] 10: 
+[00001483]  9: stopSFX
+[00001484] 10: 
+[00001485] 19: 
+[00001486] ff: text de
+{textColor 0 2}Haruka, standing in a spread-eagle position, is still waving her arms... 
+{textColor 0 2}Through the openings in her body, I see the red car is still approaching. 
+{textColor 0 0}【Makoto】 "――Haruka!" 
+
+
+[00001489] 10: 
+[0000148a]  f: removeBG 1 0 3
+[00001494] 10: 
+[00001495]  7: stopBGM
+[00001496] 10: 
+[00001497] 19: 
+[00001498] ff: text df
+{textColor 0 2}Right then――{delay 30}an unbelievable scene occurs before my eyes. 
+
+
+[0000149b] 10: 
+[0000149c] 19: 
+[0000149d] ff: text e0
+{textColor 0 2}Haruka's body is swallowed up into the body of the car. 
+{textColor 0 2}It's as if she was a mirage... As if she was an illusion... 
+{textColor 0 2}The car slips right through Haruka's body! 
+
+
+[000014a0] 10: 
+[000014a1] 10: bgload 00000000 BG13NR 0 3
+[000014ae] 10: 
+[000014af] 19: 
+[000014b0] ff: text e1
+{textColor 0 2}The car approaches us with great speed... 
+{textColor 0 2}The lump of iron swoops down on us! 
+
+
+[000014b3] 10: 
+[000014b4]  1: cmd1 31
+[000014b9] 10: 
+[000014ba]  8: playSFX SE075 1
+[000014c4] 10: 
+[000014c5]  1: cmd1 1
+[000014c9] 10: 
+[000014ca]  2: cmd2 6
+[000014ce] 10: 
+[000014cf]  f: removeBG 1 0 1
+[000014d9] 10: 
+[000014da]  2: cmd2 9
+[000014de] 10: 
+[000014df]  9: stopSFX
+[000014e0] 10: 
+[000014e1] 19: 
+[000014e2] ff: text e2
+{textColor 0 2}I'm hit with an impact so strong it feels like it could break my back... 
+{textColor 0 2}My body is sent flying high in the air. 
+{textColor 0 2}Izumi-san's body is lying on the road like a puppet whose strings have been cut. 
+{textColor 0 2}... ... 
+
+
+[000014e5] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 188
+[000014f1] 10: 
+[000014f2] 10: bgload 00000000 BG13NR 0 1
+[000014ff] 10: 
+[00001500]  1: cmd1 26
+[00001505] 10: 
+[00001506]  8: playSFX SE065 1
+[00001510] 10: 
+[00001511]  1: cmd1 1
+[00001515] 10: 
+[00001516]  1: cmd1 4
+[0000151a] 10: 
+[0000151b] 19: 
+[0000151c] ff: text e3
+{textColor 0 2}My head strikes the asphalt. 
+
+
+[0000151f] 10: 
+[00001520]  9: stopSFX
+[00001521] 10: 
+[00001522] 19: 
+[00001523] ff: text e4
+{textColor 0 2}The dull sound of something rupturing echoes inside my body. 
+{textColor 0 2}My legs have been bent in unnatural directions. 
+{textColor 0 2}Strangely, there's no pain... 
+{textColor 0 2}It's not just pain; I've lost all sensation throughout my entire body. 
+{textColor 0 2}I try to stand up, but I'm not sure where or how to put strength in my body. 
+{textColor 0 2}I just barely manage to move my head. 
+{textColor 0 2}I see Izumi-san nearby me, also badly wounded. 
+
+
+[00001526] 10: 
+[00001527]  6: playBGM 15
+[0000152b] 10: 
+[0000152c]  b: playVoice I26D126
+[00001535] 10: 
+[00001536] 19: 
+[00001537] ff: text e5
+{textColor 1 8}【Izumi】 "... Makoto... kun..." 
+{textColor 0 2}A faint voice comes out of Izumi-san's barely opened mouth. 
+{textColor 0 2}(――Izumi-san!) 
+{textColor 0 2}I try to scream this out...  {textColor 0 2}... But instead of words coming out of my mouth... overflowing blood comes out instead. 
+{textColor 0 2}It flows from my mouth and begins to dissolve in the water... 
+{textColor 0 2}I try to crawl over to Izumi-san's side, as if my body's not listening to what it's being told. 
+
+
+[0000153a] 10: 
+[0000153b]  b: playVoice I26D127
+[00001544] 10: 
+[00001545] 19: 
+[00001546] ff: text e6
+{textColor 1 8}【Izumi】 "... Makoto... kun..." 
+
+
+[00001549] 10: 
+[0000154a]  b: playVoice I26D128
+[00001553] 10: 
+[00001554] 19: 
+[00001555] ff: text e7
+{textColor 1 8}【Izumi】 "... This... is... the end..." 
+
+
+[00001558] 10: 
+[00001559]  b: playVoice I26D129
+[00001562] 10: 
+[00001563] 19: 
+[00001564] ff: text e8
+{textColor 1 8}【Izumi】 "... With this... it's all... over..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00001567] 10: 
+[00001568]  b: playVoice I26D130
+[00001571] 10: 
+[00001572] 19: 
+[00001573] ff: text e9
+{textColor 1 8}【Izumi】 "... The stars..." 
+
+
+[00001576] 10: 
+[00001577]  b: playVoice I26D131
+[00001580] 10: 
+[00001581] 19: 
+[00001582] ff: text ea
+{textColor 1 8}【Izumi】 "... were beautiful..." 
+
+
+[00001585] 10: 
+[00001586]  b: playVoice I26D132
+[0000158f] 10: 
+[00001590] 19: 
+[00001591] ff: text eb
+{textColor 1 8}【Izumi】 "... The stars were..." 
+{textColor 0 2}Izumi-san slowly begins to close her eyes... 
+{textColor 0 2}I can't do anything... 
+{textColor 0 2}I can't call out to her or touch her... 
+{textColor 0 2}(Why{delay 5}...) 
+{textColor 0 2}(Why...{delay 30} did...{delay 15} this...) 
+{textColor 0 2}I writhe in deep sadness. 
+{textColor 0 2}I feel no anger this time. 
+{textColor 0 2}In my heart, all I feel is swirling, endless emptiness. 
+
+
+[00001594] 10: 
+[00001595]  1: cmd1 32
+[0000159a] 10: 
+[0000159b] 10: bgload 00000000 BG13NR 0 1
+[000015a8] 10: 
+[000015a9] 19: 
+[000015aa] ff: text ec
+{textColor 0 2}My vague consciousness is fading... Everything before me begins to turn white... 
+{textColor 0 2}I can vaguely see something faint... 
+{textColor 0 2}... A coldly shining{delay 30}... silver{delay 30}... light... 
+
+
+[000015ad] 10: 
+[000015ae]  2: cmd2 6
+[000015b2] 10: 
+[000015b3]  2: cmd2 13
+[000015b7] 10: 
+[000015b8]  f: removeBG 1 0 2
+[000015c2] 10: 
+[000015c3]  7: stopBGM
+[000015c4] 10: 
+[000015c5] 19: 
+[000015c6] ff: text ed
+{textColor 0 2}In that instant,{delay 30} my consciousness suddenly comes to an end... 
+
+
+[000015c9] 10: 
+[000015ca]  8: playSFX SE090 1
+[000015d4] 10: 
+[000015d5]  a: waitForSFX
+[000015d6] 10: 
+[000015d7]  f: removeBG 0 1 1
+[000015e1] 10: 
+[000015e2]  4: jump staffroll
+[000015ed] 10: 
+[000015ee] 19: 
+[000015ef] ff: text ee
+{textColor 0 0}【Makoto】 "Haruka! I'll leave Izumi-san to you!" 
+{textColor 0 2}The instant I make my decision, I entrust Izumi-san to Haruka, and rush out into the middle of the road. 
+{textColor 0 2}"No matter what happens, I will protect Izumi-san to the end!" 
+{textColor 0 2}(... Even if... it costs me my life...) 
+{textColor 0 2}I boldly block the path of the car. 
+{textColor 0 2}I wave my arms widely in order to catch the driver's attention and alert them to the danger. 
+{textColor 0 2}The car gets closer and closer. 
+{textColor 0 2}It's moving as fast as a bolt of lightning. 
+
+
+[000015f2] 10: 
+[000015f3]  8: playSFX SE140 1
+[000015fd] 10: 
+[000015fe] 19: 
+[000015ff] ff: text ef
+{textColor 0 2}Finally noticing me, the driver quickly slams the brakes. 
+{textColor 0 2}The tires screech. 
+{textColor 0 2}The car slides on the wet road... 
+{textColor 0 2}It still hasn't slowed down. 
+
+
+[00001602] 10: 
+[00001603]  9: stopSFX
+[00001604] 10: 
+[00001605] 19: 
+[00001606] ff: text f0
+{textColor 0 2}The body of the car before my eyes approaches me. 
+{textColor 0 2}As I stand in a spread-eagle position, I continue to widely wave my arms. 
+
+
+[00001609] 10: 
+[0000160a]  7: stopBGM
+[0000160b] 10: 
+[0000160c]  1: cmd1 31
+[00001611] 10: 
+[00001612]  8: playSFX SE075 1
+[0000161c] 10: 
+[0000161d]  1: cmd1 1
+[00001621] 10: 
+[00001622]  2: cmd2 6
+[00001626] 10: 
+[00001627]  f: removeBG 1 0 1
+[00001631] 10: 
+[00001632]  2: cmd2 9
+[00001636] 10: 
+[00001637]  9: stopSFX
+[00001638] 10: 
+[00001639] 19: 
+[0000163a] ff: text f1
+{textColor 0 2}When I come to my senses, I'm dancing in midair. 
+{textColor 0 2}The black, shiny road seems so distant. 
+{textColor 0 2}Large raindrops are floating in the air. 
+{textColor 0 2}... 
+
+
+[0000163d] 10: 
+[0000163e] 10: bgload 00000000 BG13NR 0 1
+[0000164b] 10: 
+[0000164c]  1: cmd1 26
+[00001651] 10: 
+[00001652]  8: playSFX SE065 1
+[0000165c] 10: 
+[0000165d]  1: cmd1 1
+[00001661] 10: 
+[00001662]  1: cmd1 4
+[00001666] 10: 
+[00001667] 19: 
+[00001668] ff: text f2
+{textColor 0 2}I fall onto the ground, crashing into it with enough force to break my bones. 
+
+
+[0000166b] 10: 
+[0000166c]  9: stopSFX
+[0000166d] 10: 
+[0000166e] 19: 
+[0000166f] ff: text f3
+{textColor 0 2}... 
+
+
+[00001672] 10: 
+[00001673]  8: playSFX SE030 1
+[0000167d] 10: 
+[0000167e] 19: 
+[0000167f] ff: text f4
+{textColor 0 2}Strangely, there's no pain... 
+{textColor 0 2}It's not just pain; I've lost all sensation throughout my entire body. 
+{textColor 0 2}I try to stand up, but I'm not sure where or how to put strength in my body. 
+{textColor 0 2}I just barely manage to move my head. 
+{textColor 0 2}I can see bright red brake lights on from behind me. 
+{textColor 0 2}(That's right...) 
+{textColor 0 2}(Izumi-san...) 
+{textColor 0 2}(Izumi-san's...) 
+{textColor 0 2}I instinctively stagger to my feet. 
+{textColor 0 2}I begin to walk towards the car while tottering. 
+{textColor 0 2}It's a strange feeling, like I'm walking on air. 
+
+
+[00001682] 10: 
+[00001683]  9: stopSFX
+[00001684] 10: 
+[00001685] 19: 
+[00001686] ff: text f5
+{textColor 0 2}Soon enough... 
+
+
+[00001689] 10: 
+[0000168a] 11: fgload 0 00000000 HA11ABN 1 3
+[0000169a] 10: 
+[0000169b]  b: playVoice I26D133
+[000016a4] 10: 
+[000016a5] 19: 
+[000016a6] ff: text f6
+{textColor 1 5}【Haruka】 "――M-Makoto!? ――Are you okay!?" 
+{textColor 0 2}... I finally reach the two of them. 
+{textColor 0 2}Haruka is sitting on the road, firmly holding Izumi-san in her arms. 
+{textColor 0 2}Haruka was trying to protect Izumi-san, with her back facing the car. 
+{textColor 0 2}There's only a mere 10 cm between Haruka's back and the car's bumper...  
+{textColor 0 2}I breathe a sigh of relief. 
+{textColor 0 0}【Makoto】 "So... now what?" 
+
+
+[000016a9] 10: 
+[000016aa]  b: playVoice I26D134
+[000016b3] 10: 
+[000016b4] 19: 
+[000016b5] ff: text f7
+{textColor 1 5}【Haruka】 "Huh!?" 
+
+
+[000016b8] 10: 
+[000016b9] 11: fgload 0 00000000 HA06ABN 1 3
+[000016c9] 10: 
+[000016ca]  b: playVoice I26D135
+[000016d3] 10: 
+[000016d4] 19: 
+[000016d5] ff: text f8
+{textColor 1 5}【Haruka】 "'Now what'... Makoto, are you really okay!?" 
+{textColor 0 0}【Makoto】 "Yeah... this... is nothing..." 
+{textColor 0 0}【Makoto】 "My knees... are even more scraped now, though..." 
+{textColor 0 2}Haruka looks up at my face with concern. 
+{textColor 0 2}Just then... 
+
+
+[000016d8] 10: 
+[000016d9]  b: playVoice I26D136
+[000016e2] 10: 
+[000016e3] 19: 
+[000016e4] ff: text f9
+{textColor 1 8}【Izumi】 "M-Mmm..." 
+
+
+[000016e7] 10: 
+[000016e8]  6: playBGM 5
+[000016ec] 10: 
+[000016ed] 19: 
+[000016ee] ff: text fa
+{textColor 0 2}Izumi-san slowly opens her eyes. 
+
+
+[000016f1] 10: 
+[000016f2]  b: playVoice I26D137
+[000016fb] 10: 
+[000016fc] 19: 
+[000016fd] ff: text fb
+{textColor 1 8}【Izumi】 "... Ah... Haruka..." 
+
+
+[00001700] 10: 
+[00001701] 11: fgload 0 00000000 HA08ABN 1 3
+[00001711] 10: 
+[00001712]  b: playVoice I26D138
+[0000171b] 10: 
+[0000171c] 19: 
+[0000171d] ff: text fc
+{textColor 1 5}【Haruka】 "Onee-chan! Onee-chan! Hang in there!" 
+{textColor 0 2}――What!? ――Onee-chan!? 
+
+
+[00001720] 10: 
+[00001721]  b: playVoice I26D139
+[0000172a] 10: 
+[0000172b] 19: 
+[0000172c] ff: text fd
+{textColor 1 8}【Izumi】 "I'm all right... I'm all right, Haruka..." 
+
+
+[0000172f] 10: 
+[00001730]  b: playVoice I26D140
+[00001739] 10: 
+[0000173a] 19: 
+[0000173b] ff: text fe
+{textColor 1 8}【Izumi】 "This is no big deal... at all..." 
+
+
+[0000173e] 10: 
+[0000173f]  b: playVoice I26D141
+[00001748] 10: 
+[00001749] 19: 
+[0000174a] ff: text ff
+{textColor 1 5}【Haruka】 "But you've got this high fever..." 
+
+
+[0000174d] 10: 
+[0000174e]  b: playVoice I26D142
+[00001757] 10: 
+[00001758] 19: 
+[00001759] ff: text 100
+{textColor 1 8}【Izumi】 "... Fever? ... I don't have... a fever..." 
+
+
+[0000175c] 10: 
+[0000175d]  b: playVoice I26D143
+[00001766] 10: 
+[00001767] 19: 
+[00001768] ff: text 101
+{textColor 1 8}【Izumi】 "I'm just hot... from running for a bit..." 
+
+
+[0000176b] 10: 
+[0000176c]  b: playVoice I26D144
+[00001775] 10: 
+[00001776] 19: 
+[00001777] ff: text 102
+{textColor 1 5}【Haruka】 "Why!?" 
+
+
+[0000177a] 10: 
+[0000177b]  b: playVoice I26D145
+[00001784] 10: 
+[00001785] 19: 
+[00001786] ff: text 103
+{textColor 1 5}【Haruka】 "What are you doing here, Onee-chan!?" 
+
+
+[00001789] 10: 
+[0000178a] 12: removeFG 0 3
+[00001791] 10: 
+[00001792] 11: fgload 0 00000000 IZ08BBN 1 3
+[000017a2] 10: 
+[000017a3]  b: playVoice I26D146
+[000017ac] 10: 
+[000017ad] 19: 
+[000017ae] ff: text 104
+{textColor 1 8}【Izumi】 "Because... I was worried..." 
+
+
+[000017b1] 10: 
+[000017b2] 11: fgload 0 00000000 IZ09BBN 1 3
+[000017c2] 10: 
+[000017c3]  b: playVoice I26D147
+[000017cc] 10: 
+[000017cd] 19: 
+[000017ce] ff: text 105
+{textColor 1 8}【Izumi】 "... About you... Haruka..." 
+{textColor 0 2}Izumi-san cries in the downpour. 
+{textColor 0 2}Endless tears are overflowing out of her vacant eyes. 
+{textColor 0 2}Her tears sometimes dissolve in the rain... 
+
+
+[000017d1] 10: 
+[000017d2] 12: removeFG 0 3
+[000017d9] 10: 
+[000017da] 11: fgload 0 00000000 HA08ABN 1 3
+[000017ea] 10: 
+[000017eb]  b: playVoice I26D148
+[000017f4] 10: 
+[000017f5] 19: 
+[000017f6] ff: text 106
+{textColor 1 5}【Haruka】 "... Onee-chan..." 
+{textColor 0 2}Haruka wipes the tears off Izumi-san's cheek with her palm. 
+{textColor 0 2}Her touch is soft{delay 30} and kind... 
+
+
+[000017f9] 10: 
+[000017fa] 12: removeFG 0 3
+[00001801] 10: 
+[00001802] 19: 
+[00001803] ff: text 107
+{textColor 0 2}The two of them are wrapped up in the clean, transparent raindrops. 
+
+
+[00001806] 10: 
+[00001807]  8: playSFX SE014 1
+[00001811] 10: 
+[00001812] 19: 
+[00001813] ff: text 108
+{textColor 0 2}The car door opens. 
+
+
+[00001816] 10: 
+[00001817]  9: stopSFX
+[00001818] 10: 
+[00001819] 19: 
+[0000181a] ff: text 109
+{textColor 0 2}The driver hesitantly walks over to me. 
+
+
+[0000181d] 10: 
+[0000181e]  b: playVoice I26D160
+[00001827] 10: 
+[00001828] 19: 
+[00001829] ff: text 10a
+{textColor 0 0}【Driver】 "Umm... Err..." 
+
+
+[0000182c] 10: 
+[0000182d]  b: playVoice I26D161
+[00001836] 10: 
+[00001837] 19: 
+[00001838] ff: text 10b
+{textColor 0 0}【Driver】 "... Are you... all right?" 
+{textColor 0 2}I silently reach my hand out to give him a pat on the shoulder. 
+{textColor 0 2}He gets flustered, and awkwardly averts his gaze as he moves back. 
+{textColor 0 2}He looks over at the other two, who are embracing... 
+{textColor 0 2}The rain gracefully falls. 
+{textColor 0 2}It's as if it's also embracing them, softly and gently... 
+
+
+[0000183b] 10: 
+[0000183c]  7: stopBGM
+[0000183d] 10: 
+[0000183e]  1: cmd1 32
+[00001843] 10: 
+[00001844] 10: bgload 00000000 BG13NR 0 1
+[00001851] 10: 
+[00001852] 19: 
+[00001853] ff: text 10c
+{textColor 0 0}【Makoto】 "...{delay 15} H...{delay 15} Huh...?" 
+{textColor 0 0}【Makoto】 "... That's...{delay 15} strange..." 
+{textColor 0 0}【Makoto】 "... My...{delay 15} vision's..." 
+{textColor 0 0}【Makoto】 "...{delay 15} becoming...{delay 15} blurry..." 
+{textColor 0 2}――Suddenly, I lose my strength. 
+
+
+[00001856] 10: 
+[00001857]  1: cmd1 2
+[0000185b] 10: 
+[0000185c]  1: cmd1 5
+[00001860] 10: 
+[00001861] 19: 
+[00001862] ff: text 10d
+{textColor 0 2}My knees give way, and I fall to the asphalt. 
+
+
+[00001865] 10: 
+[00001866]  b: playVoice I26D149
+[0000186f] 10: 
+[00001870] 19: 
+[00001871] ff: text 10e
+{textColor 1 5}【Haruka】 "――Makoto!" 
+
+
+[00001874] 10: 
+[00001875]  b: playVoice I26D150
+[0000187e] 10: 
+[0000187f] 19: 
+[00001880] ff: text 10f
+{textColor 1 8}【Izumi】 "... Makoto-kun!" 
+{textColor 0 2}Their voices sound distant. 
+{textColor 0 2}(... But...{delay 15} I'm glad...) 
+{textColor 0 2}(... Everything's...{delay 15} turned out well...) 
+{textColor 0 2}(... I...{delay 15} was able...) 
+{textColor 0 2}(... to...{delay 15} protect...{delay 30} Izu{delay 5}mi{delay 5}...{delay 15} san{delay 5}...{delay 5}) 
+
+
+[00001883] 10: 
+[00001884]  2: cmd2 6
+[00001888] 10: 
+[00001889]  2: cmd2 13
+[0000188d] 10: 
+[0000188e]  f: removeBG 1 0 0
+[00001898] 10: 
+[00001899] 19: 
+[0000189a] ff: text 110
+{textColor 0 2}My vague consciousness is fading... Everything before me begins to turn white... 
+{textColor 0 2}I can vaguely see something faint... 
+{textColor 0 2}There's that fragment...{delay 15} of concrete... 
+{textColor 0 2}And beyond it...{delay 15} I see a coldly shining...{delay 30} silver...{delay 15} light... 
+{textColor 0 2}(... What the...{delay 30} T{delay 5}ha{delay 5}...{delay 15}t's{delay 5}...{delay 5}) 
+{textColor 0 2}In that instant,{delay 30} my consciousness fades... 
+
+
+[0000189d] 10: 
+[0000189e]  f: removeBG 0 1 1
+[000018a8] 10: 
+[000018a9]  4: jump C_IL2D7
+[000018b2] 10: 
+[000018b3] 19: 
+[000018b4] ff: text 111
+{textColor 0 2}"No matter what happens, I will protect Izumi-san until the end!" 
+{textColor 0 2}I stand up again. 
+{textColor 0 2}With my feet firmly on the ground, I pick up Izumi-san's body. 
+{textColor 0 2}The car is getting closer and closer. 
+{textColor 0 2}It's moving as fast as a bolt of lightning. 
+{textColor 0 2}(――This is bad!) 
+{textColor 0 2}――The instant I think that! 
+
+
+[000018b7] 10: 
+[000018b8] 19: 
+[000018b9] ff: text 112
+{textColor 0 2}Haruka rushes out in the middle of the road! 
+{textColor 0 2}She waves her hands widely as she boldly blocks the path of the car! 
+
+
+[000018bc] 10: 
+[000018bd]  8: playSFX SE140 1
+[000018c7] 10: 
+[000018c8] 19: 
+[000018c9] ff: text 113
+{textColor 0 2}Finally noticing her, the driver quickly slams the brakes. 
+{textColor 0 2}The tires screech. 
+{textColor 0 2}The car slides on the wet road... 
+{textColor 0 2}It still hasn't slowed down. 
+
+
+[000018cc] 10: 
+[000018cd]  9: stopSFX
+[000018ce] 10: 
+[000018cf] 19: 
+[000018d0] ff: text 114
+{textColor 0 2}Haruka, standing in a spread-eagle position, is still waving her arms... 
+{textColor 0 2}Through the openings in her body, I see the red car is still approaching. 
+{textColor 0 0}【Makoto】 "――Haruka!" 
+
+
+[000018d3] 10: 
+[000018d4]  f: removeBG 1 0 3
+[000018de] 10: 
+[000018df]  7: stopBGM
+[000018e0] 10: 
+[000018e1] 19: 
+[000018e2] ff: text 115
+{textColor 0 2}Right then――{delay 30}an unbelievable scene occurs before my eyes. 
+
+
+[000018e5] 10: 
+[000018e6] 19: 
+[000018e7] ff: text 116
+{textColor 0 2}Haruka's body is swallowed up into the body of the car. 
+{textColor 0 2}It's as if she was a mirage... As if she was an illusion... 
+{textColor 0 2}The car slips right through Haruka's body! 
+
+
+[000018ea] 10: 
+[000018eb] 10: bgload 00000000 BG13NR 0 3
+[000018f8] 10: 
+[000018f9] 19: 
+[000018fa] ff: text 117
+{textColor 0 2}The car approaches us with great speed... 
+{textColor 0 2}The lump of iron swoops down on us! 
+{textColor 0 2}(If nothing else, I have to at least save Izumi-san's life!) 
+{textColor 0 2}――In that instant, I kick off the ground with all the strength I have! 
+
+
+[000018fd] 10: 
+[000018fe]  1: cmd1 31
+[00001903] 10: 
+[00001904]  8: playSFX SE075 1
+[0000190e] 10: 
+[0000190f]  1: cmd1 1
+[00001913] 10: 
+[00001914]  2: cmd2 6
+[00001918] 10: 
+[00001919]  f: removeBG 1 0 1
+[00001923] 10: 
+[00001924]  2: cmd2 9
+[00001928] 10: 
+[00001929]  9: stopSFX
+[0000192a] 10: 
+[0000192b] 19: 
+[0000192c] ff: text 118
+{textColor 0 2}The car smashes right into my flank with enough force to break it... 
+{textColor 0 2}My body is sent flying forward... 
+{textColor 0 2}But I don't dare let go of Izumi-san... 
+{textColor 0 2}I firmly embrace her body... 
+{textColor 0 2}Doing my best to protect her, I land on my back... 
+
+
+[0000192f] 10: 
+[00001930] 10: bgload 00000000 BG13NR 0 1
+[0000193d] 10: 
+[0000193e]  1: cmd1 26
+[00001943] 10: 
+[00001944]  8: playSFX SE065 1
+[0000194e] 10: 
+[0000194f]  1: cmd1 1
+[00001953] 10: 
+[00001954]  1: cmd1 4
+[00001958] 10: 
+[00001959] 19: 
+[0000195a] ff: text 119
+{textColor 0 2}I receive the full impact of the crash... 
+{textColor 0 2}... ... 
+
+
+[0000195d] 10: 
+[0000195e]  9: stopSFX
+[0000195f] 10: 
+[00001960]  8: playSFX SE030 1
+[0000196a] 10: 
+[0000196b] 19: 
+[0000196c] ff: text 11a
+{textColor 0 2}Strangely, there's no pain... 
+{textColor 0 2}It's not just pain; I've lost all sensation throughout my entire body. 
+{textColor 0 2}I try to stand up, but I'm not sure where or how to put strength in my body. 
+{textColor 0 2}My body is lying face up... On top of me is Izumi-san. 
+
+
+[0000196f] 10: 
+[00001970] 11: fgload 0 00000000 IZ11BBN 1 3
+[00001980] 10: 
+[00001981]  b: playVoice I26D151
+[0000198a] 10: 
+[0000198b] 19: 
+[0000198c] ff: text 11b
+{textColor 1 8}【Izumi】 "... Ma-Makoto-kun!" 
+{textColor 0 2}Izumi-san puts her hands on the road, and looks at my face. 
+{textColor 0 2}From her expression and tear-choked voice, I can tell that Izumi-san is all right. 
+{textColor 0 2}(... I...{delay 15}  Izumi-san...) 
+{textColor 0 2}I try to mutter this... 
+{textColor 0 2}But instead of words coming out of my mouth... overflowing blood comes out instead. 
+{textColor 0 2}It flows from my mouth and begins to dissolve in the water... 
+{textColor 0 2}I try to crawl over to Izumi-san's side, as if my body's not listening to what it's being told. 
+
+
+[0000198f] 10: 
+[00001990] 11: fgload 0 00000000 IZ08BBN 1 3
+[000019a0] 10: 
+[000019a1]  b: playVoice I26D152
+[000019aa] 10: 
+[000019ab] 19: 
+[000019ac] ff: text 11c
+{textColor 1 8}【Izumi】 "Makoto-kun! Makoto-kun!" 
+
+
+[000019af] 10: 
+[000019b0]  b: playVoice I26D153
+[000019b9] 10: 
+[000019ba] 19: 
+[000019bb] ff: text 11d
+{textColor 1 8}【Izumi】 "Hang in there, Makoto-kun!" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000019be] 10: 
+[000019bf]  9: stopSFX
+[000019c0] 10: 
+[000019c1]  6: playBGM 20
+[000019c6] 10: 
+[000019c7]  b: playVoice I26D154
+[000019d0] 10: 
+[000019d1] 19: 
+[000019d2] ff: text 11e
+{textColor 1 8}【Izumi】 "Why... Why..." 
+
+
+[000019d5] 10: 
+[000019d6]  b: playVoice I26D155
+[000019df] 10: 
+[000019e0] 19: 
+[000019e1] ff: text 11f
+{textColor 1 8}【Izumi】 "Why did you... protect me...?" 
+{textColor 0 0}【Makoto】 "... Because..." 
+{textColor 0 0}【Makoto】 "... I..." 
+{textColor 0 0}【Makoto】 "... love{delay 30}... yo{delay 15}... u..." 
+
+
+[000019e4] 10: 
+[000019e5] 11: fgload 0 00000000 IZ09BBN 1 3
+[000019f5] 10: 
+[000019f6]  b: playVoice I26D156
+[000019ff] 10: 
+[00001a00] 19: 
+[00001a01] ff: text 120
+{textColor 1 8}【Izumi】 "No! I don't want this!" 
+
+
+[00001a04] 10: 
+[00001a05]  b: playVoice I26D157
+[00001a0e] 10: 
+[00001a0f] 19: 
+[00001a10] ff: text 121
+{textColor 1 8}【Izumi】 "... Makoto-kun... you can't die..." 
+
+
+[00001a13] 10: 
+[00001a14]  b: playVoice I26D158
+[00001a1d] 10: 
+[00001a1e] 19: 
+[00001a1f] ff: text 122
+{textColor 1 8}【Izumi】 "――Because I love you!" 
+
+
+[00001a22] 10: 
+[00001a23]  b: playVoice I26D159
+[00001a2c] 10: 
+[00001a2d] 19: 
+[00001a2e] ff: text 123
+{textColor 1 8}【Izumi】 "Because I love you too, Makoto-kun!" 
+{textColor 0 2}Her voice... sounds distant... 
+
+
+[00001a31] 10: 
+[00001a32]  1: cmd1 32
+[00001a37] 10: 
+[00001a38] 10: bgload 00000000 BG13NR 0 1
+[00001a45] 10: 
+[00001a46] 19: 
+[00001a47] ff: text 124
+{textColor 0 2}My vague consciousness is fading... Everything before me is begininng to turn white... 
+{textColor 0 2}I slowly...{delay 15} close my eyes... 
+
+
+[00001a4a] 10: 
+[00001a4b]  2: cmd2 6
+[00001a4f] 10: 
+[00001a50]  2: cmd2 13
+[00001a54] 10: 
+[00001a55]  f: removeBG 1 0 1
+[00001a5f] 10: 
+[00001a60]  7: stopBGM
+[00001a61] 10: 
+[00001a62] 19: 
+[00001a63] ff: text 125
+{textColor 0 2}(... But...{delay 15} I'm glad...) 
+{textColor 0 2}(... I...{delay 15} was able...) 
+{textColor 0 2}(... to protect Izumi-san...{delay 30} until the...{delay 15} end...) 
+{textColor 0 2}In that instant,{delay 30} my consciousness suddenly ceases... 
+
+
+[00001a66] 10: 
+[00001a67]  f: removeBG 0 1 1
+[00001a71] 10: 
+[00001a72]  4: jump DC_END
+[00001a7a]  0: 
+[00001a7b]  0: 

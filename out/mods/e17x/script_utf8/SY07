@@ -1,0 +1,1607 @@
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//		Title:『Ever17』
+//		File:	
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//アクアシステムデフォルトスクリプト--ここから--
+[StartUp]
+{
+	:SceneName	"少年編　５／７"
+	:Presence	3
+	[LoadTexture]
+	{
+		:Texture	0
+	}
+}
+[TaskList]
+{
+	:TaskMax	100001
+//アクアシステムデフォルトスクリプト--ここまで--
+//-----------------
+//５/７第七章優編５
+//-----------------
+//SY07
+//☆ＥＣＧ※新規　次元の狭間を漂う優。/不安定な優/少年手を伸ばし優の手繋ぐ（※私服）
+	[Task100]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task110]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		385	//	置換しました<<ev_xyu02b>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			1
+		:FadeWait		1
+	}
+//5pb.24:Drittes Auge nehmenドリッテス・アウゲ・ネーメン（第３の眼：別テイク）
+	[Task120]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		47	//	置換しました<<bgm24>>
+	}
+	[Task130]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task140]
+	{
+		:Tasktype	"Tag"
+		:Name	"SY07_START"
+	}
+	[Task150]
+	{
+		:Tasktype	"Message"
+		:Message	"「とどかない、とどかないよ……」"
+		:Character	4		//優
+		:Voice	14841	//	置換しました<<sy07_yu000e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task160]
+	{
+		:Tasktype	"Message"
+		:Message	"「諦めないで、あとちょっと、あとちょっとだから」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task170]
+	{
+		:Tasktype	"Message"
+		:Message	"２人の距離が、手の距離が近づいていく……。"
+		:Frame		1
+	}
+	[Task180]
+	{
+		:Tasktype	"Message"
+		:Message	"しかし、何故かお互いの手は、横を通り過ぎた。"
+		:Frame		1
+	}
+	[Task190]
+	{
+		:Tasktype	"Message"
+		:Message	"「優、こっちだ！　こっちだよ！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task200]
+	{
+		:Tasktype	"Message"
+		:Message	"「やってるよ、だけど……」"
+		:Character	4		//優
+		:Voice	14842	//	置換しました<<sy07_yu001e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task210]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼく達は何度も何度もお互いの手を掴もうとした。"
+		:Frame		1
+	}
+	[Task220]
+	{
+		:Tasktype	"Message"
+		:Message	"しかし、伸ばした手は、優の手をすり抜けるよう通り過ぎた。"
+		:Frame		1
+	}
+	[Task230]
+	{
+		:Tasktype	"Message"
+		:Message	"「くそっ！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task240]
+	{
+		:Tasktype	"Message"
+		:Message	"あの時と同じだ……。"
+		:Frame		1
+	}
+	[Task250]
+	{
+		:Tasktype	"Message"
+		:Message	"あの、サインペンをキャップに入れる時のように……。"
+		:Frame		1
+	}
+	[Task260]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくの居る場所と、優の居る場所の次元がズレているんだ。"
+		:Frame		1
+	}
+	[Task270]
+	{
+		:Tasktype	"Message"
+		:Message	"まるであざ笑うかのようにぼくらを照らす光の轟音が、邪悪なドラゴンの咆哮を思わせる。"
+		:Frame		1
+	}
+	[Task280]
+	{
+		:Tasktype	"Message"
+		:Message	"「やっぱりだめなのかな……」"
+		:Character	4		//優
+		:Voice	14843	//	置換しました<<sy07_yu002e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task290]
+	{
+		:Tasktype	"Message"
+		:Message	"優の顔が曇る。"
+		:Frame		1
+	}
+	[Task300]
+	{
+		:Tasktype	"Message"
+		:Message	"「あきらめないで！　あきらめちゃ、ダメだ！！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task310]
+	{
+		:Tasktype	"Message"
+		:Message	"「でも……」"
+		:Character	4		//優
+		:Voice	14844	//	置換しました<<sy07_yu003e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task320]
+	{
+		:Tasktype	"Message"
+		:Message	"優は顔を伏せる。"
+		:Frame		1
+	}
+	[Task330]
+	{
+		:Tasktype	"Message"
+		:Message	"「ねえ？　ぼくの目をしっかり見て？」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task340]
+	{
+		:Tasktype	"Message"
+		:Message	"優は吸い寄せられるように、ぼくの瞳を覗いた。"
+		:Frame		1
+	}
+	[Task350]
+	{
+		:Tasktype	"Message"
+		:Message	"優の瞳の中で、ぼくの瞳がぼくを覗いていた。"
+		:Frame		1
+	}
+	[Task360]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task370]
+	{
+		:Tasktype	"Message"
+		:Message	"「そしたら、笑ってみて？」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task380]
+	{
+		:Tasktype	"Message"
+		:Message	"「……えっ？」"
+		:Character	4		//優
+		:Voice	61	//	置換しました<<sy07_yu004e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task390]
+	{
+		:Tasktype	"Message"
+		:Message	"「優、笑ってよ！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task400]
+	{
+		:Tasktype	"Message"
+		:Message	"「優が教えてくれたことだよ！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task410]
+	{
+		:Tasktype	"Message"
+		:Message	"「苦しい時とか、ここ一番の時は笑うんでしょ！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task420]
+	{
+		:Tasktype	"Message"
+		:Message	"「笑顔が運を切り開く力になってくれるんでしょ！！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task430]
+	{
+		:Tasktype	"Message"
+		:Message	"「だから、優、笑ってよ！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task440]
+	{
+		:Tasktype	"Message"
+		:Message	"そういって、ぼくはニッコリと笑顔を見せた。"
+		:Frame		1
+	}
+	[Task450]
+	{
+		:Tasktype	"Message"
+		:Message	"優の瞳の中で、ぼくの瞳が輝いた。"
+		:Frame		1
+	}
+	[Task460]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうだったわね……」"
+		:Character	4		//優
+		:Voice	62	//	置換しました<<sy07_yu005e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task470]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task480]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		386	//	置換しました<<ev_xyu02c>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			1
+		:FadeWait		1
+		:CGFlag			180
+	}
+	[Task490]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task500]
+	{
+		:Tasktype	"Message"
+		:Message	"「ふふっ」"
+		:Character	4		//優
+		:Voice	63	//	置換しました<<sy07_yu006e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task510]
+	{
+		:Tasktype	"Message"
+		:Message	"優は輝いた。"
+		:Frame		1
+	}
+	[Task520]
+	{
+		:Tasktype	"Message"
+		:Message	"とびっきりの微笑み。"
+		:Frame		1
+	}
+	[Task530]
+	{
+		:Tasktype	"Message"
+		:Message	"そうだ、ぼくはあの輝きを守るんだ――"
+		:Frame		1
+	}
+	[Task540]
+	{
+		:Tasktype	"Message"
+		:Message	"――ぼくの想いが手となり、伸びる。"
+		:Frame		1
+	}
+	[Task550]
+	{
+		:Tasktype	"Message"
+		:Message	"――想いは無限だ！"
+		:Frame		1
+	}
+	[Task560]
+	{
+		:Tasktype	"Message"
+		:Message	"――だから、届く！"
+		:Frame		1
+	}
+	[Task570]
+	{
+		:Tasktype	"Message"
+		:Message	"――必ず！！"
+		:Frame		1
+	}
+	[Task580]
+	{
+		:Tasktype	"Message"
+		:Message	"――優へ！！"
+		:Frame		1
+	}
+	[Task590]
+	{
+		:Tasktype	"Message"
+		:Message	"その瞬間――"
+		:Frame		1
+	}
+	[Task600]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task610]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		387	//	置換しました<<ev_xyu02d>>
+		:Position		640,360
+		:Priority		3
+		:Time			60
+		:FadeIn			1
+		:FadeWait		1
+		:CGFlag			181
+	}
+	[Task620]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task630]
+	{
+		:Tasktype	"Message"
+		:Message	"そっと、小指が触れた。"
+		:Frame		1
+	}
+	[Task640]
+	{
+		:Tasktype	"Message"
+		:Message	"薬指、中指、人差し指……一つずつ、繋がる指が増えていく感触。"
+		:Frame		1
+	}
+	[Task650]
+	{
+		:Tasktype	"Message"
+		:Message	"そして……五本の指が全部、つながった。"
+		:Frame		1
+	}
+	[Task660]
+	{
+		:Tasktype	"Message"
+		:Message	"互いの存在を確かめるように手を握る。離れないように、ぎゅっと握りしめる。"
+		:Frame		1
+	}
+	[Task670]
+	{
+		:Tasktype	"Message"
+		:Message	"「……戻ろう、みんなの所へ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task680]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん……」"
+		:Character	4		//優
+		:Voice	64	//	置換しました<<sy07_yu007e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task690]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは何故か、必ず帰れるような気がした。"
+		:Frame		1
+	}
+	[Task700]
+	{
+		:Tasktype	"Message"
+		:Message	"みんなとの繋がりを、感じたから。"
+		:Frame		1
+	}
+	[Task710]
+	{
+		:Tasktype	"Message"
+		:Message	"優との繋がりを強く感じたから。"
+		:Frame		1
+	}
+//5pb.松--イベント絵から立ち絵と背景を通常表示。XYU02Fを通常背景として使用。--
+	[Task720]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task730]
+	{
+		:Tasktype		"Sprite"
+		:Texture		389	//	置換しました<<ev_xyu02f>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			0
+		:FadeWait		0
+		:CGFlag			183
+	}
+//☆ライトは暫定。
+	[Task740]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	165,165,165,255
+		:Ambient	165,165,165,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ優私服：２／３
+	[Task750]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：1：2
+		:Animation		0,0
+		:Rot		0
+		:Fade		0
+	}
+	[Task760]
+	{
+		:Tasktype		"SpriteDeleteBG"
+		:SpriteNumber	387	//	置換しました<<ev_xyu02d>>
+		:FadeWait		1
+	}
+	[Task770]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task780]
+	{
+		:Tasktype	"Message"
+		:Message	"その繋がりは、お互いを一気に近づける。"
+		:Frame		1
+	}
+	[Task790]
+	{
+		:Tasktype	"Message"
+		:Message	"お互いの想いが近づく。"
+		:Frame		1
+	}
+	[Task800]
+	{
+		:Tasktype	"Message"
+		:Message	"目の前に優の顔があった……。"
+		:Frame		1
+	}
+	[Task810]
+	{
+		:Tasktype	"Message"
+		:Message	"「……優」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task820]
+	{
+		:Tasktype	"Message"
+		:Message	"「少年……」"
+		:Character	4		//優
+		:Voice	65	//	置換しました<<sy07_yu008e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+//ＡＮ優私服目閉じ
+	[Task830]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name		"優私服"
+		:Eye			1
+		:Animation		0,0
+	}
+	[Task840]
+	{
+		:Tasktype	"Message"
+		:Message	"優は身体の力を抜いて、ぼくに身をゆだねる……。"
+		:Frame		1
+	}
+	[Task850]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは顔を近づける……。"
+		:Frame		1
+	}
+	[Task860]
+	{
+		:Tasktype	"Message"
+		:Message	"やがて……。"
+		:Frame		1
+	}
+	[Task870]
+	{
+		:Tasktype	"Message"
+		:Message	"そっと唇が触れあう……。"
+		:Frame		1
+	}
+//中央から広がるワイプで画面ホワイト。
+	[Task880]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task890]
+	{
+		:Tasktype		"FadeOut"
+		:Type			9
+		:Color			255,255,255,255	//Black
+		:Time			90
+		:SpriteDelete	1
+	}
+	[Task900]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task910]
+	{
+		:Tasktype	"Message"
+		:Message	"その瞬間。光が生まれ、弾けた……。"
+		:Frame		1
+	}
+//画面ホワイト
+	[Task920]
+	{
+		:Tasktype	"Message"
+		:Message	"「ＩａｍＹＯＵ」"
+		:Character	4		//優
+		:Voice	66	//	置換しました<<sy07_yu009e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task930]
+	{
+		:Tasktype	"Message"
+		:Message	"「私はあなた」"
+		:Character	4		//優
+		:Voice	67	//	置換しました<<sy07_yu010e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task940]
+	{
+		:Tasktype	"Message"
+		:Message	"「あなたは私」"
+		:Character	4		//優
+		:Voice	74	//	置換しました<<sy07_yu011e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task950]
+	{
+		:Tasktype	"Message"
+		:Message	"「『ＹＯＵａｒｅｍｅ』」"
+		:Character	4		//優
+		:Voice	75	//	置換しました<<sy07_yu012e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task960]
+	{
+		:Tasktype	"Message"
+		:Message	"「独りぼっちじゃない」"
+		:Character	4		//優
+		:Voice	76	//	置換しました<<sy07_yu013e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+//☆ＥＣＧ※新規　抱き合う優と少年/レムリア遺跡中（※私服）
+	[Task970]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-デフォルト停止時間60f-
+	[Task980]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+	[Task990]
+	{
+		:Tasktype		"Sprite"
+		:Texture		390	//	置換しました<<ev_xyu03a>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			0
+		:FadeWait		0
+		:CGFlag			187
+	}
+	[Task1000]
+	{
+		:Tasktype		"FadeIn"
+		:Type			10
+		:Color			255,255,255,255	//Black
+		:Time			30
+		:SpriteDelete	0
+	}
+	[Task1010]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+//5pb.-19:ハイルミッテル（治癒）-
+	[Task1020]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		36	//	置換しました<<bgm19>>
+	}
+	[Task1030]
+	{
+		:Tasktype	"Message"
+		:Message	"気が付くと、ぼく達はレムリア遺跡の中で抱き合っていた。"
+		:Frame		1
+	}
+	[Task1040]
+	{
+		:Tasktype	"Message"
+		:Message	"お互いの存在を確かめ合うように。"
+		:Frame		1
+	}
+	[Task1050]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくと優は繋がっていた。"
+		:Frame		1
+	}
+	[Task1060]
+	{
+		:Tasktype	"Message"
+		:Message	"見えない紐で……。"
+		:Frame		1
+	}
+	[Task1070]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくたちがここに戻れたのは、沙羅、武、つぐみ、空、みんなとの繋がりがあったからに思えた。"
+		:Frame		1
+	}
+	[Task1080]
+	{
+		:Tasktype	"Message"
+		:Message	"家族、兄妹のように血の繋がりがあっても、恋人、友人のように血の繋がりがなくても……。"
+		:Frame		1
+	}
+	[Task1090]
+	{
+		:Tasktype	"Message"
+		:Message	"人と人を繋ぐものは、みな同じ、見えない紐なのかもしれない……。"
+		:Frame		1
+	}
+	[Task1100]
+	{
+		:Tasktype	"Message"
+		:Message	"細く儚く切れやすい、ただ一本の見えない紐……。"
+		:Frame		1
+	}
+	[Task1110]
+	{
+		:Tasktype	"Message"
+		:Message	"想いという紐……。"
+		:Frame		1
+	}
+	[Task1120]
+	{
+		:Tasktype	"Message"
+		:Message	"だから人は大切にするんだ……。"
+		:Frame		1
+	}
+	[Task1130]
+	{
+		:Tasktype	"Message"
+		:Message	"大切にしなくちゃいけないんだ……。"
+		:Frame		1
+	}
+	[Task1140]
+	{
+		:Tasktype	"Message"
+		:Message	"細く儚く切れやすい、ただ一本の紐を……。"
+		:Frame		1
+	}
+	[Task1150]
+	{
+		:Tasktype	"Message"
+		:Message	"この愛しく、暖かい繋がりを……。"
+		:Frame		1
+	}
+	[Task1160]
+	{
+		:Tasktype	"Message"
+		:Message	"たとえ、目に見えなくても……。"
+		:Frame		1
+	}
+	[Task1170]
+	{
+		:Tasktype	"Message"
+		:Message	"たしかにある絆という、見えない紐を……。"
+		:Frame		1
+	}
+//☆ＢＧ加減圧室の中(消灯）
+//☆井筒：背景ＢＧ指定がおかしいので変更：レムリア遺跡前
+	[Task1180]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task1190]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			30
+		:SpriteDelete	1
+	}
+	[Task1200]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	42	//	置換しました<<bg25aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task1210]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task1220]
+	{
+		:Tasktype	"Message"
+		:Message	"その後、ぼく達はみんなの無事を確かめに制御室へむかった。"
+		:Frame		1
+	}
+//☆生体反応の前に制御室BG
+//☆ＢＧ加減圧室の中(消灯）
+//☆井筒：背景ＢＧ指定がおかしいので変更：制御室
+	[Task1230]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task1240]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task1250]
+	{
+		:Tasktype	"Sprite"
+		:Texture	16	//	置換しました<<bg10aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task1260]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+	[Task1270]
+	{
+		:Tasktype	"TimeWait"
+		:Time		30
+	}
+//ＴＣＧ生体反応増える。
+	[Task1280]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		172	//	置換しました<<ibg17c>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task1290]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	111	//	置換しました<<bg_black>>
+		:Number		0
+		:Time		12
+		:Param		640,360,0,0,1
+		:Param2		640,360,140,0,1
+		:Priority	2
+		:EndDelete	0
+		:EndWait	1
+	}
+	[Task1300]
+	{
+		:Tasktype	"Message"
+		:Message	"『生体反応：２』"
+		:WindowType		3
+		:Position		250,200
+		:Frame			-1
+		:FontScale		1.5
+		:ChangingPage	1
+	}
+	[Task1310]
+	{
+		:Tasktype		"Sprite"
+		:Texture		173	//	置換しました<<ibg17d>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			0
+		:FadeWait		0
+	}
+	[Task1320]
+	{
+		:Tasktype		"SpriteDeleteBG"
+		:SpriteNumber	172	//	置換しました<<ibg17c>>
+		:Time			18
+		:FadeWait		1
+	}
+	[Task1330]
+	{
+		:Tasktype	"Message"
+		:Message	"『生体反応：３』"
+		:WindowType		3
+		:Position		250,200
+		:Frame			-1
+		:FontScale		1.5
+		:ChangingPage	1
+	}
+	[Task1340]
+	{
+		:Tasktype		"Sprite"
+		:Texture		174	//	置換しました<<ibg17e>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task1350]
+	{
+		:Tasktype		"SpriteDelete"
+		:SpriteNumber	173	//	置換しました<<ibg17d>>
+		:Time			18
+		:FadeWait		1
+	}
+	[Task1360]
+	{
+		:Tasktype	"Message"
+		:Message	"『生体反応：４』"
+		:WindowType		3
+		:Position		250,200
+		:Frame			-1
+		:FontScale		1.5
+		:ChangingPage	1
+	}
+	[Task1370]
+	{
+		:Tasktype		"Sprite"
+		:Texture		175	//	置換しました<<ibg17f>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task1380]
+	{
+		:Tasktype		"SpriteDelete"
+		:SpriteNumber	174	//	置換しました<<ibg17e>>
+		:Time			18
+		:FadeWait		1
+	}
+	[Task1390]
+	{
+		:Tasktype	"Message"
+		:Message	"『生体反応：５』"
+		:WindowType		3
+		:Position		250,200
+		:Frame			-1
+		:FontScale		1.5
+		:ChangingPage	1
+	}
+	[Task1400]
+	{
+		:Tasktype		"Sprite"
+		:Texture		176	//	置換しました<<ibg17g>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task1410]
+	{
+		:Tasktype		"SpriteDelete"
+		:SpriteNumber	175	//	置換しました<<ibg17f>>
+		:Time			18
+		:FadeWait		1
+	}
+	[Task1420]
+	{
+		:Tasktype	"Message"
+		:Message	"『生体反応：６』"
+		:WindowType		3
+		:Position		250,200
+		:Frame			-1
+		:FontScale		1.5
+		:ChangingPage	1
+	}
+	[Task1430]
+	{
+		:Tasktype		"Sprite"
+		:Texture		177	//	置換しました<<ibg17h>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task1440]
+	{
+		:Tasktype		"SpriteDelete"
+		:SpriteNumber	176	//	置換しました<<ibg17g>>
+		:Time			18
+		:FadeWait		1
+	}
+	[Task1450]
+	{
+		:Tasktype	"Message"
+		:Message	"『生体反応：７』"
+		:WindowType		3
+		:Position		250,200
+		:Frame			-1
+		:FontScale		1.5
+		:ChangingPage	1
+	}
+	[Task1460]
+	{
+		:Tasktype		"Sprite"
+		:Texture		178	//	置換しました<<ibg17i>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task1470]
+	{
+		:Tasktype		"SpriteDelete"
+		:SpriteNumber	177	//	置換しました<<ibg17h>>
+		:Time			18
+		:FadeWait		1
+	}
+	[Task1480]
+	{
+		:Tasktype	"Message"
+		:Message	"『生体反応：８』"
+		:WindowType		3
+		:Position		250,275
+		:Frame			-1
+		:FontScale		1.5
+		:ChangingPage	1
+	}
+	[Task1490]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task1500]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	111	//	置換しました<<bg_black>>
+		:Number		0
+		:Time		12
+		:Param		640,360,140,0,1
+		:Param2		640,360,0,0,1
+		:Priority	2
+		:EndDelete	0
+		:EndWait	1
+	}
+	[Task1510]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number		0
+		:EndWait	0
+	}
+	[Task1520]
+	{
+		:Tasktype		"Sprite"
+		:Texture		16	//	置換しました<<bg10aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			0
+		:FadeWait		0
+	}
+	[Task1530]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	175,175,235,255
+		:Ambient	180,170,210,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ優私服：２／３
+	[Task1540]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：2：6
+		:Animation		1,5
+		:Rot		0
+		:Fade		0
+	}
+	[Task1550]
+	{
+		:Tasktype		"SpriteDelete"
+		:SpriteNumber	178	//	置換しました<<ibg17i>>
+		:Time			30
+		:FadeWait		1
+	}
+	[Task1560]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task1570]
+	{
+		:Tasktype	"Message"
+		:Message	"「見て、みんなが、みんなが戻って来てる！」"
+		:Character	4		//優
+		:Voice	7381	//	置換しました<<sy07_yu014>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+	[Task1580]
+	{
+		:Tasktype	"Message"
+		:Message	"「ほんとだ！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1590]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくらは顔を見合わせ、喜んだ。"
+		:Frame		1
+	}
+//☆ＣＨ全消し
+	[Task1600]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1 
+		:Fade		20 
+	}
+//☆ＣＨ空：１／２
+//☆ＣＨ優私服：２／２
+	[Task1610]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	30
+		[Character0]
+		{
+			:Name	"空"
+			:Preset	13
+//★ＣＨ空：2：6
+		:Animation		1,5
+			:Rot	0
+			:Quake	1
+		}
+		[Character1]
+		{
+			:Name	"優私服"
+			:Preset	10
+//★ＣＨ優私服：2：6
+		:Animation		1,5
+			:Rot	0
+			:Quake	1
+		}
+	}
+	[Task1620]
+	{
+		:Tasktype	"Message"
+		:Message	"「皆さんご無事でしたか？」"
+		:Character	3		//空
+		:Voice	10471	//	置換しました<<sy07_so000>>
+		:ModelName		"空","空２","空３"
+		:Frame		1
+	}
+//☆ＡＮ優私服：7：2
+	[Task1630]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		6,0
+	}
+	[Task1640]
+	{
+		:Tasktype	"Message"
+		:Message	"「空も、無事だったんだ！」"
+		:Character	4		//優
+		:Voice	7382	//	置換しました<<sy07_yu015>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+	[Task1650]
+	{
+		:Tasktype	"Message"
+		:Message	"「他のみんなも無事なんだよね！？」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1660]
+	{
+		:Tasktype	"Message"
+		:Message	"「はい、もちろんです。皆さん、お二人が来るのをヒンメルでお待ちしていますよ」"
+		:Character	3		//空
+		:Voice	10472	//	置換しました<<sy07_so001>>
+		:ModelName		"空","空２","空３"
+		:Frame		1
+	}
+//☆ＡＮ優私服：7：5
+	[Task1670]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		6,4
+	}
+	[Task1680]
+	{
+		:Tasktype	"Message"
+		:Message	"ヒンメル……優のお母さんのいる所……。"
+		:Frame		1
+	}
+	[Task1690]
+	{
+		:Tasktype	"Message"
+		:Message	"「優…………ぼくらも行こうか。全てを確かめる為に」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ優私服：1：5
+	[Task1700]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,4
+	}
+	[Task1710]
+	{
+		:Tasktype	"Message"
+		:Message	"「……うん、そうよね、お母さんに全てを聞かなきゃ気が収まらないもんね」"
+		:Character	4		//優
+		:Voice	7383	//	置換しました<<sy07_yu016>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//☆ＡＮ優私服：1：4
+	[Task1720]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,3
+	}
+	[Task1730]
+	{
+		:Tasktype	"Message"
+		:Message	"「それが納得できる答えじゃなきゃ、ぶん殴ってやるわ！」"
+		:Character	4		//優
+		:Voice	7384	//	置換しました<<sy07_yu017>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+	[Task1740]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうだね、うん、いつもの優だ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ優私服：1：6
+	[Task1750]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,5
+	}
+	[Task1760]
+	{
+		:Tasktype	"Message"
+		:Message	"「なによそれ？」"
+		:Character	4		//優
+		:Voice	7385	//	置換しました<<sy07_yu018>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+	[Task1770]
+	{
+		:Tasktype	"Message"
+		:Message	"「ううん、なんでもないよ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ空：1：1
+	[Task1780]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task1790]
+	{
+		:Tasktype	"Message"
+		:Message	"「それではヒンメルへ御案内します」"
+		:Character	3		//空
+		:Voice	10473	//	置換しました<<sy07_so002>>
+		:ModelName		"空","空２","空３"
+		:Frame		1
+	}
+//☆ＢＧ関係者通路（点灯）
+	[Task1800]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-デフォルト停止時間60f-
+	[Task1810]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+//5pb.-フェードアウト黒-
+	[Task1820]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255		//Black
+		:SpriteDelete	1
+	}
+	[Task1830]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture		58	//	置換しました<<bg35aaa>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task1840]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task1850]
+	{
+		:Tasktype	"Message"
+		:Message	"空の案内で、ぼくらはヒンメルという場所へ向かった。"
+		:Frame		1
+	}
+//☆ＢＧヒンメル扉（何もない壁)
+	[Task1860]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task1870]
+	{
+		:Tasktype	"Sprite"
+		:Texture	81	//	置換しました<<bg45naa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task1880]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	105,100,120,255
+		:Ambient	105,100,120,255
+		:Spec		255,255,255,255
+		:Angle		-8,0
+	}
+//☆ＣＨ優私服：２／３
+	[Task1890]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：1：5
+		:Animation		0,4
+		:Rot		0
+		:Fade		20
+	}
+	[Task1900]
+	{
+		:Tasktype		"SpriteDeleteBG"
+		:SpriteNumber	58	//	置換しました<<bg35aaa>>
+		:FadeWait		1
+	}
+	[Task1910]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task1920]
+	{
+		:Tasktype	"Message"
+		:Message	"「こちらです」"
+		:Character	3		//空
+		:Voice	10474	//	置換しました<<sy07_so003>>
+		:ModelName		"空","空２","空３"
+		:Frame		1
+	}
+	[Task1930]
+	{
+		:Tasktype	"Message"
+		:Message	"そこは、あの少女が消えた扉の前だった。"
+		:Frame		1
+	}
+	[Task1940]
+	{
+		:Tasktype	"Message"
+		:Message	"優は、ぼくの手をぎゅっと握った。"
+		:Frame		1
+	}
+	[Task1950]
+	{
+		:Tasktype	"Message"
+		:Message	"優は真実を知るのが怖いのかもしれない……。"
+		:Frame		1
+	}
+	[Task1960]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは、優の手をぎゅっと握り返す。"
+		:Frame		1
+	}
+	[Task1970]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、ゆっくりとヒンメルの扉が開く……。"
+		:Frame		1
+	}
+//☆ＥＣＧ※新規　ヒンメル2034内、装置の前に立つ優春のシルエット
+	[Task1980]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task1990]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255		//Black
+		:Time			120
+		:SpriteDelete	1
+	}
+	[Task2000]
+	{
+		:Tasktype		"Sprite"
+		:Texture		391	//	置換しました<<ev_xyu04a>>
+		:Position		640,0
+		:Priority		3
+		:FadeIn			0
+		:FadeWait		0
+	}
+//5pb.-フェードイン黒-
+	[Task2010]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255		//Black
+		:Time			120
+		:SpriteDelete	1
+	}
+	[Task2020]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task2030]
+	{
+		:Tasktype	"Message"
+		:Message	"薄暗い広い空間が目の前に広がる……。"
+		:Frame		1
+	}
+	[Task2040]
+	{
+		:Tasktype	"Message"
+		:Message	"中央で、青白く輝く月のような光が浮かんでいるように見えた……。"
+		:Frame		1
+	}
+	[Task2050]
+	{
+		:Tasktype	"Message"
+		:Message	"その月は、優しく冷たい光を放っていた……。"
+		:Frame		1
+	}
+	[Task2060]
+	{
+		:Tasktype	"Message"
+		:Message	"その光の下で、女性のシルエットが逆光に浮かんでいた……。"
+		:Frame		1
+	}
+	[Task2070]
+	{
+		:Tasktype	"Message"
+		:Message	"そこに居たのは……。"
+		:Frame		1
+	}
+//優ルートＥＮＤ
+//エンディング
+//エンディング後、生体反応、０、１、２でブレつづける演出
+//ココと武の生存未確認の意味
+//その後
+//優エピローグへ
+//5pb.-ファイル終了時基本セット-
+	[Task2080]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task2090]
+	{
+		:Tasktype		"SpriteMove"
+		:SpriteNumber	391	//	置換しました<<ev_xyu04a>>
+		:Position		640,1080,2
+		:Time			120
+		:Wait			0
+	}
+	[Task2100]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			120
+		:SpriteDelete	1
+	}
+
+//5pb.松--生体反応＆エンドムービーここから--
+	[Task2110]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			0
+		:SpriteDelete	0
+	}
+	[Task2120]
+	{
+		:Tasktype	"SeStop"
+		:Div		0
+	}
+	[Task2130]
+	{
+		:Tasktype	"BgmStop"
+		:Div		0
+	}
+	[Task2140]
+	{
+		:Tasktype	"BgmPlay"
+		:Div		0
+		:BGM		44	//	置換しました<<bgm23intro>>
+	}
+	[Task2150]
+	{
+		:Tasktype	"SystemLock"
+
+	}
+	[Task2160]
+	{
+		:Tasktype	"MoviePlay"
+		:Movie		14
+		:EndWait	1
+		:Skip		1
+	}
+	[Task2170]
+	{
+		:Tasktype	"SystemUnlock"
+
+	}
+	[Task2180]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			0
+		:SpriteDelete	1
+	}
+//5pb.松--生体反応＆エンドムービーここまで--
+	[Task2190]
+	{
+		:Tasktype	"SeStop"
+		:Div		0
+	}
+	[Task2200]
+	{
+		:Tasktype	"BgmStop"
+		:Div		0
+	}
+	[Task2210]
+	{
+		:Tasktype	"SystemLock"
+
+	}
+	[Task2220]
+	{
+		:Tasktype	"MoviePlay"
+		:Movie		18
+		:EndWait	1
+		:Skip		1
+	}
+	[Task2230]
+	{
+		:Tasktype	"SystemUnlock"
+
+	}
+//5pb.--初期化コマンド--
+	[Task2240]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitTag"
+	}
+//⇒SY0E
+//5pb.-ファイル移動-
+	[Task2250]
+	{
+		:Tasktype	"NextScene"
+		:NextScene	"SY0E"
+	}
+//アクアシステムデフォルトスクリプト--ここから--
+	[Task2260]
+	{
+		:Tasktype		"End"
+	}
+}
+//アクアシステムデフォルトスクリプト--ここまで--
+//<EOF>
+//////////////////////////////////////////////////////////////////////////////////////////////////////

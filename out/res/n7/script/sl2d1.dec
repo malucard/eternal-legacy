@@ -1,0 +1,764 @@
+[00000014] 10: 
+[00000015]  f: removeBG 0 0 2
+[0000001f] 10: 
+[00000020] 10: bgload 00000000 BG01A 0 3
+[0000002d] 10: 
+[0000002e]  8: playSFX SE108 1
+[00000038] 10: 
+[00000039] 19: 
+[0000003a] ff: text 00
+{textColor 0 2}As I wake up, I kick the covers off the bed with all my strength. 
+{textColor 0 2}Still half asleep, I blankly stare into space. 
+{textColor 0 2}It's a familiar... ceiling... 
+{textColor 0 2}I realize I'm freezing, my body soaked with sweat all over. 
+{textColor 0 2}I take a deep breath and slowly exhale. 
+{textColor 0 2}The warm scent of wood goes through my nose and fills my head. 
+{textColor 0 2}It takes me three more breaths until... 
+{textColor 0 0}【Makoto】 "Huh...?" 
+{textColor 0 0}【Makoto】 "T-This is..." 
+{textColor 0 0}【Makoto】 "The lodge..." 
+{textColor 0 0}【Makoto】 "... This is the lodge, isn't it!?" 
+
+
+[0000003d] 10: 
+[0000003e]  6: playBGM 14
+[00000042] 10: 
+[00000043] 19: 
+[00000044] ff: text 01
+{textColor 0 2}I quickly jump out of the bed. 
+{textColor 0 2}I stand in the center of the room, and look around. 
+{textColor 0 2}(There's no mistaking it...) 
+{textColor 0 2}(This is my bedroom!) 
+{textColor 0 2}What's going on? 
+{textColor 0 2}... That's right.  {textColor 0 2}I definitely followed Saki to Viewpoint Park.  {textColor 0 2}And then Saki plunged into the sea before my very eyes. 
+{textColor 0 2}(... A dream?  Was that a "dream"...?) 
+{textColor 0 2}However... for a dream, I remember it quite clearly.  Also, I don't just remember that moment. 
+{textColor 0 2}I have memories of what happened before that, and the day before that, and the day before that one... 
+{textColor 0 2}One by one, I remember the various events that happened during the Camp. 
+{textColor 0 2}――That's wrong! 
+{textColor 0 2}――That's wrong! What the hell am I saying!? 
+{textColor 0 2}――That wasn't a "dream"!! 
+{textColor 0 2}――There's no way in hell that was a "dream"... 
+
+
+[00000047] 10: 
+[00000048]  8: playSFX SE000 1
+[00000052] 10: 
+[00000053] 19: 
+[00000054] ff: text 02
+{textColor 0 2}Suddenly, I hear a sound as violent as a gunshot! 
+{textColor 0 2}I turn around, and standing there, I see...  {textColor 0 2}I see... 
+
+
+[00000057] 10: 
+[00000058]  f: removeBG 0 0 3
+[00000062] 10: 
+[00000063]  c: createPanBG 00000000 EV_YU01 2 4 0 0 0
+[00000073] 10: 
+[00000074]  e: movePanBG 0 4 0 16
+[0000007c] 10: 
+[0000007d]  b: playVoice SL2D1000
+[00000087] 10: 
+[00000088] 19: 
+[00000089] ff: text 03
+{textColor 1 4}【Yuka】 "Wh... What's going on!?" 
+
+
+[0000008c] 10: 
+[0000008d]  b: playVoice SL2D1001
+[00000097] 10: 
+[00000098] 19: 
+[00000099] ff: text 04
+{textColor 1 4}【Yuka】 "Why...!?" 
+{textColor 0 2}It's impossible. This is impossible. 
+{textColor 0 2}I quickly look at my watch. 
+{textColor 0 2}"1 MON 09:19 A.M." 
+{textColor 0 2}――1st. 
+{textColor 0 2}――1st? 
+{textColor 0 2}――1st??? 
+{textColor 0 0}【Makoto】 "THE FIRST!!!!!!!!?" 
+{textColor 1 4}【Yuka】 "...?" 
+{textColor 0 2}What's the meaning of this? 
+{textColor 0 2}What happened? 
+{textColor 0 2}Why am I here? 
+{textColor 0 2}My mind is thrown into extreme confusion. 
+{textColor 0 0}【Makoto】 "S-Sorry, Yuka..." 
+{textColor 0 2}I brush past Yuka and head for the living room. 
+
+
+[0000009c] 10: 
+[0000009d]  d: removeD 0
+[000000a1] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 26
+[000000ad] 10: 
+[000000ae] 10: bgload 00000000 BG02A 4 1
+[000000bb] 10: 
+[000000bc] 19: 
+[000000bd] ff: text 05
+{textColor 0 2}No one's in the room yet. 
+{textColor 0 2}Before long, the door to the living room slowly opens. 
+
+
+[000000c0] 10: 
+[000000c1] 19: 
+[000000c2] ff: text 06
+{textColor 0 2}The one who comes in... is Haruka. 
+
+
+[000000c5] 10: 
+[000000c6] 11: fgload 0 00000000 HA01CA 1 3
+[000000d6] 10: 
+[000000d7] 19: 
+[000000d8] ff: text 07
+{textColor 0 0}【Makoto】 "Good morning." 
+
+
+[000000db] 10: 
+[000000dc] 11: fgload 0 00000000 HA12CA 1 3
+[000000ec] 10: 
+[000000ed] 19: 
+[000000ee] ff: text 08
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}I try waiting several seconds for a response. 
+
+
+[000000f1] 10: 
+[000000f2] 12: removeFG 0 3
+[000000f9] 10: 
+[000000fa] 19: 
+[000000fb] ff: text 09
+{textColor 0 2}But Haruka completely ignores me and quickly disappears into the kitchen, as if nothing had happened. 
+
+
+[000000fe] 10: 
+[000000ff]  f: removeBG 0 0 2
+[00000109] 10: 
+[0000010a]  c: createPanBG 00000000 EV_HA01 2 4 0 0 3
+[0000011a] 10: 
+[0000011b]  e: movePanBG 0 4 0 16
+[00000123] 10: 
+[00000124] 19: 
+[00000125] ff: text 0a
+{textColor 0 2}I follow her and try to repeat myself. 
+{textColor 0 0}【Makoto】 "Good morning." 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[00000128] 10: 
+[00000129]  8: playSFX SE104 1
+[00000133] 10: 
+[00000134] 19: 
+[00000135] ff: text 0b
+{textColor 0 2}Without a word, she turns the sink faucet, filling her glass cup with water. 
+{textColor 0 2}With a tiny sound, she drinks the entire cup in one large gulp. 
+
+
+[00000138] 10: 
+[00000139]  9: stopSFX
+[0000013a] 10: 
+[0000013b] 19: 
+[0000013c] ff: text 0c
+{textColor 0 0}【Makoto】 "Umm, Haruka?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}Haruka doesn't answer. 
+{textColor 0 2}She remains silent as she stares at the drops of water falling from the faucet. 
+
+
+[0000013f] 10: 
+[00000140]  f: removeBG 0 0 2
+[0000014a] 10: 
+[0000014b] 19: 
+[0000014c] ff: text 0d
+{textColor 0 2}... This is all exactly the same as the scene I once experienced. 
+{textColor 0 2}(Which means... if what I'm thinking is correct, then...) 
+
+
+[0000014f] 10: 
+[00000150] 10: bgload 00000000 BG02A 0 1
+[0000015d] 10: 
+[0000015e] 19: 
+[0000015f] ff: text 0e
+{textColor 0 2}It's at this point that Okuhiko shows up, entering the living room while rubbing the sleep out of his eyes. 
+
+
+[00000162] 10: 
+[00000163] 11: fgload 0 00000000 OK01CA 1 3
+[00000173] 10: 
+[00000174]  b: playVoice SL2D1002
+[0000017e] 10: 
+[0000017f] 19: 
+[00000180] ff: text 0f
+{textColor 0 0}【Okuhiko】 "Hey!" 
+
+
+[00000183] 10: 
+[00000184] 11: fgload 0 00000000 OK02CA 1 3
+[00000194] 10: 
+[00000195]  b: playVoice SL2D1003
+[0000019f] 10: 
+[000001a0] 19: 
+[000001a1] ff: text 10
+{textColor 0 0}【Okuhiko】 "Huh? I'm not... interrupting something, am I?" 
+{textColor 0 2}He asks Haruka this as he ignores my presence. 
+
+
+[000001a4] 10: 
+[000001a5] 11: fgload 0 00000000 OK07CA 1 3
+[000001b5] 10: 
+[000001b6]  b: playVoice SL2D1004
+[000001c0] 10: 
+[000001c1] 19: 
+[000001c2] ff: text 11
+{textColor 0 0}【Okuhiko】 "... Nah, there's no way it's like that. Ha ha ha!" 
+
+
+[000001c5] 10: 
+[000001c6] 12: removeFG 0 3
+[000001cd] 10: 
+[000001ce] 19: 
+[000001cf] ff: text 12
+{textColor 0 2}He glares at me as he laughs. His eyes are filled with scorn... 
+{textColor 0 2}(It's the same. Everything's exactly the same...) 
+{textColor 0 2}(So I alone really did go back in time...) 
+{textColor 0 2}(If that's the case... then Saki's still alive...?) 
+{textColor 0 2}(No, wait. It's too early to be jumping to conclusions, right?) 
+{textColor 0 2}(... All right. I'll try to confirm if today really is the 1st...) 
+
+
+[000001d2] 10: 
+[000001d3]  7: stopBGM
+[000001d4] 10: 
+[000001d5]  f: removeBG 0 0 2
+[000001df] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 1
+[000001ea] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 1
+[000001f5] 10: 
+[000001f6] 1b: dayIntro 00000000 BGCAL1.cps
+[000001fd] 10: 
+[000001fe]  6: playBGM 18
+[00000203] 10: 
+[00000204] 19: 
+[00000205] ff: text 13
+{textColor 0 2}With that thought in my mind, I try my best to let this day go by as I remember it.  {textColor 0 2}Yuka's terrible breakfast. 
+{textColor 0 2}My conversation with Kurumi, who accidentally delivered the pizza to us instead of Saki.  {textColor 0 2}Going to the tennis court in the afternoon... 
+{textColor 0 2}The whole time, I continue to think only of Saki. 
+{textColor 0 2}For the time being, I have no choice but to fret about her. 
+{textColor 0 2}But I can't make any careless actions. 
+{textColor 0 2}If I take selfish actions, history might change. 
+{textColor 0 2}I wouldn't like it if that resulted in us not meeting Saki. 
+{textColor 0 2}Before long, the sunset arrives...  
+
+[00000208] 10: 
+[00000209] 10: bgload 00000000 BG29E 0 1
+[00000216] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 17
+[00000222] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 18
+[0000022e] 10: 
+[0000022f] 17: showClock
+[00000230] 10: 
+[00000231] 19: 
+[00000232] ff: text 14
+{textColor 0 2}... We finally arrive at Lunabeach.  {textColor 0 2}We're also able to meet Izumi-san again. 
+{textColor 0 2}All that's left is... 
+
+
+[00000235] 10: 
+[00000236]  7: stopBGM
+[00000237] 10: 
+[00000238]  8: playSFX SE004 1
+[00000242] 10: 
+[00000243]  b: playVoice SL2D1005
+[0000024d] 10: 
+[0000024e] 19: 
+[0000024f] ff: text 15
+{textColor 1 6}【Saki】 "My name is 'Asakura'. Is the manager here?" 
+
+
+[00000252] 10: 
+[00000253]  9: stopSFX
+[00000254] 10: 
+[00000255]  6: playBGM 3
+[00000259] 10: 
+[0000025a] 19: 
+[0000025b] ff: text 16
+{textColor 0 2}I turn around in surprise, and unintentionally cry. 
+{textColor 0 2}It's Saki... She's alive right now, before my eyes... 
+
+
+[0000025e] 10: 
+[0000025f]  b: playVoice SL2D1006
+[00000269] 10: 
+[0000026a] 19: 
+[0000026b] ff: text 17
+{textColor 1 8}【Izumi】 "Yes... That would be me..." 
+
+
+[0000026e] 10: 
+[0000026f] 10: bgload 00000000 EV_SA01 0 1
+[0000027c] 10: 
+[0000027d]  b: playVoice SL2D1007
+[00000287] 10: 
+[00000288] 19: 
+[00000289] ff: text 18
+{textColor 1 6}【Saki】 "What's the meaning of this!?" 
+{textColor 0 2}Yep, that's Saki...  {textColor 0 2}That voice... is definitely Saki's... 
+
+
+[0000028c] 10: 
+[0000028d]  b: playVoice SL2D1008
+[00000297] 10: 
+[00000298] 19: 
+[00000299] ff: text 19
+{textColor 1 6}【Saki】 "Excuse me. My name is Saki Asakura. I'm from the Asakura summer house." 
+
+
+[0000029c] 10: 
+[0000029d]  b: playVoice SL2D1009
+[000002a7] 10: 
+[000002a8] 19: 
+[000002a9] ff: text 1a
+{textColor 1 8}【Izumi】 "So that's it... Thank you for your continued patronage..." 
+
+
+[000002ac] 10: 
+[000002ad]  b: playVoice SL2D1010
+[000002b7] 10: 
+[000002b8] 19: 
+[000002b9] ff: text 1b
+{textColor 1 6}【Saki】 "It's not like I always use this place... Where's the pizza that I ordered?" 
+
+
+[000002bc] 10: 
+[000002bd]  b: playVoice SL2D1011
+[000002c7] 10: 
+[000002c8] 19: 
+[000002c9] ff: text 1c
+{textColor 1 8}【Izumi】 "Huh? What are you talking about?" 
+
+
+[000002cc] 10: 
+[000002cd]  b: playVoice SL2D1012
+[000002d7] 10: 
+[000002d8] 19: 
+[000002d9] ff: text 1d
+{textColor 1 6}【Saki】 "My P-I-Z-Z-A! How many hours do you think I've been waiting for it!?" 
+
+
+[000002dc] 10: 
+[000002dd]  b: playVoice SL2D1013
+[000002e7] 10: 
+[000002e8] 19: 
+[000002e9] ff: text 1e
+{textColor 1 8}【Izumi】 "How many?" 
+
+
+[000002ec] 10: 
+[000002ed]  b: playVoice SL2D1014
+[000002f7] 10: 
+[000002f8] 19: 
+[000002f9] ff: text 1f
+{textColor 1 6}【Saki】 "Six hours, six goddamn hours! Just what kind of shop are you running here!?" 
+
+
+[000002fc] 10: 
+[000002fd]  b: playVoice SL2D1015
+[00000307] 10: 
+[00000308] 19: 
+[00000309] ff: text 20
+{textColor 0 0}【Okuhiko】 "Seems there's people out there with quite the free time on their hands." 
+
+
+[0000030c] 10: 
+[0000030d]  b: playVoice SL2D1016
+[00000317] 10: 
+[00000318] 19: 
+[00000319] ff: text 21
+{textColor 1 6}【Saki】 "I wasn't talking to you people." 
+
+
+[0000031c] 10: 
+[0000031d]  b: playVoice SL2D1017
+[00000327] 10: 
+[00000328] 19: 
+[00000329] ff: text 22
+{textColor 0 0}【Okuhiko】 "I wasn't talking to you either." 
+
+
+[0000032c] 10: 
+[0000032d]  b: playVoice SL2D1018
+[00000337] 10: 
+[00000338] 19: 
+[00000339] ff: text 23
+{textColor 1 6}【Saki】 "Don't talk until I say so! Got it!?" 
+{textColor 0 2}For some reason, I become happy.  {textColor 0 2}That's just like Saki... this is definitely Saki! 
+
+
+[0000033c] 10: 
+[0000033d]  b: playVoice SL2D1019
+[00000347] 10: 
+[00000348] 19: 
+[00000349] ff: text 24
+{textColor 1 6}【Saki】 "The hell's up with you? You've been staring at me this whole time with this strange grin... Stop doing things that are making me sick!" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000034c] 10: 
+[0000034d] 10: bgload 00000000 BG29E 0 1
+[0000035a] 10: 
+[0000035b] 19: 
+[0000035c] ff: text 25
+{textColor 0 2}――Should I tell her the whole truth? 
+{textColor 0 2}No, even if I do that, it'll probably be useless. 
+{textColor 0 2}There's absolutely no doubt that she wouldn't trust me. 
+{textColor 0 2}It's better if we're just close acquaintances. 
+{textColor 0 2}To Saki, I'm just... {textColor 0 2} nothing more than a complete stranger. 
+{textColor 0 2}Anyway, Saki's all right. That alone is enough. 
+
+
+[0000035f] 10: 
+[00000360] 11: fgload 1 00000000 IZ01AAD 0 3
+[00000370] 10: 
+[00000371]  b: playVoice SL2D1020
+[0000037b] 10: 
+[0000037c] 19: 
+[0000037d] ff: text 26
+{textColor 1 8}【Izumi】 "So, what did you do for those six hours?" 
+
+
+[00000380] 10: 
+[00000381] 11: fgload 1 00000000 SA05AAD 2 3
+[00000391] 10: 
+[00000392]  b: playVoice SL2D1021
+[0000039c] 10: 
+[0000039d] 19: 
+[0000039e] ff: text 27
+{textColor 1 6}【Saki】 "I waited, of course!" 
+
+
+[000003a1] 10: 
+[000003a2] 11: fgload 1 00000000 IZ01AAD 0 3
+[000003b2] 10: 
+[000003b3]  b: playVoice SL2D1022
+[000003bd] 10: 
+[000003be] 19: 
+[000003bf] ff: text 28
+{textColor 1 8}【Izumi】 "For six straight hours?" 
+
+
+[000003c2] 10: 
+[000003c3] 12: removeFG 1 3
+[000003ca] 10: 
+[000003cb] 11: fgload 1 00000000 SA04AAD 2 3
+[000003db] 10: 
+[000003dc]  b: playVoice SL2D1023
+[000003e6] 10: 
+[000003e7] 19: 
+[000003e8] ff: text 29
+{textColor 1 6}【Saki】 "Hell no! Even I don't have that kind of time!" 
+
+
+[000003eb] 10: 
+[000003ec]  b: playVoice SL2D1024
+[000003f6] 10: 
+[000003f7] 19: 
+[000003f8] ff: text 2a
+{textColor 1 6}【Saki】 "Even I, umm... umm... told it that. Yes. I told it to make do with just what was there." 
+
+
+[000003fb] 10: 
+[000003fc]  b: playVoice SL2D1026
+[00000406] 10: 
+[00000407] 19: 
+[00000408] ff: text 2b
+{textColor 1 6}【Saki】 "But it fully knew that I had ordered a pizza, even though it doesn't understand my language. So I didn't have any other choice but to play around and wait!" 
+{textColor 0 2}I see... Saki's talking about that puppy... 
+
+
+[0000040b] 10: 
+[0000040c] 12: removeFG 1 3
+[00000413] 10: 
+[00000414] 11: fgload 1 00000000 IZ01AAD 0 3
+[00000424] 10: 
+[00000425]  b: playVoice SL2D1027
+[0000042f] 10: 
+[00000430] 19: 
+[00000431] ff: text 2c
+{textColor 1 8}【Izumi】 "I see." 
+
+
+[00000434] 10: 
+[00000435] 11: fgload 0 00000000 KU10BAD 2 3
+[00000445] 10: 
+[00000446]  b: playVoice SL2D1028
+[00000450] 10: 
+[00000451] 19: 
+[00000452] ff: text 2d
+{textColor 1 7}【Kurumi】 "Onee-chan, you understand what she's saying?" 
+
+
+[00000455] 10: 
+[00000456] 11: fgload 1 00000000 IZ12AAD 0 3
+[00000466] 10: 
+[00000467]  b: playVoice SL2D1029
+[00000471] 10: 
+[00000472] 19: 
+[00000473] ff: text 2e
+{textColor 1 8}【Izumi】 "It's fine, it's fine. In times like this, all you have to do is 'that'." 
+
+
+[00000476] 10: 
+[00000477]  b: playVoice SL2D1030
+[00000481] 10: 
+[00000482] 19: 
+[00000483] ff: text 2f
+{textColor 1 7}【Kurumi】 "Huh? What do you mean?" 
+
+
+[00000486] 10: 
+[00000487] 11: fgload 1 00000000 IZ01AAD 0 3
+[00000497] 10: 
+[00000498]  b: playVoice SL2D1031
+[000004a2] 10: 
+[000004a3] 19: 
+[000004a4] ff: text 30
+{textColor 1 8}【Izumi】 "It can't be helped, so let's just hear her out for now." 
+
+
+[000004a7] 10: 
+[000004a8]  b: playVoice SL2D1032
+[000004b2] 10: 
+[000004b3] 19: 
+[000004b4] ff: text 31
+{textColor 1 8}【Izumi】 "These types just want to talk, then they go back home. Until then, just endure it... Okay?" 
+
+
+[000004b7] 10: 
+[000004b8] 11: fgload 0 00000000 KU05BAD 2 3
+[000004c8] 10: 
+[000004c9]  b: playVoice SL2D1033
+[000004d3] 10: 
+[000004d4] 19: 
+[000004d5] ff: text 32
+{textColor 1 7}【Kurumi】 "But why do we have to put up with it?" 
+
+
+[000004d8] 10: 
+[000004d9]  b: playVoice SL2D1034
+[000004e3] 10: 
+[000004e4] 19: 
+[000004e5] ff: text 33
+{textColor 1 8}【Izumi】 "Because there was a mistake in her delivery, so..." 
+
+
+[000004e8] 10: 
+[000004e9] 11: fgload 0 00000000 KU11BAD 2 3
+[000004f9] 10: 
+[000004fa]  b: playVoice SL2D1035
+[00000504] 10: 
+[00000505] 19: 
+[00000506] ff: text 34
+{textColor 1 7}【Kurumi】 "What!? Kurumi definitely delivered it!" 
+
+
+[00000509] 10: 
+[0000050a] 11: fgload 1 00000000 IZ05AAD 0 3
+[0000051a] 10: 
+[0000051b]  b: playVoice SL2D1036
+[00000525] 10: 
+[00000526] 19: 
+[00000527] ff: text 35
+{textColor 1 8}【Izumi】 "Don't shout. If you didn't make a mistake, then why did it end up like this?" 
+
+
+[0000052a] 10: 
+[0000052b] 11: fgload 0 00000000 KU04BAD 2 3
+[0000053b] 10: 
+[0000053c]  b: playVoice SL2D1037
+[00000546] 10: 
+[00000547] 19: 
+[00000548] ff: text 36
+{textColor 1 7}【Kurumi】 "You're terrible! Onee-chan, you're doubting Kurumi!" 
+
+
+[0000054b] 10: 
+[0000054c] 11: fgload 1 00000000 IZ06AAD 0 3
+[0000055c] 10: 
+[0000055d]  b: playVoice SL2D1038
+[00000567] 10: 
+[00000568] 19: 
+[00000569] ff: text 37
+{textColor 1 8}【Izumi】 "But she said it never arrived..." 
+
+
+[0000056c] 10: 
+[0000056d]  b: playVoice SL2D1039
+[00000577] 10: 
+[00000578] 19: 
+[00000579] ff: text 38
+{textColor 1 7}【Kurumi】 "It did too! Kurumi... delivered it to an 'Asakura-san'!" 
+
+
+[0000057c] 10: 
+[0000057d] 15: removeAllFG 3
+[00000581] 10: 
+[00000582] 11: fgload 0 00000000 SA04AAD 1 3
+[00000592] 10: 
+[00000593]  b: playVoice SL2D1040
+[0000059d] 10: 
+[0000059e] 19: 
+[0000059f] ff: text 39
+{textColor 1 6}【Saki】 "Don't talk until I say so!" 
+
+
+[000005a2] 10: 
+[000005a3] 12: removeFG 0 3
+[000005aa] 10: 
+[000005ab] 11: fgload 0 00000000 KU04BAD 1 3
+[000005bb] 10: 
+[000005bc]  b: playVoice SL2D1041
+[000005c6] 10: 
+[000005c7] 19: 
+[000005c8] ff: text 3a
+{textColor 1 7}【Kurumi】 "Kurumi did deliver it to 'Asakura-san'!" 
+
+
+[000005cb] 10: 
+[000005cc] 12: removeFG 0 3
+[000005d3] 10: 
+[000005d4] 11: fgload 0 00000000 SA05AAD 1 3
+[000005e4] 10: 
+[000005e5]  b: playVoice SL2D1042
+[000005ef] 10: 
+[000005f0] 19: 
+[000005f1] ff: text 3b
+{textColor 1 6}【Saki】 "Just what the hell does that mean!?" 
+{textColor 0 2}Hearing this exchange again makes me a little sentimental. 
+{textColor 0 2}It's very nostalgic... 
+{textColor 0 2}(Yeah, and this is the part where Yuka remembers Saki...) 
+
+
+[000005f4] 10: 
+[000005f5] 13: moveFG 0 2
+[000005fc] 10: 
+[000005fd] 11: fgload 1 00000000 YU11AAD 0 3
+[0000060d] 10: 
+[0000060e]  b: playVoice SL2D1043
+[00000618] 10: 
+[00000619] 19: 
+[0000061a] ff: text 3c
+{textColor 1 4}【Yuka】 "Saki... Could it be that you're THAT Saki Asakura?" 
+{textColor 0 2}Just as I thought... 
+
+
+[0000061d] 10: 
+[0000061e] 15: removeAllFG 3
+[00000622] 10: 
+[00000623] 19: 
+[00000624] ff: text 3d
+{textColor 0 2}I feel conviction welling up within me as I watch Saki and Yuka's reunion unfold. 
+{textColor 0 2}Time is certainly repeating itself. There's no doubt about it. 
+{textColor 0 2}But why...? 
+{textColor 0 2}No, more importantly... April 6th is in five days.  {textColor 0 2}Saki will jump from the tip of the cape at Viewpoint Park... 
+{textColor 0 2}When I think that, Izumi-san forces her way through Yuka and Saki. 
+
+
+[00000627] 10: 
+[00000628] 11: fgload 1 00000000 IZ01AAD 0 3
+[00000638] 10: 
+[00000639]  b: playVoice SL2D1052
+[00000643] 10: 
+[00000644] 19: 
+[00000645] ff: text 3e
+{textColor 1 8}【Izumi】 "Well then, I'll treat you to dinner tonight. It'll be a celebration for your reunion!" 
+
+
+[00000648] 10: 
+[00000649] 11: fgload 0 00000000 YU11AAD 2 3
+[00000659] 10: 
+[0000065a]  b: playVoice SL2D1053
+[00000664] 10: 
+[00000665] 19: 
+[00000666] ff: text 3f
+{textColor 1 4}【Yuka】 "Huh? No way, that's too much." 
+
+
+[00000669] 10: 
+[0000066a] 12: removeFG 0 3
+[00000671] 10: 
+[00000672] 11: fgload 0 00000000 SA05AAD 2 3
+[00000682] 10: 
+[00000683]  b: playVoice SL2D1054
+[0000068d] 10: 
+[0000068e] 19: 
+[0000068f] ff: text 40
+{textColor 1 6}【Saki】 "Wait a second. I came here to clear up the issue about my pizza." 
+
+
+[00000692] 10: 
+[00000693]  b: playVoice SL2D1055
+[0000069d] 10: 
+[0000069e] 19: 
+[0000069f] ff: text 41
+{textColor 1 8}【Izumi】 "Then you can also consider this my apology..." 
+
+
+[000006a2] 10: 
+[000006a3] 15: removeAllFG 3
+[000006a7] 10: 
+[000006a8] 19: 
+[000006a9] ff: text 42
+{textColor 0 2}... And so, things begin to develop the same way they did last time. 
+{textColor 0 2}This gets me thinking. 
+{textColor 0 2}(Perhaps this might be a chance granted to me by God.) 
+{textColor 0 2}(God is commanding me to save Saki this time...) 
+{textColor 0 2}(If things go on this way, then in five days, the same tragedy will occur.) 
+{textColor 0 2}(Is God lending me his power to attempt to prevent it... ?) 
+{textColor 0 2}All right... I'll give it all I've got! 
+{textColor 0 2}For Saki's sake... 
+{textColor 0 2}I'll do my best to take care of her and get through these six days! 
+
+
+[000006ac] 10: 
+[000006ad] 11: fgload 0 00000000 IZ02AAD 1 3
+[000006bd] 10: 
+[000006be]  b: playVoice SL2D1056
+[000006c8] 10: 
+[000006c9] 19: 
+[000006ca] ff: text 43
+{textColor 1 8}【Izumi】 "Will you all eat with them too?" 
+{textColor 0 0}【Makoto】 "With pleasure♪" 
+{textColor 0 2}I immediately answer. 
+{textColor 0 2}It feels like I'm plunging right into fate. 
+
+
+[000006cd] 10: 
+[000006ce]  f: removeBG 0 0 2
+[000006d8] 10: 
+[000006d9] 12: removeFG 0 0
+[000006e0] 10: 
+[000006e1]  f: removeBG 0 0 2
+[000006eb] 10: 
+[000006ec] 19: 
+[000006ed] ff: text 44
+{textColor 0 2}... After that, we went shopping for rice, and ate Izumi-san's dinner. 
+{textColor 0 2}After dinner, we snuck into the pool, and fled from the yelling security guard once again... 
+{textColor 0 2}It felt like I was watching a video recording of everything. 
+{textColor 0 2}But there is one difference... 
+{textColor 0 2}Late at night, I didn't pick up the bell on Moon Beach on our way back to the lodge. 
+{textColor 0 2}No, to be precise, I couldn't pick it up. 
+{textColor 0 2}The bell wasn't lying on the shore. 
+{textColor 0 2}I looked for it as hard as I could, but it was nowhere to be found. 
+{textColor 0 2}(It's possible that because I have my memories, history might have changed a little bit.) 
+{textColor 0 2}Besides, I don't think it matters that much. 
+{textColor 0 2}It's not like the bell was the direct cause of that tragedy, after all. 
+{textColor 0 2}If I continue to trust Saki, then that history will never repeat. 
+{textColor 0 2}The bell isn't a problem. 
+{textColor 0 2}... As I think that way, I return to the lodge, and fall asleep... 
+
+
+[000006f0] 10: 
+[000006f1]  f: removeBG 0 0 0
+[000006fb] 10: 
+[000006fc]  7: stopBGM
+[000006fd] 10: 
+[000006fe]  4: jump SL2D2
+[00000705]  0: 
+[00000706]  0: 
+[00000707]  0: 

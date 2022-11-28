@@ -1,0 +1,1744 @@
+[0000003c] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 4
+[00000047] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 4
+[00000052] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[0000005e] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[0000006a] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 4
+[00000075]  0: 
+[00000076]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 0000008a (0002)
+[00000084] 10: 
+[00000085] 1c: cmd1C
+[00000086]  0: 
+[00000087]  7: goto7 00000095 (0003)
+[0000008a] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[00000095]  0: 
+[00000096]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 000000a6 (0005)
+[000000a4] 10: 
+[000000a5] 18: cmd18
+[000000a6] 10: 
+[000000a7] 1b: dayIntro 00000000 BGCAL4.cps
+[000000ae] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 157
+[000000ba] 10: 
+[000000bb] 10: bgload 00000000 BG13ZA 0 1
+[000000c8] 10: 
+[000000c9]  6: playBGM 1
+[000000cd] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 10
+[000000d8] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 18
+[000000e4] 10: 
+[000000e5] 17: showClock
+[000000e6] 10: 
+[000000e7] 19: 
+[000000e8] ff: text 00
+{textColor 0 2}After we finish eating our ham and mozzarella cheese sandwiches, Yuka and I walk by the morning coastline. 
+
+
+[000000eb]  0: 
+[000000ec]  a: condJump 00 VAR_(28_1e)_a1_2b (28) != (15) (81)->1 (15) (00)  * 00000103 (0006)
+[000000fa] 10: 
+[000000fb] 19: 
+[000000fc] ff: text 01
+{textColor 0 2}This time, I decide to go with Yuka to see the cherry blossoms. 
+
+
+[000000ff]  0: 
+[00000100]  7: goto7 00000108 (0007)
+[00000103] 10: 
+[00000104] 19: 
+[00000105] ff: text 02
+{textColor 0 2}Like last time, I decide to go with Yuka to see the cherry blossoms. 
+
+
+[00000108] 10: 
+[00000109] 19: 
+[0000010a] ff: text 03
+{textColor 0 2}When I look up, I see the very picture of a wide, blue sky. 
+{textColor 0 2}The springtime haze is hanging in the air all across the sea, making a yacht traveling across the water seem like an illusion as it creates whitecaps. 
+{textColor 0 0}【Makoto】 "Hey, Yuka? Aren't we going to see the cherry blossoms again?" 
+{textColor 0 2}I ask her this. 
+{textColor 0 2}I did say that we were going to see the cherry blossoms, but I don't actually know if that's for certain. 
+{textColor 0 2}In any case, we've already seen the cherry blossoms twice: once on the last 4th, and once two days ago... 
+
+
+[0000010d] 10: 
+[0000010e] 11: fgload 0 00000000 YU01AA 1 3
+[0000011e] 10: 
+[0000011f]  b: playVoice YL2D4000
+[00000129] 10: 
+[0000012a] 19: 
+[0000012b] ff: text 04
+{textColor 1 4}【Yuka】 "No. We're not going today." 
+{textColor 0 2}Yuka answers. 
+
+
+[0000012e] 10: 
+[0000012f]  b: playVoice YL2D4001
+[00000139] 10: 
+[0000013a] 19: 
+[0000013b] ff: text 05
+{textColor 1 4}【Yuka】 "Why don't we go to Lunabeach to relax and pass the time instead?" 
+{textColor 0 0}【Makoto】 "Yeah, good idea. We have to meet with everyone at Lunabeach at 5:00 anyway..." 
+
+
+[0000013e] 10: 
+[0000013f] 11: fgload 0 00000000 YU08AA 1 3
+[0000014f] 10: 
+[00000150]  b: playVoice YL2D4002
+[0000015a] 10: 
+[0000015b] 19: 
+[0000015c] ff: text 06
+{textColor 1 4}【Yuka】 "Besides... looking at those cherry blossoms just makes me remember him." 
+{textColor 0 0}【Makoto】 "Huh...?" 
+
+
+[0000015f] 10: 
+[00000160]  b: playVoice YL2D4003
+[0000016a] 10: 
+[0000016b] 19: 
+[0000016c] ff: text 07
+{textColor 1 4}【Yuka】 "The first boy that I loved." 
+
+
+[0000016f] 10: 
+[00000170] 12: removeFG 0 3
+[00000177] 10: 
+[00000178]  7: stopBGM
+[00000179] 10: 
+[0000017a] 19: 
+[0000017b] ff: text 08
+{textColor 0 2}――Those words gnaw at my heart. 
+{textColor 0 2}――It grows hot like an angry, blazing fire flaring up. 
+{textColor 0 2}Why the hell... do I feel so depressed...!? 
+{textColor 0 2}This is an unpleasant feeling that's similar to irritation. 
+{textColor 0 2}... Now that I think about it, yesterday, during the Test of Courage... in the end, what was it that Saki tried to say? 
+
+
+[0000017e] 10: 
+[0000017f]  b: playVoice YL2D4004
+[00000189] 10: 
+[0000018a] 19: 
+[0000018b] ff: text 09
+{textColor 1 6}【Saki】 "Occasionally, at times when I see you act impulsively, it really feels like I'm hallucinating." 
+
+
+[0000018e] 10: 
+[0000018f]  b: playVoice YL2D4005
+[00000199] 10: 
+[0000019a] 19: 
+[0000019b] ff: text 0a
+{textColor 1 6}【Saki】 "It feels just like you're that boy if..." 
+{textColor 0 2}... 
+
+
+[0000019e] 10: 
+[0000019f]  6: playBGM 8
+[000001a3] 10: 
+[000001a4] 19: 
+[000001a5] ff: text 0b
+{textColor 0 2}Well, whatever. 
+{textColor 0 2}I'm getting too worked up over nothing. 
+{textColor 0 2}Something like that is inconsequential to me. 
+{textColor 0 2}Even if our attitudes are similar, it's as inconsequential as a grain of sand on the beach. 
+{textColor 0 2}If I had it my own way, instead of saying that "I'm similar to that boy"... 
+{textColor 0 2}... the right expression would be, "That boy is similar to me." 
+{textColor 0 2}It's not me who's being a copycat, it's that boy. 
+{textColor 0 2}I persuade myself with this absurd reasoning... 
+
+
+[000001a8] 10: 
+[000001a9]  f: removeBG 0 0 2
+[000001b3] 10: 
+[000001b4] 10: bgload 00000000 BG07A 0 1
+[000001c1] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 10
+[000001cc] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 49
+[000001d8] 10: 
+[000001d9] 17: showClock
+[000001da] 10: 
+[000001db] 19: 
+[000001dc] ff: text 0c
+{textColor 0 2}As usual, Lunabeach has no customers... 
+{textColor 0 2}Yuka and I sip down on Izumi-san's boiling hot coffee. 
+{textColor 0 2}With no customers at hand, an idle Izumi-san sits with us. 
+
+
+[000001df] 10: 
+[000001e0] 11: fgload 0 00000000 IZ01AA 1 3
+[000001f0] 10: 
+[000001f1]  b: playVoice YL2D4006
+[000001fb] 10: 
+[000001fc] 19: 
+[000001fd] ff: text 0d
+{textColor 1 8}【Izumi】 "The clouds are coming in quick..." 
+{textColor 0 2}Izumi-san suddenly mutters these words. 
+
+
+[00000200] 10: 
+[00000201]  b: playVoice YL2D4007
+[0000020b] 10: 
+[0000020c] 19: 
+[0000020d] ff: text 0e
+{textColor 1 8}【Izumi】 "At this rate, it'll definitely be cloudy tomorrow." 
+
+
+[00000210] 10: 
+[00000211] 12: removeFG 0 3
+[00000218] 10: 
+[00000219] 11: fgload 0 00000000 YU01AA 2 3
+[00000229] 10: 
+[0000022a]  b: playVoice YL2D4008
+[00000234] 10: 
+[00000235] 19: 
+[00000236] ff: text 0f
+{textColor 1 4}【Yuka】 "Wow... How do you know that?" 
+
+
+[00000239] 10: 
+[0000023a] 12: removeFG 0 3
+[00000241] 10: 
+[00000242] 11: fgload 0 00000000 IZ01AA 0 3
+[00000252] 10: 
+[00000253]  b: playVoice YL2D4009
+[0000025d] 10: 
+[0000025e] 19: 
+[0000025f] ff: text 10
+{textColor 1 8}【Izumi】 "Half of it's intuition, half of it's experience." 
+
+
+[00000262] 10: 
+[00000263]  b: playVoice YL2D4010
+[0000026d] 10: 
+[0000026e] 19: 
+[0000026f] ff: text 11
+{textColor 1 8}【Izumi】 "When you spend a long time living by the sea, you gradually reach the point where you know these kinds of things." 
+
+
+[00000272] 10: 
+[00000273] 12: removeFG 0 3
+[0000027a] 10: 
+[0000027b] 11: fgload 0 00000000 YU01AA 2 3
+[0000028b] 10: 
+[0000028c]  b: playVoice YL2D4011
+[00000296] 10: 
+[00000297] 19: 
+[00000298] ff: text 12
+{textColor 1 4}【Yuka】 "Huh..." 
+
+
+[0000029b] 10: 
+[0000029c] 11: fgload 1 00000000 IZ01AA 0 3
+[000002ac] 10: 
+[000002ad]  b: playVoice YL2D4012
+[000002b7] 10: 
+[000002b8] 19: 
+[000002b9] ff: text 13
+{textColor 1 8}【Izumi】 "Shall I tell you one more thing?" 
+
+
+[000002bc] 10: 
+[000002bd]  b: playVoice YL2D4013
+[000002c7] 10: 
+[000002c8] 19: 
+[000002c9] ff: text 14
+{textColor 1 4}【Yuka】 "?" 
+
+
+[000002cc] 10: 
+[000002cd]  b: playVoice YL2D4014
+[000002d7] 10: 
+[000002d8] 19: 
+[000002d9] ff: text 15
+{textColor 1 8}【Izumi】 "There'll be heavy rain starting tomorrow night." 
+
+
+[000002dc] 10: 
+[000002dd] 11: fgload 0 00000000 YU11AA 2 3
+[000002ed] 10: 
+[000002ee]  b: playVoice YL2D4015
+[000002f8] 10: 
+[000002f9] 19: 
+[000002fa] ff: text 16
+{textColor 1 4}【Yuka】 "!?" 
+{textColor 0 0}【Makoto】 "!?" 
+{textColor 0 2}Yuka and I exchange glances. 
+
+
+[000002fd] 10: 
+[000002fe]  b: playVoice YL2D4016
+[00000308] 10: 
+[00000309] 19: 
+[0000030a] ff: text 17
+{textColor 1 8}【Izumi】 "It'll be a great downpour..." 
+{textColor 0 0}【Makoto】 "H-How do you know...?" 
+
+
+[0000030d] 10: 
+[0000030e] 11: fgload 1 00000000 IZ02AA 0 3
+[0000031e] 10: 
+[0000031f]  b: playVoice YL2D4017
+[00000329] 10: 
+[0000032a] 19: 
+[0000032b] ff: text 18
+{textColor 1 8}【Izumi】 "Ah... are you doubting me?" 
+{textColor 0 0}【Makoto】 "No, that's not it." 
+
+
+[0000032e] 10: 
+[0000032f]  b: playVoice YL2D4018
+[00000339] 10: 
+[0000033a] 19: 
+[0000033b] ff: text 19
+{textColor 1 8}【Izumi】 "All right♪ Well then, why don't we make a bet?" 
+{textColor 0 0}【Makoto】 "A-A bet?" 
+
+
+[0000033e] 10: 
+[0000033f]  b: playVoice YL2D4019
+[00000349] 10: 
+[0000034a] 19: 
+[0000034b] ff: text 1a
+{textColor 1 8}【Izumi】 "On whether it'll rain or not tomorrow night." 
+{textColor 0 0}【Makoto】 "There's no way I'd bet on that! Because tomorrow ni―" 
+
+
+[0000034e] 10: 
+[0000034f] 11: fgload 0 00000000 YU04AA 2 0
+[0000035f] 10: 
+[00000360]  1: cmd1 3
+[00000364] 10: 
+[00000365]  8: playSFX SE072 1
+[0000036f] 10: 
+[00000370] 19: 
+[00000371] ff: text 1b
+{textColor 0 0}【Makoto】 "Ow!" 
+{textColor 0 2}Yuka stomps down on my foot from under the table with all her might. 
+
+
+[00000374] 10: 
+[00000375] 11: fgload 1 00000000 IZ01AA 0 3
+[00000385] 10: 
+[00000386]  b: playVoice YL2D4020
+[00000390] 10: 
+[00000391] 19: 
+[00000392] ff: text 1c
+{textColor 1 8}【Izumi】 "Hmm?" 
+
+
+[00000395] 10: 
+[00000396] 11: fgload 0 00000000 YU01AA 2 3
+[000003a6] 10: 
+[000003a7]  b: playVoice YL2D4021
+[000003b1] 10: 
+[000003b2] 19: 
+[000003b3] ff: text 1d
+{textColor 1 4}【Yuka】 "You've got it! We'll take you up on that bet!" 
+
+
+[000003b6] 10: 
+[000003b7] 11: fgload 1 00000000 IZ02AA 0 3
+[000003c7] 10: 
+[000003c8]  b: playVoice YL2D4022
+[000003d2] 10: 
+[000003d3] 19: 
+[000003d4] ff: text 1e
+{textColor 1 8}【Izumi】 "Hee hee, that's the spirit♪" 
+
+
+[000003d7] 10: 
+[000003d8] 11: fgload 0 00000000 YU02AA 2 3
+[000003e8] 10: 
+[000003e9]  b: playVoice YL2D4023
+[000003f3] 10: 
+[000003f4] 19: 
+[000003f5] ff: text 1f
+{textColor 1 4}【Yuka】 "After all, there's no way it'll rain with this good weather." 
+
+
+[000003f8] 10: 
+[000003f9]  b: playVoice YL2D4024
+[00000403] 10: 
+[00000404] 19: 
+[00000405] ff: text 20
+{textColor 1 8}【Izumi】 "Hee hee hee hee hee hee hee..." 
+{textColor 0 0}【Makoto】 "???" 
+
+
+[00000408] 10: 
+[00000409] 11: fgload 1 00000000 IZ01AA 0 3
+[00000419] 10: 
+[0000041a]  b: playVoice YL2D4025
+[00000424] 10: 
+[00000425] 19: 
+[00000426] ff: text 21
+{textColor 1 8}【Izumi】 "... Well then, what's your wager?" 
+
+
+[00000429] 10: 
+[0000042a] 11: fgload 0 00000000 YU01AA 2 3
+[0000043a] 10: 
+[0000043b]  b: playVoice YL2D4026
+[00000445] 10: 
+[00000446] 19: 
+[00000447] ff: text 22
+{textColor 1 4}【Yuka】 "If it does rain... then on my next summer break, I'll help out at Lunabeach, but only for a week." 
+
+
+[0000044a] 10: 
+[0000044b]  b: playVoice YL2D4027
+[00000455] 10: 
+[00000456] 19: 
+[00000457] ff: text 23
+{textColor 1 8}【Izumi】 "Really?" 
+
+
+[0000045a] 10: 
+[0000045b]  b: playVoice YL2D4028
+[00000465] 10: 
+[00000466] 19: 
+[00000467] ff: text 24
+{textColor 1 4}【Yuka】 "Yes!" 
+{textColor 0 2}Yuka... she's quite the philanthropist... 
+{textColor 0 2}Even though she knows that it's going to rain... 
+
+
+[0000046a] 10: 
+[0000046b] 11: fgload 1 00000000 IZ02AA 0 3
+[0000047b] 10: 
+[0000047c]  b: playVoice YL2D4029
+[00000486] 10: 
+[00000487] 19: 
+[00000488] ff: text 25
+{textColor 1 8}【Izumi】 "And if it doesn't rain?" 
+
+
+[0000048b] 10: 
+[0000048c]  b: playVoice YL2D4030
+[00000496] 10: 
+[00000497] 19: 
+[00000498] ff: text 26
+{textColor 1 4}【Yuka】 "Hmm... let's see..." 
+
+
+[0000049b] 10: 
+[0000049c] 11: fgload 0 00000000 YU02AA 2 3
+[000004ac] 10: 
+[000004ad]  b: playVoice YL2D4031
+[000004b7] 10: 
+[000004b8] 19: 
+[000004b9] ff: text 27
+{textColor 1 4}【Yuka】 "Well then, next summer break, please take me out for drinks. It'll be on you, of course♪" 
+
+
+[000004bc] 10: 
+[000004bd]  b: playVoice YL2D4032
+[000004c7] 10: 
+[000004c8] 19: 
+[000004c9] ff: text 28
+{textColor 1 8}【Izumi】 "Yes, all right." 
+
+
+[000004cc] 10: 
+[000004cd] 11: fgload 1 00000000 IZ01AA 0 3
+[000004dd] 10: 
+[000004de]  b: playVoice YL2D4033
+[000004e8] 10: 
+[000004e9] 19: 
+[000004ea] ff: text 29
+{textColor 1 8}【Izumi】 "... But if you want to back out, now's the time." 
+
+
+[000004ed] 10: 
+[000004ee]  b: playVoice YL2D4034
+[000004f8] 10: 
+[000004f9] 19: 
+[000004fa] ff: text 2a
+{textColor 1 4}【Yuka】 "I'm fine! It definitely won't rain!" 
+{textColor 0 2}She's not going to stop... 
+{textColor 0 2}So Yuka... really did intend to help out from the beginning... 
+{textColor 0 2}But even so, why does Izumi-san... have so much confidence? 
+{textColor 0 2}Can you really do something like predict the weather with just intuition and experience? 
+{textColor 0 0}【Makoto】 "But Izumi-san... why are you so confident?" 
+{textColor 0 2}I try asking her. 
+
+
+[000004fd] 10: 
+[000004fe] 11: fgload 1 00000000 IZ02AA 0 3
+[0000050e] 10: 
+[0000050f]  b: playVoice YL2D4035
+[00000519] 10: 
+[0000051a] 19: 
+[0000051b] ff: text 2b
+{textColor 1 8}【Izumi】 "Hee hee... My intuition is very accurate." 
+
+
+[0000051e] 10: 
+[0000051f]  b: playVoice YL2D4036
+[00000529] 10: 
+[0000052a] 19: 
+[0000052b] ff: text 2c
+{textColor 1 8}【Izumi】 "When I was in high school, I was known and feared as 'Sumisora's Laplace'." 
+
+
+[0000052e] 10: 
+[0000052f] 11: fgload 0 00000000 YU01AA 2 3
+[0000053f] 10: 
+[00000540]  b: playVoice YL2D4037
+[0000054a] 10: 
+[0000054b] 19: 
+[0000054c] ff: text 2d
+{textColor 1 4}【Yuka】 "Sumisora's Laplace?" 
+
+
+[0000054f] 10: 
+[00000550] 11: fgload 1 00000000 IZ01AA 0 3
+[00000560] 10: 
+[00000561]  b: playVoice YL2D4038
+[0000056b] 10: 
+[0000056c] 19: 
+[0000056d] ff: text 2e
+{textColor 1 8}【Izumi】 "Oh, I didn't tell you?" 
+
+
+[00000570] 10: 
+[00000571]  b: playVoice YL2D4039
+[0000057b] 10: 
+[0000057c] 19: 
+[0000057d] ff: text 2f
+{textColor 1 8}【Izumi】 "My alma mater was 'Sumisora Academy'..." 
+
+
+[00000580] 10: 
+[00000581]  b: playVoice YL2D4040
+[0000058b] 10: 
+[0000058c] 19: 
+[0000058d] ff: text 30
+{textColor 1 4}【Yuka】 "No. That's not it... I meant 'Laplace'..." 
+
+
+[00000590] 10: 
+[00000591]  b: playVoice YL2D4041
+[0000059b] 10: 
+[0000059c] 19: 
+[0000059d] ff: text 31
+{textColor 1 8}【Izumi】 "Oh... you don't know what 'Laplace' is?" 
+
+
+[000005a0] 10: 
+[000005a1]  b: playVoice YL2D4042
+[000005ab] 10: 
+[000005ac] 19: 
+[000005ad] ff: text 32
+{textColor 1 8}【Izumi】 "It refers to 'Laplace's Demon'." 
+
+[000005b0] ff: text 33
+{textColor 0 2}{choiceOpt 1 -> I know what it is. }{choiceOpt 2 -> I don't know. }
+
+[000005b3] 10: 
+[000005b4]  3: choice v_a1_08 00 00
+[000005b9]  0: 
+[000005ba]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000006ec (0009)
+[000005c8] 10: 
+[000005c9] 19: 
+[000005ca] ff: text 34
+{textColor 0 0}【Makoto】 "Yeah, I've heard of it before." 
+{textColor 0 0}【Makoto】 "According to the words of a French mathematician and astronomer named Laplace..." 
+{textColor 0 0}【Makoto】 "'Suppose there exists a "demon", that is, an entity that possesses the ability to know, at a certain moment, the state of all things in the universe..." 
+{textColor 0 0}【Makoto】 "... Then, no matter how brief this moment is, it would always be enough for the demon to unravel everything that happened in the past and will happen in the future.'" 
+
+
+[000005cd] 10: 
+[000005ce]  b: playVoice YL2D4043
+[000005d8] 10: 
+[000005d9] 19: 
+[000005da] ff: text 35
+{textColor 1 4}【Yuka】 "????" 
+{textColor 0 0}【Makoto】 "In short, that old guy said..." 
+{textColor 0 0}【Makoto】 "... 'Everything which occurs in the world has been predetermined from the beginning.' That's what he's saying." 
+{textColor 0 0}【Makoto】 "No matter how big or how small an event is..." 
+{textColor 0 0}【Makoto】 "... Its occurrence is by no means accidental, but in fact inevitable... that's what it means." 
+{textColor 0 0}【Makoto】 "I believe that in philosophy, this is called 'causal determinism'..." 
+
+
+[000005dd] 10: 
+[000005de] 11: fgload 0 00000000 YU06AA 2 3
+[000005ee] 10: 
+[000005ef]  b: playVoice YL2D4044
+[000005f9] 10: 
+[000005fa] 19: 
+[000005fb] ff: text 36
+{textColor 1 4}【Yuka】 "????????" 
+
+
+[000005fe] 10: 
+[000005ff]  b: playVoice YL2D4045
+[00000609] 10: 
+[0000060a] 19: 
+[0000060b] ff: text 37
+{textColor 1 8}【Izumi】 "That's right. You're well informed, Makoto-kun." 
+{textColor 0 2}I feel a little proud... 
+
+
+[0000060e] 10: 
+[0000060f]  b: playVoice YL2D4046
+[00000619] 10: 
+[0000061a] 19: 
+[0000061b] ff: text 38
+{textColor 1 8}【Izumi】 "So anyway, when I was in high school..." 
+
+
+[0000061e] 10: 
+[0000061f]  b: playVoice YL2D4047
+[00000629] 10: 
+[0000062a] 19: 
+[0000062b] ff: text 39
+{textColor 1 8}【Izumi】 "... I would boldly make predictions about things other people didn't know about that proved to be accurate. So my friends called me 'Sumisora's Laplace'." 
+{textColor 0 0}【Makoto】 "Hmm..." 
+
+
+[0000062e] 10: 
+[0000062f] 11: fgload 1 00000000 IZ12AA 0 3
+[0000063f] 10: 
+[00000640]  b: playVoice YL2D4048
+[0000064a] 10: 
+[0000064b] 19: 
+[0000064c] ff: text 3a
+{textColor 1 8}【Izumi】 "... Gotcha♪" 
+
+
+[0000064f] 10: 
+[00000650] 11: fgload 0 00000000 YU01AA 2 3
+[00000660] 10: 
+[00000661] 19: 
+[00000662] ff: text 3b
+{textColor 0 0}【Makoto】 "... Huh?" 
+
+
+[00000665] 10: 
+[00000666] 11: fgload 1 00000000 IZ07AA 0 3
+[00000676] 10: 
+[00000677]  b: playVoice YL2D4049
+[00000681] 10: 
+[00000682] 19: 
+[00000683] ff: text 3c
+{textColor 1 8}【Izumi】 "That was all a lie!" 
+
+
+[00000686] 10: 
+[00000687]  b: playVoice YL2D4050
+[00000691] 10: 
+[00000692] 19: 
+[00000693] ff: text 3d
+{textColor 1 8}【Izumi】 "Truth is, I just watched the weather forecast." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[00000696] 10: 
+[00000697]  b: playVoice YL2D4051
+[000006a1] 10: 
+[000006a2] 19: 
+[000006a3] ff: text 3e
+{textColor 1 8}【Izumi】 "When I watched the weather forecast on TV earlier, they said that it would start raining heavily tomorrow night♪" 
+
+
+[000006a6] 10: 
+[000006a7] 11: fgload 0 00000000 YU05AA 2 3
+[000006b7] 10: 
+[000006b8]  b: playVoice YL2D4052
+[000006c2] 10: 
+[000006c3] 19: 
+[000006c4] ff: text 3f
+{textColor 1 4}【Yuka】 "... T-That's unfair, Izumi-san!" 
+
+
+[000006c7] 10: 
+[000006c8] 11: fgload 1 00000000 IZ02AA 0 3
+[000006d8] 10: 
+[000006d9]  b: playVoice YL2D4053
+[000006e3] 10: 
+[000006e4] 19: 
+[000006e5] ff: text 40
+{textColor 1 8}【Izumi】 "Tee hee♪" 
+{textColor 0 2}Izumi-san bashfully sticks out her tongue. 
+
+
+[000006e8]  0: 
+[000006e9]  7: goto7 0000089c (000a)
+[000006ec] 10: 
+[000006ed] 19: 
+[000006ee] ff: text 41
+{textColor 0 0}【Makoto】 "??" 
+
+
+[000006f1] 10: 
+[000006f2]  b: playVoice YL2D4054
+[000006fc] 10: 
+[000006fd] 19: 
+[000006fe] ff: text 42
+{textColor 1 4}【Yuka】 "??" 
+
+
+[00000701] 10: 
+[00000702]  b: playVoice YL2D4055
+[0000070c] 10: 
+[0000070d] 19: 
+[0000070e] ff: text 43
+{textColor 1 8}【Izumi】 "I see... You don't know..." 
+
+
+[00000711] 10: 
+[00000712]  b: playVoice YL2D4056
+[0000071c] 10: 
+[0000071d] 19: 
+[0000071e] ff: text 44
+{textColor 1 8}【Izumi】 "These are the words of a French mathematician and astronomer named Laplace." 
+
+
+[00000721] 10: 
+[00000722]  b: playVoice YL2D4057
+[0000072c] 10: 
+[0000072d] 19: 
+[0000072e] ff: text 45
+{textColor 1 8}【Izumi】 "'Suppose there exists a 'demon', that is, an entity that possesses the ability to know, at a certain moment, the state of all things in the universe..." 
+
+
+[00000731] 10: 
+[00000732]  b: playVoice YL2D4058
+[0000073c] 10: 
+[0000073d] 19: 
+[0000073e] ff: text 46
+{textColor 1 8}【Izumi】 "... Then, no matter how brief this moment is, it would always be enough for the demon to unravel everything that happened in the past and will happen in the future.'" 
+{textColor 0 0}【Makoto】 "????" 
+
+
+[00000741] 10: 
+[00000742] 11: fgload 0 00000000 YU06AA 2 3
+[00000752] 10: 
+[00000753]  b: playVoice YL2D4059
+[0000075d] 10: 
+[0000075e] 19: 
+[0000075f] ff: text 47
+{textColor 1 4}【Yuka】 "????" 
+
+
+[00000762] 10: 
+[00000763]  b: playVoice YL2D4060
+[0000076d] 10: 
+[0000076e] 19: 
+[0000076f] ff: text 48
+{textColor 1 8}【Izumi】 "In short, that man named Laplace was saying this..." 
+
+
+[00000772] 10: 
+[00000773]  b: playVoice YL2D4061
+[0000077d] 10: 
+[0000077e] 19: 
+[0000077f] ff: text 49
+{textColor 1 8}【Izumi】 "... 'Everything which occurs in the world has been predetermined from the beginning.' That's what he's saying." 
+
+
+[00000782] 10: 
+[00000783]  b: playVoice YL2D4062
+[0000078d] 10: 
+[0000078e] 19: 
+[0000078f] ff: text 4a
+{textColor 1 8}【Izumi】 "No matter how big or how small an event is..." 
+
+
+[00000792] 10: 
+[00000793]  b: playVoice YL2D4063
+[0000079d] 10: 
+[0000079e] 19: 
+[0000079f] ff: text 4b
+{textColor 1 8}【Izumi】 "... Its occurrence is by no means accidental, but in fact inevitable... that's what it means." 
+
+
+[000007a2] 10: 
+[000007a3]  b: playVoice YL2D4064
+[000007ad] 10: 
+[000007ae] 19: 
+[000007af] ff: text 4c
+{textColor 1 8}【Izumi】 "I believe that in philosophy, this is called 'causal determinism'." 
+{textColor 0 0}【Makoto】 "????????" 
+
+
+[000007b2] 10: 
+[000007b3]  b: playVoice YL2D4065
+[000007bd] 10: 
+[000007be] 19: 
+[000007bf] ff: text 4d
+{textColor 1 4}【Yuka】 "????????" 
+
+
+[000007c2] 10: 
+[000007c3]  b: playVoice YL2D4066
+[000007cd] 10: 
+[000007ce] 19: 
+[000007cf] ff: text 4e
+{textColor 1 8}【Izumi】 "And so, when I was in high school..." 
+
+
+[000007d2] 10: 
+[000007d3]  b: playVoice YL2D4067
+[000007dd] 10: 
+[000007de] 19: 
+[000007df] ff: text 4f
+{textColor 1 8}【Izumi】 "... I would bluntly make predictions about things other people didn't know about that proved to be accurate. So my friends called me 'Sumisora's Laplace'." 
+{textColor 0 0}【Makoto】 "I-I see..." 
+
+
+[000007e2] 10: 
+[000007e3] 11: fgload 1 00000000 IZ12AA 0 3
+[000007f3] 10: 
+[000007f4]  b: playVoice YL2D4068
+[000007fe] 10: 
+[000007ff] 19: 
+[00000800] ff: text 50
+{textColor 1 8}【Izumi】 "... Gotcha♪" 
+
+
+[00000803] 10: 
+[00000804] 11: fgload 0 00000000 YU01AA 2 3
+[00000814] 10: 
+[00000815] 19: 
+[00000816] ff: text 51
+{textColor 0 0}【Makoto】 "...H-Huh?" 
+
+
+[00000819] 10: 
+[0000081a] 11: fgload 1 00000000 IZ07AA 0 3
+[0000082a] 10: 
+[0000082b]  b: playVoice YL2D4069
+[00000835] 10: 
+[00000836] 19: 
+[00000837] ff: text 52
+{textColor 1 8}【Izumi】 "That was all a lie!" 
+
+
+[0000083a] 10: 
+[0000083b]  b: playVoice YL2D4070
+[00000845] 10: 
+[00000846] 19: 
+[00000847] ff: text 53
+{textColor 1 8}【Izumi】 "Truth is, I just watched the weather forecast." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[0000084a] 10: 
+[0000084b]  b: playVoice YL2D4071
+[00000855] 10: 
+[00000856] 19: 
+[00000857] ff: text 54
+{textColor 1 8}【Izumi】 "When I watched the weather forecast on TV earlier, they said that it would start raining heavily tomorrow night♪" 
+
+
+[0000085a] 10: 
+[0000085b] 11: fgload 0 00000000 YU05AA 2 3
+[0000086b] 10: 
+[0000086c]  b: playVoice YL2D4072
+[00000876] 10: 
+[00000877] 19: 
+[00000878] ff: text 55
+{textColor 1 4}【Yuka】 "... T-That's unfair, Izumi-san!" 
+
+
+[0000087b] 10: 
+[0000087c] 11: fgload 1 00000000 IZ02AA 0 3
+[0000088c] 10: 
+[0000088d]  b: playVoice YL2D4073
+[00000897] 10: 
+[00000898] 19: 
+[00000899] ff: text 56
+{textColor 1 8}【Izumi】 "Tee hee♪" 
+{textColor 0 2}Izumi-san bashfully sticks out her tongue. 
+{textColor 0 2}I'm... 
+{textColor 0 2}... more disturbed by the story of "Laplace's demon" than Izumi-san's lie. 
+{textColor 0 2}"Everything which occurs in the world has been predetermined from the beginning... Its occurrence is by no means accidental, but in fact inevitable." 
+{textColor 0 2}Everything's been predetermined...? 
+
+
+[0000089c] 10: 
+[0000089d] 11: fgload 0 00000000 YU02AA 2 3
+[000008ad] 10: 
+[000008ae]  b: playVoice YL2D4074
+[000008b8] 10: 
+[000008b9] 19: 
+[000008ba] ff: text 57
+{textColor 1 4}【Yuka】 "Then that means our earlier bet... is now null and void, right?" 
+
+
+[000008bd] 10: 
+[000008be] 11: fgload 1 00000000 IZ01AA 0 3
+[000008ce] 10: 
+[000008cf]  b: playVoice YL2D4075
+[000008d9] 10: 
+[000008da] 19: 
+[000008db] ff: text 58
+{textColor 1 8}【Izumi】 "No way. The forecast's not always correct, is it?" 
+{textColor 0 2}The two of them smile merrily... 
+
+
+[000008de] 10: 
+[000008df]  f: removeBG 0 0 2
+[000008e9] 10: 
+[000008ea]  7: stopBGM
+[000008eb] 10: 
+[000008ec]  6: playBGM 13
+[000008f0] 10: 
+[000008f1] 18: cmd18
+[000008f2] 10: 
+[000008f3] 1a: cmd1A 1
+[000008f7] 10: 
+[000008f8]  1: cmd1 25
+[000008fd] 10: 
+[000008fe] 19: 
+[000008ff] ff: text 59
+{textColor 0 2}At 11:17 A.M.――the earthquake attacks.   {textColor 0 2}But since Yuka and I already knew about it, we've gotten to the point where nothing surprises or frightens us anymore.  {textColor 0 2}Only Izumi-san is upset by this contingency, as her coffee cups completely broke.   {textColor 0 2}"These recent earthquakes cause us to lose more and more tableware," she laments. 
+{textColor 0 2}And so, up until everyone arrives at 5:00, the three of us pass the time exchanging trifling gossip.  {textColor 0 2}In that time, Izumi-san tells us very interesting stories about Kurumi.   {textColor 0 2}It seems that Kurumi's had vagrant habits ever since she was a child. 
+{textColor 0 2}She would get lost at the amusement park...{delay 5}{delay 5} Would get stranded when going on trips...   {textColor 0 2}(Hmm? Is that really what you'd call vagrant?)   {textColor 0 2}... Although I think that, Yuka and I can't help but to nod every now and then at Izumi-san's words.  {textColor 0 2}At any rate, today is Thursday, April 4th...{delay 5}{delay 5} the day Kurumi actually went missing. 
+{textColor 0 2}――Kurumi's disappearance?   {textColor 0 2}I see... now that I think about it, that was how all of this began.  {textColor 0 2}The first time Yuka and I went to the shrine was to look for the missing Kurumi. 
+{textColor 0 2}If we didn't see that talisman when we went to the shrine, then right now, we probably wouldn't be doing something like repeating this time.  {textColor 0 2}If that's the case, then making Kurumi go missing might be dangerous.   {textColor 0 2}No, wait a minute.  {textColor 0 2}There's a much bigger problem with letting it happen than that, isn't there? 
+{textColor 0 2}No matter the circumstances, Kurumi's disappearance isn't something to be grateful for.  {textColor 0 2}Izumi-san also got extremely worried...  {textColor 0 2}Yuka and I know that tonight, Kurumi will go missing.  {textColor 0 2}Nevertheless, there's no way that I can let that happen. 
+{textColor 0 2}Tonight, I'll be with Kurumi the whole time.  {textColor 0 2}Of course, I'll have Yuka to help me...  {textColor 0 2}It's not like we're going to babysit her, but if we keep a close eye, we should be able to prevent that incident from occurring.  {textColor 0 2}If we could change Saki's history...{delay 5}{delay 5} then we can change Kurumi's... 
+
+
+[00000902] 10: 
+[00000903]  2: cmd2 5
+[00000907] 10: 
+[00000908] 18: cmd18
+[00000909] 10: 
+[0000090a] 1a: cmd1A 0
+[0000090e] 10: 
+[0000090f]  7: stopBGM
+[00000910] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 43
+[0000091c] 10: 
+[0000091d] 10: bgload 00000000 BG17N 0 1
+[0000092a] 10: 
+[0000092b]  6: playBGM 8
+[0000092f] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 18
+[0000093b] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 36
+[00000947] 10: 
+[00000948] 17: showClock
+[00000949] 10: 
+[0000094a] 19: 
+[0000094b] ff: text 5a
+{textColor 0 2}The preparations are finally in order. Everyone is each holding a paper cup. 
+{textColor 0 2}Inside the cups are ice cold beer. (However, Kurumi and Haruka have orange juice.) 
+{textColor 0 2}Savory smoke begins to rise from the iron plate. 
+
+
+[0000094e] 10: 
+[0000094f] 11: fgload 0 00000000 IZ01AA 1 3
+[0000095f] 10: 
+[00000960]  b: playVoice YL2D4076
+[0000096a] 10: 
+[0000096b] 19: 
+[0000096c] ff: text 5b
+{textColor 1 8}【Izumi】 "Well then, shall we make a toast?" 
+
+
+[0000096f] 10: 
+[00000970]  b: playVoice YL2D4077
+[0000097a] 10: 
+[0000097b] 19: 
+[0000097c] ff: text 5c
+{textColor 1 8}【Izumi】 "The one to lead off the toast will be... right. Leader of the Kawashima Party, would you do the honors?" 
+
+
+[0000097f] 10: 
+[00000980] 12: removeFG 0 3
+[00000987] 10: 
+[00000988] 11: fgload 0 00000000 YU01AA 1 3
+[00000998] 10: 
+[00000999]  b: playVoice YL2D4078
+[000009a3] 10: 
+[000009a4] 19: 
+[000009a5] ff: text 5d
+{textColor 1 4}【Yuka】 "Eheh♪ I thought you'd say that♪" 
+{textColor 0 2}Everyone's eyes immediately turn to Yuka. 
+
+
+[000009a8] 10: 
+[000009a9]  b: playVoice YL2D4079
+[000009b3] 10: 
+[000009b4] 19: 
+[000009b5] ff: text 5e
+{textColor 1 4}【Yuka】 "Ahem..." 
+
+
+[000009b8] 10: 
+[000009b9]  b: playVoice YL2D4080
+[000009c3] 10: 
+[000009c4] 19: 
+[000009c5] ff: text 5f
+{textColor 1 4}【Yuka】 "Very well then, to our chance meeting..." 
+
+
+[000009c8] 10: 
+[000009c9]  b: playVoice YL2D4081
+[000009d3] 10: 
+[000009d4] 19: 
+[000009d5] ff: text 60
+{textColor 1 4}【Yuka】 "And it's a little late, but also to Saki's recovery..." 
+
+
+[000009d8] 10: 
+[000009d9] 12: removeFG 0 3
+[000009e0] 10: 
+[000009e1] 11: fgload 0 00000000 SA11BA 1 3
+[000009f1] 10: 
+[000009f2]  b: playVoice YL2D4082
+[000009fc] 10: 
+[000009fd] 19: 
+[000009fe] ff: text 61
+{textColor 1 6}【Saki】 "Huh? My... recovery...?" 
+{textColor 1 4}【Yuka】 "..." 
+{textColor 0 2}Dammit, way to go, Yuka... 
+
+
+[00000a01] 10: 
+[00000a02] 13: moveFG 0 2
+[00000a09] 10: 
+[00000a0a] 11: fgload 1 00000000 YU01AA 0 3
+[00000a1a] 10: 
+[00000a1b]  b: playVoice YL2D4083
+[00000a25] 10: 
+[00000a26] 19: 
+[00000a27] ff: text 62
+{textColor 1 4}【Yuka】 "... Yeah. Don't you remember?" 
+
+
+[00000a2a] 10: 
+[00000a2b]  b: playVoice YL2D4084
+[00000a35] 10: 
+[00000a36] 19: 
+[00000a37] ff: text 63
+{textColor 1 4}【Yuka】 "Weren't you hospitalized for pneumonia once during middle school?" 
+
+
+[00000a3a] 10: 
+[00000a3b] 11: fgload 0 00000000 SA01BA 2 3
+[00000a4b] 10: 
+[00000a4c]  b: playVoice YL2D4085
+[00000a56] 10: 
+[00000a57] 19: 
+[00000a58] ff: text 64
+{textColor 1 6}【Saki】 "Now that you mention it, that's true..." 
+
+
+[00000a5b] 10: 
+[00000a5c] 11: fgload 0 00000000 SA10BA 2 3
+[00000a6c] 10: 
+[00000a6d]  b: playVoice YL2D4086
+[00000a77] 10: 
+[00000a78] 19: 
+[00000a79] ff: text 65
+{textColor 1 6}【Saki】 "... Hey, isn't it way too late for that!?" 
+
+
+[00000a7c] 10: 
+[00000a7d]  b: playVoice YL2D4087
+[00000a87] 10: 
+[00000a88] 19: 
+[00000a89] ff: text 66
+{textColor 1 4}【Yuka】 "But it's better late than never, right?" 
+
+
+[00000a8c] 10: 
+[00000a8d] 12: removeFG 0 3
+[00000a94] 10: 
+[00000a95] 13: moveFG 1 1
+[00000a9c] 10: 
+[00000a9d] 11: fgload 1 00000000 YU02AA 1 3
+[00000aad] 10: 
+[00000aae]  b: playVoice YL2D4088
+[00000ab8] 10: 
+[00000ab9] 19: 
+[00000aba] ff: text 67
+{textColor 1 4}【Yuka】 "Anyway, is everyone ready?" 
+
+
+[00000abd] 10: 
+[00000abe]  b: playVoice YL2D4089
+[00000ac8] 10: 
+[00000ac9] 19: 
+[00000aca] ff: text 68
+{textColor 1 4}【Yuka】 "Well then, cheers♪" 
+
+
+[00000acd] 10: 
+[00000ace]  b: playVoice MINNA005
+[00000ad8] 10: 
+[00000ad9] 19: 
+[00000ada] ff: text 69
+{textColor 1 1}【Everyone】 "Cheers!" 
+
+
+[00000add] 10: 
+[00000ade] 12: removeFG 1 3
+[00000ae5] 10: 
+[00000ae6] 19: 
+[00000ae7] ff: text 6a
+{textColor 0 2}Well, that was awkward, but at least she was able to pull it off... 
+
+
+[00000aea] 10: 
+[00000aeb]  f: removeBG 0 0 2
+[00000af5] 10: 
+[00000af6]  8: playSFX SE114 0
+[00000b00] 10: 
+[00000b01]  c: createPanBG 00000000 EV_KY04A 0 4 0 0 3
+[00000b11] 10: 
+[00000b12]  e: movePanBG 1 4 0 16
+[00000b1a] 10: 
+[00000b1b]  f: removeBG 0 0 2
+[00000b25] 10: 
+[00000b26] 10: bgload 00000000 BG803 4 1
+[00000b33] 10: 
+[00000b34]  9: stopSFX
+[00000b35] 10: 
+[00000b36] 19: 
+[00000b37] ff: text 6b
+{textColor 0 2}Everyone is much more cheerful than last time. 
+{textColor 0 2}I can't find one speck of gloom on Saki's expression, and Haruka is in an unusually good mood. 
+{textColor 0 2}(Ah...) 
+{textColor 0 2}Looking at Haruka jogs my memory. 
+{textColor 0 2}Hell's about to break loose any second now... 
+{textColor 0 2}... 
+
+
+[00000b3a] 10: 
+[00000b3b]  b: playVoice YL2D4090
+[00000b45] 10: 
+[00000b46] 19: 
+[00000b47] ff: text 6c
+{textColor 1 5}【Haruka】 "This..." 
+{textColor 0 2}Haruka takes out a plastic bag. 
+{textColor 0 2}Inside are some familiar small, living creatures, closely packed and crowded together. 
+
+
+[00000b4a] 10: 
+[00000b4b] 10: bgload 00000000 bg800 0 1
+[00000b58] 10: 
+[00000b59] 11: fgload 0 00000000 YU12AB 1 3
+[00000b69] 10: 
+[00000b6a]  b: playVoice YL2D4091
+[00000b74] 10: 
+[00000b75] 19: 
+[00000b76] ff: text 6d
+{textColor 1 4}【Yuka】 "Ah! There's crabs here♪" 
+
+
+[00000b79] 10: 
+[00000b7a] 12: removeFG 0 3
+[00000b81] 10: 
+[00000b82] 19: 
+[00000b83] ff: text 6e
+{textColor 0 2}As if sensing the event that's about to come, Yuka quickly runs away. 
+{textColor 0 2}I nonchalantly go around Okuhiko and stand behind him. 
+
+
+[00000b86] 10: 
+[00000b87]  f: removeBG 0 5 2
+[00000b91] 10: 
+[00000b92] 10: bgload 00000000 BG807 4 1
+[00000b9f] 10: 
+[00000ba0]  b: playVoice YL2D4092
+[00000baa] 10: 
+[00000bab] 19: 
+[00000bac] ff: text 6f
+{textColor 1 7}【Kurumi】 "Haruka-san? What's that?" 
+{textColor 0 2}Kurumi asks innocently. 
+
+
+[00000baf] 10: 
+[00000bb0] 11: fgload 0 00000000 HA01AB 0 3
+[00000bc0] 10: 
+[00000bc1]  b: playVoice YL2D4093
+[00000bcb] 10: 
+[00000bcc] 19: 
+[00000bcd] ff: text 70
+{textColor 1 5}【Haruka】 "Sea roaches." 
+
+
+[00000bd0] 10: 
+[00000bd1]  b: playVoice YL2D4094
+[00000bdb] 10: 
+[00000bdc] 19: 
+[00000bdd] ff: text 71
+{textColor 0 0}【Okuhiko】 "Wh-Wh-Wh-What d-do you intend to do with them, Haruka-chan?" 
+
+
+[00000be0] 10: 
+[00000be1]  b: playVoice YL2D4095
+[00000beb] 10: 
+[00000bec] 19: 
+[00000bed] ff: text 72
+{textColor 1 5}【Haruka】 "Eat them." 
+
+
+[00000bf0] 10: 
+[00000bf1]  b: playVoice YL2D4096
+[00000bfb] 10: 
+[00000bfc] 19: 
+[00000bfd] ff: text 73
+{textColor 0 0}【Okuhiko】 "... Huh?" 
+
+
+[00000c00] 10: 
+[00000c01]  b: playVoice YL2D4097
+[00000c0b] 10: 
+[00000c0c] 19: 
+[00000c0d] ff: text 74
+{textColor 1 8}【Izumi】 "... Huh?" 
+
+
+[00000c10] 10: 
+[00000c11]  b: playVoice YL2D4098
+[00000c1b] 10: 
+[00000c1c] 19: 
+[00000c1d] ff: text 75
+{textColor 1 6}【Saki】 "... Huh?" 
+
+
+[00000c20] 10: 
+[00000c21] 15: removeAllFG 3
+[00000c25] 10: 
+[00000c26] 11: fgload 0 00000000 KU02AB 2 3
+[00000c36] 10: 
+[00000c37]  b: playVoice YL2D4099
+[00000c41] 10: 
+[00000c42] 19: 
+[00000c43] ff: text 76
+{textColor 1 7}【Kurumi】 "... But they might be surprisingly tasty!" 
+{textColor 0 2}Kurumi mutters this. 
+
+
+[00000c46] 10: 
+[00000c47]  b: playVoice YL2D4100
+[00000c51] 10: 
+[00000c52] 19: 
+[00000c53] ff: text 77
+{textColor 1 6}【Saki】 "Th-There's no way something like that would be good!" 
+
+
+[00000c56] 10: 
+[00000c57] 12: removeFG 0 3
+[00000c5e] 10: 
+[00000c5f] 11: fgload 0 00000000 HA01AB 0 3
+[00000c6f] 10: 
+[00000c70]  b: playVoice YL2D4101
+[00000c7a] 10: 
+[00000c7b] 19: 
+[00000c7c] ff: text 78
+{textColor 1 5}【Haruka】 "... Shall I try grilling them?" 
+
+
+[00000c7f] 10: 
+[00000c80]  b: playVoice YL2D4102
+[00000c8a] 10: 
+[00000c8b] 19: 
+[00000c8c] ff: text 79
+{textColor 1 6}【Saki】 "Hey, listen to what people are saying, dammit!" 
+
+
+[00000c8f] 10: 
+[00000c90]  b: playVoice YL2D4103
+[00000c9a] 10: 
+[00000c9b] 19: 
+[00000c9c] ff: text 7a
+{textColor 1 7}【Kurumi】 "Grill them, grill them, grill the sea roaches♪" 
+
+
+[00000c9f] 10: 
+[00000ca0]  b: playVoice YL2D4104
+[00000caa] 10: 
+[00000cab] 19: 
+[00000cac] ff: text 7b
+{textColor 1 6}【Saki】 "Don't grill them!" 
+
+
+[00000caf] 10: 
+[00000cb0] 15: removeAllFG 3
+[00000cb4] 10: 
+[00000cb5] 19: 
+[00000cb6] ff: text 7c
+{textColor 0 2}In the time she says that, Haruka has almost finished opening the plastic bag. 
+{textColor 0 2}I smoothly bind Okuhiko's arms behind his back so he can't try to run away. 
+
+
+[00000cb9] 10: 
+[00000cba] 11: fgload 0 00000000 OK10AB 1 3
+[00000cca] 10: 
+[00000ccb]  b: playVoice YL2D4105
+[00000cd5] 10: 
+[00000cd6] 19: 
+[00000cd7] ff: text 7d
+{textColor 0 0}【Okuhiko】 "Huh? Ishihara... what are you doing?" 
+
+
+[00000cda] 10: 
+[00000cdb]  7: stopBGM
+[00000cdc] 10: 
+[00000cdd] 19: 
+[00000cde] ff: text 7e
+{textColor 0 2}――And in the next instant. 
+{textColor 0 2}The opening to the plastic bag opens up, and the large group of sea roaches scatter. 
+
+
+[00000ce1] 10: 
+[00000ce2] 11: fgload 0 00000000 OK11AB 1 3
+[00000cf2] 10: 
+[00000cf3]  b: playVoice YL2D4106
+[00000cfd] 10: 
+[00000cfe] 19: 
+[00000cff] ff: text 7f
+{textColor 0 0}【Okuhiko】 "GWAAAAGH!!!" 
+
+
+[00000d02] 10: 
+[00000d03] 12: removeFG 0 3
+[00000d0a] 10: 
+[00000d0b]  6: playBGM 19
+[00000d10] 10: 
+[00000d11] 19: 
+[00000d12] ff: text 80
+{textColor 0 2}Okuhiko screams... 
+{textColor 0 2}Saki and Izumi-san vanish at top speed. 
+{textColor 0 2}Fortunately, none of the sea roaches scatter on top of the iron plate, and they go every each way... 
+{textColor 0 2}... However, several of them climb up Okuhiko's body. 
+
+
+[00000d15] 10: 
+[00000d16] 11: fgload 0 00000000 OK11AB 1 3
+[00000d26] 10: 
+[00000d27]  b: playVoice YL2D4107
+[00000d31] 10: 
+[00000d32] 19: 
+[00000d33] ff: text 81
+{textColor 0 0}【Okuhiko】 "AAAAAAAAH!!!" 
+
+
+[00000d36] 10: 
+[00000d37] 11: fgload 0 00000000 OK04AB 1 3
+[00000d47] 10: 
+[00000d48]  b: playVoice YL2D4108
+[00000d52] 10: 
+[00000d53] 19: 
+[00000d54] ff: text 82
+{textColor 0 0}【Okuhiko】 "Let me go, Ishihara, let me go, let me go!" 
+
+
+[00000d57] 10: 
+[00000d58] 11: fgload 0 00000000 OK11AB 1 3
+[00000d68] 10: 
+[00000d69]  b: playVoice YL2D4109
+[00000d73] 10: 
+[00000d74] 19: 
+[00000d75] ff: text 83
+{textColor 0 0}【Okuhiko】 "GAAAAAAAH!!!" 
+
+
+[00000d78] 10: 
+[00000d79] 11: fgload 0 00000000 OK09AB 1 3
+[00000d89] 10: 
+[00000d8a]  b: playVoice YL2D4110
+[00000d94] 10: 
+[00000d95] 19: 
+[00000d96] ff: text 84
+{textColor 0 0}【Okuhiko】 "They're getting in my pants, they're getting in my pants, they're getting in my pants, they're getting in my pants..." 
+
+
+[00000d99] 10: 
+[00000d9a] 12: removeFG 0 3
+[00000da1] 10: 
+[00000da2]  b: playVoice YL2D4111
+[00000dac] 10: 
+[00000dad] 19: 
+[00000dae] ff: text 85
+{textColor 0 0}【Okuhiko】 "HYAAAAAAAH!!!" 
+
+
+[00000db1] 10: 
+[00000db2] 10: bgload 00000000 BG17N 0 1
+[00000dbf] 10: 
+[00000dc0] 19: 
+[00000dc1] ff: text 86
+{textColor 0 2}Wham... 
+{textColor 0 2}Okuhiko completely faints... 
+{textColor 0 2}Soon enough... everyone timidly comes back. 
+
+
+[00000dc4] 10: 
+[00000dc5] 11: fgload 1 00000000 HA08AA 0 3
+[00000dd5] 10: 
+[00000dd6]  b: playVoice YL2D4112
+[00000de0] 10: 
+[00000de1] 19: 
+[00000de2] ff: text 87
+{textColor 1 5}【Haruka】 "But..." 
+
+
+[00000de5] 10: 
+[00000de6] 11: fgload 0 00000000 KU08AA 2 3
+[00000df6] 10: 
+[00000df7]  b: playVoice YL2D4113
+[00000e01] 10: 
+[00000e02] 19: 
+[00000e03] ff: text 88
+{textColor 1 7}【Kurumi】 "... We wanted to eat them." 
+{textColor 0 2}Haruka and Kurumi slump their shoulders in disappointment... 
+
+
+[00000e06] 10: 
+[00000e07]  f: removeBG 0 2 2
+[00000e11] 10: 
+[00000e12] 15: removeAllFG 3
+[00000e16] 10: 
+[00000e17]  7: stopBGM
+[00000e18] 10: 
+[00000e19] 10: bgload 00000000 BG803 0 1
+[00000e26] 10: 
+[00000e27]  6: playBGM 8
+[00000e2b] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 19
+[00000e37] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 47
+[00000e43] 10: 
+[00000e44] 17: showClock
+[00000e45] 10: 
+[00000e46] 19: 
+[00000e47] ff: text 89
+{textColor 0 2}About an hour has passed since then. 
+{textColor 0 2}The party's in full swing. Due to the sea roach incident, we've become more lively. 
+{textColor 0 2}Everything is calm as we fool around and poke fun at each other... it's as noisy as ever. 
+{textColor 0 2}I think now's the best time to tell Yuka about my plan for us to "be together with Kurumi all night", so... 
+
+
+[00000e4a] 10: 
+[00000e4b] 10: bgload 00000000 BG17N 0 1
+[00000e58] 10: 
+[00000e59] 19: 
+[00000e5a] ff: text 8a
+{textColor 0 2}... I secretly call Yuka over towards the rocks, a short distance away from the party. 
+
+
+[00000e5d] 10: 
+[00000e5e] 11: fgload 0 00000000 YU01ABAN 1 3
+[00000e6e] 10: 
+[00000e6f]  b: playVoice YL2D4114
+[00000e79] 10: 
+[00000e7a] 19: 
+[00000e7b] ff: text 8b
+{textColor 1 4}【Yuka】 "Wha ish it, Mako-tan? Doo yuu have shom buishnessh with me?" 
+{textColor 0 0}【Makoto】 "Yeah, there's something important I have to talk to you about." 
+{textColor 1 4}【Yuka】 "..." 
+{textColor 0 0}【Makoto】 "... W-What is it?" 
+
+
+[00000e7e] 10: 
+[00000e7f] 11: fgload 0 00000000 YU02ABAN 1 3
+[00000e8f] 10: 
+[00000e90]  b: playVoice YL2D4115
+[00000e9a] 10: 
+[00000e9b] 19: 
+[00000e9c] ff: text 8c
+{textColor 1 4}【Yuka】 "... Lesshee... ish it a confesshun of love?" 
+{textColor 0 0}【Makoto】 "I-Idiot, there's no way it'd be that!" 
+
+
+[00000e9f] 10: 
+[00000ea0] 11: fgload 0 00000000 YU07ABAN 1 3
+[00000eb0] 10: 
+[00000eb1]  b: playVoice YL2D4116
+[00000ebb] 10: 
+[00000ebc] 19: 
+[00000ebd] ff: text 8d
+{textColor 1 4}【Yuka】 "C'mon, Mako-tan♪ If that's it, then yuu shuld hurry up and shay it♪" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000ec0] 10: 
+[00000ec1] 11: fgload 0 00000000 YU02ABAN 1 3
+[00000ed1] 10: 
+[00000ed2]  b: playVoice YL2D4117
+[00000edc] 10: 
+[00000edd] 19: 
+[00000ede] ff: text 8e
+{textColor 1 4}【Yuka】 "Mako-tan, the truth ish... I alsho lo..." 
+
+
+[00000ee1] 10: 
+[00000ee2]  7: stopBGM
+[00000ee3] 10: 
+[00000ee4] 19: 
+[00000ee5] ff: text 8f
+{textColor 0 2}Huh...? 
+
+
+[00000ee8] 10: 
+[00000ee9]  8: playSFX SE118 1
+[00000ef3] 10: 
+[00000ef4]  a: waitForSFX
+[00000ef5] 10: 
+[00000ef6]  1: cmd1 0
+[00000efa] 10: 
+[00000efb] 19: 
+[00000efc] ff: text 90
+{textColor 0 2}My heart is beating furiously. 
+
+
+[00000eff] 10: 
+[00000f00] 11: fgload 0 00000000 YU07ABAN 1 3
+[00000f10] 10: 
+[00000f11]  b: playVoice YL2D4118
+[00000f1b] 10: 
+[00000f1c] 19: 
+[00000f1d] ff: text 91
+{textColor 1 4}【Yuka】 "Kyahahahahahahaha♪" 
+
+
+[00000f20] 10: 
+[00000f21]  b: playVoice YL2D4119
+[00000f2b] 10: 
+[00000f2c] 19: 
+[00000f2d] ff: text 92
+{textColor 1 4}【Yuka】 "That wash a lie, a joke♪" 
+
+
+[00000f30] 10: 
+[00000f31]  6: playBGM 1
+[00000f35] 10: 
+[00000f36] 19: 
+[00000f37] ff: text 93
+{textColor 0 2}Y-You... 
+
+
+[00000f3a] 10: 
+[00000f3b]  b: playVoice YL2D4120
+[00000f45] 10: 
+[00000f46] 19: 
+[00000f47] ff: text 94
+{textColor 1 4}【Yuka】 "I thought it'd be funny if I made a little fun of yuu♪" 
+
+
+[00000f4a] 10: 
+[00000f4b]  b: playVoice YL2D4121
+[00000f55] 10: 
+[00000f56] 19: 
+[00000f57] ff: text 95
+{textColor 1 4}【Yuka】 "Yer sho cute... when yuu look troubled♪" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000f5a] 10: 
+[00000f5b] 11: fgload 0 00000000 YU01ABAN 1 3
+[00000f6b] 10: 
+[00000f6c]  b: playVoice YL2D4122
+[00000f76] 10: 
+[00000f77] 19: 
+[00000f78] ff: text 96
+{textColor 1 4}【Yuka】 "Sho? Whash that shomething important yuu wanted to talk about?" 
+{textColor 0 0}【Makoto】 "Haah..." 
+
+
+[00000f7b] 10: 
+[00000f7c] 12: removeFG 0 3
+[00000f83] 10: 
+[00000f84] 19: 
+[00000f85] ff: text 97
+{textColor 0 2}With a deep sigh, I tell Yuka my plans for Kurumi... 
+{textColor 0 2}... 
+
+
+[00000f88] 10: 
+[00000f89] 11: fgload 0 00000000 YU02ABAN 1 3
+[00000f99] 10: 
+[00000f9a]  b: playVoice YL2D4123
+[00000fa4] 10: 
+[00000fa5] 19: 
+[00000fa6] ff: text 98
+{textColor 1 4}【Yuka】 "I shee. Sho that'sh it..." 
+{textColor 0 0}【Makoto】 "You'll help me, right?" 
+
+
+[00000fa9] 10: 
+[00000faa]  b: playVoice YL2D4124
+[00000fb4] 10: 
+[00000fb5] 19: 
+[00000fb6] ff: text 99
+{textColor 1 4}【Yuka】 "Of course!" 
+{textColor 0 0}【Makoto】 "... Hey, did you really understand a word of what I just said now?" 
+
+
+[00000fb9] 10: 
+[00000fba]  b: playVoice YL2D4125
+[00000fc4] 10: 
+[00000fc5] 19: 
+[00000fc6] ff: text 9a
+{textColor 1 4}【Yuka】 "Geez, ish faine!" 
+
+
+[00000fc9] 10: 
+[00000fca] 11: fgload 0 00000000 YU07ABAN 1 3
+[00000fda] 10: 
+[00000fdb]  b: playVoice YL2D4126
+[00000fe5] 10: 
+[00000fe6] 19: 
+[00000fe7] ff: text 9b
+{textColor 1 4}【Yuka】 "Jusht leave it to meee! Nahahahaha...♪" 
+{textColor 0 2}Maybe I should have waited until she was sober before bringing this up... 
+{textColor 0 2}That's what I think. 
+
+
+[00000fea] 10: 
+[00000feb]  7: stopBGM
+[00000fec] 10: 
+[00000fed] 19: 
+[00000fee] ff: text 9c
+{textColor 0 2}――And at that time! 
+
+
+[00000ff1] 10: 
+[00000ff2]  8: playSFX SE111 1
+[00000ffc] 10: 
+[00000ffd] 19: 
+[00000ffe] ff: text 9d
+{textColor 0 2}The sound of water splashing echoes! 
+{textColor 0 2}This sound... It's exactly like the one I heard at the last barbecue. 
+{textColor 0 2}I don't need to turn around to understand the situation. 
+{textColor 0 2}Saki's hand accidentally slipped, and she spilled the beer in her paper cup on Yuka. 
+{textColor 0 2}――Huh??? ... Yuka??? 
+{textColor 0 2}But Yuka's in front of me right now, isn't she? 
+{textColor 0 2}(Which means...?) 
+
+
+[00001001] 10: 
+[00001002] 12: removeFG 0 3
+[00001009] 10: 
+[0000100a]  f: removeBG 0 4 2
+[00001014] 10: 
+[00001015] 19: 
+[00001016] ff: text 9e
+{textColor 0 2}I try slowly turning around... 
+{textColor 0 2}By the iron plate... Saki is holding a now empty paper cup. 
+{textColor 0 2}And the beer has landed on... 
+
+
+[00001019] 10: 
+[0000101a] 10: bgload 00000000 EV_KU10 0 1
+[00001027] 10: 
+[00001028] 19: 
+[00001029] ff: text 9f
+{textColor 0 2}――Kurumi! 
+{textColor 0 2}Kurumi's clothes are soaked from her chest to the bottom of her shirt. 
+{textColor 0 2}(I see...) 
+{textColor 0 2}Because Yuka wasn't in the ring of people, the person who was next to her originally, Kurumi, was directly hit... 
+
+
+[0000102c] 10: 
+[0000102d]  b: playVoice YL2D4127
+[00001037] 10: 
+[00001038] 19: 
+[00001039] ff: text a0
+{textColor 1 7}【Kurumi】 "H-Hey, Saki-san..." 
+
+
+[0000103c] 10: 
+[0000103d]  b: playVoice YL2D4128
+[00001047] 10: 
+[00001048] 19: 
+[00001049] ff: text a1
+{textColor 1 6}【Saki】 "... S-Sorry." 
+{textColor 0 2}Everyone becomes completely silent. 
+
+
+[0000104c] 10: 
+[0000104d]  b: playVoice YL2D4129
+[00001057] 10: 
+[00001058] 19: 
+[00001059] ff: text a2
+{textColor 1 6}【Saki】 "I'm really sorry." 
+{textColor 0 2}... She sounds genuinely apologetic, meaning every word. 
+{textColor 0 2}As a further gesture of apology, Saki begins to wipe the beer off of Kurumi's clothes with a dish cloth. 
+{textColor 0 2}Okuhiko doesn't make any stupid jokes, and keeps his mouth shut. 
+{textColor 0 2}Naturally, Haruka also stays put, not showing any signs of agitation. 
+{textColor 0 2}Just then... 
+
+
+[0000105c] 10: 
+[0000105d]  b: playVoice YL2D4130
+[00001067] 10: 
+[00001068] 19: 
+[00001069] ff: text a3
+{textColor 1 8}【Izumi】 "Geez, Saki-chan, are you sure you're not drunk?♪" 
+
+
+[0000106c] 10: 
+[0000106d]  b: playVoice YL2D4131
+[00001077] 10: 
+[00001078] 19: 
+[00001079] ff: text a4
+{textColor 0 0}【Okuhiko】 "Ha ha, that was pretty careless of you, Saki-chan♪" 
+
+
+[0000107c] 10: 
+[0000107d]  b: playVoice YL2D4132
+[00001087] 10: 
+[00001088] 19: 
+[00001089] ff: text a5
+{textColor 1 5}【Haruka】 "Hee hee hee hee..." 
+
+
+[0000108c] 10: 
+[0000108d]  b: playVoice YL2D4133
+[00001097] 10: 
+[00001098] 19: 
+[00001099] ff: text a6
+{textColor 1 6}【Saki】 "Ahahahaha..." 
+
+
+[0000109c] 10: 
+[0000109d]  b: playVoice YL2D4134
+[000010a7] 10: 
+[000010a8] 19: 
+[000010a9] ff: text a7
+{textColor 1 7}【Kurumi】 "Eheheheh..." 
+
+
+[000010ac] 10: 
+[000010ad] 10: bgload 00000000 BG801 0 1
+[000010ba] 10: 
+[000010bb]  b: playVoice MINNA006
+[000010c5] 10: 
+[000010c6] 19: 
+[000010c7] ff: text a8
+{textColor 1 1}【Everyone】 "Kyahahahahahaha...♪" 
+
+
+[000010ca] 10: 
+[000010cb]  6: playBGM 8
+[000010cf] 10: 
+[000010d0] 19: 
+[000010d1] ff: text a9
+{textColor 0 2}... Everyone bursts into laughter. 
+{textColor 0 2}They cheerfully laugh at Saki's blunder, as if trying to poke fun at her and brush the incident off. 
+{textColor 0 2}Of course, Kurumi's bright smile returns too. 
+{textColor 0 2}Saki sheepishly grins at all the teasing. 
+{textColor 0 2}It's as if... anything and everything's all changed. 
+{textColor 0 2}The atmosphere from last time has suddenly changed to a harmonious atmosphere. 
+{textColor 0 2}Why...? 
+{textColor 0 2}I don't even have to think about it. 
+{textColor 0 2}Once again, a bad history has changed into a good one. 
+{textColor 0 2}However, this one is special because history has changed without us directly interfering with it. 
+{textColor 0 2}We didn't think about trying to prevent the fight, but, thankfully, history changed for us. 
+{textColor 0 2}This is just like that story, "When the wind blows, the barrel makers profit." 
+{textColor 0 2}Could it be that even luck is on our side now? 
+{textColor 0 2}When I think that, I get into a kinda giddy mood. 
+{textColor 0 2}It's a little later... but Yuka and I began to laugh much louder than the others... 
+{textColor 0 2}... After that, the laughter doesn't cease until the barbecue ends... 
+
+
+[000010d4] 10: 
+[000010d5]  f: removeBG 0 0 0
+[000010df] 10: 
+[000010e0]  7: stopBGM
+[000010e1] 10: 
+[000010e2]  4: jump YL2D5
+[000010e9]  0: 
+[000010ea]  0: 
+[000010eb]  0: 

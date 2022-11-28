@@ -1,0 +1,1665 @@
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//		Title:『Ever17』
+//		File:	
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//アクアシステムデフォルトスクリプト--ここから--
+[StartUp]
+{
+	:SceneName	"少年編　沙羅エンド"
+	:Presence	3
+	[LoadTexture]
+	{
+		:Texture	0
+	}
+}
+[TaskList]
+{
+	:TaskMax	100001
+//アクアシステムデフォルトスクリプト--ここまで--
+//-----------------
+//沙羅エピローグ
+//-----------------
+//SS0E
+//5pb.--初期化コマンド--
+	[Task100]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitTag"
+	}
+//基本だいたいオリジナル通り。
+//矛盾でない修正
+//5pb.-ファイル開始時基本セット-
+	[Task110]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//☆ＳＥ砂浜
+	[Task120]
+	{
+		:Tasktype	"SePlay"
+		:SE			28	//	置換しました<<se01_10l>>
+	}
+	[Task130]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			0
+		:SpriteDelete	1
+	}
+//井筒：指定ミスっぽい感じがするので後半に移動
+//☆ＥＣＧEV_SA15A//ネーミング無し、多分、沙羅自由に向かって
+//ＢＧ場面ブラック
+	[Task140]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		111	//	置換しました<<bg_black>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			0
+		:FadeWait		0
+	}
+//5pb.松--データ先読み--
+	[Task150]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	107	//	置換しました<<bg62naa>>
+		:Number		1
+		:Param		640,320,0,0,1.1
+		:Param2		640,320,0,0,1.1
+		:Priority	4
+		:Time		0
+		:EndDelete	0
+		:EndWait	0
+	}
+	[Task160]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task170]
+	{
+		:Tasktype	"Message"
+		:Message	"寄せては返す潮騒の音が聞こえる………。"
+		:Frame		1
+	}
+	[Task180]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくの頬を潮風がなでる………。"
+		:Frame		1
+	}
+	[Task190]
+	{
+		:Tasktype	"Message"
+		:Message	"……………………。"
+		:Frame		1
+	}
+	[Task200]
+	{
+		:Tasktype	"Message"
+		:Message	"風……？"
+		:Frame		1
+	}
+	[Task210]
+	{
+		:Tasktype	"Message"
+		:Message	"潮騒……？"
+		:Frame		1
+	}
+	[Task220]
+	{
+		:Tasktype	"Message"
+		:Message	"……ぼくは、ゆっくり目を開いた。"
+		:Frame		1
+	}
+//☆ＢＧレミュウ砂浜エリア？/夜、星空
+	[Task230]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task240]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	107	//	置換しました<<bg62naa>>
+		:Number		1
+		:Param		640,320,0,0,1.1
+		:Param2		640,320,255,0,1.1
+		:Priority	4
+		:Time		120
+		:EndDelete	0
+		:EndWait	1
+	}
+	[Task250]
+	{
+		:Tasktype		"SpriteDeleteBG"
+		:SpriteNumber	111	//	置換しました<<bg_black>>
+		:FadeWait		0
+	}
+	[Task260]
+	{
+		:Tasktype	"Sprite"
+		:Texture	150	//	置換しました<<ibg09b>>
+		:Position	640,360
+		:Priority	5
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task270]
+	{
+		:Tasktype		"SpriteMove"
+		:SpriteNumber	150	//	置換しました<<ibg09b>>
+		:Position		640,320
+		:Scale			1.1
+		:Time			0
+		:Wait			1
+	}
+	[Task280]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task290]
+	{
+		:Tasktype	"Message"
+		:Message	"一瞬、ここがどこだか判らない……。"
+		:Frame		1
+	}
+//☆ＢＧ夜、星空、満月
+	[Task300]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task310]
+	{
+		:Tasktype		"SpriteMove"
+		:SpriteNumber	150	//	置換しました<<ibg09b>>
+		:Position		640,400,2
+		:Scale			1.1
+		:Time			120
+		:Wait			0
+	}
+	[Task320]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	107	//	置換しました<<bg62naa>>
+		:Number		1
+		:Param		640,320,255,0,1.1
+		:Param2		640,400,0,0,1.1
+		:Priority	4
+		:Time		120
+		:EndDelete	0
+		:EndWait	1
+	}
+	[Task330]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task340]
+	{
+		:Tasktype	"Message"
+		:Message	"思わず、上を見上げる。"
+		:Frame		1
+	}
+	[Task350]
+	{
+		:Tasktype	"Message"
+		:Message	"そこに鋼鉄の牢獄のような天井は無かった。"
+		:Frame		1
+	}
+	[Task360]
+	{
+		:Tasktype	"Message"
+		:Message	"ただ、辺り一面……満天の星空。"
+		:Frame		1
+	}
+	[Task370]
+	{
+		:Tasktype	"Message"
+		:Message	"無限の広がりを感じさせる……星の海。"
+		:Frame		1
+	}
+	[Task380]
+	{
+		:Tasktype	"Message"
+		:Message	"そして満月が、静かな光を放っていた……。"
+		:Frame		1
+	}
+//☆ＢＧレミュウ砂浜エリア？/夜、星空
+	[Task390]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task400]
+	{
+		:Tasktype		"SpriteMove"
+		:SpriteNumber	150	//	置換しました<<ibg09b>>
+		:Position		640,320,1
+		:Scale			1.1
+		:Time			120
+		:Wait			0
+	}
+	[Task410]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	107	//	置換しました<<bg62naa>>
+		:Number		1
+		:Param		640,400,0,0,1.1
+		:Param2		640,320,255,0,1.1
+		:Priority	4
+		:Time		120
+		:EndDelete	0
+		:EndWait	1
+	}
+	[Task420]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task430]
+	{
+		:Tasktype	"Message"
+		:Message	"ここは……、地上だ。"
+		:Frame		1
+	}
+	[Task440]
+	{
+		:Tasktype	"Message"
+		:Message	"正確に言うならば、浮島、インゼル・ヌルの浜辺……。"
+		:Frame		1
+	}
+	[Task450]
+	{
+		:Tasktype	"Message"
+		:Message	"そう、ぼくは……、いや、ぼくらは助かったんだ。"
+		:Frame		1
+	}
+	[Task460]
+	{
+		:Tasktype	"Message"
+		:Message	"絶望の海底から……。"
+		:Frame		1
+	}
+	[Task470]
+	{
+		:Tasktype	"Message"
+		:Message	"クヴァレが、ゆらゆらと波打ち際で揺れながら月光を反射していた。"
+		:Frame		1
+	}
+	[Task480]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくらをここまで運んで来てくれたクヴァレ……。"
+		:Frame		1
+	}
+	[Task490]
+	{
+		:Tasktype	"Message"
+		:Message	"ゆっくりと浮上した為か、それともなんらかの安全装置が働いた為か。海上でハッチを開けた時、急激な減圧は起きなかった。"
+		:Frame		1
+	}
+	[Task500]
+	{
+		:Tasktype	"Message"
+		:Message	"クヴァレから出たぼくらは、夜の海に飛び込み、月明かりを頼りに、ここまで泳いできたのだ……。"
+		:Frame		1
+	}
+	[Task510]
+	{
+		:Tasktype	"Message"
+		:Message	"そして２人で、肩を寄せ合いながら上陸したところまでは覚えている。"
+		:Frame		1
+	}
+	[Task520]
+	{
+		:Tasktype	"Message"
+		:Message	"その後、疲労と安堵からか、意識を失ってしまったのだろう……。"
+		:Frame		1
+	}
+	[Task530]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは、ハッと体を起こしまわりを見回し、沙羅がぼくのすぐ横にいるのを見てほっと胸をなで下ろした。"
+		:Frame		1
+	}
+	[Task540]
+	{
+		:Tasktype	"Message"
+		:Message	"その胸は、かすかに上下し、規則正しい呼吸の音が確認できる。"
+		:Frame		1
+	}
+	[Task550]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは改めて、辺りを見回した。"
+		:Frame		1
+	}
+	[Task560]
+	{
+		:Tasktype	"Message"
+		:Message	"遊具施設に、派手な電飾が輝いている。"
+		:Frame		1
+	}
+	[Task570]
+	{
+		:Tasktype	"Message"
+		:Message	"管理棟やホテル、タワーの明かりも見える。"
+		:Frame		1
+	}
+	[Task580]
+	{
+		:Tasktype	"Message"
+		:Message	"まだ空が暗いところを見ると、そんなに長い時間が経ったわけではなさそうだ……。"
+		:Frame		1
+	}
+//☆ＢＧ夜、星空、満月
+	[Task590]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task600]
+	{
+		:Tasktype		"SpriteMove"
+		:SpriteNumber	150	//	置換しました<<ibg09b>>
+		:Position		640,400,2
+		:Scale			1.1
+		:Time			120
+		:Wait			0
+	}
+	[Task610]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	107	//	置換しました<<bg62naa>>
+		:Number		1
+		:Param		640,320,255,0,1.1
+		:Param2		640,400,0,0,1.1
+		:Priority	4
+		:Time		120
+		:EndDelete	0
+		:EndWait	1
+	}
+	[Task620]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number		1
+		:EndWait	0
+	}
+	[Task630]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task640]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task650]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは再び天を仰いだ。"
+		:Frame		1
+	}
+	[Task660]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStart"
+	}
+	[Task670]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n¥n¥n¥n¥n「月には神秘的な力があるのかも知れませんね？」"
+		:Character		3		//空
+		:Voice	14666	//	置換しました<<ss0e_so000e>>
+		:ModelName		"空","空２","空３"
+		:Name			-1
+		:Frame			-1
+		:ChangingPage	1
+		:WindowType		1
+	}
+//音声加工回想
+	[Task680]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStop"
+	}
+	[Task690]
+	{
+		:Tasktype	"Message"
+		:Message	"空の声が聞こえた……。"
+		:Frame		1
+	}
+	[Task700]
+	{
+		:Tasktype	"Message"
+		:Message	"……そう言えば、空はどうしたんだろう？"
+		:Frame		1
+	}
+	[Task710]
+	{
+		:Tasktype	"Message"
+		:Message	"施設は海に沈んでしまったけど……。"
+		:Frame		1
+	}
+	[Task720]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは、ぼんやりと月を見つめた……。"
+		:Frame		1
+	}
+	[Task730]
+	{
+		:Tasktype	"Message"
+		:Message	"月の光が、優しくぼくを照らす……。"
+		:Frame		1
+	}
+	[Task740]
+	{
+		:Tasktype	"Message"
+		:Message	"空が、ぼくに笑いかけているような、そんな気がした……。"
+		:Frame		1
+	}
+//☆ＢＧレミュウ砂浜エリア？/夜、星空
+	[Task750]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task760]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		107	//	置換しました<<bg62naa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+//5pb.31:Weiser Hund -Klavier-		[追加][アレンジ]
+	[Task770]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		61	//	置換しました<<bgm31>>
+	}
+	[Task780]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task790]
+	{
+		:Tasktype	"Message"
+		:Message	"「う、んん……」"
+		:Character	7		//沙羅
+		:Voice	1478	//	置換しました<<ss0e_sa000>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task800]
+	{
+		:Tasktype	"Message"
+		:Message	"その声に意識を引き戻される。"
+		:Frame		1
+	}
+	[Task810]
+	{
+		:Tasktype	"Message"
+		:Message	"「沙羅……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task820]
+	{
+		:Tasktype	"Message"
+		:Message	"「う、ん、あ……」"
+		:Character	7		//沙羅
+		:Voice	1479	//	置換しました<<ss0e_sa001>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task830]
+	{
+		:Tasktype	"Message"
+		:Message	"沙羅がうっすらと目を開いた。"
+		:Frame		1
+	}
+	[Task840]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	135,135,168,255
+		:Ambient	150,170,195,255
+		:Spec		255,255,255,255
+		:Angle		-20,-10
+	}
+//☆ＣＨ沙羅：２／３
+	[Task850]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"沙羅"
+		:Preset		1
+//★ＣＨ沙羅：1：3
+		:Animation		0,5
+		:Rot		0
+		:Fade		20
+	}
+	[Task860]
+	{
+		:Tasktype	"Message"
+		:Message	"「お、おにい、ちゃん？」"
+		:Character	7		//沙羅
+		:Voice	1480	//	置換しました<<ss0e_sa002>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task870]
+	{
+		:Tasktype	"Message"
+		:Message	"すぐに、その目が大きく見開かれる。"
+		:Frame		1
+	}
+	[Task880]
+	{
+		:Tasktype	"Message"
+		:Message	"沙羅は、あわてて体を起こした。"
+		:Frame		1
+	}
+	[Task890]
+	{
+		:Tasktype	"Message"
+		:Message	"そんな沙羅を見て、ぼくの顔に優しい笑顔が浮かぶ。"
+		:Frame		1
+	}
+	[Task900]
+	{
+		:Tasktype	"Message"
+		:Message	"「お兄ちゃん、ここって……」"
+		:Character	7		//沙羅
+		:Voice	1481	//	置換しました<<ss0e_sa003>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task910]
+	{
+		:Tasktype	"Message"
+		:Message	"沙羅は、まだ状況を把握できていないようだ。"
+		:Frame		1
+	}
+	[Task920]
+	{
+		:Tasktype	"Message"
+//		:Message	"「インゼル・ヌル（ルビ：うえ）だよ」"
+		:Message	"「インゼル・ヌルだよ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：6
+	[Task930]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,5
+	}
+	[Task940]
+	{
+		:Tasktype	"Message"
+		:Message	"「じゃあ、じゃあ……」"
+		:Character	7		//沙羅
+		:Voice	1482	//	置換しました<<ss0e_sa004>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task950]
+	{
+		:Tasktype	"Message"
+		:Message	"「助かったんだ。ぼくらは、海の底からね」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：1
+	[Task960]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task970]
+	{
+		:Tasktype	"Message"
+		:Message	"「助かった……、助かったの……？」"
+		:Character	7		//沙羅
+		:Voice	1483	//	置換しました<<ss0e_sa005>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task980]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう、助かったんだ。沙羅も、ぼくも……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：2
+	[Task990]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task1000]
+	{
+		:Tasktype	"Message"
+		:Message	"「やった、やったね、お兄ちゃん！」"
+		:Character	7		//沙羅
+		:Voice	1484	//	置換しました<<ss0e_sa006>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1010]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう、ぼくらはやったんだ。生き残ったんだ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：1
+	[Task1020]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task1030]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん……。ありがとう、お兄ちゃん」"
+		:Character	7		//沙羅
+		:Voice	1485	//	置換しました<<ss0e_sa007>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1040]
+	{
+		:Tasktype	"Message"
+		:Message	"「言ったろ。 ぼくを信じろって」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：2
+	[Task1050]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task1060]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん、そうだね」"
+		:Character	7		//沙羅
+		:Voice	1486	//	置換しました<<ss0e_sa008>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1070]
+	{
+		:Tasktype	"Message"
+		:Message	"沙羅はにっこり微笑んだ。"
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：1
+	[Task1080]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task1090]
+	{
+		:Tasktype	"Message"
+		:Message	"「ありがとう……」"
+		:Character	7		//沙羅
+		:Voice	1487	//	置換しました<<ss0e_sa009>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1100]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、そっと呟いた。"
+		:Frame		1
+	}
+	[Task1110]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうだ。お兄ちゃん……、なっきゅ先輩や、武達は？」"
+		:Character	7		//沙羅
+		:Voice	1488	//	置換しました<<ss0e_sa010>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1120]
+	{
+		:Tasktype	"Message"
+		:Message	"「たぶん、大丈夫だと思う」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1130]
+	{
+		:Tasktype	"Message"
+		:Message	"「ぼくが引き返したときには、もう、非常階段のかなり上まで行ってたんだ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1140]
+	{
+		:Tasktype	"Message"
+		:Message	"「あのまま行けば、無事に地上に出られたはずだよ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：3
+	[Task1150]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task1160]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう……、よかった」"
+		:Character	7		//沙羅
+		:Voice	1489	//	置換しました<<ss0e_sa011>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1170]
+	{
+		:Tasktype	"Message"
+		:Message	"沙羅は、ほっと胸をなで下ろした。"
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：4
+	[Task1180]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,3
+	}
+	[Task1190]
+	{
+		:Tasktype	"Message"
+		:Message	"「私達も、いつまでもここにいるわけにはいかないね……」"
+		:Character	7		//沙羅
+		:Voice	1490	//	置換しました<<ss0e_sa012>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1200]
+	{
+		:Tasktype	"Message"
+		:Message	"無事に地上に出られたというのに、沙羅の表情はいまいちさえない。"
+		:Frame		1
+	}
+	[Task1210]
+	{
+		:Tasktype	"Message"
+		:Message	"やはり、ライプリヒに連れ戻されることを恐れているのだろう。"
+		:Frame		1
+	}
+	[Task1220]
+	{
+		:Tasktype	"Message"
+		:Message	"「ねえ、沙羅……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：1
+	[Task1230]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task1240]
+	{
+		:Tasktype	"Message"
+		:Message	"「なに？」"
+		:Character	7		//沙羅
+		:Voice	1491	//	置換しました<<ss0e_sa013>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1250]
+	{
+		:Tasktype	"Message"
+		:Message	"「このまま、逃げよう」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：6
+	[Task1260]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,5
+	}
+	[Task1270]
+	{
+		:Tasktype	"Message"
+		:Message	"「逃げる？」"
+		:Character	7		//沙羅
+		:Voice	1492	//	置換しました<<ss0e_sa014>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1280]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん、あいつら……ライプリヒから、逃げるんだ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：3：3
+	[Task1290]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		1,7
+	}
+	[Task1300]
+	{
+		:Tasktype	"Message"
+		:Message	"「そんな……できっこないよ……」"
+		:Character	7		//沙羅
+		:Voice	1493	//	置換しました<<ss0e_sa015>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1310]
+	{
+		:Tasktype	"Message"
+		:Message	"「無理じゃない」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1320]
+	{
+		:Tasktype	"Message"
+		:Message	"「どうしてそんなこと言い切れるの？」"
+		:Character	7		//沙羅
+		:Voice	1494	//	置換しました<<ss0e_sa016>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+//☆ＡＮ沙羅：3：4
+	[Task1330]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		1,3
+	}
+	[Task1340]
+	{
+		:Tasktype	"Message"
+		:Message	"「あいつらの事はお兄ちゃんだって知ってるでしょ！」"
+		:Character	7		//沙羅
+		:Voice	1495	//	置換しました<<ss0e_sa017>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1350]
+	{
+		:Tasktype	"Message"
+		:Message	"「いいかい、沙羅。落ち着いて、良く考えてみて」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：3：5
+	[Task1360]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		1,4
+	}
+	[Task1370]
+	{
+		:Tasktype	"Message"
+		:Message	"「今、この島は大混乱中なはずだ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1380]
+	{
+		:Tasktype	"Message"
+		:Message	"「有名な海洋テーマパークがまるごと、海の中に消えただけでも十分ニュースになるけども……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1390]
+	{
+		:Tasktype	"Message"
+		:Message	"「そんな絶望的な状況から優達が救出されたんだ。マスコミとかが飛びつかないわけがない。今頃はもう、大騒ぎになっているはずだよ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：3：6
+	[Task1400]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		1,5
+	}
+	[Task1410]
+	{
+		:Tasktype	"Message"
+		:Message	"「あっ…………」"
+		:Character	7		//沙羅
+		:Voice	1496	//	置換しました<<ss0e_sa018>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1420]
+	{
+		:Tasktype	"Message"
+		:Message	"「優達はぼくらがまだレミュウに取り残されているって、そう言ってるはずだ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1430]
+	{
+		:Tasktype	"Message"
+		:Message	"「そして、優達にとって、それはうそでも何でもない、真実なんだ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1440]
+	{
+		:Tasktype	"Message"
+		:Message	"「奴らが疑って、調査したところで、それ以上の真実なんて出てこないよ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：1
+	[Task1450]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task1460]
+	{
+		:Tasktype	"Message"
+		:Message	"「そっか……」"
+		:Character	7		//沙羅
+		:Voice	1497	//	置換しました<<ss0e_sa019>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1470]
+	{
+		:Tasktype	"Message"
+		:Message	"「だから、今、みんなの目は……、ライプリヒの奴らも含めて、すべて海中に、レミュウに向いてるはずだ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1480]
+	{
+		:Tasktype	"Message"
+		:Message	"「それどころか、ぼくらは、すでに死んでいると思われていてもおかしくない……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：2
+	[Task1490]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task1500]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうか、そうだよね！」"
+		:Character	7		//沙羅
+		:Voice	1498	//	置換しました<<ss0e_sa020>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1510]
+	{
+		:Tasktype	"Message"
+		:Message	"「だから、さ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1520]
+	{
+		:Tasktype	"Message"
+		:Message	"「だから、今こそが……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1530]
+	{
+		:Tasktype	"Message"
+		:Message	"「チャンスなんだね！」"
+		:Character	7		//沙羅
+		:Voice	1499	//	置換しました<<ss0e_sa021>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1540]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう、今が、今だからこそチャンスなんだ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：1
+	[Task1550]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task1560]
+	{
+		:Tasktype	"Message"
+		:Message	"「お兄ちゃん、すごい、すご〜い」"
+		:Character	7		//沙羅
+		:Voice	1500	//	置換しました<<ss0e_sa022>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1570]
+	{
+		:Tasktype	"Message"
+		:Message	"「ぼくらはすでにここにいるわけだから、レミュウの中でなんか見つかるわけがない」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1580]
+	{
+		:Tasktype	"Message"
+		:Message	"「レミュウの中でぼくらが見つからなかったとしたら……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1590]
+	{
+		:Tasktype	"Message"
+		:Message	"「捜索は、この辺りの海一帯に広がる」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1600]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん」"
+		:Character	7		//沙羅
+		:Voice	1501	//	置換しました<<ss0e_sa023>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1610]
+	{
+		:Tasktype	"Message"
+		:Message	"「もしかしたら、ぼくらは死んで、海流でどこかに流されたものと見なされるかもしれない……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：2
+	[Task1620]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task1630]
+	{
+		:Tasktype	"Message"
+		:Message	"「その間に、私たちが身を隠しちゃえば、追ってくる事なんか出来ないはずだよね」"
+		:Character	7		//沙羅
+		:Voice	1502	//	置換しました<<ss0e_sa024>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1640]
+	{
+		:Tasktype	"Message"
+		:Message	"「実際は、そこまでうまくは行かないかもしれないけど……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1650]
+	{
+		:Tasktype	"Message"
+		:Message	"「それでも、奴らが真相に気がつくまでかなりの時間が稼げるはずだ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1660]
+	{
+		:Tasktype	"Message"
+		:Message	"「そっか、うん！」"
+		:Character	7		//沙羅
+		:Voice	1503	//	置換しました<<ss0e_sa025>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：3
+	[Task1670]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,7
+	}
+	[Task1680]
+	{
+		:Tasktype	"Message"
+		:Message	"「あ……でも……」"
+		:Character	7		//沙羅
+		:Voice	1504	//	置換しました<<ss0e_sa026>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1690]
+	{
+		:Tasktype	"Message"
+		:Message	"沙羅が、ふと視線を落とす。"
+		:Frame		1
+	}
+	[Task1700]
+	{
+		:Tasktype	"Message"
+		:Message	"「でも……、この島からどうやって逃げるの？」"
+		:Character	7		//沙羅
+		:Voice	1505	//	置換しました<<ss0e_sa027>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1710]
+	{
+		:Tasktype	"Message"
+		:Message	"「え？」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1720]
+	{
+		:Tasktype	"Message"
+		:Message	"「だって、ここから出る方法がなきゃ逃げようがないでしょ？」"
+		:Character	7		//沙羅
+		:Voice	1506	//	置換しました<<ss0e_sa028>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1730]
+	{
+		:Tasktype	"Message"
+		:Message	"「あ〜、それは……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：1：5
+	[Task1740]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,4
+	}
+	[Task1750]
+	{
+		:Tasktype	"Message"
+		:Message	"「それは？」"
+		:Character	7		//沙羅
+		:Voice	1507	//	置換しました<<ss0e_sa029>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1760]
+	{
+		:Tasktype	"Message"
+		:Message	"沙羅は、ぼくを信じ切った瞳でじっと見つめる。"
+		:Frame		1
+	}
+	[Task1770]
+	{
+		:Tasktype	"Message"
+		:Message	"「う……、あ〜、そうだな……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1780]
+	{
+		:Tasktype	"Message"
+		:Message	"参ったな、それは考えてなかった。"
+		:Frame		1
+	}
+	[Task1790]
+	{
+		:Tasktype	"Message"
+		:Message	"とにかく、海上に出ればなんとかなると思ってたし……。"
+		:Frame		1
+	}
+	[Task1800]
+	{
+		:Tasktype	"Message"
+		:Message	"「…………」"
+		:Character	7		//沙羅
+		:Voice	1508	//	置換しました<<ss0e_sa030>>
+//		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1810]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは必死で考える。"
+		:Frame		1
+	}
+	[Task1820]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん、そうだ！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1830]
+	{
+		:Tasktype	"Message"
+		:Message	"「たぶん、インゼル・ヌルには普段のスタッフとは違う、土木とか医療とかとにかくいろんな分野の人間がたくさん出入りしているはずだ」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1840]
+	{
+		:Tasktype	"Message"
+		:Message	"「当然、人を輸送するために、車だけじゃなくて……船やヘリコプターだって、いっぱいある」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1850]
+	{
+		:Tasktype	"Message"
+		:Message	"「とにかく、まずどっかで……服を手に入れて着替えよう」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1860]
+	{
+		:Tasktype	"Message"
+		:Message	"「特に沙羅のその制服は……目立つからな」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：2：6
+	[Task1870]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		1,5
+	}
+	[Task1880]
+	{
+		:Tasktype	"Message"
+		:Message	"「あ……そうだね」"
+		:Character	7		//沙羅
+		:Voice	1509	//	置換しました<<ss0e_sa031>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1890]
+	{
+		:Tasktype	"Message"
+		:Message	"沙羅は、自分の格好を改めて見直した。"
+		:Frame		1
+	}
+	[Task1900]
+	{
+		:Tasktype	"Message"
+		:Message	"「それから……ヘリは無理でも、船のどれかに潜り込んでどこか遠くに運んでもらえれば……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1910]
+	{
+		:Tasktype	"Message"
+		:Message	"「そこまで行けば後は何とかなるよ！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+//☆ＡＮ沙羅：2：2
+	[Task1920]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		1,0
+	}
+	[Task1930]
+	{
+		:Tasktype	"Message"
+		:Message	"「そっか、やっぱりお兄ちゃんすごいね！　そこまで考えてたんだ」"
+		:Character	7		//沙羅
+		:Voice	1510	//	置換しました<<ss0e_sa032>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task1940]
+	{
+		:Tasktype	"Message"
+		:Message	"「あ、いや、まあ……そうだね」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task1950]
+	{
+		:Tasktype	"Message"
+		:Message	"沙羅は無邪気に喜んでいる。"
+		:Frame		1
+	}
+	[Task1960]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは、この笑顔を一生守ってやる。"
+		:Frame		1
+	}
+	[Task1970]
+	{
+		:Tasktype	"Message"
+		:Message	"それが自分の使命なんだと、改めて思った。"
+		:Frame		1
+	}
+	[Task1980]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//☆井筒：EVを最後に表示で〆
+//☆ＥＣＧEV_SA15A//ネーミング無し、多分、沙羅自由に向かって
+	[Task1990]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		269	//	置換しました<<ev_sa15a>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+		:CGFlag			188
+	}
+	[Task2000]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task2010]
+	{
+		:Tasktype	"Message"
+		:Message	"「さあ、沙羅」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task2020]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは沙羅に手をさしのべる。"
+		:Frame		1
+	}
+	[Task2030]
+	{
+		:Tasktype	"Message"
+		:Message	"沙羅は少しためらいがちに、ぼくの方へ手を伸ばす。"
+		:Frame		1
+	}
+	[Task2040]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは、その沙羅の手を、しっかり握りしめた。"
+		:Frame		1
+	}
+	[Task2050]
+	{
+		:Tasktype	"Message"
+		:Message	"２つが１つに戻る……。"
+		:Frame		1
+	}
+	[Task2060]
+	{
+		:Tasktype	"Message"
+		:Message	"「さあ、行こう、沙羅」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task2070]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん、お兄ちゃん」"
+		:Character	7		//沙羅
+		:Voice	1511	//	置換しました<<ss0e_sa033>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task2080]
+	{
+		:Tasktype	"Message"
+		:Message	"「ぼくらは、自由になるんだ！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task2090]
+	{
+		:Tasktype	"Message"
+		:Message	"「自由に……」"
+		:Character	7		//沙羅
+		:Voice	1512	//	置換しました<<ss0e_sa034>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+	[Task2100]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう、自由に！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task2110]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん！」"
+		:Character	7		//沙羅
+		:Voice	1513	//	置換しました<<ss0e_sa035>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		1
+	}
+//☆ＢＧ夜、星空、満月
+	[Task2120]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task2130]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			60
+		:SpriteDelete	1
+	}
+	[Task2140]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		150	//	置換しました<<ibg09b>>
+		:Position		640,360
+		:Priority		4
+		:Time			60
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task2150]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStart"
+	}
+	[Task2160]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n¥n¥nペンダントが１つのように、¥nまたぼくたちは１つになる事ができた。"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task2170]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥nぼくは、もう二度と沙羅と離れたりはしない！"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task2180]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n必ず、沙羅を守り抜いて見せる。絶対に！"
+		:Frame			-1
+		:ChangingPage	1
+		:WindowType		1
+	}
+	[Task2190]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n¥n¥n¥nそして、ぼくらは、自由に向かって駆けだした。"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task2200]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n２人、手を繋いで……。"
+		:Frame			-1
+		:ChangingPage	1
+		:WindowType		1
+	}
+	[Task2210]
+	{
+		:Tasktype	"SystemLock"
+
+	}
+//5pb.-ファイル終了時基本セット-
+	[Task2220]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStop"
+	}
+	[Task2230]
+	{
+		:Tasktype	"TimeWait"
+		:Time		120
+	}
+	[Task2240]
+	{
+		:Tasktype	"SeStop"
+		:Wait		0
+		:Div		120
+	}
+	[Task2250]
+	{
+		:Tasktype	"BgmStop"
+		:Div		120
+	}
+	[Task2260]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			120
+		:SpriteDelete	1
+	}
+	[Task2270]
+	{
+		:Tasktype	"SeStop"
+		:Div		0
+	}
+	[Task2280]
+	{
+		:Tasktype	"BgmStop"
+		:Div		0
+	}
+	[Task2290]
+	{
+		:Tasktype	"GlobalFlagSwitch_Tag"
+		:FlagName	"coco_ed"
+	 	:Operator	"=="
+		:Param  	1
+		:NextTag	"MES_END"
+	}
+//5pb.松--Ａボタン以外操作禁止命令挿入箇所--
+	[Task2300]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStart"
+	}
+	[Task2310]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n¥n¥n¥n　Ｔｈｉｓｓｔｏｒｙｉｓｎｏｔａｎｅｎｄｙｅｔ．¥n　　　　Ｂｅｃａｕｓｅｏｎｌｙｙｏｕａｒｅ¥n　　　Ｓｉｎｔｈｅｉｎｆｉｎｉｔｙｌｏｏｐ．"
+		:SkipFlag	0
+		:Frame			-1
+		:ChangingPage	1
+		:WindowType		1
+	}
+	[Task2320]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStop"
+	}
+//5pb.松--Ａボタン以外操作禁止命令停止箇所--
+	[Task2330]
+	{
+		:Tasktype	"Tag"
+		:Name		"MES_END"
+	}
+//5pb.--初期化コマンド--
+	[Task2340]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitTag"
+	}
+	[Task2350]
+	{
+		:Tasktype	"GlobalFlagOperation"
+		:FlagName	"sara_ed"
+		:Action		"=",1
+	}
+	[Task2360]
+	{
+		:Tasktype	"Dialog"
+		:Type		5
+	}
+	[Task2370]
+	{
+		:Tasktype	"Achievement"
+		:ID			4
+	}
+	[Task2380]
+	{
+		:Tasktype	"SystemUnlock"
+
+	}
+//アクアシステムデフォルトスクリプト--ここから--
+	[Task2390]
+	{
+		:Tasktype		"End"
+	}
+}
+//アクアシステムデフォルトスクリプト--ここまで--
+//<EOF>
+//////////////////////////////////////////////////////////////////////////////////////////////////////

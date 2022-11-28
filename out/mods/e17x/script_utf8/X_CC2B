@@ -1,0 +1,6127 @@
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//		Title:『Ever17』
+//		File:	
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//アクアシステムデフォルトスクリプト--ここから--
+[StartUp]
+{
+	:SceneName	"ココ編２"
+	:Presence	4
+	[LoadTexture]
+	{
+		:Texture	0
+	}
+}
+[TaskList]
+{
+	:TaskMax	100001
+//アクアシステムデフォルトスクリプト--ここまで--
+//オリジナルだと交差する武ルートの扱い、前半、幻とか言っていたのが、途中から無視し、後で知っているとなり、
+//幻に対する少年の葛藤がないので、ここのパートでその辺の矛盾修正。
+//（当初の改シナリオの場合、オリジナルをなぞる展開だったので、時系列矛盾も生じる為、それも配慮し修正）
+//（オリジナルは、少年の長いモノローグで無理やりストーリーをくっつけていたりしている修正）
+//少年ルート５/５のループ的に始まり、ココの石像見てパニック、武ルート５/５のループに繋げ、
+//石像を刻むココが少年と邂逅し、時空ジャンプが始まる流れ。
+//（時空ジャンプはキーワード連鎖なので、時系列はあえて無視/BW能力原因と結果を同時に見れる能力の発露と解釈）
+//X_CC2_2
+//5pb.--初期化コマンド--
+	[Task100]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitTag"
+	}
+//5/5の少年視点、朝から
+//少年視点
+//ＴＣＧ視点移動（右から左）
+//5pb.-ファイル開始時基本セット-
+	[Task110]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.松--武⇒少年視点切り替えエフェクト挿入箇所--
+//☆ＢＧブラック
+	[Task120]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		111	//	置換しました<<bg_black>>
+		:Position		640,360
+		:Priority		4
+		:Time			60
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task130]
+	{
+		:Tasktype "EffectStart2"
+		:EffectNumber  28,0
+		:Priority  1
+		:Param  255,255,0,255
+	}
+	[Task140]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task150]
+	{
+		:Tasktype	"Message"
+		:Message	"「お兄ちゃん……」"
+		:Name	16		//？？
+		:Character	7		//沙羅
+		:Voice	15161	//	置換しました<<x_cc2b_sa000e>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+//音声加工夢の中的
+	[Task160]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task170]
+	{
+		:Tasktype	"Message"
+		:Message	"「お兄ちゃん……」"
+		:Name	16		//？？
+		:Character	7		//沙羅
+		:Voice	15162	//	置換しました<<x_cc2b_sa001e>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+//音声加工夢の中的
+	[Task180]
+	{
+		:Tasktype	"Message"
+		:Message	"「お兄ちゃん、おきてる？」"
+		:Name	16		//？？
+		:Character	7		//沙羅
+		:Voice	15163	//	置換しました<<x_cc2b_sa002e>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+//音声加工夢の中的
+	[Task190]
+	{
+		:Tasktype	"Message"
+		:Message	"「あーーまだ寝てる！　もう、困ったお兄ちゃんなんだから！！」"
+		:Name	16		//？？
+		:Character	7		//沙羅
+		:Voice	15164	//	置換しました<<x_cc2b_sa003e>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+//音声加工夢の中的
+	[Task200]
+	{
+		:Tasktype	"Message"
+		:Message	"「よーし、こうなったらーー！」"
+		:Name	16		//？？
+		:Character	7		//沙羅
+		:Voice	15165	//	置換しました<<x_cc2b_sa004e>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+//音声加工夢の中的
+	[Task210]
+	{
+		:Tasktype	"Message"
+		:Message	"「これでーー」"
+		:Name	16		//？？
+		:Character	7		//沙羅
+		:Voice	15166	//	置換しました<<x_cc2b_sa005e>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+//音声加工夢の中的
+	[Task220]
+	{
+		:Tasktype	"Message"
+		:Message	"「こうだーー！」"
+		:Name	16		//？？
+		:Character	7		//沙羅
+		:Voice	15167	//	置換しました<<x_cc2b_sa006e>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+//音声加工夢の中的
+	[Task230]
+	{
+		:Tasktype	"Message"
+		:Message	"「お・き・て。 お・兄・ちゃん」"
+		:Name	16		//？？
+		:Character	7		//沙羅
+		:Voice	15168	//	置換しました<<x_cc2b_sa007e>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+//音声加工夢の中的
+	[Task240]
+	{
+		:Tasktype	"Message"
+		:Message	"いきなり耳元で、囁くような甘い声が聞こえた。"
+		:Frame		2
+	}
+//5pb.松--音声発注ミス--
+	[Task250]
+	{
+		:Tasktype	"Message"
+		:Message	"「ふぅ〜〜っ」"
+		:Name	16		//？？
+		:Character	7		//沙羅
+		:Voice	1902	//	置換しました<<x_cc2b_sa008e>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+	[Task260]
+	{
+		:Tasktype		"WindowQuake"
+		:MoveType		2
+	}
+//音声加工夢の中的
+	[Task270]
+	{
+		:Tasktype	"Message"
+		:Message	"「ウヒッ？！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task280]
+	{
+		:Tasktype	"Message"
+		:Message	"暖かな風が、耳をくすぐる。"
+		:Frame		2
+	}
+//☆ＢＧ加減圧室の中（照明点灯）
+	[Task290]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task300]
+	{
+		:Tasktype	"Sprite"
+		:Texture	14	//	置換しました<<bg09aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task310]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,245,245,255
+		:Ambient	210,205,205,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task320]
+	{
+		:Tasktype		"SpriteDeleteBG"
+		:Texture		111	//	置換しました<<bg_black>>
+		:Time			30
+		:Rule			24
+		:FadeWait		1
+	}
+	[Task330]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task340]
+	{
+		:Tasktype	"Message"
+		:Message	"ドキリと心臓が跳ね上がる。"
+		:Frame		2
+	}
+	[Task350]
+	{
+		:Tasktype	"Message"
+		:Message	"堪らずぼくは目を見開いた。"
+		:Frame		2
+	}
+//☆ＣＨ沙羅：２／３
+	[Task360]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"沙羅"
+		:Preset		1
+//★ＣＨ沙羅：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task370]
+	{
+		:Tasktype	"Message"
+		:Message	"「ふぅ〜〜っ」"
+		:Character	7		//沙羅
+		:Voice	2242	//	置換しました<<x_cc2b_sa009>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+	[Task380]
+	{
+		:Tasktype	"Message"
+		:Message	"「うわぁあああーーーーーっ？！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ沙羅：1：2
+	[Task390]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task400]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくが飛び起きると、目の前ににっこりと笑う沙羅の姿があった。"
+		:Frame		2
+	}
+	[Task410]
+	{
+		:Tasktype	"Message"
+		:Message	"「さ、沙羅？！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task420]
+	{
+		:Tasktype	"Message"
+		:Message	"「忍法、桃色吐息でござる。どう？　目覚めパッチリでしょ？」"
+		:Character	7		//沙羅
+		:Voice	2243	//	置換しました<<x_cc2b_sa010>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+	[Task430]
+	{
+		:Tasktype	"Message"
+		:Message	"沙羅は再び、イタズラっぽく笑った。"
+		:Frame		2
+	}
+//時間経過ワイプ
+//☆ＢＧトイレ、割れて見えない鏡
+	[Task440]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task450]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task460]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			166	//	置換しました<<ibg16b>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+	}
+
+//5pb.-02:エルストボーデン（１階）-
+	[Task470]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		2	//	置換しました<<bgm02>>
+	}
+
+//☆ＳＥ顔を洗う音
+	[Task480]
+	{
+		:Tasktype	"SePlay"
+		:SE			27	//	置換しました<<se01_09>>
+	}
+	[Task490]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task500]
+	{
+		:Tasktype	"Message"
+		:Message	"「ふ〜〜〜っ」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task510]
+	{
+		:Tasktype	"Message"
+		:Message	"あ〜〜びっくりした。"
+		:Frame		2
+	}
+	[Task520]
+	{
+		:Tasktype	"Message"
+		:Message	"まだ心臓がドキドキしてるよ。"
+		:Frame		2
+	}
+	[Task530]
+	{
+		:Tasktype	"Message"
+		:Message	"まったく、沙羅の奴、なんて起こし方するんだよ。"
+		:Frame		2
+	}
+	[Task540]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは顔がほてっているような気がして、鏡を覗き込んだ。"
+		:Frame		2
+	}
+	[Task550]
+	{
+		:Tasktype	"Message"
+		:Message	"しかし、鏡はひび割れていて、ぼくの顔を映さなかった。"
+		:Frame		2
+	}
+	[Task560]
+	{
+		:Tasktype	"Message"
+		:Message	"あの、見知らぬボクの顔を……。"
+		:Frame		2
+	}
+	[Task570]
+	{
+		:Tasktype	"Message"
+		:Message	"あれ？　そういえば、沙羅に起こされる前、なんか夢を見ていたような気がするんだけど……。"
+		:Frame		2
+	}
+	[Task580]
+	{
+		:Tasktype	"Message"
+		:Message	"どんな夢だったっけ？"
+		:Frame		2
+	}
+	[Task590]
+	{
+		:Tasktype	"Message"
+		:Message	"う〜〜ん。"
+		:Frame		2
+	}
+	[Task600]
+	{
+		:Tasktype	"Message"
+		:Message	"そうだ……あの少女の夢だ……。"
+		:Frame		2
+	}
+	[Task610]
+	{
+		:Tasktype	"Message"
+		:Message	"『ココ』と――"
+		:Frame		2
+	}
+	[Task620]
+	{
+		:Tasktype	"Message"
+		:Message	"……ココとデートをしていた夢……。"
+		:Frame		2
+	}
+	[Task630]
+	{
+		:Tasktype	"Message"
+		:Message	"でも何故そんな夢を見たんだろう……？"
+		:Frame		2
+	}
+	[Task640]
+	{
+		:Tasktype	"Message"
+		:Message	"『沙羅』と――"
+		:Frame		2
+	}
+	[Task650]
+	{
+		:Tasktype	"Message"
+		:Message	"……沙羅とデートしていたから？"
+		:Frame		2
+	}
+	[Task660]
+	{
+		:Tasktype	"Message"
+		:Message	"そうだ、ぼくは沙羅と昨日デートをしていたんだ。"
+		:Frame		2
+	}
+	[Task670]
+	{
+		:Tasktype	"Message"
+		:Message	"温泉でデートに誘われて、レムリア遺跡を見て、みやげもの売り場に行って、クヴァレにのって、ひよこごっこをした……。"
+		:Frame		2
+	}
+	[Task680]
+	{
+		:Tasktype	"Message"
+		:Message	"……ひよこごっこ？？"
+		:Frame		2
+	}
+	[Task690]
+	{
+		:Tasktype	"Message"
+		:Message	"何故か沙羅とデートした記憶は、ココとデートした夢のように曖昧だった……。"
+		:Frame		2
+	}
+//☆ＳＥ顔を洗う音
+	[Task700]
+	{
+		:Tasktype	"SePlay"
+		:SE			27	//	置換しました<<se01_09>>
+	}
+
+	[Task710]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは再び顔を洗い、モヤモヤした気持ちを洗い流した。"
+		:Frame		2
+	}
+	[Task720]
+	{
+		:Tasktype	"Message"
+		:Message	"ズキリ……。"
+		:Frame		2
+	}
+	[Task730]
+	{
+		:Tasktype	"Message"
+		:Message	"一瞬、胸に痛みが走った気がした。"
+		:Frame		2
+	}
+//時間経過ワイプ
+//☆ＢＧ休息室（点灯）
+	[Task740]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task750]
+	{
+		:Tasktype	"SeStop"
+		:Div		30
+	}
+//5pb.-デフォルト停止時間30f-
+	[Task760]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+//5pb.-フェードアウト黒-
+	[Task770]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task780]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			18	//	置換しました<<bg11aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task790]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//5pb.-18:クラマオク（スラップスティック）-
+	[Task800]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		34	//	置換しました<<bgm18>>
+	}
+
+	[Task810]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task820]
+	{
+		:Tasktype	"Message"
+		:Message	"テーブルには、深海温泉饅頭と、大量のちくわが山になっていた。"
+		:Frame		2
+	}
+	[Task830]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくと沙羅が武に言われて、みやげ物売場から運んで来た物だ。"
+		:Frame		2
+	}
+//☆ＣＨ偽武：２／２
+//☆ＣＨ沙羅：１／２
+	[Task840]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	30
+		[Character0]
+		{
+			:Name	"偽武"
+			:Preset	10
+//★ＣＨ偽武：2：6
+		:Animation		1,5
+			:Rot	0
+			:Quake	1
+		}
+		[Character1]
+		{
+			:Name	"沙羅"
+			:Preset	13
+//★ＣＨ沙羅：2：1
+		:Animation		1,0
+			:Rot	0
+			:Quake	1
+		}
+	}
+	[Task850]
+	{
+		:Tasktype	"Message"
+		:Message	"「しかし、壮絶な組み合わせだな……」"
+		:Character	1		//武
+		:Voice	14160	//	置換しました<<x_cc2b_kb000>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task860]
+	{
+		:Tasktype	"Message"
+		:Message	"「リクエスト通り、持ってきたものですよ」"
+		:Character	7		//沙羅
+		:Voice	2244	//	置換しました<<x_cc2b_sa011>>
+		:ModelName		"沙羅","沙羅水着"
+		:Frame		2
+	}
+//☆ＡＮ偽武：2：1
+	[Task870]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		1,0
+	}
+	[Task880]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああ、ちくわはマヨネーズとワサビに、醤油をチョッとたらして食べると美味しいんだ」"
+		:Character	1		//武
+		:Voice	14161	//	置換しました<<x_cc2b_kb001>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：1
+	[Task890]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task900]
+	{
+		:Tasktype	"Message"
+		:Message	"武はちくわに手を伸ばし、自分で言った通りに食べた。"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：2
+	[Task910]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task920]
+	{
+		:Tasktype	"Message"
+		:Message	"「おお、意外と美味しいぞ？」"
+		:Character	1		//武
+		:Voice	14162	//	置換しました<<x_cc2b_kb002>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task930]
+	{
+		:Tasktype	"Message"
+		:Message	"武はそう言って、ちくわをパクパク食べた。"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：6
+	[Task940]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,5
+	}
+	[Task950]
+	{
+		:Tasktype	"Message"
+		:Message	"「……！！　来たー効くぅーーっ！！」"
+		:Character	1		//武
+		:Voice	14163	//	置換しました<<x_cc2b_kb003>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＡＮ沙羅：1：7
+	[Task960]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,0
+	}
+	[Task970]
+	{
+		:Tasktype	"Message"
+		:Message	"ワサビが、ツーーーンとしたのか、武は上を向き、閉じた目からは涙が見えた。"
+		:Frame		2
+	}
+	[Task980]
+	{
+		:Tasktype	"Message"
+		:Message	"そうだよね。鼻に来たあとは中がムズムズして、くしゃみをしちゃうんだよね。"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：4
+	[Task990]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,3
+	}
+	[Task1000]
+	{
+		:Tasktype	"Message"
+		:Message	"「へ……へっ、へっくしょい〜！！」"
+		:Character	1		//武
+		:Voice	14164	//	置換しました<<x_cc2b_kb004>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：2
+	[Task1010]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+//☆ＡＮ沙羅：1：9
+	[Task1020]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"沙羅"
+		:Animation		0,8
+	}
+	[Task1030]
+	{
+		:Tasktype	"Message"
+		:Message	"――ほらね。"
+		:Frame		2
+	}
+	[Task1040]
+	{
+		:Tasktype	"Message"
+		:Message	"ん？！"
+		:Frame		2
+	}
+//☆ＣＨ全消し
+	[Task1050]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task1060]
+	{
+		:Tasktype	"Message"
+		:Message	"ふと、この光景も前に見たことがあるように思えた……。"
+		:Frame		2
+	}
+	[Task1070]
+	{
+		:Tasktype	"Message"
+		:Message	"……いや、くしゃみは武じゃなく、ぼくがしていたようにも思えた。"
+		:Frame		2
+	}
+	[Task1080]
+	{
+		:Tasktype	"Message"
+		:Message	"あれ……でも……。"
+		:Frame		2
+	}
+	[Task1090]
+	{
+		:Tasktype	"Message"
+		:Message	"やっぱり、武がしていたような……。"
+		:Frame		2
+	}
+	[Task1100]
+	{
+		:Tasktype	"Message"
+		:Message	"不意に、ぼくは同じ事を、繰り返しているような気がしてきた……。"
+		:Frame		2
+	}
+	[Task1110]
+	{
+		:Tasktype	"Message"
+		:Message	"ひょっとして、ぼくは、同じ時間を繰り返しているんじゃないのか？"
+		:Frame		2
+	}
+	[Task1120]
+	{
+		:Tasktype	"Message"
+		:Message	"デジャヴを感じたのは、過去に似たような経験をしたからじゃなく、同じ時間を繰り返していたから……。"
+		:Frame		2
+	}
+	[Task1130]
+	{
+		:Tasktype	"Message"
+		:Message	"タイムスリップとも違う。"
+		:Frame		2
+	}
+	[Task1140]
+	{
+		:Tasktype	"Message"
+		:Message	"自分だけじゃなく、全てが一度リセットされて、また繰り返しているのだから……。"
+		:Frame		2
+	}
+	[Task1150]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくの記憶が無いのはその為じゃないのか？"
+		:Frame		2
+	}
+	[Task1160]
+	{
+		:Tasktype	"Message"
+		:Message	"時間がリセットされるごとに、ぼくの記憶もリセットされるから……。"
+		:Frame		2
+	}
+	[Task1170]
+	{
+		:Tasktype	"Message"
+		:Message	"だけど、リセットされても記憶の残滓が頭のどこかに残ってて、記憶の残滓が、予知のように感じさせているんじゃないのかな？"
+		:Frame		2
+	}
+	[Task1180]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼんやりと、朝食中のみんなを見渡す。"
+		:Frame		2
+	}
+	[Task1190]
+	{
+		:Tasktype	"Message"
+		:Message	"でも、違うのかな？"
+		:Frame		2
+	}
+	[Task1200]
+	{
+		:Tasktype	"Message"
+		:Message	"それだとみんなも記憶を失うはずなんだよね……。"
+		:Frame		2
+	}
+	[Task1210]
+	{
+		:Tasktype	"Message"
+		:Message	"記憶を失っているのは、どうやらぼく１人だけのようだし……。"
+		:Frame		2
+	}
+	[Task1220]
+	{
+		:Tasktype	"Message"
+		:Message	"それに、同じ時間を繰り返しているんだったら、同じ事が起きるはずだ。"
+		:Frame		2
+	}
+	[Task1230]
+	{
+		:Tasktype	"Message"
+		:Message	"だけど、同じ事が起きても、記憶の残滓と同じじゃない……。"
+		:Frame		2
+	}
+//つぐみ表示
+//☆ＣＨつぐみ３４：２／３
+	[Task1240]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"つぐみ３４"
+		:Preset		1
+//★ＣＨつぐみ３４：3：5
+		:Animation		2,4
+		:Rot		0
+		:Fade		20
+	}
+	[Task1250]
+	{
+		:Tasktype	"Message"
+		:Message	"つぐみは怪我をしなかったし……。"
+		:Frame		2
+	}
+//沙羅表示
+//☆ＣＨ全消し
+	[Task1260]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨ沙羅：２／３
+	[Task1270]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"沙羅"
+		:Preset		1
+//★ＣＨ沙羅：2：2
+		:Animation		1,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task1280]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくがデートをしたのはココじゃなく沙羅だった……。"
+		:Frame		2
+	}
+//空表示
+//☆ＣＨ全消し
+	[Task1290]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨ空：２／３
+	[Task1300]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"空"
+		:Preset		1
+//★ＣＨ空：1：1
+		:Animation		0,0
+//ＡＮ空目閉じ
+		:Eye			1
+		:Rot		0
+		:Fade		20
+	}
+	[Task1310]
+	{
+		:Tasktype	"Message"
+		:Message	"それに、空が食事をしているし……。"
+		:Frame		2
+	}
+	[Task1320]
+	{
+		:Tasktype	"Message"
+		:Message	"「ん…………あむ…………んく、ん、んんっ…………おいしいです…………」"
+		:Character	3		//空
+		:Voice	11280	//	置換しました<<x_cc2b_so000>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1330]
+	{
+		:Tasktype	"Message"
+		:Message	"えっ？　……空が食事？？"
+		:Frame		2
+	}
+	[Task1340]
+	{
+		:Tasktype	"Message"
+		:Message	"空はちくわを口に咥え、もごもごと食べていた。"
+		:Frame		2
+	}
+//ひょっとしたら、空は、ここでは端末ボディを使っているのかもしれない。
+	[Task1350]
+	{
+		:Tasktype	"Message"
+		:Message	"「ねえ？　空って食事が出来たの？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：2：1
+	[Task1360]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		1,0
+	}
+	[Task1370]
+	{
+		:Tasktype	"Message"
+		:Message	"「あっ、これですか？　もちろんミラージュですよ、みなさんと食事の雰囲気を味わいたくて」"
+		:Character	3		//空
+		:Voice	11281	//	置換しました<<x_cc2b_so001>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1380]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうなんだ、一瞬、空って、ミラージュじゃなく、本物の空が居るのかと思っちゃったよ」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：2：6
+	[Task1390]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		1,5
+	}
+	[Task1400]
+	{
+		:Tasktype	"Message"
+		:Message	"「本物の空？　それって私の偽者がいるって事ですか？」"
+		:Character	3		//空
+		:Voice	11282	//	置換しました<<x_cc2b_so002>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1410]
+	{
+		:Tasktype	"Message"
+		:Message	"「ええと、そう言う事じゃないけど……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：1：1
+	[Task1420]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task1430]
+	{
+		:Tasktype	"Message"
+		:Message	"「でも、本物か偽者かで言えば、今ここにいる私は偽者なのかもしれませんよ」"
+		:Character	3		//空
+		:Voice	11283	//	置換しました<<x_cc2b_so003>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//5pb.-停止時間指定:f1-
+	[Task1440]
+	{
+		:Tasktype	"BgmStop"
+		:Div		1
+	}
+	[Task1450]
+	{
+		:Tasktype	"Message"
+		:Message	"「えっ？　それって……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//オリジナル、武と空の会話、相手を少年に変え挿入（だいたいコピペ）
+
+//5pb.-14:ホログラム（ホログラム）-
+	[Task1460]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		26	//	置換しました<<bgm14>>
+	}
+//☆ＡＮ空：4：5
+	[Task1470]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,4
+	}
+	[Task1480]
+	{
+		:Tasktype	"Message"
+		:Message	"「私という存在は世界に１つしかない設定になっています……」"
+		:Character	3		//空
+		:Voice	11284	//	置換しました<<x_cc2b_so004>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：4：8
+	[Task1490]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,7
+	}
+	[Task1500]
+	{
+		:Tasktype	"Message"
+		:Message	"「でもそれは、全ての視点に対して、１つにしか見えない設定です」"
+		:Character	3		//空
+		:Voice	11285	//	置換しました<<x_cc2b_so005>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1510]
+	{
+		:Tasktype	"Message"
+		:Message	"「ですが実際、みなさんの頭の中へは、角度、距離など、異なった視覚情報が送られています」"
+		:Character	3		//空
+		:Voice	11286	//	置換しました<<x_cc2b_so006>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：1：1
+	[Task1520]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task1530]
+	{
+		:Tasktype	"Message"
+		:Message	"「１人１人に異なる私の情報が送られている、言い換えれば私を見ている人の数だけ、私が遍在していると言う事になりますね」"
+		:Character	3		//空
+		:Voice	11287	//	置換しました<<x_cc2b_so007>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1540]
+	{
+		:Tasktype	"Message"
+		:Message	"「ですから、みなさんが見ている私は、全てが本物であり偽者、純粋なコピー……いえ、クローン、と言ったほうがわかり易いかもしれませんね」"
+		:Character	3		//空
+		:Voice	11288	//	置換しました<<x_cc2b_so008>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1550]
+	{
+		:Tasktype	"Message"
+		:Message	"「クローン？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//		:Message	"「培養した体細胞から核を抜き取り、別の、既に核を抜き取ってある卵細胞の中にそれを移植し、母体子宮内に着床させることで、体細胞の核の提供者と同じＤＮＡを持った個体を複製すること。これがクローンです」"
+//		:Voice	<<X_CC2B_SO009 >>
+//☆ＡＮ空：1：8
+	[Task1560]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,7
+	}
+	[Task1570]
+	{
+		:Tasktype	"Message"
+		:Message	"「培養した体細胞から核を抜き取り、別の、既に核を抜き取ってある卵細胞の中にそれを移植し――」"
+		:Character	3		//空
+		:Voice	11528	//	置換しました<<x_cc2b_so009a>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1580]
+	{
+		:Tasktype	"Message"
+		:Message	"「母体子宮内に着床させることで、体細胞の核の提供者と同じＤＮＡを持った個体を複製すること。これがクローンです」"
+		:Character	3		//空
+		:Voice	11529	//	置換しました<<x_cc2b_so009b>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//オリジナルでは２０１０年、法律で合法化されるが、現在まだされていないので現状の状況に変更
+//空「ちなみに、人に関するクローンは法律で規制されていて……」
+//空「この国では、人間のクローンを作ろうとした場合、１０年以下の懲役、もしくわ一千万円以下の罰金が科せられます」
+	[Task1590]
+	{
+		:Tasktype	"Message"
+		:Message	"「だけど、クローンと空とは話が違うんじゃないかなぁ……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task1600]
+	{
+		:Tasktype	"Message"
+		:Message	"「クローンってそれぞれ別々に成長して、別個の存在になるんでしょ？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task1610]
+	{
+		:Tasktype	"Message"
+		:Message	"「それだと同一の人間じゃないよ。双子みたいなものでしょ」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：1：1
+	[Task1620]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task1630]
+	{
+		:Tasktype	"Message"
+		:Message	"「でも、その由来は単一です」"
+		:Character	3		//空
+		:Voice	11290	//	置換しました<<x_cc2b_so010>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1640]
+	{
+		:Tasktype	"Message"
+		:Message	"空は淡々と述べた。"
+		:Frame		2
+	}
+//☆ＡＮ空：4：8
+	[Task1650]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,7
+	}
+	[Task1660]
+	{
+		:Tasktype	"Message"
+		:Message	"「話を戻しますね……」"
+		:Character	3		//空
+		:Voice	11291	//	置換しました<<x_cc2b_so011>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1670]
+	{
+		:Tasktype	"Message"
+//☆収録時修正
+//		:Message	"「ミラージュにより見えている私は、同じ空間の中に、同じ時間の中に、私が遍在しているです」"
+		:Message	"「ミラージュにより見えている私は、同じ空間の中に、同じ時間の中に、私が遍在しているのです」"
+		:Character	3		//空
+		:Voice	11292	//	置換しました<<x_cc2b_so012>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：4：1
+	[Task1680]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,0
+	}
+	[Task1690]
+	{
+		:Tasktype	"Message"
+		:Message	"「私は一つであると同時に複数なんです」"
+		:Character	3		//空
+		:Voice	11293	//	置換しました<<x_cc2b_so013>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1700]
+	{
+		:Tasktype	"Message"
+		:Message	"「同時に多数？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：4：5
+	[Task1710]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,4
+	}
+	[Task1720]
+	{
+		:Tasktype	"Message"
+		:Message	"「例えば、少年さんの前と、倉成さんの前」"
+		:Character	3		//空
+		:Voice	11294	//	置換しました<<x_cc2b_so014>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1730]
+	{
+		:Tasktype	"Message"
+		:Message	"「あそことここに、２人の私がいる」"
+		:Character	3		//空
+		:Voice	11295	//	置換しました<<x_cc2b_so015>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：4：1
+	[Task1740]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,0
+	}
+	[Task1750]
+	{
+		:Tasktype	"Message"
+		:Message	"「けれどそれは、決して『Ｗ』ではなく……」"
+		:Character	3		//空
+		:Voice	11296	//	置換しました<<x_cc2b_so016>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1760]
+	{
+		:Tasktype	"Message"
+		:Message	"「『Ｙ』なのです」"
+		:Character	3		//空
+		:Voice	11297	//	置換しました<<x_cc2b_so017>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1770]
+	{
+		:Tasktype	"Message"
+		:Message	"「『Ｙ』？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task1780]
+	{
+		:Tasktype	"Message"
+		:Message	"「ある由来から出でて、分かれた『Ｙ』」"
+		:Character	3		//空
+		:Voice	11298	//	置換しました<<x_cc2b_so018>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：1：1
+	[Task1790]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task1800]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうですね……考えてみてください」"
+		:Character	3		//空
+		:Voice	11299	//	置換しました<<x_cc2b_so019>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1810]
+	{
+		:Tasktype	"Message"
+		:Message	"「もしも、あなたという人格を、そっくりそのままコピーすることができるとしたら……？」"
+		:Character	3		//空
+		:Voice	11300	//	置換しました<<x_cc2b_so020>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1820]
+	{
+		:Tasktype	"Message"
+		:Message	"「？？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task1830]
+	{
+		:Tasktype	"Message"
+		:Message	"……空は何を言っているんだろう……？"
+		:Frame		2
+	}
+//☆ＡＮ空：1：5
+	[Task1840]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,4
+	}
+	[Task1850]
+	{
+		:Tasktype	"Message"
+		:Message	"「たとえば……」"
+		:Character	3		//空
+		:Voice	11301	//	置換しました<<x_cc2b_so021>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1860]
+	{
+		:Tasktype	"Message"
+		:Message	"「たとえば、あなたの脳に刻まれたすべての記憶、考えかた、感じかた、人格、性格、感情……」"
+		:Character	3		//空
+		:Voice	11302	//	置換しました<<x_cc2b_so022>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：1：8
+	[Task1870]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,7
+	}
+	[Task1880]
+	{
+		:Tasktype	"Message"
+		:Message	"「それらすべての情報を、正確に、忠実に摘出することができたとして」"
+		:Character	3		//空
+		:Voice	11303	//	置換しました<<x_cc2b_so023>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1890]
+	{
+		:Tasktype	"Message"
+		:Message	"「それを何らかの記憶媒体に複製し、しかもその機能を再現できるとしたら」"
+		:Character	3		//空
+		:Voice	11304	//	置換しました<<x_cc2b_so024>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：1：1
+	[Task1900]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task1910]
+	{
+		:Tasktype	"Message"
+//☆収録時修正
+//		:Message	"「そのとき、本当のあなたは、どこにいるでしょうか？」"
+		:Message	"「そのとき、本当のあなたは、どこにいるのでしょうか？」"
+		:Character	3		//空
+		:Voice	11305	//	置換しました<<x_cc2b_so025>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1920]
+	{
+		:Tasktype	"Message"
+		:Message	"「肉体に残ったままの人格が、本当のあなた？」"
+		:Character	3		//空
+		:Voice	11306	//	置換しました<<x_cc2b_so026>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1930]
+	{
+		:Tasktype	"Message"
+		:Message	"「それとも、複製した人格が、本当のあなた？」"
+		:Character	3		//空
+		:Voice	11307	//	置換しました<<x_cc2b_so027>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1940]
+	{
+		:Tasktype	"Message"
+		:Message	"「……それは」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：4：1
+	[Task1950]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,0
+	}
+	[Task1960]
+	{
+		:Tasktype	"Message"
+		:Message	"「正解は、そのいずれにも、本当のあなたがいる、です」"
+		:Character	3		//空
+		:Voice	11308	//	置換しました<<x_cc2b_so028>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task1970]
+	{
+		:Tasktype	"Message"
+		:Message	"「もしそのようなことが可能になったら……」"
+		:Character	3		//空
+		:Voice	11309	//	置換しました<<x_cc2b_so029>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：4：8
+	[Task1980]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,7
+	}
+	[Task1990]
+	{
+		:Tasktype	"Message"
+		:Message	"「あなたは、非減数分裂的に分裂するでしょう」"
+		:Character	3		//空
+		:Voice	11310	//	置換しました<<x_cc2b_so030>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：4：5
+	[Task2000]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,4
+	}
+	[Task2010]
+	{
+		:Tasktype	"Message"
+		:Message	"「つまり、リンゴをふたつに割るような分裂の仕方ではなく……」"
+		:Character	3		//空
+		:Voice	11311	//	置換しました<<x_cc2b_so031>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task2020]
+	{
+		:Tasktype	"Message"
+		:Message	"「そのリンゴと同じ質量、同じ形、同じ成分を持ったリンゴが、もう１つ誕生するということです」"
+		:Character	3		//空
+		:Voice	11312	//	置換しました<<x_cc2b_so032>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//空２人表示
+//☆ＣＨ全消し
+	[Task2030]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨ空：１／２
+//☆ＣＨ空：２／２
+	[Task2040]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	30
+		[Character0]
+		{
+			:Name	"空"
+			:Preset	13
+//★ＣＨ空：1：1
+		:Animation		0,0
+			:Rot	0
+			:Quake	1
+		}
+		[Character1]
+		{
+			:Name	"空２"
+			:Preset	10
+//★ＣＨ空：1：1
+		:Animation		0,0
+			:Rot	0
+			:Quake	1
+		}
+	}
+	[Task2050]
+	{
+		:Tasktype	"Message"
+		:Message	"「その時、あなたは２つになるでしょう」"
+		:Character	3		//空
+		:Voice	14551	//	置換しました<<x_cc2b_so033w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2060]
+	{
+		:Tasktype	"Message"
+		:Message	"「あれ……空が、空が２人？？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task2070]
+	{
+		:Tasktype	"Message"
+		:Message	"突然目の前の空が２人になった。"
+		:Frame		2
+	}
+//☆ＣＨ全消し
+	[Task2080]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//つぐみ、優、沙羅表示
+//☆ＣＨつぐみ３４：１／３
+	[Task2090]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"つぐみ３４"
+		:Preset		7
+//★ＣＨつぐみ３４：3：1
+		:Animation		2,0
+		:Rot		0
+		:Fade		20
+	}
+//☆ＣＨ全消し
+	[Task2100]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨ優：２／３
+	[Task2110]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優"
+		:Preset		1
+//★ＣＨ優：2：2
+		:Animation		1,0
+		:Rot		0
+		:Fade		20
+	}
+//☆ＣＨ全消し
+	[Task2120]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨ沙羅：３／３
+	[Task2130]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"沙羅"
+		:Preset		4
+//★ＣＨ沙羅：3：7
+		:Animation		1,6
+		:Rot		0
+		:Fade		20
+	}
+//☆ＣＨ全消し
+	[Task2140]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task2150]
+	{
+		:Tasktype	"Message"
+		:Message	"驚いたぼくは、他のみんなを見渡した、だけど、だれも空が２人になった事に気が付いていないみたいだ。"
+		:Frame		2
+	}
+//武表示
+//☆ＣＨ偽武：２／３
+	[Task2160]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"偽武"
+//★ＣＨ偽武：2：5
+		:Animation		1,4
+		:Preset		1
+		:Rot		0
+		:Fade		20
+	}
+	[Task2170]
+	{
+		:Tasktype	"Message"
+		:Message	"武は分厚いプリントに目を通していて、こっちを見ていないけど……。"
+		:Frame		2
+	}
+//☆ＣＨ全消し
+	[Task2180]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task2190]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくの目が変になったのかな？"
+		:Frame		2
+	}
+	[Task2200]
+	{
+		:Tasktype	"Message"
+		:Message	"思わずぼくは目をこする。"
+		:Frame		2
+	}
+//空２人表示
+//☆ＣＨ空：１／２
+//☆ＣＨ空：２／２
+	[Task2210]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	30
+		[Character0]
+		{
+			:Name	"空"
+			:Preset	13
+//★ＣＨ空：4：1
+		:Animation		3,0
+			:Rot	0
+			:Quake	1
+		}
+		[Character1]
+		{
+			:Name	"空２"
+			:Preset	10
+//★ＣＨ空：4：1
+		:Animation		3,0
+			:Rot	0
+			:Quake	1
+		}
+	}
+	[Task2220]
+	{
+		:Tasktype	"Message"
+		:Message	"「ちょっと、リミッターを解除してみました。大丈夫、この姿は少年さんだけにしか見えていませんから」"
+		:Character	3		//空
+		:Voice	14552	//	置換しました<<x_cc2b_so034w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2230]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうなんだ……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task2240]
+	{
+		:Tasktype	"Message"
+		:Message	"２人の空は同時にしゃべっていた。"
+		:Frame		2
+	}
+//☆ＡＮ空：4：5
+	[Task2250]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,4
+	}
+//☆ＡＮ空２：4：5
+	[Task2260]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		3,4
+	}
+	[Task2270]
+	{
+		:Tasktype	"Message"
+		:Message	"「このように私は、同時に、あらゆる場所、どこにでもいる存在にもなれます」"
+		:Character	3		//空
+		:Voice	14553	//	置換しました<<x_cc2b_so035w>>
+		:ModelName		"空２"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+//☆ＡＮ空：4：8
+	[Task2280]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,7
+	}
+//☆ＡＮ空２：4：8
+	[Task2290]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		3,7
+	}
+	[Task2300]
+	{
+		:Tasktype	"Message"
+		:Message	"「仮定の話ですが……」"
+		:Character	3		//空
+		:Voice	14554	//	置換しました<<x_cc2b_so036w>>
+		:ModelName		"空"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2310]
+	{
+		:Tasktype	"Message"
+		:Message	"「細胞クローンでなく、真の意味でのクローニングというものがあったなら……」"
+		:Character	3		//空
+		:Voice	14555	//	置換しました<<x_cc2b_so037w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2320]
+	{
+		:Tasktype	"Message"
+		:Message	"「オリジナルとまったく区別されることのないコピーがこの世に存在したら……」"
+		:Character	3		//空
+		:Voice	14556	//	置換しました<<x_cc2b_so038w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+//☆ＡＮ空：4：1
+	[Task2330]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,0
+	}
+//☆ＡＮ空２：4：1
+	[Task2340]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		3,0
+	}
+	[Task2350]
+	{
+		:Tasktype	"Message"
+		:Message	"「……あなたも、遍在するのかも知れません」"
+		:Character	3		//空
+		:Voice	14557	//	置換しました<<x_cc2b_so039w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2360]
+	{
+		:Tasktype	"Message"
+		:Message	"「ぼくが遍在……？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：1：1
+	[Task2370]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+//☆ＡＮ空２：1：1
+	[Task2380]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		0,0
+	}
+	[Task2390]
+	{
+		:Tasktype	"Message"
+		:Message	"「歴史的には、その瞬間から、２人のあなたは別々の個体として、時間軸上を歩んで行くことになります」"
+		:Character	3		//空
+		:Voice	14558	//	置換しました<<x_cc2b_so040w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+//☆ＡＮ空：1：8
+	[Task2400]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,7
+	}
+//☆ＡＮ空２：1：8
+	[Task2410]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		0,7
+	}
+	[Task2420]
+	{
+		:Tasktype	"Message"
+		:Message	"「けれど、その道のりを振り返ってみれば、ふたつのあなたは、ある１点で結ばれていたことがわかるはずです」"
+		:Character	3		//空
+		:Voice	14559	//	置換しました<<x_cc2b_so041w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2430]
+	{
+		:Tasktype	"Message"
+		:Message	"「それが……つまり『Ｙ』なのです。『Ｗ』ではなく『Ｙ』」"
+		:Character	3		//空
+		:Voice	14560	//	置換しました<<x_cc2b_so042w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+//☆ＡＮ空：1：5
+	[Task2440]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,4
+	}
+//☆ＡＮ空２：1：5
+	[Task2450]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		0,4
+	}
+	[Task2460]
+	{
+		:Tasktype	"Message"
+		:Message	"「あるポイントを基点として、別々に分かれて行くふたつの自分を、あなたは想像できないかもしれません」"
+		:Character	3		//空
+		:Voice	14561	//	置換しました<<x_cc2b_so043w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2470]
+	{
+		:Tasktype	"Message"
+		:Message	"「しかし、それは既に起こっていることなのです」"
+		:Character	3		//空
+		:Voice	14539	//	置換しました<<x_cc2b_so044w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+//☆ＡＮ空：4：8
+	[Task2480]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,7
+	}
+//☆ＡＮ空２：4：8
+	[Task2490]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		3,7
+	}
+	[Task2500]
+	{
+		:Tasktype	"Message"
+		:Message	"「あなたは常に、絶え間なく訪れては過ぎ去って行く瞬間の中で、何らかの選択を迫られています」"
+		:Character	3		//空
+		:Voice	14540	//	置換しました<<x_cc2b_so045w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2510]
+	{
+		:Tasktype	"Message"
+		:Message	"「Ａの道を行くか？　Ｂの道を行くか？」"
+		:Character	3		//空
+		:Voice	14541	//	置換しました<<x_cc2b_so046w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+//☆ＡＮ空：4：5
+	[Task2520]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,4
+	}
+//☆ＡＮ空２：4：5
+	[Task2530]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		3,4
+	}
+	[Task2540]
+	{
+		:Tasktype	"Message"
+		:Message	"「ここにいるあなたがＡの道を歩んできたとしても、別の時間軸上では、Ｂの道を歩んできたあなたが存在するかもしれません」"
+		:Character	3		//空
+		:Voice	14542	//	置換しました<<x_cc2b_so047w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2550]
+	{
+		:Tasktype	"Message"
+		:Message	"「そして、Ａの道のあなたも、Ｂの道のあなたも、あなたであることに変わりはない」"
+		:Character	3		//空
+		:Voice	14543	//	置換しました<<x_cc2b_so048w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+//☆ＡＮ空：4：1
+	[Task2560]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,0
+	}
+//☆ＡＮ空２：4：1
+	[Task2570]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		3,0
+	}
+	[Task2580]
+	{
+		:Tasktype	"Message"
+		:Message	"「ただ、Ａの道にいるあなたは、Ｂの道にいるあなたのことを知りません」"
+		:Character	3		//空
+		:Voice	14544	//	置換しました<<x_cc2b_so049w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+//☆ＡＮ空：1：1
+	[Task2590]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+//☆ＡＮ空２：1：1
+	[Task2600]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		0,0
+	}
+	[Task2610]
+	{
+		:Tasktype	"Message"
+		:Message	"「知る手段がないからです」"
+		:Character	3		//空
+		:Voice	14545	//	置換しました<<x_cc2b_so050w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2620]
+	{
+		:Tasktype	"Message"
+		:Message	"「同様に、Ｂの道にいるあなたも、Ａの道にいるあなたのことには気づかないでしょう」"
+		:Character	3		//空
+		:Voice	14546	//	置換しました<<x_cc2b_so051w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2630]
+	{
+		:Tasktype	"Message"
+		:Message	"「なぜだかわかりますか？」"
+		:Character	3		//空
+		:Voice	14547	//	置換しました<<x_cc2b_so052w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2640]
+	{
+		:Tasktype	"Message"
+		:Message	"「わからない……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task2650]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは正直に答えた。"
+		:Frame		2
+	}
+//☆ＡＮ空：1：8
+	[Task2660]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,7
+	}
+//☆ＡＮ空２：1：8
+	[Task2670]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		0,7
+	}
+	[Task2680]
+	{
+		:Tasktype	"Message"
+//☆収録時修正
+//		:Message	"「人には３次元的な知覚能力しか持っていないからです」"
+		:Message	"「人には３次元的な知覚能力しか備わっていないからです」"
+		:Character	3		//空
+		:Voice	14548	//	置換しました<<x_cc2b_so053w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2690]
+	{
+		:Tasktype	"Message"
+		:Message	"「３次元的な知覚能力……？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//回想色あせ処理
+//×ＢＧ→//ＥＶ視点と次元に関する実験をする優//差分２
+	[Task2700]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task2710]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task2720]
+	{
+		:Tasktype	"Sprite"
+		:Texture	414	//	置換しました<<ev_yu07a>>
+		:Position	640,360
+		:Priority	3
+		:FadeIn		0
+		:FadeWait	0
+		:Grayscale	1
+	}
+//5pb.-フェードイン白-
+	[Task2730]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	0
+	}
+	[Task2740]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task2750]
+	{
+		:Tasktype	"Message"
+		:Message	"――ふと、ぼくの脳裏に、優とやったサインペンの実験が浮かんだ。"
+		:Frame		2
+	}
+	[Task2760]
+	{
+		:Tasktype	"Message"
+		:Message	"「てなわけで、ひとつの視点だけでは『立体』を認識することって難しいでしょ？」"
+		:Character	4		//優
+		:Voice	15182	//	置換しました<<x_cc2b_yu000e>>
+		:ModelName		"優","優私服"
+		:Frame		2
+	}
+//音声加工回想
+	[Task2770]
+	{
+		:Tasktype	"Message"
+		:Message	"「と言う訳で、ひとつの視点から得られる情報は『平面・２次元』的な情報だけなのよ」"
+		:Character	4		//優
+		:Voice	15183	//	置換しました<<x_cc2b_yu001e>>
+		:ModelName		"優","優私服"
+		:Frame		2
+	}
+//音声加工回想
+	[Task2780]
+	{
+		:Tasktype	"Message"
+		:Message	"「『立体・３次元』的な情報を獲得する為には、その視点が最低でもふたつ以上は必要になるわ」"
+		:Character	4		//優
+		:Voice	15184	//	置換しました<<x_cc2b_yu002e>>
+		:ModelName		"優","優私服"
+		:Frame		2
+	}
+//音声加工回想
+	[Task2790]
+	{
+		:Tasktype	"Message"
+		:Message	"「つまり、右目と左目……」"
+		:Character	4		//優
+		:Voice	15185	//	置換しました<<x_cc2b_yu003e>>
+		:ModelName		"優","優私服"
+		:Frame		2
+	}
+//音声加工回想
+	[Task2800]
+	{
+		:Tasktype	"Message"
+		:Message	"「このふたつの視点を使わない限り、私達は瞬間的に『３次元』を認識することはできないのよ」"
+		:Character	4		//優
+		:Voice	15186	//	置換しました<<x_cc2b_yu004e>>
+		:ModelName		"優","優私服"
+		:Frame		2
+	}
+//音声加工回想
+//☆ＢＧ休息室（点灯）
+	[Task2810]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task2820]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task2830]
+	{
+		:Tasktype	"Sprite"
+		:Texture	18	//	置換しました<<bg11aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task2840]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ空：１／２
+//☆ＣＨ空：２／２
+	[Task2850]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	20
+		[Character0]
+		{
+			:Name	"空"
+			:Preset	13
+//★ＣＨ空：1：1
+		:Animation		0,0
+			:Rot	0
+			:Quake	1
+		}
+		[Character1]
+		{
+			:Name	"空２"
+			:Preset	10
+//★ＣＨ空：1：1
+		:Animation		0,0
+			:Rot	0
+			:Quake	1
+		}
+	}
+//5pb.-フェードイン白-
+	[Task2860]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	0
+	}
+//5pb.松--データ先読み分割１--
+	[Task2870]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	155	//	置換しました<<ibg11d>>
+		:Number		1
+		:Param		640,360,0,0,1
+		:Param2		640,360,0,0,1
+		:Priority	4
+		:Time		0
+		:EndDelete	0
+		:EndWait	0
+	}
+	[Task2880]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	156	//	置換しました<<ibg11e>>
+		:Number		2
+		:Param		640,360,0,0,1
+		:Param2		640,360,0,0,1
+		:Priority	4
+		:Time		0
+		:EndDelete	0
+		:EndWait	0
+	}
+	[Task2890]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task2900]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうか、３次元の立体を『見』るには……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task2910]
+	{
+		:Tasktype	"Message"
+		:Message	"「２つの眼から得た２次元情報のずれ、視差を利用しているから『３次元』を認識できるんだ」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：1：2
+	[Task2920]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,1
+	}
+//☆ＡＮ空２：1：2
+	[Task2930]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		0,1
+	}
+	[Task2940]
+	{
+		:Tasktype	"Message"
+		:Message	"「その通り、良くご存知でしたね？」"
+		:Character	3		//空
+		:Voice	14549	//	置換しました<<x_cc2b_so054w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2950]
+	{
+		:Tasktype	"Message"
+		:Message	"「たしか、優から聞いたんだ……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：1：8
+	[Task2960]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,7
+	}
+//☆ＡＮ空２：1：8
+	[Task2970]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		0,7
+	}
+	[Task2980]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうでしたか。では、３次元の空間そのものを外から眺め、認識するにはどうすればいいでしょう……？」"
+		:Character	3		//空
+		:Voice	14550	//	置換しました<<x_cc2b_so055w>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工でエコー処理？二人同時に話す感じ？
+	[Task2990]
+	{
+		:Tasktype	"Message"
+		:Message	"「……ええっと。わからないけど……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task3000]
+	{
+		:Tasktype	"Message"
+		:Message	"「でもさっき、空は『知る手段がない』って言ってたよね？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task3010]
+	{
+		:Tasktype	"Message"
+		:Message	"「だから、Ａの『ぼく』からは、Ｂの『ぼく』を『見』る手段が存在しないんだ」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task3020]
+	{
+		:Tasktype	"Message"
+		:Message	"「人間が３次元の立体を認識する為には、ふたつの眼から平面化された映像情報を得て、その視差で知覚しなきゃならない」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task3030]
+	{
+		:Tasktype	"Message"
+		:Message	"「それと同じことで……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task3040]
+	{
+		:Tasktype	"Message"
+		:Message	"「Ａの『ぼく』とＢの『ぼく』がいる、ということがわかる位置……『Ｙ』の字のさらに外にある視点に移動しない限り――」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task3050]
+	{
+		:Tasktype	"Message"
+		:Message	"「たとえ頭で分かっていても、実際にＡとＢの『ぼく』が実在することを確かめることはできないんだ」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//空１人表示
+//☆ＣＨ全消し
+	[Task3060]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨ空：２／３
+	[Task3070]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"空"
+		:Preset		1
+//★ＣＨ空：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task3080]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうです」"
+		:Character	3		//空
+		:Voice	11313	//	置換しました<<x_cc2b_so056>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3090]
+	{
+		:Tasktype	"Message"
+		:Message	"いつの間にか空は、１人に戻っていた。"
+		:Frame		2
+	}
+	[Task3100]
+	{
+		:Tasktype	"Message"
+		:Message	"「素晴らしいですね……。少年さん、素質があるんじゃないですか？」"
+		:Character	3		//空
+		:Voice	11314	//	置換しました<<x_cc2b_so057>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3110]
+	{
+		:Tasktype	"Message"
+		:Message	"「何の？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：1：1
+	[Task3120]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task3130]
+	{
+		:Tasktype	"Message"
+		:Message	"「物理学者……あるいは、哲学者の」"
+		:Character	3		//空
+		:Voice	11315	//	置換しました<<x_cc2b_so058>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3140]
+	{
+		:Tasktype	"Message"
+		:Message	"「おだてないでよ」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task3150]
+	{
+		:Tasktype	"Message"
+		:Message	"ごく自然な動作で、空は、宙に手をかざした。"
+		:Frame		2
+	}
+//☆ＢＧ２次元と２次元視点の図示
+	[Task3160]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task3170]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		152	//	置換しました<<ibg11a>>
+		:Position		640,360
+		:Priority		5
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+//5pb.松--データ先読み分割２--
+	[Task3180]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	157	//	置換しました<<ibg11f>>
+		:Number		3
+		:Param		640,360,0,0,1
+		:Param2		640,360,0,0,1
+		:Priority	4
+		:Time		0
+		:EndDelete	0
+		:EndWait	0
+	}
+	[Task3190]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	158	//	置換しました<<ibg11g>>
+		:Number		4
+		:Param		640,360,0,0,1
+		:Param2		640,360,0,0,1
+		:Priority	4
+		:Time		0
+		:EndDelete	0
+		:EndWait	0
+	}
+	[Task3200]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task3210]
+	{
+		:Tasktype	"Message"
+		:Message	"空の手の先に、１枚の板が現れる……。"
+		:Frame		2
+	}
+//5pb.松--瞬間表示１回目--
+	[Task3220]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	155	//	置換しました<<ibg11d>>
+		:Number		1
+		:Param		640,360,0,0,1
+		:Param2		640,360,255,0,1
+		:Priority	4
+		:Time		18
+		:EndDelete	0
+		:EndWait	1
+	}
+	[Task3230]
+	{
+		:Tasktype		"SpriteDeleteBG"
+		:SpriteNumber	152	//	置換しました<<ibg11a>>
+		:Time			0
+		:FadeWait		0
+	}
+	[Task3240]
+	{
+		:Tasktype	"Message"
+		:Message	"中空に現れた板は、綺麗に折りたたまれて正四角形になった。"
+		:Frame		2
+	}
+	[Task3250]
+	{
+		:Tasktype	"Message"
+		:Message	"面の上に光点がひとつ現れ、移動を始める。"
+		:Frame		2
+	}
+	[Task3260]
+	{
+		:Tasktype	"Message"
+		:Message	"「仮に、２次元の世界に知的生命体がいるとしましょう」"
+		:Character	3		//空
+		:Voice	11316	//	置換しました<<x_cc2b_so059>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3270]
+	{
+		:Tasktype	"Message"
+		:Message	"「彼は３次元の立体を見ることができますか……？」"
+		:Character	3		//空
+		:Voice	11317	//	置換しました<<x_cc2b_so060>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3280]
+	{
+		:Tasktype	"Message"
+		:Message	"「見えないかな？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＢＧ２次元と２次元視点の図示
+//5pb.松--瞬間表示２回目--
+	[Task3290]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	155	//	置換しました<<ibg11d>>
+		:Number		1
+		:Param		640,360,255,0,1
+		:Param2		640,360,0,0,1
+		:Priority	4
+		:Time		18
+		:EndDelete	0
+		:EndWait	0
+	}
+	[Task3300]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	156	//	置換しました<<ibg11e>>
+		:Number		2
+		:Param		640,360,0,0,1
+		:Param2		640,360,255,0,1
+		:Priority	4
+		:Time		18
+		:EndDelete	0
+		:EndWait	1
+	}
+	[Task3310]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうです、彼にはできません」"
+		:Character	3		//空
+		:Voice	11318	//	置換しました<<x_cc2b_so061>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3320]
+	{
+		:Tasktype	"Message"
+		:Message	"四角形は立方体に変化する。"
+		:Frame		2
+	}
+	[Task3330]
+	{
+		:Tasktype	"Message"
+		:Message	"「なぜなら、２次元的な存在である彼は、平面上で起こった出来事しか知覚することができないからです」"
+		:Character	3		//空
+		:Voice	11319	//	置換しました<<x_cc2b_so062>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3340]
+	{
+		:Tasktype	"Message"
+		:Message	"「２次元存在の視野には、直線（１次元）しか映りませんから……」"
+		:Character	3		//空
+		:Voice	11320	//	置換しました<<x_cc2b_so063>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3350]
+	{
+		:Tasktype	"Message"
+		:Message	"立方体の６つのすべての面に、光点があった。"
+		:Frame		2
+	}
+	[Task3360]
+	{
+		:Tasktype	"Message"
+		:Message	"しかしそれぞれの面にある光点は、その単一の面の上だけを動き回り、他の光点と交わることは絶対にない。"
+		:Frame		2
+	}
+//☆ＢＧ２次元と２次元視点の図示
+//5pb.松--瞬間表示３回目--
+	[Task3370]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	156	//	置換しました<<ibg11e>>
+		:Number		2
+		:Param		640,360,255,0,1
+		:Param2		640,360,0,0,1
+		:Priority	4
+		:Time		18
+		:EndDelete	0
+		:EndWait	0
+	}
+	[Task3380]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	157	//	置換しました<<ibg11f>>
+		:Number		3
+		:Param		640,360,0,0,1
+		:Param2		640,360,255,0,1
+		:Priority	4
+		:Time		18
+		:EndDelete	0
+		:EndWait	1
+	}
+	[Task3390]
+	{
+		:Tasktype	"Message"
+		:Message	"「さて、何らかの理由で彼が３次元的存在に変化したとしましょう」"
+		:Character	3		//空
+		:Voice	11321	//	置換しました<<x_cc2b_so064>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3400]
+	{
+		:Tasktype	"Message"
+		:Message	"「すると、３次元的存在である彼の視野には、平面（２次元）しか映らなくなるはずです」"
+		:Character	3		//空
+		:Voice	11322	//	置換しました<<x_cc2b_so065>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3410]
+	{
+		:Tasktype	"Message"
+		:Message	"６つの面にあった光点は集合してひとつになり、立方体の中央に移動する。"
+		:Frame		2
+	}
+//☆ＢＧ２次元と２次元視点の図示
+//5pb.松--瞬間表示４回目--
+	[Task3420]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	157	//	置換しました<<ibg11f>>
+		:Number		3
+		:Param		640,360,255,0,1
+		:Param2		640,360,0,0,1
+		:Priority	4
+		:Time		18
+		:EndDelete	0
+		:EndWait	0
+	}
+	[Task3430]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	158	//	置換しました<<ibg11g>>
+		:Number		4
+		:Param		640,360,0,0,1
+		:Param2		640,360,255,0,1
+		:Priority	4
+		:Time		18
+		:EndDelete	0
+		:EndWait	1
+	}
+	[Task3440]
+	{
+		:Tasktype	"Message"
+		:Message	"そして立方体の縦横に、新たなホログラムの立方体がいくつも現れた。"
+		:Frame		2
+	}
+	[Task3450]
+	{
+		:Tasktype	"Message"
+		:Message	"立方体同士は面でくっつき、隙間なく並ぶ。"
+		:Frame		2
+	}
+	[Task3460]
+	{
+		:Tasktype	"Message"
+		:Message	"「３次元における立体視は、左目に映った平面と、右目に映った平面を合成してるに過ぎません」"
+		:Character	3		//空
+		:Voice	11323	//	置換しました<<x_cc2b_so066>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3470]
+	{
+		:Tasktype	"Message"
+		:Message	"「たとえば、精巧に、緻密に描かれたりんごの絵と、本物のりんごの映像を、近づくことなしに見わけることはできないでしょう」"
+		:Character	3		//空
+		:Voice	11324	//	置換しました<<x_cc2b_so067>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3480]
+	{
+		:Tasktype	"Message"
+		:Message	"すべての立方体の中には、光点がひとつずつ浮かんでいた。"
+		:Frame		2
+	}
+	[Task3490]
+	{
+		:Tasktype	"Message"
+		:Message	"立方体の内部にある光点は、盛んに外側の６つの面に衝突反射し、絶え間なく動いている。"
+		:Frame		2
+	}
+	[Task3500]
+	{
+		:Tasktype	"Message"
+		:Message	"しかしそれらは単一の立方体から出て行くことがなく、他の光点とは決して交わらない。"
+		:Frame		2
+	}
+	[Task3510]
+	{
+		:Tasktype	"Message"
+		:Message	"「繰り返しますが……」"
+		:Character	3		//空
+		:Voice	11325	//	置換しました<<x_cc2b_so068>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3520]
+	{
+		:Tasktype	"Message"
+		:Message	"「平面（２次元）としての情報を、同時に２方向から入手することによって、立体を知覚していると錯覚しているだけなのです」"
+		:Character	3		//空
+		:Voice	11326	//	置換しました<<x_cc2b_so069>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3530]
+	{
+		:Tasktype	"Message"
+		:Message	"「それは３次元的な視覚とは呼べません」"
+		:Character	3		//空
+		:Voice	11327	//	置換しました<<x_cc2b_so070>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3540]
+	{
+		:Tasktype	"Message"
+		:Message	"「３次元的な視覚とは、サイコロの６面すべてを、同時に見ることができる視覚のことを言うのです」"
+		:Character	3		//空
+		:Voice	11328	//	置換しました<<x_cc2b_so071>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3550]
+	{
+		:Tasktype	"Message"
+		:Message	"「ｎ次元存在にはｎ−１次元の視覚情報しか得られない」"
+		:Character	3		//空
+		:Voice	11329	//	置換しました<<x_cc2b_so072>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3560]
+	{
+		:Tasktype	"Message"
+		:Message	"「ですからＹの字の先端にいる存在は、もう一方の先端にいる存在のことに気づけないのです」"
+		:Character	3		//空
+		:Voice	11330	//	置換しました<<x_cc2b_so073>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3570]
+	{
+		:Tasktype	"Message"
+		:Message	"「もしも、彼が３次元的視野を獲得したとき……」"
+		:Character	3		//空
+		:Voice	11331	//	置換しました<<x_cc2b_so074>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3580]
+	{
+		:Tasktype	"Message"
+		:Message	"「つまり２次元平面から脱出して、３次元空間内から、その平面を『見下ろした』ときに――」"
+		:Character	3		//空
+		:Voice	11332	//	置換しました<<x_cc2b_so075>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3590]
+	{
+		:Tasktype	"Message"
+		:Message	"「そのとき初めて『自分がＹの字の一部であったこと』に気づき」"
+		:Character	3		//空
+		:Voice	11333	//	置換しました<<x_cc2b_so076>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3600]
+	{
+		:Tasktype	"Message"
+		:Message	"「さらに『枝分かれした、もう１人の自分が居ること』にも気づけるのです」"
+		:Character	3		//空
+		:Voice	11334	//	置換しました<<x_cc2b_so077>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task3610]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//背景割れるワイプ？
+//5pb.-フェードアウト白-
+	[Task3620]
+	{
+		:Tasktype		"FadeOut"
+		:Type			16
+		:Color			255,255,255,255	//White
+		:Time			12
+		:SpriteDelete	1
+	}
+	[Task3630]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number		1
+		:EndWait	0
+	}
+	[Task3640]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number		2
+		:EndWait	0
+	}
+	[Task3650]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number		3
+		:EndWait	0
+	}
+	[Task3660]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number		4
+		:EndWait	0
+	}
+	[Task3670]
+	{
+		:Tasktype		"Sprite"
+		:Texture		117	//	置換しました<<bg_white>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			0
+		:FadeWait		0
+	}
+	[Task3680]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			0
+		:SpriteDelete	0
+	}
+	[Task3690]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task3700]
+	{
+		:Tasktype	"Message"
+		:Message	"不意にブロックはすべて割れて、消える。"
+		:Frame		2
+	}
+//☆ＢＧホワイト
+	[Task3710]
+	{
+		:Tasktype	"Message"
+		:Message	"視界はいきなり、眩いばかりの白い光に満たされた。"
+		:Frame		2
+	}
+	[Task3720]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,255,255,255
+		:Ambient	255,255,255,255
+		:Spec		255,255,255,255
+		:Angle		0,0
+	}
+//空歪み表示
+//☆ＣＨ空：２／３
+	[Task3730]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"空"
+		:Preset		1
+//★ＣＨ空：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task3740]
+	{
+		:Tasktype	"Message"
+		:Message	"空の姿が歪んで見える。"
+		:Frame		2
+	}
+//空、表示できる限界？表示及び２重ぶれ？表示
+//☆ＣＨ空２：１／３
+//☆ＣＨ空３：３／３
+	[Task3750]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	30
+		[Character0]
+		{
+			:Name	"空２"
+			:Preset	7
+//★ＣＨ空：1：1
+		:Animation		1,0
+			:Rot	0
+			:Quake	1
+		}
+		[Character1]
+		{
+			:Name	"空３"
+			:Preset	4
+//★ＣＨ空：1：1
+		:Animation		2,0
+			:Rot	0
+			:Quake	1
+		}
+	}
+	[Task3760]
+	{
+		:Tasktype	"Message"
+		:Message	"それは数え切れないほどの数に分裂する。"
+		:Frame		2
+	}
+	[Task3770]
+	{
+		:Tasktype	"Message"
+		:Message	"視界を覆うほどの、空。"
+		:Frame		2
+	}
+	[Task3780]
+	{
+		:Tasktype	"Message"
+		:Message	"眼を開けていられない。"
+		:Frame		2
+	}
+	[Task3790]
+	{
+		:Tasktype	"Message"
+		:Message	"どれが彼女なのかわからない。"
+		:Frame		2
+	}
+	[Task3800]
+	{
+		:Tasktype	"Message"
+		:Message	"あるいは、すべてが彼女なのか……。"
+		:Frame		2
+	}
+//☆ＡＮ空：1：8
+	[Task3810]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,7
+	}
+//☆ＡＮ空２：1：8
+	[Task3820]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		1,7
+	}
+//☆ＡＮ空３：1：8
+	[Task3830]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空３"
+		:Animation		2,7
+	}
+	[Task3840]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう、そしてこれは、３次元空間においても同じことです」"
+		:Character	3		//空
+		:Voice	927	//	置換しました<<x_cc2b_so078e>>
+		:ModelName		"空"
+		:Frame		2
+	}
+//音声加工エコー
+//☆ＡＮ空：1：5
+	[Task3850]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,4
+	}
+//☆ＡＮ空２：1：5
+	[Task3860]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		1,4
+	}
+//☆ＡＮ空３：1：5
+	[Task3870]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空３"
+		:Animation		2,4
+	}
+	[Task3880]
+	{
+		:Tasktype	"Message"
+		:Message	"「あなたが４次元的視野を獲得したとき」"
+		:Character	3		//空
+		:Voice	6210	//	置換しました<<x_cc2b_so079e>>
+		:ModelName		"空２"
+		:Frame		2
+	}
+//音声加工エコー
+	[Task3890]
+	{
+		:Tasktype	"Message"
+		:Message	"「つまり、少年さんが、３次元空間から脱出して、上位次元空間内から、その空間を『見下ろした』とき」"
+		:Character	3		//空
+		:Voice	15169	//	置換しました<<x_cc2b_so080e>>
+		:ModelName		"空３"
+		:Frame		2
+	}
+//音声加工エコー
+//☆ＡＮ空：1：1
+	[Task3900]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+//☆ＡＮ空２：1：1
+	[Task3910]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		1,0
+	}
+//☆ＡＮ空３：1：1
+	[Task3920]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空３"
+		:Animation		2,0
+	}
+	[Task3930]
+	{
+		:Tasktype	"Message"
+//☆収録時修正
+//		:Message	"「そのとき初めて『自分がΨの字（ルビ：せかい）の一部であったこと』に気づき」"
+		:Message	"「そのとき初めて『自分がΨの字の一部であったこと』に気づき」"
+		:Character	3		//空
+		:Voice	15170	//	置換しました<<x_cc2b_so081e>>
+		:ModelName		"空"
+		:Frame		2
+	}
+//Ψ＝プサイ（オリジナルで波動関数Ψが使われていたが、意味が良く分からないけどそのままにしておきます）
+//音声加工エコー
+	[Task3940]
+	{
+		:Tasktype	"Message"
+		:Message	"「さらに『枝分かれをした、他の自分がいること』にも気づけるのです」"
+		:Character	3		//空
+		:Voice	15171	//	置換しました<<x_cc2b_so082e>>
+		:ModelName		"空２"
+		:Frame		2
+	}
+//音声加工エコー
+	[Task3950]
+	{
+		:Tasktype	"Message"
+		:Message	"「…………」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task3960]
+	{
+		:Tasktype	"Message"
+		:Message	"「異なった歴史、異なった世界、異なった空間の中に……」"
+		:Character	3		//空
+		:Voice	15172	//	置換しました<<x_cc2b_so083e>>
+		:ModelName		"空３"
+		:Frame		2
+	}
+//音声加工エコー
+	[Task3970]
+	{
+		:Tasktype	"Message"
+		:Message	"「別の自分自身が存在する、ということが、わかってもらえたでしょうか？」"
+		:Character	3		//空
+		:Voice	15173	//	置換しました<<x_cc2b_so084e>>
+		:ModelName		"空"
+		:Frame		2
+	}
+//音声加工エコー
+//☆ＡＮ空：4：5
+	[Task3980]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,4
+	}
+//☆ＡＮ空２：4：5
+	[Task3990]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		1,4
+	}
+//☆ＡＮ空３：4：5
+	[Task4000]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空３"
+		:Animation		2,4
+	}
+	[Task4010]
+	{
+		:Tasktype	"Message"
+		:Message	"「世界に、自己は遍在しているのです」"
+		:Character	3		//空
+		:Voice	15174	//	置換しました<<x_cc2b_so085e>>
+		:ModelName		"空２"
+		:Frame		2
+	}
+//音声加工エコー
+	[Task4020]
+	{
+		:Tasktype	"Message"
+		:Message	"「あなたと同様に、私という存在も、遍在しています」"
+		:Character	3		//空
+		:Voice	15175	//	置換しました<<x_cc2b_so086e>>
+		:ModelName		"空３"
+		:Frame		2
+	}
+//音声加工エコー
+//☆ＡＮ空：4：8
+	[Task4030]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,7
+	}
+//☆ＡＮ空２：4：8
+	[Task4040]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		1,7
+	}
+//☆ＡＮ空３：4：8
+	[Task4050]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空３"
+		:Animation		2,7
+	}
+	[Task4060]
+	{
+		:Tasktype	"Message"
+		:Message	"「あなたも、私と同じ……」"
+		:Character	3		//空
+		:Voice	15176	//	置換しました<<x_cc2b_so087e>>
+		:ModelName		"空"
+		:Frame		2
+	}
+//音声加工エコー
+	[Task4070]
+	{
+		:Tasktype	"Message"
+		:Message	"「単一から分かれた『Ｙ』……」"
+		:Character	3		//空
+		:Voice	15177	//	置換しました<<x_cc2b_so088e>>
+		:ModelName		"空２"
+		:Frame		2
+	}
+//音声加工エコー
+//☆ＡＮ空：4：3
+	[Task4080]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+//☆ＡＮ空２：4：3
+	[Task4090]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空２"
+		:Animation		1,0
+	}
+//☆ＡＮ空３：4：3
+	[Task4100]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空３"
+		:Animation		2,0
+	}
+	[Task4110]
+	{
+		:Tasktype	"Message"
+		:Message	"「ですが……」"
+		:Character	3		//空
+		:Voice	15178	//	置換しました<<x_cc2b_so089e>>
+		:ModelName		"空３"
+		:Frame		2
+	}
+//音声加工エコー
+	[Task4120]
+	{
+		:Tasktype	"Message"
+		:Message	"「遍在する自己は、ひとつ……」"
+		:Character	3		//空
+		:Voice	15179	//	置換しました<<x_cc2b_so090e>>
+		:ModelName		"空"
+		:Frame		2
+	}
+//音声加工エコー
+//空１人表示
+//ＣＨ空２：消し１／３
+//ＣＨ空３：消し３／３
+	[Task4130]
+	{
+		:Tasktype	"ChrModelClose"
+		:Max		2
+		:Name0		"空２"
+		:Name1		"空３"
+		:Fade		20
+	}
+	[Task4140]
+	{
+		:Tasktype	"Message"
+		:Message	"空は、分身するのをやめた。"
+		:Frame		2
+	}
+//☆ＢＧ休息室（点灯）
+	[Task4150]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task4160]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task4170]
+	{
+		:Tasktype	"Sprite"
+		:Texture	18	//	置換しました<<bg11aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task4180]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ空：２／３
+	[Task4190]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"空"
+		:Preset		1
+//★ＣＨ空：4：8
+		:Animation		3,7
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン白-
+	[Task4200]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			120
+		:SpriteDelete	0
+	}
+	[Task4210]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task4220]
+	{
+		:Tasktype	"Message"
+		:Message	"視界の眩しさは薄れて消えていく。"
+		:Frame		2
+	}
+//☆ＡＮ空：4：5
+	[Task4230]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,4
+	}
+	[Task4240]
+	{
+		:Tasktype	"Message"
+		:Message	"「あなたの知らない『あなた』が、あなた自身と不可分の存在になれるとしたら」"
+		:Character	3		//空
+		:Voice	11335	//	置換しました<<x_cc2b_so091>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task4250]
+	{
+		:Tasktype	"Message"
+		:Message	"「あなた自身が、他のあらゆる『あなた』を把握できる位置に立って、すべてを見通せたとしたら」"
+		:Character	3		//空
+		:Voice	11336	//	置換しました<<x_cc2b_so092>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：4：1
+	[Task4260]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,0
+	}
+	[Task4270]
+	{
+		:Tasktype	"Message"
+		:Message	"「すべての『あなた』の体験はあなた独りの体験に等しくなる」"
+		:Character	3		//空
+		:Voice	11337	//	置換しました<<x_cc2b_so093>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task4280]
+	{
+		:Tasktype	"Message"
+		:Message	"「そして、あなたは、本当の意味で、『あなた』になる……」"
+		:Character	3		//空
+		:Voice	11338	//	置換しました<<x_cc2b_so094>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：4：2
+	[Task4290]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,1
+	}
+	[Task4300]
+	{
+		:Tasktype	"Message"
+		:Message	"そう言って空はぼくに笑いかけた。"
+		:Frame		2
+	}
+	[Task4310]
+	{
+		:Tasktype	"Message"
+		:Message	"「はぁ……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task4320]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは深く息を吐いた。"
+		:Frame		2
+	}
+	[Task4330]
+	{
+		:Tasktype	"Message"
+		:Message	"「ねぇ……１つだけ、聞いてもいい？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：1：1
+	[Task4340]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task4350]
+	{
+		:Tasktype	"Message"
+		:Message	"「どうぞ……」"
+		:Character	3		//空
+		:Voice	11339	//	置換しました<<x_cc2b_so095>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task4360]
+	{
+		:Tasktype	"Message"
+		:Message	"「どうして『ぼく』に、こんな話をしたの……？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：3：2
+	[Task4370]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		2,1
+	}
+	[Task4380]
+	{
+		:Tasktype	"Message"
+		:Message	"「ふふっ……なんでですかね……」"
+		:Character	3		//空
+		:Voice	11340	//	置換しました<<x_cc2b_so096>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task4390]
+	{
+		:Tasktype	"Message"
+		:Message	"空は首をかしげ笑う。"
+		:Frame		2
+	}
+//☆ＡＮ空：3：1
+	[Task4400]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		2,0
+	}
+	[Task4410]
+	{
+		:Tasktype	"Message"
+		:Message	"「私の本体であるコンピューターは、別の場所に存在しているからでしょうか？」"
+		:Character	3		//空
+		:Voice	11341	//	置換しました<<x_cc2b_so097>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＡＮ空：1：1
+	[Task4420]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task4430]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうだ、少年さん、『量子コンピューターは、同時並行的に存在する複数の世界、パラレルワールドを利用して並列計算をしている』って言われているのをご存知ですか？」"
+		:Character	3		//空
+		:Voice	11342	//	置換しました<<x_cc2b_so098>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task4440]
+	{
+		:Tasktype	"Message"
+		:Message	"「パラレルワールドを利用して？！　それって本当なの？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ空：3：3
+	[Task4450]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		2,0
+	}
+	[Task4460]
+	{
+		:Tasktype	"Message"
+		:Message	"「それは……」"
+		:Character	3		//空
+		:Voice	11343	//	置換しました<<x_cc2b_so099>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//☆ＣＨ偽武：３／３
+	[Task4470]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"偽武"
+		:Preset		4
+//★ＣＨ偽武：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task4480]
+	{
+		:Tasktype	"Message"
+		:Message	"「おーい、少年。これからクジラを修理しに行くぞ」"
+		:Character	1		//武
+		:Voice	14165	//	置換しました<<x_cc2b_kb005>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task4490]
+	{
+		:Tasktype	"Message"
+		:Message	"ふと横を見ると武が立っていた。"
+		:Frame		2
+	}
+	[Task4500]
+	{
+		:Tasktype	"Message"
+		:Message	"「クジラを修理？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：7
+	[Task4510]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,2
+	}
+	[Task4520]
+	{
+		:Tasktype	"Message"
+		:Message	"「忘れたのか？　俺達がここから脱出する為には、コスミッシャー・ヴァル、クジラ型遊覧潜水艇を直さないといけないだろ」"
+		:Character	1		//武
+		:Voice	14166	//	置換しました<<x_cc2b_kb006>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：1
+	[Task4530]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task4540]
+	{
+		:Tasktype	"Message"
+		:Message	"「ほれ、行くぞ、少年」"
+		:Character	1		//武
+		:Voice	14167	//	置換しました<<x_cc2b_kb007>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＣＨ偽武：消し
+	[Task4550]
+	{
+		:Tasktype	"ChrModelClose"
+		:Name		"偽武"
+		:Fade		20
+	}
+	[Task4560]
+	{
+		:Tasktype	"Message"
+		:Message	"「あ、ちょっと、待ってよ武！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task4570]
+	{
+		:Tasktype	"Message"
+		:Message	"武は、ぼくの首根っこを掴んで、強引に連れて行く。"
+		:Frame		2
+	}
+//☆ＡＮ空：2：2
+	[Task4580]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		1,1
+	}
+	[Task4590]
+	{
+		:Tasktype	"Message"
+		:Message	"「がんばってくださいね」"
+		:Character	3		//空
+		:Voice	11344	//	置換しました<<x_cc2b_so100>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+	[Task4600]
+	{
+		:Tasktype	"Message"
+		:Message	"そんなぼくを、空は手を振り、笑顔で見送った。"
+		:Frame		2
+	}
+//時間経過ワイプ
+//☆ＢＧ関係者通路（点灯）
+	[Task4610]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+
+//5pb.-デフォルト停止時間30f-
+	[Task4620]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+//5pb.-フェードアウト黒-
+	[Task4630]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task4640]
+	{
+		:Tasktype	"Sprite"
+		:Texture	58	//	置換しました<<bg35aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task4650]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,193,188,255
+		:Ambient	215,163,158,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ偽武：２／３
+	[Task4660]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"偽武"
+		:Preset		1
+//★ＣＨ偽武：1：8
+		:Animation		0,7
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン黒-
+	[Task4670]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+//5pb.-06:コスミッシャー・ヴァル(宇宙クジラ）-
+	[Task4680]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		10	//	置換しました<<bgm06>>
+	}
+
+	[Task4690]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task4700]
+	{
+		:Tasktype	"Message"
+		:Message	"「みんな準備はいいか？」"
+		:Character	1		//武
+		:Voice	14168	//	置換しました<<x_cc2b_kb008>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task4710]
+	{
+		:Tasktype	"Message"
+		:Message	"「あの、武……みんなって言っても、ぼくしか居ないんだけど」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：5
+	[Task4720]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,4
+	}
+	[Task4730]
+	{
+		:Tasktype	"Message"
+		:Message	"「気分だよ、気分。それじゃあ出発するぞ」"
+		:Character	1		//武
+		:Voice	14169	//	置換しました<<x_cc2b_kb009>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task4740]
+	{
+		:Tasktype	"Message"
+		:Message	"「はい、隊長！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：6
+	[Task4750]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,5
+	}
+	[Task4760]
+	{
+		:Tasktype	"Message"
+		:Message	"「えっ？」"
+		:Character	1		//武
+		:Voice	14170	//	置換しました<<x_cc2b_kb010>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task4770]
+	{
+		:Tasktype	"Message"
+		:Message	"武は不思議そうな顔でぼくを見た。"
+		:Frame		2
+	}
+	[Task4780]
+	{
+		:Tasktype	"Message"
+		:Message	"「だって、ぼくが隊員で、武は隊長なんでしょ？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：1
+	[Task4790]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task4800]
+	{
+		:Tasktype	"Message"
+		:Message	"「フッ……」"
+		:Character	1		//武
+		:Voice	14171	//	置換しました<<x_cc2b_kb011>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task4810]
+	{
+		:Tasktype	"Message"
+		:Message	"武はぼくの顔を優しく見詰め、フッと笑った。"
+		:Frame		2
+	}
+	[Task4820]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああ、そうだったな……」"
+		:Character	1		//武
+		:Voice	14172	//	置換しました<<x_cc2b_kb012>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：8
+	[Task4830]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,7
+	}
+	[Task4840]
+	{
+		:Tasktype	"Message"
+		:Message	"「それじゃあ、少ちゃん隊員！　出発するぞ！！」"
+		:Character	1		//武
+		:Voice	14173	//	置換しました<<x_cc2b_kb013>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task4850]
+	{
+		:Tasktype	"Message"
+		:Message	"「はい、隊長！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task4860]
+	{
+		:Tasktype	"Message"
+		:Message	"武は口笛を吹きながら、どこか嬉しそうに、ガラガラと台車を押した。"
+		:Frame		2
+	}
+//☆ＢＧ倉庫（点灯）
+	[Task4870]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task4880]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task4890]
+	{
+		:Tasktype	"Sprite"
+		:Texture	53	//	置換しました<<bg32aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task4900]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,245,245,255
+		:Ambient	210,205,205,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ偽武：２／３
+	[Task4910]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"偽武"
+		:Preset		1
+//★ＣＨ偽武：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン黒-
+	[Task4920]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+	[Task4930]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task4940]
+	{
+		:Tasktype	"Message"
+		:Message	"「こっちにありました」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task4950]
+	{
+		:Tasktype	"Message"
+		:Message	"倉庫に着いたぼくと武は、修理リストにあったパーツを探した。"
+		:Frame		2
+	}
+	[Task4960]
+	{
+		:Tasktype	"Message"
+		:Message	"中はモーターや、ライト、ケーブル等様々な部品やジャンクパーツで溢れていた。"
+		:Frame		2
+	}
+	[Task4970]
+	{
+		:Tasktype	"Message"
+		:Message	"幸い、修理で必要な新品のユニット類は、整理され番号管理されていたので探すのは比較的楽だった。"
+		:Frame		2
+	}
+	[Task4980]
+	{
+		:Tasktype	"Message"
+		:Message	"「ええと、ＷＶ‐ＭＡＸのユニットはっと、あった、これか」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task4990]
+	{
+		:Tasktype	"Message"
+		:Message	"「隊長、最後のパーツが見つかりました」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：8
+	[Task5000]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,7
+	}
+	[Task5010]
+	{
+		:Tasktype	"Message"
+		:Message	"「うむ、よくやった少ちゃん隊員君」"
+		:Character	1		//武
+		:Voice	14174	//	置換しました<<x_cc2b_kb014>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5020]
+	{
+		:Tasktype	"Message"
+		:Message	"「これで全部そろったの？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：1
+	[Task5030]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task5040]
+	{
+		:Tasktype	"Message"
+		:Message	"「これも、これも、これもと、ああ全部そろったみたいだな」"
+		:Character	1		//武
+		:Voice	14175	//	置換しました<<x_cc2b_kb015>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5050]
+	{
+		:Tasktype	"Message"
+		:Message	"「さて、またひとつ謎が解明され、ひとつの冒険が終わった、しかし……」"
+		:Character	1		//武
+		:Voice	14176	//	置換しました<<x_cc2b_kb016>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5060]
+	{
+		:Tasktype	"Message"
+		:Message	"修理パーツが全て集まったので、武の冒険ごっこは締めに入ったようだ。"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：8
+	[Task5070]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Eye			1
+		:Animation		0,7
+	}
+	[Task5080]
+	{
+		:Tasktype	"Message"
+		:Message	"「世界の謎が絶えるその日まで、我々の冒険は、終わらない……」"
+		:Character	1		//武
+		:Voice	14177	//	置換しました<<x_cc2b_kb017>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//ＡＮ偽武目閉じ
+	[Task5090]
+	{
+		:Tasktype	"Message"
+		:Message	"「……………………」"
+		:Character	1		//武
+		:Voice	14178	//	置換しました<<x_cc2b_kb018>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5100]
+	{
+		:Tasktype	"Message"
+		:Message	"言い終わると、武は目を閉じ、感慨に耽っている様子だった。"
+		:Frame		2
+	}
+	[Task5110]
+	{
+		:Tasktype	"Message"
+		:Message	"「ねえ、武。これで冒険ごっこは終わりでしょ、早くクジラを修理しに行こうよ」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：5
+	[Task5120]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,4
+	}
+	[Task5130]
+	{
+		:Tasktype	"Message"
+//☆収録時修正
+//		:Message	"「ああ、そうだ。これで冒険ごっこはおしまいだ………」"
+		:Message	"「ああ、そうだな。これで冒険ごっこはおしまいだ………」"
+		:Character	1		//武
+		:Voice	14179	//	置換しました<<x_cc2b_kb019>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5140]
+	{
+		:Tasktype	"Message"
+		:Message	"そう呟くと、武は、修理パーツを積んだ台車を押して、メンテナンスルームに向かった。"
+		:Frame		2
+	}
+//時間経過ワイプ
+//☆ＢＧメンテナンスルーム（点灯）
+	[Task5150]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task5160]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task5170]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			47	//	置換しました<<bg29aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task5180]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task5190]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task5200]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、ぼくと武はクジラの修理を始めた。"
+		:Frame		2
+	}
+//時間経過ワイプ
+	[Task5210]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task5220]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+//☆ＣＨ偽武：２／３
+	[Task5230]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"偽武"
+		:Preset		1
+//★ＣＨ偽武：1：8
+		:Animation		0,7
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン黒-
+	[Task5240]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+	[Task5250]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task5260]
+	{
+		:Tasktype	"Message"
+		:Message	"「さて次は何々、外装７番パネルを開いて、Ｃ１０のユニットを交換だな……」"
+		:Character	1		//武
+		:Voice	14180	//	置換しました<<x_cc2b_kb020>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5270]
+	{
+		:Tasktype	"Message"
+		:Message	"内部のユニット交換を終えたぼく達は、次に外部からの修理に取り掛かろうとした。"
+		:Frame		2
+	}
+	[Task5280]
+	{
+		:Tasktype	"Message"
+		:Message	"そんな時……。"
+		:Frame		2
+	}
+
+//5pb.-停止時間指定:f1-
+	[Task5290]
+	{
+		:Tasktype	"BgmStop"
+		:Div		1
+	}
+//☆ＡＮ偽武：1：3
+	[Task5300]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,2
+	}
+	[Task5310]
+	{
+		:Tasktype	"Message"
+		:Message	"「う……」"
+		:Character	1		//武
+		:Voice	14181	//	置換しました<<x_cc2b_kb021>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5320]
+	{
+		:Tasktype	"Message"
+		:Message	"「ううっ……」"
+		:Character	1		//武
+		:Voice	14182	//	置換しました<<x_cc2b_kb022>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5330]
+	{
+		:Tasktype	"Message"
+		:Message	"「うううっ……」"
+		:Character	1		//武
+		:Voice	14183	//	置換しました<<x_cc2b_kb023>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5340]
+	{
+		:Tasktype	"Message"
+		:Message	"突然、武が苦しみだした。"
+		:Frame		2
+	}
+	[Task5350]
+	{
+		:Tasktype	"Message"
+		:Message	"武の身体は、ぶるぶると小刻みに震えていた。"
+		:Frame		2
+	}
+	[Task5360]
+	{
+		:Tasktype	"Message"
+		:Message	"唇を震わせていた。"
+		:Frame		2
+	}
+	[Task5370]
+	{
+		:Tasktype	"Message"
+		:Message	"「た、武……どうしたの？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task5380]
+	{
+		:Tasktype	"Message"
+		:Message	"尋常じゃない武の苦しみ方に、ぼくは不安になる。"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：4
+	[Task5390]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,3
+	}
+	[Task5400]
+	{
+		:Tasktype	"Message"
+		:Message	"「だぁぁーーー！！」"
+		:Character	1		//武
+		:Voice	14184	//	置換しました<<x_cc2b_kb024>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：2
+	[Task5410]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task5420]
+	{
+		:Tasktype	"Message"
+		:Message	"「美味いーーーー！！」"
+		:Character	1		//武
+		:Voice	14185	//	置換しました<<x_cc2b_kb025>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5430]
+	{
+		:Tasktype	"Message"
+		:Message	"「！！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+
+//5pb.-06:コスミッシャー・ヴァル(宇宙クジラ）-
+	[Task5440]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		10	//	置換しました<<bgm06>>
+	}
+
+	[Task5450]
+	{
+		:Tasktype	"Message"
+		:Message	"前フリとのギャップがありすぎだよ……もう。"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：1
+	[Task5460]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task5470]
+	{
+		:Tasktype	"Message"
+		:Message	"「はぁーーーーーーーっ」"
+		:Character	1		//武
+		:Voice	14186	//	置換しました<<x_cc2b_kb026>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5480]
+	{
+		:Tasktype	"Message"
+		:Message	"そして一気に息を吐いた。"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：2
+	[Task5490]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task5500]
+	{
+		:Tasktype	"Message"
+		:Message	"「く〜〜ぅ、潤う〜ぜぇ〜〜」"
+		:Character	1		//武
+		:Voice	14187	//	置換しました<<x_cc2b_kb027>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5510]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは、呆れた視線を武に送る。"
+		:Frame		2
+	}
+//5pb.松--モーションブラー挿入箇所--
+	[Task5520]
+	{
+		:Tasktype	"EffectStart"
+		:EffectNumber	41,-1
+		:Priority		1
+		:Param		0.7
+	}
+//武立ちキャラの顔、桑古木少年の顔とダブらせる？
+//武は半透明予定
+//☆ＣＨ武：２／２
+	[Task5530]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"武"
+		:Preset		10
+//★ＣＨ武：1：2
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+		:Alpha		0.6
+	}
+	[Task5540]
+	{
+		:Tasktype	"Message"
+		:Message	"あれ？　武がぼやけて見えるような？"
+		:Frame		2
+	}
+//武立ちキャラの顔、桑古木少年の顔とダブらせる？//終了
+//☆ＣＨ武：消し
+	[Task5550]
+	{
+		:Tasktype	"ChrModelClose"
+		:Name		"武"
+		:Fade		20
+	}
+//5pb.松--モーションブラー停止箇所--
+	[Task5560]
+	{
+		:Tasktype	"EffectEnd"
+		:EffectNumber	41
+	}
+//☆ＡＮ偽武：1：1
+	[Task5570]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task5580]
+	{
+		:Tasktype	"Message"
+		:Message	"「少年、何故にチラチラと俺の顔を見てるんだ？　そんなにいい男か俺？」"
+		:Character	1		//武
+		:Voice	14188	//	置換しました<<x_cc2b_kb028>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5590]
+	{
+		:Tasktype	"Message"
+		:Message	"いや、全然そんな事思ってないけど……。"
+		:Frame		2
+	}
+	[Task5600]
+	{
+		:Tasktype	"Message"
+		:Message	"いつの間にか、ぼやけは消えていた。"
+		:Frame		2
+	}
+	[Task5610]
+	{
+		:Tasktype	"Message"
+		:Message	"おかしいな、さっきは確かに見えたんだけどな……。"
+		:Frame		2
+	}
+	[Task5620]
+	{
+		:Tasktype	"Message"
+		:Message	"「さて、一服もしたし、修理の続きを始めるか」"
+		:Character	1		//武
+		:Voice	14189	//	置換しました<<x_cc2b_kb029>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5630]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうだね」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//時間経過ワイプ
+	[Task5640]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task5650]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+//☆ＣＨ全消し
+	[Task5660]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		0
+	}
+//5pb.松--立ち絵切り替え予定--
+//☆ＣＨ偽武：２／３
+	[Task5670]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"偽武"
+		:Preset		1
+//★ＣＨ偽武：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン黒-
+	[Task5680]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+//☆ＳＥ思いパネルが閉まる音
+	[Task5690]
+	{
+		:Tasktype	"SePlay"
+		:SE			10	//	置換しました<<se00_07>>
+		:Wait		1
+	}
+	[Task5700]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task5710]
+	{
+		:Tasktype	"Message"
+		:Message	"「それじゃ、修理完了だ！」"
+		:Character	1		//武
+		:Voice	14190	//	置換しました<<x_cc2b_kb030>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5720]
+	{
+		:Tasktype	"Message"
+		:Message	"「やったね武！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：2
+	[Task5730]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task5740]
+	{
+		:Tasktype	"Message"
+		:Message	"「イエーーーイ！」"
+		:Character	1		//武
+		:Voice	14191	//	置換しました<<x_cc2b_kb031>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task5750]
+	{
+		:Tasktype	"Message"
+		:Message	"「イエーーーイ！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＳＥパンと手を叩く音
+	[Task5760]
+	{
+		:Tasktype	"SePlay"
+		:SE			113	//	置換しました<<se05_09>>
+		:Wait		1
+	}
+
+	[Task5770]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは、手のひらを上げ、武とハイタッチした。"
+		:Frame		2
+	}
+//時間経過ワイプ
+//☆ＢＧ休息室（点灯）
+	[Task5780]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-デフォルト停止時間30f-
+	[Task5790]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+//5pb.-フェードアウト黒-
+	[Task5800]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task5810]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			18	//	置換しました<<bg11aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task5820]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task5830]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task5840]
+	{
+		:Tasktype	"Message"
+		:Message	"「ふぅ〜〜」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task5850]
+	{
+		:Tasktype	"Message"
+		:Message	"修理を終えたぼくは、休息室に戻り、缶ジュースを飲んで一服した。"
+		:Frame		2
+	}
+	[Task5860]
+	{
+		:Tasktype	"Message"
+		:Message	"休息室には誰もおらず、武はみんなに修理が終わった事を伝えに行っていた。"
+		:Frame		2
+	}
+	[Task5870]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは、今朝考えていた事を再び考え始めていた。"
+		:Frame		2
+	}
+	[Task5880]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくが、同じ時間を繰り返しているって事を。"
+		:Frame		2
+	}
+//回想色あせ処理
+//5pb.-フェードアウト白-
+	[Task5890]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task5900]
+	{
+		:Tasktype		"Sprite"
+		:Texture		117	//	置換しました<<bg_white>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			0
+		:FadeWait		0
+	}
+	[Task5910]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	3
+		:Fade	20
+		[Character0]
+		{
+			:Name	"空"
+			:Preset	7
+//★ＣＨ空：3：1
+		:Animation		2,0
+			:Rot	0
+			:Quake	1
+		}
+		[Character1]
+		{
+			:Name	"空"
+			:Preset	4
+//★ＣＨ空：3：1
+		:Animation		2,0
+			:Rot	0
+			:Quake	1
+		}
+		[Character2]
+		{
+			:Name	"空"
+			:Preset	1
+//★ＣＨ空：3：1
+		:Animation		2,0
+			:Rot	0
+			:Quake	1
+		}
+	}
+//5pb.-フェードイン白-
+	[Task5920]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	0
+	}
+	[Task5930]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task5940]
+	{
+		:Tasktype	"Message"
+		:Message	"「異なった歴史、異なった世界、異なった空間の中に……」"
+		:Character	3		//空
+		:Voice	15180	//	置換しました<<x_cc2b_so101e>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工エコー
+	[Task5950]
+	{
+		:Tasktype	"Message"
+		:Message	"「別の自分自身が存在する、ということが、わかってもらえたでしょうか？」"
+		:Character	3		//空
+		:Voice	15181	//	置換しました<<x_cc2b_so102e>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//音声加工エコー
+	[Task5960]
+	{
+		:Tasktype	"Message"
+		:Message	"「世界に、自己は遍在しているのです」"
+		:Character	3		//空
+		:Voice	14453	//	置換しました<<x_cc2b_so103e>>
+		:ModelName		"空","空２","空３"
+		:Frame		2
+	}
+//回想終了
+//5pb.-フェードアウト白-
+	[Task5970]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task5980]
+	{
+		:Tasktype		"Sprite"
+		:Texture		18	//	置換しました<<bg11aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			0
+		:FadeWait		0
+	}
+	[Task5990]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//5pb.-フェードイン白-
+	[Task6000]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	0
+	}
+	[Task6010]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task6020]
+	{
+		:Tasktype	"Message"
+		:Message	"空が言っていた事を合わせると、ぼくは異なった歴史の中の、同じ時間の中を行き来しているようにも思えた。"
+		:Frame		2
+	}
+	[Task6030]
+	{
+		:Tasktype	"Message"
+		:Message	"それなら、つぐみが怪我をしなかった事、ココと沙羅が入れ替わるように存在しているのも説明できる……。"
+		:Frame		2
+	}
+	[Task6040]
+	{
+		:Tasktype	"Message"
+		:Message	"だけど……。"
+		:Frame		2
+	}
+	[Task6050]
+	{
+		:Tasktype	"Message"
+		:Message	"今まで、ぼくが見てきた歴史はどうなるんだろう？"
+		:Frame		2
+	}
+	[Task6060]
+	{
+		:Tasktype	"Message"
+		:Message	"……ぼくがリセットされたように、世界もリセットされてしまうのだろうか……。"
+		:Frame		2
+	}
+	[Task6070]
+	{
+		:Tasktype	"Message"
+		:Message	"予知のように感じさせる、記憶の残滓だけを残して……。"
+		:Frame		2
+	}
+	[Task6080]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼんやりと、誰も居ない部屋を眺める。"
+		:Frame		2
+	}
+	[Task6090]
+	{
+		:Tasktype	"Message"
+		:Message	"この部屋にはぼくしか居ない……ぼくだけが存在した。"
+		:Frame		2
+	}
+	[Task6100]
+	{
+		:Tasktype	"Message"
+		:Message	"リセットされてしまった世界のことを考えて、ぼくは急に悲しくなった。"
+		:Frame		2
+	}
+	[Task6110]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくが居なくなった、ぼくが見えなくなった世界……。"
+		:Frame		2
+	}
+	[Task6120]
+	{
+		:Tasktype	"Message"
+		:Message	"「ココ……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task6130]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは、この歴史の中には居ない少女の名前を口にした。"
+		:Frame		2
+	}
+	[Task6140]
+	{
+		:Tasktype	"Message"
+		:Message	"彼女も、リセットされてしまった世界の残滓なのだろうか……。"
+		:Frame		2
+	}
+	[Task6150]
+	{
+		:Tasktype	"Message"
+		:Message	"「大丈夫か少年？」"
+		:Character	1		//武
+		:Voice	14192	//	置換しました<<x_cc2b_kb032>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+
+//5pb.-02:エルストボーデン（１階）-
+	[Task6160]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		2	//	置換しました<<bgm02>>
+	}
+
+//☆ＣＨ偽武：２／３
+	[Task6170]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"偽武"
+		:Preset		1
+//★ＣＨ偽武：1：6
+		:Animation		0,5
+		:Rot		0
+		:Fade		20
+	}
+
+	[Task6180]
+	{
+		:Tasktype	"Message"
+		:Message	"直ぐ横で声が聞こえた、顔を上げると、武がぼくを見つめていた。"
+		:Frame		2
+	}
+	[Task6190]
+	{
+		:Tasktype	"Message"
+		:Message	"「武……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task6200]
+	{
+		:Tasktype	"Message"
+		:Message	"「おまえ、何泣いてるんだ？　どうした、何があった？」"
+		:Character	1		//武
+		:Voice	14193	//	置換しました<<x_cc2b_kb033>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6210]
+	{
+		:Tasktype	"Message"
+		:Message	"「急に悲しくなったんだ……あれ？　ぼく…泣いてるの？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task6220]
+	{
+		:Tasktype	"Message"
+		:Message	"頬に手をやると、指先が濡れる。"
+		:Frame		2
+	}
+	[Task6230]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは、いつの間にか泣いていたようだ。"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：8
+	[Task6240]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,7
+	}
+	[Task6250]
+	{
+		:Tasktype	"Message"
+		:Message	"「多分、それは、もうすぐ記憶が戻る証拠みたいなものじゃないかな？」"
+		:Character	1		//武
+		:Voice	14194	//	置換しました<<x_cc2b_kb034>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6260]
+	{
+		:Tasktype	"Message"
+		:Message	"「……ぼくの記憶が戻るの？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task6270]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくの記憶が戻った時、この世界はどうなるんだろう？"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：1
+	[Task6280]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task6290]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああ、戻るさ、少年がそう願うならな。信じて願えば、叶い、現実になるってな」"
+		:Character	1		//武
+		:Voice	14195	//	置換しました<<x_cc2b_kb035>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6300]
+	{
+		:Tasktype	"Message"
+		:Message	"「……ぼくが願うなら？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：8
+	[Task6310]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,7
+	}
+	[Task6320]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああ、全て戻るさ……」"
+		:Character	1		//武
+		:Voice	14196	//	置換しました<<x_cc2b_kb036>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6330]
+	{
+		:Tasktype	"Message"
+		:Message	"全て戻る……。"
+		:Frame		2
+	}
+	[Task6340]
+	{
+		:Tasktype	"Message"
+		:Message	"武の言葉はリセットを連想させた……。"
+		:Frame		2
+	}
+	[Task6350]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくの記憶が戻った時、また世界はリセットされるのだろうか？"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：1
+	[Task6360]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task6370]
+	{
+		:Tasktype	"Message"
+		:Message	"「じゃ、次は……宴会だな」"
+		:Character	1		//武
+		:Voice	14197	//	置換しました<<x_cc2b_kb037>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6380]
+	{
+		:Tasktype	"Message"
+		:Message	"「宴会？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：2
+	[Task6390]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task6400]
+	{
+		:Tasktype	"Message"
+		:Message	"「明日、ようやく脱出できるんだ。だから前祝と成功を祈って宴会だ！！」"
+		:Character	1		//武
+		:Voice	14198	//	置換しました<<x_cc2b_kb038>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//時間経過ワイプ
+//☆ＢＧみやげもの売り場前（点灯）
+	[Task6410]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task6420]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task6430]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			51	//	置換しました<<bg30aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task6440]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,245,245,255
+		:Ambient	210,205,205,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task6450]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task6460]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは武に付き合い、みやげ物売り場で、宴会で使う食料、飲み物を適当に選んで台車に積んだ。"
+		:Frame		2
+	}
+//☆ＣＨ偽武：２／３
+	[Task6470]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"偽武"
+		:Preset		1
+//★ＣＨ偽武：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task6480]
+	{
+		:Tasktype	"Message"
+		:Message	"「ねえ、宴会ってどこで開くの？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task6490]
+	{
+		:Tasktype	"Message"
+		:Message	"なんとなく場所はわかっていたが、ぼくはあえて聞いてみた。"
+		:Frame		2
+	}
+//☆ＡＮ偽武：2：1
+	[Task6500]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		1,0
+	}
+	[Task6510]
+	{
+		:Tasktype	"Message"
+		:Message	"「……そうだな、じゃ、あそこにするか」"
+		:Character	1		//武
+		:Voice	14199	//	置換しました<<x_cc2b_kb039>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＢＧ憩いの間（点灯）
+	[Task6520]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task6530]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task6540]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			33	//	置換しました<<bg21aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task6550]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task6560]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task6570]
+	{
+		:Tasktype	"Message"
+		:Message	"武の向かった場所は、ぼくの予想通り、公園のような広場だった。"
+		:Frame		2
+	}
+//☆ＣＨ偽武：２／３
+	[Task6580]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"偽武"
+		:Preset		1
+//★ＣＨ偽武：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task6590]
+	{
+		:Tasktype	"Message"
+		:Message	"「さて、さっそく準備を始めるか」"
+		:Character	1		//武
+		:Voice	14200	//	置換しました<<x_cc2b_kb040>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6600]
+	{
+		:Tasktype	"Message"
+		:Message	"「それじゃ、ぼくはその辺をぶらぶらするね」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task6610]
+	{
+		:Tasktype	"Message"
+		:Message	"この後、武は１人で宴会の準備を始めるはずだ。"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：6
+	[Task6620]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,5
+	}
+	[Task6630]
+	{
+		:Tasktype	"Message"
+		:Message	"「ちょっと待て、お前が居ないと話しにならないだろ？」"
+		:Character	1		//武
+		:Voice	14201	//	置換しました<<x_cc2b_kb041>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6640]
+	{
+		:Tasktype	"Message"
+		:Message	"「えっ？　どうして、宴会の準備は武がするんでしょ？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：1
+	[Task6650]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task6660]
+	{
+		:Tasktype	"Message"
+		:Message	"「いや、お前にも協力してもらうぞ、流石に１人じゃできないからな」"
+		:Character	1		//武
+		:Voice	14202	//	置換しました<<x_cc2b_kb042>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6670]
+	{
+		:Tasktype	"Message"
+		:Message	"「いいけど……何をすればいいの？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task6680]
+	{
+		:Tasktype	"Message"
+		:Message	"「とりあえずボケてみろ」"
+		:Character	1		//武
+		:Voice	14203	//	置換しました<<x_cc2b_kb043>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6690]
+	{
+		:Tasktype	"Message"
+		:Message	"「は？　ボケる？　武、一体なんの準備をするつもりなの？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：4
+	[Task6700]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,3
+	}
+	[Task6710]
+	{
+		:Tasktype	"Message"
+		:Message	"「もちろん宴会の準備、掛け合い漫才のネタ合わせに決まってるだろうが！」"
+		:Character	1		//武
+		:Voice	14204	//	置換しました<<x_cc2b_kb044>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＳＥぱしっ！！
+	[Task6720]
+	{
+		:Tasktype	"SePlay"
+		:SE			131	//	置換しました<<se06_04>>
+	}
+//☆ＡＮ偽武：1：2
+	[Task6730]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task6740]
+	{
+		:Tasktype	"Message"
+		:Message	"武の電光石火のツッコミが炸裂した。"
+		:Frame		2
+	}
+	[Task6750]
+	{
+		:Tasktype	"Message"
+		:Message	"「えええっ？！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task6760]
+	{
+		:Tasktype	"Message"
+		:Message	"こうしてぼくと武のネタ合わせがはじまった。"
+		:Frame		2
+	}
+//時間経過ワイプ
+	[Task6770]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task6780]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+//☆ＣＨ全消し
+	[Task6790]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		0
+	}
+//5pb.松--立ち絵切り替え予定--
+//☆ＣＨ偽武：２／３
+	[Task6800]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"偽武"
+		:Preset		1
+//★ＣＨ偽武：1：2
+		:Animation		0,0
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン黒-
+	[Task6810]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+	[Task6820]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task6830]
+	{
+		:Tasktype	"Message"
+		:Message	"「……というお話だったのさ」"
+		:Character	1		//武
+		:Voice	14205	//	置換しました<<x_cc2b_kb045>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6840]
+	{
+		:Tasktype	"Message"
+		:Message	"「あーゴメン、武。教わったこと、もう全部忘れちゃったよ」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：7
+	[Task6850]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,2
+	}
+	[Task6860]
+	{
+		:Tasktype	"Message"
+		:Message	"「それは惜しい事をしたな……メモくらいしろよ、お前」"
+		:Character	1		//武
+		:Voice	14206	//	置換しました<<x_cc2b_kb046>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：4
+	[Task6870]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,3
+	}
+	[Task6880]
+	{
+		:Tasktype	"Message"
+		:Message	"「って、なんでやねん！　まだ何も教えとらんぞ！」"
+		:Character	1		//武
+		:Voice	14207	//	置換しました<<x_cc2b_kb047>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6890]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうだっけ？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：2
+	[Task6900]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task6910]
+	{
+		:Tasktype	"Message"
+		:Message	"「どーも、失礼しましたぁ〜」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task6920]
+	{
+		:Tasktype	"Message"
+		:Message	"「しましたぁ〜」"
+		:Character	1		//武
+		:Voice	14208	//	置換しました<<x_cc2b_kb048>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6930]
+	{
+		:Tasktype	"Message"
+		:Message	"「……ねぇ、こんなネタで笑いってとれるの？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：1
+	[Task6940]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task6950]
+	{
+		:Tasktype	"Message"
+		:Message	"「安心しろ、大爆笑間違い無しだ」"
+		:Character	1		//武
+		:Voice	14209	//	置換しました<<x_cc2b_kb049>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6960]
+	{
+		:Tasktype	"Message"
+		:Message	"「それよりちゃんとネタ覚えたか？」"
+		:Character	1		//武
+		:Voice	14210	//	置換しました<<x_cc2b_kb050>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task6970]
+	{
+		:Tasktype	"Message"
+		:Message	"「ええっと？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task6980]
+	{
+		:Tasktype	"Message"
+		:Message	"後半は何と無く覚えられたけど、前半のネタは、まるで頭に入ってこなかった。"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：7
+	[Task6990]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,2
+	}
+	[Task7000]
+	{
+		:Tasktype	"Message"
+		:Message	"「しょうがないな、宴会の仕度もあるし、もうネタ合わせの時間はないぞ」"
+		:Character	1		//武
+		:Voice	14211	//	置換しました<<x_cc2b_kb051>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＡＮ偽武：1：1
+	[Task7010]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"偽武"
+		:Animation		0,0
+	}
+	[Task7020]
+	{
+		:Tasktype	"Message"
+//☆収録時修正
+//		:Message	"「そうだ少年、お前メモ持ってたろう。それにネタを書いといてやるから」"
+		:Message	"「そうだ少年、お前メモ持ってたよな。それにネタを書いといてやるから」"
+		:Character	1		//武
+		:Voice	14212	//	置換しました<<x_cc2b_kb052>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+	[Task7030]
+	{
+		:Tasktype	"Message"
+		:Message	"「分かったよ……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task7040]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは武に、ずっとポケットに入れっぱなしになっていたメモとペンを渡した。"
+		:Frame		2
+	}
+	[Task7050]
+	{
+		:Tasktype	"Message"
+		:Message	"武は書きなぐるようにメモにペンを走らせた。"
+		:Frame		2
+	}
+	[Task7060]
+	{
+		:Tasktype	"Message"
+		:Message	"「ほれ書いといたぞ、本番までにちゃんと覚えろよ」"
+		:Character	1		//武
+		:Voice	14213	//	置換しました<<x_cc2b_kb053>>
+		:ModelName		"偽武"
+		:Frame		2
+	}
+//☆ＣＨ全消し
+	[Task7070]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task7080]
+	{
+		:Tasktype	"Message"
+		:Message	"武はぼくにメモを渡すと、食料、飲み物を積んだ台車に向かう。"
+		:Frame		2
+	}
+	[Task7090]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは近くのベンチに座り、ネタを覚えようとメモを開いた。"
+		:Frame		2
+	}
+
+//5pb.-停止時間指定:f1-
+	[Task7100]
+	{
+		:Tasktype	"BgmStop"
+		:Div		1
+	}
+
+	[Task7110]
+	{
+		:Tasktype	"Message"
+		:Message	"「あれ？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task7120]
+	{
+		:Tasktype	"Message"
+		:Message	"メモには、びっしりと見知らぬ文字が書き込まれていた。"
+		:Frame		2
+	}
+	[Task7130]
+	{
+		:Tasktype	"Message"
+		:Message	"「あれれ？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+
+//5pb.-24:ドリッテス・アウゲ・ネーメン（第３の眼：別テイク）-
+	[Task7140]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		30	//	置換しました<<bgm16>>
+	}
+
+	[Task7150]
+	{
+		:Tasktype	"Message"
+		:Message	"パラパラとページをめくると、全てのページが文字や奇妙な絵で埋め尽くされている。"
+		:Frame		2
+	}
+	[Task7160]
+	{
+		:Tasktype	"Message"
+		:Message	"空の正体がＡＩ、プラントエリア、メタンハイドレード、魚の牧場。"
+		:Frame		2
+	}
+	[Task7170]
+	{
+		:Tasktype	"Message"
+		:Message	"それらの事の説明が、事細かに書かれていた。"
+		:Frame		2
+	}
+	[Task7180]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、つぐみの怪我をした時の絵も……。"
+		:Frame		2
+	}
+	[Task7190]
+	{
+		:Tasktype	"Message"
+		:Message	"武にメモを貰って以来、何も書き込んでいなかったのに……。"
+		:Frame		2
+	}
+	[Task7200]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは、改めて最初のページを見た。"
+		:Frame		2
+	}
+	[Task7210]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStart"
+	}
+	[Task7220]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n２０１７年５月１日――"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task7230]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n倉成武／クラナリ・タケシ。"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task7240]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n小町つぐみ／コマチ・ツグミ。"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task7250]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n茜ヶ崎空／アカネガサキ・ソラ。"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task7260]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n田中優美清春香菜／タナカ・ユウビセイハルカナ。"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task7270]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n八神ココ／ヤガミ・ココ。"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task7280]
+	{
+		:Tasktype	"Message"
+		:Message	"¥nピピ／ピピ。"
+		:Frame			-1
+		:ChangingPage	1
+		:WindowType		1
+	}
+	[Task7290]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStop"
+	}
+	[Task7300]
+	{
+		:Tasktype	"Message"
+		:Message	"「えっ？！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task7310]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは思わずベンチから立ち上がっていた。"
+		:Frame		2
+	}
+	[Task7320]
+	{
+		:Tasktype	"Message"
+		:Message	"「八神ココ……」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task7330]
+	{
+		:Tasktype	"Message"
+		:Message	"そんな時だった。"
+		:Frame		2
+	}
+	[Task7340]
+	{
+		:Tasktype	"Message"
+		:Message	"「やっほー♪」"
+		:Name	16		//？？
+		:Character	6		//ココ
+		:Voice	15159	//	置換しました<<x_cc2b_co000e>>
+		:ModelName		"ココ"
+		:Frame		2
+	}
+//音声加工回想
+	[Task7350]
+	{
+		:Tasktype	"Message"
+		:Message	"「え？」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task7360]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは３体の像を見上げた……。"
+		:Frame		2
+	}
+//☆ＢＧ３体の像
+	[Task7370]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task7380]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			127	//	置換しました<<ibg01a>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task7390]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task7400]
+	{
+		:Tasktype	"Message"
+		:Message	"「うんしょ、よいしょ……」"
+		:Name	16		//？？
+		:Character	6		//ココ
+		:Voice	15160	//	置換しました<<x_cc2b_co001e>>
+		:ModelName		"ココ"
+		:Frame		2
+	}
+//音声加工回想
+	[Task7410]
+	{
+		:Tasktype	"Message"
+		:Message	"誘われるように、ぼくは１体の石像の裏側へとまわりこんでみた。"
+		:Frame		2
+	}
+//☆ＢＧ右手で南を指差す像
+	[Task7420]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task7430]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			128	//	置換しました<<ibg02a>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task7440]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task7450]
+	{
+		:Tasktype	"Message"
+		:Message	"そこには少女の姿は見えなかった。"
+		:Frame		2
+	}
+//ＳＥゴリゴリゴリ
+	[Task7460]
+	{
+		:Tasktype	"Message"
+		:Message	"ただ、何かを削る音だけが響いていた……。"
+		:Frame		2
+	}
+	[Task7470]
+	{
+		:Tasktype	"Message"
+		:Message	"「あっ！！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＢＧココの描いた針金人間
+	[Task7480]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task7490]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	162	//	置換しました<<ibg15a>>
+		:Position	640,360
+		:Priority	4
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task7500]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task7510]
+	{
+		:Tasktype	"Message"
+		:Message	"石像の背面には、針金人形みたいな子供の落書きが刻まれていた。"
+		:Frame		2
+	}
+//ＳＥゴリゴリゴリ
+	[Task7520]
+	{
+		:Tasktype	"Message"
+		:Message	"別の方向から音が響いた……。"
+		:Frame		2
+	}
+//☆ＢＧ左手で北を指差す像
+	[Task7530]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task7540]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			129	//	置換しました<<ibg02b>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task7550]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task7560]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは音のした石像の後ろに回りこむ。"
+		:Frame		2
+	}
+	[Task7570]
+	{
+		:Tasktype	"Message"
+		:Message	"「！！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＢＧココの描いた針金人間
+	[Task7580]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task7590]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	162	//	置換しました<<ibg15a>>
+		:Position	640,360
+		:Priority	4
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task7600]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task7610]
+	{
+		:Tasktype	"Message"
+		:Message	"この石像の背面にも、針金人形みたいな子供の落書きが刻まれていた。"
+		:Frame		2
+	}
+//ＳＥゴリゴリゴリ
+	[Task7620]
+	{
+		:Tasktype	"Message"
+		:Message	"再び音が響く……。"
+		:Frame		2
+	}
+//☆ＢＧ両手で天空を指差す像
+	[Task7630]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task7640]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			130	//	置換しました<<ibg02c>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task7650]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task7660]
+	{
+		:Tasktype	"Message"
+		:Message	"……石像の後ろを見る。"
+		:Frame		2
+	}
+//☆ＢＧココの描いた針金人間
+	[Task7670]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task7680]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	162	//	置換しました<<ibg15a>>
+		:Position	640,360
+		:Priority	4
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task7690]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task7700]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああっ！！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//5pb.松--モーションブラー挿入箇所--
+	[Task7710]
+	{
+		:Tasktype	"EffectStart"
+		:EffectNumber	41,-1
+		:Priority		1
+		:Param		0.7
+	}
+	[Task7720]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくの頭が混乱していた。"
+		:Frame		2
+	}
+	[Task7730]
+	{
+		:Tasktype	"Message"
+		:Message	"理解しきれない疑問、不安、恐怖が頭に一気に湧き上がる。"
+		:Frame		2
+	}
+	[Task7740]
+	{
+		:Tasktype	"Message"
+		:Message	"「あああーーーっ！！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+	[Task7750]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくの頭は次々湧き上がって来る混沌とした感情に溢れ膨張し、破裂しそうになった。"
+		:Frame		2
+	}
+	[Task7760]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああああああああああーーーーーーっ！！」"
+		:Name	5		//少年
+		:Frame		2
+	}
+//☆ＢＧホワイトワイプ
+	[Task7770]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task7780]
+	{
+		:Tasktype		"FadeOut"
+		:Type			9
+		:Color			255,255,255,255	//White
+		:Time			30
+		:SpriteDelete	1
+	}
+//5pb.松--モーションブラー停止箇所--
+	[Task7790]
+	{
+		:Tasktype	"EffectEnd"
+		:EffectNumber	41
+	}
+	[Task7800]
+	{
+		:Tasktype		"Sprite"
+		:Texture		117	//	置換しました<<bg_white>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			0
+		:FadeWait		0
+	}
+//5pb.-フェードイン白-
+	[Task7810]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			1
+		:SpriteDelete	0
+	}
+	[Task7820]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task7830]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくは叫んでいた。"
+		:Frame		2
+	}
+	[Task7840]
+	{
+		:Tasktype	"Message"
+		:Message	"頭に溢れかえるものを吐き出すように……。"
+		:Frame		2
+	}
+	[Task7850]
+	{
+		:Tasktype	"Message"
+		:Message	"全てを吐き出すように……。"
+		:Frame		2
+	}
+	[Task7860]
+	{
+		:Tasktype	"Message"
+		:Message	"叫んでいた……。"
+		:Frame		2
+	}
+	[Task7870]
+	{
+		:Tasktype	"Message"
+		:Message	"ただ、叫んでいた――"
+		:Frame		2
+	}
+//5pb.-ファイル終了時基本セット-
+	[Task7880]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+
+//5pb.-デフォルト停止時間60f-
+	[Task7890]
+	{
+		:Tasktype	"BgmStop"
+		:Div		60
+	}
+
+	[Task7900]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			60
+		:SpriteDelete	1
+	}
+	[Task7910]
+	{
+		:Tasktype	"SeStop"
+		:Div		0
+	}
+	[Task7920]
+	{
+		:Tasktype	"BgmStop"
+		:Div		0
+	}
+//5pb.--初期化コマンド--
+	[Task7930]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitTag"
+	}
+//⇒X_CC2_3へ
+//5pb.-ファイル移動-
+	[Task7940]
+	{
+		:Tasktype	"NextScene"
+		:NextScene	"X_CC2C"
+	}
+//アクアシステムデフォルトスクリプト--ここから--
+	[Task7950]
+	{
+		:Tasktype		"End"
+	}
+}
+//アクアシステムデフォルトスクリプト--ここまで--
+//<EOF>
+//////////////////////////////////////////////////////////////////////////////////////////////////////

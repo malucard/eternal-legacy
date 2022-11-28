@@ -1,0 +1,1234 @@
+[00000074] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 6
+[0000007f] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 6
+[0000008a] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000096] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[000000a2] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 6
+[000000ad]  0: 
+[000000ae]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 000000c2 (0002)
+[000000bc] 10: 
+[000000bd] 1c: cmd1C
+[000000be]  0: 
+[000000bf]  7: goto7 000000cd (0003)
+[000000c2] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[000000cd]  0: 
+[000000ce]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 000000de (0005)
+[000000dc] 10: 
+[000000dd] 18: cmd18
+[000000de] 10: 
+[000000df] 1b: dayIntro 00000000 BGCAL6.cps
+[000000e6] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 123
+[000000f2] 10: 
+[000000f3] 10: bgload 00000000 BG01NN 6 1
+[00000100] 10: 
+[00000101]  8: playSFX SE000 1
+[0000010b] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 6
+[00000116] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 6
+[00000121] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 4
+[0000012c] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 54
+[00000138] 10: 
+[00000139] 17: showClock
+[0000013a] 10: 
+[0000013b] 19: 
+[0000013c] ff: text 00
+{textColor 0 2}Suddenly, a clamorous sound echoes. 
+{textColor 0 2}I open my eyes, and look towards the door... 
+
+
+[0000013f] 10: 
+[00000140] 11: fgload 0 00000000 IZ11BAN 1 3
+[00000150] 10: 
+[00000151] 19: 
+[00000152] ff: text 01
+{textColor 0 2}(I-Izumi-san...) 
+
+
+[00000155] 10: 
+[00000156]  b: playVoice YL2D6000
+[00000160] 10: 
+[00000161] 19: 
+[00000162] ff: text 02
+{textColor 1 8}【Izumi】 "Kurumi's..." 
+
+
+[00000165] 10: 
+[00000166]  b: playVoice YL2D6001
+[00000170] 10: 
+[00000171] 19: 
+[00000172] ff: text 03
+{textColor 1 8}【Izumi】 "Kurumi's gone!" 
+
+
+[00000175] 10: 
+[00000176]  f: removeBG 0 0 3
+[00000180] 10: 
+[00000181] 12: removeFG 0 0
+[00000188] 10: 
+[00000189] 10: bgload 00000000 BG02N 0 1
+[00000196] 10: 
+[00000197]  6: playBGM 13
+[0000019b] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 4
+[000001a6] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 58
+[000001b2] 10: 
+[000001b3] 17: showClock
+[000001b4] 10: 
+[000001b5] 11: fgload 0 00000000 IZ08BA 0 3
+[000001c5] 10: 
+[000001c6]  b: playVoice YL2D6002
+[000001d0] 10: 
+[000001d1] 19: 
+[000001d2] ff: text 04
+{textColor 1 8}【Izumi】 "I suddenly woke up in the middle of the night... and when I looked around..." 
+
+
+[000001d5] 10: 
+[000001d6] 12: removeFG 0 3
+[000001dd] 10: 
+[000001de] 11: fgload 0 00000000 SA08BA 2 3
+[000001ee] 10: 
+[000001ef]  b: playVoice YL2D6003
+[000001f9] 10: 
+[000001fa] 19: 
+[000001fb] ff: text 05
+{textColor 1 6}【Saki】 "Kurumi-chan was gone..." 
+
+
+[000001fe] 10: 
+[000001ff] 12: removeFG 0 3
+[00000206] 10: 
+[00000207] 11: fgload 0 00000000 IZ08BA 0 3
+[00000217] 10: 
+[00000218]  b: playVoice YL2D6004
+[00000222] 10: 
+[00000223] 19: 
+[00000224] ff: text 06
+{textColor 1 8}【Izumi】 "Yes..." 
+
+
+[00000227] 10: 
+[00000228]  b: playVoice YL2D6005
+[00000232] 10: 
+[00000233] 19: 
+[00000234] ff: text 07
+{textColor 1 8}【Izumi】 "I searched alone at first, trying all the places I could think of..." 
+
+
+[00000237] 10: 
+[00000238]  b: playVoice YL2D6006
+[00000242] 10: 
+[00000243] 19: 
+[00000244] ff: text 08
+{textColor 1 8}【Izumi】 "Inside the shop, the area around Moon Beach, all of it..." 
+
+
+[00000247] 10: 
+[00000248] 12: removeFG 0 3
+[0000024f] 10: 
+[00000250] 11: fgload 0 00000000 SA01BA 2 3
+[00000260] 10: 
+[00000261]  b: playVoice YL2D6007
+[0000026b] 10: 
+[0000026c] 19: 
+[0000026d] ff: text 09
+{textColor 1 6}【Saki】 "Do you know of any other places Kurumi-chan would go?" 
+
+
+[00000270] 10: 
+[00000271]  b: playVoice YL2D6008
+[0000027b] 10: 
+[0000027c] 19: 
+[0000027d] ff: text 0a
+{textColor 1 6}【Saki】 "Or do you have any clues...?" 
+{textColor 0 2}Izumi-san softly closes her eyes, and gently shakes her head. 
+
+
+[00000280] 10: 
+[00000281]  b: playVoice YL2D6009
+[0000028b] 10: 
+[0000028c] 19: 
+[0000028d] ff: text 0b
+{textColor 1 6}【Saki】 "Anyway, sitting still here won't get anything solved..." 
+{textColor 0 2}Saki rises to her feet, standing upright. 
+
+
+[00000290] 10: 
+[00000291]  b: playVoice YL2D6010
+[0000029b] 10: 
+[0000029c] 19: 
+[0000029d] ff: text 0c
+{textColor 1 6}【Saki】 "... Why don't we all quickly split up and look for Kurumi?" 
+
+
+[000002a0] 10: 
+[000002a1] 12: removeFG 0 3
+[000002a8] 10: 
+[000002a9] 19: 
+[000002aa] ff: text 0d
+{textColor 0 2}Everyone files out of the door. 
+{textColor 0 2}Before long, I'm all alone, still sitting on the dining chair as still as a decaying doll. 
+
+
+[000002ad] 10: 
+[000002ae] 11: fgload 0 00000000 HA01AA 1 3
+[000002be] 10: 
+[000002bf]  b: playVoice YL2D6011
+[000002c9] 10: 
+[000002ca] 19: 
+[000002cb] ff: text 0e
+{textColor 1 5}【Haruka】 "... You're not going?" 
+
+
+[000002ce] 10: 
+[000002cf]  b: playVoice YL2D6012
+[000002d9] 10: 
+[000002da] 19: 
+[000002db] ff: text 0f
+{textColor 1 5}【Haruka】 "Makoto... you're not going to help look?" 
+
+
+[000002de] 10: 
+[000002df] 12: removeFG 0 3
+[000002e6] 10: 
+[000002e7] 19: 
+[000002e8] ff: text 10
+{textColor 0 2}Over Haruka's shoulder, I see Izumi-san's small figure. 
+{textColor 0 2}Her eyes are filled to brim with tears. 
+{textColor 0 2}She's worried... about Kurumi... 
+{textColor 0 2}(What...) 
+{textColor 0 2}(What the hell am I doing...?) 
+{textColor 0 2}(Why am I just sitting around like an old, rotten tree and doing nothing...?) 
+{textColor 0 2}And, at that time... 
+
+
+[000002eb] 10: 
+[000002ec] 18: cmd18
+[000002ed] 10: 
+[000002ee]  8: playSFX SE149 1
+[000002f8] 10: 
+[000002f9]  a: waitForSFX
+[000002fa] 10: 
+[000002fb] 19: 
+[000002fc] ff: text 11
+{textColor 0 2}The cuckoo clock chirps five times. 
+{textColor 0 2}And today's date is... 
+{textColor 0 0}【Makoto】 "Saturday, April 6th..." 
+{textColor 0 0}【Makoto】 "Saturday, April 6th..." 
+{textColor 0 0}【Makoto】 "Saturday...{delay 15} April...{delay 30} 6th!!!" 
+
+
+[000002ff] 10: 
+[00000300]  f: removeBG 1 6 1
+[0000030a] 10: 
+[0000030b] 10: bgload 00000000 BG02N 6 1
+[00000318] 10: 
+[00000319] 19: 
+[0000031a] ff: text 12
+{textColor 0 2}A flash runs through my mind. 
+{textColor 0 2}I quickly look out the window. 
+{textColor 0 2}――A downpour... 
+{textColor 0 2}The rain clouds covering the whole sky are getting brighter. 
+{textColor 0 2}(And just where is Kurumi?) 
+
+
+[0000031d]  0: 
+[0000031e]  a: condJump 00 VAR_(28_1e)_a1_2d (28) != (15) (81)->1 (15) (00)  * 00000339 (0006)
+[0000032c] 10: 
+[0000032d] 19: 
+[0000032e] ff: text 13
+{textColor 0 2}(Where... is she???) 
+
+
+[00000331]  0: 
+[00000332]  7: goto7 00000362 (000c)
+[00000335]  0: 
+[00000336]  7: goto7 00000362 (000a)
+[00000339] 10: 
+[0000033a] 19: 
+[0000033b] ff: text 14
+{textColor 0 2}(Where... is she???) 
+
+[0000033e] ff: text 15
+{textColor 0 2}{choiceOpt 1 -> Don't go help Kurumi. }{choiceOpt 2 -> Go help Kurumi. }
+
+[00000341] 10: 
+[00000342]  3: choice v_a1_08 00 00
+[00000347]  0: 
+[00000348]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 0000035e (0007)
+[00000356]  0: 
+[00000357]  7: goto7 00000362 (000c)
+[0000035a]  0: 
+[0000035b]  7: goto7 00000362 (0008)
+[0000035e]  0: 
+[0000035f]  7: goto7 00000533 (000d)
+[00000362] 10: 
+[00000363]  7: stopBGM
+[00000364] 10: 
+[00000365] 19: 
+[00000366] ff: text 16
+{textColor 0 2}I know... 
+{textColor 0 2}I don't even need to think about it. 
+{textColor 0 2}――Kurumi's in that shrine. 
+{textColor 0 2}――And today is Saturday, April 6th. 
+{textColor 0 2}The earthquake will happen soon... 
+{textColor 0 2}But... But there's no way I can go there. 
+{textColor 0 2}If Yuka and I go over there... 
+{textColor 0 2}... 
+{textColor 0 2}... Yuka? 
+{textColor 0 2}Where's... Yuka? 
+{textColor 0 2}No way... 
+{textColor 0 2}No way, she couldn't have!!! 
+
+
+[00000369] 10: 
+[0000036a]  f: removeBG 0 4 3
+[00000374] 10: 
+[00000375] 19: 
+[00000376] ff: text 17
+{textColor 0 2}――I kick off the chair and rush outside! 
+
+
+[00000379] 10: 
+[0000037a]  8: playSFX SE000 1
+[00000384] 10: 
+[00000385]  a: waitForSFX
+[00000386] 10: 
+[00000387]  6: playBGM 13
+[0000038b] 10: 
+[0000038c]  8: playSFX SE030 1
+[00000396] 10: 
+[00000397] 10: bgload 00000000 BG00NR 4 3
+[000003a4] 10: 
+[000003a5]  1: cmd1 26
+[000003aa] 10: 
+[000003ab] 19: 
+[000003ac] ff: text 18
+{textColor 0 2}I look around for Yuka. 
+{textColor 0 2}I don't see her amongst the others, who are out by the front door. 
+{textColor 0 2}I shift my gaze to the tip of the forest path. 
+
+
+[000003af] 10: 
+[000003b0]  9: stopSFX
+[000003b1] 10: 
+[000003b2] 19: 
+[000003b3] ff: text 19
+{textColor 0 2}I see the small retreating figure of Yuka running. 
+{textColor 0 0}【Makoto】 "Yuka..." 
+{textColor 0 2}When I come to my senses, I find myself running as fast as I can. 
+{textColor 0 2}I try to pick up my pace... 
+
+
+[000003b6] 10: 
+[000003b7]  8: playSFX SE040 1
+[000003c1] 10: 
+[000003c2] 10: bgload 00000000 BG12NR 4 1
+[000003cf] 10: 
+[000003d0]  b: playVoice YL2D6030
+[000003da] 10: 
+[000003db] 19: 
+[000003dc] ff: text 1a
+{textColor 1 6}【Saki】 "Hold on, Makoto-kun! Where are you going?" 
+{textColor 0 2}Saki shouts at me from behind. 
+{textColor 0 2}But there's no longer any time for me to answer. 
+{textColor 0 2}This is a race against the clock... 
+{textColor 0 2}My time limit... is already less than 30 minutes... 
+{textColor 0 2}Although the muddy ground trips me up, I muster all of my strength and keep running. 
+
+
+[000003df] 10: 
+[000003e0] 10: bgload 00000000 BG13ZNR 4 1
+[000003ed] 10: 
+[000003ee] 19: 
+[000003ef] ff: text 1b
+{textColor 0 2}History is repeating itself... 
+{textColor 0 2}If Yuka goes over there right now, nothing will change. 
+{textColor 0 2}Kurumi――she didn't go missing on the 4th. 
+{textColor 0 2}"History changed"... Yuka and I were overjoyed with that thought. 
+{textColor 0 2}But...  {textColor 0 2}In the end, the same thing is happening. 
+{textColor 0 2}Kurumi still disappeared. All that's changed is the date. 
+{textColor 0 2}"Laplace's demon" is smiling. 
+{textColor 0 2}"Everything which occurs in the world has been predetermined from the beginning... Its occurrence is by no means accidental, but in fact inevitable." 
+{textColor 0 2}So history could never be changed!? 
+{textColor 0 2}There's no way to change the direction of that giant current!? 
+{textColor 0 2}It swallowed us up, toyed with us, and finally made us arrive in the same place as last time... 
+{textColor 0 2}(Why... did something this...) 
+{textColor 0 2}My fists tremble with anger. 
+
+
+[000003f2] 10: 
+[000003f3]  2: cmd2 6
+[000003f7] 10: 
+[000003f8]  f: removeBG 0 4 2
+[00000402] 10: 
+[00000403]  9: stopSFX
+[00000404] 10: 
+[00000405] 10: bgload 00000000 BG23NR 4 1
+[00000412] 10: 
+[00000413]  1: cmd1 26
+[00000418] 10: 
+[00000419] 19: 
+[0000041a] ff: text 1c
+{textColor 0 2}I finally catch up with Yuka in front of the long staircase to the shrine. 
+
+
+[0000041d] 10: 
+[0000041e]  7: stopBGM
+[0000041f] 10: 
+[00000420] 19: 
+[00000421] ff: text 1d
+{textColor 0 0}【Makoto】 "Wait, Yuka!" 
+{textColor 0 2}I grab her arm from behind and turn her around. 
+
+
+[00000424] 10: 
+[00000425]  2: cmd2 6
+[00000429] 10: 
+[0000042a]  f: removeBG 0 5 2
+[00000434]  0: 
+[00000435]  5: delay 60
+[0000043a] 10: 
+[0000043b]  6: playBGM 20
+[00000440]  0: 
+[00000441]  5: delay 60
+[00000446] 10: 
+[00000447] 10: bgload 00000000 EV_YU09A 0 1
+[00000454] 10: 
+[00000455]  b: playVoice YL2D6014
+[0000045f] 10: 
+[00000460] 19: 
+[00000461] ff: text 1e
+{textColor 1 4}【Yuka】 "Go away!" 
+
+
+[00000464] 10: 
+[00000465]  b: playVoice YL2D6015
+[0000046f] 10: 
+[00000470] 19: 
+[00000471] ff: text 1f
+{textColor 1 4}【Yuka】 "Please... go away!" 
+
+
+[00000474] 10: 
+[00000475]  b: playVoice YL2D6016
+[0000047f] 10: 
+[00000480] 19: 
+[00000481] ff: text 20
+{textColor 1 4}【Yuka】 "I've got to..." 
+
+
+[00000484] 10: 
+[00000485]  b: playVoice YL2D6017
+[0000048f] 10: 
+[00000490] 19: 
+[00000491] ff: text 21
+{textColor 1 4}【Yuka】 "I've got to... save Kurumi-chan..." 
+{textColor 0 0}【Makoto】 "Yuka..." 
+{textColor 0 0}【Makoto】 "It's hopeless... There's no way I can let you go there!" 
+
+
+[00000494] 10: 
+[00000495]  b: playVoice YL2D6018
+[0000049f] 10: 
+[000004a0] 19: 
+[000004a1] ff: text 22
+{textColor 1 4}【Yuka】 "But Kurumi-chan's going to die..." 
+{textColor 0 0}【Makoto】 "But... if you go there, the same thing will happen!" 
+
+
+[000004a4] 10: 
+[000004a5]  b: playVoice YL2D6019
+[000004af] 10: 
+[000004b0] 19: 
+[000004b1] ff: text 23
+{textColor 1 4}【Yuka】 "I know that... I know that, but..." 
+
+
+[000004b4] 10: 
+[000004b5]  b: playVoice YL2D6020
+[000004bf] 10: 
+[000004c0] 19: 
+[000004c1] ff: text 24
+{textColor 1 4}【Yuka】 "Kurumi-chan will..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 0}【Makoto】 "I understand..." 
+{textColor 0 0}【Makoto】 "In that case, I'll go save Kurumi." 
+
+
+[000004c4] 10: 
+[000004c5]  b: playVoice YL2D6035
+[000004cf] 10: 
+[000004d0] 19: 
+[000004d1] ff: text 25
+{textColor 1 4}【Yuka】 "No! I absolutely can't let you... absolutely not..." 
+
+
+[000004d4] 10: 
+[000004d5]  b: playVoice YL2D6021
+[000004df] 10: 
+[000004e0] 19: 
+[000004e1] ff: text 26
+{textColor 1 4}【Yuka】 "Makoto, stay here..." 
+
+
+[000004e4] 10: 
+[000004e5]  b: playVoice YL2D6022
+[000004ef] 10: 
+[000004f0] 19: 
+[000004f1] ff: text 27
+{textColor 1 4}【Yuka】 "I don't want to lose... another precious person!" 
+{textColor 0 2}Precious... person... 
+
+
+[000004f4] 10: 
+[000004f5]  b: playVoice YL2D6023
+[000004ff] 10: 
+[00000500] 19: 
+[00000501] ff: text 28
+{textColor 1 4}【Yuka】 "I don't want to lose you..." 
+
+
+[00000504] 10: 
+[00000505]  b: playVoice YL2D6024
+[0000050f] 10: 
+[00000510] 19: 
+[00000511] ff: text 29
+{textColor 1 4}【Yuka】 "You went as far... as risking your own life... trying to save... mine..." 
+{textColor 0 2}You're wrong... 
+{textColor 0 2}That's wrong... Yuka... 
+{textColor 0 2}It's the opposite... 
+{textColor 0 2}I hesitated for a moment back then... 
+{textColor 0 2}It's because I thought of myself first... 
+{textColor 0 2}That's why I couldn't save Yuka... 
+{textColor 0 2}I killed Yuka... 
+
+
+[00000514] 10: 
+[00000515]  b: playVoice YL2D6025
+[0000051f] 10: 
+[00000520] 19: 
+[00000521] ff: text 2a
+{textColor 1 4}【Yuka】 "Please... Please..." 
+{textColor 0 2}I don't answer. 
+{textColor 0 2}Without a word, I brush past Yuka's shoulder, and walk up to the front of the staircase. 
+{textColor 0 2}The rain beats on me... 
+{textColor 0 2}The sound of the heavy rainfall drowns out all other noise. 
+
+
+[00000524] fe: varop VAR_(28_0a)_a1_2d (14) := (00) 1
+[0000052f]  0: 
+[00000530]  7: goto7 00000857 (0011)
+[00000533] 10: 
+[00000534]  7: stopBGM
+[00000535] 10: 
+[00000536]  f: removeBG 0 4 3
+[00000540] 10: 
+[00000541] 19: 
+[00000542] ff: text 2b
+{textColor 0 2}――I kick off the chair and rush outside! 
+
+
+[00000545] 10: 
+[00000546]  8: playSFX SE000 1
+[00000550] 10: 
+[00000551]  a: waitForSFX
+[00000552] 10: 
+[00000553]  6: playBGM 13
+[00000557] 10: 
+[00000558]  8: playSFX SE030 0
+[00000562] 10: 
+[00000563] 10: bgload 00000000 BG00NR 0 1
+[00000570] 10: 
+[00000571]  1: cmd1 26
+[00000576] 10: 
+[00000577]  b: playVoice YL2D6030
+[00000581] 10: 
+[00000582] 19: 
+[00000583] ff: text 2c
+{textColor 1 6}【Saki】 "Hold on, Makoto-kun! Where are you going!?" 
+
+
+[00000586] 10: 
+[00000587]  9: stopSFX
+[00000588] 10: 
+[00000589] 19: 
+[0000058a] ff: text 2d
+{textColor 0 2}But there's no longer any time for me to answer. 
+{textColor 0 2}This is a race against the clock. 
+{textColor 0 2}(Where's Kurumi?) 
+{textColor 0 2}――That's obvious, isn't it!? 
+{textColor 0 2}――That shrine! 
+{textColor 0 2}And today is Saturday, April 6th. 
+{textColor 0 2}The earthquake will happen soon. 
+{textColor 0 2}What if Kurumi's in the shrine at that time...!? 
+{textColor 0 2}My time limit... is already less than 30 minutes... 
+
+
+[0000058d] 10: 
+[0000058e]  8: playSFX SE040 1
+[00000598] 10: 
+[00000599] 10: bgload 00000000 BG12NR 4 1
+[000005a6] 10: 
+[000005a7] 19: 
+[000005a8] ff: text 2e
+{textColor 0 2}Although the the muddy ground trips me up, I muster all of my strength and keep running. 
+
+
+[000005ab] 10: 
+[000005ac]  b: playVoice YL2D6031
+[000005b6] 10: 
+[000005b7] 19: 
+[000005b8] ff: text 2f
+{textColor 1 4}【Yuka】 "MAKOTO! MAKOTO!" 
+{textColor 0 2}I hear Yuka shouting from behind. 
+{textColor 0 2}I already know what Yuka's trying to say. 
+
+
+[000005bb] 10: 
+[000005bc] 10: bgload 00000000 BG13ZNR 4 1
+[000005c9] 10: 
+[000005ca] 19: 
+[000005cb] ff: text 30
+{textColor 0 2}History is repeating itself... 
+{textColor 0 2}If I go over there right now, nothing will change. 
+{textColor 0 2}Kurumi――she didn't go missing on the 4th. 
+{textColor 0 2}"History changed"... Yuka and I were overjoyed with that thought. 
+{textColor 0 2}But...  {textColor 0 2}In the end, the same thing is happening. 
+{textColor 0 2}Kurumi still disappeared. All that's changed is the date. 
+{textColor 0 2}"Laplace's demon" is smiling. 
+{textColor 0 2}"Everything which occurs in the world has been predetermined from the beginning... Its occurrence is by no means accidental, but in fact inevitable." 
+{textColor 0 2}So history could never be changed!? 
+{textColor 0 2}There's no way to change the direction of that giant current!? 
+{textColor 0 2}It swallowed us up, toyed with us, and finally made us arrive in the same place as last time... 
+{textColor 0 2}Even if that's so...  {textColor 0 2}Even if that's so... 
+{textColor 0 2}I must go there!! 
+{textColor 0 2}If that boy that I supposedly resemble could risk his life to save Yuka... 
+{textColor 0 2}Then so can I! 
+{textColor 0 2}(Is this... what you call destiny?) 
+
+
+[000005ce] 10: 
+[000005cf]  2: cmd2 6
+[000005d3] 10: 
+[000005d4]  f: removeBG 0 4 2
+[000005de] 10: 
+[000005df]  9: stopSFX
+[000005e0] 10: 
+[000005e1] 10: bgload 00000000 BG23NR 4 1
+[000005ee] 10: 
+[000005ef]  1: cmd1 26
+[000005f4] 10: 
+[000005f5] 19: 
+[000005f6] ff: text 31
+{textColor 0 2}I arrive at the long staircase that leads to the shrine. 
+{textColor 0 2}Without stopping to take a breath, I begin to rush towards the staircase. 
+{textColor 0 2}Just then... 
+
+
+[000005f9] 10: 
+[000005fa]  7: stopBGM
+[000005fb] 10: 
+[000005fc]  b: playVoice YL2D6032
+[00000606] 10: 
+[00000607] 19: 
+[00000608] ff: text 32
+{textColor 1 4}【???】 "Wait!" 
+{textColor 0 2}... Someone suddenly grabs my arm from behind. 
+
+
+[0000060b] 10: 
+[0000060c]  f: removeBG 0 0 2
+[00000616] 10: 
+[00000617]  2: cmd2 6
+[0000061b] 10: 
+[0000061c] 19: 
+[0000061d] ff: text 33
+{textColor 0 2}Without giving me time to turn around, that person blocks my way to the staircase. It's... 
+
+
+[00000620] 10: 
+[00000621]  6: playBGM 20
+[00000626]  0: 
+[00000627]  5: delay 60
+[0000062c] 10: 
+[0000062d] 10: bgload 00000000 EV_YU09A 0 1
+[0000063a] 10: 
+[0000063b] 19: 
+[0000063c] ff: text 34
+{textColor 0 0}【Makoto】 "Yuka..." 
+
+
+[0000063f] 10: 
+[00000640]  b: playVoice YL2D6033
+[0000064a] 10: 
+[0000064b] 19: 
+[0000064c] ff: text 35
+{textColor 1 4}【Yuka】 "Don't go!" 
+
+
+[0000064f] 10: 
+[00000650]  b: playVoice YL2D6034
+[0000065a] 10: 
+[0000065b] 19: 
+[0000065c] ff: text 36
+{textColor 1 4}【Yuka】 "Please... don't go!" 
+{textColor 0 0}【Makoto】 "Kurumi's... Kurumi's in this shrine." 
+{textColor 0 0}【Makoto】 "So I've got to... go..." 
+{textColor 0 0}【Makoto】 "I've got... to save Kurumi..." 
+
+
+[0000065f] 10: 
+[00000660]  b: playVoice YL2D6035
+[0000066a] 10: 
+[0000066b] 19: 
+[0000066c] ff: text 37
+{textColor 1 4}【Yuka】 "No! I absolutely can't let you... absolutely not..." 
+{textColor 0 0}【Makoto】 "Get out of the way, Yuka... There's no time..." 
+
+
+[0000066f] 10: 
+[00000670]  b: playVoice YL2D6036
+[0000067a] 10: 
+[0000067b] 19: 
+[0000067c] ff: text 38
+{textColor 1 4}【Yuka】 "If you go in there, things will turn out the same way again...!" 
+
+
+[0000067f] 10: 
+[00000680]  b: playVoice YL2D6037
+[0000068a] 10: 
+[0000068b] 19: 
+[0000068c] ff: text 39
+{textColor 1 4}【Yuka】 "Nothing will change..." 
+
+
+[0000068f] 10: 
+[00000690]  b: playVoice YL2D6038
+[0000069a] 10: 
+[0000069b] 19: 
+[0000069c] ff: text 3a
+{textColor 1 4}【Yuka】 "We won't be able to return to the free world!" 
+
+[0000069f] ff: text 3b
+{textColor 0 2}{choiceOpt 1 -> I can't go back to the past again. }{choiceOpt 2 -> We'll have another chance. }
+
+[000006a2] 10: 
+[000006a3]  3: choice v_a1_08 00 00
+[000006a8]  0: 
+[000006a9]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000007e7 (000e)
+[000006b7] 10: 
+[000006b8] 19: 
+[000006b9] ff: text 3c
+{textColor 0 0}【Makoto】 "Yeah... I get it..." 
+{textColor 0 0}【Makoto】 "Certainly, that much is true right now..." 
+{textColor 0 0}【Makoto】 "But..." 
+{textColor 0 2}I take the bell out of my pocket. 
+{textColor 0 2}Its cool texture seeps into my fingertips. 
+
+
+[000006bc] 10: 
+[000006bd]  8: playSFX SE090 1
+[000006c7] 10: 
+[000006c8] 19: 
+[000006c9] ff: text 3d
+{textColor 0 2}I drop... the bell... on the ground. 
+{textColor 0 2}And then... 
+
+
+[000006cc] 10: 
+[000006cd]  8: playSFX SE100 1
+[000006d7] 10: 
+[000006d8] 19: 
+[000006d9] ff: text 3e
+{textColor 0 2}... With all of my strength, I stomp on it. 
+{textColor 0 2}The smashed pieces of metal shine in a puddle... 
+{textColor 0 2}They're like stardust... 
+{textColor 0 2}In this very instant, I can tear off the chains of the infinite loop. 
+{textColor 0 0}【Makoto】 "... This is the end." 
+
+
+[000006dc] 10: 
+[000006dd]  b: playVoice YL2D6039
+[000006e7] 10: 
+[000006e8] 19: 
+[000006e9] ff: text 3f
+{textColor 1 4}【Yuka】 "... Makoto..." 
+{textColor 0 0}【Makoto】 "I can't go back again..." 
+{textColor 0 0}【Makoto】 "I can't... go back to the past..." 
+{textColor 0 0}【Makoto】 "I will end... everything here..." 
+{textColor 0 0}【Makoto】 "So―" 
+
+
+[000006ec] 10: 
+[000006ed]  7: stopBGM
+[000006ee] 10: 
+[000006ef] 10: bgload 00000000 EV_YU09B 0 1
+[000006fc] 10: 
+[000006fd]  b: playVoice YL2D6040
+[00000707] 10: 
+[00000708] 19: 
+[00000709] ff: text 40
+{textColor 1 4}【Yuka】 "No..." 
+
+
+[0000070c] 10: 
+[0000070d]  b: playVoice YL2D6041
+[00000717] 10: 
+[00000718] 19: 
+[00000719] ff: text 41
+{textColor 1 4}【Yuka】 "I don't want that!" 
+
+
+[0000071c] 10: 
+[0000071d]  b: playVoice YL2D6042
+[00000727] 10: 
+[00000728] 19: 
+[00000729] ff: text 42
+{textColor 1 4}【Yuka】 "No more... I don't... want this!" 
+
+
+[0000072c] 10: 
+[0000072d]  b: playVoice YL2D6043
+[00000737] 10: 
+[00000738] 19: 
+[00000739] ff: text 43
+{textColor 1 4}【Yuka】 "I don't want to lose... another precious person!" 
+{textColor 0 2}A precious... person... 
+
+
+[0000073c] 10: 
+[0000073d]  b: playVoice YL2D6044
+[00000747] 10: 
+[00000748] 19: 
+[00000749] ff: text 44
+{textColor 1 4}【Yuka】 "I don't want to lose you..." 
+
+
+[0000074c] 10: 
+[0000074d]  b: playVoice YL2D6045
+[00000757] 10: 
+[00000758] 19: 
+[00000759] ff: text 45
+{textColor 1 4}【Yuka】 "You went as far... as risking your own life... trying to save... mine..." 
+{textColor 0 2}You're wrong... 
+{textColor 0 2}That's wrong... Yuka... 
+{textColor 0 2}It's the opposite... 
+{textColor 0 2}I hesitated for a moment back then... 
+{textColor 0 2}It's because I thought of myself first... 
+{textColor 0 2}That's why I couldn't save Yuka... 
+{textColor 0 2}I killed Yuka... 
+
+
+[0000075c] 10: 
+[0000075d]  b: playVoice YL2D6046
+[00000767] 10: 
+[00000768] 19: 
+[00000769] ff: text 46
+{textColor 1 4}【Yuka】 "Please... Please..." 
+{textColor 0 2}I don't answer. 
+{textColor 0 2}Without a word, I brush past Yuka's shoulder, and walk up to the staircase... 
+{textColor 0 2}... And then, just before I can take a single step... 
+
+
+[0000076c] 10: 
+[0000076d]  6: playBGM 12
+[00000771] 10: 
+[00000772]  b: playVoice YL2D6047
+[0000077c] 10: 
+[0000077d] 19: 
+[0000077e] ff: text 47
+{textColor 1 4}【Yuka】 "I love you..." 
+
+
+[00000781] 10: 
+[00000782]  b: playVoice YL2D6048
+[0000078c] 10: 
+[0000078d] 19: 
+[0000078e] ff: text 48
+{textColor 1 4}【Yuka】 "I've loved you... all this time..." 
+
+
+[00000791] 10: 
+[00000792]  b: playVoice YL2D6049
+[0000079c] 10: 
+[0000079d] 19: 
+[0000079e] ff: text 49
+{textColor 1 4}【Yuka】 "It's true that I went to this shrine because I couldn't forget that boy. But..." 
+
+
+[000007a1] 10: 
+[000007a2]  b: playVoice YL2D6050
+[000007ac] 10: 
+[000007ad] 19: 
+[000007ae] ff: text 4a
+{textColor 1 4}【Yuka】 "But I realized it was wrong... That feeling was wrong..." 
+
+
+[000007b1] 10: 
+[000007b2]  b: playVoice YL2D6051
+[000007bc] 10: 
+[000007bd] 19: 
+[000007be] ff: text 4b
+{textColor 1 4}【Yuka】 "Makoto, I love you..." 
+
+
+[000007c1] 10: 
+[000007c2]  b: playVoice YL2D6052
+[000007cc] 10: 
+[000007cd] 19: 
+[000007ce] ff: text 4c
+{textColor 1 4}【Yuka】 "From the beginning, from that moment where everything began, I've loved you!!" 
+
+
+[000007d1] 10: 
+[000007d2]  8: playSFX SE030 0
+[000007dc] 10: 
+[000007dd] 19: 
+[000007de] ff: text 4d
+{textColor 0 2}The rain beats against me... 
+{textColor 0 2}The sound of rainfall drowns out all other noise. 
+{textColor 0 2}Those words comfort me... 
+{textColor 0 2}Just hearing those words alone is enough. 
+{textColor 0 2}They're enough... 
+{textColor 0 2}But unlike that boy, I'm not going to say a pretentious line... 
+
+
+[000007e1] 10: 
+[000007e2]  9: stopSFX
+[000007e3]  0: 
+[000007e4]  7: goto7 00000857 (000f)
+[000007e7] 10: 
+[000007e8] 19: 
+[000007e9] ff: text 4e
+{textColor 0 0}【Makoto】 "Yeah... I get it..." 
+{textColor 0 0}【Makoto】 "But it's all right..." 
+{textColor 0 0}【Makoto】 "Because I'll get another chance..." 
+{textColor 0 0}【Makoto】 "That's why―" 
+
+
+[000007ec] 10: 
+[000007ed]  b: playVoice YL2D6035
+[000007f7] 10: 
+[000007f8] 19: 
+[000007f9] ff: text 4f
+{textColor 1 4}【Yuka】 "No! I absolutely can't let you... absolutely not..." 
+
+
+[000007fc] 10: 
+[000007fd]  b: playVoice YL2D6021
+[00000807] 10: 
+[00000808] 19: 
+[00000809] ff: text 50
+{textColor 1 4}【Yuka】 "Makoto, stay here..." 
+
+
+[0000080c] 10: 
+[0000080d]  b: playVoice YL2D6022
+[00000817] 10: 
+[00000818] 19: 
+[00000819] ff: text 51
+{textColor 1 4}【Yuka】 "I don't want to lose... another precious person!" 
+{textColor 0 2}Precious... person... 
+
+
+[0000081c] 10: 
+[0000081d]  b: playVoice YL2D6023
+[00000827] 10: 
+[00000828] 19: 
+[00000829] ff: text 52
+{textColor 1 4}【Yuka】 "I don't want to lose you..." 
+
+
+[0000082c] 10: 
+[0000082d]  b: playVoice YL2D6024
+[00000837] 10: 
+[00000838] 19: 
+[00000839] ff: text 53
+{textColor 1 4}【Yuka】 "You went as far... as risking your own life... trying to save... mine..." 
+{textColor 0 2}You're wrong... 
+{textColor 0 2}That's wrong... Yuka... 
+{textColor 0 2}It's the opposite... 
+{textColor 0 2}I hesitated for a moment back then... 
+{textColor 0 2}It's because I thought of myself first... 
+{textColor 0 2}That's why I couldn't save Yuka... 
+{textColor 0 2}I killed Yuka... 
+
+
+[0000083c] 10: 
+[0000083d]  b: playVoice YL2D6025
+[00000847] 10: 
+[00000848] 19: 
+[00000849] ff: text 54
+{textColor 1 4}【Yuka】 "Please... Please..." 
+{textColor 0 2}I don't answer. 
+{textColor 0 2}Without a word, I brush past Yuka's shoulder, and walk up to the front of the staircase. 
+{textColor 0 2}The rain beats on me... 
+{textColor 0 2}The sound of the heavy rainfall drowns out all other noise. 
+
+
+[0000084c] fe: varop VAR_(28_0a)_a1_2d (14) := (00) 1
+[00000857] 10: 
+[00000858]  8: playSFX SE042 1
+[00000862] 10: 
+[00000863]  f: removeBG 0 0 2
+[0000086d] 10: 
+[0000086e] 10: bgload 00000000 BG23NR 0 1
+[0000087b] 10: 
+[0000087c]  1: cmd1 26
+[00000881] 10: 
+[00000882] 19: 
+[00000883] ff: text 55
+{textColor 0 2}I move my still legs again. 
+
+
+[00000886] 10: 
+[00000887]  b: playVoice YL2D6053
+[00000891] 10: 
+[00000892] 19: 
+[00000893] ff: text 56
+{textColor 1 4}【Yuka】 "MAKOTO!!" 
+{textColor 0 2}I begin to run up the staircase at full speed... 
+{textColor 0 2}I slip on the wet stone steps, falling on my knees, but there's no pain at all. 
+
+
+[00000896] 10: 
+[00000897] 10: bgload 00000000 BG24NR 4 1
+[000008a4] 10: 
+[000008a5] 19: 
+[000008a6] ff: text 57
+{textColor 0 2}I reach the top of the stairs and and run like the wind past the shrine's grounds. 
+
+
+[000008a9] 10: 
+[000008aa]  9: stopSFX
+[000008ab] 10: 
+[000008ac]  7: stopBGM
+[000008ad] 10: 
+[000008ae]  b: playVoice YL2D6054
+[000008b8] 10: 
+[000008b9] 19: 
+[000008ba] ff: text 58
+{textColor 1 4}【Yuka】 "WAIT!" 
+{textColor 0 2}I turn towards that voice. 
+{textColor 0 2}Yuka's come chasing after me. 
+{textColor 0 0}【Makoto】 "Stay away!" 
+{textColor 0 0}【Makoto】 "Stay here..." 
+{textColor 0 2}But Yuka ignores me and runs past me, plunging into the shrine. 
+{textColor 0 0}【Makoto】 "Yuka!" 
+
+
+[000008bd] 10: 
+[000008be]  2: cmd2 6
+[000008c2] 10: 
+[000008c3]  f: removeBG 0 0 2
+[000008cd] 10: 
+[000008ce] 10: bgload 00000000 BG25NN 0 1
+[000008db] 10: 
+[000008dc] 19: 
+[000008dd] ff: text 59
+{textColor 0 2}I survey my surroundings, but I don't see Kurumi anywhere. 
+{textColor 0 2}――Where's Yuka!? 
+{textColor 0 2}Right now, Yuka's trying to go through the small hole in the front wall. 
+{textColor 0 0}【Makoto】 "Hey! Yuka!" 
+{textColor 0 2}Ignoring my shouts, Yuka disappears beyond the hole. 
+
+
+[000008e0] 10: 
+[000008e1]  f: removeBG 0 4 2
+[000008eb] 10: 
+[000008ec] 10: bgload 00000000 EV_YU12 0 1
+[000008f9] 10: 
+[000008fa] 19: 
+[000008fb] ff: text 5a
+{textColor 0 2}In the end, we've arrived here again. 
+{textColor 0 2}Kurumi isn't here either. 
+{textColor 0 2}Only Yuka looks towards me, with eyes that seem to be asking me something. 
+
+
+[000008fe] 10: 
+[000008ff]  1: cmd1 7
+[00000903] 10: 
+[00000904]  1: cmd1 13
+[00000908] 10: 
+[00000909]  8: playSFX SE116 1
+[00000913] 10: 
+[00000914] 19: 
+[00000915] ff: text 5b
+{textColor 0 2}――CRASH! 
+{textColor 0 2}――Rumble rumble! 
+{textColor 0 2}The slanting shrine's wall... slowly draws near us. 
+{textColor 0 2}Over the panicked Yuka's shoulder, I see segments of the thick pillars breaking up into small wood chips as they blow up in the air. 
+
+
+[00000918] 10: 
+[00000919]  9: stopSFX
+[0000091a]  0: 
+[0000091b]  a: condJump 00 VAR_(28_1e)_a1_2d (28) != (15) (81)->1 (15) (00)  * 00000931 (0012)
+[00000929]  0: 
+[0000092a]  7: goto7 00000935 (0015)
+[0000092d]  0: 
+[0000092e]  7: goto7 00000935 (0013)
+[00000931]  0: 
+[00000932]  7: goto7 000009de (0016)
+[00000935] 10: 
+[00000936] 19: 
+[00000937] ff: text 5c
+{textColor 0 2}In the next instant, I hear the sound of the shrine crumbling... 
+
+
+[0000093a] 10: 
+[0000093b]  8: playSFX SE116 1
+[00000945] 10: 
+[00000946] 19: 
+[00000947] ff: text 5d
+{textColor 0 2}――What should I do!? 
+{textColor 0 2}My mind hesitates for a moment as I think this... 
+{textColor 0 2}I'm hesitating again. 
+{textColor 0 2}In this very instant, I'm thinking about my own body's safety. 
+{textColor 0 2}It's too late... 
+{textColor 0 2}It's all too late. 
+{textColor 0 2}I've fucked up... again... 
+
+
+[0000094a] 10: 
+[0000094b]  8: playSFX SE117 1
+[00000955] 10: 
+[00000956]  f: removeBG 1 0 1
+[00000960] 10: 
+[00000961]  2: cmd2 11
+[00000965] 10: 
+[00000966]  2: cmd2 10
+[0000096a] 10: 
+[0000096b]  a: waitForSFX
+[0000096c] 10: 
+[0000096d]  9: stopSFX
+[0000096e]  0: 
+[0000096f]  5: delay 120
+[00000974] 10: 
+[00000975]  6: playBGM 15
+[00000979] 10: 
+[0000097a] 19: 
+[0000097b] ff: text 5e
+{textColor 0 2}I'm so... cold...  {textColor 0 2}My whole body has gone numb. I can't move. 
+{textColor 0 2}Strangely, there's no pain. 
+{textColor 0 2}All there is is the taste of rusty iron in my mouth...  {textColor 0 2}All of my other senses are completely paralyzed. 
+{textColor 0 2}Suddenly, I am assaulted with severe nausea. 
+{textColor 0 2}I throw it all up. 
+{textColor 0 2}Blood...  {textColor 0 2}I threw so much blood that I could drown in it... 
+{textColor 0 2}The blood won't stop, as it overflows in my mouth and guzzles down my throat. 
+{textColor 0 2}It seems I'm bleeding from other parts besides my mouth. 
+{textColor 0 2}My neck?  {textColor 0 2}Did I cut an artery in my neck?  {textColor 0 2}The blood begins to flow out of me relentlessly, like a faucet that's been left on full blast. 
+{textColor 0 2}My consciousness slowly begins to fade... 
+{textColor 0 2}I close my eyes partly, and focus my faint, dim field of vision. 
+{textColor 0 2}Right in front of me...  {textColor 0 2}... lies Yuka. 
+
+
+[0000097e] 10: 
+[0000097f] 10: bgload 00000000 EV_AL01 0 1
+[0000098c] 10: 
+[0000098d] 19: 
+[0000098e] ff: text 5f
+{textColor 0 2}I can see her heavily dangling palm. 
+{textColor 0 2}On top of it is a small fragment of light... 
+{textColor 0 2}――The bell. 
+{textColor 0 2}I muster the last of my strength to crawl like an insect over to Yuka's side. 
+{textColor 0 2}In my arms, I feel Yuka's skin is wet with slippery blood...  {textColor 0 2}Yuka's cheeks are ghastly pale, almost transparent...  {textColor 0 2}As if she were a doll made of glass. 
+
+
+[00000991] 10: 
+[00000992]  7: stopBGM
+[00000993] 10: 
+[00000994]  b: playVoice YL2D6058
+[0000099e] 10: 
+[0000099f] 19: 
+[000009a0] ff: text 60
+{textColor 1 4}【Yuka】 "We couldn't... see the sunrise..." 
+{textColor 0 2}Her hoarse voice fills this empty void. 
+{textColor 0 2}Before long, from Yuka's palm... 
+
+
+[000009a3] 10: 
+[000009a4] 10: bgload 00000000 EV_AL01B 0 1
+[000009b1] 10: 
+[000009b2]  8: playSFX SE090 1
+[000009bc] 10: 
+[000009bd] 19: 
+[000009be] ff: text 61
+{textColor 0 2}... the bell falls. 
+{textColor 0 2}In that instant... 
+{textColor 0 2}――All light fades.  {textColor 0 2}――I've lost everything. 
+
+
+[000009c1]  0: 
+[000009c2]  5: delay 60
+[000009c7] 10: 
+[000009c8]  f: removeBG 0 1 1
+[000009d2] 10: 
+[000009d3]  4: jump staffroll
+[000009de] 10: 
+[000009df]  6: playBGM 20
+[000009e4] 10: 
+[000009e5]  b: playVoice YL2D6055
+[000009ef] 10: 
+[000009f0] 19: 
+[000009f1] ff: text 62
+{textColor 1 4}【Yuka】 "I'll go with you, too..." 
+{textColor 0 2}――Huh!? 
+{textColor 0 2}In Yuka's palm is her bell. 
+{textColor 0 2}... Yuka...  {textColor 0 2}... throws...  {textColor 0 2}... the bell...  {textColor 0 2}... into the sea... 
+
+
+[000009f4] 10: 
+[000009f5]  8: playSFX SE090 1
+[000009ff] 10: 
+[00000a00]  a: waitForSFX
+[00000a01] 10: 
+[00000a02]  f: removeBG 1 0 3
+[00000a0c] 10: 
+[00000a0d]  8: playSFX SE117 1
+[00000a17] 10: 
+[00000a18]  2: cmd2 11
+[00000a1c] 10: 
+[00000a1d]  2: cmd2 10
+[00000a21] 10: 
+[00000a22] 19: 
+[00000a23] ff: text 63
+{textColor 0 2}At the same time, I hear the sound of the shrine crumbling... 
+{textColor 0 2}"I will definitely protect Yuka!" 
+{textColor 0 2}――I don't hesitate for an instant!! 
+{textColor 0 2}With all of my strength, I kick off the ground and leap towards her! 
+{textColor 0 2}Like that, I push down on the ground and jump... 
+{textColor 0 2}... With that force, we flutter around up in midair. 
+{textColor 0 2}"If you want to stop time, then it's all right to destroy time."  {textColor 0 2}"If you want to escape from time, it's all right to flap your wings."  {textColor 0 2}"If you stay tied down, you can't be free." 
+{textColor 0 2}"If you want to be free, then you mustn't be afraid." 
+{textColor 0 2}Yuka and I embrace each other as we fall down towards the black sea... 
+
+
+[00000a26] 10: 
+[00000a27]  7: stopBGM
+[00000a28]  0: 
+[00000a29]  5: delay 60
+[00000a2e] 10: 
+[00000a2f]  8: playSFX SE090 1
+[00000a39] 10: 
+[00000a3a] 19: 
+[00000a3b] ff: text 64
+{textColor 0 2}As I hear the faint sound of the bell Yuka threw away close to my ears... 
+
+
+[00000a3e] 10: 
+[00000a3f]  f: removeBG 0 1 1
+[00000a49] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 255
+[00000a55] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000a61] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000a6d] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 100
+[00000a79]  0: 
+[00000a7a]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 00000a8e (0017)
+[00000a88] 10: 
+[00000a89] 1c: cmd1C
+[00000a8a]  0: 
+[00000a8b]  7: goto7 00000a99 (0018)
+[00000a8e] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[00000a99] 10: 
+[00000a9a]  4: jump YL2D7
+[00000aa1]  0: 
+[00000aa2]  0: 
+[00000aa3]  0: 

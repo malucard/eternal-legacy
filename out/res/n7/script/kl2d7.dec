@@ -1,0 +1,455 @@
+[00000058] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 7
+[00000063] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 0
+[0000006e]  0: 
+[0000006f]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 0000007f (0002)
+[0000007d] 10: 
+[0000007e] 18: cmd18
+[0000007f] 10: 
+[00000080] 1b: dayIntro 00000000 BGCAL7.cps
+[00000087] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 48
+[00000093] 10: 
+[00000094] 10: bgload 00000000 BG13ZA 0 1
+[000000a1] 10: 
+[000000a2] 11: fgload 0 00000000 KU02BB 1 3
+[000000b2] 10: 
+[000000b3]  6: playBGM 4
+[000000b7] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 15
+[000000c2] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 17
+[000000ce] 10: 
+[000000cf] 17: showClock
+[000000d0] 10: 
+[000000d1] 19: 
+[000000d2] ff: text 00
+{textColor 0 2}The vast sky is blue and clear. 
+{textColor 0 2}It's as if the heavy rainfall yesterday never happened. 
+{textColor 0 2}Kurumi and I walk down the warm afternoon coastline while holding hands. 
+
+
+[000000d5] 10: 
+[000000d6]  b: playVoice KL2D7000
+[000000e0] 10: 
+[000000e1] 19: 
+[000000e2] ff: text 01
+{textColor 1 7}【Kurumi】 "Hey, Onii-chan?" 
+{textColor 0 0}【Makoto】 "Hmm?" 
+
+
+[000000e5] 10: 
+[000000e6]  b: playVoice KL2D7001
+[000000f0] 10: 
+[000000f1] 19: 
+[000000f2] ff: text 02
+{textColor 1 7}【Kurumi】 "Shall we go pay our respects?" 
+{textColor 0 0}【Makoto】 "'Pay our respects'... where?" 
+
+
+[000000f5] 10: 
+[000000f6] 11: fgload 0 00000000 KU07BB 1 3
+[00000106] 10: 
+[00000107]  b: playVoice KL2D7002
+[00000111] 10: 
+[00000112] 19: 
+[00000113] ff: text 03
+{textColor 1 7}【Kurumi】 "That's obvious〜!" 
+{textColor 0 0}【Makoto】 "???" 
+
+
+[00000116] 10: 
+[00000117]  b: playVoice KL2D7003
+[00000121] 10: 
+[00000122] 19: 
+[00000123] ff: text 04
+{textColor 1 7}【Kurumi】 "That shrine♪" 
+{textColor 0 0}【Makoto】 "The shrine!? But it was destroyed in that earthquake yesterday, wasn't it...?" 
+
+
+[00000126] 10: 
+[00000127]  b: playVoice KL2D7004
+[00000131] 10: 
+[00000132] 19: 
+[00000133] ff: text 05
+{textColor 1 7}【Kurumi】 "It's fine. Even if it's collapsed, it's still there, right? Even if it's been smashed, a shrine is a shrine." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000136] 10: 
+[00000137]  b: playVoice KL2D7005
+[00000141] 10: 
+[00000142] 19: 
+[00000143] ff: text 06
+{textColor 1 7}【Kurumi】 "C'mon, let's go♪" 
+
+
+[00000146] 10: 
+[00000147]  7: stopBGM
+[00000148] 10: 
+[00000149] 12: removeFG 0 3
+[00000150] 10: 
+[00000151]  f: removeBG 1 0 2
+[0000015b]  0: 
+[0000015c]  5: delay 60
+[00000161] 10: 
+[00000162] 19: 
+[00000163] ff: text 07
+{textColor 0 2}The destroyed shrine... 
+{textColor 0 2}The once majestic building has completely disappeared. 
+{textColor 0 2}Unsure of where to pray for a moment, we decide to face the dead center of the rubble and pray. 
+
+
+[00000166] 10: 
+[00000167]  f: removeBG 1 0 2
+[00000171] 10: 
+[00000172] 10: bgload 00000000 BG23ZA 0 1
+[0000017f] 10: 
+[00000180] 19: 
+[00000181] ff: text 08
+{textColor 0 2}Once we've finished praying, we begin to walk down the stairs of the shrine. 
+{textColor 0 2}Suddenly, Kurumi says this... 
+
+
+[00000184] 10: 
+[00000185]  6: playBGM 17
+[0000018a] 10: 
+[0000018b] 11: fgload 0 00000000 KU01BB 1 3
+[0000019b] 10: 
+[0000019c]  b: playVoice KL2D7006
+[000001a6] 10: 
+[000001a7] 19: 
+[000001a8] ff: text 09
+{textColor 1 7}【Kurumi】 "This is where you and Kurumi kissed yesterday, huh?" 
+{textColor 0 0}【Makoto】 "... H-Hey, Kurumi, could you not say that so bluntly?" 
+{textColor 0 0}【Makoto】 "It's kind of embarrassing if you put it like that." 
+
+
+[000001ab] 10: 
+[000001ac] 11: fgload 0 00000000 KU02BB 1 3
+[000001bc] 10: 
+[000001bd]  b: playVoice KL2D7007
+[000001c7] 10: 
+[000001c8] 19: 
+[000001c9] ff: text 0a
+{textColor 1 7}【Kurumi】 "Hmm... is that so..." 
+{textColor 0 2}Kurumi says this with a proud, smiling face. 
+{textColor 0 2}It's like the smile of a child who's planning an evil prank. 
+
+
+[000001cc] 10: 
+[000001cd]  b: playVoice KL2D7008
+[000001d7] 10: 
+[000001d8] 19: 
+[000001d9] ff: text 0b
+{textColor 1 7}【Kurumi】 "Hey, Onii-chan?" 
+{textColor 0 0}【Makoto】 "?" 
+
+
+[000001dc] 10: 
+[000001dd] 11: fgload 0 00000000 KU03BB 1 3
+[000001ed] 10: 
+[000001ee]  b: playVoice KL2D7009
+[000001f8] 10: 
+[000001f9] 19: 
+[000001fa] ff: text 0c
+{textColor 1 7}【Kurumi】 "Shall we kiss?" 
+{textColor 0 0}【Makoto】 "W-What!?" 
+
+
+[000001fd] 10: 
+[000001fe]  b: playVoice KL2D7010
+[00000208] 10: 
+[00000209] 19: 
+[0000020a] ff: text 0d
+{textColor 1 7}【Kurumi】 "Let's kiss." 
+{textColor 0 0}【Makoto】 "I told you, saying something like that is..." 
+
+
+[0000020d] 10: 
+[0000020e] 11: fgload 0 00000000 KU01BB 1 3
+[0000021e] 10: 
+[0000021f]  b: playVoice KL2D7011
+[00000229] 10: 
+[0000022a] 19: 
+[0000022b] ff: text 0e
+{textColor 1 7}【Kurumi】 "You won't do it?" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000022e] 10: 
+[0000022f] 11: fgload 0 00000000 KU07BB 1 3
+[0000023f] 10: 
+[00000240]  b: playVoice KL2D7012
+[0000024a] 10: 
+[0000024b] 19: 
+[0000024c] ff: text 0f
+{textColor 1 7}【Kurumi】 "Then Kurumi will break our promise〜♪" 
+{textColor 0 0}【Makoto】 "Promise???" 
+
+
+[0000024f] 10: 
+[00000250] 11: fgload 0 00000000 KU02BB 1 3
+[00000260] 10: 
+[00000261]  b: playVoice KL2D7013
+[0000026b] 10: 
+[0000026c] 19: 
+[0000026d] ff: text 10
+{textColor 1 7}【Kurumi】 "Yeah. We're not going to the amusement park." 
+{textColor 0 0}【Makoto】 "Huh???" 
+
+
+[00000270] 10: 
+[00000271]  b: playVoice KL2D7014
+[0000027b] 10: 
+[0000027c] 19: 
+[0000027d] ff: text 11
+{textColor 1 7}【Kurumi】 "You remember what happens if we break our promise to go to the amusement park... right?" 
+{textColor 0 0}【Makoto】 "... Are you talking about that pinky swear promise?" 
+
+
+[00000280] 10: 
+[00000281] 11: fgload 0 00000000 KU07BB 1 3
+[00000291] 10: 
+[00000292]  b: playVoice KL2D7015
+[0000029c] 10: 
+[0000029d] 19: 
+[0000029e] ff: text 12
+{textColor 1 7}【Kurumi】 "Eheh♪" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000002a1] 10: 
+[000002a2]  b: playVoice KL2D7016
+[000002ac] 10: 
+[000002ad] 19: 
+[000002ae] ff: text 13
+{textColor 1 7}【Kurumi】 "Right. So kiss Kurumi on the cheek, okay?" 
+{textColor 0 2}Kurumi presents her cheek. 
+{textColor 0 2}... What should I do...? 
+{textColor 0 2}... Hmm〜... 
+{textColor 0 2}I decide not to worry about it, and my lips close in on that soft cheek... 
+
+
+[000002b1] 10: 
+[000002b2] 11: fgload 0 00000000 KU11BB 1 3
+[000002c2] 10: 
+[000002c3]  b: playVoice KL2D7017
+[000002cd] 10: 
+[000002ce] 19: 
+[000002cf] ff: text 14
+{textColor 1 7}【Kurumi】 "Ah!" 
+{textColor 0 2}... But as I'm trying to, Kurumi suddenly shouts. 
+{textColor 0 0}【Makoto】 "Wh-What? Is something wrong?" 
+
+
+[000002d2] 10: 
+[000002d3] 11: fgload 0 00000000 KU03BB 1 3
+[000002e3] 10: 
+[000002e4]  b: playVoice KL2D7018
+[000002ee] 10: 
+[000002ef] 19: 
+[000002f0] ff: text 15
+{textColor 1 7}【Kurumi】 "This is bad! Kurumi completely forgot about it!" 
+{textColor 0 0}【Makoto】 "Wh-What?" 
+
+
+[000002f3] 10: 
+[000002f4] 11: fgload 0 00000000 KU01BB 1 3
+[00000304] 10: 
+[00000305]  b: playVoice KL2D7019
+[0000030f] 10: 
+[00000310] 19: 
+[00000311] ff: text 16
+{textColor 1 7}【Kurumi】 "Tommorow is the day of the opening ceremony at Kurumi's school..." 
+{textColor 0 0}【Makoto】 "... Opening ceremony?" 
+{textColor 0 0}【Makoto】 "But the ferries have already stopped running at this hour, right?" 
+{textColor 1 7}【Kurumi】 "..." 
+{textColor 0 0}【Makoto】 "What are you going to do?" 
+{textColor 1 7}【Kurumi】 "..." 
+{textColor 0 0}【Makoto】 "Kurumi?" 
+{textColor 1 7}【Kurumi】 "..." 
+{textColor 0 0}【Makoto】 "Kurumi???" 
+
+
+[00000314] 10: 
+[00000315] 11: fgload 0 00000000 KU02BB 1 3
+[00000325] 10: 
+[00000326]  b: playVoice KL2D7020
+[00000330] 10: 
+[00000331] 19: 
+[00000332] ff: text 17
+{textColor 1 7}【Kurumi】 "... All right! Got it!" 
+
+
+[00000335] 10: 
+[00000336] 12: removeFG 0 3
+[0000033d] 10: 
+[0000033e] 19: 
+[0000033f] ff: text 18
+{textColor 0 2}Kurumi suddenly turns around. 
+
+
+[00000342] 10: 
+[00000343]  2: cmd2 8
+[00000347] 10: 
+[00000348] 10: bgload 00000000 EV_KU09 0 1
+[00000355] 10: 
+[00000356] 19: 
+[00000357] ff: text 19
+{textColor 0 2}Just like that, she runs up the staircase without saying a word... 
+{textColor 0 0}【Makoto】 "Wh-Where are you going, Kurumi!?" 
+
+
+[0000035a] 10: 
+[0000035b]  b: playVoice KL2D7021
+[00000365] 10: 
+[00000366] 19: 
+[00000367] ff: text 1a
+{textColor 1 7}【Kurumi】 "Well, Kurumi's got to make it to the opening ceremony!" 
+{textColor 0 0}【Makoto】 "Huh...?" 
+
+
+[0000036a] 10: 
+[0000036b]  b: playVoice KL2D7022
+[00000375] 10: 
+[00000376] 19: 
+[00000377] ff: text 1b
+{textColor 1 7}【Kurumi】 "Once more..." 
+
+
+[0000037a] 10: 
+[0000037b]  b: playVoice KL2D7023
+[00000385] 10: 
+[00000386] 19: 
+[00000387] ff: text 1c
+{textColor 1 7}【Kurumi】 "Let's do it... once more!" 
+{textColor 0 0}【Makoto】 "D-Do what?" 
+
+
+[0000038a] 10: 
+[0000038b]  7: stopBGM
+[0000038c] 10: 
+[0000038d]  b: playVoice KL2D7024
+[00000397] 10: 
+[00000398] 19: 
+[00000399] ff: text 1d
+{textColor 1 7}【Kurumi】 "Isn't it obvious!?" 
+
+
+[0000039c] 10: 
+[0000039d]  b: playVoice KL2D7025
+[000003a7] 10: 
+[000003a8] 19: 
+[000003a9] ff: text 1e
+{textColor 1 7}【Kurumi】 "Let's time travel... once more!" 
+
+
+
+[000003ac] 10: 
+[000003ad] 18: cmd18
+[000003ae]  0: 
+[000003af]  5: delay 180
+[000003b4] 10: 
+[000003b5]  f: removeBG 0 0 0
+[000003bf]  0: 
+[000003c0]  a: condJump 00 VAR_(28_1e)_a0_ce (28) != (15) (80)->0 (15) (00)  * 00000401 (0004)
+[000003ce] fe: varop VAR_(28_0a)_a0_ce (14) := (00) 1
+[000003d9]  0: 
+[000003da]  a: condJump 01 VAR_(28_04)_a0_cb (00) _COP_03 (03) ->VAR_(28_04)_a0_cc (00) (03)  * 0123abcd (2802)
+[000003eb]  3: unsupported 3 
+[000003ec] a0: unsupported 160 
+[000003ed] cd: unsupported 205 
+[000003ee]  0: 
+[000003ef] 10: 
+[000003f0]  1: cmd1 3
+[000003f4]  3: unsupported 3 
+[000003f5]  0: 
+[000003f6] fe: varop VAR_(28_02)_a3_e7 (00) := (00) 1
+[00000401]  0: 
+[00000402]  a: condJump 00 VAR_(28_1e)_a1_46 (28) != (15) (80)->0 (15) (00)  * 0000041b (0006)
+[00000410] fe: varop VAR_(28_0a)_a1_46 (14) := (00) 1
+[0000041b]  0: 
+[0000041c]  a: condJump 00 VAR_(28_1e)_a0_c8 (28) != (15) (80)->0 (15) (00)  * 00000435 (0008)
+[0000042a] fe: varop VAR_(28_0a)_a0_c8 (14) := (00) 1
+[00000435]  0: 
+[00000436]  a: condJump 00 VAR_(28_1e)_a0_c9 (28) != (15) (80)->0 (15) (00)  * 0000044f (000a)
+[00000444] fe: varop VAR_(28_0a)_a0_c9 (14) := (00) 1
+[0000044f]  0: 
+[00000450]  a: condJump 00 VAR_(28_1e)_a1_45 (28) != (15) (80)->0 (15) (00)  * 00000469 (000c)
+[0000045e] fe: varop VAR_(28_0a)_a1_45 (14) := (00) 1
+[00000469]  0: 
+[0000046a]  a: condJump 00 VAR_(28_1e)_a1_48 (28) != (15) (80)->0 (15) (00)  * 000004bb (000e)
+[00000478] fe: varop VAR_(28_0a)_a1_48 (14) := (00) 1
+[00000483] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cb
+[0000048f] 14: unsupported 20 
+[00000490]  0: 
+[00000491] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cc
+[0000049d] 14: unsupported 20 
+[0000049e]  0: 
+[0000049f] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cd
+[000004ab] 14: unsupported 20 
+[000004ac]  0: 
+[000004ad] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_ce
+[000004b9] 14: unsupported 20 
+[000004ba]  0: 
+[000004bb] fe: varop VAR_(28_0a)_a1_47 (14) := (00) 4
+[000004c6] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 0
+[000004d1] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 6
+[000004dc]  0: 
+[000004dd] 19: unknown19 0 3
+[000004e4]  0: 
+[000004e5] 19: unknown19 1 3
+[000004ec]  0: 
+[000004ed] 19: unknown19 2 3
+[000004f4] 10: 
+[000004f5] 24: cmd24 0
+[000004f9] 10: 
+[000004fa] 22: movie end1
+[00000500]  0: 
+[00000501]  5: delay 10
+[00000505] 10: 
+[00000506] 24: cmd24 1
+[0000050a]  0: 
+[0000050b]  5: delay 1
+[0000050f] 10: 
+[00000510] 2d: cmd2D 00 0a 01 2d 0a 87 14 00 0f
+[0000051a]  0: 
+[0000051b] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 1
+[00000526] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 0
+[00000531] 10: 
+[00000532] 23: cmd23
+[00000533]  0: 
+[00000534] 19: unknown19 0 4
+[0000053b]  0: 
+[0000053c] 19: unknown19 1 4
+[00000543]  0: 
+[00000544] 19: unknown19 2 4
+[0000054b] fe: varop VAR_(28_0a)_a1_0b (14) := (00) 1
+[00000556] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cb
+[00000562] 14: unsupported 20 
+[00000563]  0: 
+[00000564] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cc
+[00000570] 14: unsupported 20 
+[00000571]  0: 
+[00000572] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cd
+[0000057e] 14: unsupported 20 
+[0000057f]  0: 
+[00000580] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_ce
+[0000058c] 14: unsupported 20 
+[0000058d]  0: 
+[0000058e]  0: 
+[0000058f]  a: condJump 00 VAR_(28_32)_a1_0b (3c) != (29) (81)->1 (29) (08) || VAR_(28_32)_a1_49 (3c) != (29) (80)->0 (29) (00)  * 000005b3 (0011)
+[000005a8] fe: varop VAR_(28_0a)_a1_49 (14) := (00) 1
+[000005b3]  0: 
+[000005b4]  a: condJump 01 VAR_(28_02)_a3_e7 (00) != (01) (81)->1 (00) (00)  * 000005d2 (0012)
+[000005b5]  a: condJump 01 VAR_(28_02)_a1_0b (00) != (01) (81)->5 (00) (00)  * 000005d2 (0012)
+[000005c2] 10: 
+[000005c3] 19: 
+[000005c4] fd: notice 1f
+{textColor 0 2}Izumi Cure route unlocked. 
+
+
+[000005c7] fe: varop VAR_(28_02)_a3_e7 (00) := (00) 0
+[000005d2] 10: 
+[000005d3] 1e: returnTitle 00 03 00 06
+[000005d8]  0: 
+[000005d9]  0: 
+[000005da]  0: 
+[000005db]  0: 

@@ -1,0 +1,1512 @@
+@label ap_START
+@choice Izumi or Kurumi|Yuka or Haruka|Saki or Okuhiko|Quit
+@setvar vap_selvar = selected
+@if selvar == 0
+@    goto ap_izumi_kurumi
+@fi
+@if selvar == 1
+@    goto ap_yuuka_haruka
+@fi
+@if selvar == 2
+@    goto ap_saki_okuhiko
+@fi
+@if selvar == 3
+@    goto ap_exit
+@fi
+@goto ap_start
+@label ap_izumi_kurumi
+@choice Izumi|Kurumi
+@setvar vap_selvar = selected
+@if selvar == 0
+@    goto ap_izumi
+@fi
+@if selvar == 1
+@    goto ap_kurumi
+@fi
+@label ap_yuuka_haruka
+@choice Yuka|Haruka
+@setvar vap_selvar = selected
+@if selvar == 0
+@    goto ap_yuka
+@fi
+@if selvar == 1
+@    goto ap_haruka
+@fi
+@label ap_saki_okuhiko
+@choice Saki|Okuhiko
+@setvar vap_selvar = selected
+@if selvar == 0
+@    goto ap_saki
+@fi
+@if selvar == 1
+@    goto ap_okuhiko
+@fi
+@label ap_izumi_1_far
+fgload 0 00000000 iz01aa 1 3
+fgload 1 00000000 iz01aa 1 3
+@text Izumi normal (dawn colors) DispCHA 0, "iz01aa", CHR_D, CHR_L Izumi normal (afternoon colors) DispCHA 1, "iz01aa", CHR_A, CHR_R
+fgload 1 00000000 iz02aa 1 3
+@text Izumi normal (night colors) DispCHA 0, "iz01aa", CHR_N, CHR_L Izumi smiling (dawn colors) DispCHA 1, "iz02aa", CHR_D, CHR_R
+fgload 1 00000000 iz02aa 1 3
+@text Izumi smiling (afternoon colors) DispCHA 0, "iz02aa", CHR_A, CHR_L Izumi smiling (night colors) DispCHA 1, "iz02aa", CHR_N, CHR_R
+fgload 1 00000000 iz03aa 1 3
+@text Izumi embarrassed (dawn colors) DispCHA 0, "iz03aa", CHR_D, CHR_L Izumi embarrassed (afternoon colors) DispCHA 1, "iz03aa", CHR_A, CHR_R
+fgload 1 00000000 iz04aa 1 3
+@text Izumi embarrassed (night colors) DispCHA 0, "iz03aa", CHR_N, CHR_L Izumi angry (dawn colors) DispCHA 1, "iz04aa", CHR_D, CHR_R
+fgload 1 00000000 iz04aa 1 3
+@text Izumi angry (afternoon colors) DispCHA 0, "iz04aa", CHR_A, CHR_L Izumi angry (night colors) DispCHA 1, "iz04aa", CHR_N, CHR_R
+fgload 1 00000000 iz05aa 1 3
+@text Izumi ill-tempered (dawn colors) DispCHA 0, "iz05aa", CHR_D, CHR_L Izumi ill-tempered (afternoon colors) DispCHA 1, "iz05aa", CHR_A, CHR_R
+fgload 1 00000000 iz06aa 1 3
+@text Izumi ill-tempered (night colors) DispCHA 0, "iz05aa", CHR_N, CHR_L Izumi dubious (dawn colors) DispCHA 1, "iz06aa", CHR_D, CHR_R
+fgload 1 00000000 iz06aa 1 3
+@text Izumi dubious (afternoon colors) DispCHA 0, "iz06aa", CHR_A, CHR_L Izumi dubious (night colors) DispCHA 1, "iz06aa", CHR_N, CHR_R
+fgload 1 00000000 iz07aa 1 3
+@text Izumi laugh (dawn colors) DispCHA 0, "iz07aa", CHR_D, CHR_L Izumi laugh (afternoon colors) DispCHA 1, "iz07aa", CHR_A, CHR_R
+fgload 1 00000000 iz08aa 1 3
+@text Izumi laugh (night colors) DispCHA 0, "iz07aa", CHR_N, CHR_L Izumi sadness (dawn colors) DispCHA 1, "iz08aa", CHR_D, CHR_R
+fgload 1 00000000 iz08aa 1 3
+@text Izumi sadness (afternoon colors) DispCHA 0, "iz08aa", CHR_A, CHR_L Izumi sadness (night colors) DispCHA 1, "iz08aa", CHR_N, CHR_R
+fgload 1 00000000 iz09aa 1 3
+@text Izumi crying (dawn colors) DispCHA 0, "iz09aa", CHR_D, CHR_L Izumi crying (afternoon colors) DispCHA 1, "iz09aa", CHR_A, CHR_R
+fgload 1 00000000 iz10aa 1 3
+@text Izumi crying (night colors) DispCHA 0, "iz09aa", CHR_N, CHR_L Izumi shocked (dawn colors) DispCHA 1, "iz10aa", CHR_D, CHR_R
+fgload 1 00000000 iz10aa 1 3
+@text Izumi shocked (afternoon colors) DispCHA 0, "iz10aa", CHR_A, CHR_L Izumi shocked (night colors) DispCHA 1, "iz10aa", CHR_N, CHR_R
+fgload 1 00000000 iz11aa 1 3
+@text Izumi surprised (dawn colors) DispCHA 0, "iz11aa", CHR_D, CHR_L Izumi surprised (afternoon colors) DispCHA 1, "iz11aa", CHR_A, CHR_R
+fgload 1 00000000 iz12aa 1 3
+@text Izumi surprised (night colors) DispCHA 0, "iz11aa", CHR_N, CHR_L Izumi laugh_2 (dawn colors) DispCHA 1, "iz12aa", CHR_D, CHR_R
+fgload 1 00000000 iz12aa 1 3
+@text Izumi laugh_2 (afternoon colors) DispCHA 0, "iz12aa", CHR_A, CHR_L Izumi laugh_2 (night colors) DispCHA 1, "iz12aa", CHR_N, CHR_R
+@goto ap_izumi
+@label ap_izumi_1_close
+fgload 0 00000000 iz01ab 1 3
+fgload 1 00000000 iz01ab 1 3
+@text Izumi normal (dawn colors) DispCHA 0, "iz01ab", CHR_D, CHR_L Izumi normal (afternoon colors) DispCHA 1, "iz01ab", CHR_A, CHR_R
+fgload 1 00000000 iz02ab 1 3
+@text Izumi normal (night colors) DispCHA 0, "iz01ab", CHR_N, CHR_L Izumi smiling (dawn colors) DispCHA 1, "iz02ab", CHR_D, CHR_R
+fgload 1 00000000 iz02ab 1 3
+@text Izumi smiling (afternoon colors) DispCHA 0, "iz02ab", CHR_A, CHR_L Izumi smiling (night colors) DispCHA 1, "iz02ab", CHR_N, CHR_R
+fgload 1 00000000 iz03ab 1 3
+@text Izumi embarrassed (dawn colors) DispCHA 0, "iz03ab", CHR_D, CHR_L Izumi embarrassed (afternoon colors) DispCHA 1, "iz03ab", CHR_A, CHR_R
+fgload 1 00000000 iz04ab 1 3
+@text Izumi embarrassed (night colors) DispCHA 0, "iz03ab", CHR_N, CHR_L Izumi angry (dawn colors) DispCHA 1, "iz04ab", CHR_D, CHR_R
+fgload 1 00000000 iz04ab 1 3
+@text Izumi angry (afternoon colors) DispCHA 0, "iz04ab", CHR_A, CHR_L Izumi angry (night colors) DispCHA 1, "iz04ab", CHR_N, CHR_R
+fgload 1 00000000 iz05ab 1 3
+@text Izumi ill-tempered (dawn colors) DispCHA 0, "iz05ab", CHR_D, CHR_L Izumi ill-tempered (afternoon colors) DispCHA 1, "iz05ab", CHR_A, CHR_R
+fgload 1 00000000 iz06ab 1 3
+@text Izumi ill-tempered (night colors) DispCHA 0, "iz05ab", CHR_N, CHR_L Izumi dubious (dawn colors) DispCHA 1, "iz06ab", CHR_D, CHR_R
+fgload 1 00000000 iz06ab 1 3
+@text Izumi dubious (afternoon colors) DispCHA 0, "iz06ab", CHR_A, CHR_L Izumi dubious (night colors) DispCHA 1, "iz06ab", CHR_N, CHR_R
+fgload 1 00000000 iz07ab 1 3
+@text Izumi laugh (dawn colors) DispCHA 0, "iz07ab", CHR_D, CHR_L Izumi laugh (afternoon colors) DispCHA 1, "iz07ab", CHR_A, CHR_R
+fgload 1 00000000 iz08ab 1 3
+@text Izumi laugh (night colors) DispCHA 0, "iz07ab", CHR_N, CHR_L Izumi sadness (dawn colors) DispCHA 1, "iz08ab", CHR_D, CHR_R
+fgload 1 00000000 iz08ab 1 3
+@text Izumi sadness (afternoon colors) DispCHA 0, "iz08ab", CHR_A, CHR_L Izumi sadness (night colors) DispCHA 1, "iz08ab", CHR_N, CHR_R
+fgload 1 00000000 iz09ab 1 3
+@text Izumi crying (dawn colors) DispCHA 0, "iz09ab", CHR_D, CHR_L Izumi crying (afternoon colors) DispCHA 1, "iz09ab", CHR_A, CHR_R
+fgload 1 00000000 iz10ab 1 3
+@text Izumi crying (night colors) DispCHA 0, "iz09ab", CHR_N, CHR_L Izumi shocked (dawn colors) DispCHA 1, "iz10ab", CHR_D, CHR_R
+fgload 1 00000000 iz10ab 1 3
+@text Izumi shocked (afternoon colors) DispCHA 0, "iz10ab", CHR_A, CHR_L Izumi shocked (night colors) DispCHA 1, "iz10ab", CHR_N, CHR_R
+fgload 1 00000000 iz11ab 1 3
+@text Izumi surprised (dawn colors) DispCHA 0, "iz11ab", CHR_D, CHR_L Izumi surprised (afternoon colors) DispCHA 1, "iz11ab", CHR_A, CHR_R
+fgload 1 00000000 iz12ab 1 3
+@text Izumi surprised (night colors) DispCHA 0, "iz11ab", CHR_N, CHR_L Izumi laugh_2 (dawn colors) DispCHA 1, "iz12ab", CHR_D, CHR_R
+fgload 1 00000000 iz12ab 1 3
+@text Izumi laugh_2 (afternoon colors) DispCHA 0, "iz12ab", CHR_A, CHR_L Izumi laugh_2 (night colors) DispCHA 1, "iz12ab", CHR_N, CHR_R
+@goto ap_izumi
+@label ap_izumi_2_far
+fgload 0 00000000 iz01ba 1 3
+fgload 1 00000000 iz01ba 1 3
+@text Izumi normal (dawn colors) DispCHA 0, "iz01ba", CHR_D, CHR_L Izumi normal (afternoon colors) DispCHA 1, "iz01ba", CHR_A, CHR_R
+fgload 1 00000000 iz02ba 1 3
+@text Izumi normal (night colors) DispCHA 0, "iz01ba", CHR_N, CHR_L Izumi smiling (dawn colors) DispCHA 1, "iz02ba", CHR_D, CHR_R
+fgload 1 00000000 iz02ba 1 3
+@text Izumi smiling (afternoon colors) DispCHA 0, "iz02ba", CHR_A, CHR_L Izumi smiling (night colors) DispCHA 1, "iz02ba", CHR_N, CHR_R
+fgload 1 00000000 iz03ba 1 3
+@text Izumi embarrassed (dawn colors) DispCHA 0, "iz03ba", CHR_D, CHR_L Izumi embarrassed (afternoon colors) DispCHA 1, "iz03ba", CHR_A, CHR_R
+fgload 1 00000000 iz04ba 1 3
+@text Izumi embarrassed (night colors) DispCHA 0, "iz03ba", CHR_N, CHR_L Izumi angry (dawn colors) DispCHA 1, "iz04ba", CHR_D, CHR_R
+fgload 1 00000000 iz04ba 1 3
+@text Izumi angry (afternoon colors) DispCHA 0, "iz04ba", CHR_A, CHR_L Izumi angry (night colors) DispCHA 1, "iz04ba", CHR_N, CHR_R
+fgload 1 00000000 iz05ba 1 3
+@text Izumi ill-tempered (dawn colors) DispCHA 0, "iz05ba", CHR_D, CHR_L Izumi ill-tempered (afternoon colors) DispCHA 1, "iz05ba", CHR_A, CHR_R
+fgload 1 00000000 iz06ba 1 3
+@text Izumi ill-tempered (night colors) DispCHA 0, "iz05ba", CHR_N, CHR_L Izumi dubious (dawn colors) DispCHA 1, "iz06ba", CHR_D, CHR_R
+fgload 1 00000000 iz06ba 1 3
+@text Izumi dubious (afternoon colors) DispCHA 0, "iz06ba", CHR_A, CHR_L Izumi dubious (night colors) DispCHA 1, "iz06ba", CHR_N, CHR_R
+fgload 1 00000000 iz07ba 1 3
+@text Izumi laugh (dawn colors) DispCHA 0, "iz07ba", CHR_D, CHR_L Izumi laugh (afternoon colors) DispCHA 1, "iz07ba", CHR_A, CHR_R
+fgload 1 00000000 iz08ba 1 3
+@text Izumi laugh (night colors) DispCHA 0, "iz07ba", CHR_N, CHR_L Izumi sadness (dawn colors) DispCHA 1, "iz08ba", CHR_D, CHR_R
+fgload 1 00000000 iz08ba 1 3
+@text Izumi sadness (afternoon colors) DispCHA 0, "iz08ba", CHR_A, CHR_L Izumi sadness (night colors) DispCHA 1, "iz08ba", CHR_N, CHR_R
+fgload 1 00000000 iz09ba 1 3
+@text Izumi crying (dawn colors) DispCHA 0, "iz09ba", CHR_D, CHR_L Izumi crying (afternoon colors) DispCHA 1, "iz09ba", CHR_A, CHR_R
+fgload 1 00000000 iz10ba 1 3
+@text Izumi crying (night colors) DispCHA 0, "iz09ba", CHR_N, CHR_L Izumi shocked (dawn colors) DispCHA 1, "iz10ba", CHR_D, CHR_R
+fgload 1 00000000 iz10ba 1 3
+@text Izumi shocked (afternoon colors) DispCHA 0, "iz10ba", CHR_A, CHR_L Izumi shocked (night colors) DispCHA 1, "iz10ba", CHR_N, CHR_R
+fgload 1 00000000 iz11ba 1 3
+@text Izumi surprised (dawn colors) DispCHA 0, "iz11ba", CHR_D, CHR_L Izumi surprised (afternoon colors) DispCHA 1, "iz11ba", CHR_A, CHR_R
+fgload 1 00000000 iz12ba 1 3
+@text Izumi surprised (night colors) DispCHA 0, "iz11ba", CHR_N, CHR_L Izumi laugh_2 (dawn colors) DispCHA 1, "iz12ba", CHR_D, CHR_R
+fgload 1 00000000 iz12ba 1 3
+@text Izumi laugh_2 (afternoon colors) DispCHA 0, "iz12ba", CHR_A, CHR_L Izumi laugh_2 (night colors) DispCHA 1, "iz12ba", CHR_N, CHR_R
+@goto ap_izumi
+@label ap_izumi_2_close
+fgload 0 00000000 iz01bb 1 3
+fgload 1 00000000 iz01bb 1 3
+@text Izumi normal (dawn colors) DispCHA 0, "iz01bb", CHR_D, CHR_L Izumi normal (afternoon colors) DispCHA 1, "iz01bb", CHR_A, CHR_R
+fgload 1 00000000 iz02bb 1 3
+@text Izumi normal (night colors) DispCHA 0, "iz01bb", CHR_N, CHR_L Izumi smiling (dawn colors) DispCHA 1, "iz02bb", CHR_D, CHR_R
+fgload 1 00000000 iz02bb 1 3
+@text Izumi smiling (afternoon colors) DispCHA 0, "iz02bb", CHR_A, CHR_L Izumi smiling (night colors) DispCHA 1, "iz02bb", CHR_N, CHR_R
+fgload 1 00000000 iz03bb 1 3
+@text Izumi embarrassed (dawn colors) DispCHA 0, "iz03bb", CHR_D, CHR_L Izumi embarrassed (afternoon colors) DispCHA 1, "iz03bb", CHR_A, CHR_R
+fgload 1 00000000 iz04bb 1 3
+@text Izumi embarrassed (night colors) DispCHA 0, "iz03bb", CHR_N, CHR_L Izumi angry (dawn colors) DispCHA 1, "iz04bb", CHR_D, CHR_R
+fgload 1 00000000 iz04bb 1 3
+@text Izumi angry (afternoon colors) DispCHA 0, "iz04bb", CHR_A, CHR_L Izumi angry (night colors) DispCHA 1, "iz04bb", CHR_N, CHR_R
+fgload 1 00000000 iz05bb 1 3
+@text Izumi ill-tempered (dawn colors) DispCHA 0, "iz05bb", CHR_D, CHR_L Izumi ill-tempered (afternoon colors) DispCHA 1, "iz05bb", CHR_A, CHR_R
+fgload 1 00000000 iz06bb 1 3
+@text Izumi ill-tempered (night colors) DispCHA 0, "iz05bb", CHR_N, CHR_L Izumi dubious (dawn colors) DispCHA 1, "iz06bb", CHR_D, CHR_R
+fgload 1 00000000 iz06bb 1 3
+@text Izumi dubious (afternoon colors) DispCHA 0, "iz06bb", CHR_A, CHR_L Izumi dubious (night colors) DispCHA 1, "iz06bb", CHR_N, CHR_R
+fgload 1 00000000 iz07bb 1 3
+@text Izumi laugh (dawn colors) DispCHA 0, "iz07bb", CHR_D, CHR_L Izumi laugh (afternoon colors) DispCHA 1, "iz07bb", CHR_A, CHR_R
+fgload 1 00000000 iz08bb 1 3
+@text Izumi laugh (night colors) DispCHA 0, "iz07bb", CHR_N, CHR_L Izumi sadness (dawn colors) DispCHA 1, "iz08bb", CHR_D, CHR_R
+fgload 1 00000000 iz08bb 1 3
+@text Izumi sadness (afternoon colors) DispCHA 0, "iz08bb", CHR_A, CHR_L Izumi sadness (night colors) DispCHA 1, "iz08bb", CHR_N, CHR_R
+fgload 1 00000000 iz09bb 1 3
+@text Izumi crying (dawn colors) DispCHA 0, "iz09bb", CHR_D, CHR_L Izumi crying (afternoon colors) DispCHA 1, "iz09bb", CHR_A, CHR_R
+fgload 1 00000000 iz10bb 1 3
+@text Izumi crying (night colors) DispCHA 0, "iz09bb", CHR_N, CHR_L Izumi shocked (dawn colors) DispCHA 1, "iz10bb", CHR_D, CHR_R
+fgload 1 00000000 iz10bb 1 3
+@text Izumi shocked (afternoon colors) DispCHA 0, "iz10bb", CHR_A, CHR_L Izumi shocked (night colors) DispCHA 1, "iz10bb", CHR_N, CHR_R
+fgload 1 00000000 iz11bb 1 3
+@text Izumi surprised (dawn colors) DispCHA 0, "iz11bb", CHR_D, CHR_L Izumi surprised (afternoon colors) DispCHA 1, "iz11bb", CHR_A, CHR_R
+fgload 1 00000000 iz12bb 1 3
+@text Izumi surprised (night colors) DispCHA 0, "iz11bb", CHR_N, CHR_L Izumi laugh_2 (dawn colors) DispCHA 1, "iz12bb", CHR_D, CHR_R
+fgload 1 00000000 iz12bb 1 3
+@text Izumi laugh_2 (afternoon colors) DispCHA 0, "iz12bb", CHR_A, CHR_L Izumi laugh_2 (night colors) DispCHA 1, "iz12bb", CHR_N, CHR_R
+@goto ap_izumi
+@label ap_izumi_s_far
+fgload 0 00000000 iz01da 1 3
+fgload 1 00000000 iz01da 1 3
+@text Izumi normal (dawn colors) DispCHA 0, "iz01da", CHR_D, CHR_L Izumi normal (afternoon colors) DispCHA 1, "iz01da", CHR_A, CHR_R
+fgload 1 00000000 iz02da 1 3
+@text Izumi normal (night colors) DispCHA 0, "iz01da", CHR_N, CHR_L Izumi smiling (dawn colors) DispCHA 1, "iz02da", CHR_D, CHR_R
+fgload 1 00000000 iz02da 1 3
+@text Izumi smiling (afternoon colors) DispCHA 0, "iz02da", CHR_A, CHR_L Izumi smiling (night colors) DispCHA 1, "iz02da", CHR_N, CHR_R
+fgload 1 00000000 iz03da 1 3
+@text Izumi embarrassed (dawn colors) DispCHA 0, "iz03da", CHR_D, CHR_L Izumi embarrassed (afternoon colors) DispCHA 1, "iz03da", CHR_A, CHR_R
+fgload 1 00000000 iz04da 1 3
+@text Izumi embarrassed (night colors) DispCHA 0, "iz03da", CHR_N, CHR_L Izumi angry (dawn colors) DispCHA 1, "iz04da", CHR_D, CHR_R
+fgload 1 00000000 iz04da 1 3
+@text Izumi angry (afternoon colors) DispCHA 0, "iz04da", CHR_A, CHR_L Izumi angry (night colors) DispCHA 1, "iz04da", CHR_N, CHR_R
+fgload 1 00000000 iz05da 1 3
+@text Izumi ill-tempered (dawn colors) DispCHA 0, "iz05da", CHR_D, CHR_L Izumi ill-tempered (afternoon colors) DispCHA 1, "iz05da", CHR_A, CHR_R
+fgload 1 00000000 iz06da 1 3
+@text Izumi ill-tempered (night colors) DispCHA 0, "iz05da", CHR_N, CHR_L Izumi dubious (dawn colors) DispCHA 1, "iz06da", CHR_D, CHR_R
+fgload 1 00000000 iz06da 1 3
+@text Izumi dubious (afternoon colors) DispCHA 0, "iz06da", CHR_A, CHR_L Izumi dubious (night colors) DispCHA 1, "iz06da", CHR_N, CHR_R
+fgload 1 00000000 iz07da 1 3
+@text Izumi laugh (dawn colors) DispCHA 0, "iz07da", CHR_D, CHR_L Izumi laugh (afternoon colors) DispCHA 1, "iz07da", CHR_A, CHR_R
+fgload 1 00000000 iz08da 1 3
+@text Izumi laugh (night colors) DispCHA 0, "iz07da", CHR_N, CHR_L Izumi sadness (dawn colors) DispCHA 1, "iz08da", CHR_D, CHR_R
+fgload 1 00000000 iz08da 1 3
+@text Izumi sadness (afternoon colors) DispCHA 0, "iz08da", CHR_A, CHR_L Izumi sadness (night colors) DispCHA 1, "iz08da", CHR_N, CHR_R
+fgload 1 00000000 iz09da 1 3
+@text Izumi crying (dawn colors) DispCHA 0, "iz09da", CHR_D, CHR_L Izumi crying (afternoon colors) DispCHA 1, "iz09da", CHR_A, CHR_R
+fgload 1 00000000 iz10da 1 3
+@text Izumi crying (night colors) DispCHA 0, "iz09da", CHR_N, CHR_L Izumi shocked (dawn colors) DispCHA 1, "iz10da", CHR_D, CHR_R
+fgload 1 00000000 iz10da 1 3
+@text Izumi shocked (afternoon colors) DispCHA 0, "iz10da", CHR_A, CHR_L Izumi shocked (night colors) DispCHA 1, "iz10da", CHR_N, CHR_R
+fgload 1 00000000 iz11da 1 3
+@text Izumi surprised (dawn colors) DispCHA 0, "iz11da", CHR_D, CHR_L Izumi surprised (afternoon colors) DispCHA 1, "iz11da", CHR_A, CHR_R
+fgload 1 00000000 iz12da 1 3
+@text Izumi surprised (night colors) DispCHA 0, "iz11da", CHR_N, CHR_L Izumi laugh_2 (dawn colors) DispCHA 1, "iz12da", CHR_D, CHR_R
+fgload 1 00000000 iz12da 1 3
+@text Izumi laugh_2 (afternoon colors) DispCHA 0, "iz12da", CHR_A, CHR_L Izumi laugh_2 (night colors) DispCHA 1, "iz12da", CHR_N, CHR_R
+@goto ap_izumi
+@label ap_izumi_s_close
+fgload 0 00000000 iz01db 1 3
+fgload 1 00000000 iz01db 1 3
+@text Izumi normal (dawn colors) DispCHA 0, "iz01db", CHR_D, CHR_L Izumi normal (afternoon colors) DispCHA 1, "iz01db", CHR_A, CHR_R
+fgload 1 00000000 iz02db 1 3
+@text Izumi normal (night colors) DispCHA 0, "iz01db", CHR_N, CHR_L Izumi smiling (dawn colors) DispCHA 1, "iz02db", CHR_D, CHR_R
+fgload 1 00000000 iz02db 1 3
+@text Izumi smiling (afternoon colors) DispCHA 0, "iz02db", CHR_A, CHR_L Izumi smiling (night colors) DispCHA 1, "iz02db", CHR_N, CHR_R
+fgload 1 00000000 iz03db 1 3
+@text Izumi embarrassed (dawn colors) DispCHA 0, "iz03db", CHR_D, CHR_L Izumi embarrassed (afternoon colors) DispCHA 1, "iz03db", CHR_A, CHR_R
+fgload 1 00000000 iz04db 1 3
+@text Izumi embarrassed (night colors) DispCHA 0, "iz03db", CHR_N, CHR_L Izumi angry (dawn colors) DispCHA 1, "iz04db", CHR_D, CHR_R
+fgload 1 00000000 iz04db 1 3
+@text Izumi angry (afternoon colors) DispCHA 0, "iz04db", CHR_A, CHR_L Izumi angry (night colors) DispCHA 1, "iz04db", CHR_N, CHR_R
+fgload 1 00000000 iz05db 1 3
+@text Izumi ill-tempered (dawn colors) DispCHA 0, "iz05db", CHR_D, CHR_L Izumi ill-tempered (afternoon colors) DispCHA 1, "iz05db", CHR_A, CHR_R
+fgload 1 00000000 iz06db 1 3
+@text Izumi ill-tempered (night colors) DispCHA 0, "iz05db", CHR_N, CHR_L Izumi dubious (dawn colors) DispCHA 1, "iz06db", CHR_D, CHR_R
+fgload 1 00000000 iz06db 1 3
+@text Izumi dubious (afternoon colors) DispCHA 0, "iz06db", CHR_A, CHR_L Izumi dubious (night colors) DispCHA 1, "iz06db", CHR_N, CHR_R
+fgload 1 00000000 iz07db 1 3
+@text Izumi laugh (dawn colors) DispCHA 0, "iz07db", CHR_D, CHR_L Izumi laugh (afternoon colors) DispCHA 1, "iz07db", CHR_A, CHR_R
+fgload 1 00000000 iz08db 1 3
+@text Izumi laugh (night colors) DispCHA 0, "iz07db", CHR_N, CHR_L Izumi sadness (dawn colors) DispCHA 1, "iz08db", CHR_D, CHR_R
+fgload 1 00000000 iz08db 1 3
+@text Izumi sadness (afternoon colors) DispCHA 0, "iz08db", CHR_A, CHR_L Izumi sadness (night colors) DispCHA 1, "iz08db", CHR_N, CHR_R
+fgload 1 00000000 iz09db 1 3
+@text Izumi crying (dawn colors) DispCHA 0, "iz09db", CHR_D, CHR_L Izumi crying (afternoon colors) DispCHA 1, "iz09db", CHR_A, CHR_R
+fgload 1 00000000 iz10db 1 3
+@text Izumi crying (night colors) DispCHA 0, "iz09db", CHR_N, CHR_L Izumi shocked (dawn colors) DispCHA 1, "iz10db", CHR_D, CHR_R
+fgload 1 00000000 iz10db 1 3
+@text Izumi shocked (afternoon colors) DispCHA 0, "iz10db", CHR_A, CHR_L Izumi shocked (night colors) DispCHA 1, "iz10db", CHR_N, CHR_R
+fgload 1 00000000 iz11db 1 3
+@text Izumi surprised (dawn colors) DispCHA 0, "iz11db", CHR_D, CHR_L Izumi surprised (afternoon colors) DispCHA 1, "iz11db", CHR_A, CHR_R
+fgload 1 00000000 iz12db 1 3
+@text Izumi surprised (night colors) DispCHA 0, "iz11db", CHR_N, CHR_L Izumi laugh_2 (dawn colors) DispCHA 1, "iz12db", CHR_D, CHR_R
+fgload 1 00000000 iz12db 1 3
+@text Izumi laugh_2 (afternoon colors) DispCHA 0, "iz12db", CHR_A, CHR_L Izumi laugh_2 (night colors) DispCHA 1, "iz12db", CHR_N, CHR_R
+@goto ap_izumi
+@label ap_kurumi_1_far
+fgload 0 00000000 ku01aa 1 3
+fgload 1 00000000 ku01aa 1 3
+@text Kurumi normal (dawn colors) DispCHA 0, "ku01aa", CHR_D, CHR_L Kurumi normal (afternoon colors) DispCHA 1, "ku01aa", CHR_A, CHR_R
+fgload 1 00000000 ku02aa 1 3
+@text Kurumi normal (night colors) DispCHA 0, "ku01aa", CHR_N, CHR_L Kurumi smiling (dawn colors) DispCHA 1, "ku02aa", CHR_D, CHR_R
+fgload 1 00000000 ku02aa 1 3
+@text Kurumi smiling (afternoon colors) DispCHA 0, "ku02aa", CHR_A, CHR_L Kurumi smiling (night colors) DispCHA 1, "ku02aa", CHR_N, CHR_R
+fgload 1 00000000 ku03aa 1 3
+@text Kurumi embarrassed (dawn colors) DispCHA 0, "ku03aa", CHR_D, CHR_L Kurumi embarrassed (afternoon colors) DispCHA 1, "ku03aa", CHR_A, CHR_R
+fgload 1 00000000 ku04aa 1 3
+@text Kurumi embarrassed (night colors) DispCHA 0, "ku03aa", CHR_N, CHR_L Kurumi angry (dawn colors) DispCHA 1, "ku04aa", CHR_D, CHR_R
+fgload 1 00000000 ku04aa 1 3
+@text Kurumi angry (afternoon colors) DispCHA 0, "ku04aa", CHR_A, CHR_L Kurumi angry (night colors) DispCHA 1, "ku04aa", CHR_N, CHR_R
+fgload 1 00000000 ku05aa 1 3
+@text Kurumi ill-tempered (dawn colors) DispCHA 0, "ku05aa", CHR_D, CHR_L Kurumi ill-tempered (afternoon colors) DispCHA 1, "ku05aa", CHR_A, CHR_R
+fgload 1 00000000 ku06aa 1 3
+@text Kurumi ill-tempered (night colors) DispCHA 0, "ku05aa", CHR_N, CHR_L Kurumi dubious (dawn colors) DispCHA 1, "ku06aa", CHR_D, CHR_R
+fgload 1 00000000 ku06aa 1 3
+@text Kurumi dubious (afternoon colors) DispCHA 0, "ku06aa", CHR_A, CHR_L Kurumi dubious (night colors) DispCHA 1, "ku06aa", CHR_N, CHR_R
+fgload 1 00000000 ku07aa 1 3
+@text Kurumi laugh (dawn colors) DispCHA 0, "ku07aa", CHR_D, CHR_L Kurumi laugh (afternoon colors) DispCHA 1, "ku07aa", CHR_A, CHR_R
+fgload 1 00000000 ku08aa 1 3
+@text Kurumi laugh (night colors) DispCHA 0, "ku07aa", CHR_N, CHR_L Kurumi sadness (dawn colors) DispCHA 1, "ku08aa", CHR_D, CHR_R
+fgload 1 00000000 ku08aa 1 3
+@text Kurumi sadness (afternoon colors) DispCHA 0, "ku08aa", CHR_A, CHR_L Kurumi sadness (night colors) DispCHA 1, "ku08aa", CHR_N, CHR_R
+fgload 1 00000000 ku09aa 1 3
+@text Kurumi crying (dawn colors) DispCHA 0, "ku09aa", CHR_D, CHR_L Kurumi crying (afternoon colors) DispCHA 1, "ku09aa", CHR_A, CHR_R
+fgload 1 00000000 ku10aa 1 3
+@text Kurumi crying (night colors) DispCHA 0, "ku09aa", CHR_N, CHR_L Kurumi shocked (dawn colors) DispCHA 1, "ku10aa", CHR_D, CHR_R
+fgload 1 00000000 ku10aa 1 3
+@text Kurumi shocked (afternoon colors) DispCHA 0, "ku10aa", CHR_A, CHR_L Kurumi shocked (night colors) DispCHA 1, "ku10aa", CHR_N, CHR_R
+fgload 1 00000000 ku11aa 1 3
+@text Kurumi surprised (dawn colors) DispCHA 0, "ku11aa", CHR_D, CHR_L Kurumi surprised (afternoon colors) DispCHA 1, "ku11aa", CHR_A, CHR_R
+fgload 1 00000000 ku12aa 1 3
+@text Kurumi surprised (night colors) DispCHA 0, "ku11aa", CHR_N, CHR_L Kurumi favor (dawn colors) DispCHA 1, "ku12aa", CHR_D, CHR_R
+fgload 1 00000000 ku12aa 1 3
+@text Kurumi favor (afternoon colors) DispCHA 0, "ku12aa", CHR_A, CHR_L Kurumi favor (night colors) DispCHA 1, "ku12aa", CHR_N, CHR_R
+@goto ap_kurumi
+@label ap_kurumi_1_close
+fgload 0 00000000 ku01ab 1 3
+fgload 1 00000000 ku01ab 1 3
+@text Kurumi normal (dawn colors) DispCHA 0, "ku01ab", CHR_D, CHR_L Kurumi normal (afternoon colors) DispCHA 1, "ku01ab", CHR_A, CHR_R
+fgload 1 00000000 ku02ab 1 3
+@text Kurumi normal (night colors) DispCHA 0, "ku01ab", CHR_N, CHR_L Kurumi smiling (dawn colors) DispCHA 1, "ku02ab", CHR_D, CHR_R
+fgload 1 00000000 ku02ab 1 3
+@text Kurumi smiling (afternoon colors) DispCHA 0, "ku02ab", CHR_A, CHR_L Kurumi smiling (night colors) DispCHA 1, "ku02ab", CHR_N, CHR_R
+fgload 1 00000000 ku03ab 1 3
+@text Kurumi embarrassed (dawn colors) DispCHA 0, "ku03ab", CHR_D, CHR_L Kurumi embarrassed (afternoon colors) DispCHA 1, "ku03ab", CHR_A, CHR_R
+fgload 1 00000000 ku04ab 1 3
+@text Kurumi embarrassed (night colors) DispCHA 0, "ku03ab", CHR_N, CHR_L Kurumi angry (dawn colors) DispCHA 1, "ku04ab", CHR_D, CHR_R
+fgload 1 00000000 ku04ab 1 3
+@text Kurumi angry (afternoon colors) DispCHA 0, "ku04ab", CHR_A, CHR_L Kurumi angry (night colors) DispCHA 1, "ku04ab", CHR_N, CHR_R
+fgload 1 00000000 ku05ab 1 3
+@text Kurumi ill-tempered (dawn colors) DispCHA 0, "ku05ab", CHR_D, CHR_L Kurumi ill-tempered (afternoon colors) DispCHA 1, "ku05ab", CHR_A, CHR_R
+fgload 1 00000000 ku06ab 1 3
+@text Kurumi ill-tempered (night colors) DispCHA 0, "ku05ab", CHR_N, CHR_L Kurumi dubious (dawn colors) DispCHA 1, "ku06ab", CHR_D, CHR_R
+fgload 1 00000000 ku06ab 1 3
+@text Kurumi dubious (afternoon colors) DispCHA 0, "ku06ab", CHR_A, CHR_L Kurumi dubious (night colors) DispCHA 1, "ku06ab", CHR_N, CHR_R
+fgload 1 00000000 ku07ab 1 3
+@text Kurumi laugh (dawn colors) DispCHA 0, "ku07ab", CHR_D, CHR_L Kurumi laugh (afternoon colors) DispCHA 1, "ku07ab", CHR_A, CHR_R
+fgload 1 00000000 ku08ab 1 3
+@text Kurumi laugh (night colors) DispCHA 0, "ku07ab", CHR_N, CHR_L Kurumi sadness (dawn colors) DispCHA 1, "ku08ab", CHR_D, CHR_R
+fgload 1 00000000 ku08ab 1 3
+@text Kurumi sadness (afternoon colors) DispCHA 0, "ku08ab", CHR_A, CHR_L Kurumi sadness (night colors) DispCHA 1, "ku08ab", CHR_N, CHR_R
+fgload 1 00000000 ku09ab 1 3
+@text Kurumi crying (dawn colors) DispCHA 0, "ku09ab", CHR_D, CHR_L Kurumi crying (afternoon colors) DispCHA 1, "ku09ab", CHR_A, CHR_R
+fgload 1 00000000 ku10ab 1 3
+@text Kurumi crying (night colors) DispCHA 0, "ku09ab", CHR_N, CHR_L Kurumi shocked (dawn colors) DispCHA 1, "ku10ab", CHR_D, CHR_R
+fgload 1 00000000 ku10ab 1 3
+@text Kurumi shocked (afternoon colors) DispCHA 0, "ku10ab", CHR_A, CHR_L Kurumi shocked (night colors) DispCHA 1, "ku10ab", CHR_N, CHR_R
+fgload 1 00000000 ku11ab 1 3
+@text Kurumi surprised (dawn colors) DispCHA 0, "ku11ab", CHR_D, CHR_L Kurumi surprised (afternoon colors) DispCHA 1, "ku11ab", CHR_A, CHR_R
+fgload 1 00000000 ku12ab 1 3
+@text Kurumi surprised (night colors) DispCHA 0, "ku11ab", CHR_N, CHR_L Kurumi favor (dawn colors) DispCHA 1, "ku12ab", CHR_D, CHR_R
+fgload 1 00000000 ku12ab 1 3
+@text Kurumi favor (afternoon colors) DispCHA 0, "ku12ab", CHR_A, CHR_L Kurumi favor (night colors) DispCHA 1, "ku12ab", CHR_N, CHR_R
+@goto ap_kurumi
+@label ap_kurumi_2_far
+fgload 0 00000000 ku01ba 1 3
+fgload 1 00000000 ku01ba 1 3
+@text Kurumi normal (dawn colors) DispCHA 0, "ku01ba", CHR_D, CHR_L Kurumi normal (afternoon colors) DispCHA 1, "ku01ba", CHR_A, CHR_R
+fgload 1 00000000 ku02ba 1 3
+@text Kurumi normal (night colors) DispCHA 0, "ku01ba", CHR_N, CHR_L Kurumi smiling (dawn colors) DispCHA 1, "ku02ba", CHR_D, CHR_R
+fgload 1 00000000 ku02ba 1 3
+@text Kurumi smiling (afternoon colors) DispCHA 0, "ku02ba", CHR_A, CHR_L Kurumi smiling (night colors) DispCHA 1, "ku02ba", CHR_N, CHR_R
+fgload 1 00000000 ku03ba 1 3
+@text Kurumi embarrassed (dawn colors) DispCHA 0, "ku03ba", CHR_D, CHR_L Kurumi embarrassed (afternoon colors) DispCHA 1, "ku03ba", CHR_A, CHR_R
+fgload 1 00000000 ku04ba 1 3
+@text Kurumi embarrassed (night colors) DispCHA 0, "ku03ba", CHR_N, CHR_L Kurumi angry (dawn colors) DispCHA 1, "ku04ba", CHR_D, CHR_R
+fgload 1 00000000 ku04ba 1 3
+@text Kurumi angry (afternoon colors) DispCHA 0, "ku04ba", CHR_A, CHR_L Kurumi angry (night colors) DispCHA 1, "ku04ba", CHR_N, CHR_R
+fgload 1 00000000 ku05ba 1 3
+@text Kurumi ill-tempered (dawn colors) DispCHA 0, "ku05ba", CHR_D, CHR_L Kurumi ill-tempered (afternoon colors) DispCHA 1, "ku05ba", CHR_A, CHR_R
+fgload 1 00000000 ku06ba 1 3
+@text Kurumi ill-tempered (night colors) DispCHA 0, "ku05ba", CHR_N, CHR_L Kurumi dubious (dawn colors) DispCHA 1, "ku06ba", CHR_D, CHR_R
+fgload 1 00000000 ku06ba 1 3
+@text Kurumi dubious (afternoon colors) DispCHA 0, "ku06ba", CHR_A, CHR_L Kurumi dubious (night colors) DispCHA 1, "ku06ba", CHR_N, CHR_R
+fgload 1 00000000 ku07ba 1 3
+@text Kurumi laugh (dawn colors) DispCHA 0, "ku07ba", CHR_D, CHR_L Kurumi laugh (afternoon colors) DispCHA 1, "ku07ba", CHR_A, CHR_R
+fgload 1 00000000 ku08ba 1 3
+@text Kurumi laugh (night colors) DispCHA 0, "ku07ba", CHR_N, CHR_L Kurumi sadness (dawn colors) DispCHA 1, "ku08ba", CHR_D, CHR_R
+fgload 1 00000000 ku08ba 1 3
+@text Kurumi sadness (afternoon colors) DispCHA 0, "ku08ba", CHR_A, CHR_L Kurumi sadness (night colors) DispCHA 1, "ku08ba", CHR_N, CHR_R
+fgload 1 00000000 ku09ba 1 3
+@text Kurumi crying (dawn colors) DispCHA 0, "ku09ba", CHR_D, CHR_L Kurumi crying (afternoon colors) DispCHA 1, "ku09ba", CHR_A, CHR_R
+fgload 1 00000000 ku10ba 1 3
+@text Kurumi crying (night colors) DispCHA 0, "ku09ba", CHR_N, CHR_L Kurumi shocked (dawn colors) DispCHA 1, "ku10ba", CHR_D, CHR_R
+fgload 1 00000000 ku10ba 1 3
+@text Kurumi shocked (afternoon colors) DispCHA 0, "ku10ba", CHR_A, CHR_L Kurumi shocked (night colors) DispCHA 1, "ku10ba", CHR_N, CHR_R
+fgload 1 00000000 ku11ba 1 3
+@text Kurumi surprised (dawn colors) DispCHA 0, "ku11ba", CHR_D, CHR_L Kurumi surprised (afternoon colors) DispCHA 1, "ku11ba", CHR_A, CHR_R
+fgload 1 00000000 ku12ba 1 3
+@text Kurumi surprised (night colors) DispCHA 0, "ku11ba", CHR_N, CHR_L Kurumi favor (dawn colors) DispCHA 1, "ku12ba", CHR_D, CHR_R
+fgload 1 00000000 ku12ba 1 3
+@text Kurumi favor (afternoon colors) DispCHA 0, "ku12ba", CHR_A, CHR_L Kurumi favor (night colors) DispCHA 1, "ku12ba", CHR_N, CHR_R
+@goto ap_kurumi
+@label ap_kurumi_2_close
+fgload 0 00000000 ku01bb 1 3
+fgload 1 00000000 ku01bb 1 3
+@text Kurumi normal (dawn colors) DispCHA 0, "ku01bb", CHR_D, CHR_L Kurumi normal (afternoon colors) DispCHA 1, "ku01bb", CHR_A, CHR_R
+fgload 1 00000000 ku02bb 1 3
+@text Kurumi normal (night colors) DispCHA 0, "ku01bb", CHR_N, CHR_L Kurumi smiling (dawn colors) DispCHA 1, "ku02bb", CHR_D, CHR_R
+fgload 1 00000000 ku02bb 1 3
+@text Kurumi smiling (afternoon colors) DispCHA 0, "ku02bb", CHR_A, CHR_L Kurumi smiling (night colors) DispCHA 1, "ku02bb", CHR_N, CHR_R
+fgload 1 00000000 ku03bb 1 3
+@text Kurumi embarrassed (dawn colors) DispCHA 0, "ku03bb", CHR_D, CHR_L Kurumi embarrassed (afternoon colors) DispCHA 1, "ku03bb", CHR_A, CHR_R
+fgload 1 00000000 ku04bb 1 3
+@text Kurumi embarrassed (night colors) DispCHA 0, "ku03bb", CHR_N, CHR_L Kurumi angry (dawn colors) DispCHA 1, "ku04bb", CHR_D, CHR_R
+fgload 1 00000000 ku04bb 1 3
+@text Kurumi angry (afternoon colors) DispCHA 0, "ku04bb", CHR_A, CHR_L Kurumi angry (night colors) DispCHA 1, "ku04bb", CHR_N, CHR_R
+fgload 1 00000000 ku05bb 1 3
+@text Kurumi ill-tempered (dawn colors) DispCHA 0, "ku05bb", CHR_D, CHR_L Kurumi ill-tempered (afternoon colors) DispCHA 1, "ku05bb", CHR_A, CHR_R
+fgload 1 00000000 ku06bb 1 3
+@text Kurumi ill-tempered (night colors) DispCHA 0, "ku05bb", CHR_N, CHR_L Kurumi dubious (dawn colors) DispCHA 1, "ku06bb", CHR_D, CHR_R
+fgload 1 00000000 ku06bb 1 3
+@text Kurumi dubious (afternoon colors) DispCHA 0, "ku06bb", CHR_A, CHR_L Kurumi dubious (night colors) DispCHA 1, "ku06bb", CHR_N, CHR_R
+fgload 1 00000000 ku07bb 1 3
+@text Kurumi laugh (dawn colors) DispCHA 0, "ku07bb", CHR_D, CHR_L Kurumi laugh (afternoon colors) DispCHA 1, "ku07bb", CHR_A, CHR_R
+fgload 1 00000000 ku08bb 1 3
+@text Kurumi laugh (night colors) DispCHA 0, "ku07bb", CHR_N, CHR_L Kurumi sadness (dawn colors) DispCHA 1, "ku08bb", CHR_D, CHR_R
+fgload 1 00000000 ku08bb 1 3
+@text Kurumi sadness (afternoon colors) DispCHA 0, "ku08bb", CHR_A, CHR_L Kurumi sadness (night colors) DispCHA 1, "ku08bb", CHR_N, CHR_R
+fgload 1 00000000 ku09bb 1 3
+@text Kurumi crying (dawn colors) DispCHA 0, "ku09bb", CHR_D, CHR_L Kurumi crying (afternoon colors) DispCHA 1, "ku09bb", CHR_A, CHR_R
+fgload 1 00000000 ku10bb 1 3
+@text Kurumi crying (night colors) DispCHA 0, "ku09bb", CHR_N, CHR_L Kurumi shocked (dawn colors) DispCHA 1, "ku10bb", CHR_D, CHR_R
+fgload 1 00000000 ku10bb 1 3
+@text Kurumi shocked (afternoon colors) DispCHA 0, "ku10bb", CHR_A, CHR_L Kurumi shocked (night colors) DispCHA 1, "ku10bb", CHR_N, CHR_R
+fgload 1 00000000 ku11bb 1 3
+@text Kurumi surprised (dawn colors) DispCHA 0, "ku11bb", CHR_D, CHR_L Kurumi surprised (afternoon colors) DispCHA 1, "ku11bb", CHR_A, CHR_R
+fgload 1 00000000 ku12bb 1 3
+@text Kurumi surprised (night colors) DispCHA 0, "ku11bb", CHR_N, CHR_L Kurumi favor (dawn colors) DispCHA 1, "ku12bb", CHR_D, CHR_R
+fgload 1 00000000 ku12bb 1 3
+@text Kurumi favor (afternoon colors) DispCHA 0, "ku12bb", CHR_A, CHR_L Kurumi favor (night colors) DispCHA 1, "ku12bb", CHR_N, CHR_R
+@goto ap_kurumi
+@label ap_saki_1_far
+fgload 0 00000000 sa01aa 1 3
+fgload 1 00000000 sa01aa 1 3
+@text Saki normal (dawn colors) DispCHA 0, "sa01aa", CHR_D, CHR_L Saki normal (afternoon colors) DispCHA 1, "sa01aa", CHR_A, CHR_R
+fgload 1 00000000 sa02aa 1 3
+@text Saki normal (night colors) DispCHA 0, "sa01aa", CHR_N, CHR_L Saki smiling (dawn colors) DispCHA 1, "sa02aa", CHR_D, CHR_R
+fgload 1 00000000 sa02aa 1 3
+@text Saki smiling (afternoon colors) DispCHA 0, "sa02aa", CHR_A, CHR_L Saki smiling (night colors) DispCHA 1, "sa02aa", CHR_N, CHR_R
+fgload 1 00000000 sa03aa 1 3
+@text Saki embarrassed (dawn colors) DispCHA 0, "sa03aa", CHR_D, CHR_L Saki embarrassed (afternoon colors) DispCHA 1, "sa03aa", CHR_A, CHR_R
+fgload 1 00000000 sa04aa 1 3
+@text Saki embarrassed (night colors) DispCHA 0, "sa03aa", CHR_N, CHR_L Saki angry (dawn colors) DispCHA 1, "sa04aa", CHR_D, CHR_R
+fgload 1 00000000 sa04aa 1 3
+@text Saki angry (afternoon colors) DispCHA 0, "sa04aa", CHR_A, CHR_L Saki angry (night colors) DispCHA 1, "sa04aa", CHR_N, CHR_R
+fgload 1 00000000 sa05aa 1 3
+@text Saki ill-tempered (dawn colors) DispCHA 0, "sa05aa", CHR_D, CHR_L Saki ill-tempered (afternoon colors) DispCHA 1, "sa05aa", CHR_A, CHR_R
+fgload 1 00000000 sa06aa 1 3
+@text Saki ill-tempered (night colors) DispCHA 0, "sa05aa", CHR_N, CHR_L Saki dubious (dawn colors) DispCHA 1, "sa06aa", CHR_D, CHR_R
+fgload 1 00000000 sa06aa 1 3
+@text Saki dubious (afternoon colors) DispCHA 0, "sa06aa", CHR_A, CHR_L Saki dubious (night colors) DispCHA 1, "sa06aa", CHR_N, CHR_R
+fgload 1 00000000 sa07aa 1 3
+@text Saki laugh (dawn colors) DispCHA 0, "sa07aa", CHR_D, CHR_L Saki laugh (afternoon colors) DispCHA 1, "sa07aa", CHR_A, CHR_R
+fgload 1 00000000 sa08aa 1 3
+@text Saki laugh (night colors) DispCHA 0, "sa07aa", CHR_N, CHR_L Saki sadness (dawn colors) DispCHA 1, "sa08aa", CHR_D, CHR_R
+fgload 1 00000000 sa08aa 1 3
+@text Saki sadness (afternoon colors) DispCHA 0, "sa08aa", CHR_A, CHR_L Saki sadness (night colors) DispCHA 1, "sa08aa", CHR_N, CHR_R
+fgload 1 00000000 sa09aa 1 3
+@text Saki crying (dawn colors) DispCHA 0, "sa09aa", CHR_D, CHR_L Saki crying (afternoon colors) DispCHA 1, "sa09aa", CHR_A, CHR_R
+fgload 1 00000000 sa10aa 1 3
+@text Saki crying (night colors) DispCHA 0, "sa09aa", CHR_N, CHR_L Saki shocked (dawn colors) DispCHA 1, "sa10aa", CHR_D, CHR_R
+fgload 1 00000000 sa10aa 1 3
+@text Saki shocked (afternoon colors) DispCHA 0, "sa10aa", CHR_A, CHR_L Saki shocked (night colors) DispCHA 1, "sa10aa", CHR_N, CHR_R
+fgload 1 00000000 sa11aa 1 3
+@text Saki surprised (dawn colors) DispCHA 0, "sa11aa", CHR_D, CHR_L Saki surprised (afternoon colors) DispCHA 1, "sa11aa", CHR_A, CHR_R
+fgload 1 00000000 sa12aa 1 3
+@text Saki surprised (night colors) DispCHA 0, "sa11aa", CHR_N, CHR_L Saki provocation (dawn colors) DispCHA 1, "sa12aa", CHR_D, CHR_R
+fgload 1 00000000 sa12aa 1 3
+@text Saki provocation (afternoon colors) DispCHA 0, "sa12aa", CHR_A, CHR_L Saki provocation (night colors) DispCHA 1, "sa12aa", CHR_N, CHR_R
+@goto ap_saki
+@label ap_saki_1_close
+fgload 0 00000000 sa01ab 1 3
+fgload 1 00000000 sa01ab 1 3
+@text Saki normal (dawn colors) DispCHA 0, "sa01ab", CHR_D, CHR_L Saki normal (afternoon colors) DispCHA 1, "sa01ab", CHR_A, CHR_R
+fgload 1 00000000 sa02ab 1 3
+@text Saki normal (night colors) DispCHA 0, "sa01ab", CHR_N, CHR_L Saki smiling (dawn colors) DispCHA 1, "sa02ab", CHR_D, CHR_R
+fgload 1 00000000 sa02ab 1 3
+@text Saki smiling (afternoon colors) DispCHA 0, "sa02ab", CHR_A, CHR_L Saki smiling (night colors) DispCHA 1, "sa02ab", CHR_N, CHR_R
+fgload 1 00000000 sa03ab 1 3
+@text Saki embarrassed (dawn colors) DispCHA 0, "sa03ab", CHR_D, CHR_L Saki embarrassed (afternoon colors) DispCHA 1, "sa03ab", CHR_A, CHR_R
+fgload 1 00000000 sa04ab 1 3
+@text Saki embarrassed (night colors) DispCHA 0, "sa03ab", CHR_N, CHR_L Saki angry (dawn colors) DispCHA 1, "sa04ab", CHR_D, CHR_R
+fgload 1 00000000 sa04ab 1 3
+@text Saki angry (afternoon colors) DispCHA 0, "sa04ab", CHR_A, CHR_L Saki angry (night colors) DispCHA 1, "sa04ab", CHR_N, CHR_R
+fgload 1 00000000 sa05ab 1 3
+@text Saki ill-tempered (dawn colors) DispCHA 0, "sa05ab", CHR_D, CHR_L Saki ill-tempered (afternoon colors) DispCHA 1, "sa05ab", CHR_A, CHR_R
+fgload 1 00000000 sa06ab 1 3
+@text Saki ill-tempered (night colors) DispCHA 0, "sa05ab", CHR_N, CHR_L Saki dubious (dawn colors) DispCHA 1, "sa06ab", CHR_D, CHR_R
+fgload 1 00000000 sa06ab 1 3
+@text Saki dubious (afternoon colors) DispCHA 0, "sa06ab", CHR_A, CHR_L Saki dubious (night colors) DispCHA 1, "sa06ab", CHR_N, CHR_R
+fgload 1 00000000 sa07ab 1 3
+@text Saki laugh (dawn colors) DispCHA 0, "sa07ab", CHR_D, CHR_L Saki laugh (afternoon colors) DispCHA 1, "sa07ab", CHR_A, CHR_R
+fgload 1 00000000 sa08ab 1 3
+@text Saki laugh (night colors) DispCHA 0, "sa07ab", CHR_N, CHR_L Saki sadness (dawn colors) DispCHA 1, "sa08ab", CHR_D, CHR_R
+fgload 1 00000000 sa08ab 1 3
+@text Saki sadness (afternoon colors) DispCHA 0, "sa08ab", CHR_A, CHR_L Saki sadness (night colors) DispCHA 1, "sa08ab", CHR_N, CHR_R
+fgload 1 00000000 sa09ab 1 3
+@text Saki crying (dawn colors) DispCHA 0, "sa09ab", CHR_D, CHR_L Saki crying (afternoon colors) DispCHA 1, "sa09ab", CHR_A, CHR_R
+fgload 1 00000000 sa10ab 1 3
+@text Saki crying (night colors) DispCHA 0, "sa09ab", CHR_N, CHR_L Saki shocked (dawn colors) DispCHA 1, "sa10ab", CHR_D, CHR_R
+fgload 1 00000000 sa10ab 1 3
+@text Saki shocked (afternoon colors) DispCHA 0, "sa10ab", CHR_A, CHR_L Saki shocked (night colors) DispCHA 1, "sa10ab", CHR_N, CHR_R
+fgload 1 00000000 sa11ab 1 3
+@text Saki surprised (dawn colors) DispCHA 0, "sa11ab", CHR_D, CHR_L Saki surprised (afternoon colors) DispCHA 1, "sa11ab", CHR_A, CHR_R
+fgload 1 00000000 sa12ab 1 3
+@text Saki surprised (night colors) DispCHA 0, "sa11ab", CHR_N, CHR_L Saki provocation (dawn colors) DispCHA 1, "sa12ab", CHR_D, CHR_R
+fgload 1 00000000 sa12ab 1 3
+@text Saki provocation (afternoon colors) DispCHA 0, "sa12ab", CHR_A, CHR_L Saki provocation (night colors) DispCHA 1, "sa12ab", CHR_N, CHR_R
+@goto ap_saki
+@label ap_saki_2_far
+fgload 0 00000000 sa01ba 1 3
+fgload 1 00000000 sa01ba 1 3
+@text Saki normal (dawn colors) DispCHA 0, "sa01ba", CHR_D, CHR_L Saki normal (afternoon colors) DispCHA 1, "sa01ba", CHR_A, CHR_R
+fgload 1 00000000 sa02ba 1 3
+@text Saki normal (night colors) DispCHA 0, "sa01ba", CHR_N, CHR_L Saki smiling (dawn colors) DispCHA 1, "sa02ba", CHR_D, CHR_R
+fgload 1 00000000 sa02ba 1 3
+@text Saki smiling (afternoon colors) DispCHA 0, "sa02ba", CHR_A, CHR_L Saki smiling (night colors) DispCHA 1, "sa02ba", CHR_N, CHR_R
+fgload 1 00000000 sa03ba 1 3
+@text Saki embarrassed (dawn colors) DispCHA 0, "sa03ba", CHR_D, CHR_L Saki embarrassed (afternoon colors) DispCHA 1, "sa03ba", CHR_A, CHR_R
+fgload 1 00000000 sa04ba 1 3
+@text Saki embarrassed (night colors) DispCHA 0, "sa03ba", CHR_N, CHR_L Saki angry (dawn colors) DispCHA 1, "sa04ba", CHR_D, CHR_R
+fgload 1 00000000 sa04ba 1 3
+@text Saki angry (afternoon colors) DispCHA 0, "sa04ba", CHR_A, CHR_L Saki angry (night colors) DispCHA 1, "sa04ba", CHR_N, CHR_R
+fgload 1 00000000 sa05ba 1 3
+@text Saki ill-tempered (dawn colors) DispCHA 0, "sa05ba", CHR_D, CHR_L Saki ill-tempered (afternoon colors) DispCHA 1, "sa05ba", CHR_A, CHR_R
+fgload 1 00000000 sa06ba 1 3
+@text Saki ill-tempered (night colors) DispCHA 0, "sa05ba", CHR_N, CHR_L Saki dubious (dawn colors) DispCHA 1, "sa06ba", CHR_D, CHR_R
+fgload 1 00000000 sa06ba 1 3
+@text Saki dubious (afternoon colors) DispCHA 0, "sa06ba", CHR_A, CHR_L Saki dubious (night colors) DispCHA 1, "sa06ba", CHR_N, CHR_R
+fgload 1 00000000 sa07ba 1 3
+@text Saki laugh (dawn colors) DispCHA 0, "sa07ba", CHR_D, CHR_L Saki laugh (afternoon colors) DispCHA 1, "sa07ba", CHR_A, CHR_R
+fgload 1 00000000 sa08ba 1 3
+@text Saki laugh (night colors) DispCHA 0, "sa07ba", CHR_N, CHR_L Saki sadness (dawn colors) DispCHA 1, "sa08ba", CHR_D, CHR_R
+fgload 1 00000000 sa08ba 1 3
+@text Saki sadness (afternoon colors) DispCHA 0, "sa08ba", CHR_A, CHR_L Saki sadness (night colors) DispCHA 1, "sa08ba", CHR_N, CHR_R
+fgload 1 00000000 sa09ba 1 3
+@text Saki crying (dawn colors) DispCHA 0, "sa09ba", CHR_D, CHR_L Saki crying (afternoon colors) DispCHA 1, "sa09ba", CHR_A, CHR_R
+fgload 1 00000000 sa10ba 1 3
+@text Saki crying (night colors) DispCHA 0, "sa09ba", CHR_N, CHR_L Saki shocked (dawn colors) DispCHA 1, "sa10ba", CHR_D, CHR_R
+fgload 1 00000000 sa10ba 1 3
+@text Saki shocked (afternoon colors) DispCHA 0, "sa10ba", CHR_A, CHR_L Saki shocked (night colors) DispCHA 1, "sa10ba", CHR_N, CHR_R
+fgload 1 00000000 sa11ba 1 3
+@text Saki surprised (dawn colors) DispCHA 0, "sa11ba", CHR_D, CHR_L Saki surprised (afternoon colors) DispCHA 1, "sa11ba", CHR_A, CHR_R
+fgload 1 00000000 sa12ba 1 3
+@text Saki surprised (night colors) DispCHA 0, "sa11ba", CHR_N, CHR_L Saki provocation (dawn colors) DispCHA 1, "sa12ba", CHR_D, CHR_R
+fgload 1 00000000 sa12ba 1 3
+@text Saki provocation (afternoon colors) DispCHA 0, "sa12ba", CHR_A, CHR_L Saki provocation (night colors) DispCHA 1, "sa12ba", CHR_N, CHR_R
+@goto ap_saki
+@label ap_saki_2_close
+fgload 0 00000000 sa01bb 1 3
+fgload 1 00000000 sa01bb 1 3
+@text Saki normal (dawn colors) DispCHA 0, "sa01bb", CHR_D, CHR_L Saki normal (afternoon colors) DispCHA 1, "sa01bb", CHR_A, CHR_R
+fgload 1 00000000 sa02bb 1 3
+@text Saki normal (night colors) DispCHA 0, "sa01bb", CHR_N, CHR_L Saki smiling (dawn colors) DispCHA 1, "sa02bb", CHR_D, CHR_R
+fgload 1 00000000 sa02bb 1 3
+@text Saki smiling (afternoon colors) DispCHA 0, "sa02bb", CHR_A, CHR_L Saki smiling (night colors) DispCHA 1, "sa02bb", CHR_N, CHR_R
+fgload 1 00000000 sa03bb 1 3
+@text Saki embarrassed (dawn colors) DispCHA 0, "sa03bb", CHR_D, CHR_L Saki embarrassed (afternoon colors) DispCHA 1, "sa03bb", CHR_A, CHR_R
+fgload 1 00000000 sa04bb 1 3
+@text Saki embarrassed (night colors) DispCHA 0, "sa03bb", CHR_N, CHR_L Saki angry (dawn colors) DispCHA 1, "sa04bb", CHR_D, CHR_R
+fgload 1 00000000 sa04bb 1 3
+@text Saki angry (afternoon colors) DispCHA 0, "sa04bb", CHR_A, CHR_L Saki angry (night colors) DispCHA 1, "sa04bb", CHR_N, CHR_R
+fgload 1 00000000 sa05bb 1 3
+@text Saki ill-tempered (dawn colors) DispCHA 0, "sa05bb", CHR_D, CHR_L Saki ill-tempered (afternoon colors) DispCHA 1, "sa05bb", CHR_A, CHR_R
+fgload 1 00000000 sa06bb 1 3
+@text Saki ill-tempered (night colors) DispCHA 0, "sa05bb", CHR_N, CHR_L Saki dubious (dawn colors) DispCHA 1, "sa06bb", CHR_D, CHR_R
+fgload 1 00000000 sa06bb 1 3
+@text Saki dubious (afternoon colors) DispCHA 0, "sa06bb", CHR_A, CHR_L Saki dubious (night colors) DispCHA 1, "sa06bb", CHR_N, CHR_R
+fgload 1 00000000 sa07bb 1 3
+@text Saki laugh (dawn colors) DispCHA 0, "sa07bb", CHR_D, CHR_L Saki laugh (afternoon colors) DispCHA 1, "sa07bb", CHR_A, CHR_R
+fgload 1 00000000 sa08bb 1 3
+@text Saki laugh (night colors) DispCHA 0, "sa07bb", CHR_N, CHR_L Saki sadness (dawn colors) DispCHA 1, "sa08bb", CHR_D, CHR_R
+fgload 1 00000000 sa08bb 1 3
+@text Saki sadness (afternoon colors) DispCHA 0, "sa08bb", CHR_A, CHR_L Saki sadness (night colors) DispCHA 1, "sa08bb", CHR_N, CHR_R
+fgload 1 00000000 sa09bb 1 3
+@text Saki crying (dawn colors) DispCHA 0, "sa09bb", CHR_D, CHR_L Saki crying (afternoon colors) DispCHA 1, "sa09bb", CHR_A, CHR_R
+fgload 1 00000000 sa10bb 1 3
+@text Saki crying (night colors) DispCHA 0, "sa09bb", CHR_N, CHR_L Saki shocked (dawn colors) DispCHA 1, "sa10bb", CHR_D, CHR_R
+fgload 1 00000000 sa10bb 1 3
+@text Saki shocked (afternoon colors) DispCHA 0, "sa10bb", CHR_A, CHR_L Saki shocked (night colors) DispCHA 1, "sa10bb", CHR_N, CHR_R
+fgload 1 00000000 sa11bb 1 3
+@text Saki surprised (dawn colors) DispCHA 0, "sa11bb", CHR_D, CHR_L Saki surprised (afternoon colors) DispCHA 1, "sa11bb", CHR_A, CHR_R
+fgload 1 00000000 sa12bb 1 3
+@text Saki surprised (night colors) DispCHA 0, "sa11bb", CHR_N, CHR_L Saki provocation (dawn colors) DispCHA 1, "sa12bb", CHR_D, CHR_R
+fgload 1 00000000 sa12bb 1 3
+@text Saki provocation (afternoon colors) DispCHA 0, "sa12bb", CHR_A, CHR_L Saki provocation (night colors) DispCHA 1, "sa12bb", CHR_N, CHR_R
+@goto ap_saki
+@label ap_saki_s_far
+fgload 0 00000000 sa01da 1 3
+fgload 1 00000000 sa01da 1 3
+@text Saki normal (dawn colors) DispCHA 0, "sa01da", CHR_D, CHR_L Saki normal (afternoon colors) DispCHA 1, "sa01da", CHR_A, CHR_R
+fgload 1 00000000 sa02da 1 3
+@text Saki normal (night colors) DispCHA 0, "sa01da", CHR_N, CHR_L Saki smiling (dawn colors) DispCHA 1, "sa02da", CHR_D, CHR_R
+fgload 1 00000000 sa02da 1 3
+@text Saki smiling (afternoon colors) DispCHA 0, "sa02da", CHR_A, CHR_L Saki smiling (night colors) DispCHA 1, "sa02da", CHR_N, CHR_R
+fgload 1 00000000 sa03da 1 3
+@text Saki embarrassed (dawn colors) DispCHA 0, "sa03da", CHR_D, CHR_L Saki embarrassed (afternoon colors) DispCHA 1, "sa03da", CHR_A, CHR_R
+fgload 1 00000000 sa04da 1 3
+@text Saki embarrassed (night colors) DispCHA 0, "sa03da", CHR_N, CHR_L Saki angry (dawn colors) DispCHA 1, "sa04da", CHR_D, CHR_R
+fgload 1 00000000 sa04da 1 3
+@text Saki angry (afternoon colors) DispCHA 0, "sa04da", CHR_A, CHR_L Saki angry (night colors) DispCHA 1, "sa04da", CHR_N, CHR_R
+fgload 1 00000000 sa05da 1 3
+@text Saki ill-tempered (dawn colors) DispCHA 0, "sa05da", CHR_D, CHR_L Saki ill-tempered (afternoon colors) DispCHA 1, "sa05da", CHR_A, CHR_R
+fgload 1 00000000 sa06da 1 3
+@text Saki ill-tempered (night colors) DispCHA 0, "sa05da", CHR_N, CHR_L Saki dubious (dawn colors) DispCHA 1, "sa06da", CHR_D, CHR_R
+fgload 1 00000000 sa06da 1 3
+@text Saki dubious (afternoon colors) DispCHA 0, "sa06da", CHR_A, CHR_L Saki dubious (night colors) DispCHA 1, "sa06da", CHR_N, CHR_R
+fgload 1 00000000 sa07da 1 3
+@text Saki laugh (dawn colors) DispCHA 0, "sa07da", CHR_D, CHR_L Saki laugh (afternoon colors) DispCHA 1, "sa07da", CHR_A, CHR_R
+fgload 1 00000000 sa08da 1 3
+@text Saki laugh (night colors) DispCHA 0, "sa07da", CHR_N, CHR_L Saki sadness (dawn colors) DispCHA 1, "sa08da", CHR_D, CHR_R
+fgload 1 00000000 sa08da 1 3
+@text Saki sadness (afternoon colors) DispCHA 0, "sa08da", CHR_A, CHR_L Saki sadness (night colors) DispCHA 1, "sa08da", CHR_N, CHR_R
+fgload 1 00000000 sa09da 1 3
+@text Saki crying (dawn colors) DispCHA 0, "sa09da", CHR_D, CHR_L Saki crying (afternoon colors) DispCHA 1, "sa09da", CHR_A, CHR_R
+fgload 1 00000000 sa10da 1 3
+@text Saki crying (night colors) DispCHA 0, "sa09da", CHR_N, CHR_L Saki shocked (dawn colors) DispCHA 1, "sa10da", CHR_D, CHR_R
+fgload 1 00000000 sa10da 1 3
+@text Saki shocked (afternoon colors) DispCHA 0, "sa10da", CHR_A, CHR_L Saki shocked (night colors) DispCHA 1, "sa10da", CHR_N, CHR_R
+fgload 1 00000000 sa11da 1 3
+@text Saki surprised (dawn colors) DispCHA 0, "sa11da", CHR_D, CHR_L Saki surprised (afternoon colors) DispCHA 1, "sa11da", CHR_A, CHR_R
+fgload 1 00000000 sa12da 1 3
+@text Saki surprised (night colors) DispCHA 0, "sa11da", CHR_N, CHR_L Saki provocation (dawn colors) DispCHA 1, "sa12da", CHR_D, CHR_R
+fgload 1 00000000 sa12da 1 3
+@text Saki provocation (afternoon colors) DispCHA 0, "sa12da", CHR_A, CHR_L Saki provocation (night colors) DispCHA 1, "sa12da", CHR_N, CHR_R
+@goto ap_saki
+@label ap_saki_s_close
+fgload 0 00000000 sa01db 1 3
+fgload 1 00000000 sa01db 1 3
+@text Saki normal (dawn colors) DispCHA 0, "sa01db", CHR_D, CHR_L Saki normal (afternoon colors) DispCHA 1, "sa01db", CHR_A, CHR_R
+fgload 1 00000000 sa02db 1 3
+@text Saki normal (night colors) DispCHA 0, "sa01db", CHR_N, CHR_L Saki smiling (dawn colors) DispCHA 1, "sa02db", CHR_D, CHR_R
+fgload 1 00000000 sa02db 1 3
+@text Saki smiling (afternoon colors) DispCHA 0, "sa02db", CHR_A, CHR_L Saki smiling (night colors) DispCHA 1, "sa02db", CHR_N, CHR_R
+fgload 1 00000000 sa03db 1 3
+@text Saki embarrassed (dawn colors) DispCHA 0, "sa03db", CHR_D, CHR_L Saki embarrassed (afternoon colors) DispCHA 1, "sa03db", CHR_A, CHR_R
+fgload 1 00000000 sa04db 1 3
+@text Saki embarrassed (night colors) DispCHA 0, "sa03db", CHR_N, CHR_L Saki angry (dawn colors) DispCHA 1, "sa04db", CHR_D, CHR_R
+fgload 1 00000000 sa04db 1 3
+@text Saki angry (afternoon colors) DispCHA 0, "sa04db", CHR_A, CHR_L Saki angry (night colors) DispCHA 1, "sa04db", CHR_N, CHR_R
+fgload 1 00000000 sa05db 1 3
+@text Saki ill-tempered (dawn colors) DispCHA 0, "sa05db", CHR_D, CHR_L Saki ill-tempered (afternoon colors) DispCHA 1, "sa05db", CHR_A, CHR_R
+fgload 1 00000000 sa06db 1 3
+@text Saki ill-tempered (night colors) DispCHA 0, "sa05db", CHR_N, CHR_L Saki dubious (dawn colors) DispCHA 1, "sa06db", CHR_D, CHR_R
+fgload 1 00000000 sa06db 1 3
+@text Saki dubious (afternoon colors) DispCHA 0, "sa06db", CHR_A, CHR_L Saki dubious (night colors) DispCHA 1, "sa06db", CHR_N, CHR_R
+fgload 1 00000000 sa07db 1 3
+@text Saki laugh (dawn colors) DispCHA 0, "sa07db", CHR_D, CHR_L Saki laugh (afternoon colors) DispCHA 1, "sa07db", CHR_A, CHR_R
+fgload 1 00000000 sa08db 1 3
+@text Saki laugh (night colors) DispCHA 0, "sa07db", CHR_N, CHR_L Saki sadness (dawn colors) DispCHA 1, "sa08db", CHR_D, CHR_R
+fgload 1 00000000 sa08db 1 3
+@text Saki sadness (afternoon colors) DispCHA 0, "sa08db", CHR_A, CHR_L Saki sadness (night colors) DispCHA 1, "sa08db", CHR_N, CHR_R
+fgload 1 00000000 sa09db 1 3
+@text Saki crying (dawn colors) DispCHA 0, "sa09db", CHR_D, CHR_L Saki crying (afternoon colors) DispCHA 1, "sa09db", CHR_A, CHR_R
+fgload 1 00000000 sa10db 1 3
+@text Saki crying (night colors) DispCHA 0, "sa09db", CHR_N, CHR_L Saki shocked (dawn colors) DispCHA 1, "sa10db", CHR_D, CHR_R
+fgload 1 00000000 sa10db 1 3
+@text Saki shocked (afternoon colors) DispCHA 0, "sa10db", CHR_A, CHR_L Saki shocked (night colors) DispCHA 1, "sa10db", CHR_N, CHR_R
+fgload 1 00000000 sa11db 1 3
+@text Saki surprised (dawn colors) DispCHA 0, "sa11db", CHR_D, CHR_L Saki surprised (afternoon colors) DispCHA 1, "sa11db", CHR_A, CHR_R
+fgload 1 00000000 sa12db 1 3
+@text Saki surprised (night colors) DispCHA 0, "sa11db", CHR_N, CHR_L Saki provocation (dawn colors) DispCHA 1, "sa12db", CHR_D, CHR_R
+fgload 1 00000000 sa12db 1 3
+@text Saki provocation (afternoon colors) DispCHA 0, "sa12db", CHR_A, CHR_L Saki provocation (night colors) DispCHA 1, "sa12db", CHR_N, CHR_R
+@goto ap_saki
+@label ap_okuhiko_1_far
+fgload 0 00000000 ok01aa 1 3
+fgload 1 00000000 ok01aa 1 3
+@text Okuhiko normal (dawn colors) DispCHA 0, "ok01aa", CHR_D, CHR_L Okuhiko normal (afternoon colors) DispCHA 1, "ok01aa", CHR_A, CHR_R
+fgload 1 00000000 ok02aa 1 3
+@text Okuhiko normal (night colors) DispCHA 0, "ok01aa", CHR_N, CHR_L Okuhiko smiling (dawn colors) DispCHA 1, "ok02aa", CHR_D, CHR_R
+fgload 1 00000000 ok02aa 1 3
+@text Okuhiko smiling (afternoon colors) DispCHA 0, "ok02aa", CHR_A, CHR_L Okuhiko smiling (night colors) DispCHA 1, "ok02aa", CHR_N, CHR_R
+fgload 1 00000000 ok03aa 1 3
+@text Okuhiko embarrassed (dawn colors) DispCHA 0, "ok03aa", CHR_D, CHR_L Okuhiko embarrassed (afternoon colors) DispCHA 1, "ok03aa", CHR_A, CHR_R
+fgload 1 00000000 ok04aa 1 3
+@text Okuhiko embarrassed (night colors) DispCHA 0, "ok03aa", CHR_N, CHR_L Okuhiko angry (dawn colors) DispCHA 1, "ok04aa", CHR_D, CHR_R
+fgload 1 00000000 ok04aa 1 3
+@text Okuhiko angry (afternoon colors) DispCHA 0, "ok04aa", CHR_A, CHR_L Okuhiko angry (night colors) DispCHA 1, "ok04aa", CHR_N, CHR_R
+fgload 1 00000000 ok05aa 1 3
+@text Okuhiko ill-tempered (dawn colors) DispCHA 0, "ok05aa", CHR_D, CHR_L Okuhiko ill-tempered (afternoon colors) DispCHA 1, "ok05aa", CHR_A, CHR_R
+fgload 1 00000000 ok06aa 1 3
+@text Okuhiko ill-tempered (night colors) DispCHA 0, "ok05aa", CHR_N, CHR_L Okuhiko dubious (dawn colors) DispCHA 1, "ok06aa", CHR_D, CHR_R
+fgload 1 00000000 ok06aa 1 3
+@text Okuhiko dubious (afternoon colors) DispCHA 0, "ok06aa", CHR_A, CHR_L Okuhiko dubious (night colors) DispCHA 1, "ok06aa", CHR_N, CHR_R
+fgload 1 00000000 ok07aa 1 3
+@text Okuhiko laugh (dawn colors) DispCHA 0, "ok07aa", CHR_D, CHR_L Okuhiko laugh (afternoon colors) DispCHA 1, "ok07aa", CHR_A, CHR_R
+fgload 1 00000000 ok08aa 1 3
+@text Okuhiko laugh (night colors) DispCHA 0, "ok07aa", CHR_N, CHR_L Okuhiko sadness (dawn colors) DispCHA 1, "ok08aa", CHR_D, CHR_R
+fgload 1 00000000 ok08aa 1 3
+@text Okuhiko sadness (afternoon colors) DispCHA 0, "ok08aa", CHR_A, CHR_L Okuhiko sadness (night colors) DispCHA 1, "ok08aa", CHR_N, CHR_R
+fgload 1 00000000 ok09aa 1 3
+@text Okuhiko crying (dawn colors) DispCHA 0, "ok09aa", CHR_D, CHR_L Okuhiko crying (afternoon colors) DispCHA 1, "ok09aa", CHR_A, CHR_R
+fgload 1 00000000 ok10aa 1 3
+@text Okuhiko crying (night colors) DispCHA 0, "ok09aa", CHR_N, CHR_L Okuhiko shocked (dawn colors) DispCHA 1, "ok10aa", CHR_D, CHR_R
+fgload 1 00000000 ok10aa 1 3
+@text Okuhiko shocked (afternoon colors) DispCHA 0, "ok10aa", CHR_A, CHR_L Okuhiko shocked (night colors) DispCHA 1, "ok10aa", CHR_N, CHR_R
+fgload 1 00000000 ok11aa 1 3
+@text Okuhiko surprised (dawn colors) DispCHA 0, "ok11aa", CHR_D, CHR_L Okuhiko surprised (afternoon colors) DispCHA 1, "ok11aa", CHR_A, CHR_R
+@text   Okuhiko surprised (night colors) DispCHA 0, "ok11aa", CHR_N, CHR_L  
+@goto ap_okuhiko
+@label ap_okuhiko_1_close
+fgload 0 00000000 ok01ab 1 3
+fgload 1 00000000 ok01ab 1 3
+@text Okuhiko normal (dawn colors) DispCHA 0, "ok01ab", CHR_D, CHR_L Okuhiko normal (afternoon colors) DispCHA 1, "ok01ab", CHR_A, CHR_R
+fgload 1 00000000 ok02ab 1 3
+@text Okuhiko normal (night colors) DispCHA 0, "ok01ab", CHR_N, CHR_L Okuhiko smiling (dawn colors) DispCHA 1, "ok02ab", CHR_D, CHR_R
+fgload 1 00000000 ok02ab 1 3
+@text Okuhiko smiling (afternoon colors) DispCHA 0, "ok02ab", CHR_A, CHR_L Okuhiko smiling (night colors) DispCHA 1, "ok02ab", CHR_N, CHR_R
+fgload 1 00000000 ok03ab 1 3
+@text Okuhiko embarrassed (dawn colors) DispCHA 0, "ok03ab", CHR_D, CHR_L Okuhiko embarrassed (afternoon colors) DispCHA 1, "ok03ab", CHR_A, CHR_R
+fgload 1 00000000 ok04ab 1 3
+@text Okuhiko embarrassed (night colors) DispCHA 0, "ok03ab", CHR_N, CHR_L Okuhiko angry (dawn colors) DispCHA 1, "ok04ab", CHR_D, CHR_R
+fgload 1 00000000 ok04ab 1 3
+@text Okuhiko angry (afternoon colors) DispCHA 0, "ok04ab", CHR_A, CHR_L Okuhiko angry (night colors) DispCHA 1, "ok04ab", CHR_N, CHR_R
+fgload 1 00000000 ok05ab 1 3
+@text Okuhiko ill-tempered (dawn colors) DispCHA 0, "ok05ab", CHR_D, CHR_L Okuhiko ill-tempered (afternoon colors) DispCHA 1, "ok05ab", CHR_A, CHR_R
+fgload 1 00000000 ok06ab 1 3
+@text Okuhiko ill-tempered (night colors) DispCHA 0, "ok05ab", CHR_N, CHR_L Okuhiko dubious (dawn colors) DispCHA 1, "ok06ab", CHR_D, CHR_R
+fgload 1 00000000 ok06ab 1 3
+@text Okuhiko dubious (afternoon colors) DispCHA 0, "ok06ab", CHR_A, CHR_L Okuhiko dubious (night colors) DispCHA 1, "ok06ab", CHR_N, CHR_R
+fgload 1 00000000 ok07ab 1 3
+@text Okuhiko laugh (dawn colors) DispCHA 0, "ok07ab", CHR_D, CHR_L Okuhiko laugh (afternoon colors) DispCHA 1, "ok07ab", CHR_A, CHR_R
+fgload 1 00000000 ok08ab 1 3
+@text Okuhiko laugh (night colors) DispCHA 0, "ok07ab", CHR_N, CHR_L Okuhiko sadness (dawn colors) DispCHA 1, "ok08ab", CHR_D, CHR_R
+fgload 1 00000000 ok08ab 1 3
+@text Okuhiko sadness (afternoon colors) DispCHA 0, "ok08ab", CHR_A, CHR_L Okuhiko sadness (night colors) DispCHA 1, "ok08ab", CHR_N, CHR_R
+fgload 1 00000000 ok09ab 1 3
+@text Okuhiko crying (dawn colors) DispCHA 0, "ok09ab", CHR_D, CHR_L Okuhiko crying (afternoon colors) DispCHA 1, "ok09ab", CHR_A, CHR_R
+fgload 1 00000000 ok10ab 1 3
+@text Okuhiko crying (night colors) DispCHA 0, "ok09ab", CHR_N, CHR_L Okuhiko shocked (dawn colors) DispCHA 1, "ok10ab", CHR_D, CHR_R
+fgload 1 00000000 ok10ab 1 3
+@text Okuhiko shocked (afternoon colors) DispCHA 0, "ok10ab", CHR_A, CHR_L Okuhiko shocked (night colors) DispCHA 1, "ok10ab", CHR_N, CHR_R
+fgload 1 00000000 ok11ab 1 3
+@text Okuhiko surprised (dawn colors) DispCHA 0, "ok11ab", CHR_D, CHR_L Okuhiko surprised (afternoon colors) DispCHA 1, "ok11ab", CHR_A, CHR_R
+@text   Okuhiko surprised (night colors) DispCHA 0, "ok11ab", CHR_N, CHR_L  
+@goto ap_okuhiko
+@label ap_okuhiko_2_far
+fgload 0 00000000 ok01ca 1 3
+fgload 1 00000000 ok01ca 1 3
+@text Okuhiko normal (dawn colors) DispCHA 0, "ok01ca", CHR_D, CHR_L Okuhiko normal (afternoon colors) DispCHA 1, "ok01ca", CHR_A, CHR_R
+fgload 1 00000000 ok02ca 1 3
+@text Okuhiko normal (night colors) DispCHA 0, "ok01ca", CHR_N, CHR_L Okuhiko smiling (dawn colors) DispCHA 1, "ok02ca", CHR_D, CHR_R
+fgload 1 00000000 ok02ca 1 3
+@text Okuhiko smiling (afternoon colors) DispCHA 0, "ok02ca", CHR_A, CHR_L Okuhiko smiling (night colors) DispCHA 1, "ok02ca", CHR_N, CHR_R
+fgload 1 00000000 ok03ca 1 3
+@text Okuhiko embarrassed (dawn colors) DispCHA 0, "ok03ca", CHR_D, CHR_L Okuhiko embarrassed (afternoon colors) DispCHA 1, "ok03ca", CHR_A, CHR_R
+fgload 1 00000000 ok04ca 1 3
+@text Okuhiko embarrassed (night colors) DispCHA 0, "ok03ca", CHR_N, CHR_L Okuhiko angry (dawn colors) DispCHA 1, "ok04ca", CHR_D, CHR_R
+fgload 1 00000000 ok04ca 1 3
+@text Okuhiko angry (afternoon colors) DispCHA 0, "ok04ca", CHR_A, CHR_L Okuhiko angry (night colors) DispCHA 1, "ok04ca", CHR_N, CHR_R
+fgload 1 00000000 ok05ca 1 3
+@text Okuhiko ill-tempered (dawn colors) DispCHA 0, "ok05ca", CHR_D, CHR_L Okuhiko ill-tempered (afternoon colors) DispCHA 1, "ok05ca", CHR_A, CHR_R
+fgload 1 00000000 ok06ca 1 3
+@text Okuhiko ill-tempered (night colors) DispCHA 0, "ok05ca", CHR_N, CHR_L Okuhiko dubious (dawn colors) DispCHA 1, "ok06ca", CHR_D, CHR_R
+fgload 1 00000000 ok06ca 1 3
+@text Okuhiko dubious (afternoon colors) DispCHA 0, "ok06ca", CHR_A, CHR_L Okuhiko dubious (night colors) DispCHA 1, "ok06ca", CHR_N, CHR_R
+fgload 1 00000000 ok07ca 1 3
+@text Okuhiko laugh (dawn colors) DispCHA 0, "ok07ca", CHR_D, CHR_L Okuhiko laugh (afternoon colors) DispCHA 1, "ok07ca", CHR_A, CHR_R
+fgload 1 00000000 ok08ca 1 3
+@text Okuhiko laugh (night colors) DispCHA 0, "ok07ca", CHR_N, CHR_L Okuhiko sadness (dawn colors) DispCHA 1, "ok08ca", CHR_D, CHR_R
+fgload 1 00000000 ok08ca 1 3
+@text Okuhiko sadness (afternoon colors) DispCHA 0, "ok08ca", CHR_A, CHR_L Okuhiko sadness (night colors) DispCHA 1, "ok08ca", CHR_N, CHR_R
+fgload 1 00000000 ok09ca 1 3
+@text Okuhiko crying (dawn colors) DispCHA 0, "ok09ca", CHR_D, CHR_L Okuhiko crying (afternoon colors) DispCHA 1, "ok09ca", CHR_A, CHR_R
+fgload 1 00000000 ok10ca 1 3
+@text Okuhiko crying (night colors) DispCHA 0, "ok09ca", CHR_N, CHR_L Okuhiko shocked (dawn colors) DispCHA 1, "ok10ca", CHR_D, CHR_R
+fgload 1 00000000 ok10ca 1 3
+@text Okuhiko shocked (afternoon colors) DispCHA 0, "ok10ca", CHR_A, CHR_L Okuhiko shocked (night colors) DispCHA 1, "ok10ca", CHR_N, CHR_R
+fgload 1 00000000 ok11ca 1 3
+@text Okuhiko surprised (dawn colors) DispCHA 0, "ok11ca", CHR_D, CHR_L Okuhiko surprised (afternoon colors) DispCHA 1, "ok11ca", CHR_A, CHR_R
+@text   Okuhiko surprised (night colors) DispCHA 0, "ok11ca", CHR_N, CHR_L  
+@goto ap_okuhiko
+@label ap_okuhiko_2_close
+fgload 0 00000000 ok01cb 1 3
+fgload 1 00000000 ok01cb 1 3
+@text Okuhiko normal (dawn colors) DispCHA 0, "ok01cb", CHR_D, CHR_L Okuhiko normal (afternoon colors) DispCHA 1, "ok01cb", CHR_A, CHR_R
+fgload 1 00000000 ok02cb 1 3
+@text Okuhiko normal (night colors) DispCHA 0, "ok01cb", CHR_N, CHR_L Okuhiko smiling (dawn colors) DispCHA 1, "ok02cb", CHR_D, CHR_R
+fgload 1 00000000 ok02cb 1 3
+@text Okuhiko smiling (afternoon colors) DispCHA 0, "ok02cb", CHR_A, CHR_L Okuhiko smiling (night colors) DispCHA 1, "ok02cb", CHR_N, CHR_R
+fgload 1 00000000 ok03cb 1 3
+@text Okuhiko embarrassed (dawn colors) DispCHA 0, "ok03cb", CHR_D, CHR_L Okuhiko embarrassed (afternoon colors) DispCHA 1, "ok03cb", CHR_A, CHR_R
+fgload 1 00000000 ok04cb 1 3
+@text Okuhiko embarrassed (night colors) DispCHA 0, "ok03cb", CHR_N, CHR_L Okuhiko angry (dawn colors) DispCHA 1, "ok04cb", CHR_D, CHR_R
+fgload 1 00000000 ok04cb 1 3
+@text Okuhiko angry (afternoon colors) DispCHA 0, "ok04cb", CHR_A, CHR_L Okuhiko angry (night colors) DispCHA 1, "ok04cb", CHR_N, CHR_R
+fgload 1 00000000 ok05cb 1 3
+@text Okuhiko ill-tempered (dawn colors) DispCHA 0, "ok05cb", CHR_D, CHR_L Okuhiko ill-tempered (afternoon colors) DispCHA 1, "ok05cb", CHR_A, CHR_R
+fgload 1 00000000 ok06cb 1 3
+@text Okuhiko ill-tempered (night colors) DispCHA 0, "ok05cb", CHR_N, CHR_L Okuhiko dubious (dawn colors) DispCHA 1, "ok06cb", CHR_D, CHR_R
+fgload 1 00000000 ok06cb 1 3
+@text Okuhiko dubious (afternoon colors) DispCHA 0, "ok06cb", CHR_A, CHR_L Okuhiko dubious (night colors) DispCHA 1, "ok06cb", CHR_N, CHR_R
+fgload 1 00000000 ok07cb 1 3
+@text Okuhiko laugh (dawn colors) DispCHA 0, "ok07cb", CHR_D, CHR_L Okuhiko laugh (afternoon colors) DispCHA 1, "ok07cb", CHR_A, CHR_R
+fgload 1 00000000 ok08cb 1 3
+@text Okuhiko laugh (night colors) DispCHA 0, "ok07cb", CHR_N, CHR_L Okuhiko sadness (dawn colors) DispCHA 1, "ok08cb", CHR_D, CHR_R
+fgload 1 00000000 ok08cb 1 3
+@text Okuhiko sadness (afternoon colors) DispCHA 0, "ok08cb", CHR_A, CHR_L Okuhiko sadness (night colors) DispCHA 1, "ok08cb", CHR_N, CHR_R
+fgload 1 00000000 ok09cb 1 3
+@text Okuhiko crying (dawn colors) DispCHA 0, "ok09cb", CHR_D, CHR_L Okuhiko crying (afternoon colors) DispCHA 1, "ok09cb", CHR_A, CHR_R
+fgload 1 00000000 ok10cb 1 3
+@text Okuhiko crying (night colors) DispCHA 0, "ok09cb", CHR_N, CHR_L Okuhiko shocked (dawn colors) DispCHA 1, "ok10cb", CHR_D, CHR_R
+fgload 1 00000000 ok10cb 1 3
+@text Okuhiko shocked (afternoon colors) DispCHA 0, "ok10cb", CHR_A, CHR_L Okuhiko shocked (night colors) DispCHA 1, "ok10cb", CHR_N, CHR_R
+fgload 1 00000000 ok11cb 1 3
+@text Okuhiko surprised (dawn colors) DispCHA 0, "ok11cb", CHR_D, CHR_L Okuhiko surprised (afternoon colors) DispCHA 1, "ok11cb", CHR_A, CHR_R
+@text   Okuhiko surprised (night colors) DispCHA 0, "ok11cb", CHR_N, CHR_L  
+@goto ap_okuhiko
+@label ap_okuhiko_s_far
+fgload 0 00000000 ok01da 1 3
+fgload 1 00000000 ok01da 1 3
+@text Okuhiko normal (dawn colors) DispCHA 0, "ok01da", CHR_D, CHR_L Okuhiko normal (afternoon colors) DispCHA 1, "ok01da", CHR_A, CHR_R
+fgload 1 00000000 ok02da 1 3
+@text Okuhiko normal (night colors) DispCHA 0, "ok01da", CHR_N, CHR_L Okuhiko smiling (dawn colors) DispCHA 1, "ok02da", CHR_D, CHR_R
+fgload 1 00000000 ok02da 1 3
+@text Okuhiko smiling (afternoon colors) DispCHA 0, "ok02da", CHR_A, CHR_L Okuhiko smiling (night colors) DispCHA 1, "ok02da", CHR_N, CHR_R
+fgload 1 00000000 ok03da 1 3
+@text Okuhiko embarrassed (dawn colors) DispCHA 0, "ok03da", CHR_D, CHR_L Okuhiko embarrassed (afternoon colors) DispCHA 1, "ok03da", CHR_A, CHR_R
+fgload 1 00000000 ok04da 1 3
+@text Okuhiko embarrassed (night colors) DispCHA 0, "ok03da", CHR_N, CHR_L Okuhiko angry (dawn colors) DispCHA 1, "ok04da", CHR_D, CHR_R
+fgload 1 00000000 ok04da 1 3
+@text Okuhiko angry (afternoon colors) DispCHA 0, "ok04da", CHR_A, CHR_L Okuhiko angry (night colors) DispCHA 1, "ok04da", CHR_N, CHR_R
+fgload 1 00000000 ok05da 1 3
+@text Okuhiko ill-tempered (dawn colors) DispCHA 0, "ok05da", CHR_D, CHR_L Okuhiko ill-tempered (afternoon colors) DispCHA 1, "ok05da", CHR_A, CHR_R
+fgload 1 00000000 ok06da 1 3
+@text Okuhiko ill-tempered (night colors) DispCHA 0, "ok05da", CHR_N, CHR_L Okuhiko dubious (dawn colors) DispCHA 1, "ok06da", CHR_D, CHR_R
+fgload 1 00000000 ok06da 1 3
+@text Okuhiko dubious (afternoon colors) DispCHA 0, "ok06da", CHR_A, CHR_L Okuhiko dubious (night colors) DispCHA 1, "ok06da", CHR_N, CHR_R
+fgload 1 00000000 ok07da 1 3
+@text Okuhiko laugh (dawn colors) DispCHA 0, "ok07da", CHR_D, CHR_L Okuhiko laugh (afternoon colors) DispCHA 1, "ok07da", CHR_A, CHR_R
+fgload 1 00000000 ok08da 1 3
+@text Okuhiko laugh (night colors) DispCHA 0, "ok07da", CHR_N, CHR_L Okuhiko sadness (dawn colors) DispCHA 1, "ok08da", CHR_D, CHR_R
+fgload 1 00000000 ok08da 1 3
+@text Okuhiko sadness (afternoon colors) DispCHA 0, "ok08da", CHR_A, CHR_L Okuhiko sadness (night colors) DispCHA 1, "ok08da", CHR_N, CHR_R
+fgload 1 00000000 ok09da 1 3
+@text Okuhiko crying (dawn colors) DispCHA 0, "ok09da", CHR_D, CHR_L Okuhiko crying (afternoon colors) DispCHA 1, "ok09da", CHR_A, CHR_R
+fgload 1 00000000 ok10da 1 3
+@text Okuhiko crying (night colors) DispCHA 0, "ok09da", CHR_N, CHR_L Okuhiko shocked (dawn colors) DispCHA 1, "ok10da", CHR_D, CHR_R
+fgload 1 00000000 ok10da 1 3
+@text Okuhiko shocked (afternoon colors) DispCHA 0, "ok10da", CHR_A, CHR_L Okuhiko shocked (night colors) DispCHA 1, "ok10da", CHR_N, CHR_R
+fgload 1 00000000 ok11da 1 3
+@text Okuhiko surprised (dawn colors) DispCHA 0, "ok11da", CHR_D, CHR_L Okuhiko surprised (afternoon colors) DispCHA 1, "ok11da", CHR_A, CHR_R
+@text   Okuhiko surprised (night colors) DispCHA 0, "ok11da", CHR_N, CHR_L  
+@goto ap_okuhiko
+@label ap_okuhiko_s_close
+fgload 0 00000000 ok01db 1 3
+fgload 1 00000000 ok01db 1 3
+@text Okuhiko normal (dawn colors) DispCHA 0, "ok01db", CHR_D, CHR_L Okuhiko normal (afternoon colors) DispCHA 1, "ok01db", CHR_A, CHR_R
+fgload 1 00000000 ok02db 1 3
+@text Okuhiko normal (night colors) DispCHA 0, "ok01db", CHR_N, CHR_L Okuhiko smiling (dawn colors) DispCHA 1, "ok02db", CHR_D, CHR_R
+fgload 1 00000000 ok02db 1 3
+@text Okuhiko smiling (afternoon colors) DispCHA 0, "ok02db", CHR_A, CHR_L Okuhiko smiling (night colors) DispCHA 1, "ok02db", CHR_N, CHR_R
+fgload 1 00000000 ok03db 1 3
+@text Okuhiko embarrassed (dawn colors) DispCHA 0, "ok03db", CHR_D, CHR_L Okuhiko embarrassed (afternoon colors) DispCHA 1, "ok03db", CHR_A, CHR_R
+fgload 1 00000000 ok04db 1 3
+@text Okuhiko embarrassed (night colors) DispCHA 0, "ok03db", CHR_N, CHR_L Okuhiko angry (dawn colors) DispCHA 1, "ok04db", CHR_D, CHR_R
+fgload 1 00000000 ok04db 1 3
+@text Okuhiko angry (afternoon colors) DispCHA 0, "ok04db", CHR_A, CHR_L Okuhiko angry (night colors) DispCHA 1, "ok04db", CHR_N, CHR_R
+fgload 1 00000000 ok05db 1 3
+@text Okuhiko ill-tempered (dawn colors) DispCHA 0, "ok05db", CHR_D, CHR_L Okuhiko ill-tempered (afternoon colors) DispCHA 1, "ok05db", CHR_A, CHR_R
+fgload 1 00000000 ok06db 1 3
+@text Okuhiko ill-tempered (night colors) DispCHA 0, "ok05db", CHR_N, CHR_L Okuhiko dubious (dawn colors) DispCHA 1, "ok06db", CHR_D, CHR_R
+fgload 1 00000000 ok06db 1 3
+@text Okuhiko dubious (afternoon colors) DispCHA 0, "ok06db", CHR_A, CHR_L Okuhiko dubious (night colors) DispCHA 1, "ok06db", CHR_N, CHR_R
+fgload 1 00000000 ok07db 1 3
+@text Okuhiko laugh (dawn colors) DispCHA 0, "ok07db", CHR_D, CHR_L Okuhiko laugh (afternoon colors) DispCHA 1, "ok07db", CHR_A, CHR_R
+fgload 1 00000000 ok08db 1 3
+@text Okuhiko laugh (night colors) DispCHA 0, "ok07db", CHR_N, CHR_L Okuhiko sadness (dawn colors) DispCHA 1, "ok08db", CHR_D, CHR_R
+fgload 1 00000000 ok08db 1 3
+@text Okuhiko sadness (afternoon colors) DispCHA 0, "ok08db", CHR_A, CHR_L Okuhiko sadness (night colors) DispCHA 1, "ok08db", CHR_N, CHR_R
+fgload 1 00000000 ok09db 1 3
+@text Okuhiko crying (dawn colors) DispCHA 0, "ok09db", CHR_D, CHR_L Okuhiko crying (afternoon colors) DispCHA 1, "ok09db", CHR_A, CHR_R
+fgload 1 00000000 ok10db 1 3
+@text Okuhiko crying (night colors) DispCHA 0, "ok09db", CHR_N, CHR_L Okuhiko shocked (dawn colors) DispCHA 1, "ok10db", CHR_D, CHR_R
+fgload 1 00000000 ok10db 1 3
+@text Okuhiko shocked (afternoon colors) DispCHA 0, "ok10db", CHR_A, CHR_L Okuhiko shocked (night colors) DispCHA 1, "ok10db", CHR_N, CHR_R
+fgload 1 00000000 ok11db 1 3
+@text Okuhiko surprised (dawn colors) DispCHA 0, "ok11db", CHR_D, CHR_L Okuhiko surprised (afternoon colors) DispCHA 1, "ok11db", CHR_A, CHR_R
+@text   Okuhiko surprised (night colors) DispCHA 0, "ok11db", CHR_N, CHR_L  
+@goto ap_okuhiko
+@label ap_haruka_1_far
+fgload 0 00000000 ha01aa 1 3
+fgload 1 00000000 ha01aa 1 3
+@text Haruka normal (dawn colors) DispCHA 0, "ha01aa", CHR_D, CHR_L Haruka normal (afternoon colors) DispCHA 1, "ha01aa", CHR_A, CHR_R
+fgload 1 00000000 ha02aa 1 3
+@text Haruka normal (night colors) DispCHA 0, "ha01aa", CHR_N, CHR_L Haruka smiling (dawn colors) DispCHA 1, "ha02aa", CHR_D, CHR_R
+fgload 1 00000000 ha02aa 1 3
+@text Haruka smiling (afternoon colors) DispCHA 0, "ha02aa", CHR_A, CHR_L Haruka smiling (night colors) DispCHA 1, "ha02aa", CHR_N, CHR_R
+fgload 1 00000000 ha03aa 1 3
+@text Haruka embarrassed (dawn colors) DispCHA 0, "ha03aa", CHR_D, CHR_L Haruka embarrassed (afternoon colors) DispCHA 1, "ha03aa", CHR_A, CHR_R
+fgload 1 00000000 ha04aa 1 3
+@text Haruka embarrassed (night colors) DispCHA 0, "ha03aa", CHR_N, CHR_L Haruka angry (dawn colors) DispCHA 1, "ha04aa", CHR_D, CHR_R
+fgload 1 00000000 ha04aa 1 3
+@text Haruka angry (afternoon colors) DispCHA 0, "ha04aa", CHR_A, CHR_L Haruka angry (night colors) DispCHA 1, "ha04aa", CHR_N, CHR_R
+fgload 1 00000000 ha05aa 1 3
+@text Haruka ill-tempered (dawn colors) DispCHA 0, "ha05aa", CHR_D, CHR_L Haruka ill-tempered (afternoon colors) DispCHA 1, "ha05aa", CHR_A, CHR_R
+fgload 1 00000000 ha06aa 1 3
+@text Haruka ill-tempered (night colors) DispCHA 0, "ha05aa", CHR_N, CHR_L Haruka dubious (dawn colors) DispCHA 1, "ha06aa", CHR_D, CHR_R
+fgload 1 00000000 ha06aa 1 3
+@text Haruka dubious (afternoon colors) DispCHA 0, "ha06aa", CHR_A, CHR_L Haruka dubious (night colors) DispCHA 1, "ha06aa", CHR_N, CHR_R
+fgload 1 00000000 ha07aa 1 3
+@text Haruka laugh (dawn colors) DispCHA 0, "ha07aa", CHR_D, CHR_L Haruka laugh (afternoon colors) DispCHA 1, "ha07aa", CHR_A, CHR_R
+fgload 1 00000000 ha08aa 1 3
+@text Haruka laugh (night colors) DispCHA 0, "ha07aa", CHR_N, CHR_L Haruka sadness (dawn colors) DispCHA 1, "ha08aa", CHR_D, CHR_R
+fgload 1 00000000 ha08aa 1 3
+@text Haruka sadness (afternoon colors) DispCHA 0, "ha08aa", CHR_A, CHR_L Haruka sadness (night colors) DispCHA 1, "ha08aa", CHR_N, CHR_R
+fgload 1 00000000 ha09aa 1 3
+@text Haruka crying (dawn colors) DispCHA 0, "ha09aa", CHR_D, CHR_L Haruka crying (afternoon colors) DispCHA 1, "ha09aa", CHR_A, CHR_R
+fgload 1 00000000 ha10aa 1 3
+@text Haruka crying (night colors) DispCHA 0, "ha09aa", CHR_N, CHR_L Haruka shocked (dawn colors) DispCHA 1, "ha10aa", CHR_D, CHR_R
+fgload 1 00000000 ha10aa 1 3
+@text Haruka shocked (afternoon colors) DispCHA 0, "ha10aa", CHR_A, CHR_L Haruka shocked (night colors) DispCHA 1, "ha10aa", CHR_N, CHR_R
+fgload 1 00000000 ha11aa 1 3
+@text Haruka surprised (dawn colors) DispCHA 0, "ha11aa", CHR_D, CHR_L Haruka surprised (afternoon colors) DispCHA 1, "ha11aa", CHR_A, CHR_R
+fgload 1 00000000 ha12aa 1 3
+@text Haruka surprised (night colors) DispCHA 0, "ha11aa", CHR_N, CHR_L Haruka indifference (dawn colors) DispCHA 1, "ha12aa", CHR_D, CHR_R
+fgload 1 00000000 ha12aa 1 3
+@text Haruka indifference (afternoon colors) DispCHA 0, "ha12aa", CHR_A, CHR_L Haruka indifference (night colors) DispCHA 1, "ha12aa", CHR_N, CHR_R
+@goto ap_haruka
+@label ap_haruka_1_close
+fgload 0 00000000 ha01ab 1 3
+fgload 1 00000000 ha01ab 1 3
+@text Haruka normal (dawn colors) DispCHA 0, "ha01ab", CHR_D, CHR_L Haruka normal (afternoon colors) DispCHA 1, "ha01ab", CHR_A, CHR_R
+fgload 1 00000000 ha02ab 1 3
+@text Haruka normal (night colors) DispCHA 0, "ha01ab", CHR_N, CHR_L Haruka smiling (dawn colors) DispCHA 1, "ha02ab", CHR_D, CHR_R
+fgload 1 00000000 ha02ab 1 3
+@text Haruka smiling (afternoon colors) DispCHA 0, "ha02ab", CHR_A, CHR_L Haruka smiling (night colors) DispCHA 1, "ha02ab", CHR_N, CHR_R
+fgload 1 00000000 ha03ab 1 3
+@text Haruka embarrassed (dawn colors) DispCHA 0, "ha03ab", CHR_D, CHR_L Haruka embarrassed (afternoon colors) DispCHA 1, "ha03ab", CHR_A, CHR_R
+fgload 1 00000000 ha04ab 1 3
+@text Haruka embarrassed (night colors) DispCHA 0, "ha03ab", CHR_N, CHR_L Haruka angry (dawn colors) DispCHA 1, "ha04ab", CHR_D, CHR_R
+fgload 1 00000000 ha04ab 1 3
+@text Haruka angry (afternoon colors) DispCHA 0, "ha04ab", CHR_A, CHR_L Haruka angry (night colors) DispCHA 1, "ha04ab", CHR_N, CHR_R
+fgload 1 00000000 ha05ab 1 3
+@text Haruka ill-tempered (dawn colors) DispCHA 0, "ha05ab", CHR_D, CHR_L Haruka ill-tempered (afternoon colors) DispCHA 1, "ha05ab", CHR_A, CHR_R
+fgload 1 00000000 ha06ab 1 3
+@text Haruka ill-tempered (night colors) DispCHA 0, "ha05ab", CHR_N, CHR_L Haruka dubious (dawn colors) DispCHA 1, "ha06ab", CHR_D, CHR_R
+fgload 1 00000000 ha06ab 1 3
+@text Haruka dubious (afternoon colors) DispCHA 0, "ha06ab", CHR_A, CHR_L Haruka dubious (night colors) DispCHA 1, "ha06ab", CHR_N, CHR_R
+fgload 1 00000000 ha07ab 1 3
+@text Haruka laugh (dawn colors) DispCHA 0, "ha07ab", CHR_D, CHR_L Haruka laugh (afternoon colors) DispCHA 1, "ha07ab", CHR_A, CHR_R
+fgload 1 00000000 ha08ab 1 3
+@text Haruka laugh (night colors) DispCHA 0, "ha07ab", CHR_N, CHR_L Haruka sadness (dawn colors) DispCHA 1, "ha08ab", CHR_D, CHR_R
+fgload 1 00000000 ha08ab 1 3
+@text Haruka sadness (afternoon colors) DispCHA 0, "ha08ab", CHR_A, CHR_L Haruka sadness (night colors) DispCHA 1, "ha08ab", CHR_N, CHR_R
+fgload 1 00000000 ha09ab 1 3
+@text Haruka crying (dawn colors) DispCHA 0, "ha09ab", CHR_D, CHR_L Haruka crying (afternoon colors) DispCHA 1, "ha09ab", CHR_A, CHR_R
+fgload 1 00000000 ha10ab 1 3
+@text Haruka crying (night colors) DispCHA 0, "ha09ab", CHR_N, CHR_L Haruka shocked (dawn colors) DispCHA 1, "ha10ab", CHR_D, CHR_R
+fgload 1 00000000 ha10ab 1 3
+@text Haruka shocked (afternoon colors) DispCHA 0, "ha10ab", CHR_A, CHR_L Haruka shocked (night colors) DispCHA 1, "ha10ab", CHR_N, CHR_R
+fgload 1 00000000 ha11ab 1 3
+@text Haruka surprised (dawn colors) DispCHA 0, "ha11ab", CHR_D, CHR_L Haruka surprised (afternoon colors) DispCHA 1, "ha11ab", CHR_A, CHR_R
+fgload 1 00000000 ha12ab 1 3
+@text Haruka surprised (night colors) DispCHA 0, "ha11ab", CHR_N, CHR_L Haruka indifference (dawn colors) DispCHA 1, "ha12ab", CHR_D, CHR_R
+fgload 1 00000000 ha12ab 1 3
+@text Haruka indifference (afternoon colors) DispCHA 0, "ha12ab", CHR_A, CHR_L Haruka indifference (night colors) DispCHA 1, "ha12ab", CHR_N, CHR_R
+@goto ap_haruka
+@label ap_haruka_2_far
+fgload 0 00000000 ha01ca 1 3
+fgload 1 00000000 ha01ca 1 3
+@text Haruka normal (dawn colors) DispCHA 0, "ha01ca", CHR_D, CHR_L Haruka normal (afternoon colors) DispCHA 1, "ha01ca", CHR_A, CHR_R
+fgload 1 00000000 ha02ca 1 3
+@text Haruka normal (night colors) DispCHA 0, "ha01ca", CHR_N, CHR_L Haruka smiling (dawn colors) DispCHA 1, "ha02ca", CHR_D, CHR_R
+fgload 1 00000000 ha02ca 1 3
+@text Haruka smiling (afternoon colors) DispCHA 0, "ha02ca", CHR_A, CHR_L Haruka smiling (night colors) DispCHA 1, "ha02ca", CHR_N, CHR_R
+fgload 1 00000000 ha03ca 1 3
+@text Haruka embarrassed (dawn colors) DispCHA 0, "ha03ca", CHR_D, CHR_L Haruka embarrassed (afternoon colors) DispCHA 1, "ha03ca", CHR_A, CHR_R
+fgload 1 00000000 ha04ca 1 3
+@text Haruka embarrassed (night colors) DispCHA 0, "ha03ca", CHR_N, CHR_L Haruka angry (dawn colors) DispCHA 1, "ha04ca", CHR_D, CHR_R
+fgload 1 00000000 ha04ca 1 3
+@text Haruka angry (afternoon colors) DispCHA 0, "ha04ca", CHR_A, CHR_L Haruka angry (night colors) DispCHA 1, "ha04ca", CHR_N, CHR_R
+fgload 1 00000000 ha05ca 1 3
+@text Haruka ill-tempered (dawn colors) DispCHA 0, "ha05ca", CHR_D, CHR_L Haruka ill-tempered (afternoon colors) DispCHA 1, "ha05ca", CHR_A, CHR_R
+fgload 1 00000000 ha06ca 1 3
+@text Haruka ill-tempered (night colors) DispCHA 0, "ha05ca", CHR_N, CHR_L Haruka dubious (dawn colors) DispCHA 1, "ha06ca", CHR_D, CHR_R
+fgload 1 00000000 ha06ca 1 3
+@text Haruka dubious (afternoon colors) DispCHA 0, "ha06ca", CHR_A, CHR_L Haruka dubious (night colors) DispCHA 1, "ha06ca", CHR_N, CHR_R
+fgload 1 00000000 ha07ca 1 3
+@text Haruka laugh (dawn colors) DispCHA 0, "ha07ca", CHR_D, CHR_L Haruka laugh (afternoon colors) DispCHA 1, "ha07ca", CHR_A, CHR_R
+fgload 1 00000000 ha08ca 1 3
+@text Haruka laugh (night colors) DispCHA 0, "ha07ca", CHR_N, CHR_L Haruka sadness (dawn colors) DispCHA 1, "ha08ca", CHR_D, CHR_R
+fgload 1 00000000 ha08ca 1 3
+@text Haruka sadness (afternoon colors) DispCHA 0, "ha08ca", CHR_A, CHR_L Haruka sadness (night colors) DispCHA 1, "ha08ca", CHR_N, CHR_R
+fgload 1 00000000 ha09ca 1 3
+@text Haruka crying (dawn colors) DispCHA 0, "ha09ca", CHR_D, CHR_L Haruka crying (afternoon colors) DispCHA 1, "ha09ca", CHR_A, CHR_R
+fgload 1 00000000 ha10ca 1 3
+@text Haruka crying (night colors) DispCHA 0, "ha09ca", CHR_N, CHR_L Haruka shocked (dawn colors) DispCHA 1, "ha10ca", CHR_D, CHR_R
+fgload 1 00000000 ha10ca 1 3
+@text Haruka shocked (afternoon colors) DispCHA 0, "ha10ca", CHR_A, CHR_L Haruka shocked (night colors) DispCHA 1, "ha10ca", CHR_N, CHR_R
+fgload 1 00000000 ha11ca 1 3
+@text Haruka surprised (dawn colors) DispCHA 0, "ha11ca", CHR_D, CHR_L Haruka surprised (afternoon colors) DispCHA 1, "ha11ca", CHR_A, CHR_R
+fgload 1 00000000 ha12ca 1 3
+@text Haruka surprised (night colors) DispCHA 0, "ha11ca", CHR_N, CHR_L Haruka indifference (dawn colors) DispCHA 1, "ha12ca", CHR_D, CHR_R
+fgload 1 00000000 ha12ca 1 3
+@text Haruka indifference (afternoon colors) DispCHA 0, "ha12ca", CHR_A, CHR_L Haruka indifference (night colors) DispCHA 1, "ha12ca", CHR_N, CHR_R
+@goto ap_haruka
+@label ap_haruka_2_close
+fgload 0 00000000 ha01cb 1 3
+fgload 1 00000000 ha01cb 1 3
+@text Haruka normal (dawn colors) DispCHA 0, "ha01cb", CHR_D, CHR_L Haruka normal (afternoon colors) DispCHA 1, "ha01cb", CHR_A, CHR_R
+fgload 1 00000000 ha02cb 1 3
+@text Haruka normal (night colors) DispCHA 0, "ha01cb", CHR_N, CHR_L Haruka smiling (dawn colors) DispCHA 1, "ha02cb", CHR_D, CHR_R
+fgload 1 00000000 ha02cb 1 3
+@text Haruka smiling (afternoon colors) DispCHA 0, "ha02cb", CHR_A, CHR_L Haruka smiling (night colors) DispCHA 1, "ha02cb", CHR_N, CHR_R
+fgload 1 00000000 ha03cb 1 3
+@text Haruka embarrassed (dawn colors) DispCHA 0, "ha03cb", CHR_D, CHR_L Haruka embarrassed (afternoon colors) DispCHA 1, "ha03cb", CHR_A, CHR_R
+fgload 1 00000000 ha04cb 1 3
+@text Haruka embarrassed (night colors) DispCHA 0, "ha03cb", CHR_N, CHR_L Haruka angry (dawn colors) DispCHA 1, "ha04cb", CHR_D, CHR_R
+fgload 1 00000000 ha04cb 1 3
+@text Haruka angry (afternoon colors) DispCHA 0, "ha04cb", CHR_A, CHR_L Haruka angry (night colors) DispCHA 1, "ha04cb", CHR_N, CHR_R
+fgload 1 00000000 ha05cb 1 3
+@text Haruka ill-tempered (dawn colors) DispCHA 0, "ha05cb", CHR_D, CHR_L Haruka ill-tempered (afternoon colors) DispCHA 1, "ha05cb", CHR_A, CHR_R
+fgload 1 00000000 ha06cb 1 3
+@text Haruka ill-tempered (night colors) DispCHA 0, "ha05cb", CHR_N, CHR_L Haruka dubious (dawn colors) DispCHA 1, "ha06cb", CHR_D, CHR_R
+fgload 1 00000000 ha06cb 1 3
+@text Haruka dubious (afternoon colors) DispCHA 0, "ha06cb", CHR_A, CHR_L Haruka dubious (night colors) DispCHA 1, "ha06cb", CHR_N, CHR_R
+fgload 1 00000000 ha07cb 1 3
+@text Haruka laugh (dawn colors) DispCHA 0, "ha07cb", CHR_D, CHR_L Haruka laugh (afternoon colors) DispCHA 1, "ha07cb", CHR_A, CHR_R
+fgload 1 00000000 ha08cb 1 3
+@text Haruka laugh (night colors) DispCHA 0, "ha07cb", CHR_N, CHR_L Haruka sadness (dawn colors) DispCHA 1, "ha08cb", CHR_D, CHR_R
+fgload 1 00000000 ha08cb 1 3
+@text Haruka sadness (afternoon colors) DispCHA 0, "ha08cb", CHR_A, CHR_L Haruka sadness (night colors) DispCHA 1, "ha08cb", CHR_N, CHR_R
+fgload 1 00000000 ha09cb 1 3
+@text Haruka crying (dawn colors) DispCHA 0, "ha09cb", CHR_D, CHR_L Haruka crying (afternoon colors) DispCHA 1, "ha09cb", CHR_A, CHR_R
+fgload 1 00000000 ha10cb 1 3
+@text Haruka crying (night colors) DispCHA 0, "ha09cb", CHR_N, CHR_L Haruka shocked (dawn colors) DispCHA 1, "ha10cb", CHR_D, CHR_R
+fgload 1 00000000 ha10cb 1 3
+@text Haruka shocked (afternoon colors) DispCHA 0, "ha10cb", CHR_A, CHR_L Haruka shocked (night colors) DispCHA 1, "ha10cb", CHR_N, CHR_R
+fgload 1 00000000 ha11cb 1 3
+@text Haruka surprised (dawn colors) DispCHA 0, "ha11cb", CHR_D, CHR_L Haruka surprised (afternoon colors) DispCHA 1, "ha11cb", CHR_A, CHR_R
+fgload 1 00000000 ha12cb 1 3
+@text Haruka surprised (night colors) DispCHA 0, "ha11cb", CHR_N, CHR_L Haruka indifference (dawn colors) DispCHA 1, "ha12cb", CHR_D, CHR_R
+fgload 1 00000000 ha12cb 1 3
+@text Haruka indifference (afternoon colors) DispCHA 0, "ha12cb", CHR_A, CHR_L Haruka indifference (night colors) DispCHA 1, "ha12cb", CHR_N, CHR_R
+@goto ap_haruka
+@label ap_haruka_s_far
+fgload 0 00000000 ha01da 1 3
+fgload 1 00000000 ha01da 1 3
+@text Haruka normal (dawn colors) DispCHA 0, "ha01da", CHR_D, CHR_L Haruka normal (afternoon colors) DispCHA 1, "ha01da", CHR_A, CHR_R
+fgload 1 00000000 ha02da 1 3
+@text Haruka normal (night colors) DispCHA 0, "ha01da", CHR_N, CHR_L Haruka smiling (dawn colors) DispCHA 1, "ha02da", CHR_D, CHR_R
+fgload 1 00000000 ha02da 1 3
+@text Haruka smiling (afternoon colors) DispCHA 0, "ha02da", CHR_A, CHR_L Haruka smiling (night colors) DispCHA 1, "ha02da", CHR_N, CHR_R
+fgload 1 00000000 ha03da 1 3
+@text Haruka embarrassed (dawn colors) DispCHA 0, "ha03da", CHR_D, CHR_L Haruka embarrassed (afternoon colors) DispCHA 1, "ha03da", CHR_A, CHR_R
+fgload 1 00000000 ha04da 1 3
+@text Haruka embarrassed (night colors) DispCHA 0, "ha03da", CHR_N, CHR_L Haruka angry (dawn colors) DispCHA 1, "ha04da", CHR_D, CHR_R
+fgload 1 00000000 ha04da 1 3
+@text Haruka angry (afternoon colors) DispCHA 0, "ha04da", CHR_A, CHR_L Haruka angry (night colors) DispCHA 1, "ha04da", CHR_N, CHR_R
+fgload 1 00000000 ha05da 1 3
+@text Haruka ill-tempered (dawn colors) DispCHA 0, "ha05da", CHR_D, CHR_L Haruka ill-tempered (afternoon colors) DispCHA 1, "ha05da", CHR_A, CHR_R
+fgload 1 00000000 ha06da 1 3
+@text Haruka ill-tempered (night colors) DispCHA 0, "ha05da", CHR_N, CHR_L Haruka dubious (dawn colors) DispCHA 1, "ha06da", CHR_D, CHR_R
+fgload 1 00000000 ha06da 1 3
+@text Haruka dubious (afternoon colors) DispCHA 0, "ha06da", CHR_A, CHR_L Haruka dubious (night colors) DispCHA 1, "ha06da", CHR_N, CHR_R
+fgload 1 00000000 ha07da 1 3
+@text Haruka laugh (dawn colors) DispCHA 0, "ha07da", CHR_D, CHR_L Haruka laugh (afternoon colors) DispCHA 1, "ha07da", CHR_A, CHR_R
+fgload 1 00000000 ha08da 1 3
+@text Haruka laugh (night colors) DispCHA 0, "ha07da", CHR_N, CHR_L Haruka sadness (dawn colors) DispCHA 1, "ha08da", CHR_D, CHR_R
+fgload 1 00000000 ha08da 1 3
+@text Haruka sadness (afternoon colors) DispCHA 0, "ha08da", CHR_A, CHR_L Haruka sadness (night colors) DispCHA 1, "ha08da", CHR_N, CHR_R
+fgload 1 00000000 ha09da 1 3
+@text Haruka crying (dawn colors) DispCHA 0, "ha09da", CHR_D, CHR_L Haruka crying (afternoon colors) DispCHA 1, "ha09da", CHR_A, CHR_R
+fgload 1 00000000 ha10da 1 3
+@text Haruka crying (night colors) DispCHA 0, "ha09da", CHR_N, CHR_L Haruka shocked (dawn colors) DispCHA 1, "ha10da", CHR_D, CHR_R
+fgload 1 00000000 ha10da 1 3
+@text Haruka shocked (afternoon colors) DispCHA 0, "ha10da", CHR_A, CHR_L Haruka shocked (night colors) DispCHA 1, "ha10da", CHR_N, CHR_R
+fgload 1 00000000 ha11da 1 3
+@text Haruka surprised (dawn colors) DispCHA 0, "ha11da", CHR_D, CHR_L Haruka surprised (afternoon colors) DispCHA 1, "ha11da", CHR_A, CHR_R
+fgload 1 00000000 ha12da 1 3
+@text Haruka surprised (night colors) DispCHA 0, "ha11da", CHR_N, CHR_L Haruka indifference (dawn colors) DispCHA 1, "ha12da", CHR_D, CHR_R
+fgload 1 00000000 ha12da 1 3
+@text Haruka indifference (afternoon colors) DispCHA 0, "ha12da", CHR_A, CHR_L Haruka indifference (night colors) DispCHA 1, "ha12da", CHR_N, CHR_R
+@goto ap_haruka
+@label ap_haruka_s_close
+fgload 0 00000000 ha01db 1 3
+fgload 1 00000000 ha01db 1 3
+@text Haruka normal (dawn colors) DispCHA 0, "ha01db", CHR_D, CHR_L Haruka normal (afternoon colors) DispCHA 1, "ha01db", CHR_A, CHR_R
+fgload 1 00000000 ha02db 1 3
+@text Haruka normal (night colors) DispCHA 0, "ha01db", CHR_N, CHR_L Haruka smiling (dawn colors) DispCHA 1, "ha02db", CHR_D, CHR_R
+fgload 1 00000000 ha02db 1 3
+@text Haruka smiling (afternoon colors) DispCHA 0, "ha02db", CHR_A, CHR_L Haruka smiling (night colors) DispCHA 1, "ha02db", CHR_N, CHR_R
+fgload 1 00000000 ha03db 1 3
+@text Haruka embarrassed (dawn colors) DispCHA 0, "ha03db", CHR_D, CHR_L Haruka embarrassed (afternoon colors) DispCHA 1, "ha03db", CHR_A, CHR_R
+fgload 1 00000000 ha04db 1 3
+@text Haruka embarrassed (night colors) DispCHA 0, "ha03db", CHR_N, CHR_L Haruka angry (dawn colors) DispCHA 1, "ha04db", CHR_D, CHR_R
+fgload 1 00000000 ha04db 1 3
+@text Haruka angry (afternoon colors) DispCHA 0, "ha04db", CHR_A, CHR_L Haruka angry (night colors) DispCHA 1, "ha04db", CHR_N, CHR_R
+fgload 1 00000000 ha05db 1 3
+@text Haruka ill-tempered (dawn colors) DispCHA 0, "ha05db", CHR_D, CHR_L Haruka ill-tempered (afternoon colors) DispCHA 1, "ha05db", CHR_A, CHR_R
+fgload 1 00000000 ha06db 1 3
+@text Haruka ill-tempered (night colors) DispCHA 0, "ha05db", CHR_N, CHR_L Haruka dubious (dawn colors) DispCHA 1, "ha06db", CHR_D, CHR_R
+fgload 1 00000000 ha06db 1 3
+@text Haruka dubious (afternoon colors) DispCHA 0, "ha06db", CHR_A, CHR_L Haruka dubious (night colors) DispCHA 1, "ha06db", CHR_N, CHR_R
+fgload 1 00000000 ha07db 1 3
+@text Haruka laugh (dawn colors) DispCHA 0, "ha07db", CHR_D, CHR_L Haruka laugh (afternoon colors) DispCHA 1, "ha07db", CHR_A, CHR_R
+fgload 1 00000000 ha08db 1 3
+@text Haruka laugh (night colors) DispCHA 0, "ha07db", CHR_N, CHR_L Haruka sadness (dawn colors) DispCHA 1, "ha08db", CHR_D, CHR_R
+fgload 1 00000000 ha08db 1 3
+@text Haruka sadness (afternoon colors) DispCHA 0, "ha08db", CHR_A, CHR_L Haruka sadness (night colors) DispCHA 1, "ha08db", CHR_N, CHR_R
+fgload 1 00000000 ha09db 1 3
+@text Haruka crying (dawn colors) DispCHA 0, "ha09db", CHR_D, CHR_L Haruka crying (afternoon colors) DispCHA 1, "ha09db", CHR_A, CHR_R
+fgload 1 00000000 ha10db 1 3
+@text Haruka crying (night colors) DispCHA 0, "ha09db", CHR_N, CHR_L Haruka shocked (dawn colors) DispCHA 1, "ha10db", CHR_D, CHR_R
+fgload 1 00000000 ha10db 1 3
+@text Haruka shocked (afternoon colors) DispCHA 0, "ha10db", CHR_A, CHR_L Haruka shocked (night colors) DispCHA 1, "ha10db", CHR_N, CHR_R
+fgload 1 00000000 ha11db 1 3
+@text Haruka surprised (dawn colors) DispCHA 0, "ha11db", CHR_D, CHR_L Haruka surprised (afternoon colors) DispCHA 1, "ha11db", CHR_A, CHR_R
+fgload 1 00000000 ha12db 1 3
+@text Haruka surprised (night colors) DispCHA 0, "ha11db", CHR_N, CHR_L Haruka indifference (dawn colors) DispCHA 1, "ha12db", CHR_D, CHR_R
+fgload 1 00000000 ha12db 1 3
+@text Haruka indifference (afternoon colors) DispCHA 0, "ha12db", CHR_A, CHR_L Haruka indifference (night colors) DispCHA 1, "ha12db", CHR_N, CHR_R
+@goto ap_haruka
+@label ap_yuka_1_far
+fgload 0 00000000 yu01aa 1 3
+fgload 1 00000000 yu01aa 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01aa", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01aa", CHR_A, CHR_R
+fgload 1 00000000 yu02aa 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01aa", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02aa", CHR_D, CHR_R
+fgload 1 00000000 yu02aa 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02aa", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02aa", CHR_N, CHR_R
+fgload 1 00000000 yu03aa 1 3
+@text Yuka embarrassed (dawn colors) DispCHA 0, "yu03aa", CHR_D, CHR_L Yuka embarrassed (afternoon colors) DispCHA 1, "yu03aa", CHR_A, CHR_R
+fgload 1 00000000 yu04aa 1 3
+@text Yuka embarrassed (night colors) DispCHA 0, "yu03aa", CHR_N, CHR_L Yuka angry (dawn colors) DispCHA 1, "yu04aa", CHR_D, CHR_R
+fgload 1 00000000 yu04aa 1 3
+@text Yuka angry (afternoon colors) DispCHA 0, "yu04aa", CHR_A, CHR_L Yuka angry (night colors) DispCHA 1, "yu04aa", CHR_N, CHR_R
+fgload 1 00000000 yu05aa 1 3
+@text Yuka ill-tempered (dawn colors) DispCHA 0, "yu05aa", CHR_D, CHR_L Yuka ill-tempered (afternoon colors) DispCHA 1, "yu05aa", CHR_A, CHR_R
+fgload 1 00000000 yu06aa 1 3
+@text Yuka ill-tempered (night colors) DispCHA 0, "yu05aa", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06aa", CHR_D, CHR_R
+fgload 1 00000000 yu06aa 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06aa", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06aa", CHR_N, CHR_R
+fgload 1 00000000 yu07aa 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07aa", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07aa", CHR_A, CHR_R
+fgload 1 00000000 yu08aa 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07aa", CHR_N, CHR_L Yuka sadness (dawn colors) DispCHA 1, "yu08aa", CHR_D, CHR_R
+fgload 1 00000000 yu08aa 1 3
+@text Yuka sadness (afternoon colors) DispCHA 0, "yu08aa", CHR_A, CHR_L Yuka sadness (night colors) DispCHA 1, "yu08aa", CHR_N, CHR_R
+fgload 1 00000000 yu09aa 1 3
+@text Yuka crying (dawn colors) DispCHA 0, "yu09aa", CHR_D, CHR_L Yuka crying (afternoon colors) DispCHA 1, "yu09aa", CHR_A, CHR_R
+fgload 1 00000000 yu10aa 1 3
+@text Yuka crying (night colors) DispCHA 0, "yu09aa", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10aa", CHR_D, CHR_R
+fgload 1 00000000 yu10aa 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10aa", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10aa", CHR_N, CHR_R
+fgload 1 00000000 yu11aa 1 3
+@text Yuka surprised (dawn colors) DispCHA 0, "yu11aa", CHR_D, CHR_L Yuka surprised (afternoon colors) DispCHA 1, "yu11aa", CHR_A, CHR_R
+fgload 1 00000000 yu12aa 1 3
+@text Yuka surprised (night colors) DispCHA 0, "yu11aa", CHR_N, CHR_L Yuka finger-point (dawn colors) DispCHA 1, "yu12aa", CHR_D, CHR_R
+fgload 1 00000000 yu12aa 1 3
+@text Yuka finger-point (afternoon colors) DispCHA 0, "yu12aa", CHR_A, CHR_L Yuka finger-point (night colors) DispCHA 1, "yu12aa", CHR_N, CHR_R
+fgload 1 00000000 yu13aa 1 3
+@text Yuka serious (dawn colors) DispCHA 0, "yu13aa", CHR_D, CHR_L Yuka serious (afternoon colors) DispCHA 1, "yu13aa", CHR_A, CHR_R
+@text   Yuka serious (night colors) DispCHA 0, "yu13aa", CHR_N, CHR_L  
+@goto ap_yuka
+@label ap_yuka_1_close
+fgload 0 00000000 yu01ab 1 3
+fgload 1 00000000 yu01ab 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01ab", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01ab", CHR_A, CHR_R
+fgload 1 00000000 yu02ab 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01ab", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02ab", CHR_D, CHR_R
+fgload 1 00000000 yu02ab 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02ab", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02ab", CHR_N, CHR_R
+fgload 1 00000000 yu03ab 1 3
+@text Yuka embarrassed (dawn colors) DispCHA 0, "yu03ab", CHR_D, CHR_L Yuka embarrassed (afternoon colors) DispCHA 1, "yu03ab", CHR_A, CHR_R
+fgload 1 00000000 yu04ab 1 3
+@text Yuka embarrassed (night colors) DispCHA 0, "yu03ab", CHR_N, CHR_L Yuka angry (dawn colors) DispCHA 1, "yu04ab", CHR_D, CHR_R
+fgload 1 00000000 yu04ab 1 3
+@text Yuka angry (afternoon colors) DispCHA 0, "yu04ab", CHR_A, CHR_L Yuka angry (night colors) DispCHA 1, "yu04ab", CHR_N, CHR_R
+fgload 1 00000000 yu05ab 1 3
+@text Yuka ill-tempered (dawn colors) DispCHA 0, "yu05ab", CHR_D, CHR_L Yuka ill-tempered (afternoon colors) DispCHA 1, "yu05ab", CHR_A, CHR_R
+fgload 1 00000000 yu06ab 1 3
+@text Yuka ill-tempered (night colors) DispCHA 0, "yu05ab", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06ab", CHR_D, CHR_R
+fgload 1 00000000 yu06ab 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06ab", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06ab", CHR_N, CHR_R
+fgload 1 00000000 yu07ab 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07ab", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07ab", CHR_A, CHR_R
+fgload 1 00000000 yu08ab 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07ab", CHR_N, CHR_L Yuka sadness (dawn colors) DispCHA 1, "yu08ab", CHR_D, CHR_R
+fgload 1 00000000 yu08ab 1 3
+@text Yuka sadness (afternoon colors) DispCHA 0, "yu08ab", CHR_A, CHR_L Yuka sadness (night colors) DispCHA 1, "yu08ab", CHR_N, CHR_R
+fgload 1 00000000 yu09ab 1 3
+@text Yuka crying (dawn colors) DispCHA 0, "yu09ab", CHR_D, CHR_L Yuka crying (afternoon colors) DispCHA 1, "yu09ab", CHR_A, CHR_R
+fgload 1 00000000 yu10ab 1 3
+@text Yuka crying (night colors) DispCHA 0, "yu09ab", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10ab", CHR_D, CHR_R
+fgload 1 00000000 yu10ab 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10ab", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10ab", CHR_N, CHR_R
+fgload 1 00000000 yu11ab 1 3
+@text Yuka surprised (dawn colors) DispCHA 0, "yu11ab", CHR_D, CHR_L Yuka surprised (afternoon colors) DispCHA 1, "yu11ab", CHR_A, CHR_R
+fgload 1 00000000 yu12ab 1 3
+@text Yuka surprised (night colors) DispCHA 0, "yu11ab", CHR_N, CHR_L Yuka finger-point (dawn colors) DispCHA 1, "yu12ab", CHR_D, CHR_R
+fgload 1 00000000 yu12ab 1 3
+@text Yuka finger-point (afternoon colors) DispCHA 0, "yu12ab", CHR_A, CHR_L Yuka finger-point (night colors) DispCHA 1, "yu12ab", CHR_N, CHR_R
+fgload 1 00000000 yu13ab 1 3
+@text Yuka serious (dawn colors) DispCHA 0, "yu13ab", CHR_D, CHR_L Yuka serious (afternoon colors) DispCHA 1, "yu13ab", CHR_A, CHR_R
+@text   Yuka serious (night colors) DispCHA 0, "yu13ab", CHR_N, CHR_L  
+@goto ap_yuka
+@label ap_yuka_2_far
+fgload 0 00000000 yu01ca 1 3
+fgload 1 00000000 yu01ca 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01ca", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01ca", CHR_A, CHR_R
+fgload 1 00000000 yu02ca 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01ca", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02ca", CHR_D, CHR_R
+fgload 1 00000000 yu02ca 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02ca", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02ca", CHR_N, CHR_R
+fgload 1 00000000 yu03ca 1 3
+@text Yuka embarrassed (dawn colors) DispCHA 0, "yu03ca", CHR_D, CHR_L Yuka embarrassed (afternoon colors) DispCHA 1, "yu03ca", CHR_A, CHR_R
+fgload 1 00000000 yu04ca 1 3
+@text Yuka embarrassed (night colors) DispCHA 0, "yu03ca", CHR_N, CHR_L Yuka angry (dawn colors) DispCHA 1, "yu04ca", CHR_D, CHR_R
+fgload 1 00000000 yu04ca 1 3
+@text Yuka angry (afternoon colors) DispCHA 0, "yu04ca", CHR_A, CHR_L Yuka angry (night colors) DispCHA 1, "yu04ca", CHR_N, CHR_R
+fgload 1 00000000 yu05ca 1 3
+@text Yuka ill-tempered (dawn colors) DispCHA 0, "yu05ca", CHR_D, CHR_L Yuka ill-tempered (afternoon colors) DispCHA 1, "yu05ca", CHR_A, CHR_R
+fgload 1 00000000 yu06ca 1 3
+@text Yuka ill-tempered (night colors) DispCHA 0, "yu05ca", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06ca", CHR_D, CHR_R
+fgload 1 00000000 yu06ca 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06ca", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06ca", CHR_N, CHR_R
+fgload 1 00000000 yu07ca 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07ca", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07ca", CHR_A, CHR_R
+fgload 1 00000000 yu08ca 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07ca", CHR_N, CHR_L Yuka sadness (dawn colors) DispCHA 1, "yu08ca", CHR_D, CHR_R
+fgload 1 00000000 yu08ca 1 3
+@text Yuka sadness (afternoon colors) DispCHA 0, "yu08ca", CHR_A, CHR_L Yuka sadness (night colors) DispCHA 1, "yu08ca", CHR_N, CHR_R
+fgload 1 00000000 yu09ca 1 3
+@text Yuka crying (dawn colors) DispCHA 0, "yu09ca", CHR_D, CHR_L Yuka crying (afternoon colors) DispCHA 1, "yu09ca", CHR_A, CHR_R
+fgload 1 00000000 yu10ca 1 3
+@text Yuka crying (night colors) DispCHA 0, "yu09ca", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10ca", CHR_D, CHR_R
+fgload 1 00000000 yu10ca 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10ca", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10ca", CHR_N, CHR_R
+fgload 1 00000000 yu11ca 1 3
+@text Yuka surprised (dawn colors) DispCHA 0, "yu11ca", CHR_D, CHR_L Yuka surprised (afternoon colors) DispCHA 1, "yu11ca", CHR_A, CHR_R
+fgload 1 00000000 yu12ca 1 3
+@text Yuka surprised (night colors) DispCHA 0, "yu11ca", CHR_N, CHR_L Yuka finger-point (dawn colors) DispCHA 1, "yu12ca", CHR_D, CHR_R
+fgload 1 00000000 yu12ca 1 3
+@text Yuka finger-point (afternoon colors) DispCHA 0, "yu12ca", CHR_A, CHR_L Yuka finger-point (night colors) DispCHA 1, "yu12ca", CHR_N, CHR_R
+fgload 1 00000000 yu13ca 1 3
+@text Yuka serious (dawn colors) DispCHA 0, "yu13ca", CHR_D, CHR_L Yuka serious (afternoon colors) DispCHA 1, "yu13ca", CHR_A, CHR_R
+@text   Yuka serious (night colors) DispCHA 0, "yu13ca", CHR_N, CHR_L  
+@goto ap_yuka
+@label ap_yuka_2_close
+fgload 0 00000000 yu01cb 1 3
+fgload 1 00000000 yu01cb 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01cb", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01cb", CHR_A, CHR_R
+fgload 1 00000000 yu02cb 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01cb", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02cb", CHR_D, CHR_R
+fgload 1 00000000 yu02cb 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02cb", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02cb", CHR_N, CHR_R
+fgload 1 00000000 yu03cb 1 3
+@text Yuka embarrassed (dawn colors) DispCHA 0, "yu03cb", CHR_D, CHR_L Yuka embarrassed (afternoon colors) DispCHA 1, "yu03cb", CHR_A, CHR_R
+fgload 1 00000000 yu04cb 1 3
+@text Yuka embarrassed (night colors) DispCHA 0, "yu03cb", CHR_N, CHR_L Yuka angry (dawn colors) DispCHA 1, "yu04cb", CHR_D, CHR_R
+fgload 1 00000000 yu04cb 1 3
+@text Yuka angry (afternoon colors) DispCHA 0, "yu04cb", CHR_A, CHR_L Yuka angry (night colors) DispCHA 1, "yu04cb", CHR_N, CHR_R
+fgload 1 00000000 yu05cb 1 3
+@text Yuka ill-tempered (dawn colors) DispCHA 0, "yu05cb", CHR_D, CHR_L Yuka ill-tempered (afternoon colors) DispCHA 1, "yu05cb", CHR_A, CHR_R
+fgload 1 00000000 yu06cb 1 3
+@text Yuka ill-tempered (night colors) DispCHA 0, "yu05cb", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06cb", CHR_D, CHR_R
+fgload 1 00000000 yu06cb 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06cb", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06cb", CHR_N, CHR_R
+fgload 1 00000000 yu07cb 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07cb", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07cb", CHR_A, CHR_R
+fgload 1 00000000 yu08cb 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07cb", CHR_N, CHR_L Yuka sadness (dawn colors) DispCHA 1, "yu08cb", CHR_D, CHR_R
+fgload 1 00000000 yu08cb 1 3
+@text Yuka sadness (afternoon colors) DispCHA 0, "yu08cb", CHR_A, CHR_L Yuka sadness (night colors) DispCHA 1, "yu08cb", CHR_N, CHR_R
+fgload 1 00000000 yu09cb 1 3
+@text Yuka crying (dawn colors) DispCHA 0, "yu09cb", CHR_D, CHR_L Yuka crying (afternoon colors) DispCHA 1, "yu09cb", CHR_A, CHR_R
+fgload 1 00000000 yu10cb 1 3
+@text Yuka crying (night colors) DispCHA 0, "yu09cb", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10cb", CHR_D, CHR_R
+fgload 1 00000000 yu10cb 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10cb", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10cb", CHR_N, CHR_R
+fgload 1 00000000 yu11cb 1 3
+@text Yuka surprised (dawn colors) DispCHA 0, "yu11cb", CHR_D, CHR_L Yuka surprised (afternoon colors) DispCHA 1, "yu11cb", CHR_A, CHR_R
+fgload 1 00000000 yu12cb 1 3
+@text Yuka surprised (night colors) DispCHA 0, "yu11cb", CHR_N, CHR_L Yuka finger-point (dawn colors) DispCHA 1, "yu12cb", CHR_D, CHR_R
+fgload 1 00000000 yu12cb 1 3
+@text Yuka finger-point (afternoon colors) DispCHA 0, "yu12cb", CHR_A, CHR_L Yuka finger-point (night colors) DispCHA 1, "yu12cb", CHR_N, CHR_R
+fgload 1 00000000 yu13cb 1 3
+@text Yuka serious (dawn colors) DispCHA 0, "yu13cb", CHR_D, CHR_L Yuka serious (afternoon colors) DispCHA 1, "yu13cb", CHR_A, CHR_R
+@text   Yuka serious (night colors) DispCHA 0, "yu13cb", CHR_N, CHR_L  
+fgload 0 00000000 EY04A1 1 3
+@text   Yuka watching sakura (day) DispCHA 0, "EY04A1", chr_a, chr_c
+@text   Yuka watching sakura (night) DispCHA 0, "EY04B1", chr_n, chr_c  
+@goto ap_yuka
+@label ap_yuka_s_far
+fgload 0 00000000 yu01da 1 3
+fgload 1 00000000 yu01da 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01da", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01da", CHR_A, CHR_R
+fgload 1 00000000 yu02da 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01da", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02da", CHR_D, CHR_R
+fgload 1 00000000 yu02da 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02da", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02da", CHR_N, CHR_R
+fgload 1 00000000 yu03da 1 3
+@text Yuka embarrassed (dawn colors) DispCHA 0, "yu03da", CHR_D, CHR_L Yuka embarrassed (afternoon colors) DispCHA 1, "yu03da", CHR_A, CHR_R
+fgload 1 00000000 yu04da 1 3
+@text Yuka embarrassed (night colors) DispCHA 0, "yu03da", CHR_N, CHR_L Yuka angry (dawn colors) DispCHA 1, "yu04da", CHR_D, CHR_R
+fgload 1 00000000 yu04da 1 3
+@text Yuka angry (afternoon colors) DispCHA 0, "yu04da", CHR_A, CHR_L Yuka angry (night colors) DispCHA 1, "yu04da", CHR_N, CHR_R
+fgload 1 00000000 yu05da 1 3
+@text Yuka ill-tempered (dawn colors) DispCHA 0, "yu05da", CHR_D, CHR_L Yuka ill-tempered (afternoon colors) DispCHA 1, "yu05da", CHR_A, CHR_R
+fgload 1 00000000 yu06da 1 3
+@text Yuka ill-tempered (night colors) DispCHA 0, "yu05da", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06da", CHR_D, CHR_R
+fgload 1 00000000 yu06da 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06da", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06da", CHR_N, CHR_R
+fgload 1 00000000 yu07da 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07da", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07da", CHR_A, CHR_R
+fgload 1 00000000 yu08da 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07da", CHR_N, CHR_L Yuka sadness (dawn colors) DispCHA 1, "yu08da", CHR_D, CHR_R
+fgload 1 00000000 yu08da 1 3
+@text Yuka sadness (afternoon colors) DispCHA 0, "yu08da", CHR_A, CHR_L Yuka sadness (night colors) DispCHA 1, "yu08da", CHR_N, CHR_R
+fgload 1 00000000 yu09da 1 3
+@text Yuka crying (dawn colors) DispCHA 0, "yu09da", CHR_D, CHR_L Yuka crying (afternoon colors) DispCHA 1, "yu09da", CHR_A, CHR_R
+fgload 1 00000000 yu10da 1 3
+@text Yuka crying (night colors) DispCHA 0, "yu09da", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10da", CHR_D, CHR_R
+fgload 1 00000000 yu10da 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10da", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10da", CHR_N, CHR_R
+fgload 1 00000000 yu11da 1 3
+@text Yuka surprised (dawn colors) DispCHA 0, "yu11da", CHR_D, CHR_L Yuka surprised (afternoon colors) DispCHA 1, "yu11da", CHR_A, CHR_R
+fgload 1 00000000 yu12da 1 3
+@text Yuka surprised (night colors) DispCHA 0, "yu11da", CHR_N, CHR_L Yuka finger-point (dawn colors) DispCHA 1, "yu12da", CHR_D, CHR_R
+fgload 1 00000000 yu12da 1 3
+@text Yuka finger-point (afternoon colors) DispCHA 0, "yu12da", CHR_A, CHR_L Yuka finger-point (night colors) DispCHA 1, "yu12da", CHR_N, CHR_R
+@goto ap_yuka
+@label ap_yuka_s_close
+fgload 0 00000000 yu01db 1 3
+fgload 1 00000000 yu01db 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01db", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01db", CHR_A, CHR_R
+fgload 1 00000000 yu02db 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01db", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02db", CHR_D, CHR_R
+fgload 1 00000000 yu02db 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02db", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02db", CHR_N, CHR_R
+fgload 1 00000000 yu03db 1 3
+@text Yuka embarrassed (dawn colors) DispCHA 0, "yu03db", CHR_D, CHR_L Yuka embarrassed (afternoon colors) DispCHA 1, "yu03db", CHR_A, CHR_R
+fgload 1 00000000 yu04db 1 3
+@text Yuka embarrassed (night colors) DispCHA 0, "yu03db", CHR_N, CHR_L Yuka angry (dawn colors) DispCHA 1, "yu04db", CHR_D, CHR_R
+fgload 1 00000000 yu04db 1 3
+@text Yuka angry (afternoon colors) DispCHA 0, "yu04db", CHR_A, CHR_L Yuka angry (night colors) DispCHA 1, "yu04db", CHR_N, CHR_R
+fgload 1 00000000 yu05db 1 3
+@text Yuka ill-tempered (dawn colors) DispCHA 0, "yu05db", CHR_D, CHR_L Yuka ill-tempered (afternoon colors) DispCHA 1, "yu05db", CHR_A, CHR_R
+fgload 1 00000000 yu06db 1 3
+@text Yuka ill-tempered (night colors) DispCHA 0, "yu05db", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06db", CHR_D, CHR_R
+fgload 1 00000000 yu06db 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06db", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06db", CHR_N, CHR_R
+fgload 1 00000000 yu07db 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07db", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07db", CHR_A, CHR_R
+fgload 1 00000000 yu08db 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07db", CHR_N, CHR_L Yuka sadness (dawn colors) DispCHA 1, "yu08db", CHR_D, CHR_R
+fgload 1 00000000 yu08db 1 3
+@text Yuka sadness (afternoon colors) DispCHA 0, "yu08db", CHR_A, CHR_L Yuka sadness (night colors) DispCHA 1, "yu08db", CHR_N, CHR_R
+fgload 1 00000000 yu09db 1 3
+@text Yuka crying (dawn colors) DispCHA 0, "yu09db", CHR_D, CHR_L Yuka crying (afternoon colors) DispCHA 1, "yu09db", CHR_A, CHR_R
+fgload 1 00000000 yu10db 1 3
+@text Yuka crying (night colors) DispCHA 0, "yu09db", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10db", CHR_D, CHR_R
+fgload 1 00000000 yu10db 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10db", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10db", CHR_N, CHR_R
+fgload 1 00000000 yu11db 1 3
+@text Yuka surprised (dawn colors) DispCHA 0, "yu11db", CHR_D, CHR_L Yuka surprised (afternoon colors) DispCHA 1, "yu11db", CHR_A, CHR_R
+fgload 1 00000000 yu12db 1 3
+@text Yuka surprised (night colors) DispCHA 0, "yu11db", CHR_N, CHR_L Yuka finger-point (dawn colors) DispCHA 1, "yu12db", CHR_D, CHR_R
+fgload 1 00000000 yu12db 1 3
+@text Yuka finger-point (afternoon colors) DispCHA 0, "yu12db", CHR_A, CHR_L Yuka finger-point (night colors) DispCHA 1, "yu12db", CHR_N, CHR_R
+@goto ap_yuka
+@label ap_yuka_1_far_dr
+fgload 0 00000000 yu01aaa 1 3
+fgload 1 00000000 yu01aaa 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01aaa", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01aaa", CHR_A, CHR_R
+fgload 1 00000000 yu02aaa 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01aaa", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02aaa", CHR_D, CHR_R
+fgload 1 00000000 yu02aaa 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02aaa", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02aaa", CHR_N, CHR_R
+fgload 1 00000000 yu04aaa 1 3
+@text Yuka angry (dawn colors) DispCHA 0, "yu04aaa", CHR_D, CHR_L Yuka angry (afternoon colors) DispCHA 1, "yu04aaa", CHR_A, CHR_R
+fgload 1 00000000 yu06aaa 1 3
+@text Yuka angry (night colors) DispCHA 0, "yu04aaa", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06aaa", CHR_D, CHR_R
+fgload 1 00000000 yu06aaa 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06aaa", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06aaa", CHR_N, CHR_R
+fgload 1 00000000 yu07aaa 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07aaa", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07aaa", CHR_A, CHR_R
+fgload 1 00000000 yu10aaa 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07aaa", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10aaa", CHR_D, CHR_R
+fgload 1 00000000 yu10aaa 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10aaa", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10aaa", CHR_N, CHR_R
+fgload 1 00000000 yu12aaa 1 3
+@text Yuka finger-point (dawn colors) DispCHA 0, "yu12aaa", CHR_D, CHR_L Yuka finger-point (afternoon colors) DispCHA 1, "yu12aaa", CHR_A, CHR_R
+@text   Yuka finger-point (night colors) DispCHA 0, "yu12aaa", CHR_N, CHR_L  
+@goto ap_yuka
+@label ap_yuka_1_close_dr
+fgload 0 00000000 yu01aba 1 3
+fgload 1 00000000 yu01aba 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01aba", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01aba", CHR_A, CHR_R
+fgload 1 00000000 yu02aba 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01aba", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02aba", CHR_D, CHR_R
+fgload 1 00000000 yu02aba 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02aba", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02aba", CHR_N, CHR_R
+fgload 1 00000000 yu04aba 1 3
+@text Yuka angry (dawn colors) DispCHA 0, "yu04aba", CHR_D, CHR_L Yuka angry (afternoon colors) DispCHA 1, "yu04aba", CHR_A, CHR_R
+fgload 1 00000000 yu06aba 1 3
+@text Yuka angry (night colors) DispCHA 0, "yu04aba", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06aba", CHR_D, CHR_R
+fgload 1 00000000 yu06aba 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06aba", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06aba", CHR_N, CHR_R
+fgload 1 00000000 yu07aba 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07aba", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07aba", CHR_A, CHR_R
+fgload 1 00000000 yu10aba 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07aba", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10aba", CHR_D, CHR_R
+fgload 1 00000000 yu10aba 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10aba", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10aba", CHR_N, CHR_R
+fgload 1 00000000 yu12aba 1 3
+@text Yuka finger-point (dawn colors) DispCHA 0, "yu12aba", CHR_D, CHR_L Yuka finger-point (afternoon colors) DispCHA 1, "yu12aba", CHR_A, CHR_R
+@text   Yuka finger-point (night colors) DispCHA 0, "yu12aba", CHR_N, CHR_L  
+@goto ap_yuka
+@label ap_yuka_2_far_dr
+fgload 0 00000000 yu01caa 1 3
+fgload 1 00000000 yu01caa 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01caa", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01caa", CHR_A, CHR_R
+fgload 1 00000000 yu02caa 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01caa", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02caa", CHR_D, CHR_R
+fgload 1 00000000 yu02caa 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02caa", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02caa", CHR_N, CHR_R
+fgload 1 00000000 yu04caa 1 3
+@text Yuka angry (dawn colors) DispCHA 0, "yu04caa", CHR_D, CHR_L Yuka angry (afternoon colors) DispCHA 1, "yu04caa", CHR_A, CHR_R
+fgload 1 00000000 yu06caa 1 3
+@text Yuka angry (night colors) DispCHA 0, "yu04caa", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06caa", CHR_D, CHR_R
+fgload 1 00000000 yu06caa 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06caa", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06caa", CHR_N, CHR_R
+fgload 1 00000000 yu07caa 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07caa", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07caa", CHR_A, CHR_R
+fgload 1 00000000 yu10caa 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07caa", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10caa", CHR_D, CHR_R
+fgload 1 00000000 yu10caa 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10caa", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10caa", CHR_N, CHR_R
+fgload 1 00000000 yu12caa 1 3
+@text Yuka finger-point (dawn colors) DispCHA 0, "yu12caa", CHR_D, CHR_L Yuka finger-point (afternoon colors) DispCHA 1, "yu12caa", CHR_A, CHR_R
+@text   Yuka finger-point (night colors) DispCHA 0, "yu12caa", CHR_N, CHR_L  
+@goto ap_yuka
+@label ap_yuka_2_close_dr
+fgload 0 00000000 yu01cba 1 3
+fgload 1 00000000 yu01cba 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01cba", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01cba", CHR_A, CHR_R
+fgload 1 00000000 yu02cba 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01cba", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02cba", CHR_D, CHR_R
+fgload 1 00000000 yu02cba 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02cba", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02cba", CHR_N, CHR_R
+fgload 1 00000000 yu04cba 1 3
+@text Yuka angry (dawn colors) DispCHA 0, "yu04cba", CHR_D, CHR_L Yuka angry (afternoon colors) DispCHA 1, "yu04cba", CHR_A, CHR_R
+fgload 1 00000000 yu06cba 1 3
+@text Yuka angry (night colors) DispCHA 0, "yu04cba", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06cba", CHR_D, CHR_R
+fgload 1 00000000 yu06cba 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06cba", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06cba", CHR_N, CHR_R
+fgload 1 00000000 yu07cba 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07cba", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07cba", CHR_A, CHR_R
+fgload 1 00000000 yu10cba 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07cba", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10cba", CHR_D, CHR_R
+fgload 1 00000000 yu10cba 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10cba", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10cba", CHR_N, CHR_R
+fgload 1 00000000 yu12cba 1 3
+@text Yuka finger-point (dawn colors) DispCHA 0, "yu12cba", CHR_D, CHR_L Yuka finger-point (afternoon colors) DispCHA 1, "yu12cba", CHR_A, CHR_R
+@text   Yuka finger-point (night colors) DispCHA 0, "yu12cba", CHR_N, CHR_L  
+@goto ap_yuka
+@label ap_yuka_s_far_dr
+fgload 0 00000000 yu01daa 1 3
+fgload 1 00000000 yu01daa 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01daa", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01daa", CHR_A, CHR_R
+fgload 1 00000000 yu02daa 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01daa", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02daa", CHR_D, CHR_R
+fgload 1 00000000 yu02daa 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02daa", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02daa", CHR_N, CHR_R
+fgload 1 00000000 yu04daa 1 3
+@text Yuka angry (dawn colors) DispCHA 0, "yu04daa", CHR_D, CHR_L Yuka angry (afternoon colors) DispCHA 1, "yu04daa", CHR_A, CHR_R
+fgload 1 00000000 yu06daa 1 3
+@text Yuka angry (night colors) DispCHA 0, "yu04daa", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06daa", CHR_D, CHR_R
+fgload 1 00000000 yu06daa 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06daa", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06daa", CHR_N, CHR_R
+fgload 1 00000000 yu07daa 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07daa", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07daa", CHR_A, CHR_R
+fgload 1 00000000 yu10daa 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07daa", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10daa", CHR_D, CHR_R
+fgload 1 00000000 yu10daa 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10daa", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10daa", CHR_N, CHR_R
+fgload 1 00000000 yu12daa 1 3
+@text Yuka finger-point (dawn colors) DispCHA 0, "yu12daa", CHR_D, CHR_L Yuka finger-point (afternoon colors) DispCHA 1, "yu12daa", CHR_A, CHR_R
+@text   Yuka finger-point (night colors) DispCHA 0, "yu12daa", CHR_N, CHR_L  
+@goto ap_yuka
+@label ap_yuka_s_close_dr
+fgload 0 00000000 yu01dba 1 3
+fgload 1 00000000 yu01dba 1 3
+@text Yuka normal (dawn colors) DispCHA 0, "yu01dba", CHR_D, CHR_L Yuka normal (afternoon colors) DispCHA 1, "yu01dba", CHR_A, CHR_R
+fgload 1 00000000 yu02dba 1 3
+@text Yuka normal (night colors) DispCHA 0, "yu01dba", CHR_N, CHR_L Yuka smiling (dawn colors) DispCHA 1, "yu02dba", CHR_D, CHR_R
+fgload 1 00000000 yu02dba 1 3
+@text Yuka smiling (afternoon colors) DispCHA 0, "yu02dba", CHR_A, CHR_L Yuka smiling (night colors) DispCHA 1, "yu02dba", CHR_N, CHR_R
+fgload 1 00000000 yu04dba 1 3
+@text Yuka angry (dawn colors) DispCHA 0, "yu04dba", CHR_D, CHR_L Yuka angry (afternoon colors) DispCHA 1, "yu04dba", CHR_A, CHR_R
+fgload 1 00000000 yu06dba 1 3
+@text Yuka angry (night colors) DispCHA 0, "yu04dba", CHR_N, CHR_L Yuka dubious (dawn colors) DispCHA 1, "yu06dba", CHR_D, CHR_R
+fgload 1 00000000 yu06dba 1 3
+@text Yuka dubious (afternoon colors) DispCHA 0, "yu06dba", CHR_A, CHR_L Yuka dubious (night colors) DispCHA 1, "yu06dba", CHR_N, CHR_R
+fgload 1 00000000 yu07dba 1 3
+@text Yuka laugh (dawn colors) DispCHA 0, "yu07dba", CHR_D, CHR_L Yuka laugh (afternoon colors) DispCHA 1, "yu07dba", CHR_A, CHR_R
+fgload 1 00000000 yu10dba 1 3
+@text Yuka laugh (night colors) DispCHA 0, "yu07dba", CHR_N, CHR_L Yuka shocked (dawn colors) DispCHA 1, "yu10dba", CHR_D, CHR_R
+fgload 1 00000000 yu10dba 1 3
+@text Yuka shocked (afternoon colors) DispCHA 0, "yu10dba", CHR_A, CHR_L Yuka shocked (night colors) DispCHA 1, "yu10dba", CHR_N, CHR_R
+fgload 1 00000000 yu12dba 1 3
+@text Yuka finger-point (dawn colors) DispCHA 0, "yu12dba", CHR_D, CHR_L Yuka finger-point (afternoon colors) DispCHA 1, "yu12dba", CHR_A, CHR_R
+@text   Yuka finger-point (night colors) DispCHA 0, "yu12dba", CHR_N, CHR_L  
+@goto ap_yuka
+@label ap_exit
+returnTitle

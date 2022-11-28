@@ -1,0 +1,58 @@
+@label ap_START
+playBGM 1
+@text Yuka's Theme PlayBGM 1
+playBGM 2
+@text Haruka's Theme PlayBGM 2
+playBGM 3
+@text Saki's Theme PlayBGM 3
+playBGM 4
+@text Kurumi's Theme PlayBGM 4
+playBGM 5
+@text Izumi's Theme PlayBGM 5
+playBGM 6
+@text Nightmare PlayBGM 6
+playBGM 7
+@text Deja Vu PlayBGM 7
+playBGM 8
+@text Bright Days PlayBGM 8
+playBGM 9
+@text Dark Days PlayBGM 9
+playBGM 10
+@text Irritation PlayBGM 10
+playBGM 11
+@text Ominous PlayBGM 11
+playBGM 12
+@text Confession PlayBGM 12
+playBGM 13
+@text Tension PlayBGM 13
+playBGM 14
+@text Anxiety PlayBGM 14
+playBGM 15
+@text Despair PlayBGM 15
+playBGM 16
+@text Tranquility PlayBGM 16
+playBGM 17
+@text Achievement PlayBGM 17
+playBGM 18
+@text Languor PlayBGM 18
+playBGM 19
+@text Foolish PlayBGM 19
+playBGM 20
+@text Ending PlayBGM 20
+playBGM 21
+@text Main Theme PlayBGM 21
+playBGM 22
+@text Main Theme B PlayBGM 22
+playBGM 23
+@text Opening PlayBGM 23
+playBGM 24
+@text Opening, movie version PlayBGM 24
+stopBGM
+@text Repeat? 
+@choice Repeat|Quit
+@setvar vap_selvar = selected
+@if selvar == 0
+@    goto ap_start
+@fi
+@label ap_exit
+returnTitle

@@ -1,0 +1,2551 @@
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//		Title:『Ever17』
+//		File:	
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//アクアシステムデフォルトスクリプト--ここから--
+[StartUp]
+{
+	:SceneName	"武編　５／７　空エンド"
+	:Presence	2
+	[LoadTexture]
+	{
+		:Texture	0
+	}
+}
+[TaskList]
+{
+	:TaskMax	100001
+//アクアシステムデフォルトスクリプト--ここまで--
+//------------------------------------
+//５/７空ＥＮＤ
+//------------------------------------
+//TS07
+//２０１７/５/７
+//5pb.--初期化コマンド--
+	[Task100]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitTag"
+	}
+//5pb.-ファイル開始時基本セット-
+	[Task110]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task120]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			0
+		:SpriteDelete	1
+	}
+//☆ＢＧＩＢＦ
+//５月７日　日曜日
+//時刻＝４：４３
+//残り０２時間１７分（崩壊予定、７日７時）
+//溢れる７色の光？優秋ルートで使う予定、ＥＣＧ次元の狭間を漂う優。の背景流用？
+	[Task130]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		389	//	置換しました<<ev_xyu02f>>
+		:Position		640,360
+		:Priority		3
+		:Time			60
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task140]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task150]
+	{
+		:Tasktype	"Message"
+		:Message	"柔らかく……。"
+		:Frame		0
+	}
+	[Task160]
+	{
+		:Tasktype	"Message"
+		:Message	"温かな気配を感じる……。"
+		:Frame		0
+	}
+	[Task170]
+	{
+		:Tasktype	"Message"
+		:Message	"光……。"
+		:Frame		0
+	}
+	[Task180]
+	{
+		:Tasktype	"Message"
+		:Message	"遠く長い道のりを……。"
+		:Frame		0
+	}
+	[Task190]
+	{
+		:Tasktype	"Message"
+		:Message	"くぐり抜けて来たような気がする……。"
+		:Frame		0
+	}
+	[Task200]
+	{
+		:Tasktype	"Message"
+		:Message	"闇の終わり……。"
+		:Frame		0
+	}
+	[Task210]
+	{
+		:Tasktype	"Message"
+		:Message	"夢の終わり……"
+		:Frame		0
+	}
+	[Task220]
+	{
+		:Tasktype	"Message"
+		:Message	"ただ柔らかい……"
+		:Frame		0
+	}
+	[Task230]
+	{
+		:Tasktype	"Message"
+		:Message	"ただ美しい光の中に俺はいた……。"
+		:Frame		0
+	}
+	[Task240]
+	{
+		:Tasktype	"Message"
+		:Message	"光の中、俺は目を開く……。"
+		:Frame		0
+	}
+	[Task250]
+	{
+		:Tasktype	"Message"
+		:Message	"さらに光が溢れ……。"
+		:Frame		0
+	}
+//画面ホワイト
+//ＥＣＧ武の悲壮な決意に涙する空//差分３
+	[Task260]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task270]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task280]
+	{
+		:Tasktype		"Sprite"
+		:Texture		117	//	置換しました<<bg_white>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			0
+		:FadeWait		0
+	}
+//5pb.-フェードイン白-
+	[Task290]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			0
+		:SpriteDelete	0
+	}
+	[Task300]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task310]
+	{
+		:Tasktype	"Message"
+		:Message	"目の前に光があった……。"
+		:Frame		0
+	}
+//☆ＣＨ空：２／３
+	[Task320]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"空"
+		:Preset		1
+//★ＣＨ空：1：2
+		:Animation		0,1
+		:Rot		0
+		:Fade		20
+	}
+	[Task330]
+	{
+		:Tasktype	"Message"
+		:Message	"空の柔らかな笑顔があった……。"
+		:Frame		0
+	}
+	[Task340]
+	{
+		:Tasktype	"Message"
+		:Message	"「…………」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task350]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task360]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task370]
+	{
+		:Tasktype	"Sprite"
+		:Texture		118	//	置換しました<<cha00a>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			0
+		:FadeWait		0
+	}
+//5pb.-フェードイン白-
+	[Task380]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	0
+	}
+	[Task390]
+	{
+		:Tasktype	"TimeWait"
+		:Time		12
+	}
+	[Task400]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		119	//	置換しました<<cha00b>>
+		:Position		640,360
+		:Priority		3
+		:Time			18
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task410]
+	{
+		:Tasktype	"TimeWait"
+		:Time		12
+	}
+	[Task420]
+	{
+		:Tasktype		"Sprite"
+		:Texture		126	//	置換しました<<cha07>>
+		:Position		1920,360
+		:Priority		2
+		:FadeIn			0
+		:FadeWait		0
+	}
+
+	[Task430]
+	{
+		:Tasktype		"SpriteMove"
+		:SpriteNumber	126	//	置換しました<<cha07>>
+		:Position		640,360,3,1.5
+		:Time			30
+		:Wait			1
+	}
+
+	[Task440]
+	{
+		:Tasktype	"TimeWait"
+		:Time		120
+	}
+
+	[Task450]
+	{
+		:Tasktype		"SpriteMove"
+		:SpriteNumber	126	//	置換しました<<cha07>>
+		:Position		0,360,3,1.5
+		:Time			30
+		:Wait			1
+	}
+//5pb.-フェードアウト白-
+	[Task460]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task470]
+	{
+		:Tasktype		"Sprite"
+		:Texture		305	//	置換しました<<ev_so10a>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			0
+		:FadeWait		0
+		:CGFlag			102
+	}
+//5pb.-フェードイン白-
+	[Task480]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			120
+		:SpriteDelete	0
+	}
+//5pb.-25:カルマ（業）[アレンジ]-
+	[Task490]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		49	//	置換しました<<bgm25>>
+	}
+	[Task500]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task510]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は床の上で膝を抱えるように座り、眠っていた。"
+		:Frame		0
+	}
+	[Task520]
+	{
+		:Tasktype	"Message"
+		:Message	"空はそんな俺を覗き込んでいた……。"
+		:Frame		0
+	}
+	[Task530]
+	{
+		:Tasktype	"Message"
+		:Message	"「……おはようございます」"
+		:Character	3		//空
+		:Voice	11013	//	置換しました<<ts07_so000>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task540]
+	{
+		:Tasktype	"Message"
+		:Message	"空の声は、近く、遠くに聞こえる……。"
+		:Frame		0
+	}
+	[Task550]
+	{
+		:Tasktype	"Message"
+		:Message	"頭の中に点在するおぼろげな情景が、一本の線で繋がっていく……。"
+		:Frame		0
+	}
+	[Task560]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、俺の意識は一気に覚醒した。"
+		:Frame		0
+	}
+	[Task570]
+	{
+		:Tasktype	"Message"
+		:Message	"「……バックアップは……終わったみたいだな」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task580]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は端末のモニター画面に浮かぶ文字を眺めた。"
+		:Frame		0
+	}
+	[Task590]
+	{
+		:Tasktype	"Message"
+		:Message	"エラーは出ていないようだ、これで空は助かったはずだ。"
+		:Frame		0
+	}
+	[Task600]
+	{
+		:Tasktype	"Message"
+		:Message	"「……はぁ、よかった。これでどうにか空を助ける事が出来た……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task610]
+	{
+		:Tasktype	"Message"
+		:Message	"思わず溜め息がもれる。"
+		:Frame		0
+	}
+	[Task620]
+	{
+		:Tasktype	"Message"
+		:Message	"「……本当に申し訳ありません……私の為に、倉成さんが……」"
+		:Character	3		//空
+		:Voice	11014	//	置換しました<<ts07_so001>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task630]
+	{
+		:Tasktype	"Message"
+		:Message	"空の目に光るものが見えた。"
+		:Frame		0
+	}
+	[Task640]
+	{
+		:Tasktype	"Message"
+		:Message	"「ストップ……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task650]
+	{
+		:Tasktype	"Message"
+		:Message	"「空のせいじゃない……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task660]
+	{
+		:Tasktype	"Message"
+		:Message	"「これは自ら選んだ結果なんだ。だから俺に悔いなんかないさ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task670]
+	{
+		:Tasktype	"Message"
+		:Message	"「それなりに一生懸命生きてきたし、俺の人生が不幸だったなんて思わない」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task680]
+	{
+		:Tasktype	"Message"
+		:Message	"「だから、空が謝る必要も、気に病む必要もないんだ……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task690]
+	{
+		:Tasktype	"Message"
+		:Message	"「いいえ、違うんです……そうじゃないんです……」"
+		:Character	3		//空
+		:Voice	11015	//	置換しました<<ts07_so002>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task700]
+	{
+		:Tasktype	"Message"
+		:Message	"「……そうじゃない？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task710]
+	{
+		:Tasktype	"Message"
+		:Message	"「私は居なくなってもいい……」"
+		:Character	3		//空
+		:Voice	11016	//	置換しました<<ts07_so003>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task720]
+	{
+		:Tasktype	"Message"
+		:Message	"「消えてしまってもいいって……」"
+		:Character	3		//空
+		:Voice	11017	//	置換しました<<ts07_so004>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task730]
+	{
+		:Tasktype	"Message"
+		:Message	"「迷いも無く、ちゃんと覚悟していたはずなのに……」"
+		:Character	3		//空
+		:Voice	11018	//	置換しました<<ts07_so005>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task740]
+	{
+		:Tasktype	"Message"
+		:Message	"「だけど、みんな居なくなって……１人になった時……」"
+		:Character	3		//空
+		:Voice	11019	//	置換しました<<ts07_so006>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task750]
+	{
+		:Tasktype	"Message"
+		:Message	"「このまま、皆さんと……。倉成さんと……二度と会えなくなると考えたら……」"
+		:Character	3		//空
+		:Voice	11020	//	置換しました<<ts07_so007>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task760]
+	{
+		:Tasktype	"Message"
+		:Message	"「とても怖かった……」"
+		:Character	3		//空
+		:Voice	11021	//	置換しました<<ts07_so008>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task770]
+	{
+		:Tasktype	"Message"
+		:Message	"「とても寂しかった……」"
+		:Character	3		//空
+		:Voice	11022	//	置換しました<<ts07_so009>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task780]
+	{
+		:Tasktype	"Message"
+		:Message	"「このまま消えたくないと思った……」"
+		:Character	3		//空
+		:Voice	11023	//	置換しました<<ts07_so010>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task790]
+	{
+		:Tasktype	"Message"
+		:Message	"「倉成さんと、もっと一緒に居たいと思った……」"
+		:Character	3		//空
+		:Voice	11024	//	置換しました<<ts07_so011>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task800]
+	{
+		:Tasktype	"Message"
+		:Message	"「だから……。だからまた倉成さんと逢えた時、本当に嬉しかった……」"
+		:Character	3		//空
+		:Voice	11025	//	置換しました<<ts07_so012>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task810]
+	{
+		:Tasktype	"Message"
+		:Message	"「倉成さんの脱出方法がなくなった時も……最後まで一緒に居られるってわかって。何故か、わたしは……本当に、喜んでしまったんです……」"
+		:Character	3		//空
+		:Voice	11026	//	置換しました<<ts07_so013>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task820]
+	{
+		:Tasktype	"Message"
+		:Message	"「倉成さんを助けたいのに、そんな事を考えていたなんて……」"
+		:Character	3		//空
+		:Voice	11027	//	置換しました<<ts07_so014>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task830]
+	{
+		:Tasktype	"Message"
+		:Message	"「私、偽善者ですね……」"
+		:Character	3		//空
+		:Voice	11028	//	置換しました<<ts07_so015>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task840]
+	{
+		:Tasktype	"Message"
+		:Message	"「そんな事はないさ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task850]
+	{
+		:Tasktype	"Message"
+		:Message	"「だれだって、１人っきりになるのは寂しいさ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task860]
+	{
+		:Tasktype	"Message"
+		:Message	"「だれだって、自分が居なくなるのは怖いと思うさ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task870]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう、人間なら……心があるから、そう感じるのさ……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task880]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は自分の言葉で、何かを悟った気がした。"
+		:Frame		0
+	}
+	[Task890]
+	{
+		:Tasktype	"Message"
+		:Message	"そうか、だから自分が居なくなるのと同じように、親しい人や、大好きな人が居なくなるのは怖かったんだ。"
+		:Frame		0
+	}
+	[Task900]
+	{
+		:Tasktype	"Message"
+		:Message	"だから俺は、みんなを助けたかったんだ……。"
+		:Frame		0
+	}
+	[Task910]
+	{
+		:Tasktype	"Message"
+		:Message	"「そういえば、みんなは助かったんだろうか……？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task920]
+	{
+		:Tasktype	"Message"
+		:Message	"「……倉成さんが眠っている時に、救助隊の無線を傍受しました」"
+		:Character	3		//空
+		:Voice	11029	//	置換しました<<ts07_so016>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task930]
+	{
+		:Tasktype	"Message"
+//☆収録時修正
+//		:Message	"「……３人をレミュウから救助して、地上に帰還したそうです」"
+		:Message	"「……３人をＩＢＦから救助して、海上に帰還したそうです」"
+		:Character	3		//空
+		:Voice	11030	//	置換しました<<ts07_so017>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task940]
+	{
+		:Tasktype	"Message"
+		:Message	"「３人？　それっておかしいぞ。つぐみ、優、少年、ココで４人のはずだ、数が合わないじゃないか！」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task950]
+	{
+		:Tasktype	"Message"
+		:Message	"「……無線の通信ログによると、ＩＢＦ内に取り残されていた３人の救出中に、何者かが深海探査用の潜水艇を使って脱出をしたみたいです」"
+		:Character	3		//空
+		:Voice	11031	//	置換しました<<ts07_so018>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task960]
+	{
+		:Tasktype	"Message"
+		:Message	"「深海探査用の潜水艇？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//回想、色あせ加工
+//☆ＢＧ医務室(点灯)
+	[Task970]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task980]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task990]
+	{
+		:Tasktype		"Sprite"
+		:Texture		117	//	置換しました<<bg_white>>
+		:Position		640,360
+		:Priority		3
+		:Rule			8
+		:FadePosition 	30
+		:FadeIn			0
+		:FadeWait		0
+	}
+	[Task1000]
+	{
+		:Tasktype	"Sprite"
+		:Texture	90	//	置換しました<<bg51aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task1010]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,245,245,255
+		:Ambient	210,205,205,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨつぐみ：２／３
+	[Task1020]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"つぐみ"
+		:Preset		1
+//★ＣＨつぐみ：1：2
+		:Animation		0,1
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン白-
+	[Task1030]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	0
+	}
+	[Task1040]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task1050]
+	{
+		:Tasktype	"Message"
+		:Message	"「判ったわ、みんなの事は任せて、あと万が一の場合の深海探査用の潜水艇も用意しておくわ」"
+		:Character	2		//つぐみ
+		:Voice	14998	//	置換しました<<ts07_tu000e>>
+		:ModelName		"つぐみ","つぐみ濡れ","つぐみ３４"
+		:Frame		0
+	}
+//音声加工、回想
+//回想終了
+//ＥＣＧ武の悲壮な決意に涙する空//差分３
+	[Task1060]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task1070]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task1080]
+	{
+		:Tasktype		"Sprite"
+		:Texture		306	//	置換しました<<ev_so10b>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			0
+		:FadeWait		0
+		:CGFlag			103
+	}
+//5pb.-フェードイン白-
+	[Task1090]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	0
+	}
+	[Task1100]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task1110]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうか……それは多分……いいや、間違いなくつぐみだろう」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1120]
+	{
+		:Tasktype	"Message"
+		:Message	"「とにかく、これで全員とは行かなかったが……みんな助かったんだ」"
+		:Name	1		//武
+		:Frame		0
+	}
+//5pb.松--ブラックアウトで擬似天井--
+	[Task1130]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task1140]
+	{
+		:Tasktype		"FadeOut"
+		:Type			3
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task1150]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task1160]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は天井を見上げた。"
+		:Frame		0
+	}
+	[Task1170]
+	{
+		:Tasktype	"Message"
+		:Message	"今、みんなはその先に居るんだ。"
+		:Frame		0
+	}
+//☆ＢＧ海の中
+//5pb.松--後で海中を使うので水中に変更--
+	[Task1180]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task1190]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	78	//	置換しました<<bg44aaa>>
+		:Position	640,360
+		:Priority	10
+		:Time		60
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task1200]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//各キャラ半透明ＵＰ表示
+//☆ＣＨつぐみ：２／３
+	[Task1210]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"つぐみ"
+		:Preset		1
+//★ＣＨつぐみ：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+		:Alpha		0.8
+	}
+	[Task1220]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task1230]
+	{
+		:Tasktype	"Message"
+		:Message	"つぐみ……。"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task1240]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨ優私服：２／３
+	[Task1250]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+		:Alpha		0.8
+	}
+	[Task1260]
+	{
+		:Tasktype	"Message"
+		:Message	"優……。"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task1270]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨココ：２／３
+	[Task1280]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"ココ"
+		:Preset		1
+//★ＣＨココ：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+		:Alpha		0.8
+	}
+	[Task1290]
+	{
+		:Tasktype	"Message"
+		:Message	"ココ……。"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task1300]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨ少年：２／３
+	[Task1310]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"少年"
+		:Preset		1
+//★ＣＨ少年：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+		:Alpha		0.8
+	}
+	[Task1320]
+	{
+		:Tasktype	"Message"
+		:Message	"少年……。"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task1330]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task1340]
+	{
+		:Tasktype	"Message"
+		:Message	"見えないけど、みんなが見える気がした。"
+		:Frame		0
+	}
+	[Task1350]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は安堵した、同時に俺がやってきたことは報われたと感じた。"
+		:Frame		0
+	}
+	[Task1360]
+	{
+		:Tasktype	"Message"
+		:Message	"……ふふっ…そんな事を考えるなんて、俺だって偽善者だな……。"
+		:Frame		0
+	}
+	[Task1370]
+	{
+		:Tasktype	"Message"
+		:Message	"つぐみの言う通りだ……。"
+		:Frame		0
+	}
+//ＥＣＧ武の悲壮な決意に涙する空//差分３
+	[Task1380]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task1390]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			60
+		:SpriteDelete	1
+	}
+	[Task1400]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		306	//	置換しました<<ev_so10b>>
+		:Position		640,360
+		:Priority		3
+		:Time			60
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task1410]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task1420]
+	{
+		:Tasktype	"Message"
+		:Message	"「みんな助かったんですね……」"
+		:Character	3		//空
+		:Voice	11032	//	置換しました<<ts07_so019>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1430]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああ……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1440]
+	{
+		:Tasktype	"Message"
+		:Message	"「私達を除いてですが……」"
+		:Character	3		//空
+		:Voice	11033	//	置換しました<<ts07_so020>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1450]
+	{
+		:Tasktype	"Message"
+		:Message	"「えっ？　空だって……空だって、助かったんじゃないのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1460]
+	{
+		:Tasktype	"Message"
+		:Message	"「私の……もう１人の私は助かりました。だけど“私”はここに居るんです」"
+		:Character	3		//空
+		:Voice	11034	//	置換しました<<ts07_so021>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1470]
+	{
+		:Tasktype	"Message"
+		:Message	"「バックアップをされたとはいえ、それはあくまでも……分岐したもう１人の私です……」"
+		:Character	3		//空
+		:Voice	11035	//	置換しました<<ts07_so022>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1480]
+	{
+		:Tasktype	"Message"
+		:Message	"「ですから“私”はここに居るんです……」"
+		:Character	3		//空
+		:Voice	11036	//	置換しました<<ts07_so023>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1490]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうか……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1500]
+	{
+		:Tasktype	"Message"
+		:Message	"「でもいいんです……こっちの私は、あっちの私と違って倉成さんと一緒に居られるんですから……」"
+		:Character	3		//空
+		:Voice	11037	//	置換しました<<ts07_so024>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1510]
+	{
+		:Tasktype	"Message"
+		:Message	"「そっか……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1520]
+	{
+		:Tasktype	"Message"
+		:Message	"俺はポケットの携帯を取り出し、ボタンを押してみた。"
+		:Frame		0
+	}
+	[Task1530]
+	{
+		:Tasktype	"Message"
+		:Message	"バッテリーが切れている。画面には何も映らなかった。"
+		:Frame		0
+	}
+	[Task1540]
+	{
+		:Tasktype	"Message"
+		:Message	"一緒に居られる時間……俺たちに残された時間はあと僅かなはずだ……。"
+		:Frame		0
+	}
+	[Task1550]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は残り僅かな時間を、空の為に使いたいと思った。"
+		:Frame		0
+	}
+	[Task1560]
+	{
+		:Tasktype	"Message"
+		:Message	"「空、何か遣り残した事ってないか？　俺が付き合ってやるぞ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1570]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+
+//5pb.-デフォルト停止時間30f-
+	[Task1580]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+
+	[Task1590]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		307	//	置換しました<<ev_so10c>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			1
+		:FadeWait		1
+		:CGFlag			104
+	}
+	[Task1600]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task1610]
+	{
+		:Tasktype	"Message"
+		:Message	"「……遣り残した事はありますが、こればっかりはどうしようも無いんです……」"
+		:Character	3		//空
+		:Voice	11038	//	置換しました<<ts07_so025>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1620]
+	{
+		:Tasktype	"Message"
+		:Message	"空は俺を見つめる。その瞳は深い悲しみに濡れていた。"
+		:Frame		0
+	}
+	[Task1630]
+	{
+		:Tasktype	"Message"
+		:Message	"「それじゃ、夢に描いた事とか、やってみたい事はないか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1640]
+	{
+		:Tasktype	"Message"
+		:Message	"「……夢ですか……そうですね」"
+		:Character	3		//空
+		:Voice	11039	//	置換しました<<ts07_so026>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1650]
+	{
+		:Tasktype	"Message"
+		:Message	"「……また、あの続きがしたいです……」"
+		:Character	3		//空
+		:Voice	11040	//	置換しました<<ts07_so027>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1660]
+	{
+		:Tasktype	"Message"
+		:Message	"「あの続き？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＢＧ青空
+	[Task1670]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task1680]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			12
+		:SpriteDelete	1
+	}
+	[Task1690]
+	{
+		:Tasktype	"Sprite"
+		:Texture	149	//	置換しました<<ibg09a>>
+		:Position	640,360
+		:Priority	4
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task1700]
+	{
+		//　サクラ花びら開始
+		:Tasktype	"EffectStart"
+		:EffectNumber	32
+		:Param			8,5,5
+		:Fade			0
+		:Priority		4
+	}
+//5pb.-フェードイン白-
+	[Task1710]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			120
+		:SpriteDelete	0
+	}
+//5pb.-30:カルセル・デルフィーネ（回転イルカ）[アレンジ]-
+	[Task1720]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		59	//	置換しました<<bgm30>>
+	}
+
+	[Task1730]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+//スクリプトでサクラの花びら散る効果あればお願いします
+	[Task1740]
+	{
+		:Tasktype	"Message"
+		:Message	"俺の周りの景色が一変する。"
+		:Frame		0
+	}
+	[Task1750]
+	{
+		:Tasktype	"Message"
+		:Message	"目の前の空も、いつの間にか学生服姿に変わっていた。"
+		:Frame		0
+	}
+	[Task1760]
+	{
+		:Tasktype	"Message"
+		:Message	"「私は倉成さんの恋人なんです……」"
+		:Character	3		//空
+		:Voice	11041	//	置換しました<<ts07_so028>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1770]
+	{
+		:Tasktype	"Message"
+		:Message	"「でも、恋人になったばかりで……」"
+		:Character	3		//空
+		:Voice	11042	//	置換しました<<ts07_so029>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1780]
+	{
+		:Tasktype	"Message"
+		:Message	"「どこか、お互いぎこちなくって……」"
+		:Character	3		//空
+		:Voice	11043	//	置換しました<<ts07_so030>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1790]
+	{
+		:Tasktype	"Message"
+		:Message	"「でも、一緒に居るだけで、幸せなんです……」"
+		:Character	3		//空
+		:Voice	11044	//	置換しました<<ts07_so031>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+//☆ＢＧ主人公自室
+	[Task1800]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task1810]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			12
+		:SpriteDelete	1
+	}
+	[Task1820]
+	{
+		:Tasktype		"EffectEnd"
+		:EffectNumber	32
+		:Fade			0
+		:Delete			0
+	}
+	[Task1830]
+	{
+		:Tasktype	"Sprite"
+		:Texture	99	//	置換しました<<bg58aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task1840]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,245,245,255
+		:Ambient	210,205,205,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ空：２／３
+	[Task1850]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"空"
+		:Preset		1
+//★ＣＨ空：1：1
+		:Animation		0,0
+		:Rot		0
+		:Eye			1
+		:Fade		0
+	}
+//ＡＮ空目閉じ
+//5pb.-フェードイン白-
+	[Task1860]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			120
+		:SpriteDelete	0
+	}
+	[Task1870]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task1880]
+	{
+		:Tasktype	"Message"
+		:Message	"空は、恋愛シミュレーションゲームの世界を通して、自分の夢を語っているようだった。"
+		:Frame		0
+	}
+//☆ＡＮ空：4：1
+	[Task1890]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,0
+	}
+	[Task1900]
+	{
+		:Tasktype	"Message"
+		:Message	"「毎日私が、倉成さんを起こしにいって……」"
+		:Character	3		//空
+		:Voice	11045	//	置換しました<<ts07_so032>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task1910]
+	{
+		:Tasktype	"Message"
+		:Message	"「なかなか起きない倉成さんを呆れたりして……」"
+		:Character	3		//空
+		:Voice	11046	//	置換しました<<ts07_so033>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+//☆ＢＧ住宅街一般道
+	[Task1920]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task1930]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			12
+		:SpriteDelete	1
+	}
+	[Task1940]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,255,255,255
+		:Ambient	205,205,245,255
+		:Spec		255,255,255,255
+		:Angle		5,50
+	}
+	[Task1950]
+	{
+		:Tasktype	"Sprite"
+		:Texture	97	//	置換しました<<bg56aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task1960]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,255,255,255
+		:Ambient	205,205,245,255
+		:Spec		255,255,255,255
+		:Angle		5,0
+	}
+//☆ＣＨ空：２／３
+	[Task1970]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"空"
+		:Preset		1
+//★ＣＨ空：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		0
+	}
+	[Task1980]
+	{
+		//　サクラ花びら開始
+		:Tasktype	"EffectStart"
+		:EffectNumber	32
+		:Param			8,5,5
+		:Fade			0
+		:Priority		4
+	}
+//5pb.-フェードイン白-
+	[Task1990]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			120
+		:SpriteDelete	0
+	}
+	[Task2000]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+//スクリプトでサクラの花びら散る効果あればお願いします
+	[Task2010]
+	{
+		:Tasktype	"Message"
+		:Message	"「それから一緒に、他愛も無い会話をしながら……」"
+		:Character	3		//空
+		:Voice	11047	//	置換しました<<ts07_so034>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2020]
+	{
+		:Tasktype	"Message"
+		:Message	"「桜並木の道を並んで通学して……」"
+		:Character	3		//空
+		:Voice	11048	//	置換しました<<ts07_so035>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2030]
+	{
+		:Tasktype	"Message"
+		:Message	"「お互い手を繋ぎたいけど、出来なくて……」"
+		:Character	3		//空
+		:Voice	11049	//	置換しました<<ts07_so036>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+//☆ＢＧ学校教室
+	[Task2040]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task2050]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			12
+		:SpriteDelete	1
+	}
+	[Task2060]
+	{
+		:Tasktype		"EffectEnd"
+		:EffectNumber	32
+		:Fade			0
+		:Delete			0
+	}
+	[Task2070]
+	{
+		:Tasktype	"Sprite"
+		:Texture	98	//	置換しました<<bg57aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task2080]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,245,245,255
+		:Ambient	210,205,205,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ空：２／３
+	[Task2090]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"空"
+		:Preset		1
+//★ＣＨ空：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン白-
+	[Task2100]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			120
+		:SpriteDelete	0
+	}
+	[Task2110]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task2120]
+	{
+		:Tasktype	"Message"
+		:Message	"「席はとなり同士で並んで座って……」"
+		:Character	3		//空
+		:Voice	11050	//	置換しました<<ts07_so037>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2130]
+	{
+		:Tasktype	"Message"
+		:Message	"「授業中、先生の話も上の空……」"
+		:Character	3		//空
+		:Voice	11051	//	置換しました<<ts07_so038>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2140]
+	{
+		:Tasktype	"Message"
+//☆収録時修正
+//		:Message	"「なんとなく互いの事が気になって……」"
+		:Message	"「なんとなくお互いの事が気になって……」"
+		:Character	3		//空
+		:Voice	11052	//	置換しました<<ts07_so039>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2150]
+	{
+		:Tasktype	"Message"
+		:Message	"「気が付くとお互い目が合って、そして顔を赤くして、目を逸らすけど、しばらくすると再びお互いに目が合う……」"
+		:Character	3		//空
+		:Voice	11053	//	置換しました<<ts07_so040>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2160]
+	{
+		:Tasktype	"Message"
+		:Message	"「同じ事の繰り返し……」"
+		:Character	3		//空
+		:Voice	11054	//	置換しました<<ts07_so041>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+//☆ＢＧ青空
+	[Task2170]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task2180]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		149	//	置換しました<<ibg09a>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task2190]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task2200]
+	{
+		:Tasktype	"Message"
+		:Message	"空の語る通りに情景は進んでいく。"
+		:Frame		0
+	}
+	[Task2210]
+	{
+		:Tasktype	"Message"
+		:Message	"何時しか俺は、空の語る情景に溶け込んでいった。"
+		:Frame		0
+	}
+	[Task2220]
+	{
+		:Tasktype	"Message"
+		:Message	"「そしてお昼には、中庭の芝生の上で私の作った手作りのお弁当を一緒に食べるんです……」"
+		:Character	3		//空
+		:Voice	11055	//	置換しました<<ts07_so042>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2230]
+	{
+		:Tasktype	"Message"
+		:Message	"「倉成さんは、私の作ったタコさんウィンナーと玉子焼きを見て……」"
+		:Character	3		//空
+		:Voice	11056	//	置換しました<<ts07_so043>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2240]
+	{
+		:Tasktype	"Message"
+		:Message	"「美味そうだけど、本当にお前が作ったのか？　お母さんに作ってもらったんじゃないのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2250]
+	{
+		:Tasktype	"Message"
+		:Message	"「ちゃんと私が早起きして作ったんだからね」"
+		:Character	3		//空
+		:Voice	11057	//	置換しました<<ts07_so044>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2260]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうか、それじゃ毒見をするか」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2270]
+	{
+		:Tasktype	"Message"
+		:Message	"「もう、意地悪なんだから」"
+		:Character	3		//空
+		:Voice	11058	//	置換しました<<ts07_so045>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2280]
+	{
+		:Tasktype	"Message"
+		:Message	"それは俺の照れ隠しだった。"
+		:Frame		0
+	}
+	[Task2290]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は箸で玉子焼きをつかむと、ひょいと口の中に入れた。"
+		:Frame		0
+	}
+	[Task2300]
+	{
+		:Tasktype	"Message"
+		:Message	"ぱくっ。"
+		:Frame		0
+	}
+	[Task2310]
+	{
+		:Tasktype	"Message"
+		:Message	"ドキドキしながら見守る空。"
+		:Frame		0
+	}
+	[Task2320]
+	{
+		:Tasktype	"Message"
+		:Message	"もぐもぐもぐ。"
+		:Frame		0
+	}
+	[Task2330]
+	{
+		:Tasktype	"Message"
+		:Message	"程よく半熟で、程よく甘い玉子焼きの味が広がる。"
+		:Frame		0
+	}
+	[Task2340]
+	{
+		:Tasktype	"Message"
+		:Message	"「美味い！」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2350]
+	{
+		:Tasktype	"Message"
+		:Message	"「本当ですか？」"
+		:Character	3		//空
+		:Voice	11059	//	置換しました<<ts07_so046>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2360]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああ、がんばったな空、とっても美味しいよ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2370]
+	{
+		:Tasktype	"Message"
+		:Message	"ミラージュでは味の再現は出来ない。"
+		:Frame		0
+	}
+	[Task2380]
+	{
+		:Tasktype	"Message"
+		:Message	"これは俺の記憶が作り出した味かも知れなかった。"
+		:Frame		0
+	}
+	[Task2390]
+	{
+		:Tasktype	"Message"
+		:Message	"だけど、そんなことは関係なかった……。"
+		:Frame		0
+	}
+	[Task2400]
+	{
+		:Tasktype	"Message"
+		:Message	"空が居るデータ世界……。"
+		:Frame		0
+	}
+	[Task2410]
+	{
+		:Tasktype	"Message"
+		:Message	"俺が居る現実世界……。"
+		:Frame		0
+	}
+	[Task2420]
+	{
+		:Tasktype	"Message"
+		:Message	"その間に出来た２人だけのブレーンワールド……。"
+		:Frame		0
+	}
+	[Task2430]
+	{
+		:Tasktype	"Message"
+		:Message	"今、俺達２人は、確かにそこに居るのだから……。"
+		:Frame		0
+	}
+	[Task2440]
+	{
+		:Tasktype	"Message"
+		:Message	"空の弁当を平らげた俺は、芝生の上に寝転んだ。"
+		:Frame		0
+	}
+	[Task2450]
+	{
+		:Tasktype	"Message"
+		:Message	"青空が眼前に広がる。"
+		:Frame		0
+	}
+	[Task2460]
+	{
+		:Tasktype	"Message"
+		:Message	"晴れた日には、何時もそこにある、青く何処までも高く、広く果ての無い青空。"
+		:Frame		0
+	}
+	[Task2470]
+	{
+		:Tasktype	"Message"
+		:Message	"ふと横を見ると、空も、寝転び同じ青空を見上げていた。"
+		:Frame		0
+	}
+	[Task2480]
+	{
+		:Tasktype	"Message"
+		:Message	"「幸せだな……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2490]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうですね……」"
+		:Character	3		//空
+		:Voice	11060	//	置換しました<<ts07_so047>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2500]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は手を伸ばし、空の手を握る。"
+		:Frame		0
+	}
+	[Task2510]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は空の手を確かに握った。"
+		:Frame		0
+	}
+	[Task2520]
+	{
+		:Tasktype	"Message"
+		:Message	"俺たちは、青空に抱かれて、刹那の永遠を感じた……。"
+		:Frame		0
+	}
+//☆ＳＥ施設軋み音
+	[Task2530]
+	{
+		:Tasktype	"SePlay"
+		:SE			173	//	置換しました<<se12_03l>>
+	}
+	[Task2540]
+	{
+		:Tasktype	"VoicePlay"
+		:Voice		14466	//	置換しました<<ts07_x09000m>>
+		:Wait		0
+		:SoundPosition	0,0
+	}
+//微振動
+	[Task2550]
+	{
+		:Tasktype	"Message"
+		:Message	"鈍い金属音が断続的に響いてくる。"
+		:Frame		0
+	}
+	[Task2560]
+	{
+		:Tasktype	"Message"
+		:Message	"床や壁がミシミシと軋み、振動するのがわかった。"
+		:Frame		0
+	}
+//	[Task2570]
+//	{
+//		:Tasktype	"Message"
+//		:Message	"「ＤｒｅｉＭｉｎｕｔｅｎｖｏｒｄｅｒＩｍｐｌｏｓｉｏｎ．」"
+//		:Character	14		//アナウンス
+//		:Voice	<<TS07_X09000 >>
+//		:Frame		0
+//		:Name	23		//アナウンス
+//	}
+//インプロズィオーンＩｍｐｌｏｓｉｏｎは圧壊を意味すると思います。
+//出きれば崩落を意味する言葉に修正お願いします（自分の持ってるドイツ語辞典になかったので）
+//上の施設が落ちてきて、圧壊というふうにも取れますが（もともとＩＢＦは気圧変化してないので）
+//	[Task2580]
+//	{
+//		:Tasktype	"Message"
+//		:Message	"「ＤｒｅｉＭｉｎｕｔｅｎｖｏｒｄｅｒＩｍｐｌｏｓｉｏｎ．」"
+//		:Character	14		//アナウンス
+//		:Voice	<<TS07_X09001 >>
+//		:Frame		0
+//		:Name	23		//アナウンス
+//	}
+	[Task2590]
+	{
+		:Tasktype	"Message"
+		:Message	"どこからか、無機質なアナウンスが聞こえる。"
+		:Frame		0
+	}
+	[Task2600]
+	{
+		:Tasktype	"VoicePlay"
+		:Voice		14467	//	置換しました<<ts07_x09001m>>
+		:Wait		0
+		:SoundPosition	0,0
+	}
+	[Task2610]
+	{
+		:Tasktype	"Message"
+		:Message	"「……始まったか」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2620]
+	{
+		:Tasktype	"Message"
+		:Message	"それは夢の終わりを告げる合図だった……。"
+		:Frame		0
+	}
+//画面明滅開始
+//画面明滅開始
+//ＥＣＧ抱き合う武と空//差分２
+//5pb.松--青空とＢＧメインコンピュータールーム(点灯)を交互に点滅表示させる予定--
+	[Task2630]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task2640]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	86	//	置換しました<<bg48naa>>
+		:Position	640,360
+		:Priority	4
+		:Time		12
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task2650]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	149	//	置換しました<<ibg09a>>
+		:Position	640,360
+		:Priority	4
+		:Time		12
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task2660]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	86	//	置換しました<<bg48naa>>
+		:Position	640,360
+		:Priority	4
+		:Time		12
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task2670]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	149	//	置換しました<<ibg09a>>
+		:Position	640,360
+		:Priority	4
+		:Time		12
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task2680]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	86	//	置換しました<<bg48naa>>
+		:Position	640,360
+		:Priority	4
+		:Time		12
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task2690]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	149	//	置換しました<<ibg09a>>
+		:Position	640,360
+		:Priority	4
+		:Time		12
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task2700]
+	{
+		:Tasktype	"SeStop"
+		:SE			173	//	置換しました<<se12_03l>>
+		:Wait		0
+		:Div		6
+	}
+//☆ＳＥドォーーーーンンンン
+	[Task2710]
+	{
+		:Tasktype	"SePlay"
+		:SE			174	//	置換しました<<se12_04>>
+		:Wait		0
+	}
+//5pb.-フェードアウト白-
+	[Task2720]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			60
+		:SpriteDelete	1
+	}
+	[Task2730]
+	{
+		:Tasktype		"Sprite"
+		:Texture		315	//	置換しました<<ev_so13a>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			0
+		:FadeWait		0
+		:CGFlag			105
+	}
+//5pb.-フェードイン白-
+	[Task2740]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:Time			120
+		:SpriteDelete	0
+	}
+	[Task2750]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+//画面フラッシュ
+//画面激しいゆれ
+	[Task2760]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、この部屋にも浸水が始まった。"
+		:Frame		0
+	}
+	[Task2770]
+	{
+		:Tasktype	"Message"
+		:Message	"侵入した海水は、みるみると、部屋を満たしていく。"
+		:Frame		0
+	}
+	[Task2780]
+	{
+		:Tasktype	"Message"
+		:Message	"水位は、俺のくるぶしを超え、膝を呑み込み、既に腰の辺りにまで達しようとしていた。"
+		:Frame		0
+	}
+	[Task2790]
+	{
+		:Tasktype	"Message"
+		:Message	"そんな状況の中、不思議と心は穏やかだった。"
+		:Frame		0
+	}
+	[Task2800]
+	{
+		:Tasktype	"Message"
+		:Message	"「……空、怖くないか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2810]
+	{
+		:Tasktype	"Message"
+		:Message	"「……大丈夫です……倉成さんと一緒ですから……」"
+		:Character	3		//空
+		:Voice	11061	//	置換しました<<ts07_so048>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2820]
+	{
+		:Tasktype	"Message"
+		:Message	"そう言って、空はそっと手の平を差し出した。"
+		:Frame		0
+	}
+	[Task2830]
+	{
+		:Tasktype	"Message"
+		:Message	"俺も空へ手の平を差し出す。"
+		:Frame		0
+	}
+	[Task2840]
+	{
+		:Tasktype	"Message"
+		:Message	"そしてお互いの手は、重なり合う。"
+		:Frame		0
+	}
+	[Task2850]
+	{
+		:Tasktype	"Message"
+		:Message	"あの、ガラス窓を挟んで向かいあったときと同じように。"
+		:Frame		0
+	}
+	[Task2860]
+	{
+		:Tasktype	"Message"
+		:Message	"「不思議ですね、こうしていると、倉成さんの全てを感じます……」"
+		:Character	3		//空
+		:Voice	11062	//	置換しました<<ts07_so049>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2870]
+	{
+		:Tasktype	"Message"
+		:Message	"「……俺もだ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2880]
+	{
+		:Tasktype	"Message"
+		:Message	"「倉成さん……」"
+		:Character	3		//空
+		:Voice	11063	//	置換しました<<ts07_so050>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2890]
+	{
+		:Tasktype	"Message"
+		:Message	"「ありがとう……」"
+		:Character	3		//空
+		:Voice	11064	//	置換しました<<ts07_so051>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2900]
+	{
+		:Tasktype	"Message"
+		:Message	"「私は幸せです……」"
+		:Character	3		//空
+		:Voice	11065	//	置換しました<<ts07_so052>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task2910]
+	{
+		:Tasktype	"Message"
+		:Message	"「……空」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2920]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task2930]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		316	//	置換しました<<ev_so13b>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			1
+		:FadeWait		1
+		:CGFlag			106
+	}
+	[Task2940]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task2950]
+	{
+		:Tasktype	"Message"
+		:Message	"重なり合う手は、何時しかお互いの心を抱きしめる。"
+		:Frame		0
+	}
+	[Task2960]
+	{
+		:Tasktype	"Message"
+		:Message	"俺たちの心は、２人だけのブレーンワールドにあった。"
+		:Frame		0
+	}
+	[Task2970]
+	{
+		:Tasktype	"Message"
+		:Message	"空の全てを心で感じる。"
+		:Frame		0
+	}
+	[Task2980]
+	{
+		:Tasktype	"Message"
+		:Message	"抱き締める手の温もりを。"
+		:Frame		0
+	}
+	[Task2990]
+	{
+		:Tasktype	"Message"
+		:Message	"肌の柔らかさを。"
+		:Frame		0
+	}
+	[Task3000]
+	{
+		:Tasktype	"Message"
+		:Message	"匂いを。"
+		:Frame		0
+	}
+	[Task3010]
+	{
+		:Tasktype	"Message"
+		:Message	"吐息を。"
+		:Frame		0
+	}
+	[Task3020]
+	{
+		:Tasktype	"Message"
+		:Message	"鼓動を。"
+		:Frame		0
+	}
+//☆ＢＧ施設
+	[Task3030]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task3040]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			120
+		:SpriteDelete	1
+	}
+	[Task3050]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	94	//	置換しました<<bg53aaa>>
+		:Position	640,360
+		:Priority	4
+		:Time		120
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task3060]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task3070]
+	{
+		:Tasktype	"Message"
+		:Message	"周囲はいつしか深い、深い青の世界。"
+		:Frame		0
+	}
+	[Task3080]
+	{
+		:Tasktype	"Message"
+		:Message	"冷たい海水の中で、俺達は抱き合い、ひとつになった。"
+		:Frame		0
+	}
+	[Task3090]
+	{
+		:Tasktype	"Message"
+		:Message	"空と海の溶け合う世界へ、俺の身体はゆっくりと昇って行った。"
+		:Frame		0
+	}
+	[Task3100]
+	{
+		:Tasktype	"Message"
+		:Message	"もうすぐ夢が終わる……。"
+		:Frame		0
+	}
+	[Task3110]
+	{
+		:Tasktype	"Message"
+		:Message	"最後に幸せな夢が見られて良かったな……。"
+		:Frame		0
+	}
+	[Task3120]
+	{
+		:Tasktype	"Message"
+		:Message	"幸せな夢は……目覚めた後でも……幸せな気持ちは残るんだ……。"
+		:Frame		0
+	}
+	[Task3130]
+	{
+		:Tasktype	"Message"
+		:Message	"現実の出来事も……いつしか記憶となり……その残滓は夢となる……。"
+		:Frame		0
+	}
+	[Task3140]
+	{
+		:Tasktype	"Message"
+		:Message	"夢はいつか覚めるけど……。"
+		:Frame		0
+	}
+	[Task3150]
+	{
+		:Tasktype	"Message"
+		:Message	"幸せな夢は……目覚めた後……幸せな気持ちを残すんだ……。"
+		:Frame		0
+	}
+	[Task3160]
+	{
+		:Tasktype	"Message"
+		:Message	"最後に……幸せな夢が……見られて良かったな……。"
+		:Frame		0
+	}
+	[Task3170]
+	{
+		:Tasktype	"Message"
+		:Message	"良かった……な……。"
+		:Frame		0
+	}
+	[Task3180]
+	{
+		:Tasktype	"Message"
+		:Message	"…………。"
+		:Frame		0
+	}
+	[Task3190]
+	{
+		:Tasktype	"SystemLock"
+
+	}
+	[Task3200]
+	{
+		:Tasktype	"Message"
+		:Message	"……。"
+		:Frame		0
+	}
+//5pb.-ファイル終了時基本セット-
+	[Task3210]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+
+//5pb.-デフォルト停止時間60f-
+	[Task3220]
+	{
+		:Tasktype	"BgmStop"
+		:Div		120
+	}
+	[Task3230]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			120
+		:SpriteDelete	1
+	}
+	[Task3240]
+	{
+		:Tasktype	"SeStop"
+		:Div		0
+	}
+	[Task3250]
+	{
+		:Tasktype	"BgmStop"
+		:Div		0
+	}
+//エンディング
+//エンディング後、生体反応、０、１、２でブレつづける演出
+//ココと武の生存未確認の意味
+
+//5pb.松--生体反応＆エンドムービーここから--
+	[Task3260]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			0
+		:SpriteDelete	0
+	}
+	[Task3270]
+	{
+		:Tasktype	"BgmPlay"
+		:Div		0
+		:BGM		44	//	置換しました<<bgm23intro>>
+	}
+	[Task3280]
+	{
+		:Tasktype	"MoviePlay"
+		:Movie		14
+		:EndWait	1
+		:Skip		1
+	}
+	[Task3290]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			0
+		:SpriteDelete	1
+	}
+	[Task3300]
+	{
+		:Tasktype	"SeStop"
+		:Div		0
+	}
+	[Task3310]
+	{
+		:Tasktype	"BgmStop"
+		:Div		0
+	}
+	[Task3320]
+	{
+		:Tasktype	"MoviePlay"
+		:Movie		16
+		:EndWait	1
+		:Skip		1
+	}
+//5pb.松--生体反応＆エンドムービーここまで--
+//ＥＮＤ
+	[Task3330]
+	{
+		:Tasktype	"GlobalFlagSwitch_Tag"
+		:FlagName	"coco_ed"
+	 	:Operator	"=="
+		:Param  	1
+		:NextTag	"MES_END"
+	}
+//5pb.松--Ａボタン以外操作禁止命令挿入箇所--
+	[Task3340]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStart"
+	}
+	[Task3350]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n¥n¥n¥n　Ｔｈｉｓｓｔｏｒｙｉｓｎｏｔａｎｅｎｄｙｅｔ．¥n　　　　Ｂｅｃａｕｓｅｏｎｌｙｙｏｕａｒｅ¥n　　　Ｓｉｎｔｈｅｉｎｆｉｎｉｔｙｌｏｏｐ．"
+		:SkipFlag	0
+		:Frame			-1
+		:ChangingPage	1
+		:WindowType		1
+	}
+	[Task3360]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStop"
+	}
+//5pb.松--Ａボタン以外操作禁止命令停止箇所--
+	[Task3370]
+	{
+		:Tasktype	"Tag"
+		:Name		"MES_END"
+	}
+//5pb.--初期化コマンド--
+	[Task3380]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitTag"
+	}
+	[Task3390]
+	{
+		:Tasktype	"Dialog"
+		:Type		0
+	}
+	[Task3400]
+	{
+		:Tasktype	"Achievement"
+		:ID			2
+	}
+	[Task3410]
+	{
+		:Tasktype	"Achievement"
+		:ID			17
+	}
+	[Task3420]
+	{
+		:Tasktype	"GlobalFlagSwitch_Tag"
+		:FlagName	"sora_ed"
+	 	:Operator	"=="
+		:Param  	1
+		:NextTag	"MES_END2"
+	}
+	[Task3430]
+	{
+		:Tasktype	"GlobalFlagOperation"
+		:FlagName	"sora_ed"
+		:Action		"=",1
+	}
+	[Task3440]
+	{
+		:Tasktype	"GlobalFlagSwitch_Tag"
+		:FlagName	"tk_bad_ed"
+	 	:Operator	"=="
+		:Param  	1
+		:NextTag	"MES_END2"
+	}
+	[Task3450]
+	{
+		:Tasktype	"GlobalFlagSwitch_Tag"
+		:FlagName	"tugu_ed"
+	 	:Operator	"=="
+		:Param  	1
+		:NextTag	"MES_END2"
+	}
+	[Task3460]
+	{
+		:Tasktype	"Dialog"
+		:Type		10
+	}
+	[Task3470]
+	{
+		:Tasktype	"Dialog"
+		:Type		11
+	}
+	[Task3480]
+	{
+		:Tasktype	"Dialog"
+		:Type		12
+	}
+	[Task3490]
+	{
+		:Tasktype	"Tag"
+		:Name		"MES_END2"
+	}
+	[Task3500]
+	{
+		:Tasktype	"SystemUnlock"
+
+	}
+//アクアシステムデフォルトスクリプト--ここから--
+	[Task3510]
+	{
+		:Tasktype 	"End"
+	}
+}
+//アクアシステムデフォルトスクリプト--ここまで--
+//<EOF>
+//////////////////////////////////////////////////////////////////////////////////////////////////////

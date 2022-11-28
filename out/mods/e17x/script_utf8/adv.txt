@@ -1,0 +1,739 @@
+
+[Scene]
+{
+	//スタート時のシーン番号を指定　おまけシナリオ等のため複数スタート場所を指定できるように
+	//[StartScene0]　から　[StartScene10]まで指定可能
+	[StartScene0]
+	{
+//		:SceneName	"dbmenu"
+		:SceneName	"OP00"
+		:WindowType	0
+		:NextJumpScene	0 //次の選択肢へ飛ぶを選んだときのジャンプ先シーン　すぐ下に定義しているシーン番号ではなくこのテキストの一番下に定義している[JampScene]の番号なのに注意
+	}
+	[StartScene1]
+	{
+		:SceneName "X_CCBW01"
+		:WindowType	0
+		:NextJumpScene	0
+	}
+	[StartScene2]
+	{
+		:SceneName "001"
+		:WindowType	0
+		:NextJumpScene	0
+	}
+
+	:ScriptFolder 	"game:¥Media¥script¥"
+
+	:ModelList	"mod.txt"
+	:SceneList	"scn.txt"
+
+
+}
+
+//////////////////////////////////////////////////////////////////////////
+//キャラごとの好感度などセーブデータごとに持つフラグ
+[Flag]
+{
+	:FlagMax	33	//フラグ数
+
+	[Flag0]
+	{　
+		:Name "sora_pts"//空好感度
+		:Param 0	//デフォルト位置
+	}
+	[Flag1]
+	{
+		:Name "tugu_pts"//つぐみ好感度
+		:Param 0
+	}
+	[Flag2]
+	{
+		:Name "you_pts"//優好感度
+		:Param 0
+	}
+	[Flag3]
+	{
+		:Name "coco_pts"//ココ好感度
+		:Param 0
+	}
+	[Flag4]
+	{
+		:Name "sara_pts"//沙羅好感度
+		:Param 0
+	}
+	[Flag5]
+	{
+		:Name "cocosora"//フラグ：ココルート空情報
+		:Param 0
+	}
+	[Flag6]
+	{
+		:Name "tukisei"//※フラグセット≪月の精の子守唄≫
+		:Param 0
+	}
+	[Flag7]
+	{
+		:Name "cocofuta"//※フラグセット≪ココ再び≫
+		:Param 0
+	}
+	[Flag8]
+	{
+		:Name "tokitori"// フラグセット＝時鳥の唄
+		:Param 0
+	}
+	[Flag9]
+	{
+		:Name "soranai"//フラグセット≪空の内緒話≫
+		:Param 0
+	}
+	[Flag10]
+	{
+		:Name "soramuko"//フラグセット≪空の向こう≫
+		:Param 0
+	}
+	[Flag11]
+	{
+		:Name "sorasei"//フラグセット≪空のせいじゃない≫
+		:Param 0
+	}
+	[Flag12]
+	{
+		:Name "sora_rt"
+		:Param 0
+	}
+	[Flag13]
+	{
+		:Name "tugu_rt"
+		:Param 0
+	}
+	[Flag14]
+	{
+		:Name "you_rt"//フラグセット＝いつか還るべき場所へ
+		:Param 0
+	}
+	[Flag15]
+	{
+		:Name "coco_rt"
+		:Param 0
+	}
+	[Flag16]
+	{
+		:Name "sara_rt"
+		:Param 0
+	}
+
+	[Flag17]
+	{
+		:Name "coco_chk"
+		:Param 0
+	}
+	[Flag18]
+	{
+		:Name "reserved"
+		:Param 0
+	}
+	[Flag19]
+	{
+		:Name "reserved"
+		:Param 0
+	}
+
+	[Flag20]
+	{
+		:Name "count"
+		:Param 0
+	}
+	[Flag21]
+	{
+		:Name "calc0"
+		:Param 0
+	}
+
+	[Flag22]
+	{
+		:Name "calc1"
+		:Param 0
+	}
+	[Flag23]
+	{
+		:Name "calc2"
+		:Param 0
+	}
+	[Flag24]
+	{
+		:Name "calc3"
+		:Param 0
+	}
+	[Flag25]
+	{
+		:Name "calc4"
+		:Param 0
+	}
+	[Flag26]
+	{
+		:Name "calc5"
+		:Param 0
+	}
+	[Flag27]
+	{
+		:Name "calc6"
+		:Param 0
+	}
+	[Flag28]
+	{
+		:Name "calc7"
+		:Param 0
+	}
+	[Flag29]
+	{
+		:Name "calc8"
+		:Param 0
+	}
+	[Flag30]
+	{
+		:Name "calc9"
+		:Param 0
+	}
+	[Flag31]
+	{
+		:Name "XXXXXXXX"
+		:Param 0
+	}
+	[Flag32]
+	{
+		:Name "XXXXXXXX"
+		:Param 0
+	}
+}
+//////////////////////////////////////////////////////////////////////////
+//クリアフラグなどセーブデータ共通ので持つフラグ
+[GlobalFlag]
+{
+	:GlobalFlagMax	30
+	[GlobalFlag0]
+	{
+		:Name "sora_ed"
+		:Param 0
+	}
+	[GlobalFlag1]
+	{
+		:Name "tugu_ed"
+		:Param 0
+	}
+	[GlobalFlag2]
+	{
+		:Name "you_ed"
+		:Param 0
+	}
+	[GlobalFlag3]
+	{
+		:Name "coco_ed"
+		:Param 0
+	}
+	[GlobalFlag4]
+	{
+		:Name "sara_ed"
+		:Param 0
+	}
+	[GlobalFlag5]
+	{
+		:Name "tk_bad_ed"
+		:Param 0
+	}
+	[GlobalFlag6]
+	{
+		:Name "sara_bad_ed"
+		:Param 0
+	}
+	[GlobalFlag7]
+	{
+		:Name "you_bad_ed"
+		:Param 0
+	}
+	[GlobalFlag8]
+	{
+		:Name "bw_ed"
+		:Param 0
+	}
+	[GlobalFlag9]
+	{
+		:Name "第五章クリア"
+		:Param 0
+	}
+//☆以下、実績判定用の通過フラグ＠井筒
+
+	[GlobalFlag10]
+	{
+		:Name "コメッチョ１"
+		:Param 0
+	}
+	[GlobalFlag11]
+	{
+		:Name "コメッチョ２"
+		:Param 0
+	}
+	[GlobalFlag12]
+	{
+		:Name "コメッチョ３"
+		:Param 0
+	}
+	[GlobalFlag13]
+	{
+		:Name "コメッチョ４"
+		:Param 0
+	}
+	[GlobalFlag14]
+	{
+		:Name "コメッチョ５"
+		:Param 0
+	}
+	[GlobalFlag15]
+	{
+		:Name "コメッチョ６"
+		:Param 0
+	}
+	[GlobalFlag16]
+	{
+		:Name "コメッチョ予備"
+		:Param 0
+	}
+	[GlobalFlag17]
+	{
+		:Name "コメッチョ予備"
+		:Param 0
+	}
+	[GlobalFlag18]
+	{
+		:Name "コメッチョ予備"
+		:Param 0
+	}
+	[GlobalFlag19]
+	{
+		:Name "コメッチョ予備"
+		:Param 0
+	}
+	[GlobalFlag20]
+	{
+		:Name "忍術１"
+		:Param 0
+	}
+	[GlobalFlag21]
+	{
+		:Name "忍術２"
+		:Param 0
+	}
+	[GlobalFlag22]
+	{
+		:Name "忍術３"
+		:Param 0
+	}
+	[GlobalFlag23]
+	{
+		:Name "忍術４"
+		:Param 0
+	}
+	[GlobalFlag24]
+	{
+		:Name "忍術５"
+		:Param 0
+	}
+	[GlobalFlag25]
+	{
+		:Name "忍術６"
+		:Param 0
+	}
+	[GlobalFlag26]
+	{
+		:Name "忍術予備"
+		:Param 0
+	}
+	[GlobalFlag27]
+	{
+		:Name "忍術予備"
+		:Param 0
+	}
+	[GlobalFlag28]
+	{
+		:Name "忍術予備"
+		:Param 0
+	}
+	[GlobalFlag29]
+	{
+		:Name "忍術予備"
+		:Param 0
+	}
+}
+
+//今回未使用
+[SpriteList]
+{
+	:SpriteListMax	0
+
+	:SpriteList0 	"BG"
+	:SpriteList1 	"EVCG"
+	:SpriteList2 	"ETC"
+
+}
+//今回未使用
+[FaceSpriteList]
+{
+	:SpriteListMax	0
+	:SpriteList0 	"000M"
+	:SpriteList1 	"001M"
+	:SpriteList2 	"002M"
+	:SpriteList3 	"003M"
+	:SpriteList4 	"004M"
+	:SpriteList5	"005M"
+	:SpriteList6 	"006M"
+	:SpriteList7 	"007M"
+	:SpriteList8 	"008M"
+	:SpriteList9 	"009M"
+	:SpriteList10	"010M"
+	:SpriteList11	"011M"
+	:SpriteList12	"012M"
+	:SpriteList13	"013M"
+	:SpriteList14	"014M"
+	:SpriteList15	"015M"
+	:SpriteList16	"016M"
+	:SpriteList17	"017M"
+	:SpriteList18	"018M"
+	:SpriteList19	"019M"
+	
+}
+//今回未使用
+[CharacterList]
+{
+	:CharacterMax	0
+	:Character0	"chr00"
+	:Character1	"chr01"
+	:Character2	"chr02"
+	:Character3	"chr03"
+	:Character4	"chr04"
+	:Character5	"chr05"
+	:Character6	"chr06"
+	:Character7	"chr07"
+	:Character8	"chr08"
+	:Character9	"chr09"
+	:Character10	"chr10"
+	:Character11	"chr11"
+	:Character12	"chr12"
+	:Character13	"chr13"
+}
+//今回未使用
+[Texture]
+{
+	:TextureList	"texturelist.txt"
+}
+
+[Window]
+{
+	:LoadTexture	2
+
+	:WindowMax	1
+	:MessageChoice_Type		1
+	:MessageChoice_FontColor		255,255,255,255	//選択肢でのフォント色 rgbaで指定
+	:MessageChoice_FontColor_Already	128,128,128,255	//選択肢での選択済みのフォント色 rgbaで指定
+	[Window0]
+	{
+		:MainWindowMax	6
+		[MainWindow0]
+		{
+			:messagepos -400,-20
+			:Shape	0,0,1280,256
+			:UV	0,0,1280,256
+			:Texture		2200
+			:FontScale		1
+			:NameFontScale  0.8125
+			:Type	0
+		}
+		[NameWindow0]
+		{
+			:messagepos -180,-15
+			:Shape	0,0,10,10
+			:UV	0,0,10,10
+			:Texture		2200
+		}
+		[MainWindow1]
+		{
+			:messagepos -490,-60
+			:Shape	640,360,1152,720
+			:UV	0,1140,1152,216
+			:Texture		15
+			:FontScale		1
+			:Type	1
+		}
+		[NameWindow1]
+		{
+			:messagepos -180,-15
+			:Shape	-340,-130,468,60
+			:UV	1152,1140,468,60
+			:Texture		15
+		}
+		[MainWindow2]
+		{
+			:messagepos -245,-30
+			:Shape	640,600,640,100
+			:UV	0,1140,1152,216
+			:Texture		15
+			:FontScale		0.6666666
+			:Type	2
+		}
+		[NameWindow2]
+		{
+			:messagepos -180,-15
+			:Shape	-340,-130,468,60
+			:UV	1152,1140,468,60
+			:FontScale		0.6666666
+			:Texture		15
+		}
+		[MainWindow3]
+		{
+			:messagepos -400,-20
+			:Shape	640,560,1280,256
+			:UV	0,0,1280,256
+			:Texture		2200
+			:FontScale		0.6666666
+			:Type	2
+		}
+		[NameWindow3]
+		{
+			:messagepos -180,-15
+			:Shape	-210,-70,10,10
+			:UV	0,0,10,10
+			:FontScale		0.6666666
+			:Texture		2200
+		}
+		[MainWindow4]
+		{
+			:messagepos -490,-60
+			:Shape	640,360,1152,720
+			:UV	0,1140,1152,216
+			:Texture		15
+			:FontScale		0.6666666
+			:Type	2
+		}
+		[NameWindow4]
+		{
+			:messagepos -180,-15
+			:Shape	-340,-130,468,60
+			:UV	1152,1140,468,60
+			:FontScale		0.6666666
+			:Texture		15
+		}
+		[MainWindow5]
+		{
+			:messagepos -245,-30
+			:Shape	640,600,640,100
+			:UV	0,1140,1152,216
+			:Texture		15
+			:FontScale		0.6666666
+			:Type	2
+		}
+		[NameWindow5]
+		{
+			:messagepos -180,-15
+			:Shape	-340,-130,468,60
+			:UV	1152,1140,468,60
+			:FontScale		0.6666666
+			:Texture		15
+		}
+		[Select]
+		{
+			:messagepos -200,-12
+			:Shape	0,0,840,60
+			:UV	0,660,840,60
+			:Texture		30
+		}
+		[1]
+		{
+			:messagepos -200,-12
+			:Shape	640,360,1280,220
+			:UV	0,0,1280,220
+			:Texture		30
+		}
+		[2]
+		{
+			:messagepos -200,-12
+			:Shape	640,360,1280,220
+			:UV	0,0,1280,220
+			:Texture		30
+		}
+		[3]
+		{
+			:messagepos -200,-12
+			:Shape	640,360,1280,220
+			:UV	0,220,1280,220
+			:Texture		30
+		}
+		[4]
+		{
+			:messagepos -200,-12
+			:Shape	640,360,1280,220
+			:UV	0,440,1280,220
+			:Texture		30
+		}
+		[5]
+		{
+			:messagepos -200,-12
+			:Shape	640,360,722,54
+			:UV	0,3060,722,54
+			:Texture		30
+		}
+		[6]
+		{
+			:messagepos -200,-12
+			:Shape	640,360,722,54
+			:UV	0,3060,722,54
+			:Texture		30
+		}
+
+		[ChoiceMessage]
+		{
+			
+			:Shape	640,600,550,60
+			:UV	0,0,550,60
+			:Texture		30
+		}
+		[IndicatorOn]
+		{
+			
+			:Shape	1150,520,61,58
+			:UV	700,1362,61,58
+			:Texture		15
+		}
+		[IndicatorOff]
+		{
+			
+			:Shape	1150,520,61,58
+			:UV	761,1362,61,58
+			:Texture		15
+		}
+	}
+	
+}
+
+//未使用
+[JampScene]
+{
+	:Max	0
+
+}
+//ムービー定義
+[Movie]
+{
+	:MovieFolder	"game:¥Media¥data¥"
+	:MovieMax	21
+	:Movie0 "OP00.wmv"
+	:Movie1 "kokoend.wmv"
+	:Movie2 "01day.wmv",0
+	:Movie3 "MOV_01.wmv",0
+	:Movie4 "MOV_02.wmv",0
+	:Movie5 "MOV_03.wmv",0
+	:Movie6 "MOV_04.wmv",0
+	:Movie7 "MOV_05.wmv",0
+	:Movie8 "sdrproject.wmv",0
+	:Movie9 "01day.wmv",0
+	:Movie10 "02day.wmv",0
+	:Movie11 "03day.wmv",0
+	:Movie12 "04day.wmv",0
+	:Movie13 "05day.wmv",0
+	:Movie14 "seitai.wmv",0
+	:Movie15 "mov_05_yochi.wmv"
+	:Movie16 "ED_SORA.wmv"
+	:Movie17 "ED_TUGU.wmv"
+	:Movie18 "ED_YU.wmv"
+	:Movie19 "ED_SARA.wmv"
+	:Movie20 "ED_BW.wmv"
+}
+
+//エフェクトムービー定義
+[EffectMovie]
+{
+	:MovieFolder	"game:¥Media¥data¥"
+	:MovieMax	8
+	:Movie0 "imv004.wmv"
+	:Movie1 "eff_fire.wmv"
+	:Movie2 "eff_firestorm.wmv"
+	:Movie3 "eff_noise.wmv"
+	:Movie4 "imv004.wmv"
+	:Movie5 "imv004.wmv"
+	:Movie6 "imv004.wmv"
+	:Movie7 "imv004.wmv"
+
+}
+//名前定義
+[Name]
+{
+	:Max	70
+	:Name0	"ＢＷ"
+	:Name1	"武"
+	:Name2	"つぐみ"
+	:Name3	"空"
+	:Name4	"優"
+	:Name5	"少年"
+	:Name6	"ココ"
+	:Name7	"沙羅"
+	:Name8	"ピピ"
+	:Name9	"研究員"
+	:Name10	"鈴木"
+	:Name11	"佐藤"
+	:Name12	"スタッフ"
+	:Name13	"チャミ"
+	:Name14	"管制官"
+	:Name15	"男の人"
+	:Name16	"？？"
+	:Name17	"少女"
+	:Name18	"中の人"
+	:Name19	"お姉さん"
+	:Name20	"空Ａ"
+	:Name21	"空Ｂ"
+	:Name22	"空Ｃ"
+	:Name23	"アナウンス"
+	:Name24	"スタッフの人"
+	:Name25	"ぼく"
+	:Name26	"マヨ"
+	:Name27	"松永"
+	:Name28	"ポポ？"
+	:Name29	"男"
+	:Name30	"女"
+	:Name31	"子犬"
+	:Name32	"講師"
+	:Name33	"医師"
+	:Name34	"紳士"
+	:Name35	"責任者"
+	:Name36	"部下"
+	:Name37	"モリノ博士"
+	:Name38	"優春"
+	:Name39	"優秋"
+	:Name40	"桑古木"
+	:Name41	"ホクト"
+	:Name42	"八神岳士"
+	:Name43	"田中陽一"
+	:Name44	"田中先生"
+	:Name45	"研究員Ａ"
+	:Name46	"研究員Ｂ"
+	:Name47	"研究員Ｃ"
+	:Name48	"研究員Ｄ"
+	:Name49	"研究員Ｅ"
+	:Name50	"研究員Ｆ"
+	:Name51	"研究員Ｇ"
+	:Name52	"管制官Ａ"
+	:Name53	"管制官Ｂ"
+	:Name54	"医者"
+	:Name55	"アナウンサー"
+	:Name56	"全員"
+	:Name57	"オペレーター"
+	:Name58	"白衣の男"
+	:Name59	"テレビの声"
+	:Name60	"助手"
+	:Name61	"科学者Ａ"
+	:Name62	"科学者Ｂ"
+	:Name63	"武"			//ダミー
+	:Name64	"少年"	//ダミー
+	:Name65	"予備"			//ダミー
+	:Name66	"少年（無声）"
+	:Name67	"武（無声）"
+	:Name68	"女キャスター"
+	:Name69	"教官"
+}

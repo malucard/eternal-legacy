@@ -1,0 +1,555 @@
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//		Title:『Ever17』
+//		File:	
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//アクアシステムデフォルトスクリプト--ここから--
+[StartUp]
+{
+	:SceneName	"少年編　５／７"
+	:Presence	3
+	[LoadTexture]
+	{
+		:Texture	0
+	}
+}
+[TaskList]
+{
+	:TaskMax	100001
+//アクアシステムデフォルトスクリプト--ここまで--
+//-----------------
+//優ＢＡＤＥＮＤ
+//-----------------
+//SY0B
+//☆ＥＣＧ※新規　次元の狭間を漂う優。/不安定な優/少年手を伸ばし優の手繋ぐ（※私服）
+	[Task100]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task110]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		385	//	置換しました<<ev_xyu02b>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			1
+		:FadeWait		1
+	}
+//5pb.24:Drittes Auge nehmenドリッテス・アウゲ・ネーメン（第３の眼：別テイク）
+	[Task120]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		47	//	置換しました<<bgm24>>
+	}
+	[Task130]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task140]
+	{
+		:Tasktype	"Tag"
+		:Name	"SY0B_START"
+	}
+	[Task150]
+	{
+		:Tasktype	"Message"
+		:Message	"「とどかない、とどかないよ……」"
+		:Voice		14748	//	置換しました<<sy0b_yu000e>>
+		:ModelName		"優","優私服"
+		:Character	4	// 0
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task160]
+	{
+		:Tasktype	"Message"
+		:Message	"「諦めないで、あとちょっと、あとちょっとだから」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task170]
+	{
+		:Tasktype	"Message"
+		:Message	"２人の距離が、手の距離が近づいていく……。"
+		:Frame		1
+	}
+	[Task180]
+	{
+		:Tasktype	"Message"
+		:Message	"しかし、何故かお互いの手は、横を通り過ぎた。"
+		:Frame		1
+	}
+	[Task190]
+	{
+		:Tasktype	"Message"
+		:Message	"「優、こっちだ、こっちだよ…………」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task200]
+	{
+		:Tasktype	"Message"
+		:Message	"「やってるよ、だけど……」"
+		:Character	4		//優
+		:Voice	14749	//	置換しました<<sy0b_yu001e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task210]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼく達は何度も何度もお互いの手を掴もうとした。"
+		:Frame		1
+	}
+	[Task220]
+	{
+		:Tasktype	"Message"
+		:Message	"しかし、何度も何度も手は、お互いを通り過ぎた。"
+		:Frame		1
+	}
+	[Task230]
+	{
+		:Tasktype	"Message"
+		:Message	"あの時と同じだ……。"
+		:Frame		1
+	}
+	[Task240]
+	{
+		:Tasktype	"Message"
+		:Message	"あの、サインペンをキャップに入れる時のように……。"
+		:Frame		1
+	}
+	[Task250]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくの居る場所と、優の居る場所の次元がズレているんだ。"
+		:Frame		1
+	}
+	[Task260]
+	{
+		:Tasktype	"Message"
+		:Message	"あざ笑うかのように、ぼくらを照らす光の轟音は、邪悪なドラゴンの咆哮を思わせた。"
+		:Frame		1
+	}
+	[Task270]
+	{
+		:Tasktype	"Message"
+		:Message	"「やっぱりだめなのかな……」"
+		:Character	4		//優
+		:Voice	14750	//	置換しました<<sy0b_yu002e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task280]
+	{
+		:Tasktype	"Message"
+		:Message	"優の顔が曇る。"
+		:Frame		1
+	}
+	[Task290]
+	{
+		:Tasktype	"Message"
+		:Message	"「優、諦めないで、あともうすこし、もうすこしなんだ……」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task300]
+	{
+		:Tasktype	"Message"
+		:Message	"「だけど……」"
+		:Character	4		//優
+		:Voice	14751	//	置換しました<<sy0b_yu003e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task310]
+	{
+		:Tasktype	"Message"
+		:Message	"優の顔が悲しみに歪む。"
+		:Frame		1
+	}
+	[Task320]
+	{
+		:Tasktype	"Message"
+		:Message	"届かない……。"
+		:Frame		1
+	}
+	[Task330]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくの想いは届かない……。"
+		:Frame		1
+	}
+	[Task340]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼくの手の先から、力が抜けていく……。"
+		:Frame		1
+	}
+//5pb.松--モーションブラー挿入箇所--
+	[Task350]
+	{
+		:Tasktype	"EffectStart"
+		:EffectNumber	41,-1
+		:Priority		1
+		:Param		0.7
+	}
+	[Task360]
+	{
+		:Tasktype		"Flash"
+		:Color			0,0,0,255		//Black
+		:InTime			30
+		:OutTime		30
+		:TimeWait		12
+	}
+	[Task370]
+	{
+		:Tasktype	"Message"
+		:Message	"不意に頭痛、目眩、吐き気……身体の内側からにじみ出てくるような悪寒がぼくを襲った。"
+		:Frame		1
+	}
+	[Task380]
+	{
+		:Tasktype	"Message"
+		:Message	"意識が、朦朧とする…………。"
+		:Frame		1
+	}
+	[Task390]
+	{
+		:Tasktype	"Message"
+		:Message	"全力、全開……ぼくの力はもう限界だった。"
+		:Frame		1
+	}
+	[Task400]
+	{
+		:Tasktype	"Message"
+		:Message	"だが、気力を奮い起こしてそれに耐え抜こうとする。"
+		:Frame		1
+	}
+	[Task410]
+	{
+		:Tasktype	"Message"
+		:Message	"……この無限の恐怖の中、ぼくらはもがき、抗い続けていた。"
+		:Frame		1
+	}
+	[Task420]
+	{
+		:Tasktype	"Message"
+		:Message	"「とどかない……」"
+		:Character	4		//優
+		:Voice	14752	//	置換しました<<sy0b_yu004e>>
+		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task430]
+	{
+		:Tasktype	"Message"
+		:Message	"必死に手を伸ばしてくる彼女。"
+		:Frame		1
+	}
+	[Task440]
+	{
+		:Tasktype	"Message"
+		:Message	"だが２人の手は、重なるように見えるが、どうしても触れられない。"
+		:Frame		1
+	}
+	[Task450]
+	{
+		:Tasktype	"Message"
+		:Message	"ダメか……。"
+		:Frame		1
+	}
+	[Task460]
+	{
+		:Tasktype	"Message"
+		:Message	"もうダメなのか……。"
+		:Frame		1
+	}
+	[Task470]
+	{
+		:Tasktype	"Message"
+		:Message	"もう、諦めるしかないのか……。"
+		:Frame		1
+	}
+//5pb.松--モーションブラー停止箇所--
+	[Task480]
+	{
+		:Tasktype	"EffectEnd"
+		:EffectNumber	41
+	}
+	[Task490]
+	{
+		:Tasktype	"FlashStop"
+	}
+	[Task500]
+	{
+		:Tasktype	"Message"
+		:Message	"瞬間、優と目が合った。"
+		:Frame		1
+	}
+	[Task510]
+	{
+		:Tasktype	"Message"
+		:Message	"「…………」"
+		:Character	4		//優
+		:Voice	14753	//	置換しました<<sy0b_yu005e>>
+//		:ModelName		"優","優私服"
+		:Frame		1
+	}
+//音声加工エコーっぽい？
+	[Task520]
+	{
+		:Tasktype	"Message"
+		:Message	"優が何かを呟いた。"
+		:Frame		1
+	}
+	[Task530]
+	{
+		:Tasktype	"Message"
+		:Message	"だがその言葉は、ぼくの耳に届かない。"
+		:Frame		1
+	}
+	[Task540]
+	{
+		:Tasktype	"Message"
+		:Message	"「……優？」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task550]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-デフォルト停止時間150f-
+	[Task560]
+	{
+		:Tasktype	"BgmStop"
+		:Div		150
+	}
+	[Task570]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		388	//	置換しました<<ev_xyu02e>>
+		:Position		640,360
+		:Priority		3
+		:Rule			6
+//		:Rule			16
+		:Time			180
+		:FadeIn			1
+		:FadeWait		1
+		:CGFlag			182
+	}
+//5pb.-21:カルマ（業）-
+	[Task580]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		40	//	置換しました<<bgm21>>
+	}
+	[Task590]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task600]
+	{
+		:Tasktype	"Message"
+		:Message	"優の姿が霞み、光に溶けていく。"
+		:Frame		1
+	}
+	[Task610]
+	{
+		:Tasktype	"Message"
+		:Message	"優の姿が光の海へと溶けていく……。"
+		:Frame		1
+	}
+	[Task620]
+	{
+		:Tasktype	"Message"
+		:Message	"人魚姫が泡となり海の中へ溶けていくように……。"
+		:Frame		1
+	}
+	[Task630]
+	{
+		:Tasktype	"Message"
+		:Message	"光に溶けて、消えていく……。"
+		:Frame		1
+	}
+	[Task640]
+	{
+		:Tasktype	"Message"
+		:Message	"「優ーーーーーー！」"
+		:Name	5		//少年
+		:Frame		1
+	}
+	[Task650]
+	{
+		:Tasktype	"Message"
+		:Message	"絶望、恐怖、憤怒、悲しみ、後悔、苛立ち、憤り……。"
+		:Frame		1
+	}
+	[Task660]
+	{
+		:Tasktype	"Message"
+		:Message	"そんなやり場の無い感情のうねりも、いつしか光に薄れ、光の中へと溶けていく……。"
+		:Frame		1
+	}
+	[Task670]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task680]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		389	//	置換しました<<ev_xyu02f>>
+		:Position		640,360
+		:Priority		3
+		:Rule			5
+//		:Rule			16
+		:Time			180
+		:FadeIn			1
+		:FadeWait		1
+		:CGFlag			183
+	}
+	[Task690]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStart"
+	}
+	[Task700]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n¥n¥nぼく自身も……。"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task710]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n溶けていく……。"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task720]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n光の中へと溶けていく……。"
+		:Frame			-1
+		:ChangingPage	1
+		:WindowType		1
+	}
+	[Task730]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n¥n¥n¥nそして、最後に胸の痛みが残った……。"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task740]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n痛みだけが……。"
+		:Frame			-1
+		:ChangingPage	1
+		:WindowType		1
+	}
+	[Task750]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n¥n¥n¥n………………。"
+		:Frame			-1
+		:ChangingPage	0
+		:WindowType		1
+	}
+	[Task760]
+	{
+		:Tasktype	"SystemLock"
+
+	}
+	[Task770]
+	{
+		:Tasktype	"Message"
+		:Message	"¥n¥n………。"
+		:Frame			-1
+		:ChangingPage	1
+		:WindowType		1
+	}
+//5pb.-ファイル終了時基本セット-
+	[Task780]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","FuScStop"
+	}
+	[Task790]
+	{
+		:Tasktype	"BgmStop"
+		:Div		120
+	}
+	[Task800]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			120
+		:SpriteDelete	1
+	}
+	[Task810]
+	{
+		:Tasktype	"SeStop"
+		:Div		0
+	}
+	[Task820]
+	{
+		:Tasktype	"BgmStop"
+		:Div		0
+	}
+//☆グローバルフラグセット：
+	[Task830]
+	{
+		:Tasktype	"GlobalFlagOperation"
+		:FlagName	"you_bad_ed"
+		:Action		"=" ,1
+	}
+
+//ＢＡＤＥＮＤ
+//エンディング
+//エンディング後、生体反応、０、１、２でブレつづける演出
+//5pb.--初期化コマンド--
+	[Task840]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitTag"
+	}
+	[Task850]
+	{
+		:Tasktype	"Dialog"
+		:Type		4
+	}
+	[Task860]
+	{
+		:Tasktype	"Achievement"
+		:ID			9
+	}
+	[Task870]
+	{
+		:Tasktype	"SystemUnlock"
+
+	}
+//アクアシステムデフォルトスクリプト--ここから--
+	[Task880]
+	{
+		:Tasktype		"End"
+	}
+}
+//アクアシステムデフォルトスクリプト--ここまで--
+//<EOF>
+//////////////////////////////////////////////////////////////////////////////////////////////////////

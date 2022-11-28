@@ -1,0 +1,424 @@
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//		Title:『Ever17』
+//		File:	sho_com
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//┃※使用説明：このファイルは「CallScene」の命令専用です。		┃
+//┃			追加したい機能は要相談です。					┃
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+//アクアシステムデフォルトスクリプト--ここから--
+[StartUp]
+{
+	:SceneName	"ショートカットコマンドテスト"	//本編使用の際はシーンネームをそれぞれのスクリプトに合わせる。リッチプレゼンスも同じ。
+	:Presence	1
+	[LoadTexture]
+	{
+		:Texture	0
+	}
+}
+
+[TaskList]
+{
+	:TaskMax	100001
+//アクアシステムデフォルトスクリプト--ここまで--
+
+//5pb.--サウンド・グラ初期化--ここから--
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//┃※使用方法：使用する時はファイルの始めと末尾のみ。			┃
+//┃			または不安の残る箇所でフェードアウトした後のみ。┃
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+	[Task100]
+	{
+		:Tasktype	"Tag"
+		:Name		"InitTag"
+	}
+
+	[Task110]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			0
+		:SpriteDelete	1
+	}
+
+	[Task120]
+	{
+		:Tasktype	"WaterBGClose"
+	}
+
+	[Task130]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			0
+		:EndWait		0
+	}
+
+	[Task140]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			1
+		:EndWait		0
+	}
+
+	[Task150]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			2
+		:EndWait		0
+	}
+
+	[Task160]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			3
+		:EndWait		0
+	}
+
+	[Task170]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			4
+		:EndWait		0
+	}
+
+	[Task180]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			5
+		:EndWait		0
+	}
+
+	[Task190]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			6
+		:EndWait		0
+	}
+
+	[Task200]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			7
+		:EndWait		0
+	}
+
+	[Task210]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			8
+		:EndWait		0
+	}
+
+	[Task220]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			9
+		:EndWait		0
+	}
+
+	[Task230]
+	{
+		:Tasktype	"SeStop"
+		:Div		0
+	}
+
+	[Task240]
+	{
+		:Tasktype	"BgmStop"
+		:Div		0
+	}
+
+	[Task250]
+	{
+		:Tasktype	"EffectQuakeEnd"
+		:EndWait	0
+	}
+
+	[Task260]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			0
+		:SpriteDelete	0
+	}
+
+	[Task270]
+	{
+		:Tasktype	"Jump_Tag"
+		:NextTag	"LastTag"
+	}
+//5pb.--サウンド・グラ初期化--ここまで--
+
+//	[Task280]
+//	{
+//		:Tasktype	"Message"
+//		:Message	"これが出たらエラー"
+//		:Frame		0
+//	}
+
+//5pb.--サウンド初期化--ここから--
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//┃※使用方法：一瞬で終了させているので、						┃
+//┃			基本的に不自然でなければ良いです。				┃
+//┃			黒フェードアウト後の使用推奨です。				┃
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+	[Task290]
+	{
+		:Tasktype	"Tag"
+		:Name		"InitSound"
+	}
+
+	[Task300]
+	{
+		:Tasktype	"SeStop"
+		:Div		0
+	}
+
+	[Task310]
+	{
+		:Tasktype	"BgmStop"
+		:Div		0
+	}
+
+	[Task320]
+	{
+		:Tasktype	"Jump_Tag"
+		:NextTag	"LastTag"
+	}
+//5pb.--サウンド初期化--ここまで--
+
+//5pb.--グラ初期化--ここから--
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//┃※使用方法：黒フェードアウト後の使用必須です。				┃
+//┃			それ以外の使用には基本禁止で。					┃
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+	[Task330]
+	{
+		:Tasktype	"Tag"
+		:Name		"InitGra"
+	}
+
+	[Task340]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			0
+		:SpriteDelete	1
+	}
+
+	[Task350]
+	{
+		:Tasktype	"WaterBGClose"
+	}
+
+	[Task360]
+	{
+		:Tasktype	"EffectQuakeEnd"
+		:EndWait	0
+	}
+
+	[Task370]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			0
+		:EndWait		0
+	}
+
+	[Task380]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			1
+		:EndWait		0
+	}
+
+	[Task390]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			2
+		:EndWait		0
+	}
+
+	[Task400]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			3
+		:EndWait		0
+	}
+
+	[Task410]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			4
+		:EndWait		0
+	}
+
+	[Task420]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			5
+		:EndWait		0
+	}
+
+	[Task430]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			6
+		:EndWait		0
+	}
+
+	[Task440]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			7
+		:EndWait		0
+	}
+
+	[Task450]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			8
+		:EndWait		0
+	}
+
+	[Task460]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number			9
+		:EndWait		0
+	}
+
+	[Task470]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			0
+		:SpriteDelete	0
+	}
+
+	[Task480]
+	{
+		:Tasktype	"Jump_Tag"
+		:NextTag	"LastTag"
+	}
+//5pb.--グラ初期化--ここまで--
+
+//5pb.--全画面表示フィルター開始--ここから--
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//┃※使用方法：モノローグを全画面で表示する時のフィルターです。┃
+//┃			フルスクリーンで表示する文だけは手動設定です。	┃
+//┃			フィルター自体はどのシーンでも使えるので、		┃
+//┃			使用の制限はありません。						┃
+//┃			不自然でなければ問題ありません。				┃
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+	[Task490]
+	{
+		:Tasktype	"Tag"
+		:Name		"FuScStart"
+	}
+
+	[Task500]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+
+	[Task510]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	111	//	置換しました<<bg_black>>
+		:Number		0
+		:Time		30
+		:Param		640,360,0,0,1
+		:Param2		640,360,140,0,1
+		:Priority	2
+		:EndDelete	0
+		:EndWait	1
+	}
+
+	[Task520]
+	{
+		:Tasktype	"Jump_Tag"
+		:NextTag	"LastTag"
+	}
+//5pb.--全画面表示フィルター開始--ここまで--
+
+//5pb.--全画面表示フィルター--ここから--
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//┃※使用方法：モノローグを全画面で表示する時のフィルターを	┃
+//┃			停止する時に使います。							┃
+//┃			使用範囲終了のメッセージ後に使ってください。	┃
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+	[Task530]
+	{
+		:Tasktype	"Tag"
+		:Name		"FuScStop"
+	}
+
+	[Task540]
+	{
+		:Tasktype		"Window"
+		:Visible		0
+		:WindowNumber	1
+	}
+
+	[Task550]
+	{
+		:Tasktype	"EffectEff"
+		:Texture	111	//	置換しました<<bg_black>>
+		:Number		0
+		:Time		30
+		:Param		640,360,140,0,1
+		:Param2		640,360,0,0,1
+		:Priority	2
+		:EndDelete	0
+		:EndWait	1
+	}
+
+	[Task560]
+	{
+		:Tasktype	"EffectEffEnd"
+		:Number		0
+		:EndWait	0
+	}
+
+	[Task570]
+	{
+		:Tasktype	"Jump_Tag"
+		:NextTag	"LastTag"
+	}
+//5pb.--全画面表示フィルター--ここまで--
+
+//5pb.--コマンドラスト飛ばし先--コマンド終了時はここにジャンプ--
+	[Task580]
+	{
+		:Tasktype	"Tag"
+		:Name		"LastTag"
+	}
+
+//アクアシステムデフォルトスクリプト--ここから--
+	[Task590]
+	{
+		:Tasktype		"End"
+	}
+}
+//アクアシステムデフォルトスクリプト--ここまで--
+
+//<EOF>
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+

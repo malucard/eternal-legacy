@@ -1,0 +1,698 @@
+[00000054] 10: 
+[00000055]  f: removeBG 0 0 2
+[0000005f] 10: 
+[00000060] 10: bgload 00000000 BG01E 0 1
+[0000006d] 10: 
+[0000006e]  8: playSFX SE108 1
+[00000078] 10: 
+[00000079] 19: 
+[0000007a] ff: text 00
+{textColor 0 2}As I wake up, I kick the covers off the bed with all my strength. 
+{textColor 0 2}Still half asleep, I blankly stare at the ceiling. 
+{textColor 0 2}It's a familiar... ceiling... 
+{textColor 0 2}I realize I'm freezing, my body soaked with sweat all over. 
+{textColor 0 2}I take a deep breath and slowly exhale. 
+{textColor 0 2}The warm scent of wood goes through my nose and fills my head. 
+{textColor 0 2}It takes me three more breaths until... 
+
+
+[0000007d] 10: 
+[0000007e]  9: stopSFX
+[0000007f] 10: 
+[00000080]  6: playBGM 9
+[00000084] 10: 
+[00000085] 19: 
+[00000086] ff: text 01
+{textColor 0 0}【Makoto】 "Huh...?" 
+{textColor 0 0}【Makoto】 "N-No way..." 
+{textColor 0 0}【Makoto】 "There's no way..." 
+{textColor 0 0}【Makoto】 "There's just no way..." 
+{textColor 0 2}I slowly get up from the bed. 
+{textColor 0 2}I stand in the center of the room, and look around. 
+{textColor 0 2}――It can't be... 
+
+
+[00000089] 10: 
+[0000008a]  7: stopBGM
+[0000008b] 10: 
+[0000008c]  8: playSFX SE000 1
+[00000096] 10: 
+[00000097] 19: 
+[00000098] ff: text 02
+{textColor 0 2}Suddenly, I hear a sound as violent as an explosion! 
+{textColor 0 2}I turn around, and standing there, I see...  {textColor 0 2}I see... 
+
+
+[0000009b] 10: 
+[0000009c]  f: removeBG 0 0 3
+[000000a6] 10: 
+[000000a7]  c: createPanBG 00000000 EV_YU01 2 4 0 0 0
+[000000b7] 10: 
+[000000b8]  e: movePanBG 0 4 0 16
+[000000c0] 10: 
+[000000c1]  b: playVoice YL2D7014
+[000000cb] 10: 
+[000000cc] 19: 
+[000000cd] ff: text 03
+{textColor 1 4}【Yuka】 "Wh... What's going on!?" 
+{textColor 0 2}Yuka... 
+
+
+[000000d0] 10: 
+[000000d1]  b: playVoice YL2D7015
+[000000db] 10: 
+[000000dc] 19: 
+[000000dd] ff: text 04
+{textColor 1 4}【Yuka】 "Why...!?" 
+
+
+[000000e0] 10: 
+[000000e1]  8: playSFX SE107 1
+[000000eb] 10: 
+[000000ec]  1: cmd1 7
+[000000f0]  0: 
+[000000f1]  5: delay 60
+[000000f6] 10: 
+[000000f7] 19: 
+[000000f8] ff: text 05
+{textColor 0 2}(Calm down...) 
+{textColor 0 2}(I've got to calm down...) 
+{textColor 0 2}(First of all, what should I do...?) 
+{textColor 0 2}(The date... we've got to confirm today's date!) 
+
+
+[000000fb] 10: 
+[000000fc]  9: stopSFX
+[000000fd] 10: 
+[000000fe]  2: cmd2 10
+[00000102] 10: 
+[00000103] 19: 
+[00000104] ff: text 06
+{textColor 0 2}I timidly raise my left arm. 
+{textColor 0 2}Yuka leans in close as we both look at my watch's face. 
+
+
+[00000107] 10: 
+[00000108] 18: cmd18
+[00000109]  0: 
+[0000010a]  5: delay 60
+[0000010f] 10: 
+[00000110] 19: 
+[00000111] ff: text 07
+{textColor 0 2}(――1――) 
+{textColor 0 0}【Makoto】 "Th-That's impossible!!!" 
+{textColor 0 2}No... 
+{textColor 0 2}I stare at it carefully one more time. 
+{textColor 0 2}(――7――) 
+{textColor 0 2}(7 SUN 5:03 A.M.) 
+{textColor 0 2}The number isn't a "1", it's a "7"... 
+{textColor 0 2}A "7"!? 
+{textColor 0 0}【Makoto】 "Yuka... we..." 
+
+
+[00000114] 10: 
+[00000115]  b: playVoice YL2D7016
+[0000011f] 10: 
+[00000120] 19: 
+[00000121] ff: text 08
+{textColor 1 4}【Yuka】 "Were... saved?" 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 4}【Yuka】 "..." 
+{textColor 0 2}Yuka and I exchange glances. 
+{textColor 0 0}【Makoto】 "No, hold on..." 
+{textColor 0 0}【Makoto】 "It's possible that my watch could be busted..." 
+
+
+[00000124] 10: 
+[00000125] 10: bgload 00000000 BG01E 0 1
+[00000132] 10: 
+[00000133] 19: 
+[00000134] ff: text 09
+{textColor 0 2}Yuka nods... 
+{textColor 0 2}In the next instant, Yuka and I, flustered and still intertwined, quickly rush out to the living room. 
+
+
+[00000137] 10: 
+[00000138] 10: bgload 00000000 BG02E 4 1
+[00000145] 10: 
+[00000146]  6: playBGM 8
+[0000014a] 10: 
+[0000014b] 11: fgload 0 00000000 KU11BA 1 3
+[0000015b] 10: 
+[0000015c]  b: playVoice YL2D7018
+[00000166] 10: 
+[00000167] 19: 
+[00000168] ff: text 0a
+{textColor 1 7}【Kurumi】 "O-Onii-chan!!" 
+{textColor 0 0}【Makoto】 "K... Kurumi!" 
+
+
+[0000016b] 10: 
+[0000016c] 12: removeFG 0 3
+[00000173] 10: 
+[00000174] 11: fgload 0 00000000 SA11AA 2 3
+[00000184] 10: 
+[00000185]  b: playVoice YL2D7019
+[0000018f] 10: 
+[00000190] 19: 
+[00000191] ff: text 0b
+{textColor 1 6}【Saki】 "H-Hold on, what's the meaning of this!?" 
+
+
+[00000194] 10: 
+[00000195] 12: removeFG 0 3
+[0000019c] 10: 
+[0000019d] 11: fgload 0 00000000 IZ11AA 0 3
+[000001ad] 10: 
+[000001ae]  b: playVoice YL2D7020
+[000001b8] 10: 
+[000001b9] 19: 
+[000001ba] ff: text 0c
+{textColor 1 8}【Izumi】 "When did... you two... get back!?" 
+
+
+[000001bd] 10: 
+[000001be]  b: playVoice YL2D7021
+[000001c8] 10: 
+[000001c9] 19: 
+[000001ca] ff: text 0d
+{textColor 1 4}【Yuka】 "Huh...?" 
+
+
+[000001cd] 10: 
+[000001ce] 12: removeFG 0 3
+[000001d5] 10: 
+[000001d6] 11: fgload 0 00000000 HA01CA 1 3
+[000001e6] 10: 
+[000001e7]  b: playVoice YL2D7022
+[000001f1] 10: 
+[000001f2] 19: 
+[000001f3] ff: text 0e
+{textColor 1 5}【Haruka】 "We've been looking for you..." 
+
+
+[000001f6] 10: 
+[000001f7] 13: moveFG 0 2
+[000001fe] 10: 
+[000001ff] 11: fgload 1 00000000 KU10BA 0 3
+[0000020f] 10: 
+[00000210]  b: playVoice YL2D7023
+[0000021a] 10: 
+[0000021b] 19: 
+[0000021c] ff: text 0f
+{textColor 1 7}【Kurumi】 "Geez, where did you go!?" 
+{textColor 0 0}【Makoto】 "'Where'... even if you say that..." 
+
+
+[0000021f] 10: 
+[00000220] 12: removeFG 0 3
+[00000227] 10: 
+[00000228] 11: fgload 0 00000000 OK10CA 2 3
+[00000238] 10: 
+[00000239]  b: playVoice YL2D7024
+[00000243] 10: 
+[00000244] 19: 
+[00000245] ff: text 10
+{textColor 0 0}【Okuhiko】 "Sheesh, don't worry us like that..." 
+
+
+[00000248] 10: 
+[00000249] 12: removeFG 0 3
+[00000250] 10: 
+[00000251] 11: fgload 0 00000000 SA05AA 2 3
+[00000261] 10: 
+[00000262]  b: playVoice YL2D7025
+[0000026c] 10: 
+[0000026d] 19: 
+[0000026e] ff: text 11
+{textColor 1 6}【Saki】 "If you went out, then you should have at least told us something!" 
+{textColor 0 2}Yuka looks like she can't grasp the situation, a bewildered expression forming on her face. 
+
+
+[00000271] 10: 
+[00000272] 15: removeAllFG 3
+[00000276] 10: 
+[00000277] 19: 
+[00000278] ff: text 12
+{textColor 0 0}【Makoto】 "Umm..." 
+{textColor 0 0}【Makoto】 "... There's something we have to ask you..." 
+{textColor 1 1}【Everyone】 "???" 
+{textColor 0 2}I glance over towards Yuka and nod. 
+
+
+[0000027b] 10: 
+[0000027c]  b: playVoice YL2D7026
+[00000286] 10: 
+[00000287] 19: 
+[00000288] ff: text 13
+{textColor 1 4}【Yuka】 "What's today's date?" 
+{textColor 1 1}【Everyone】 "!?!?!?" 
+
+
+[0000028b] 10: 
+[0000028c] 18: cmd18
+[0000028d] 10: 
+[0000028e] 11: fgload 0 00000000 OK11CA 1 0
+[0000029e] 10: 
+[0000029f] 11: fgload 0 00000000 SA11AA 1 0
+[000002af] 10: 
+[000002b0] 11: fgload 0 00000000 HA01CA 1 0
+[000002c0] 10: 
+[000002c1] 11: fgload 0 00000000 KU11BA 1 0
+[000002d1] 10: 
+[000002d2] 11: fgload 0 00000000 IZ11AA 1 0
+[000002e2] 10: 
+[000002e3]  b: playVoice YL2D7027
+[000002ed] 10: 
+[000002ee] 19: 
+[000002ef] ff: text 14
+{textColor 1 8}【Izumi】 "Huh!?" 
+
+
+[000002f2] 10: 
+[000002f3] 12: removeFG 0 3
+[000002fa] 10: 
+[000002fb] 11: fgload 0 00000000 OK10CA 2 3
+[0000030b] 10: 
+[0000030c]  b: playVoice YL2D7028
+[00000316] 10: 
+[00000317] 19: 
+[00000318] ff: text 15
+{textColor 0 0}【Okuhiko】 "Hey, Yuka-chan? Are you really all right?" 
+
+
+[0000031b] 10: 
+[0000031c]  b: playVoice YL2D7029
+[00000326] 10: 
+[00000327] 19: 
+[00000328] ff: text 16
+{textColor 0 0}【Okuhiko】 "You asked me that some time ago as well, didn't you...?" 
+{textColor 0 2}Some time ago as well...!? 
+{textColor 0 2}That means...!? 
+
+
+[0000032b] 10: 
+[0000032c] 11: fgload 1 00000000 HA01CA 0 3
+[0000033c] 10: 
+[0000033d]  7: stopBGM
+[0000033e] 10: 
+[0000033f]  b: playVoice YL2D7030
+[00000349] 10: 
+[0000034a] 19: 
+[0000034b] ff: text 17
+{textColor 1 5}【Haruka】 "It's Sunday, April 7th..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 4}【Yuka】 "..." 
+
+
+[0000034e] 10: 
+[0000034f] 15: removeAllFG 3
+[00000353] 10: 
+[00000354] 19: 
+[00000355] ff: text 18
+{textColor 0 0}【Makoto】 "Sunday..." 
+
+
+[00000358] 10: 
+[00000359] 11: fgload 0 00000000 YU11AB 1 3
+[00000369] 10: 
+[0000036a]  b: playVoice YL2D7031
+[00000374] 10: 
+[00000375] 19: 
+[00000376] ff: text 19
+{textColor 1 4}【Yuka】 "...April 7th." 
+{textColor 0 0}【Makoto】 "Then, we really were..." 
+
+
+[00000379] 10: 
+[0000037a] 11: fgload 0 00000000 YU02AB 1 3
+[0000038a] 10: 
+[0000038b]  b: playVoice YL2D7032
+[00000395] 10: 
+[00000396] 19: 
+[00000397] ff: text 1a
+{textColor 1 4}【Yuka】 "... Saved!" 
+
+
+[0000039a] 10: 
+[0000039b] 12: removeFG 0 3
+[000003a2] 10: 
+[000003a3]  6: playBGM 17
+[000003a8] 10: 
+[000003a9] 19: 
+[000003aa] ff: text 1b
+{textColor 0 2}Yuka and I instinctively embrace each other. 
+{textColor 0 2}Yuka buries her face into my chest, and I bring my lips to Yuka's soft hair. 
+{textColor 0 2}That bewitching, sweet scent captivates me completely. 
+{textColor 0 2}We embrace each other even tighter... 
+{textColor 1 1}【Everyone】 "..." 
+{textColor 0 2}... It takes me a moment to realize that everyone is blatantly staring at us. 
+{textColor 0 2}Yuka and I rapidly break off like nothing happened. 
+{textColor 0 2}Yuka's cheeks are bright red. 
+
+
+[000003ad] 10: 
+[000003ae] 11: fgload 0 00000000 IZ02AA 0 3
+[000003be] 10: 
+[000003bf]  b: playVoice YL2D7033
+[000003c9] 10: 
+[000003ca] 19: 
+[000003cb] ff: text 1c
+{textColor 1 8}【Izumi】 "Ah ha... I see. So that's what it was〜" 
+
+
+[000003ce] 10: 
+[000003cf] 11: fgload 1 00000000 SA02AA 2 3
+[000003df] 10: 
+[000003e0]  b: playVoice YL2D7034
+[000003ea] 10: 
+[000003eb] 19: 
+[000003ec] ff: text 1d
+{textColor 1 6}【Saki】 "So the two of you eloped for a night and two days?" 
+
+
+[000003ef] 10: 
+[000003f0] 15: removeAllFG 3
+[000003f4] 10: 
+[000003f5] 11: fgload 0 00000000 KU11BA 1 3
+[00000405] 10: 
+[00000406]  b: playVoice YL2D7035
+[00000410] 10: 
+[00000411] 19: 
+[00000412] ff: text 1e
+{textColor 1 7}【Kurumi】 "What!? Is that true, Onii-chan?" 
+
+
+[00000415] 10: 
+[00000416] 12: removeFG 0 3
+[0000041d] 10: 
+[0000041e] 19: 
+[0000041f] ff: text 1f
+{textColor 0 0}【Makoto】 "M-Mmm..." 
+{textColor 0 0}【Makoto】 "... Wait, before that, where did you go in the first place!?" 
+
+
+[00000422] 10: 
+[00000423] 11: fgload 0 00000000 KU01BA 1 3
+[00000433] 10: 
+[00000434]  b: playVoice YL2D7036
+[0000043e] 10: 
+[0000043f] 19: 
+[00000440] ff: text 20
+{textColor 1 7}【Kurumi】 "'Where'?" 
+{textColor 0 0}【Makoto】 "Yesterday morning!" 
+
+
+[00000443] 10: 
+[00000444] 11: fgload 0 00000000 KU02BA 1 3
+[00000454] 10: 
+[00000455]  b: playVoice YL2D7037
+[0000045f] 10: 
+[00000460] 19: 
+[00000461] ff: text 21
+{textColor 1 7}【Kurumi】 "Oh, that?" 
+
+
+[00000464] 10: 
+[00000465]  b: playVoice YL2D7038
+[0000046f] 10: 
+[00000470] 19: 
+[00000471] ff: text 22
+{textColor 1 7}【Kurumi】 "Kurumi was looking for that puppy." 
+
+
+[00000474] 10: 
+[00000475]  b: playVoice YL2D7039
+[0000047f] 10: 
+[00000480] 19: 
+[00000481] ff: text 23
+{textColor 1 7}【Kurumi】 "It was out in that downpour, so she felt sorry that it had to be outside..." 
+
+
+[00000484] 10: 
+[00000485] 12: removeFG 0 3
+[0000048c] 10: 
+[0000048d] 19: 
+[0000048e] ff: text 24
+{textColor 0 2}... 
+{textColor 0 2}I can't even let out a sigh. 
+{textColor 0 2}All of the sudden... 
+
+
+[00000491] 10: 
+[00000492] 11: fgload 0 00000000 YU11AB 1 0
+[000004a2] 10: 
+[000004a3]  b: playVoice YL2D7040
+[000004ad] 10: 
+[000004ae] 19: 
+[000004af] ff: text 25
+{textColor 1 4}【Yuka】 "Ah, Makoto!" 
+{textColor 0 2}... Yuka speaks up. 
+
+
+[000004b2] 10: 
+[000004b3] 19: 
+[000004b4] ff: text 26
+{textColor 0 0}【Makoto】 "Hmm???" 
+
+
+[000004b7] 10: 
+[000004b8]  b: playVoice YL2D7041
+[000004c2] 10: 
+[000004c3] 19: 
+[000004c4] ff: text 27
+{textColor 1 4}【Yuka】 "If we don't hurry and go, we won't make it!" 
+{textColor 0 0}【Makoto】 "'Won't make it'... won't make what?" 
+{textColor 0 2}The instant I ask that, Yuka wordlessly grabs my arm, and rushes out the front door as fast as a hurricane... 
+
+
+[000004c7] 10: 
+[000004c8]  f: removeBG 0 4 3
+[000004d2] 10: 
+[000004d3]  8: playSFX SE000 1
+[000004dd] 10: 
+[000004de]  a: waitForSFX
+[000004df]  0: 
+[000004e0]  5: delay 120
+[000004e5] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 7
+[000004f0] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 0
+[000004fb] 10: 
+[000004fc] 1b: dayIntro 00000000 BGCAL7.cps
+[00000503] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 40
+[0000050f] 10: 
+[00000510] 10: bgload 00000000 BG16E 0 1
+[0000051d] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 5
+[00000528] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 27
+[00000534] 10: 
+[00000535] 17: showClock
+[00000536] 10: 
+[00000537] 19: 
+[00000538] ff: text 28
+{textColor 0 2}Yuka and I made a promise... "We'll see the sunrise of the 7th together." 
+{textColor 0 2}――Today's the 7th.  {textColor 0 2}It's the start of the morning...  {textColor 0 2}The morning sun is now beginning to slowly rise from beyond the golden ocean... 
+{textColor 0 2}"Will free you from time"――That surely meant "to be released from the infinite loop's flow of time"... 
+{textColor 0 2}"At the end of the cape"――That was probably indicating, "The real end of the cape"... in other words, "in the ocean." 
+{textColor 0 2}Right now, we've been released... 
+{textColor 0 0}【Makoto】 "Yuka?" 
+
+
+[0000053b] 10: 
+[0000053c] 11: fgload 0 00000000 YU01ABD 1 3
+[0000054c] 10: 
+[0000054d]  b: playVoice YL2D7042
+[00000557] 10: 
+[00000558] 19: 
+[00000559] ff: text 29
+{textColor 1 4}【Yuka】 "Hmm?" 
+{textColor 0 0}【Makoto】 "With this, everything's over, huh?" 
+
+
+[0000055c] 10: 
+[0000055d] 11: fgload 0 00000000 YU02ABD 1 3
+[0000056d] 10: 
+[0000056e] 19: 
+[0000056f] ff: text 2a
+{textColor 1 4}【Yuka】 "..." 
+{textColor 0 0}【Makoto】 "?" 
+
+
+[00000572] 10: 
+[00000573]  b: playVoice YL2D7043
+[0000057d] 10: 
+[0000057e] 19: 
+[0000057f] ff: text 2b
+{textColor 1 4}【Yuka】 "You're wrong... Nothing's... over..." 
+
+
+[00000582] 10: 
+[00000583]  b: playVoice YL2D7044
+[0000058d] 10: 
+[0000058e] 19: 
+[0000058f] ff: text 2c
+{textColor 1 4}【Yuka】 "Everything begins from now on..." 
+
+
+[00000592] 10: 
+[00000593]  7: stopBGM
+[00000594] 10: 
+[00000595] 11: fgload 0 00000000 YU03ABD 1 3
+[000005a5] 10: 
+[000005a6]  b: playVoice YL2D7045
+[000005b0] 10: 
+[000005b1] 19: 
+[000005b2] ff: text 2d
+{textColor 1 4}【Yuka】 "Makoto...?" 
+
+
+[000005b5] 10: 
+[000005b6]  b: playVoice YL2D7046
+[000005c0] 10: 
+[000005c1] 19: 
+[000005c2] ff: text 2e
+{textColor 1 4}【Yuka】 "From now on, will you always... stay by my side?" 
+{textColor 0 0}【Makoto】 "Yeah... I'll always be by your side..." 
+{textColor 0 0}【Makoto】 "From now on and always... for eternity..." 
+{textColor 0 0}【Makoto】 "We'll be together..." 
+
+
+[000005c5] 10: 
+[000005c6] 11: fgload 0 00000000 YU02ABD 1 3
+[000005d6] 10: 
+[000005d7]  b: playVoice YL2D7047
+[000005e1] 10: 
+[000005e2] 19: 
+[000005e3] ff: text 2f
+{textColor 1 4}【Yuka】 "Yeah..." 
+
+
+[000005e6] 10: 
+[000005e7]  f: removeBG 1 0 2
+[000005f1] 10: 
+[000005f2]  6: playBGM 12
+[000005f6] 10: 
+[000005f7] 10: bgload 00000000 EV_YU10 0 1
+[00000604] 10: 
+[00000605] 19: 
+[00000606] ff: text 30
+{textColor 0 2}In the dazzling morning light, Yuka and I kiss each other the first time. 
+{textColor 0 2}It's as if it's a familiar kiss that I've felt for many years. 
+{textColor 0 2}If a complete stranger saw us right now, they wouldn't think by any means that we had only just met eight days ago. 
+{textColor 0 2}Then again... 
+{textColor 0 2}Isn't that obvious? After all,{delay 30} Yuka and I have spent{delay 30} hundreds of millions of years together... 
+
+
+
+[00000609] 10: 
+[0000060a] 18: cmd18
+[0000060b]  0: 
+[0000060c]  5: delay 180
+[00000611] 10: 
+[00000612]  f: removeBG 0 0 0
+[0000061c]  0: 
+[0000061d]  5: delay 60
+[00000622] 10: 
+[00000623]  7: stopBGM
+[00000624]  0: 
+[00000625]  a: condJump 00 VAR_(28_1e)_a0_cb (28) != (15) (80)->0 (15) (00)  * 00000666 (0003)
+[00000633] fe: varop VAR_(28_0a)_a0_cb (14) := (00) 1
+[0000063e]  0: 
+[0000063f]  a: condJump 01 VAR_(28_04)_a0_cc (00) _COP_03 (03) ->VAR_(28_04)_a0_cd (00) (03)  * 0123abcd (2802)
+[00000650]  3: unsupported 3 
+[00000651] a0: unsupported 160 
+[00000652] ce: unsupported 206 
+[00000653]  0: 
+[00000654] 10: 
+[00000655]  1: cmd1 3
+[00000659]  2: unsupported 2 
+[0000065a]  0: 
+[0000065b] fe: varop VAR_(28_02)_a3_e7 (00) := (00) 1
+[00000666]  0: 
+[00000667]  a: condJump 00 VAR_(28_1e)_a1_46 (28) != (15) (80)->0 (15) (00)  * 00000680 (0005)
+[00000675] fe: varop VAR_(28_0a)_a1_46 (14) := (00) 1
+[00000680]  0: 
+[00000681]  a: condJump 00 VAR_(28_1e)_a0_c8 (28) != (15) (80)->0 (15) (00)  * 0000069a (0007)
+[0000068f] fe: varop VAR_(28_0a)_a0_c8 (14) := (00) 1
+[0000069a]  0: 
+[0000069b]  a: condJump 00 VAR_(28_1e)_a0_c9 (28) != (15) (80)->0 (15) (00)  * 000006b4 (0009)
+[000006a9] fe: varop VAR_(28_0a)_a0_c9 (14) := (00) 1
+[000006b4]  0: 
+[000006b5]  a: condJump 00 VAR_(28_1e)_a1_45 (28) != (15) (80)->0 (15) (00)  * 000006ce (000b)
+[000006c3] fe: varop VAR_(28_0a)_a1_45 (14) := (00) 1
+[000006ce]  0: 
+[000006cf]  a: condJump 00 VAR_(28_1e)_a1_48 (28) != (15) (80)->0 (15) (00)  * 00000720 (000d)
+[000006dd] fe: varop VAR_(28_0a)_a1_48 (14) := (00) 1
+[000006e8] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cb
+[000006f4] 14: unsupported 20 
+[000006f5]  0: 
+[000006f6] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cc
+[00000702] 14: unsupported 20 
+[00000703]  0: 
+[00000704] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cd
+[00000710] 14: unsupported 20 
+[00000711]  0: 
+[00000712] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_ce
+[0000071e] 14: unsupported 20 
+[0000071f]  0: 
+[00000720] fe: varop VAR_(28_0a)_a1_47 (14) := (00) 1
+[0000072b] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 0
+[00000736] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 6
+[00000741]  0: 
+[00000742] 19: unknown19 0 3
+[00000749]  0: 
+[0000074a] 19: unknown19 1 3
+[00000751]  0: 
+[00000752] 19: unknown19 2 3
+[00000759] 10: 
+[0000075a] 24: cmd24 0
+[0000075e] 10: 
+[0000075f] 22: movie end1
+[00000765]  0: 
+[00000766]  5: delay 10
+[0000076a] 10: 
+[0000076b] 24: cmd24 1
+[0000076f]  0: 
+[00000770]  5: delay 1
+[00000774] 10: 
+[00000775] 2d: cmd2D 00 0a 01 2d 0a 87 14 00 0e
+[0000077f]  0: 
+[00000780] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 1
+[0000078b] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 0
+[00000796] 10: 
+[00000797] 23: cmd23
+[00000798]  0: 
+[00000799] 19: unknown19 0 4
+[000007a0]  0: 
+[000007a1] 19: unknown19 1 4
+[000007a8]  0: 
+[000007a9] 19: unknown19 2 4
+[000007b0] fe: varop VAR_(28_0a)_a1_0b (14) := (00) 1
+[000007bb] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cb
+[000007c7] 14: unsupported 20 
+[000007c8]  0: 
+[000007c9] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cc
+[000007d5] 14: unsupported 20 
+[000007d6]  0: 
+[000007d7] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cd
+[000007e3] 14: unsupported 20 
+[000007e4]  0: 
+[000007e5] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_ce
+[000007f1] 14: unsupported 20 
+[000007f2]  0: 
+[000007f3]  0: 
+[000007f4]  a: condJump 00 VAR_(28_32)_a1_0b (3c) != (29) (81)->1 (29) (08) || VAR_(28_32)_a1_49 (3c) != (29) (80)->0 (29) (00)  * 00000818 (0010)
+[0000080d] fe: varop VAR_(28_0a)_a1_49 (14) := (00) 1
+[00000818]  0: 
+[00000819]  a: condJump 01 VAR_(28_02)_a3_e7 (00) != (01) (81)->1 (00) (00)  * 00000837 (0011)
+[00000820]  a: condJump 00 VAR_(28_32)_a1_0b (3c) != (29) (80)->5 (29) (00)  * 00000837 (0011)
+[00000827] 10: 
+[00000828] 19: 
+[00000829] fd: notice 31
+{textColor 0 2}Izumi Cure route unlocked. 
+
+
+[0000082c] fe: varop VAR_(28_02)_a3_e7 (00) := (00) 0
+[00000837] 10: 
+[00000838] 1e: returnTitle 00 03 00 06
+[0000083d]  0: 
+[0000083e]  0: 
+[0000083f]  0: 

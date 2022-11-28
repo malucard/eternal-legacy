@@ -1,0 +1,1059 @@
+[00000024] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 5
+[0000002f] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 5
+[0000003a] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000046] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000052] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 5
+[0000005d]  0: 
+[0000005e]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 00000072 (0002)
+[0000006c] 10: 
+[0000006d] 1c: cmd1C
+[0000006e]  0: 
+[0000006f]  7: goto7 0000007d (0003)
+[00000072] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[0000007d]  0: 
+[0000007e]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 0000008e (0005)
+[0000008c] 10: 
+[0000008d] 18: cmd18
+[0000008e] 10: 
+[0000008f] 1b: dayIntro 00000000 BGCAL5KU.cps
+[00000096] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 78
+[000000a2] 10: 
+[000000a3] 10: bgload 00000000 ev_ku12 0 1
+[000000b0] 10: 
+[000000b1]  6: playBGM 4
+[000000b5] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 5
+[000000c0] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 5
+[000000cb] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 12
+[000000d6] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 23
+[000000e2] 10: 
+[000000e3] 17: showClock
+[000000e4] 10: 
+[000000e5]  b: playVoice KL2D5000
+[000000ef] 10: 
+[000000f0] 19: 
+[000000f1] ff: text 00
+{textColor 1 7}【Kurumi】 "Ready! ... Go!" 
+{textColor 0 2}Before long, the two crabs begin to sumo on a flat rock being used as the arena. 
+{textColor 0 2}Kurumi is serving as the referee, and I am the audience. 
+
+
+[000000f4] 10: 
+[000000f5]  b: playVoice KL2D5001
+[000000ff] 10: 
+[00000100] 19: 
+[00000101] ff: text 01
+{textColor 1 7}【Kurumi】 "Go, go!" 
+{textColor 0 2}Kurumi holds her breath in anticipation. 
+
+
+[00000104] 10: 
+[00000105]  b: playVoice KL2D5002
+[0000010f] 10: 
+[00000110] 19: 
+[00000111] ff: text 02
+{textColor 1 7}【Kurumi】 "GOOOO!" 
+{textColor 0 2}... The small crab pushes off the larger crab with its small claws! 
+
+
+[00000114] 10: 
+[00000115] 10: bgload 00000000 BG17R 0 1
+[00000122] 10: 
+[00000123] 11: fgload 0 00000000 KU07BA 1 3
+[00000133] 10: 
+[00000134]  b: playVoice KL2D5003
+[0000013e] 10: 
+[0000013f] 19: 
+[00000140] ff: text 03
+{textColor 1 7}【Kurumi】 "Ring out! Sumo Crab wins♪" 
+{textColor 0 2}Kurumi pets both the winning and losing crabs equally. 
+{textColor 0 2}After that, she lets the losing crab go while waving sorrowfully at it... 
+{textColor 0 2}... It's quite a pleasant scene... 
+{textColor 0 2}The "something" that started to sprout within me that day has grown in the blink of an eye, and has now burst open, having almost completely ripened. 
+{textColor 0 2}I want to watch Kurumi as she is right now forever.  {textColor 0 2}Because Kurumi's smile is like an angel's... 
+{textColor 0 2}Yes. This is the second time I've been able to see that angelic smile. 
+{textColor 0 2}So does that mean my wish is to reach heaven?  {textColor 0 2}That way, I could fulfill my desire to always watch over Kurumi for all of eternity... 
+
+
+[00000143] 10: 
+[00000144] 12: removeFG 0 3
+[0000014b] 10: 
+[0000014c]  f: removeBG 0 3 2
+[00000156] 10: 
+[00000157] 10: bgload 00000000 BG17R 0 1
+[00000164] 10: 
+[00000165] 11: fgload 0 00000000 KU01BB 1 3
+[00000175] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 13
+[00000180] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 32
+[0000018c] 10: 
+[0000018d] 17: showClock
+[0000018e] 10: 
+[0000018f] 19: 
+[00000190] ff: text 04
+{textColor 0 0}【Makoto】 "Wow, I'm so hungry." 
+{textColor 0 2}I say this on purpose. 
+{textColor 0 2}My target is, of course... "that". 
+
+
+[00000193] 10: 
+[00000194]  b: playVoice KL2D5004
+[0000019e] 10: 
+[0000019f] 19: 
+[000001a0] ff: text 05
+{textColor 1 7}【Kurumi】 "Hee hee hee hee hee..." 
+
+
+[000001a3] 10: 
+[000001a4]  b: playVoice KL2D5005
+[000001ae] 10: 
+[000001af] 19: 
+[000001b0] ff: text 06
+{textColor 1 7}【Kurumi】 "Kurumi thought this would happen..." 
+
+
+[000001b3] 10: 
+[000001b4] 11: fgload 0 00000000 KU07BB 1 3
+[000001c4] 10: 
+[000001c5]  b: playVoice KL2D5006
+[000001cf] 10: 
+[000001d0] 19: 
+[000001d1] ff: text 07
+{textColor 1 7}【Kurumi】 "Ta-da〜♪ It's a KuruKuru Kurumiracle〜♪" 
+{textColor 0 2}Kurumi opens the basket she's been holding. 
+{textColor 0 0}【Makoto】 "Whoa! Caviar!" 
+
+
+[000001d4] 10: 
+[000001d5] 11: fgload 0 00000000 KU10BB 1 3
+[000001e5] 10: 
+[000001e6]  b: playVoice KL2D5007
+[000001f0] 10: 
+[000001f1] 19: 
+[000001f2] ff: text 08
+{textColor 1 7}【Kurumi】 "Huh? Caviar?" 
+{textColor 0 0}【Makoto】 "Yeah, caviar... I had a feeling you put some in..." 
+
+
+[000001f5] 10: 
+[000001f6]  b: playVoice KL2D5008
+[00000200] 10: 
+[00000201] 19: 
+[00000202] ff: text 09
+{textColor 1 7}【Kurumi】 "Put caviar... in the rice balls?" 
+{textColor 0 0}【Makoto】 "... Huh? Was I wrong?" 
+
+
+[00000205] 10: 
+[00000206]  b: playVoice KL2D5009
+[00000210] 10: 
+[00000211] 19: 
+[00000212] ff: text 0a
+{textColor 1 7}【Kurumi】 "Either way, there wasn't any caviar with the rice ball making tools, you know?" 
+{textColor 0 2}(Which means... what is this?) 
+{textColor 0 2}I try taking a bite. 
+{textColor 0 2}Munch, munch... munch, munch...  {textColor 0 2}Munch, munch... munch, munch... 
+{textColor 0 2}Huh? What's this texture?  {textColor 0 2}Lying on my tongue is some kind of creamy substance...  {textColor 0 2}It's has a rich aroma that's spreading all over my mouth... 
+{textColor 0 2}I've never tasted it before, but it's so good that I feel like I've died and gone to heaven! 
+{textColor 0 0}【Makoto】 "Kurumi... what's... in these?" 
+
+
+[00000215] 10: 
+[00000216] 11: fgload 0 00000000 KU01BB 1 3
+[00000226] 10: 
+[00000227]  b: playVoice KL2D5010
+[00000231] 10: 
+[00000232] 19: 
+[00000233] ff: text 0b
+{textColor 1 7}【Kurumi】 "Foie gras." 
+{textColor 0 0}【Makoto】 "Ah... foie gras... So that's why it's so good..." 
+{textColor 0 0}【Makoto】 "FOIE GRAS!? You mean one of the three greatest delicacies in the world!?" 
+
+
+[00000236] 10: 
+[00000237]  b: playVoice KL2D5011
+[00000241] 10: 
+[00000242] 19: 
+[00000243] ff: text 0c
+{textColor 1 7}【Kurumi】 "That's right." 
+{textColor 0 0}【Makoto】 "Is it the real deal?" 
+
+
+[00000246] 10: 
+[00000247] 11: fgload 0 00000000 KU07BB 1 3
+[00000257] 10: 
+[00000258]  b: playVoice KL2D5012
+[00000262] 10: 
+[00000263] 19: 
+[00000264] ff: text 0d
+{textColor 1 7}【Kurumi】 "Of course♪ It was in the fridge at the shop, so Kurumi borrowed some♪" 
+{textColor 0 0}【Makoto】 "Izumi-san... doesn't know, does she...?" 
+
+
+[00000267] 10: 
+[00000268]  b: playVoice KL2D5013
+[00000272] 10: 
+[00000273] 19: 
+[00000274] ff: text 0e
+{textColor 1 7}【Kurumi】 "It's all right, it's all right. Onee-chan isn't the kind of person who will notice it..." 
+{textColor 0 2}(Well, you're in for quite the surprise later...) 
+
+
+[00000277] 10: 
+[00000278]  b: playVoice KL2D5014
+[00000282] 10: 
+[00000283] 19: 
+[00000284] ff: text 0f
+{textColor 1 7}【Kurumi】 "Ah... Hey, Onii-chan?" 
+
+
+[00000287] 10: 
+[00000288]  b: playVoice KL2D5015
+[00000292] 10: 
+[00000293] 19: 
+[00000294] ff: text 10
+{textColor 1 7}【Kurumi】 "When we're done eating, you wanna do something fun?" 
+{textColor 0 0}【Makoto】 "Sure!" 
+
+
+[00000297] 10: 
+[00000298]  7: stopBGM
+[00000299] 10: 
+[0000029a] 12: removeFG 0 3
+[000002a1] 10: 
+[000002a2]  f: removeBG 0 0 2
+[000002ac] 10: 
+[000002ad] 10: bgload 00000000 BG27R 0 1
+[000002ba] 10: 
+[000002bb]  1: cmd1 18
+[000002c0] 10: 
+[000002c1] 11: fgload 0 00000000 KU01BB 1 3
+[000002d1] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 14
+[000002dc] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 41
+[000002e8] 10: 
+[000002e9] 17: showClock
+[000002ea] 10: 
+[000002eb] 19: 
+[000002ec] ff: text 11
+{textColor 0 2}When we walk down the road surrounded by cherry blossom trees, Kurumi suddenly asks me something. 
+
+
+[000002ef] 10: 
+[000002f0]  b: playVoice KL2D5016
+[000002fa] 10: 
+[000002fb] 19: 
+[000002fc] ff: text 12
+{textColor 1 7}【Kurumi】 "Hey? Do you want Kurumi to show you something interesting?" 
+{textColor 0 2}Huh?  {textColor 0 2}This is strange...  {textColor 0 2}Wasn't she supposed to talk about her "dream" here...? 
+
+
+[000002ff] 10: 
+[00000300]  b: playVoice KL2D5017
+[0000030a] 10: 
+[0000030b] 19: 
+[0000030c] ff: text 13
+{textColor 1 7}【Kurumi】 "Well? Do you want Kurumi to show you?" 
+{textColor 0 0}【Makoto】 "Y-Yeah..." 
+
+
+[0000030f] 10: 
+[00000310]  b: playVoice KL2D5018
+[0000031a] 10: 
+[0000031b] 19: 
+[0000031c] ff: text 14
+{textColor 1 7}【Kurumi】 "Then you can... if you beat Kurumi in Rock-Paper-Scissors♪" 
+{textColor 0 2}Rock-Paper-Scissors??? 
+
+
+[0000031f] 10: 
+[00000320]  b: playVoice KL2D5019
+[0000032a] 10: 
+[0000032b] 19: 
+[0000032c] ff: text 15
+{textColor 1 7}【Kurumi】 "Let's go〜♪ Rock, Paper, Scissors..." 
+{textColor 0 0}【Makoto】 "Go!" 
+{textColor 0 2}In that instant, I remember that I lost by using "paper" last time, so I instantly go with "rock". 
+
+
+[0000032f] 10: 
+[00000330] 11: fgload 0 00000000 KU07BB 1 3
+[00000340] 10: 
+[00000341]  b: playVoice KL2D5020
+[0000034b] 10: 
+[0000034c] 19: 
+[0000034d] ff: text 16
+{textColor 1 7}【Kurumi】 "Yay〜, Kurumi won〜♪" 
+{textColor 0 2}She's right... Kurumi has "paper". 
+
+
+[00000350] 10: 
+[00000351]  b: playVoice KL2D5021
+[0000035b] 10: 
+[0000035c] 19: 
+[0000035d] ff: text 17
+{textColor 1 7}【Kurumi】 "Like Kurumi said, you don't get to see it, Onii-chan〜" 
+{textColor 0 2}...  {textColor 0 2}Nah, it can't be...  {textColor 0 2}... 
+{textColor 0 2}Nevertheless, it seems that history has subtly changed, what with the lack of caviar and Kurumi not telling me about her dream... 
+{textColor 0 2}I wonder why?  {textColor 0 2}Or rather, I wonder if it's stranger that those are the only things that have changed today so far. 
+{textColor 0 2}Up until now, things have been completely different than they were the first time. 
+{textColor 0 2}For example, Kurumi still hasn't gone to the shrine once this time.  {textColor 0 2}She also never told me about her scar. 
+{textColor 0 2}This is also the first time we've been to Viewpoint Park...  {textColor 0 2}... Well, whatever...  {textColor 0 2}If everything was just exactly the same, it'd be boring. 
+{textColor 0 2}It's precisely because unexpected things occur that everyday life is made interesting. 
+
+
+[00000360] 10: 
+[00000361]  b: playVoice KL2D5022
+[0000036b] 10: 
+[0000036c] 19: 
+[0000036d] ff: text 18
+{textColor 1 7}【Kurumi】 "C'mon, let's hurry up and do that 'something fun'♪" 
+{textColor 0 2}Kurumi grabs my hand, and then steadily guides me towards Viewpoint Park... 
+{textColor 0 2}Just like the last 5th, my heart is as clear as a blue sky on a sunny day... 
+
+
+[00000370] 10: 
+[00000371] 12: removeFG 0 3
+[00000378] 10: 
+[00000379]  2: cmd2 12
+[0000037d] 10: 
+[0000037e]  f: removeBG 0 0 2
+[00000388] 10: 
+[00000389] 10: bgload 00000000 BG19R 0 1
+[00000396] 10: 
+[00000397] 11: fgload 0 00000000 KU07BB 1 3
+[000003a7] 10: 
+[000003a8]  6: playBGM 4
+[000003ac] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 14
+[000003b7] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 54
+[000003c3] 10: 
+[000003c4] 17: showClock
+[000003c5] 10: 
+[000003c6] 19: 
+[000003c7] ff: text 19
+{textColor 0 2}Kurumi and I arrive at Viewpoint Park, and sit down on the tiles with a thump. 
+{textColor 0 2}When we do, Kurumi reaches into the bottom of the empty basket, and slowly takes something out. 
+
+
+[000003ca] 10: 
+[000003cb]  b: playVoice KL2D5023
+[000003d5] 10: 
+[000003d6] 19: 
+[000003d7] ff: text 1a
+{textColor 1 7}【Kurumi】 "Ta-da♪ It's KuruKuru Kurumi Magic♪" 
+{textColor 0 0}【Makoto】 "That's origami, isn't it?" 
+
+
+[000003da] 10: 
+[000003db]  b: playVoice KL2D5024
+[000003e5] 10: 
+[000003e6] 19: 
+[000003e7] ff: text 1b
+{textColor 1 7}【Kurumi】 "Bingo〜♪" 
+
+
+[000003ea] 10: 
+[000003eb]  b: playVoice KL2D5025
+[000003f5] 10: 
+[000003f6] 19: 
+[000003f7] ff: text 1c
+{textColor 1 7}【Kurumi】 "By the way, Onii-chan, can you fold origami?" 
+{textColor 0 0}【Makoto】 "Yeah! Leave it to me! I'm a master at folding origami turtles!" 
+
+
+[000003fa] 10: 
+[000003fb] 11: fgload 0 00000000 KU06BB 1 3
+[0000040b] 10: 
+[0000040c]  b: playVoice KL2D5026
+[00000416] 10: 
+[00000417] 19: 
+[00000418] ff: text 1d
+{textColor 1 7}【Kurumi】 "Wha〜at! No way〜!" 
+{textColor 0 2}She stares at me with doubt... 
+
+
+[0000041b] 10: 
+[0000041c]  b: playVoice KL2D5027
+[00000426] 10: 
+[00000427] 19: 
+[00000428] ff: text 1e
+{textColor 1 7}【Kurumi】 "Even veterans fail with turtles sometimes, you know?" 
+{textColor 0 0}【Makoto】 "I know. They say it takes about three years to perfect a peach and chestnut tree, and about eight years to perfect a turtle, right?" 
+
+
+[0000042b] 10: 
+[0000042c]  b: playVoice KL2D5028
+[00000436] 10: 
+[00000437] 19: 
+[00000438] ff: text 1f
+{textColor 1 7}【Kurumi】 "Ah... how did you know something only origami maniacs know?" 
+{textColor 0 0}【Makoto】 "I heard it once in the past from this girl who was an origami maniac." 
+
+
+[0000043b] 10: 
+[0000043c]  b: playVoice KL2D5029
+[00000446] 10: 
+[00000447] 19: 
+[00000448] ff: text 20
+{textColor 1 7}【Kurumi】 "Hmm..." 
+
+
+[0000044b] 10: 
+[0000044c]  b: playVoice KL2D5030
+[00000456] 10: 
+[00000457] 19: 
+[00000458] ff: text 21
+{textColor 1 7}【Kurumi】 "But just knowing isn't enough to fold origami. It's a world where experience and good sense mean everything..." 
+{textColor 0 2}Those eyes of hers are dubious again... 
+{textColor 0 0}【Makoto】 "I really can fold it! I remember perfectly how to!" 
+{textColor 0 2}(Kurumi... you were the one who taught me, after all!) 
+
+
+[0000045b] 10: 
+[0000045c]  b: playVoice KL2D5031
+[00000466] 10: 
+[00000467] 19: 
+[00000468] ff: text 22
+{textColor 1 7}【Kurumi】 "Okay. Then try folding one." 
+{textColor 0 2}Kurumi hands me a sheet of origami paper. 
+{textColor 0 0}【Makoto】 "All right. Watch carefully!" 
+
+
+[0000046b] 10: 
+[0000046c] 11: fgload 0 00000000 KU01BB 1 3
+[0000047c] 10: 
+[0000047d]  b: playVoice KL2D5032
+[00000487] 10: 
+[00000488] 19: 
+[00000489] ff: text 23
+{textColor 1 7}【Kurumi】 "Yeah. Well then, let's see what you've got..." 
+{textColor 0 2}I begin to fold a turtle using the technique that Kurumi had taught me. 
+{textColor 0 2}Fold, fold... fold, fold... Fold, fold... fold, fold... 
+{textColor 0 0}【Makoto】 "And this is the part where I turn it inside out, then only fold the left side like a valley..." 
+
+
+[0000048c] 10: 
+[0000048d]  b: playVoice KL2D5033
+[00000497] 10: 
+[00000498] 19: 
+[00000499] ff: text 24
+{textColor 1 7}【Kurumi】 "Ah... impressive. Even though that's the most difficult part..." 
+{textColor 0 2}Her praise makes me a little proud. 
+{textColor 0 2}Humm, humm〜♪ Humm, humm〜♪ Humm, humm, humm〜♪ 
+{textColor 0 2}Fold, fold... fold, fold... Fold, fold... bend, bend...  {textColor 0 2}――Rip. 
+{textColor 0 0}【Makoto】 "Ah..." 
+
+
+[0000049c] 10: 
+[0000049d] 11: fgload 0 00000000 KU04BB 1 3
+[000004ad] 10: 
+[000004ae]  b: playVoice KL2D5034
+[000004b8] 10: 
+[000004b9] 19: 
+[000004ba] ff: text 25
+{textColor 1 7}【Kurumi】 "Aah〜! Why is it completely torn off!" 
+
+
+[000004bd] 10: 
+[000004be]  b: playVoice KL2D5035
+[000004c8] 10: 
+[000004c9] 19: 
+[000004ca] ff: text 26
+{textColor 1 7}【Kurumi】 "You can't do it after all〜!" 
+{textColor 0 0}【Makoto】 "No... This is..." 
+
+
+[000004cd] 10: 
+[000004ce]  b: playVoice KL2D5036
+[000004d8] 10: 
+[000004d9] 19: 
+[000004da] ff: text 27
+{textColor 1 7}【Kurumi】 "You're helpless. Kurumi will teach you〜♪" 
+{textColor 0 0}【Makoto】 "... Sure..." 
+
+
+[000004dd] 10: 
+[000004de] 12: removeFG 0 3
+[000004e5] 10: 
+[000004e6]  f: removeBG 0 3 2
+[000004f0] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 37
+[000004fc] 10: 
+[000004fd] 10: bgload 00000000 BG19R 0 1
+[0000050a] 10: 
+[0000050b] 11: fgload 0 00000000 KU01BB 1 3
+[0000051b] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 15
+[00000526] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 12
+[00000531] 10: 
+[00000532] 17: showClock
+[00000533] 10: 
+[00000534] 19: 
+[00000535] ff: text 28
+{textColor 0 0}【Makoto】 "All right! It's done!" 
+
+
+[00000538] 10: 
+[00000539]  b: playVoice KL2D5037
+[00000543] 10: 
+[00000544] 19: 
+[00000545] ff: text 29
+{textColor 1 7}【Kurumi】 "Let's see it!" 
+{textColor 0 0}【Makoto】 "Ta-da〜♪ It's a MakoMako Makotour de force〜♪" 
+{textColor 1 7}【Kurumi】 "..." 
+{textColor 0 0}【Makoto】 "Well? I did a pretty damn good job, didn't I?" 
+
+
+[00000548] 10: 
+[00000549]  b: playVoice KL2D5038
+[00000553] 10: 
+[00000554] 19: 
+[00000555] ff: text 2a
+{textColor 1 7}【Kurumi】 "Hmm... maybe 63 out of 100?" 
+
+
+[00000558] 10: 
+[00000559]  b: playVoice KL2D5039
+[00000563] 10: 
+[00000564] 19: 
+[00000565] ff: text 2b
+{textColor 1 7}【Kurumi】 "The shape of the shell is slightly crooked." 
+{textColor 0 2}Professor Kurumi is as strict as always.  {textColor 0 2}But... I'm a little happy. 
+{textColor 0 2}It's because last time, she gave me a 62, but this time, she gave me a 63. 
+{textColor 0 2}(That's a whole point higher!) 
+{textColor 0 2}(This is proof that I'm slowly improving!) 
+{textColor 0 2}(If I fold 37 more, I'll definitely ace it!) 
+{textColor 0 2}... Suddenly, I come to my senses and realize I've folded an origami bird.  {textColor 0 2}What about Kurumi's origami? Thinking that, I look towards her... 
+{textColor 0 0}【Makoto】 "Whoa!!" 
+{textColor 0 2}(She made different ones from last time!) 
+
+
+[00000568] 10: 
+[00000569]  b: playVoice KL2D5040
+[00000573] 10: 
+[00000574] 19: 
+[00000575] ff: text 2c
+{textColor 1 7}【Kurumi】 "Isn't it amazing?" 
+{textColor 0 2}Kurumi says this proudly. 
+{textColor 0 2}As she says this, I carefully pick up one of them in between my fingers. 
+{textColor 0 0}【Makoto】 "What's this?" 
+
+
+[00000578] 10: 
+[00000579]  b: playVoice KL2D5041
+[00000583] 10: 
+[00000584] 19: 
+[00000585] ff: text 2d
+{textColor 1 7}【Kurumi】 "A horshoe crab." 
+{textColor 0 0}【Makoto】 "Then what's this?" 
+
+
+[00000588] 10: 
+[00000589]  b: playVoice KL2D5042
+[00000593] 10: 
+[00000594] 19: 
+[00000595] ff: text 2e
+{textColor 1 7}【Kurumi】 "The Yamato no Orochi- the Eight Forked Serpent." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000598] 10: 
+[00000599]  b: playVoice KL2D5044
+[000005a3] 10: 
+[000005a4] 19: 
+[000005a5] ff: text 2f
+{textColor 1 7}【Kurumi】 "And this is 'Mori Motonari', this is a 'gold flower', this is the 'Okinawa Summit'..." 
+{textColor 0 2}But when I look more closely, I realize that they're almost the same things as last time... 
+{textColor 0 2}(Though the Okinawa Summit is exactly the same.) 
+
+
+[000005a8] 10: 
+[000005a9]  7: stopBGM
+[000005aa] 10: 
+[000005ab] 19: 
+[000005ac] ff: text 30
+{textColor 0 0}【Makoto】 "Ah, b-but Kurumi? Th-There's one more left... isn't there?" 
+{textColor 0 2}I'm a little fidgety. 
+{textColor 0 2}To be more accurate, I'm a little embarrassed. 
+
+
+[000005af] 10: 
+[000005b0]  b: playVoice KL2D5045
+[000005ba] 10: 
+[000005bb] 19: 
+[000005bc] ff: text 31
+{textColor 1 7}【Kurumi】 "Oh, this?" 
+{textColor 0 0}【Makoto】 "Th-That wrinkled origami... what is it?" 
+
+
+[000005bf] 10: 
+[000005c0]  b: playVoice KL2D5046
+[000005ca] 10: 
+[000005cb] 19: 
+[000005cc] ff: text 32
+{textColor 1 7}【Kurumi】 "This is..." 
+
+
+[000005cf] 10: 
+[000005d0]  b: playVoice KL2D5047
+[000005da] 10: 
+[000005db] 19: 
+[000005dc] ff: text 33
+{textColor 1 7}【Kurumi】 "... Onii-chan." 
+
+
+[000005df] 10: 
+[000005e0] 11: fgload 0 00000000 KU07BB 1 3
+[000005f0] 10: 
+[000005f1]  b: playVoice KL2D5048
+[000005fb] 10: 
+[000005fc] 19: 
+[000005fd] ff: text 34
+{textColor 1 7}【Kurumi】 "This is Onii-chan when he's smiling!" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000600] 10: 
+[00000601]  b: playVoice KL2D5049
+[0000060b] 10: 
+[0000060c] 19: 
+[0000060d] ff: text 35
+{textColor 1 7}【Kurumi】 "Eheh♪" 
+{textColor 0 0}【Makoto】 "Ha ha ha ha ha ha ha ha..." 
+{textColor 0 0}【Makoto】 "I look way more badass than Mori Motonari〜" 
+
+
+[00000610] 10: 
+[00000611]  b: playVoice KL2D5050
+[0000061b] 10: 
+[0000061c] 19: 
+[0000061d] ff: text 36
+{textColor 1 7}【Kurumi】 "Don't you think? This is Kurumi's favorite♪" 
+
+
+[00000620] 10: 
+[00000621]  b: playVoice KL2D5051
+[0000062b] 10: 
+[0000062c] 19: 
+[0000062d] ff: text 37
+{textColor 1 7}【Kurumi】 "That's why..." 
+
+
+[00000630] 10: 
+[00000631]  b: playVoice KL2D5052
+[0000063b] 10: 
+[0000063c] 19: 
+[0000063d] ff: text 38
+{textColor 1 7}【Kurumi】 "Kurumi will give you this... as a commemoration♪" 
+{textColor 0 2}Kurumi places "me" on my palm. 
+
+
+[00000640] 10: 
+[00000641]  b: playVoice KL2D5053
+[0000064b] 10: 
+[0000064c] 19: 
+[0000064d] ff: text 39
+{textColor 1 7}【Kurumi】 "It's a modest present from Kurumi..." 
+{textColor 0 2}This wrinkled, smiling face... 
+{textColor 0 2}An origami that Kurumi folded herself... 
+{textColor 0 2}(But does it really... resemble me...?) 
+{textColor 0 2}Although I think this... 
+{textColor 0 0}【Makoto】 "Thank you." 
+{textColor 0 2}... I mutter these words, and carefully place "me" in my pocket. 
+{textColor 0 2}A warm smile rises on Kurumi's face as she looks at me... 
+
+
+[00000650] 10: 
+[00000651] 12: removeFG 0 3
+[00000658] 10: 
+[00000659]  f: removeBG 0 3 2
+[00000663] 10: 
+[00000664] 10: bgload 00000000 BG19R 0 1
+[00000671] 10: 
+[00000672] 11: fgload 0 00000000 KU01BB 1 3
+[00000682] 10: 
+[00000683]  6: playBGM 9
+[00000687] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[00000693] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 35
+[0000069f] 10: 
+[000006a0] 17: showClock
+[000006a1] 10: 
+[000006a2] 19: 
+[000006a3] ff: text 3a
+{textColor 0 2}After that, Kurumi and I continue to fold origami for an hour. 
+{textColor 0 2}Before I know it, I realize that Kurumi's childlike innocence is rubbing off on me. 
+{textColor 0 2}We use up all the origami, the black papers, the silver papers, and the gold papers. 
+{textColor 0 2}Ah...  {textColor 0 2}There's one sheet of white origami paper left that I forgot about... 
+{textColor 0 2}I got so lost in myself after making that origami bird that I completely forgot about it. 
+{textColor 0 2}Kurumi places all of the completed origami works in the empty basket like a mountain. 
+{textColor 0 2}She closes the lid, and with a snap, lowers the snap fastener. 
+
+
+[000006a6] 10: 
+[000006a7] 11: fgload 0 00000000 KU02BB 1 3
+[000006b7] 10: 
+[000006b8]  b: playVoice KL2D5054
+[000006c2] 10: 
+[000006c3] 19: 
+[000006c4] ff: text 3b
+{textColor 1 7}【Kurumi】 "Well then, shall we go back?" 
+{textColor 0 2}Kurumi seems happy. 
+{textColor 0 2}However, I'm a little disappointed. 
+{textColor 0 2}Kurumi Unit 17... 
+{textColor 0 2}I wanted to see it disappear as it flew towards the sea once more... 
+{textColor 0 2}When I close my eyes, the image of the white paper airplane clearly rises to my mind. 
+{textColor 0 2}I remember as it glided across the windless sea in a straight line, flying far, far away... 
+{textColor 0 2}By remembering that scene, I'm finally able to give up on seeing it again. 
+{textColor 0 2}... Kurumi and I spontaneously hold hands, and leave Viewpoint Park. 
+
+
+[000006c7] 10: 
+[000006c8]  7: stopBGM
+[000006c9] 10: 
+[000006ca] 12: removeFG 0 3
+[000006d1] 10: 
+[000006d2]  f: removeBG 0 0 2
+[000006dc] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 95
+[000006e8] 10: 
+[000006e9] 10: bgload 00000000 BG13ZR 0 1
+[000006f6] 10: 
+[000006f7] 11: fgload 0 00000000 KU07BB 1 3
+[00000707] 10: 
+[00000708]  6: playBGM 16
+[0000070d] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[00000719] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 50
+[00000725] 10: 
+[00000726] 17: showClock
+[00000727] 10: 
+[00000728]  b: playVoice KL2D5055
+[00000732] 10: 
+[00000733] 19: 
+[00000734] ff: text 3c
+{textColor 1 7}【Kurumi】 "Wasn't today fun?" 
+
+
+[00000737] 10: 
+[00000738]  b: playVoice KL2D5056
+[00000742] 10: 
+[00000743] 19: 
+[00000744] ff: text 3d
+{textColor 1 7}【Kurumi】 "It was an ultra-good day, wasn't it?" 
+{textColor 0 0}【Makoto】 "You're right." 
+
+
+[00000747] 10: 
+[00000748]  b: playVoice KL2D5057
+[00000752] 10: 
+[00000753] 19: 
+[00000754] ff: text 3e
+{textColor 1 7}【Kurumi】 "Onii-chan, did you have fun too?" 
+{textColor 0 0}【Makoto】 "Of course. It was a lot of fun." 
+{textColor 0 2}I answer by smiling the same way I did last time. 
+
+
+[00000757] 10: 
+[00000758]  b: playVoice KL2D5058
+[00000762] 10: 
+[00000763] 19: 
+[00000764] ff: text 3f
+{textColor 1 7}【Kurumi】 "Yay♪" 
+{textColor 0 2}It's cold right now. 
+{textColor 0 2}However, I only feel warmth through my hand. 
+{textColor 0 2}It's Kurumi's warmth... 
+
+
+[00000767] 10: 
+[00000768]  b: playVoice KL2D5059
+[00000772] 10: 
+[00000773] 19: 
+[00000774] ff: text 40
+{textColor 1 7}【Kurumi】 "Hey, Onii-chan?" 
+{textColor 0 0}【Makoto】 "Hmm?" 
+
+
+[00000777] 10: 
+[00000778]  b: playVoice KL2D5060
+[00000782] 10: 
+[00000783] 19: 
+[00000784] ff: text 41
+{textColor 1 7}【Kurumi】 "Kurumi... wants to show you something, okay?" 
+{textColor 0 0}【Makoto】 "... What!?" 
+
+
+[00000787] 10: 
+[00000788]  b: playVoice KL2D5061
+[00000792] 10: 
+[00000793] 19: 
+[00000794] ff: text 42
+{textColor 1 7}【Kurumi】 "If it's you, Onii-chan, then she can show you..." 
+{textColor 0 2}Kurumi says this, then suddenly brings me into a thicket on the side of the road. 
+
+
+[00000797] 10: 
+[00000798]  7: stopBGM
+[00000799] 10: 
+[0000079a] 12: removeFG 0 3
+[000007a1] 10: 
+[000007a2]  f: removeBG 0 0 2
+[000007ac] 10: 
+[000007ad] 10: bgload 00000000 BG28R 0 1
+[000007ba] 10: 
+[000007bb]  6: playBGM 21
+[000007c0] 10: 
+[000007c1] 19: 
+[000007c2] ff: text 43
+{textColor 0 2}It can't be...  {textColor 0 2}This is really unexpected.  {textColor 0 2}No, was it really? 
+{textColor 0 2}Last night, Kurumi didn't tell me about her scar. 
+{textColor 0 2}Because she didn't tell me, I thought for sure that this event would never happen. 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}I can't say a word.  {textColor 0 2}My throat is parched. 
+{textColor 0 2}I'm unable to brace myself for what's about to happen. 
+{textColor 0 2}Kurumi remains silent, her mouth shut...  She turns around, her back facing me. 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}Whoosh...  {textColor 0 2}Kurumi raises all the clothes off the upper half of her body up to her neck. 
+{textColor 0 2}It's Kurumi's... small back.  {textColor 0 2}For the second time, I see that deeply engraved "scar". 
+{textColor 0 2}(Kurumi...) 
+{textColor 0 2}But I don't take even a single step back.  {textColor 0 2}I stand my ground, and look at that scar.  {textColor 0 2}It may be ugly and pitiful, but it's also a part of Kurumi. 
+{textColor 0 2}――The pointy zigzag lines of scars.  {textColor 0 2}――The rough, protruding bulges.  {textColor 0 2}――That reddish-violet discoloration. 
+{textColor 0 2}This time, I am definitely going to take that sadness from her.  {textColor 0 2}It looks like Kurumi is about to pull down her shirt. 
+{textColor 0 2}Before she can...  {textColor 0 2}... I embrace her.  {textColor 0 2}I embrace Kurumi's back... Tightly... tightly... 
+{textColor 0 2}I've wanted to do this for all this time... 
+{textColor 0 2}Because I'm behind her, I can't see Kurumi's expression. 
+{textColor 0 2}But... her thin shoulders are shaking over and over again. That alone is enough for me to understand Kurumi's feelings. 
+
+
+[000007c5] 10: 
+[000007c6]  b: playVoice KL2D5062
+[000007d0] 10: 
+[000007d1] 19: 
+[000007d2] ff: text 44
+{textColor 1 7}【Kurumi】 "Did you know...? The truth is... Kurumi really wanted to go with every-" 
+{textColor 0 0}【Makoto】 "I know..." 
+
+
+[000007d5] 10: 
+[000007d6]  b: playVoice K_150_01
+[000007e0] 10: 
+[000007e1] 19: 
+[000007e2] ff: text 45
+{textColor 1 7}【Kurumi】 "...?" 
+{textColor 0 0}【Makoto】 "You don't have to say it. I know..." 
+{textColor 1 7}【Kurumi】 "..." 
+{textColor 0 0}【Makoto】 "Kurumi..." 
+{textColor 1 7}【Kurumi】 "..." 
+{textColor 0 2}... And for a while longer, we stand in the breaths of the forest as I embrace her. 
+{textColor 0 2}Kurumi's back is burning hot. 
+{textColor 0 2}That rough sensation on her back no longer seems sad. 
+{textColor 0 2}Kurumi's scar has become my own. 
+{textColor 0 2}My chest melts into that small back, and they become one.  {textColor 0 2}There is nothing between Kurumi and I. 
+{textColor 0 2}I can feel Kurumi's warm and pounding heartbeat through my fingertips.  {textColor 0 2}The pain has disappeared from the very frail and kind echo of Kurumi's life... 
+{textColor 0 2}... I can feel my feelings for her grow stronger in my heart.  {textColor 0 2}I want to hold her like this forever.  {textColor 0 2}Always, until the end of time... 
+
+
+[000007e5] 10: 
+[000007e6]  b: playVoice KL2D5063
+[000007f0] 10: 
+[000007f1] 19: 
+[000007f2] ff: text 46
+{textColor 1 7}【Kurumi】 "Thank you..." 
+{textColor 0 2}With those words, my heart seems to burst open... 
+
+
+[000007f5] 10: 
+[000007f6]  f: removeBG 0 0 2
+[00000800] 10: 
+[00000801] 10: bgload 00000000 BG13ZR 0 1
+[0000080e] 10: 
+[0000080f] 11: fgload 0 00000000 KU02BB 1 3
+[0000081f] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 17
+[0000082b] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 17
+[00000837] 10: 
+[00000838] 17: showClock
+[00000839] 10: 
+[0000083a]  b: playVoice KL2D5064
+[00000844] 10: 
+[00000845] 19: 
+[00000846] ff: text 47
+{textColor 1 7}【Kurumi】 "Ruun, ruun, ruun, Kurumi-chan〜, ran, ran, ran, Onii-chan〜♪" 
+{textColor 0 0}【Makoto】 "Kurumi...?" 
+
+
+[00000849] 10: 
+[0000084a]  b: playVoice KL2D5065
+[00000854] 10: 
+[00000855] 19: 
+[00000856] ff: text 48
+{textColor 1 7}【Kurumi】 "Hmm? What, Onii-chan?" 
+{textColor 0 0}【Makoto】 "Kurumi, you love things like haunted houses, right?" 
+
+
+[00000859] 10: 
+[0000085a] 11: fgload 0 00000000 KU01BB 1 3
+[0000086a] 10: 
+[0000086b]  b: playVoice KL2D5066
+[00000875] 10: 
+[00000876] 19: 
+[00000877] ff: text 49
+{textColor 1 7}【Kurumi】 "Huh?" 
+{textColor 0 0}【Makoto】 "... Do you hate them?" 
+
+
+[0000087a] 10: 
+[0000087b] 11: fgload 0 00000000 KU07BB 1 3
+[0000088b] 10: 
+[0000088c]  b: playVoice KL2D5067
+[00000896] 10: 
+[00000897] 19: 
+[00000898] ff: text 4a
+{textColor 1 7}【Kurumi】 "Nope♪ Kurumi loves them♪" 
+{textColor 0 0}【Makoto】 "All right! Then when we get back to the mainland, let's go to an amusement park!" 
+
+
+[0000089b] 10: 
+[0000089c]  b: playVoice KL2D5068
+[000008a6] 10: 
+[000008a7] 19: 
+[000008a8] ff: text 4b
+{textColor 1 7}【Kurumi】 "Huh!? You'll take Kurumi?" 
+{textColor 0 0}【Makoto】 "Yeah..." 
+
+
+[000008ab] 10: 
+[000008ac]  b: playVoice KL2D5069
+[000008b6] 10: 
+[000008b7] 19: 
+[000008b8] ff: text 4c
+{textColor 1 7}【Kurumi】 "Yaay〜♪" 
+
+
+[000008bb] 10: 
+[000008bc]  b: playVoice KL2D5070
+[000008c6] 10: 
+[000008c7] 19: 
+[000008c8] ff: text 4d
+{textColor 1 7}【Kurumi】 "For real?" 
+{textColor 0 0}【Makoto】 "For real." 
+
+
+[000008cb] 10: 
+[000008cc]  b: playVoice KL2D5071
+[000008d6] 10: 
+[000008d7] 19: 
+[000008d8] ff: text 4e
+{textColor 1 7}【Kurumi】 "Don't say 'I forgot' when it happens! You won't, right?" 
+{textColor 0 0}【Makoto】 "I won't." 
+
+
+[000008db] 10: 
+[000008dc]  b: playVoice KL2D5072
+[000008e6] 10: 
+[000008e7] 19: 
+[000008e8] ff: text 4f
+{textColor 1 7}【Kurumi】 "Then, let's pinky swear." 
+{textColor 0 2}Kurumi takes out her thin pinky and wraps it around mine... 
+
+
+[000008eb] 10: 
+[000008ec]  b: playVoice KL2D5073
+[000008f6] 10: 
+[000008f7] 19: 
+[000008f8] ff: text 50
+{textColor 1 7}【Kurumi】 "Cross-my-heart-and-hope-to-die If-you-lie...♪" 
+
+
+[000008fb] 10: 
+[000008fc]  b: playVoice KL2D5074
+[00000906] 10: 
+[00000907] 19: 
+[00000908] ff: text 51
+{textColor 1 7}【Kurumi】 "Ah... what should we do if you lie?" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000090b] 10: 
+[0000090c]  b: playVoice KL2D5075
+[00000916] 10: 
+[00000917] 19: 
+[00000918] ff: text 52
+{textColor 1 7}【Kurumi】 "Let's see..." 
+
+
+[0000091b] 10: 
+[0000091c]  b: playVoice KL2D5076
+[00000926] 10: 
+[00000927] 19: 
+[00000928] ff: text 53
+{textColor 1 7}【Kurumi】 "If you lie, kiss Kurumi on the cheek... okay?" 
+{textColor 0 0}【Makoto】 "Yeah... got it." 
+{textColor 0 2}I nod firmly in reply. 
+
+
+[0000092b] 10: 
+[0000092c] 12: removeFG 0 3
+[00000933] 10: 
+[00000934] 19: 
+[00000935] ff: text 54
+{textColor 0 2}...  {textColor 0 2}On our way back... Kurumi and I keep our pinkies wrapped around each other as we walk back to Lunabeach... 
+
+
+[00000938] 10: 
+[00000939]  7: stopBGM
+[0000093a] 10: 
+[0000093b]  f: removeBG 0 0 2
+[00000945] 10: 
+[00000946] 10: bgload 00000000 BG07N 0 1
+[00000953] 10: 
+[00000954]  6: playBGM 4
+[00000958] 10: 
+[00000959] 19: 
+[0000095a] ff: text 55
+{textColor 0 2}We meet with Izumi-san, and have dinner at Lunabeach. 
+
+
+[0000095d] 10: 
+[0000095e]  b: playVoice KL2D5077
+[00000968] 10: 
+[00000969] 19: 
+[0000096a] ff: text 56
+{textColor 1 7}【Kurumi】 "And so then, Mr. Sumo Crab...♪" 
+{textColor 0 2}Kurumi excitedly tells Izumi-san about today's events.  {textColor 0 2}Izumi-san quietly listens to her talking while smiling gently. 
+{textColor 0 2}Such a cheerful dinner...  {textColor 0 2}There's not a hint of gloominess in the room...  {textColor 0 2}Not from Kurumi... or from Izumi-san...  {textColor 0 2}... All of it is warm. 
+
+
+[0000096d] 10: 
+[0000096e]  b: playVoice KL2D5078
+[00000978] 10: 
+[00000979] 19: 
+[0000097a] ff: text 57
+{textColor 1 8}【Izumi】 "By the way, Kurumi?" 
+
+
+[0000097d] 10: 
+[0000097e]  b: playVoice KL2D5079
+[00000988] 10: 
+[00000989] 19: 
+[0000098a] ff: text 58
+{textColor 1 7}【Kurumi】 "Hmm?" 
+
+
+[0000098d] 10: 
+[0000098e]  b: playVoice KL2D5080
+[00000998] 10: 
+[00000999] 19: 
+[0000099a] ff: text 59
+{textColor 1 8}【Izumi】 "Do you know what happened to the duck's liver in the fridge?" 
+
+
+[0000099d] 10: 
+[0000099e]  b: playVoice KL2D5081
+[000009a8] 10: 
+[000009a9] 19: 
+[000009aa] ff: text 5a
+{textColor 1 7}【Kurumi】 "W-WHAT!?" 
+{textColor 0 0}【Makoto】 "... Duck's... liver..." 
+{textColor 0 2}My sense of taste is indeed quite bizarre if I like things like that... 
+
+
+[000009ad] 10: 
+[000009ae]  7: stopBGM
+[000009af] 10: 
+[000009b0]  f: removeBG 0 0 0
+[000009ba] 10: 
+[000009bb]  4: jump KL2D6
+[000009c2]  0: 
+[000009c3]  0: 

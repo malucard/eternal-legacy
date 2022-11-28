@@ -1,0 +1,273 @@
+[00000024] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 5
+[0000002f] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 5
+[0000003a] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000046] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000052] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 5
+[0000005d]  0: 
+[0000005e]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 00000072 (0002)
+[0000006c] 10: 
+[0000006d] 1c: cmd1C
+[0000006e]  0: 
+[0000006f]  7: goto7 0000007d (0003)
+[00000072] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[0000007d]  0: 
+[0000007e]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 0000008e (0005)
+[0000008c] 10: 
+[0000008d] 18: cmd18
+[0000008e] 10: 
+[0000008f] 1b: dayIntro 00000000 BGCAL5SA.cps
+[00000096] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 47
+[000000a2] 10: 
+[000000a3] 10: bgload 00000000 BG04R 0 1
+[000000b0] 10: 
+[000000b1]  6: playBGM 8
+[000000b5] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 5
+[000000c0] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 5
+[000000cb] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 10
+[000000d6] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 12
+[000000e1] 10: 
+[000000e2] 17: showClock
+[000000e3] 10: 
+[000000e4] 19: 
+[000000e5] ff: text 00
+{textColor 0 2}The next morning... I wake up, kill time in the living room for a little while, then head for Saki's summer house. 
+{textColor 0 2}The time is "10:12 A.M."  {textColor 0 2}It should be at this exact time that the puppy comes over to see Saki. 
+{textColor 0 2}When I head around to the backyard, I see Saki feeding the puppy, just as expected. 
+{textColor 0 2}The puppy devours the food while happily wagging its tail. 
+{textColor 0 0}【Makoto】 "Yo, Saki!" 
+{textColor 0 2}I cheerfully call out to her. 
+
+
+[000000e8] 10: 
+[000000e9]  7: stopBGM
+[000000ea] 10: 
+[000000eb] 11: fgload 0 00000000 SA11AA 1 3
+[000000fb] 10: 
+[000000fc]  6: playBGM 3
+[00000100] 10: 
+[00000101]  b: playVoice SL1D5071
+[0000010b] 10: 
+[0000010c] 19: 
+[0000010d] ff: text 01
+{textColor 1 6}【Saki】 "M-Makoto-kun...!" 
+{textColor 0 0}【Makoto】 "That puppy's as energetic as always, huh?" 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 2}Saki gets flustered as she desperately searches for words. 
+{textColor 0 2}Before Saki can say anything, I speak first. 
+{textColor 0 0}【Makoto】 "It's all right. Don't say anything..." 
+{textColor 0 0}【Makoto】 "I've known this whole time that you've been taking care of this puppy..." 
+
+
+[00000110] 10: 
+[00000111]  b: playVoice SL2D4094
+[0000011b] 10: 
+[0000011c] 19: 
+[0000011d] ff: text 02
+{textColor 1 6}【Saki】 "... Huh?" 
+{textColor 0 0}【Makoto】 "I also know that on the 1st, you ordered the pizza for that puppy's sake." 
+{textColor 0 0}【Makoto】 "And also... I might also know why you like animals and plants..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 0}【Makoto】 "You can't trust people... but animals and plants don't tell lies... right?" 
+
+
+[00000120] 10: 
+[00000121] 11: fgload 0 00000000 SA01AA 1 3
+[00000131] 10: 
+[00000132]  b: playVoice SL2D5012
+[0000013c] 10: 
+[0000013d] 19: 
+[0000013e] ff: text 03
+{textColor 1 6}【Saki】 "That's right. They don't speak words. They don't need to." 
+{textColor 0 0}【Makoto】 "But Saki... Don't you think that's a little wrong?" 
+{textColor 1 6}【Saki】 "..." 
+
+
+[00000141] 10: 
+[00000142]  7: stopBGM
+[00000143] 10: 
+[00000144] 19: 
+[00000145] ff: text 04
+{textColor 0 0}【Makoto】 "The Magician's Portrait..." 
+
+
+[00000148] 10: 
+[00000149]  6: playBGM 16
+[0000014e] 10: 
+[0000014f] 11: fgload 0 00000000 SA11AA 1 3
+[0000015f] 10: 
+[00000160] 19: 
+[00000161] ff: text 05
+{textColor 1 6}【Saki】 "!!!" 
+{textColor 0 2}Saki instantly trembles in shock, and turns towards me. 
+{textColor 0 0}【Makoto】 "It was during your cultural festival in middle school, ri-" 
+
+
+[00000164] 10: 
+[00000165] 11: fgload 0 00000000 SA08AA 1 3
+[00000175] 10: 
+[00000176]  b: playVoice SL2D5017
+[00000180] 10: 
+[00000181] 19: 
+[00000182] ff: text 06
+{textColor 1 6}【Saki】 "Did you hear about it from Yuka...?" 
+{textColor 0 2}I slowly nod. It's partially a lie... 
+{textColor 0 2}In this timeline, I never heard the story from Yuka. 
+{textColor 0 2}However, she told it to me last time... 
+
+
+[00000185] 10: 
+[00000186] 11: fgload 0 00000000 SA09AA 1 3
+[00000196] 10: 
+[00000197]  b: playVoice SL2D5018
+[000001a1] 10: 
+[000001a2] 19: 
+[000001a3] ff: text 07
+{textColor 1 6}【Saki】 "I... I wanted... to look at it all alone." 
+{textColor 0 2}Saki's eyes fill with tears... 
+
+
+[000001a6] 10: 
+[000001a7]  b: playVoice SL2D5019
+[000001b1] 10: 
+[000001b2] 19: 
+[000001b3] ff: text 08
+{textColor 1 6}【Saki】 "I just wanted to see it alone when no one was around!" 
+
+
+[000001b6] 10: 
+[000001b7] 12: removeFG 0 3
+[000001be] 10: 
+[000001bf] 19: 
+[000001c0] ff: text 09
+{textColor 0 2}The instant she says this, large tears pour from her eyes. 
+{textColor 0 2}She tries to control herself by standing rigidly as if she's rooted into the ground, but her thin shoulders quiver. 
+{textColor 0 2}She clenches her hands into tight fists. 
+{textColor 0 2}The tears flying off her face... fall onto those small fists. 
+{textColor 0 0}【Makoto】 "The magician Yuka drew... was really incredible, wasn't it?" 
+{textColor 0 2}Saki looks at me. 
+{textColor 0 2}Her gaze is filled with loneliness. 
+{textColor 0 2}Saki nods while biting her lip. 
+{textColor 0 2}New tears overflow in her eyes. 
+
+
+[000001c3] 10: 
+[000001c4]  7: stopBGM
+[000001c5] 10: 
+[000001c6] 19: 
+[000001c7] ff: text 0a
+{textColor 0 0}【Makoto】 "Hey, Saki? I know the truth..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 0}【Makoto】 "You weren't running away because you destroyed the painting..." 
+
+
+[000001ca] 10: 
+[000001cb] 11: fgload 0 00000000 SA11AB 1 3
+[000001db] 10: 
+[000001dc]  b: playVoice SL2D5020
+[000001e6] 10: 
+[000001e7] 19: 
+[000001e8] ff: text 0b
+{textColor 1 6}【Saki】 "... Huh?" 
+{textColor 0 0}【Makoto】 "It's because you just... didn't want anyone to see you crying..." 
+
+
+[000001eb] 10: 
+[000001ec]  6: playBGM 21
+[000001f1] 10: 
+[000001f2] 11: fgload 0 00000000 SA08AB 1 3
+[00000202] 10: 
+[00000203] 19: 
+[00000204] ff: text 0c
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 0}【Makoto】 "... Right?" 
+{textColor 0 2}Saki gives a lonely nod and mutters this. 
+
+
+[00000207] 10: 
+[00000208]  b: playVoice SL1D5165
+[00000212] 10: 
+[00000213] 19: 
+[00000214] ff: text 0d
+{textColor 1 6}【Saki】 "The only ones who will listen to what I have to honestly say is this stray cat who lives at my school and this cherry blossom tree on my campus..." 
+{textColor 0 0}【Makoto】 "... You're wrong, Saki..." 
+{textColor 0 0}【Makoto】 "There's one more person you can talk honestly to..." 
+{textColor 1 6}【Saki】 "...?" 
+{textColor 0 0}【Makoto】 "He's right here." 
+
+
+[00000217] 10: 
+[00000218]  b: playVoice SL2D5022
+[00000222] 10: 
+[00000223] 19: 
+[00000224] ff: text 0e
+{textColor 1 6}【Saki】 "Makoto-kun..." 
+{textColor 0 0}【Makoto】 "You don't need words..." 
+{textColor 0 0}【Makoto】 "I'll become the cat and the cherry blossom tree." 
+{textColor 0 2}Tears fill up Saki's eyes yet again. 
+{textColor 0 2}I embrace Saki without a word. 
+
+
+[00000227] 10: 
+[00000228] 12: removeFG 0 3
+[0000022f] 10: 
+[00000230] 19: 
+[00000231] ff: text 0f
+{textColor 0 0}【Makoto】 "That's enough. I don't want to see you cry..." 
+{textColor 0 0}【Makoto】 "I told you before- I trust you, Saki." 
+{textColor 0 0}【Makoto】 "And from now on, I'll continue to trust you..." 
+{textColor 0 0}【Makoto】 "No matter what happens... I will only trust you... forever..." 
+{textColor 0 2}Saki nods while burying her face into my chest. 
+{textColor 0 2}Yes... that's right... 
+{textColor 0 2}No matter what happens, no matter what anyone says, I won't repeat the same mistake. 
+{textColor 0 2}I'll definitely continue to believe in Saki...! 
+{textColor 0 2}I swear this to myself. 
+
+
+[00000234] 10: 
+[00000235]  7: stopBGM
+[00000236] 10: 
+[00000237]  f: removeBG 0 0 2
+[00000241] 10: 
+[00000242] 10: bgload 00000000 BG02NN 0 1
+[0000024f] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 23
+[0000025b] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 16
+[00000267] 10: 
+[00000268] 17: showClock
+[00000269] 10: 
+[0000026a] 19: 
+[0000026b] ff: text 10
+{textColor 0 2}Before long, the day ends... Izumi-san and Kurumi come over to the lodge to sleep over. 
+{textColor 0 2}The sisters are as cheerful as ever. 
+{textColor 0 2}Saki doesn't act rude towards them and has fun. 
+{textColor 0 2}Yuka also doesn't seem bothered about the "Magician's Portrait" incident, too. 
+{textColor 0 2}Actually, it might be better to say that it's possible that she's completely forgotten about it. 
+{textColor 0 2}So as long as the bell itself doesn't show up, there'll be nothing to remind me of those unpleasant memories of mine. 
+{textColor 0 2}I think the right way for me to live is for me to leave all those negative things behind me. 
+
+
+[0000026e] 10: 
+[0000026f]  6: playBGM 13
+[00000273] 10: 
+[00000274] 19: 
+[00000275] ff: text 11
+{textColor 0 2}Just like last time, Izumi-san came here carrying her bulging handbag around her arm. 
+{textColor 0 2}Of course, inside it is today's earnings from Lunabeach. 
+{textColor 0 2}The fateful day has finally arrived. 
+{textColor 0 2}Sometime between tonight and tomorrow's sunrise, someone will probably come and steal all our money. 
+{textColor 0 2}This time, I'll prove Saki's innocence! 
+{textColor 0 2}If I do that, then that incident tomorrow shouldn't happen! 
+{textColor 0 2}I sit down by myself on the living room sofa, deciding to stand watch all night. 
+{textColor 0 2}Everyone else is in their own rooms. Only Saki went back, returning to her summer house. 
+{textColor 0 2}From Yuka's room, I can hear the sounds of girls' cheerful voices. 
+{textColor 0 2}As I listen to them chatter, I determinedly continue to wait for the real criminal to show up... 
+
+
+[00000278] 10: 
+[00000279]  7: stopBGM
+[0000027a] 10: 
+[0000027b]  f: removeBG 0 0 0
+[00000285] 10: 
+[00000286]  4: jump SL2D6
+[0000028d]  0: 
+[0000028e]  0: 
+[0000028f]  0: 

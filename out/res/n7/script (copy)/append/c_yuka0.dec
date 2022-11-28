@@ -1,0 +1,274 @@
+@label ap_START
+@setvar v_lf_rainbow_smash = 0
+@setvar v_lf_asakura_haruka = 0
+@setvar v_lf_liar_liar = 0
+@setvar v_lf_yuka_handoff = 0
+@setvar v_lf_lost_treasure = 0
+@setvar v_lf_already_dead = 0
+@setvar v_a1_3c = 207
+removeBG 0 0 2
+delay 120
+playBGM 22
+delay 120
+@text ――Seven days of the Camp. It should have ended peacefully without any incidents. 
+@text Only the memories would be left behind in my album of recollections...
+removeBG 0 0 2
+bgload 00000000 BG02N 0 4 0 0 2
+fgload 0 00000000 YU02AA 1 3
+@text 【Yuka】 "Um, you're Makoto-kun... that is, Makoto Ishihara', right?"
+fgload 0 00000000 YU01AA 1 3
+@text 【Yuka】 "It's nice to meet you♪" 
+@text 【Yuka】 "I'm 'Yuka'... 'Yuka Kawashima'. I really don't know why, but before I knew it, I became the 'leader' of this group." 
+@text 【Yuka】 "Well, anyway, I'm pleased to meet you!"
+@text ~
+removeBG 1 0 2
+delay 60
+bgload 00000000 ev_yu14a 0 4 0 0 2
+@text 【Yuka】 "Well then, go ahead and eat up〜♪" 
+@text 【Okuhiko】 "S-Sorry... My stomach's not feeling so good..."
+bgload 00000000 ev_yu14b 0 4 0 0 2
+@text 【Haruka】 "I'm... not hungry."
+bgload 00000000 ev_yu14c 0 4 0 0 2
+@text 【Yuka】 "Whaaat---!? But I just finished it and everything!" 
+@text 【Yuka】 "I remade it countless times, you know!"
+bgload 00000000 ev_yu14d 0 4 0 0 2
+@text 【Yuka】 "Makoto, you're hungry... right?"
+@text ~
+removeBG 0 0 2
+delay 60
+bgload 00000000 EV_YU16B 0 4 0 0 2
+@text 【Yuka】 "What's wrong? Out of bluffs?" 
+@text 【Yuka】 "Well then, here's the next one♪" 
+@text 【Yuka】 "Sun's Warmth Kiss of Fire Serve!" 
+@text 【Yuka】 "O Sun! O Sun! Grant me blessings with your bright rays!"
+bgload 00000000 EV_YU16A 0 4 0 0 2
+@text 【Yuka】 "BLAZING SCORCHING FIRE BOMB!"
+@text ~
+removeBG 0 0 2
+playSFX 145 1
+delay 60
+bgload 00000000 EV_YU15B 0 4 0 0 2
+@text 【Yuka】 "It'd be nice if it continued to go on like this forever..." 
+@text 【Yuka】 "It'd be nice if we could keep on living as though we were wandering in a dream like this..."
+bgload 00000000 EV_YU15C 0 4 0 0 2
+@text 【Yuka】 "Once this Camp is over, school will start again right away, won't it?" 
+@text 【Yuka】 "Back to boring classes and a boring job... Those ordinary days that make me want to scream..." 
+@text 【Yuka】 "To me, that world is incredibly tedious."
+bgload 00000000 EV_YU15A 0 4 0 0 2
+@text ~
+removeBG 0 0 2
+delay 60
+bgload 00000000 BG13ZA 0 4 0 0 2
+fgload 0 00000000 YU03AB 1 3
+@text 【Yuka】 "Well, because you're so easy to tease. I just wanted to try lording it over you for a bit."
+fgload 0 00000000 YU02AB 1 3
+@text 【Yuka】 "Besides, Makoto, you were so cute♪"
+fgload 0 00000000 YU01AB 1 3
+@text 【Yuka】 "Yeah. It was really cute how desperate you looked♪"
+fgload 0 00000000 YU03AB 1 3
+@text 【Yuka】 "It was kinda... like a newborn puppy!"
+@text ~
+removeBG 0 0 2
+delay 60
+bgload 00000000 BG27A 0 4 0 0 2
+cmd1 18
+fgload 0 00000000 YU01AA 1 3
+@text 【Yuka】 "Hey, Makoto...?" 
+@text 【Yuka】 "... When was your first love?" 
+@text 【Makoto】 "Mine was..." 
+@text ... ... ... 
+@text 【Yuka】 "I see..." 
+@text 【Makoto】 "What about you, Yuka? When was your first love?" 
+@text 【Yuka】 "Mine..." 
+@text 【Yuka】 "Mine was... in middle school..." 
+@text 【Yuka】 "Even now, I can't forget it..." 
+@text 【Yuka】 "I met my first love in spring, when I was in 9th grade..." 
+@text 【Yuka】 "It was the day of the opening ceremony in April, when the new semester started..."
+@text ~
+removeBG 0 0 2
+delay 60
+bgload 00000000 EV_YU04A 0 4 0 0 2
+@text 【Yuka】 "That was how I fell in love..." 
+@text 【Makoto】 "... I see..." 
+@text 【Makoto】 "Say, Yuka? Did it go well with that boy?" 
+@text 【Yuka】 "Huh? Mmm..."
+@text ~
+delay 60
+@text 【Yuka】 "No. Because it was always an unrequited love..." 
+@text 【Makoto】 "..." 
+@text 【Yuka】 "But..." 
+@text 【Yuka】 "But even now, I can't forget him..." 
+@text 【Makoto】 "――!?" 
+@text 【Yuka】 "He was..." 
+@text 【Yuka】 "He was very similar..."
+@text ~
+stopBGM
+delay 60
+@text 【Yuka】 "To you, Makoto..."
+removeBG 0 0 2
+@text ――That's right. All that would be left afterwards would be normal days and just a few happy memories... 
+@text Just memories...
+cmd2 0
+removeBG 0 0 2
+bgload 00000000 EV_AL01 0 4 0 0 2
+@text If only I hadn't seen that "nightmare"...
+removeBG 0 0 2
+playSFX 0 1
+bgload 00000000 EV_YU01 0 4 0 0 2
+@text 【Yuka】 "Wh-... What's going on!?"
+removeBG 0 0 2
+playBGM 9
+bgload 00000000 BG13ZR 0 4 0 0 2
+fgload 0 00000000 YU08AB 1 3
+@text 【Makoto】 "In that dream..." 
+@text 【Makoto】 "Someone... died."
+fgload 0 00000000 YU11AB 1 3
+@text 【Yuka】 "!?" 
+@text 【Makoto】 "It was Saturday, April 6th..." 
+@text 【Makoto】 "I don't remember the exact time and location. And I don't know who that 'someone' was either..." 
+@text 【Makoto】 "But... in that corpse's palm..." 
+@text 【Yuka】 "Hold on!!"
+fgload 0 00000000 YU08AB 1 3
+@text 【Yuka】 "Hold... on..." 
+@text 【Yuka】 "It couldn't be..." 
+@text 【Yuka】 "It couldn't be that in that person's palm was... a 'bell'?" 
+@text 【Makoto】 "!?"
+fgload 0 00000000 YU05AB 1 3
+@text 【Yuka】 "That's right!? That's right, isn't it!?"
+@text ~
+delay 30
+fgload 0 00000000 YU08AB 1 3
+@text 【Yuka】 "Why... Why now...?" 
+@text 【Makoto】 "N-Now? What do you mean... 'now'? What does that mean!?" 
+@text 【Yuka】 "..." 
+@text 【Makoto】 "Hey, Yuka!?" 
+@text 【Yuka】 "..."
+@text ~
+removeBG 0 0 2
+delay 60
+@text 【Yuka】 "Makoto..." 
+@text 【Yuka】 "All right, Makoto?" 
+@text 【Yuka】 "Will you remain calm and listen to me?" 
+@text 【Yuka】 "The dream you had――the truth is... I also... had the same dream..." 
+@text 【Makoto】 "...!?" 
+@text 【Yuka】 "It was also on the same day as you... the morning of the 1st..."
+bgload 00000000 BG24R 0 4 0 0 2
+fgload 0 00000000 YU13AA 1 3
+@text 【Yuka】 "'The spring rain/ At the end of the cape/ Together with/ The echoing bell/ Will free you from time.'" 
+@text 【Yuka】 "It's the 'Will free you from time' part!" 
+@text 【Makoto】 "???" 
+@text 【Yuka】 "You don't understand what it means?" 
+@text 【Makoto】 "... Huh?" 
+@text 【Yuka】 "To be 'set free' from the flow of 'time' and to be blown away to a different time..." 
+@text 【Yuka】 "In other words――it means time travel!"
+@text ~
+delay 60
+@text 【Yuka】 "On that day――Saturday, April 6th... we were sent... to the world of five days ago..." 
+@text 【Yuka】 "And if this hypothesis is right, then what I'm about to say might also be possible." 
+@text 【Yuka】 "Tomorrow――On Saturday, April 6th... we will be sent... to the world of five days ago..." 
+@text 【Makoto】 "That... can't be..." 
+@text 【Makoto】 "It's impossible... it's definitely... impossible..."
+@text ~
+delay 60
+@text 【Yuka】 "Yeah... That's right... It's only natural to think that way..." 
+@text 【Yuka】 "When I think about it calmly, I realize that telling you to believe this absurd story is just nuts..." 
+@text 【Yuka】 "I might just have gone insane, and everything's a mere delusion of mine..." 
+@text 【Yuka】 "But..." 
+@text 【Yuka】 "But... in case this is... reality, then..." 
+@text 【Yuka】 "So please... I want you to swear just one thing..." 
+@text 【Yuka】 "After this, with no exceptions, don't approach this shrine..." 
+@text 【Yuka】 "Of course, I'll never come here again as well..."
+@text ~
+removeBG 0 0 2
+stopBGM
+delay 180
+@text "Dear Makoto..." 
+@text "I'm sorry. I'm going there."
+@text ~
+delay 60
+playBGM 21
+bgload 00000000 EV_YU07 0 4 0 0 2
+@text 【Yuka】 "So you came here after all." 
+@text 【Makoto】 "Why... Why, Yuka...?" 
+@text 【Yuka】 "You broke your promise, huh?" 
+@text 【Yuka】 "You swore that you wouldn't approach the shrine again, no matter what..." 
+@text 【Makoto】 "You're a fine one to talk, aren't you!? What reason did you have for coming here when you knew how risky it was!?"
+removeBG 0 0 2
+@text A promise that couldn't be kept... The important promise that Makoto and I made... At that time, I couldn't keep it...
+bgload 00000000 BG31R 0 4 0 0 2
+cmd1 26
+fgload 0 00000000 YU11AB 1 3
+@text 【Yuka】 "Wh... What's the meaning of this...???" 
+@text 【Yuka】 "Why are there... two bells...???" 
+@text 【Makoto】 "Y-Yuka..." 
+@text 【Makoto】 "Yuka... you said you threw it away... didn't you...?"
+fgload 0 00000000 YU08AB 1 3
+@text 【Yuka】 "But..." 
+@text 【Yuka】 "But...!" 
+@text 【Makoto】 "Were... you lying...?"
+@text ~
+removeFG 0 3
+playSFX 116 1
+cmd1 13
+delay 90
+playSFX 117 1
+cmd2 6
+removeBG 0 0 2
+cmd2 11
+cmd2 10
+cmd2 0
+delay 300
+stopSFX
+@text At that time... At that time, an earthquake destroyed the shrine... Makoto tried to protect me...
+bgload 00000000 EV_YU06 0 4 0 0 2
+@text 【Makoto】 "Men ought to try their best to protect women――that's the way it's been for ages!" 
+@text 【Yuka】 "Well then, are you saying you'll try to protect me?" 
+@text 【Makoto】 "... That's right." 
+@text 【Yuka】 "That's just stupid..." 
+@text 【Makoto】 "It's not stupid!" 
+@text 【Makoto】 "From now on, I will definitely protect you!" 
+@text 【Yuka】 "... Are you... serious?" 
+@text 【Makoto】 "If this were a joke, it'd be a pretty crappy one, wouldn't it?" 
+@text 【Makoto】 "I'm serious. I swear on this starry sky that I'm serious!" 
+@text 【Yuka】 "Hee hee." 
+@text 【Yuka】 "You're kind..." 
+@text 【Makoto】 "... Kind?" 
+@text 【Yuka】 "You're the spitting image of him in that regard."
+removeBG 0 0 2
+stopBGM
+@text But... he was just a little too late...
+playBGM 15
+bgload 00000000 EV_AL01 0 4 0 0 2
+delay 60
+@text ... The nightmare had become reality... 
+@text I saw Makoto's heavily dangling palm. 
+@text On top of it was a small fragment of light... 
+@text ――The bell. 
+@text It was so painful... It was as if I was burning in hellfire. 
+@text My body writhed in agony as the pain clawed at my heart. But it wasn't physical pain. 
+@text It was my heart... My heart... felt as if it had been gouged out by a sharp knife. 
+@text I broke my promise... 
+@text "After this, with no exceptions, I won't approach this shrine..." ――Even though I swore that... 
+@text This is the reparation... for my extremely great betrayal. 
+@text 【Yuka】 "Why..." 
+@text My hoarse voice filled the empty void. 
+@text Tears streamed down from my face. 
+@text Before long, from Makoto's palm...
+bgload 00000000 EV_AL01B 0 4 0 0 2
+playSFX 90 1
+@text ... the bell falls.
+removeBG 0 0 2
+cmd1 22
+@text It might have been my wish. Or it might have been Makoto's wish. 
+@text "I want to go back to that time,once more――!"
+@text ~
+cmd2 2
+stopBGM
+removeBG 0 0 2
+@text ――At that time, a miracle happened...
+@text ~
+removeBG 0 0 2
+playSFX 94 1
+delay 420
+jump c_yuka1.snr
+returnTitle

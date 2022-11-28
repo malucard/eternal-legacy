@@ -1,0 +1,753 @@
+[00000078] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 10
+[00000083] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 3
+[0000008e] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[0000009a] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[000000a6] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 108
+[000000b2]  0: 
+[000000b3]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 000000c7 (0002)
+[000000c1] 10: 
+[000000c2] 1c: cmd1C
+[000000c3]  0: 
+[000000c4]  7: goto7 000000d2 (0003)
+[000000c7] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[000000d2]  0: 
+[000000d3]  a: condJump 00 VAR_(28_1e)_a1_1d (28) != (15) (80)->0 (15) (08) || VAR_(28_1e)_a1_1e (28) != (15) (80)->0 (15) (08) || VAR_(28_1e)_a1_1f (28) != (15) (80)->0 (15) (00)  * 000000ff (0005)
+[000000f7]  0: 
+[000000f8]  7: goto7 00000130 (0009)
+[000000fb]  0: 
+[000000fc]  7: goto7 00000130 (0007)
+[000000ff]  0: 
+[00000100]  a: condJump 00 VAR_(28_1e)_a1_1d (28) != (15) (81)->1 (15) (08) || VAR_(28_1e)_a1_1e (28) != (15) (81)->1 (15) (08) || VAR_(28_1e)_a1_1f (28) != (15) (81)->1 (15) (00)  * 0000012c (0006)
+[00000124]  0: 
+[00000125]  7: goto7 00000130 (0009)
+[00000128]  0: 
+[00000129]  7: goto7 00000130 (0007)
+[0000012c]  0: 
+[0000012d]  7: goto7 0000084f (001a)
+[00000130] 10: 
+[00000131] 10: bgload 00000000 BG06A 0 1
+[0000013e] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 11
+[00000149] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 7
+[00000154] 10: 
+[00000155] 17: showClock
+[00000156] 10: 
+[00000157] 19: 
+[00000158] ff: text 00
+{textColor 0 2}I'm drinking tea at Lunabeach. 
+{textColor 0 2}It's our "wharf." 
+{textColor 0 2}This is also where the woman I love is... 
+
+
+[0000015b] 10: 
+[0000015c] 10: bgload 00000000 EV_IZ08 0 1
+[00000169] 10: 
+[0000016a]  6: playBGM 17
+[0000016f] 10: 
+[00000170]  b: playVoice IL2D7000
+[0000017a] 10: 
+[0000017b] 19: 
+[0000017c] ff: text 01
+{textColor 1 8}【Izumi】 "Hee hee...{delay 5}{delay 5}{delay 5} nevertheless, last night was a masterpiece♪" 
+{textColor 0 2}Right now, we're sharing time together. 
+{textColor 0 2}This time of upmost bliss is more important than anything in the world, and can never be replaced. 
+{textColor 0 2}I only realized this obvious fact very recently. 
+{textColor 0 0}【Makoto】 "Okuhiko's face back then...{delay 5}{delay 5}{delay 5} heh heh..." 
+
+
+[0000017f] 10: 
+[00000180]  b: playVoice IL2D7001
+[0000018a] 10: 
+[0000018b] 19: 
+[0000018c] ff: text 02
+{textColor 1 8}【Izumi】 "But...{delay 5}{delay 5}{delay 5} maybe we went a little too far? We deceived him for three days, after all..." 
+{textColor 0 0}【Makoto】 "From the start, the one who started this whole deception game was him. If it hadn't been for you, it would have been me in his shoes..." 
+
+
+[0000018f] 10: 
+[00000190]  b: playVoice IL2D7002
+[0000019a] 10: 
+[0000019b] 19: 
+[0000019c] ff: text 03
+{textColor 1 8}【Izumi】 "You're right...{delay 5}{delay 5}{delay 5} I guess you could say he got his just desserts?" 
+{textColor 0 0}【Makoto】 "Right, right." 
+
+
+[0000019f] 10: 
+[000001a0]  b: playVoice IL2D7003
+[000001aa] 10: 
+[000001ab] 19: 
+[000001ac] ff: text 04
+{textColor 1 8}【Izumi】 "But...{delay 5}{delay 5}{delay 5} why did Okuhiko-kun allow himself to be so easily deceived?" 
+
+
+[000001af] 10: 
+[000001b0]  b: playVoice IL2D7004
+[000001ba] 10: 
+[000001bb] 19: 
+[000001bc] ff: text 05
+{textColor 1 8}【Izumi】 "After all, he could have just spoke with a stranger or made a phone call to confirm if he had really time traveled, right...?" 
+{textColor 0 0}【Makoto】 "Yeah... well, the thing is..." 
+{textColor 0 2}It's like this. 
+{textColor 0 2}It was "faintly", but it seems Okuhiko realized early on that he might be being tricked. 
+{textColor 0 2}However, he denied the fact that he was being deceived, and consciously made sure to faithfully repeat the same actions. 
+{textColor 0 2}By doing so, he would ensure that the same events would repeat, and would be able to make plans in advance to manipulate future events in order to make his wish come true. 
+{textColor 0 2}That is, trying to impress Haruka. To use a video game analogy, he considered the previous six days as his "Haruka walkthrough", and tried to use this knowledge to woo her. 
+{textColor 0 2}To him, it was as if he had reloaded from an earlier save point in a video game... 
+
+
+[000001bf] 10: 
+[000001c0]  b: playVoice IL2D7005
+[000001ca] 10: 
+[000001cb] 19: 
+[000001cc] ff: text 06
+{textColor 1 8}【Izumi】 "Even though there are no save points or reset buttons in life..." 
+{textColor 0 0}【Makoto】 "He lost the moment he failed to realize that..." 
+
+
+[000001cf] 10: 
+[000001d0]  b: playVoice IL2D7006
+[000001da] 10: 
+[000001db] 19: 
+[000001dc] ff: text 07
+{textColor 1 8}【Izumi】 "That...{delay 5}{delay 5}{delay 5} might be right." 
+{textColor 0 2}Izumi-san says this, places her fingertips around the handle of her teacup, and brings it up to her lips. 
+{textColor 0 2}She does this in a very polished, refined, and yet natural way. 
+{textColor 0 2}Could you call this... elegant? 
+{textColor 0 2}I can't stop myself from staring, mesmerized by these simple actions. 
+
+
+[000001df] 10: 
+[000001e0]  b: playVoice IL2D7007
+[000001ea] 10: 
+[000001eb] 19: 
+[000001ec] ff: text 08
+{textColor 1 8}【Izumi】 "What are the others doing right now?" 
+{textColor 0 2}Izumi-san asks this as she fiddles with her teaspoon with her slender fingers. 
+{textColor 0 0}【Makoto】 "They're surely making their preparations to go home..." 
+
+
+[000001ef] 10: 
+[000001f0]  b: playVoice IL2D7008
+[000001fa] 10: 
+[000001fb] 19: 
+[000001fc] ff: text 09
+{textColor 1 8}【Izumi】 "And you're not?" 
+{textColor 0 0}【Makoto】 "I...{delay 5}{delay 5}{delay 5} plan to stay here a little while longer..." 
+
+
+[000001ff] 10: 
+[00000200]  b: playVoice IL2D7009
+[0000020a] 10: 
+[0000020b] 19: 
+[0000020c] ff: text 0a
+{textColor 1 8}【Izumi】 "Are you all right with that? You don't care... Even if it means dropping out of college?" 
+{textColor 0 2}Although she says this, Izumi-san looks very delighted and smiles... 
+
+
+[0000020f] 10: 
+[00000210]  7: stopBGM
+[00000211] 10: 
+[00000212]  f: removeBG 0 0 2
+[0000021c] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 51
+[00000228] 10: 
+[00000229] 10: bgload 00000000 BG07R 0 1
+[00000236] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 11
+[00000241] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 43
+[0000024d] 10: 
+[0000024e] 17: showClock
+[0000024f] 10: 
+[00000250] 19: 
+[00000251] ff: text 0b
+{textColor 0 2}Before long... it begins to rain. 
+{textColor 0 0}【Makoto】 "It's...{delay 5}{delay 5}{delay 5} raining, huh?" 
+
+
+[00000254] 10: 
+[00000255] 11: fgload 0 00000000 IZ01AB 1 3
+[00000265] 10: 
+[00000266]  b: playVoice IL2D7010
+[00000270] 10: 
+[00000271] 19: 
+[00000272] ff: text 0c
+{textColor 1 8}【Izumi】 "That's right... Even though the weather was so good up until now..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "Hey?" 
+
+
+[00000275] 10: 
+[00000276]  b: playVoice IL2D7011
+[00000280] 10: 
+[00000281] 19: 
+[00000282] ff: text 0d
+{textColor 1 8}【Izumi】 "Yes?" 
+{textColor 0 0}【Makoto】 "Can we...{delay 5}{delay 5}{delay 5} go outside?" 
+
+
+[00000285] 10: 
+[00000286] 11: fgload 0 00000000 IZ11AB 1 3
+[00000296] 10: 
+[00000297]  b: playVoice IL2D7012
+[000002a1] 10: 
+[000002a2] 19: 
+[000002a3] ff: text 0e
+{textColor 1 8}【Izumi】 "Huh?" 
+{textColor 0 0}【Makoto】 "There's somewhere I want to go with you..." 
+{textColor 1 8}【Izumi】 "???" 
+
+
+[000002a6] 10: 
+[000002a7] 12: removeFG 0 3
+[000002ae] 10: 
+[000002af]  f: removeBG 0 4 2
+[000002b9] 10: 
+[000002ba] 10: bgload 00000000 BG13R 4 1
+[000002c7] 10: 
+[000002c8]  1: cmd1 26
+[000002cd] 10: 
+[000002ce]  6: playBGM 5
+[000002d2] 10: 
+[000002d3]  8: playSFX SE030 0
+[000002dd] 10: 
+[000002de] 19: 
+[000002df] ff: text 0f
+{textColor 0 2}We leave.  {textColor 0 2}We head towards my goal while getting under a single umbrella. 
+
+
+[000002e2] 10: 
+[000002e3] 11: fgload 0 00000000 IZ02AB 1 3
+[000002f3] 10: 
+[000002f4]  9: stopSFX
+[000002f5] 10: 
+[000002f6]  b: playVoice IL2D7014
+[00000300] 10: 
+[00000301] 19: 
+[00000302] ff: text 10
+{textColor 1 8}【Izumi】 "Hey, where do you plan on going?" 
+{textColor 0 0}【Makoto】 "You'll know when we get there..." 
+{textColor 0 2}Izumi-san nestles close to me under the small umbrella.  {textColor 0 2}I tilt the umbrella to prevent her shoulders from getting wet. 
+{textColor 0 2}Izumi-san silently returns it to its original position.  {textColor 0 2}Her soft palm touches my wrist. 
+
+
+[00000305] 10: 
+[00000306] 11: fgload 0 00000000 IZ03AB 1 3
+[00000316] 10: 
+[00000317] 19: 
+[00000318] ff: text 11
+{textColor 0 2}The sensation of her palm makes me a little embarrassed... 
+
+
+[0000031b] 10: 
+[0000031c] 12: removeFG 0 3
+[00000323] 10: 
+[00000324] 19: 
+[00000325] ff: text 12
+{textColor 0 2}The sound of the rain against the umbrella is like a gentle melody... 
+
+
+[00000328] 10: 
+[00000329]  f: removeBG 0 0 2
+[00000333] 10: 
+[00000334] 10: bgload 00000000 BG17R 0 1
+[00000341] 10: 
+[00000342] 11: fgload 0 00000000 IZ01AB 1 3
+[00000352] 10: 
+[00000353]  8: playSFX SE030 0
+[0000035d] 10: 
+[0000035e]  b: playVoice IL2D7015
+[00000368] 10: 
+[00000369] 19: 
+[0000036a] ff: text 13
+{textColor 1 8}【Izumi】 "This...{delay 5}{delay 5}{delay 5} is Princess Beach...{delay 5}{delay 5}{delay 5} isn't it?" 
+{textColor 0 2}Right...  {textColor 0 2}This is the place I wanted to go. 
+{textColor 0 0}【Makoto】 "Wow... so there really are some places on this island whose location you're not sure about, huh?" 
+
+
+[0000036d] 10: 
+[0000036e] 11: fgload 0 00000000 IZ05AB 1 3
+[0000037e] 10: 
+[0000037f]  b: playVoice IL2D7016
+[00000389] 10: 
+[0000038a] 19: 
+[0000038b] ff: text 14
+{textColor 1 8}【Izumi】 "Hey, don't make fun of me! That's not true at all!" 
+
+
+[0000038e] 10: 
+[0000038f] 11: fgload 0 00000000 IZ01AB 1 3
+[0000039f] 10: 
+[000003a0]  b: playVoice IL2D7017
+[000003aa] 10: 
+[000003ab] 19: 
+[000003ac] ff: text 15
+{textColor 1 8}【Izumi】 "... But why here?" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000003af] 10: 
+[000003b0]  7: stopBGM
+[000003b1] 10: 
+[000003b2] 19: 
+[000003b3] ff: text 16
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000003b6] 10: 
+[000003b7] 11: fgload 0 00000000 IZ02AB 1 3
+[000003c7] 10: 
+[000003c8]  b: playVoice IL2D7018
+[000003d2] 10: 
+[000003d3] 19: 
+[000003d4] ff: text 17
+{textColor 1 8}【Izumi】 "A lot of things happened in these past ten days." 
+{textColor 0 0}【Makoto】 "... Yeah." 
+
+
+[000003d7] 10: 
+[000003d8] 12: removeFG 0 3
+[000003df] 10: 
+[000003e0]  f: removeBG 1 0 2
+[000003ea] 10: 
+[000003eb]  9: stopSFX
+[000003ec] 10: 
+[000003ed]  2: cmd2 6
+[000003f1] 10: 
+[000003f2]  6: playBGM 21
+[000003f7] 10: 
+[000003f8]  1: cmd1 32
+[000003fd] 10: 
+[000003fe] 10: bgload 00000000 EV_IZ01 0 1
+[0000040b]  0: 
+[0000040c]  5: delay 120
+[00000411] 10: 
+[00000412] 10: bgload 00000000 EV_IZ02 0 1
+[0000041f]  0: 
+[00000420]  5: delay 120
+[00000425] 10: 
+[00000426] 10: bgload 00000000 EV_IZ03 0 1
+[00000433]  0: 
+[00000434]  5: delay 120
+[00000439] 10: 
+[0000043a] 10: bgload 00000000 EV_IZ06A 0 1
+[00000447]  0: 
+[00000448]  5: delay 120
+[0000044d] 10: 
+[0000044e] 10: bgload 00000000 EV_IZ05 0 1
+[0000045b]  0: 
+[0000045c]  5: delay 120
+[00000461] 10: 
+[00000462]  f: removeBG 1 0 2
+[0000046c] 10: 
+[0000046d]  1: cmd1 26
+[00000472] 10: 
+[00000473]  8: playSFX SE030 0
+[0000047d] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 88
+[00000489] 10: 
+[0000048a]  2: cmd2 13
+[0000048e] 10: 
+[0000048f] 10: bgload 00000000 BG17R 0 1
+[0000049c] 10: 
+[0000049d] 11: fgload 0 00000000 IZ01AB 1 3
+[000004ad] 10: 
+[000004ae] 19: 
+[000004af] ff: text 18
+{textColor 0 0}【Makoto】 "Izumi-san..." 
+{textColor 0 0}【Makoto】 "There's something I have to tell you, Izumi-san." 
+
+
+[000004b2] 10: 
+[000004b3]  b: playVoice IL2D7019
+[000004bd] 10: 
+[000004be] 19: 
+[000004bf] ff: text 19
+{textColor 1 8}【Izumi】 "... All right." 
+
+
+[000004c2]  0: 
+[000004c3]  a: condJump 00 VAR_(28_1e)_a1_1d (28) != (15) (80)->0 (15) (08) && VAR_(28_1e)_a1_1e (28) != (15) (80)->0 (15) (08) && VAR_(28_1e)_a1_1f (28) != (15) (80)->0 (15) (00)  * 000006cd (0017)
+[000004e7] 10: 
+[000004e8] 19: 
+[000004e9] ff: text 1a
+{textColor 0 0}【Makoto】 "Right now...  I have my answer to what you told me that night,{delay 5}{delay 5} so here it is..." 
+{textColor 0 0}【Makoto】 "Right here...{delay 5}{delay 5}{delay 5} right now..." 
+
+
+[000004ec] 10: 
+[000004ed]  7: stopBGM
+[000004ee] 10: 
+[000004ef] 19: 
+[000004f0] ff: text 1b
+{textColor 0 0}【Makoto】 "Izumi-san...  I...  love you too." 
+{textColor 1 8}【Izumi】 "..." 
+
+
+[000004f3] 10: 
+[000004f4] 19: 
+[000004f5] ff: text 1c
+{textColor 0 0}【Makoto】 "'Express your feelings on the Cape of Affection, and carry out those feelings at the Cove of Love.'" 
+
+
+[000004f8] 10: 
+[000004f9] 11: fgload 0 00000000 IZ03AB 1 3
+[00000509] 10: 
+[0000050a]  b: playVoice IL2D7021
+[00000514] 10: 
+[00000515] 19: 
+[00000516] ff: text 1d
+{textColor 1 8}【Izumi】 "You...{delay 5}{delay 5}{delay 5} remembered..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000519] 10: 
+[0000051a] 12: removeFG 0 3
+[00000521] 10: 
+[00000522] 19: 
+[00000523] ff: text 1e
+{textColor 0 2}Izumi-san doesn't wait for my reply.  {textColor 0 2}She suddenly throws aside the umbrella... 
+
+
+[00000526] 10: 
+[00000527]  f: removeBG 0 0 2
+[00000531] 10: 
+[00000532]  9: stopSFX
+[00000533] 10: 
+[00000534]  2: cmd2 6
+[00000538] 10: 
+[00000539]  6: playBGM 12
+[0000053d] 10: 
+[0000053e] 10: bgload 00000000 EV_IZ07A 0 1
+[0000054b] 10: 
+[0000054c] 19: 
+[0000054d] ff: text 1f
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}... and kisses me...{delay 5}{delay 5}{delay 5} on the lips. 
+{textColor 0 0}【Makoto】 "Izumi...{delay 5}{delay 5}{delay 5} san..." 
+{textColor 0 2}This is the goddess'...{delay 5}{delay 5}{delay 5} gentle kiss... 
+{textColor 0 2}We're currently...{delay 60} carrying out...{delay 60} our feelings. 
+
+
+[00000550] 10: 
+[00000551] 18: cmd18
+[00000552]  0: 
+[00000553]  5: delay 180
+[00000558] 10: 
+[00000559]  f: removeBG 0 0 0
+[00000563] 10: 
+[00000564]  7: stopBGM
+[00000565]  0: 
+[00000566]  a: condJump 00 VAR_(28_1e)_a0_cf (28) != (15) (80)->0 (15) (00)  * 0000057f (000b)
+[00000574] fe: varop VAR_(28_0a)_a0_cf (14) := (00) 1
+[0000057f]  0: 
+[00000580]  a: condJump 00 VAR_(28_1e)_a1_46 (28) != (15) (80)->0 (15) (00)  * 00000599 (000d)
+[0000058e] fe: varop VAR_(28_0a)_a1_46 (14) := (00) 1
+[00000599]  0: 
+[0000059a]  a: condJump 00 VAR_(28_1e)_a0_c8 (28) != (15) (80)->0 (15) (00)  * 000005b3 (000f)
+[000005a8] fe: varop VAR_(28_0a)_a0_c8 (14) := (00) 1
+[000005b3]  0: 
+[000005b4]  a: condJump 00 VAR_(28_1e)_a0_c9 (28) != (15) (80)->0 (15) (00)  * 000005cd (0011)
+[000005c2] fe: varop VAR_(28_0a)_a0_c9 (14) := (00) 1
+[000005cd]  0: 
+[000005ce]  a: condJump 00 VAR_(28_1e)_a1_45 (28) != (15) (80)->0 (15) (00)  * 000005e7 (0013)
+[000005dc] fe: varop VAR_(28_0a)_a1_45 (14) := (00) 1
+[000005e7]  0: 
+[000005e8]  a: condJump 00 VAR_(28_1e)_a1_48 (28) != (15) (80)->0 (15) (00)  * 00000639 (0015)
+[000005f6] fe: varop VAR_(28_0a)_a1_48 (14) := (00) 1
+[00000601] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cb
+[0000060d] 14: unsupported 20 
+[0000060e]  0: 
+[0000060f] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cc
+[0000061b] 14: unsupported 20 
+[0000061c]  0: 
+[0000061d] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cd
+[00000629] 14: unsupported 20 
+[0000062a]  0: 
+[0000062b] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_ce
+[00000637] 14: unsupported 20 
+[00000638]  0: 
+[00000639] fe: varop VAR_(28_0a)_a1_47 (14) := (00) 5
+[00000644] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 0
+[0000064f] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 6
+[0000065a]  0: 
+[0000065b] 19: unknown19 0 3
+[00000662]  0: 
+[00000663] 19: unknown19 1 3
+[0000066a]  0: 
+[0000066b] 19: unknown19 2 3
+[00000672] 10: 
+[00000673] 24: cmd24 0
+[00000677] 10: 
+[00000678] 22: movie end1
+[0000067e]  0: 
+[0000067f]  5: delay 10
+[00000683] 10: 
+[00000684] 24: cmd24 1
+[00000688]  0: 
+[00000689]  5: delay 1
+[0000068d] 10: 
+[0000068e] 2d: cmd2D 00 0a 01 2d 0a 87 14 00 16
+[00000698]  0: 
+[00000699] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 1
+[000006a4] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 0
+[000006af] 10: 
+[000006b0] 23: cmd23
+[000006b1]  0: 
+[000006b2] 19: unknown19 0 4
+[000006b9]  0: 
+[000006ba] 19: unknown19 1 4
+[000006c1]  0: 
+[000006c2] 19: unknown19 2 4
+[000006c9]  0: 
+[000006ca]  7: goto7 00000849 (0018)
+[000006cd] 10: 
+[000006ce]  7: stopBGM
+[000006cf] 10: 
+[000006d0] 19: 
+[000006d1] ff: text 20
+{textColor 0 0}【Makoto】 "Izumi-san...{delay 5}{delay 5}{delay 5} sorry♪" 
+
+
+[000006d4] 10: 
+[000006d5] 11: fgload 0 00000000 IZ11AB 1 3
+[000006e5] 10: 
+[000006e6]  b: playVoice IL2D7026
+[000006f0] 10: 
+[000006f1] 19: 
+[000006f2] ff: text 21
+{textColor 1 8}【Izumi】 "... Huh!?" 
+{textColor 0 0}【Makoto】 "I betrayed you♪" 
+
+
+[000006f5] 10: 
+[000006f6]  b: playVoice IL2D7027
+[00000700] 10: 
+[00000701] 19: 
+[00000702] ff: text 22
+{textColor 1 8}【Izumi】 "What do...{delay 5}{delay 5}{delay 5} you mean?" 
+{textColor 0 0}【Makoto】 "Ha ha, ha ha, ha ha ha ha ha..." 
+{textColor 1 8}【Izumi】 "..." 
+
+
+[00000705] 10: 
+[00000706] 11: fgload 0 00000000 IZ08AB 1 3
+[00000716] 10: 
+[00000717] 19: 
+[00000718] ff: text 23
+{textColor 0 2}Izumi-san's shoulders shake. 
+{textColor 0 2}I... I... 
+
+
+[0000071b] 10: 
+[0000071c]  9: stopSFX
+[0000071d] 10: 
+[0000071e] 12: removeFG 0 3
+[00000725] 10: 
+[00000726] 19: 
+[00000727] ff: text 24
+{textColor 0 2}――All I can do is continue to fake laughing. 
+{textColor 0 2}Just then... 
+
+
+[0000072a] 10: 
+[0000072b] 11: fgload 0 00000000 KU07BB 1 0
+[0000073b] 10: 
+[0000073c]  b: playVoice IL2D7028
+[00000746] 10: 
+[00000747] 19: 
+[00000748] ff: text 25
+{textColor 1 7}【Kurumi】 "Fooled you♪" 
+
+
+[0000074b] 10: 
+[0000074c]  6: playBGM 19
+[00000751] 10: 
+[00000752] 19: 
+[00000753] ff: text 26
+{textColor 0 0}【Makoto】 "UWAAAAAA〜〜〜〜〜!!!!!" 
+{textColor 0 2}My heart nearly leaps out of my chest in shock. 
+
+
+[00000756] 10: 
+[00000757] 11: fgload 0 00000000 KU02BB 1 3
+[00000767] 10: 
+[00000768]  b: playVoice IL2D7029
+[00000772] 10: 
+[00000773] 19: 
+[00000774] ff: text 27
+{textColor 1 7}【Kurumi】 "Were you surprised?{delay 5}{delay 5} Were you surprised?" 
+{textColor 0 2}Kurumi asks this gleefully. 
+
+
+[00000777] 10: 
+[00000778] 12: removeFG 0 3
+[0000077f] 10: 
+[00000780] 11: fgload 0 00000000 IZ12AB 1 3
+[00000790] 10: 
+[00000791]  b: playVoice IL2D7030
+[0000079b] 10: 
+[0000079c] 19: 
+[0000079d] ff: text 28
+{textColor 1 8}【Izumi】 "Hee...{delay 5}{delay 5}{delay 5} hee hee..." 
+{textColor 0 2}Izumi-san's shaking shoulders...  {textColor 0 2}... Were because she was trying to hide her laughter??? 
+
+
+[000007a0] 10: 
+[000007a1] 12: removeFG 0 3
+[000007a8] 10: 
+[000007a9] 19: 
+[000007aa] ff: text 29
+{textColor 0 2}In quick succession, everyone reveals themselves. 
+
+
+[000007ad] 10: 
+[000007ae] 11: fgload 0 00000000 YU07AA 2 3
+[000007be] 10: 
+[000007bf] 12: removeFG 0 3
+[000007c6] 10: 
+[000007c7] 11: fgload 1 00000000 SA07AA 1 3
+[000007d7] 10: 
+[000007d8] 12: removeFG 1 3
+[000007df] 10: 
+[000007e0] 11: fgload 0 00000000 HA07AA 0 3
+[000007f0] 10: 
+[000007f1] 12: removeFG 0 3
+[000007f8] 10: 
+[000007f9] 19: 
+[000007fa] ff: text 2a
+{textColor 0 2}Yuka,{delay 5}{delay 5} Saki,{delay 5}{delay 5} and Haruka... Everyone is laughing their guts out. 
+{textColor 0 2}(Wh-{delay 5}{delay 5}{delay 5}What's going on?) 
+{textColor 0 2}... They then explain it to me. 
+{textColor 0 2}All the events that have happened up until now has been planned by Kurumi, in her "Twisty Twist With Yet Another Twist Candid Camera-esque Plan". 
+{textColor 0 2}In other words, "Extending the lodge in order to deceive Okuhiko" was part of it... 
+{textColor 0 2}"Kurumi leaving after the first day" was part of it...  {textColor 0 2}"Yuka, Haruka, and Saki tempting Makoto one by one" was part of it... 
+{textColor 0 2}――Everything was planned out!! 
+{textColor 0 2}However, Okuhiko was the only one who didn't know about this, so he really was being deceived. 
+{textColor 0 2}In other words, there had been two Candid Camera-esque plans going on simultaneously in the past four days. 
+{textColor 0 2}I stand there completely dumbfounded.  {textColor 0 2}I'm just like Okuhiko last night... 
+
+
+[000007fd] 10: 
+[000007fe]  7: stopBGM
+[000007ff] 10: 
+[00000800] 11: fgload 0 00000000 IZ07AB 1 3
+[00000810] 10: 
+[00000811] 19: 
+[00000812] ff: text 2b
+{textColor 0 2}Suddenly, as they continue to laugh, Izumi-san catches my attention. 
+{textColor 0 2}There are tears in her eyes. 
+{textColor 0 2}I-Is how I look right now really that funny!? 
+{textColor 0 2}... But within her face, I see a twinge of sorrow appearing and disappearing. Is it just my imagination...? 
+
+
+[00000815] 10: 
+[00000816] 12: removeFG 0 3
+[0000081d] 10: 
+[0000081e] 19: 
+[0000081f] ff: text 2c
+{textColor 0 2}At that moment, a "bell" falls from Izumi-san's hand... 
+{textColor 0 2}It's that "bell"... 
+
+
+[00000822] 10: 
+[00000823]  8: playSFX SE091 1
+[0000082d] 10: 
+[0000082e]  2: cmd2 6
+[00000832] 10: 
+[00000833]  f: removeBG 0 1 1
+[0000083d] 10: ibadendb
+[0000083e]  4: jump staffroll
+[00000849] 10: jump omake
+[0000084a] 1e: returnTitle 00 03 00 06
+[0000084f] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 99
+[0000085b] 10: 
+[0000085c] 10: bgload 00000000 BG02NN 0 1
+[00000869] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 4
+[00000874] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 0
+[0000087f] 10: 
+[00000880] 17: showClock
+[00000881] 10: 
+[00000882] 19: 
+[00000883] ff: text 2d
+{textColor 0 2}When we've finished our merrymaking, everyone goes to sleep...  {textColor 0 2}I stand alone in the living room, having gathered all of my luggage. 
+
+
+[00000886] 10: 
+[00000887]  b: playVoice IL2D7031
+[00000891] 10: 
+[00000892] 19: 
+[00000893] ff: text 2e
+{textColor 1 8}【Izumi】 "Zzz..." 
+{textColor 0 2}Izumi-san is peacefully sleeping on the living room sofa. 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000896] 10: 
+[00000897]  6: playBGM 21
+[0000089c] 10: 
+[0000089d] 19: 
+[0000089e] ff: text 2f
+{textColor 0 2}In the end, I couldn't respond to Izumi-san's feelings... 
+{textColor 0 2}I plan to leave the island before everyone else.  {textColor 0 2}I plan to disappear from Izumi-san's life. It's better if she forgets about me... 
+
+
+[000008a1] 10: 
+[000008a2]  b: playVoice IL2D7032
+[000008ac] 10: 
+[000008ad] 19: 
+[000008ae] ff: text 30
+{textColor 1 8}【Izumi】 "Zzz..." 
+{textColor 0 2}The moonlight from the window shines upon Izumi-san's hand.  {textColor 0 2}She is grasping that "bell". 
+{textColor 0 2}I recall the past ten days.  {textColor 0 2}A lot of things really did happen in those ten days. 
+{textColor 0 2}I feel tears welling up within my eyes... 
+
+
+[000008b1] 10: 
+[000008b2]  7: stopBGM
+[000008b3] 10: 
+[000008b4] 19: 
+[000008b5] ff: text 31
+{textColor 0 0}【Makoto】 "Farewell..." 
+{textColor 0 2}I whisper this to the sleeping Izumi-san. 
+{textColor 0 2}At that time, she turns in her sleep, and drops the "bell". 
+
+
+[000008b8] 10: 
+[000008b9]  8: playSFX SE090 1
+[000008c3] 10: 
+[000008c4] 19: 
+[000008c5] ff: text 32
+{textColor 0 2}Without another word, I quietly leave the lodge... 
+
+
+[000008c8] 10: 
+[000008c9]  f: removeBG 1 0 2
+[000008d3] 10: 
+[000008d4] 19: 
+[000008d5] ff: text 33
+{textColor 0 2}I board a ferry heading for the mainland.  {textColor 0 2}I go inside, and sit down at a window seat. 
+{textColor 0 2}Before long, all of my fatigue that's accumulated up until now catches up with me all at once, and I begin to fall into a deep sleep. 
+
+
+[000008d8] 10: 
+[000008d9]  f: removeBG 0 0 2
+[000008e3] 10: 
+[000008e4] 19: 
+[000008e5] ff: text 34
+{textColor 0 2}When I close my eyes, a scene is reflected off my shut eyelids. 
+
+
+[000008e8] 10: 
+[000008e9] 19: 
+[000008ea] ff: text 35
+{textColor 0 2}Izumi-san's sleeping face as she breathed peacefully...  {textColor 0 2}And that "bell"... falling from her hand... 
+
+
+[000008ed] 10: 
+[000008ee]  8: playSFX SE091 1
+[000008f8] 10: 
+[000008f9]  f: removeBG 0 1 1
+[00000903] 10: ibadenda
+[00000904]  4: jump staffroll
+[0000090f]  0: 

@@ -1,0 +1,1338 @@
+@label ap_START
+@setvar v_a1_3c = 210
+removeBG 0 0 2
+playBGM 22
+cmd1 25
+@text ――I'm dreaming. I'm dreaming of a story that runs by quickly in my long, deep slumber.  If I had to liken this to a color, it would be... purple. The entire world is dyed purple.  In the purple world, a child is crying... 
+@text It's a lonely girl, who is either in grade school or about to enter grade school. Could she be a lost child? The girl uneasily looks around her, and scrunches up her face as she bursts into tears again.  Besides the girl is a boy. He seems to be the same age as the girl. 
+@text The boy speaks.  "You don't recognize this area...?"  The girl nods, still crying. 
+@text "Then go ask a policeman. He'll definitely show you the way home."  "*Hic, hic*..." 
+@text "By the way, what's your name? You haven't told me yet."  "Uwaah, uwaah!"   "I can't understand you if all you do is cry..."  "Waah! Waah!" 
+@text "*Hic*... I wanna go home..."  "I know...!"  The boy searches through his pocket. Before long, he takes something small out.  "I'll give this to you, so don't cry anymore..."  He takes the girl's hand... ... And places a small object in her palm. 
+@text It's... a small key chain.  "Well?♪"  The boy smiles at the girl. 
+@text The girl looks back and forth between the key chain in her palm and the boy's face. After a little while, the girl stops crying, and smiles. 
+@text "Thank you..."  "Yeah. So, what's you name?"  The girl wipes the tears off her face, and with an awkward voice, she states her name.  "My{delay 30}  name is{delay 10}  ..."
+removeBG 0 0 2
+cmd2 5
+stopBGM
+@text ~
+delay 15
+@setvar v_a0_fb = 3
+dayIntro 00000000 bgcal3
+bgload 00000000 BG36A 0 4 0 0 2
+@setvar v_a0_fc = 8
+@setvar v_a0_fd = 1
+showClock
+playBGM 1
+@text The refreshing morning light shines in. 
+@text I don't wake up with any of the listlessness I usually feel as soon as I wake up. 
+@text I look at my alarm clock. 
+@text It's past 8:00... 
+@text I definitely went to sleep at about 10:00 last night, so that means I've slept for... ――T-Ten hours?!?
+playSFX 108 1
+@text I jump to my feet from my bed, and take out a small standing mirror from my bag. 
+@text I look at my face reflected off the mirror. 
+@text ... What a relief. Fortunately, there's no bags under my eyes. There's no swelling at all on my face. 
+@text 【Yuka】 "Whew, boy oh boy..." 
+@text I sigh, and begin changing my clothes. 
+@text (Now that I think about it... I had a weird dream...) 
+@text For some reason, it left quite the impression on me. 
+@text Anxiety... That dream was full of anxiety. 
+@text Like the feeling of floating on the water's surface... 
+@text Where it feels like you could fly off into the sky at any minute... that feeling of anxiety...  
+@text (Mmm...) 
+@text (Oh well, whatever.) 
+@text Telling this to myself, I begin to diligently comb my hair. 
+@text After all, today has a good-feeling morning. 
+@text The air outside this morning is so good that it makes me want to take a large inhale of it right now. 
+@text When I finish setting my hair, I turn to the right and go out my door.
+removeBG 0 0 2
+stopBGM
+cmd1 25
+playBGM 8
+@text After 9:00, Kurumi-chan arrives with some French toast for breakfast.  Makoto, Okuhiko-kun, and Haruka awaken a little while later. 
+@text Once we're all gathered, I announce that today's plan is to play tennis.  Of course, I know that once I announce that, Makoto and Haruka will tell us that they're going fishing. 
+@text "The good parts of history must stay good."  Makoto feels that going fishing with Haruka is a good event. At the very least, it is for Haruka. 
+@text Deciding to make things more favorable for those two, I talk to Okuhiko-kun.
+removeBG 0 0 2
+cmd2 5
+bgload 00000000 BG02A 0 4 0 0 2
+@setvar v_a0_fc = 9
+@setvar v_a0_fd = 46
+showClock
+fgload 0 00000000 YU01AA 1 3
+@text 【Yuka】 "Hey, Okuhiko-kun? Can I ask you a favor?"
+moveFG 0 2
+fgload 1 00000000 OK01AA 0 3
+@text 【Okuhiko】 "Hmm? What is it? I'll do whatever you ask, as long as it's within my power." 
+@text He says this, aware of Haruka sitting next to him.
+fgload 0 00000000 YU08AA 2 3
+@text 【Yuka】 "The truth is, I forgot to book the courts for today..."
+fgload 1 00000000 OK11AA 0 3
+@text 【Okuhiko】 "Huh? Really...? But they're usually empty, so shouldn't it be all right...?" 
+@text 【Yuka】 "Yes... But I have a feeling it'll be crowded today." 
+@text 【Yuka】 "You see, I was taking a walk earlier..." 
+@text 【Yuka】 "When I saw a tourist group arrive at a nearby lodge."
+fgload 1 00000000 OK10AA 0 3
+@text 【Okuhiko】 "I-Is that right? Hmm... I see."
+fgload 0 00000000 YU01AA 2 3
+@text 【Yuka】 "So won't you go and book it for me...?" 
+@text 【Yuka】 "Oh, but I don't mind if Makoto is the one who does it." 
+@text 【Yuka】 "Hey, Haruka, which one should I ask?"
+removeFG 0 3
+fgload 0 00000000 HA01AA 2 3
+@text 【Haruka】 "...?" 
+@text 【Haruka】 "It doesn't really matter to me..."
+fgload 1 00000000 OK06AA 0 3
+@text 【Okuhiko】 "Hmm..." 
+@text Okuhiko-kun gives Haruka's face a sidelong glance...
+fgload 1 00000000 OK02AA 0 3
+@text 【Okuhiko】 "All right, got it. Why don't I go there right now?"
+removeFG 0 3
+fgload 0 00000000 YU02AA 2 3
+@text 【Yuka】 "Thank you♪ You've really become reliable, Okuhiko-kun."
+fgload 1 00000000 OK07AA 0 3
+@text 【Okuhiko】 "Ha ha ha ha ha. Leave it to me." 
+@text 【Okuhiko】 "Well then, I'm going now, Haruka-chan."
+removeAllFG 3
+@text Okuhiko-kun sends Haruka a flirtatious glance, then casually walks out of the lodge. 
+@text 【Makoto】 "... W-Well done..." 
+@text Having watched our exchange, baffled, Makoto finally opens his mouth. 
+@text I answer Makoto with a wink.
+multifgload2 00000000 KU10BA 2 00000000 HA10AA 3
+@text 【Haruka】 "??" 
+@text 【Kurumi】 "??" 
+@text Haruka and Kurumi-chan, neither understanding what just happened, tilt their heads.
+removeAllFG 3
+@text ...
+fgload 0 00000000 SA02AA 1 3
+@text 【Saki】 "Good morning, everyone!" 
+@text Saki comes in carrying a basket, and things progress the same way as last time.
+removeBG 0 0 2
+removeFG 0 3
+cmd1 25
+@text Like last time, Saki plans to come with us to tennis. When she hears Makoto and Haruka won't be going to play tennis, Saki makes a discontent face, but doesn't object against it. 
+@text No one interferes with Makoto and Haruka as they go to fish.  And then....
+removeBG 0 0 2
+cmd2 5
+bgload 00000000 BG18A 0 4 0 0 2
+@setvar v_a0_fc = 10
+@setvar v_a0_fd = 12
+showClock
+fgload 0 00000000 OK02AA 1 3
+@text 【Okuhiko】 "Hey, you're slow. I was getting tired of waiting." 
+@text 【Okuhiko】 "Since I was down here, I figured I'd reserve all the courts." 
+@text 【Okuhiko】 "What do you think? With this, absolutely no one can get in our wa-"
+fgload 0 00000000 OK10AA 1 3
+@text 【Okuhiko】 "Wait, huh? I don't see Haruka-chan anywhere..."
+moveFG 0 2
+fgload 1 00000000 YU10AA 0 3
+@text 【Yuka】 "Huh? Didn't I tell you?" 
+@text 【Okuhiko】 "???" 
+@text 【Yuka】 "Makoto and Haruka are doing something else."
+fgload 0 00000000 OK11AA 2 3
+@text 【Okuhiko】 "... Huh?"
+removeAllFG 3
+@text The dozens of rackets leaning against the bench all fall down with a dull thud...
+removeBG 0 0 2
+stopBGM
+cmd1 25
+playBGM 1
+@text And thus, we begin our game of tennis. I repeat the exact same match as last time, but because I'm so focused on searching for the bell later, I don't enjoy the game all that much. 
+@text ――Noon arrives. We eat the sandwiches that Saki made for lunch.  ... Is it my imagination?  Or are the ingredients in this sandwich
+@text different from last time...?
+removeBG 0 0 2
+cmd2 5
+bgload 00000000 EV_YU16A 0 4 0 0 2
+@setvar v_a0_fc = 13
+@setvar v_a0_fd = 33
+showClock
+playSFX 93 1
+@text After our lunch break, we resume the match. 
+@text In the afternoon, we do pair doubles, with "Yuka-Kurumi" VS "Saki-Okuhiko". 
+@text It's such a close match that I don't have the luxury to think about the bell anymore.
+@text ~
+playSFX 145 1
+bgload 00000000 EV_YU16C 0 4 0 0 2
+@text ――Is Saki doing better than last time? 
+@text She's really putting her back into the game; her returns to my smashes are powerful. 
+@text Now that I think about it, she did have quite the competitive spirit back in the day...
+removeBG 0 0 2
+stopSFX
+stopBGM
+@setvar v_a0_fc = 14
+@setvar v_a0_fd = 32
+showClock
+@text Before long, the climatic match ends (of course, with us winning), and Kurumi-chan and I leave the courts. 
+@text Saki, who lost the match, looks very disappointed... It seems she's going to play for a little while longer and take a crash course. 
+@text And Okuhiko-kun, who was with her, is now feeling miserable from his loss. 
+@text Because Okuhiko-kun reserved the entire place, the shower room is naturally empty. 
+@text After that intense match, taking a shower feels like heaven... 
+@text ... ... ...
+removeBG 0 0 2
+stopBGM
+bgload 00000000 BG12A 0 4 0 0 2
+playBGM 14
+@text Once Kurumi-chan and I finish changing clothes, we head for the shopping district. 
+@text Right now, the plan is for us to go to the gift shop. 
+@text As we descend the hill road, all I can think about is the bell. 
+@text (Will I be able to find it all right...?) 
+@text I really am anxious without Makoto here...
+bgload 00000000 BG13A 0 4 0 0 2
+@setvar v_a0_fc = 14
+@setvar v_a0_fd = 58
+showClock
+@text We come out on the coastline, and walk towards the east. 
+@text Moon Beach is a short distance away. 
+@text I can't help but get more and more anxious. 
+@text What if... I can't find the bell...? 
+@text Even if I tried to give Makoto my bell, there's no way he'd accept it... 
+@text Then when the 6th comes, Makoto will have no bell. 
+@text What if... What if an unexpected accident happens? What if Makoto's life is put in danger? 
+@text ... Then, Makoto will "really" die! 
+@text My anxiety is growing more and more. 
+@text As we continue, I gaze at the white, crescent shaped sandy beach. 
+@text What if someone picks it up before I do? No... should I go pick it up right now? 
+@text I've thought about this enough. 
+@text After all, I'll be changing history considerably. 
+@text Right now, should I go and find the bell first...? Or should I go shopping first like in the last history...? 
+@text A "fated choice" has arrived before me――――.     
+@choice Go shopping first.|Go look for the bell first.
+@setvar vap_seldt = selected
+@if seldt == 0
+@    goto ap_mazuha_kaimono
+@fi
+@goto ap_mazuha_suzu
+@label ap_mazuha_kaimono
+@text I decide to let history repeat itself in the order it went in last time. 
+@text 【Kurumi】 "Yuka-saaaan!!" 
+@text When I come to my senses, I see that Kurumi is far ahead of me. 
+@text I speed up and chase after Kurumi-chan.
+removeBG 0 0 2
+stopBGM
+bgload 00000000 BG11A 0 4 0 0 2
+@setvar v_a0_fc = 15
+@setvar v_a0_fd = 26
+showClock
+playBGM 1
+@text We arrive at the shopping district about the same time as we did last time. 
+@text And also like last time, we have fun shopping. 
+@text ... 
+@text Even though it's my second time, I still buy a large amount of stuff. 
+@text Right now, I've finished paying at the counter, with a large sake bottle I'm carrying in both my hands being placed into a paper bag. 
+@text I plan to have it shipped back home via delivery service. 
+@text Kurumi-chan is now at the counter, buying something. 
+@text While waiting for Kurumi-chan, I decide look around the shop's interior one more time. 
+@text Suddenly, my eye is caught by countless key chains dangling down from a nearby shelf. 
+@text (Oh, that's right...!) 
+@text This is where I bought that key chain last time. I didn't buy it for anyone else. It was a souvenir for me. 
+@text I approach the group of key chains as if they're luring me in. 
+@text And then, in order to find my target, I check every single one of the key chains. 
+@text ... 
+@text (F-Found it...!)
+bgload 00000000 ev_al05 0 4 0 0 2
+@text It's there that I see the key chain with the fat cat mascot attached to it dangling downwards. 
+@text I play around with the cat for a short time in my hand as feelings of nostalgia flood within me. 
+@text In the last loop, I traded the key chain for the bell. 
+@text Why do I find this key chain so captivating...? 
+@text (... That's right. I thought that it resembled something...) 
+@text (But what...?)
+bgload 00000000 BG11A 0 4 0 0 2
+fgload 0 00000000 KU02BA 1 3
+@text 【Kurumi】 "Thanks for waiting♪ We bought so much that they gave Kurumi some postage stamps for free♪"
+fgload 0 00000000 KU01BA 1 3
+@text 【Kurumi】 "...?? Is something wrong, Yuka-san?"
+moveFG 0 0
+fgload 1 00000000 YU01AA 2 3
+@text 【Yuka】 "Huh? Ah, I just thought that this was cute♪"
+fgload 0 00000000 KU07BA 0 3
+@text 【Kurumi】 "Wow, it looks like the spitting image of a cat in a manga Kurumi read."
+fgload 0 00000000 KU02BA 0 3
+@text 【Kurumi】 "It's name was Schrödy."
+fgload 1 00000000 YU08AA 2 3
+@text (A cat in a manga, huh...?)
+fgload 1 00000000 YU01AA 2 3
+@text (... Yeah, that might be it.)
+fgload 1 00000000 YU02AA 2 3
+@text 【Yuka】 "All right, I'm gonna buy this♪"
+removeAllFG 3
+@text 【Yuka】 "Excuse me, I'll take this!" 
+@text Of course, I intend to give this cat my own name... 
+@text An incredible name that can only come from my refined naming sense. 
+@text (Nice to meet you, Nin Nin Neko Pyon #2♪)
+stopBGM
+bgload 00000000 BG16A 0 4 0 0 2
+@setvar v_a0_fc = 15
+@setvar v_a0_fd = 56
+showClock
+playBGM 18
+playSFX 24 1
+@text The white, sandy beach curved in the shape of a bow is spread out before my eyes. 
+@text Or rather, the shore is more like the shape of a crescent moon... 
+@text It's as if the beach was carefully carved into its shape by the waves, like it was a wood sculpture. 
+@text Right now, I'm looking for the bell that should be washed up around here. 
+@text I see Kurumi a bit farther away from me. 
+@text In the end, I decided to get her help. 
+@text I lied to her, telling her that "I dropped a memento of my grandpa here." 
+@text This way, I think she'll certainly find it... 
+@text If I just do that much, I don't think it'll cause a big change to history... 
+@text I'm certain of it. 
+@text I'm certain that "We'll definitely find the bell"... 
+@text Before long...
+stopSFX
+stopBGM
+@text 【Kurumi】 "Found it!!"
+fgload 0 00000000 KU07BA 1 3
+@text 【Kurumi】 "Found it! Hey, Kurumi found it, Yuka-san♪" 
+@text She's holding something in her hand. 
+@text Said object shines in the sunlight. 
+@text ... It's the bell.
+playBGM 4
+@text 【Kurumi】 "Hey? Is this it? This is it, right, Yuka-san?"
+moveFG 0 0
+fgload 1 00000000 YU02AA 2 3
+@text 【Yuka】 "Yep! This is it, Kurumi-chan!!"
+fgload 0 00000000 KU02BA 0 3
+@text 【Kurumi】 "Really!? Yay, what a relief♪ Kurumi worked as hard as she could to find it!"  
+@text In Kurumi-chan's other hand, she holds two bent tree branches. 
+@text However, I have absolutely no clue how they could possibly be used to search for something.  
+@text 【Yuka】 "Yes, yes... You're a good girl, Kurumi-chan〜♪" 
+@text As a reward, I gently pat Kurumi-chan on the head.
+fgload 0 00000000 KU07BA 0 3
+@text 【Kurumi】 "Eheh♪"
+removeAllFG 3
+@text I accept the bell from Kurumi.
+@text ~
+playSFX 90 1
+@text The bell lands in my palm, making a high pitched sound.
+@goto ap_mazuha_ext
+@label ap_mazuha_suzu
+@setvar v_lf_lost_treasure = 1
+@text I decide to search for the bell first.
+fgload 0 00000000 YU01AA 1 3
+@text 【Yuka】 "Hey, Kurumi-chan?"
+moveFG 0 2
+fgload 1 00000000 KU01BA 0 3
+@text 【Kurumi】 "Hmm? What?" 
+@text 【Yuka】 "Umm... why don't you go shopping alone?"
+fgload 1 00000000 KU10BA 0 3
+@text 【Kurumi】 "Huh?" 
+@text 【Yuka】 "Um... I remembered that there's something important I have to do..." 
+@text 【Kurumi】 "Something important?" 
+@text 【Yuka】 "Err... um..." 
+@text 【Kurumi】 "?"
+fgload 0 00000000 YU08AA 2 3
+@text 【Yuka】 "I have to go look... for something I dropped." 
+fgload 1 00000000 KU01BA 0 3
+@text 【Kurumi】 "Something you dropped?" 
+@text 【Yuka】 "Yeah..." 
+@text 【Kurumi】 "What was it?" 
+@text 【Yuka】 "Th-That's..."
+fgload 1 00000000 KU02BA 0 3
+@text Kurumi-chan looks at me with an curious gaze that screams "What is it, what is it?" 
+@text 【Yuka】 "..." 
+@text 【Yuka】 "... It's a memento."
+fgload 1 00000000 KU11BA 0 3
+@text 【Kurumi】 "A-A memento!? O-Of who?" 
+@text 【Yuka】 "... M-My great grandfather..." 
+@text ... That's a lie. 
+@text My great grandfather is still alive in the countryside, lively as ever. 
+@text Hell, he's even over a 100 years old...
+fgload 1 00000000 KU06BA 0 3
+@text 【Kurumi】 "..." 
+@text (Did she see... through my lie...!?)
+stopBGM
+@text 【Kurumi】 "... Yuka-san?" 
+@text 【Yuka】 "Wh-What...?" 
+@text 【Kurumi】 "... Let Kurumi help."
+fgload 0 00000000 YU11AA 2 3
+@text 【Yuka】 "Huh?"
+playBGM 4
+fgload 1 00000000 KU07BA 0 3
+@text 【Kurumi】 "Kurumi's saying she'll help you out♪" 
+@text 【Kurumi】 "Because if it's something that important, then you absolutely need to find it!"
+fgload 0 00000000 YU01AA 2 3
+@text 【Yuka】 "..."
+fgload 1 00000000 KU01BA 0 3
+@text 【Kurumi】 "Isn't that right? Right?♪" 
+@text 【Yuka】 "... Y-Yeah."
+removeAllFG 3
+@text In the end, Kurumi-chan helps me look for the bell. 
+@text (... Hey, is this really all right...??) 
+@text I mutter these words in my mind as I turn towards the direction of the harbor.
+removeBG 0 0 2
+stopBGM
+bgload 00000000 BG16A 0 4 0 0 2
+playSFX 24 1
+@text And thus, the search for the bell begins. 
+@text I walk along the beach, relying on my vague memories. 
+@text My eyes are as wide as saucers as I scan the beach. 
+@text Shells and seaweed are washed ashore by the waves, only to be dragged back in. 
+@text Occasionally, I'll carefully excavate something buried in the sand. 
+@text ... The steady search continues to go on and on for nearly an hour.
+stopSFX
+@text ... ... ...
+removeBG 0 0 2
+playBGM 18
+bgload 00000000 BG16A 0 4 0 0 2
+@setvar v_a0_fc = 15
+@setvar v_a0_fd = 51
+showClock
+@text I can't find the bell... 
+@text We've searched so much, but we can't find it. 
+@text Has history really changed after all? 
+@text Did someone else pick it up...? 
+@text Or is it still at the bottom of the sea...? 
+@text Bad thoughts flood my head, leaving me with no room to think of anything else...
+fgload 0 00000000 YU08AA 1 3
+@text 【Yuka】 "Haah〜..." 
+@text I let out an involuntary sigh, and stretch myself out, my back tired from being bent this whole time. 
+@text I look around in an attempt to ignore my feelings.
+removeFG 0 3
+@text A short distance away from me, Kurumi-chan slowly paces around while holding two bent tree branches in her hands. 
+@text ...? 
+@text Could it be... that she's trying to use dowsing?? 
+@text Hmm... 
+@text But I don't think there's any meaning... in using tree branches... 
+@text ... Even so, Kurumi-chan is desperately searching. 
+@text Gradually, I feel my chest grow hotter and hotter. 
+@text She's doing everything she can to search for it... Even though it's something someone else dropped... 
+@text Inspired by her actions, I resume my search once again. 
+@text ... 
+@text ... Now that I think about it... 
+@text Now that I think about it, I feel like this happened in the past. 
+@text I was... searching for something very, very important... 
+@text That's right. At that time, I was also looking for something very important. 
+@text (At that time... umm...) 
+@text (What was I looking for...?) 
+@text ... I can't remember. 
+@text It feels like a rising bubble that stops just before it can reach the water's surface. 
+@text It's a memory of mine, but I barely remember anything... 
+@text However, there are two things alone that I clearly remember. 
+@text #1: That object was something I considered to be a treasure. 
+@text #2: In the end, I never found it. 
+@text A slightly cold wind blows by.
+stopBGM
+@text ... And, at that time! 
+@text 【Kurumi】 "Foooound it!!" 
+@text 【Yuka】 "What!?"
+fgload 0 00000000 KU07BA 1 3
+@text 【Kurumi】 "Found it! Hey, Kurumi found it, Yuka-san♪" 
+@text Kurumi-chan runs over to me, one of her hands stretched out. 
+@text She's holding something in that hand. 
+@text Said object shines in the sunlight. 
+@text ... It's the bell. 
+@text 【Yuka】 "..."
+playBGM 4
+@text 【Kurumi】 "Hey? Is this it? This is it, right, Yuka-san?" 
+moveFG 0 0
+fgload 1 00000000 YU02AA 2 3
+@text 【Yuka】 "... This is it." 
+@text 【Yuka】 "This is it! This is it, Kurumi-chan!!"
+fgload 0 00000000 KU02BA 0 3
+@text 【Kurumi】 "Really!? Yay, what a relief♪ Kurumi worked as hard as she could to find it!" 
+@text 【Yuka】 "Yes, yes... You're a good girl, Kurumi-chan〜♪" 
+@text I gently pat Kurumi-chan on the head.
+fgload 0 00000000 KU07BA 0 3
+@text 【Kurumi】 "Eheh♪" 
+@text I take the bell from Kurumi-chan.
+@text ~
+playSFX 90 1
+@text The bell lands in my palm, making a high pitched sound. 
+@text 【Yuka】 "With this, I can save..."
+fgload 0 00000000 KU11BA 0 3
+@text 【Kurumi】 "Huh?"
+fgload 1 00000000 YU11AA 2 3
+@text 【Yuka】 "Hmm? ... Ah-" 
+@text Crap... 
+@text 【Kurumi】 "... If you didn't find that memento, you wouldn't be able to save someone? From what? Death?"
+fgload 1 00000000 YU08AA 2 3
+@text 【Yuka】 "Y-Yeah..."
+fgload 0 00000000 KU01BA 0 3
+@text 【Kurumi】 "Who?" 
+@text 【Yuka】 "Th-That's..."
+fgload 0 00000000 KU02BA 0 3
+@text Kurumi-chan looks at me with an inquisitive gaze that screams "Who is it, who is it?" 
+@text 【Yuka】 "..." 
+@text 【Yuka】 "... My great-grandma."
+removeAllFG 3
+@text ... That's a lie. 
+@text My great-grandma died three years ago...
+@label ap_mazuha_ext
+removeBG 0 0 2
+stopBGM
+bgload 00000000 BG16A 0 4 0 0 2
+@setvar v_a0_fc = 16
+@setvar v_a0_fd = 0
+showClock
+playBGM 1
+@text 【Makoto】 "How's it going, Yuka? Did you find it?" 
+@text A little while later, Makoto comes to Moon Beach. 
+@text He told Haruka he had an errand to run, and left temporarily. 
+@text Despite what he said, I guess he was worried after all. 
+@text To have Makoto be that concerned for me is kinda embarrassing, but I can't help but crack a smile.
+fgload 0 00000000 YU10AA 1 3
+@text 【Yuka】 "Heh heh heh heh heh..." 
+@text 【Makoto】 "?"
+fgload 0 00000000 YU02AA 1 3
+@text 【Yuka】 "Ta-da♪" 
+@text I proudly show him the bell in my palm. 
+@text 【Makoto】 "Phew... this makes two lifel..." 
+@text As he tries to say this, Makoto notices Kurumi, and is taken aback. 
+@text (... Hmm? Oh, that's right...)
+fgload 0 00000000 YU01AA 1 3
+@text 【Yuka】 "Kurumi-chan also helped out." 
+@text 【Makoto】 "Huh!?"
+moveFG 0 2
+fgload 1 00000000 KU01BA 0 3
+@text 【Kurumi】 "Yuka-san said it was a memento of her great-grandpa, so..." 
+@text 【Kurumi】 "Kurumi looked very hard for it." 
+@text 【Makoto】 "Were you the one to find it, Kurumi?"
+fgload 1 00000000 KU03BA 0 3
+@text 【Kurumi】 "Yep♪" 
+@text 【Makoto】 "I see. You're a good girl..." 
+@text Makoto pats Kurumi-chan on the head.
+fgload 1 00000000 KU07BA 0 3
+@text 【Kurumi】 "Eheh♪" 
+@text 【Makoto】 "Well then, I've got to go back now." 
+@text 【Yuka】 "Right." 
+@text 【Makoto】 "See you later..."
+removeAllFG 3
+@text Makoto turns around. 
+@text Without a moment's delay, I immediately draw close to Makoto.
+fgload 0 00000000 YU01AB 1 3
+@text 【Yuka】 "Here..." 
+@text I whisper this very faintly into Makoto's ear, and place the bell in his palm. 
+@text From the way I'm standing, my back acts as a wall so that Kurumi-chan can't see us.
+fgload 0 00000000 YU02AB 1 3
+@text 【Yuka】 "This is yours... right?"
+removeFG 0 3
+@text I say this, and lightly tap Makoto on his shoulder. 
+@text With this, there's no longer anything to worry about... 
+@text 【Kurumi】 "Hold on, you two... What are you doing?" 
+@text The sound of her voice makes me jump, and I move away from Makoto.
+multifgload2 00000000 YU02AA 2 00000000 KU06BA 3
+@text 【Yuka】 "Nothing really. It's nothing, it's nothing." 
+@text 【Kurumi】 "It not nothing, is it? What you did just now was too suspicious!"
+fgload 0 00000000 YU01AA 2 3
+@text 【Yuka】 "You think so〜?"
+fgload 1 00000000 KU05BA 0 3
+@text 【Kurumi】 "Of course!" 
+@text Kurumi scrutinizingly glares at us while furrowing her brow. 
+@text 【Makoto】 "Well then, see you, Kurumi!" 
+@text Makoto departs, running away as fast as he can. 
+fgload 1 00000000 KU04BA 0 3
+@text 【Kurumi】 "Ah! Wait a minute, Onii-chan!"
+@if v_lf_lost_treasure == 0
+@	goto ap_treasure_al_get
+@fi
+removeBG 0 0 2
+stopBGM
+removeAllFG 3
+bgload 00000000 BG11A 0 4 0 0 2
+@setvar v_a0_fc = 16
+@setvar v_a0_fd = 37
+showClock
+playBGM 8
+@text After Makoto leaves, Kurumi-chan and I head towards the gift shop in the shopping district.  
+@text We arrive much later than the last time. 
+@text Nevertheless, we have fun shopping, just like last time. 
+@text ... 
+@text Even though it's my second time, I still buy a large amount of stuff. 
+@text Right now, I've finished paying at the counter, with a large sake bottle I'm carrying in both my hands being placed into a paper bag. 
+@text I plan to have it shipped back home via delivery service. 
+@text Kurumi-chan is now at the counter, buying something. 
+@text While waiting for Kurumi-chan, I decide look around the shop's interior one more time. 
+@text Suddenly, my eye is caught by countless key chains dangling down from a nearby shelf. 
+@text (Oh, that's right...!) 
+@text This is where I bought that key chain last time. I didn't buy it for anyone else. It was a souvenir for me. 
+@text I approach the group of key chains as if they're luring me in. 
+@text And then, in order to find my target, I check every single one of the key chains.
+stopBGM
+@text ... 
+@text (H-Huh...? Whaaaaat?) 
+@text But the key chain I bought back then isn't there. 
+@text (Is this the wrong shop...?) 
+@text (No... that's not it. It was definitely this one.) 
+@text I might have overlooked it. 
+@text I look for it one more time. 
+@text ... But I can't find it, no matter how many times I look. 
+@text The key chain with the fat cat mascot attached to it... I can't find Nin Nin Neko Pyon...
+fgload 0 00000000 YU01AA 1 3
+@text 【Yuka】 "Um, excuse me?" 
+@text 【Yuka】 "Do you have a key chain with a fat cat mascot attached to it here?" 
+@text I ask a passing store clerk. 
+@text There's no way that they'll know what I'm talking about. 
+@text Even so, it doesn't hurt to ask. 
+@text 【Clerk】 "Huh? ... Oh, that key chain?"
+fgload 0 00000000 YU11AA 1 3
+@text 【Yuka】 "!?" 
+@text 【Yuka】 "... Th-That's it. That's definitely it. Where is this it?" 
+@text 【Clerk】 "We're sold out." 
+@text ...!! 
+@text 【Yuka】 "... S-Sold out?" 
+@text 【Clerk】 "It's kind of a rare key chain, you see." 
+@text 【Clerk】 "If it's not there... then that means we've run out of stock."
+fgload 0 00000000 YU08AA 1 3
+@text 【Yuka】 "..."
+moveFG 0 2
+fgload 1 00000000 KU07BA 0 3
+@text 【Kurumi】 "Thanks for waiting♪ We bought so much that they gave Kurumi some postage stamps for free♪"
+fgload 1 00000000 KU01BA 0 3
+@text 【Kurumi】 "...?? What's wrong, Yuka-san?"
+removeAllFG 3
+@text ... 
+@text With all our business concluded, we leave the shop...
+removeBG 0 0 2
+bgload 00000000 BG14E 0 4 0 0 2
+@setvar v_a0_fc = 16
+@setvar v_a0_fd = 52
+showClock
+playBGM 9
+@text 【Yuka】 "..." 
+@text I walk with my shoulders slumped, heartbroken. 
+@text Kurumi-chan is at my side, clearly worried about me. 
+@text I feel depressed, as if there's a gaping wide hole in my heart... It's a tormenting feeling of loss. 
+@text It's probably because... of that key chain...
+fgload 0 00000000 KU10BAn 1 3
+@text 【Kurumi】 "Hey, what's wrong...?" 
+@text 【Kurumi】 "You've been totally down since the gift shop." 
+moveFG 0 0
+fgload 1 00000000 YU08AAn 2 3
+@text 【Yuka】 "That's... not true..."
+fgload 0 00000000 KU01BAn 0 3
+@text 【Kurumi】 "Yes it is... Kurumi's never seen you look this depressed before..." 
+@text 【Kurumi】 "It's about the same as you were on Moon Beach, when you were looking for that lost object of yours."
+removeAllFG 3
+stopBGM
+@text (...!?) 
+@text Lost object... 
+@text An important thing that I couldn't find... 
+@text My lost... treasure... 
+@text The bubble finally reaches the top of the water, the sleeping memory within me having been revived. 
+@text (That's it...!) 
+@text (That's why I wanted that key chain so much...)
+bgload 00000000 BG13E 0 4 0 0 2
+@setvar v_a0_fc = 17
+@setvar v_a0_fd = 10
+showClock
+playSFX 24 1
+@text We go out onto the paved road. 
+@text While doing so, we walk while talking about trivial things.
+fgload 0 00000000 KU07BAn 1 3
+@text 【Kurumi】 "And then, you see, Onee-chan..."
+removeFG 0 3
+@text Kurumi-chan laughs loudly. 
+@text She's having fun laughing at this random story.  
+@text But I still can't laugh like Kurumi-chan. 
+@text Because I remembered... 
+@text Because I came to this Seminar Camp, I remembered too much of my past. 
+@text One by one... One by one... 
+@text Back then, in that memory, I had talked to someone. 
+@text I was sad, unstable, and felt like I had been abandoned.
+fgload 0 00000000 KU01BAn 1 3
+@text 【Kurumi】 "Hey, Yuka-san?"
+moveFG 0 0
+fgload 1 00000000 YU01AAn 2 3
+@text 【Yuka】 "Hmm? What is it?"
+fgload 0 00000000 KU08BAn 0 3
+@text 【Kurumi】 "That key chain that was sold out... Was it really that special?"
+fgload 1 00000000 YU08AAn 2 3
+stopSFX
+@text 【Yuka】 "..." 
+@text 【Kurumi】 "Because ever since then, you've been acting really weird." 
+@text I stop walking. 
+@text Kurumi-chan comes to a halt. 
+@text For a little while, I'm a bit hesitant about whether or not I should talk about it... 
+@text 【Yuka】 "... That key chain was..." 
+@text ... But then I make up my mind to tell her. 
+@text 【Yuka】 "That key chain was..." 
+@text 【Yuka】 "... kinda the spitting image..." 
+@text 【Yuka】 "... of an important treasure from when I was young..." 
+@text 【Yuka】 "A small cat key chain..." 
+@text 【Kurumi】 "..." 
+@text 【Yuka】 "The cat on the key chain... was called 'Nin Nin Neko Pyon'..." 
+@text 【Yuka】 "Even though it was small, it wasn't cute at all..." 
+@text 【Yuka】 "It had this scratch on its forehead shaped like a cross or a shuriken, and it was pretty ugly."  
+@text 【Yuka】 "No, that scratch was exactly like a shuriken..."
+fgload 0 00000000 KU11BAn 0 3
+@text 【Kurumi】 "S-So you mean... the 'Nin Nin' part of it's name came from 'ninja'...?"
+fgload 1 00000000 YU01AAn 2 3
+@text 【Yuka】 "That's right."
+fgload 0 00000000 KU10BAn 0 3
+@text 【Kurumi】 "..." 
+@text 【Yuka】 "That cat key chain wasn't cute in the slightest, but..." 
+@text 【Yuka】 "... It was a precious treasure to me."
+fgload 0 00000000 KU01BAn 0 3
+playBGM 22
+@text 【Yuka】 "It was a very, very important treasure that I received from a special person..." 
+@text 【Yuka】 "I attached it to my backpack, and would go to school with it."
+fgload 1 00000000 YU08AAn 2 3
+@text 【Yuka】 "But then..." 
+@text 【Yuka】 "But then... one day, I lost it."
+fgload 0 00000000 KU08BAn 0 3
+@text 【Kurumi】 "Huh...?" 
+@text 【Yuka】 "In the past... when I was in first grade in elementary school, I had no sense of direction, so I would frequently get lost." 
+@text 【Yuka】 "That day, I was lost too." 
+@text 【Yuka】 "I was returning from school, and I hurried on home, as there was a TV show I really wanted to see that I had to make it in time for..." 
+@text 【Yuka】 "But when it seemed like I wouldn't make it in time... I thought to use a shortcut. It was a shortcut my friend told me about the previous day." 
+@text 【Yuka】 "But I didn't recognize that street at all, so before I knew it, I had wandered astray." 
+@text 【Yuka】 "... I was an idiot. I guess you could say I didn't know my limits..." 
+@text 【Yuka】 "In the end, I got lost, and forgot all about the TV show..." 
+@text 【Yuka】 "I continued to wander around these unknown places while crying like a baby." 
+@text 【Yuka】 "But..." 
+@text 【Yuka】 "I came to my senses... and before I knew it, I was standing in front of my house." 
+@text 【Yuka】 "And then... suddenly, I looked at my backpack..." 
+@text 【Kurumi】 "And the kitty key chain was gone...?" 
+@text 【Yuka】 "Yeah..." 
+@text 【Yuka】 "I must have dropped it while I was lost..." 
+@text 【Yuka】 "When I was wandering through the back alleys, my backpack rubbed against the walls, which is most likely when it happened." 
+@text 【Yuka】 "But at that time, I didn't suspect that the cat didn't come all the way home with me."
+fgload 0 00000000 KU01BAn 0 3
+@text 【Kurumi】 "Did you look for it after that?"
+fgload 1 00000000 YU01AAn 2 3
+@text 【Yuka】 "Of course I did." 
+@text 【Yuka】 "The next day, I brought along a friend who knew that shortcut well..." 
+@text 【Yuka】 "For hours and hours, we searched the area until it became pitch black outside."
+fgload 1 00000000 YU08AAn 2 3
+@text 【Yuka】 "But... we didn't find it." 
+@text 【Yuka】 "When the time came for me to go home, I had lost that small cat." 
+@text 【Yuka】 "And now... I've lost it again." 
+@text 【Yuka】 "That store clerk said they had that fat cat key chain, but..." 
+@text (And once again, I lost it as a result of the bell...) 
+@text 【Kurumi】 "..."
+fgload 0 00000000 KU10BAn 0 3
+@text 【Kurumi】 "... H-Huh?"
+fgload 1 00000000 YU01AAn 2 3
+@text 【Yuka】 "?" 
+@text 【Kurumi】 "Didn't you say earlier that 'those two key chains were the spitting image of each other'?" 
+@text 【Yuka】 "Yeah, I did." 
+@text 【Kurumi】 "But..." 
+@text 【Kurumi】 "But the first one was a small kitty, and the second one was a fat kitty, so they don't resemble each other at all, do they??"
+fgload 1 00000000 YU08AAn 2 3
+@text 【Yuka】 "..." 
+@text 【Yuka】 "When you put it that way... that's true." 
+@text 【Kurumi】 "'Th-That's true'?"
+fgload 1 00000000 YU04AAn 2 3
+@text 【Yuka】 "But... they're simliar!" 
+@text 【Yuka】 "When I first saw it, I definitely thought that they resembled each other!"
+fgload 1 00000000 YU08AAn 2 3
+@text 【Yuka】 "Even if their appearances are different..."
+fgload 0 00000000 KU08BAn 0 3
+@text 【Kurumi】 "... Yuka... san?" 
+@text (... That's right.) 
+@text (Even though they don't look alike... they're still spitting images.)
+removeBG 0 0 2
+stopBGM
+@goto ap_treasure_al_ext
+@label ap_treasure_al_get
+removeBG 0 0 2
+stopBGM
+removeAllFG 3
+bgload 00000000 BG16E 0 4 0 0 2
+@setvar v_a0_fc = 16
+@setvar v_a0_fd = 37
+showClock
+playSFX 24 1
+@text After Makoto leaves, Kurumi-chan and I stay at Moon Beach, gazing at the setting sun as we start to leave. 
+@text No matter how many times I see this sight, it always leaves a wonderful feeling in my heart... 
+@text The two of us continue to stare in a daze as if our souls have drifted out of our bodies, and when we come to our senses, we realize we've been there for at least an hour. 
+@text When we return to the lodge, the hands on the clock indicate that it's 6:00 P.M.
+removeBG 0 0 2
+stopSFX
+@label ap_treasure_al_ext
+bgload 00000000 BG02N 0 4 0 0 2
+@setvar v_a0_fc = 18
+@setvar v_a0_fd = 45
+showClock
+playBGM 8
+@text I sit down on the living room sofa, and let my thoughts wander.
+@if v_lf_lost_treasure == 0
+@	goto ap_treasure_time
+@fi
+@text I think it took us 15 minutes to arrive at the lodge.
+@label ap_treasure_time
+@text Just as predicted, Saki and Haruka's quarrel never happens... 
+@text While Izumi-san is making dinner in the kitchen, everyone passes the time as they please. 
+@text Haruka is sitting next to me, watching TV, while Saki stands by the window as she looks outside.  
+@text Kurumi-chan is sitting on the floor, in the middle of folding some origami. 
+@text Okuhiko-kun is lying in the loft, with an ice pack on his face. It seems that Makoto punched him... 
+@text Makoto is in the dining room, humming while setting the table. 
+@text The song he's humming is a recent and popular one. 
+@text But he's completely off-key, and so I desperately try to hold back my laughter... 
+@text He's painfully tone-deaf.
+@if v_lf_lost_treasure == 0
+@	goto ap_treasure_time2
+@fi
+@text Looking at this very peaceful scene causes the shock of losing the key chain to fade a little...
+@label ap_treasure_time2
+@text I casually walk over to the dining room.
+stopBGM
+bgload 00000000 BG32N 0 4 0 0 2
+@text 【Makoto】 "Hmm hmm hmm♪ Hmm hmhmm♪ Hmm hmmhmm hm hmmmm♪" 
+@text Makoto is taking out the plates and silverware, lining them up on the table. 
+@text I watch him do this. 
+@text I don't say a word to him. All I do... is silently watch him. 
+@text 【Makoto】 "Hmm? What is it, Yuka?"
+fgload 0 00000000 YU11AA 1 3
+@text 【Yuka】 "... Huh? No, umm..." 
+@text 【Makoto】 "Don't tell me... you're THAT persistent on wanting to help out with the cooking again?"
+fgload 0 00000000 YU08AA 1 3
+@text 【Yuka】 "..." 
+@text 【Makoto】 "That won't work. I tried offering my assistance to Izumi-san as well, but she refused me." 
+@text 【Makoto】 "... Huh? Am I wrong?" 
+@text 【Yuka】 "... Yes, you are..." 
+@text 【Makoto】 "Then what is it?" 
+@text 【Yuka】 "Umm, err..." 
+@text 【Makoto】 "??" 
+@text 【Yuka】 "I wanted... to talk for a bit..." 
+@text 【Makoto】 "..." 
+@text Makoto looks back and forth between the kitchen, living room. 
+@text Fortunately, no one is coming. 
+@text 【Makoto】 "... What's wrong? Are you worried about something?" 
+@text 【Yuka】 "... Th-That's not it..." 
+@text 【Makoto】 "..."
+removeFG 0 3
+playBGM 16
+@text Makoto quietly walks over to me. 
+@text Then he gently strokes my hair. 
+@text I lose the ability to move, as if I've suddenly come down with sleep paralysis. 
+@text Nevertheless, I feel shivers repeatedly running inside my body. 
+@text Right now, I feel both relief and anxiety. 
+@text Is it because of how well everything's been going so far...?
+fgload 0 00000000 YU08AB 1 3
+@text 【Yuka】 "... I'm...uneasy..." 
+@text I finally let those two words out... 
+@text Makoto touches my hair again, and slowly strokes it. 
+@text 【Makoto】 "... Don't worry." 
+@text 【Makoto】 "I'll take care of everything..." 
+@text 【Makoto】 "So it's all right... if you don't do anything..." 
+@text 【Makoto】 "You don't have to worry anymore..."
+removeFG 0 3
+@text Makoto's hand goes from my hair to my cheek... 
+@text 【Yuka】 "... Yes..." 
+@text I am embraced by nearly endless kindness... I can't help but feel... a great sensation of generosity... 
+@text I don't want to forget these feelings, or this warmth. 
+@text Just like that, I bury my face in Makoto's chest...
+stopBGM
+@text 【Saki】 "... Yuka? Hey, where are you, Yuka?"
+fgload 0 00000000 YU11AB 1 0
+@text 【Yuka】 "!!!!" 
+@text 【Makoto】 "!!!!"
+removeFG 0 3
+@text We reflexively separate ourselves from each other.
+fgload 0 00000000 SA01AA 1 3
+playBGM 3
+@text 【Saki】 "Ah, there you are... Geez, I was wondering just where you went..."
+fgload 0 00000000 SA02AA 1 3
+@text 【Saki】 "What is this, a date?" 
+@text 【Makoto】 "Y... You're wrong...! Yuka said she had free time, so... umm..." 
+@text 【Makoto】 "That's right! She just said she'd help me carry the dishes."
+moveFG 0 0
+fgload 1 00000000 YU11AA 2 3
+@text 【Yuka】 "Right, right, right... right, right!"
+fgload 0 00000000 SA01AA 0 3
+@text 【Saki】 "Hmm..." 
+@text 【Saki】 "Well, whatever. Anyway, can I talk to you for a bit, Yuka?"
+fgload 1 00000000 YU01AA 2 3
+@text 【Yuka】 "... Huh? Me?" 
+@text Saki slowly nods. 
+@text She looks like the way she did last night. 
+@text (Hmm... I wonder what she wants to talk about...?)
+removeBG 0 0 2
+stopBGM
+bgload 00000000 BG00N 0 4 0 0 2
+@setvar v_a0_fc = 19
+@setvar v_a0_fd = 3
+showClock
+playBGM 18
+@text We go outside the lodge. 
+@text It seems it's a conversation that "she doesn't want anyone to hear." 
+@text Our surroundings are completely dark, and I can't even see down the tip of the hill road right now. 
+@text The scenery has changed with the night――. 
+@text I know these words well from the time when I frequently got lost as a kid. 
+@text Surrounding the lodge are the thick trees. 
+@text The contours of those cedar trees are revealed by the light coming from the moon. 
+@text Saki has been looking at the moon the whole time we've been out here. 
+@text Finally, while still staring at the moon, Saki speaks.
+fgload 0 00000000 SA01AAn 1 3
+@text 【Saki】 "Yuka...? You've realized it, right? About Makoto-kun..."
+moveFG 0 0
+fgload 1 00000000 YU01AAn 2 3
+@text 【Yuka】 "... Huh?"
+fgload 0 00000000 SA08AAn 0 3
+@text 【Saki】 "Makoto-kun... resembles... him." 
+@text 【Saki】 "That boy... who was in the same class as us in 9th grade..."
+fgload 1 00000000 YU11AAn 2 3
+@text 【Yuka】 "...!!!"
+fgload 0 00000000 SA01AAn 0 3
+@text 【Saki】 "You probably think that too, don't you...?" 
+@text Saki firmly stares at me.
+fgload 1 00000000 YU08AAn 2 3
+@text 【Yuka】 "I-I..." 
+@text 【Yuka】 "I... have no clue what you-"
+fgload 0 00000000 SA06AAn 0 3
+@text 【Saki】 "Liar!" 
+@text 【Saki】 "You're lying."
+fgload 1 00000000 YU11AAn 2 3
+@text 【Yuka】 "Wh-Why do you say that...?" 
+@text 【Saki】 "Because you didn't look at me in the eye." 
+@text 【Saki】 "I know full well that you avoid looking into people's eyes when you're lying."
+fgload 1 00000000 YU08AAn 2 3
+@text 【Yuka】 "..."
+fgload 0 00000000 SA10AAn 0 3
+@text 【Saki】 "If I've realized it, then you've definitely noticed it as well." 
+@text 【Saki】 "Because... you loved that boy..." 
+@text 【Yuka】 "..."
+fgload 0 00000000 SA01AAn 0 3
+@text 【Saki】 "I noticed it too... but at the start, I was dubious..." 
+@text 【Saki】 "Every time I talked to Makoto-kun, I kept thinking 'there's no mistaking it'." 
+@text 【Saki】 "The trigger to all of this was that dispute at Lunabeach." 
+@text 【Saki】 "When we quarreled about the pizza incident..."  
+@text 【Saki】 "In middle school, I got into a quarrel with that boy..." 
+@text 【Saki】 "You remember it too, don't you, Yuka...?"
+@if v_lf_asakura_haruka < 1
+@	goto ap_thru_asakura
+@fi
+@text 【Saki】 "That time, the boy protected a girl." 
+@text 【Saki】 "That girl wasn't Haruka-chan, but you..."
+@label ap_thru_asakura
+@text 【Yuka】 "..."
+removeBG 0 0 2
+@text 【Saki】 "And then that boy said..." 
+@text 【Saki】 "'You should loosen up more. That tiresome way of life doesn't suit you'..."  
+@text 【Saki】 "And then... Makoto-kun said the same thing..."  
+@text 【Saki】 "When that happened, I thought 'there's only one other person in the world who talked to me like that'..." 
+@text (... Now that she mentions it, I do have a vague memory of it...) 
+@text 【Saki】 "I then started to want to know just how much Makoto-kun resembled him..."
+bgload 00000000 BG00N 0 4 0 0 2
+multifgload2 00000000 YU11AAn 2 00000000 SA01AAn 3
+@text 【Yuka】 "... It can't be... that that's why you went out shopping with him...?" 
+@text 【Yuka】 "Back then, did you fall... on purpose?"
+fgload 1 00000000 SA08AAn 0 3
+@text 【Saki】 "..." 
+@text 【Saki】 "At first, I didn't plan that. I was just interested in Makoto-kun... Oh, I don't mean in a romantic way or anything like that." 
+@text 【Saki】 "But on the way back, we had a little accident..."
+removeBG 0 0 2
+cmd1 32
+bgload 00000000 EV_SA11 0 4 0 0 2
+@text 【Saki】 "I'm not very good with speedy vehicles... particularly bicycles..." 
+@text 【Saki】 "When Makoto-kun saw how scared I was, he thought it'd be funny if he went fast..." 
+@text 【Saki】 "Pretty nasty thing for him to do, in hindsight..." 
+@text 【Saki】 "But anyway... I had no clue what happened next..." 
+@text 【Saki】 "When I came to, I was holding down Makoto-kun's face... it seems I was blocking his eyes..." 
+@text 【Yuka】 "... And so Makoto lost control of the bike, and it fell...?"
+removeBG 0 0 2
+cmd2 13
+playSFX 63 1
+@text 【Saki】 "Right. The bike was completely messed up, but fortunately, our injuries weren't major." 
+@text 【Saki】 "It occured me that I could use this opportunity to get to know more about Makoto-kun..."
+@if v_lf_liar_liar == 1
+@	goto ap_liar_echo
+@fi
+@goto ap_liar_notecho
+@label ap_liar_echo
+@text 【Yuka】 "So that's why... you pretended your foot was hurt...?" 
+@text 【Saki】 "That's right..."
+@goto ap_liar_ext
+@label ap_liar_notecho
+@text 【Saki】 "I pretended that my foot hurt... saying, 'I can't walk because it hurts'." 
+@text 【Yuka】 "Huh...? That was a lie...??" 
+@text 【Saki】 "Well, yeah..."
+@label ap_liar_ext
+bgload 00000000 BG00N 0 4 0 0 2
+fgload 0 00000000 SA01AAn 1 3
+@text 【Saki】 "A girl who couldn't move, or the heavy shopping bags..." 
+@text 【Saki】 "I wanted to see how he'd cope with the situation and which one he would pick in a situation like that..." 
+@text 【Saki】 "Well, if he was a normal guy, he'd have put priority over the girl." 
+@text 【Yuka】 "But... at that time, everyone was at Lunabeach, waiting for the rice to arrive..." 
+@text 【Saki】 "Right..." 
+@text 【Saki】 "And then... I got worried after that, asking Makoto-kun what the hell he was thinking..."
+fgload 0 00000000 SA10AAn 1 3
+@text 【Saki】 "'It's only common sense'." 
+@text 【Yuka】 "..." 
+@text 【Saki】 "And that... was his answer..."
+fgload 0 00000000 SA01AAn 1 3
+@text 【Saki】 "There's no doubting it... Makoto-kun is exactly like that boy..." 
+@text 【Saki】 "You're the one who should know that the best, Yuka." 
+@text 【Yuka】 "..." 
+@text 【Saki】 "Since then, I've paid close attention to Makoto-kun's words and actions." 
+@text 【Saki】 "And I've grown more and more convinced." 
+@text 【Saki】 "His casual way of talking and his gestures are spot on." 
+@text 【Yuka】 "But... But his face and voice don't resemble him at all..." 
+@text 【Saki】 "A 'spitting image' who doesn't look like the other... The definition of a 'spitting image' is an unrelated stranger with an accidental, lifelike resemblance of someone else..." 
+@text 【Saki】 "The words of this theory don't really matter in this case..." 
+@text 【Saki】 "Just the most important part, which is 'an unmistakable resemblance'." 
+@text 【Saki】 "Those two are just too much alike..." 
+@text 【Saki】 "... Yes... it's like they're twins." 
+@text (Twins...) 
+@text 【Saki】 "Hey, Yuka? Let me change the topic slightly..." 
+@text 【Saki】 "Are you... over him? That boy, I mean..." 
+@text 【Yuka】 "..."
+moveFG 0 0
+fgload 1 00000000 YU13AAn 2 3
+@text 【Yuka】 "... I'm fine now... I've already forgotten a lot about him..." 
+@text (What a liar I am...) 
+@text (I haven't forgotten him at all...) 
+@text (Even now... I still remember... everything about him...) 
+@text 【Yuka】 "I'm... fine now..." 
+@text (That's... definitely all I want to think about...!) 
+@text 【Saki】 "I see..."
+removeFG 1 3
+@text 【Yuka】 "..."
+fgload 0 00000000 SA02AAn 0 3
+@text 【Saki】 "I'm relieved to hear that." 
+@text 【Saki】 "Now I can confirm it for myself without the need to hesitate..." 
+@text 【Yuka】 "Huh?" 
+@text 【Yuka】 "... Wh-What do you mean...?"
+removeFG 0 3
+@text 【Saki】 "..." 
+@text Saki says nothing, and turns around. 
+@text She walks away, leaving behind wisps of a sweet aroma. 
+@text I know that I've sniffed that aroma before... 
+@text I stand stock still, unable to understand Saki's words. 
+@text 【Saki】 "Ah... that's right..." 
+@text Saki says this in front of the lodge's staircase without turning around. 
+@text 【Saki】 "I forgot to say this..." 
+@text 【Saki】 "I also..."
+stopBGM
+@text 【Saki】 "I also... loved that boy..."
+removeBG 0 0 2
+bgload 00000000 BG32N 0 4 0 0 2
+@setvar v_a0_fc = 19
+@setvar v_a0_fd = 52
+showClock
+playBGM 14
+@text Like last time, Izumi-san has made curry for dinner. 
+@text Unfortunately, the food has no flavor to me. 
+@text Saki's words are running around and around in my head over and over again... 
+@text I continue to think about the meaning of those words, not eating a bite... 
+@text "Makoto-kun is exactly like that boy." 
+@text "Are you... over him? That boy, I mean..." 
+@text Why did she need to ask me that? 
+@text Saki has nothing to gain from that... 
+@text "Now I can confirm it for myself without the need to hesitate..." 
+@text What...? What is she going to confirm...? 
+@text "I also... loved that boy..." 
+@text I didn't know... 
+@text I had no idea... that Saki felt that way... 
+@text I had no idea... 
+@text But why tell me now, of all times? 
+@text I don't... I don't understand you... Saki... 
+@text Or is it that I'm not trying to understand...? 
+@text It feels like there's a slicing pain in my chest... 
+@text I look back and forth between Makoto and Saki. 
+@text Makoto is eating the meal with great vigor. 
+@text Saki eats her meal with an unconcerned face. 
+@text ... Just then, Makoto's eyes fix on me. 
+@text A worried expression rises to Makoto's face, and it looks like he wants to open his mouth and say something...
+fgload 0 00000000 KU07BA 1 3
+@text 【Kurumi】 "Hey, Kurumi just got a good idea."
+fgload 0 00000000 KU02BA 1 3
+@text 【Kurumi】 "There's an old graveyard close by♪" 
+@text 【Kurumi】 "How about having a Test of Courage there!!?"
+removeFG 0 3
+@text ...
+@text ~
+removeBG 0 0 2
+stopBGM
+delay 60
+bgload 00000000 BG28N 0 4 0 0 2
+@setvar v_a0_fc = 20
+@setvar v_a0_fd = 4
+showClock
+playBGM 11
+@text We're in the dim forest, walking towards the abandoned graveyard. 
+@text I completely forgot... that tonight was the Test of Courage. 
+@text As usual, I'm not looking forward to it... 
+@text Is it because I'm scared...? Or is that I don't feel like having fun...? 
+@text I'm still thinking, after all. About the meaning of Saki's words, that is. 
+@text ... 
+@text As I keep coming up with no answer, I look for Makoto... 
+@text I don't know why I am. It's just that right now, I need Makoto. 
+@text The reason doesn't matter. 
+@text ... 
+@text Makoto's back... 
+@text After a little while, I find Makoto. 
+@text However...
+stopBGM
+@text (――What!?) 
+@text Walking beside Makoto is Saki. 
+@text They're talking about something... Unfortunately, I can't make any of it out. 
+@text (Could it be that this is what Saki meant when she said "confirm"...?) 
+@text Makoto says something. When she hears it, Saki looks surprised, but smiles a second later. 
+@text And then, after exchanging a few more words, she leaves Makoto. 
+@text Makoto seems to be thinking about something. 
+@text Just what was it that they were talking about...? 
+@text Could they just have been having a normal conversation? Or was there more to it than that...? 
+@text I don't know, but I don't want to try to learn either.
+fgload 0 00000000 IZ01BAn 1 3
+@text 【Izumi】 "Huh? What's wrong, Yuka-chan? You're just standing around..." 
+@text 【Yuka】 "..."
+playSFX 41 1
+fgload 0 00000000 IZ11BAn 1 3
+@text 【Izumi】 "Ah, Yuka-chan!?"
+removeFG 0 3
+@text ――I suddenly break of into a run. 
+@text Run away, run away... I keep running away... 
+@text But... 
+@text (But where would I even go...?)
+removeBG 0 0 2
+stopSFX
+playBGM 9
+cmd1 25
+@text I don't really remember much of what happens after that... I have fragmented memories of what happened, but not that much.  Makoto and Saki paired up. I was paired up with Izumi-san. 
+@text As I was confused, I mistook a puppy that jumped out of a bush for a severed head.  ... Those three things are all I remember... 
+@text By the time I've come to my senses, I'm lying down on the sofa in the lodge.  Makoto said he was tired and went to his room. Saki had some business to attend to, so she went back to her summer house. 
+@text I have no clue what kind of conversation those two had during the Test of Courage. 
+@text The others are all going to the hot springs now. However, it seems only Kurumi is staying behind in the lodge to watch TV. 
+@text I decide to go with the others to the hot springs.  My mind is exhausted, so I'm hoping this will calm me down...
+removeBG 0 0 2
+cmd2 5
+bgload 00000000 BG22N 0 4 0 0 2
+cmd1 23
+@setvar v_a0_fc = 22
+@setvar v_a0_fd = 0
+showClock
+@text While soaking in the milky white hot spring, I think about Saki and Makoto. 
+@text The reason that Saki is obsessed with Makoto...  
+@text I already understand that and why. 
+@text No, I really knew it from the beginning. 
+@text I just pretended not to notice so that I could postpone the answer... 
+@text Saki said she loved that boy. 
+@text And she said that she's convinced that Makoto resembles that boy. 
+@text Then... 
+@text Then Saki... 
+@text (... definitely loves Makoto...) 
+@text My heart beats with a painful sound. 
+@text ... Why am I so bothered by those two? 
+@text I shouldn't care. I should just be at ease and ignore it. 
+@text But I... can't think like that... 
+@text Unpleasant feelings are stirring around in my heart.
+@text ~
+cmd2 3
+removeBG 0 0 2
+stopBGM
+delay 60
+bgload 00000000 BG22N 0 4 0 0 2
+cmd1 24
+@setvar v_a0_fc = 22
+@setvar v_a0_fd = 12
+showClock
+@text I sit down at the edge of the bath while cooling off my hot body with the pleasantly cool night air. 
+@text My mind is blank. 
+@text I might have spent too much time submerged in the water. 
+@text But thanks to that, the discomfort I felt earlier has considerably lessened. 
+@text I vacantly stare up at the twinkling sky without reason. 
+@text The crowded stars in the pitch black night sky look like jewels all encased together. 
+@text It's no match for the sky that Makoto and I gazed at that one night. 
+@text Even so, my heart trembles from its beauty.
+fgload 0 00000000 IZ02DA 1 3
+playBGM 5
+@text 【Izumi】 "Are you okay, Yuka-chan?" 
+@text 【Yuka】 "... Oh, Izumi-san." 
+@text 【Yuka】 "I felt a little faint, so I thought I'd come here and cool down..." 
+@text 【Izumi】 "I see..."
+removeFG 0 3
+@text Izumi-san quietly sits down besides me.
+fgload 0 00000000 IZ08DB 1 3
+@text 【Izumi】 "... Yuka-chan, your face has been kind of pale since dinner... Did something happen?" 
+@text 【Yuka】 "..."
+fgload 0 00000000 IZ01DB 1 3
+@text 【Izumi】 "Is it anything that you could discuss with me?" 
+@text 【Yuka】 "..."
+removeFG 0 3
+@text I look at my feet, soaking in the water, and I gaze up at the sky one more time. 
+@text The white steam is inhaled by the black sky and begins to disappear... 
+@text While looking up at the starry sky, I sway my feet back and forth in the water. 
+@text ... I quietly open my mouth. 
+@text 【Yuka】 "The stars..."
+fgload 0 00000000 IZ11DB 1 3
+@text 【Izumi】 "Huh?" 
+@text 【Yuka】 "The stars... They're pretty, aren't they?"
+fgload 0 00000000 IZ01DB 1 3
+@text 【Izumi】 "..."
+fgload 0 00000000 IZ02DB 1 3
+@text 【Izumi】 "You're right..." 
+@text 【Yuka】 "Do you remember the conversation we had at the pool?"
+fgload 0 00000000 IZ10DB 1 3
+@text 【Izumi】 "Umm..." 
+@text 【Yuka】 "... About spitting images."
+fgload 0 00000000 IZ01DB 1 3
+@text 【Izumi】 "Yes..." 
+@text 【Yuka】 "The truth is... I've recently met a person like that." 
+@text 【Yuka】 "That person is the spitting image of a classmate of mine from middle school." 
+@text 【Izumi】 "If I recall correctly... you mentioned something about them not physically resembling each other..." 
+@text 【Yuka】 "Yes..." 
+@text 【Yuka】 "I met that boy for the first time when he ended up in the same class as me in middle school. In 9th grade, to be precise..." 
+@text 【Yuka】 "I have a lot of memories of him." 
+@text 【Yuka】 "It was the first semester of 9th grade." 
+@text 【Yuka】 "Thinking about it now, that was probably the brightest season in my life so far..." 
+@text 【Yuka】 "It was the best time of my life..." 
+@text 【Yuka】 "They were days overflowing with great surprises and delights..."
+removeFG 0 3
+@text I gently raise my arm and point at the southern skies. 
+@text Izumi-san's gaze follows my finger. 
+@text 【Yuka】 "... That's Leo." 
+@text In the wide spring night sky, there's many constellations. There's one that looks like an inside out "?" The one I'm pointing to is in between Virgo and Cancer. 
+@text 【Yuka】 "It's my sign..." 
+@text 【Yuka】 "Even now, there's one memory that I can't forget..." 
+@text The rising steam wavers, making it look like the sky filled with jewels is swaying. 
+@text It's as if it's inviting me to go back to my past...
+stopBGM
+@text ...
+playBGM 22
+@text 【Yuka】 "It was June of 2013, in 9th grade... the night of our field trip." 
+@text 【Yuka】 "I was in a different environment than usual, seeing a different scenery than usual..." 
+@text 【Yuka】 "I couldn't adjust to that kind of atmosphere, and so I had a lot of trouble falling asleep that night." 
+@text 【Yuka】 "I was surrounded by my classmates." 
+@text 【Yuka】 "Everyone was engaged in trivial conversations, and before I knew it, they had all fallen asleep." 
+@text 【Yuka】 "I was left alone, staring at an unfamiliar ceiling..." 
+@text 【Yuka】 "Before long, I casually made my way out of the covers and gazed outside the window. 
+@text 【Yuka】 "There were many beautiful stars..." 
+@text 【Yuka】 "And then, I snuck past all the teachers on guard and went outside the hotel." 
+@text 【Izumi】 "Oh my..." 
+@text 【Yuka】 "I looked up at that beautiful night sky while intoxicated by a sense of achievement of having successfully snuck out." 
+@text 【Yuka】 "And then, I suddenly felt someone's presence behind me, so I frantically turned around." 
+@text 【Yuka】 "I thought that I'd surely been found by a teacher." 
+@text 【Yuka】 "But the one there was neither a teacher nor a stranger..." 
+@text 【Izumi】 "... Was it that boy?" 
+@text 【Yuka】 "Yes..." 
+@text 【Yuka】 "When I asked him 'why are you here?', he said that 'I couldn't sleep at all' with a bitter smile." 
+@text 【Izumi】 "You two were quite similar..." 
+@text 【Yuka】 "I wonder about that...?" 
+@text 【Yuka】 "... We stood next to each other, and gazed at the stars." 
+@text 【Yuka】 "While doing so, we made no conversation at all, and so I felt awkward and nervous." 
+@text 【Yuka】 "And then, that boy suddenly called out to me, saying..." 
+@text 【Yuka】 "'Yuka, what's your sign?'" 
+@text ...
+@text ~
+cmd2 4
+removeBG 0 0 2
+delay 60
+cmd1 32
+bgload 00000000 BG30N 0 4 0 0 2
+@text 【Boy】 "Yuka, what's your sign?" 
+@text 【Yuka】 "Huh?" 
+@text 【Boy】 "You know, your Zodiac sign... like Aries, Virgo-" 
+@text 【Yuka】 "A-Ah... right, right..." 
+@text 【Yuka】 "I'm... a Leo, I think?" 
+@text 【Boy】 "A Leo... huh..." 
+@text 【Boy】 "Unfortunately, you can't see it, but if it were April, it'd appear right around here." 
+@text 【Yuka】 "..." 
+@text 【Boy】 "Leo... That's the constellation of the man-eating lion that Hercules exterminated in the Nemean Forest." 
+@text 【Yuka】 "M-Man-eating... lion??" 
+@text 【Boy】 "Yeah." 
+@text 【Yuka】 "That's not romantic at all〜..." 
+@text 【Boy】 "H-Hey, I'm not the one who made it up..." 
+@text 【Yuka】 "Then what about you? What's your sign?" 
+@text 【Boy】 "Mine? Mine's..." 
+@text ... The boy then told me the mythology behind many of the constellations, including his own. 
+@text He had a clear, soft, and gentle voice... 
+@text 【Yuka】 "Mmm... the myths surrounding the 12 constellations aren't very romantic stories." 
+@text 【Yuka】 "Nothing but exterminations, transformations, hunts, and so on..." 
+@text 【Boy】 "... You're quite selfish." 
+@text 【Yuka】 "But it's true. Those are all just boring stories..." 
+@text 【Boy】 "..." 
+@text 【Boy】 "... All right. Well then, oh selfish princess, I shall tell you a romantic story!" 
+@text 【Yuka】 "Yep, that's much better♪" 
+@text 【Boy】 "Geez, you really are a selfish girl..." 
+@text 【Boy】 "This is also about a constellation you can't see in this season..." 
+@text 【Yuka】 "Which constellation?" 
+@text 【Boy】 "..." 
+@text 【Boy】 "Gemini." 
+@text 【Yuka】 "..." 
+@text 【Boy】 "... In the past, there were these twin brothers who got along very well." 
+@text 【Boy】 "Their names were Castor and Pollux." 
+@text 【Boy】 "The two of them were the sons of the supreme god Zeus, who had transformed into a swan, and the Queen of Sparta, Leda." 
+@text 【Boy】 "The older brother, Castor, was mortal, and a master of fencing. The younger brother, Pollux, was immortal, on top of also being a master of boxing and horse riding..." 
+@text 【Boy】 "But during a war, Castor was hit by a stray arrow and died..." 
+@text 【Yuka】 "Geez〜, ANOTHER death!?" 
+@text 【Boy】 "It's fine, just be quiet and listen until the end! The story's not over yet." 
+@text 【Yuka】 "Ugh..." 
+@text 【Boy】 "Pollux grieved over the death of his brother, and tried to die with him as well..." 
+@text 【Yuka】 "..." 
+@text 【Boy】 "The two of them were so close that they were always together, no matter what time." 
+@text 【Boy】 "They had been born together at the same time... So likewise..." 
+@text 【Yuka】 "They wanted to die at the same time...?" 
+@text 【Boy】 "Yeah." 
+@text 【Yuka】 "..." 
+@text 【Boy】 "But Pollux was immortal, so no matter how hard he tried, he couldn't die." 
+@text 【Boy】 "And so Pollux made a request to Zeus." 
+@text 【Boy】 "'Please take away my immortality'." 
+@text 【Yuka】 "..." 
+@text 【Boy】 "Zeus pitied Pollux, who had been left all alone, and so he... granted that wish." 
+@text 【Boy】 "And then, the two of them went up to the heavens together... and became a constellation that shines in the winter skies..." 
+@text 【Yuka】 "..." 
+@text 【Boy】 "... Well?" 
+@text 【Yuka】 "..." 
+@text 【Boy】 "...?" 
+@text 【Yuka】 "... What part of that was romantic...?" 
+@text 【Boy】 "Hmm... I wanted you to feel the beautiful brotherly love between them, but..." 
+@text 【Boy】 "I see. If you didn't feel any romance, then it's clearly because you're not sensitive enough." 
+@text 【Yuka】 "W-Why you!" 
+@text The boy laughed as he saw me pout my lips. 
+@text When I heard that innocent laugh of his, I laughed too. 
+@text In that cool night, our hearts were full of warmth... 
+@text ...
+@text ~
+removeBG 0 0 2
+cmd2 13
+delay 60
+bgload 00000000 BG22N 0 4 0 0 2
+cmd1 24
+@text 【Yuka】 "... I loved that boy..." 
+@text 【Yuka】 "I really did..." 
+@text 【Yuka】 "But... in the end, I was never able to convey my feelings..." 
+@text 【Izumi】 "... I see." 
+@text 【Yuka】 "Before long, that boy's spitting image, a different guy, appeared before me..." 
+@text 【Yuka】 "Even though his face and voice are different, I think that person... is his spitting image." 
+@text 【Yuka】 "Before I realized it, I became conscious of this person." 
+@text 【Izumi】 "..."
+fgload 0 00000000 IZ01DB 1 3
+@text 【Izumi】 "Yuka-chan, have you... fallen in love with this person?" 
+@text 【Yuka】 "..." 
+@text 【Yuka】 "I don't know..." 
+@text 【Yuka】 "But..." 
+@text 【Yuka】 "... probably..." 
+@text 【Yuka】 "But is it all right to fall in love with someone like this..." 
+@text 【Izumi】 "..."
+fgload 0 00000000 IZ02DB 1 3
+@text 【Izumi】 "I think it's all right..." 
+@text 【Izumi】 "I don't think it matters how you start to fall in love with someone..." 
+@text 【Izumi】 "The most important thing is if you feel the same for each other." 
+@text 【Izumi】 "No matter how much he resembles him, he is not that boy..." 
+@text 【Yuka】 "..." 
+@text 【Izumi】 "The rest depends on your feelings and his feelings, right?"
+fgload 0 00000000 IZ07DB 1 3
+@text 【Izumi】 "But I think that Makoto-kun definitely loves you too." 
+@text 【Yuka】 "..."
+stopBGM
+@text 【Yuka】 "... Huh?"
+removeFG 0 3
+fgload 0 00000000 IZ07DA 1 3
+playBGM 5
+@text 【Izumi】 "Well then, I guess it's about time for me to get out now."
+moveFG 0 0
+fgload 1 00000000 YU11DA 2 3
+@text 【Yuka】 "I-Izumi-san!? Why do you think it's Makoto!?"
+fgload 0 00000000 IZ12DA 0 3
+@text 【Izumi】 "Well now, I wonder that myself〜♪"
+removeFG 0 3
+@text With a face that says "I can see through everything♪", Izumi-san goes to change her clothes. 
+@text 【Yuka】 "..."
+removeAllFG 0
+playSFX 123 1
+@text With a splash, I sink my whole body up to my nose in the water.
+stopSFX
+@text Blood gradually rushes into my head. 
+@text (How did she see through me so easily...?) 
+@text I mutter this in the bath as I get warmer and warmer. 
+@text The stars in the sky all twinkle together, as if they're laughing at me...
+@text ~
+cmd2 4
+removeBG 0 0 2
+stopBGM
+delay 60
+jump c_yuka4.snr
+returnTitle

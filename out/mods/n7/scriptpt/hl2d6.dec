@@ -1,0 +1,2759 @@
+[00000188]  0: 
+[00000189]  a: condJump 00 VAR_(28_1e)_a0_fb (28) != (15) (85)->5 (15) (00)  * 000001ad (0003)
+[00000197] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 6
+[000001a2] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 6
+[000001ad] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[000001b9] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[000001c5] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 6
+[000001d0]  0: 
+[000001d1]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 000001e5 (0004)
+[000001df] 10: 
+[000001e0] 1c: cmd1C
+[000001e1]  0: 
+[000001e2]  7: goto7 000001f0 (0005)
+[000001e5] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[000001f0]  0: 
+[000001f1]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 00000201 (0007)
+[000001ff] 10: 
+[00000200] 18: cmd18
+[00000201] 10: 
+[00000202] 1b: dayIntro 00000000 BGCAL6.cps
+[00000209] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 111
+[00000215] 10: 
+[00000216] 10: bgload 00000000 BG13ZNR 0 1
+[00000223] 10: 
+[00000224]  1: cmd1 26
+[00000229] 10: 
+[0000022a]  1: cmd1 19
+[0000022f] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 0
+[0000023a] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 36
+[00000246] 10: 
+[00000247] 17: showClock
+[00000248] 10: 
+[00000249] 19: 
+[0000024a] ff: text 00
+{textColor 0 2}Plop...{delay 5}{delay 5} When I come to my senses, it has begun to rain. 
+
+
+[0000024d] 10: 
+[0000024e]  8: playSFX SE030 0
+[00000258] 10: 
+[00000259] 19: 
+[0000025a] ff: text 01
+{textColor 0 2}As if that first drop were a signal, innumerable raindrops come falling from the sky all at once. 
+{textColor 0 2}My clothes get wet and cling to my skin, freezing my whole body. 
+{textColor 0 2}The rain crashing down on the asphalt becomes a thin fog, and the cold, wet air pierces my nose. 
+{textColor 0 2}This is exactly the same smell from that time.  {textColor 0 2}The smell from...{delay 5}{delay 5} that day of pouring rain. 
+{textColor 0 2}Haruka's...{delay 5}{delay 5} Haruka's...{delay 5}{delay 5} in the middle of this intense downpour... 
+{textColor 0 2}My heart feels like it's been crushed. 
+{textColor 0 2}My impatience has grown so strong that I can't even breathe very well. 
+{textColor 0 2}If I find Haruka quickly, then...  {textColor 0 2}she won't...{delay 5}{delay 5} she won't...{delay 5}{delay 5} she won't... 
+
+
+[0000025d] 10: 
+[0000025e] 19: 
+[0000025f] ff: text 02
+{textColor 0 2}... ... ... 
+
+
+[00000262] 10: 
+[00000263]  9: stopSFX
+[00000264]  0: 
+[00000265]  5: delay 60
+[0000026a] 10: 
+[0000026b]  2: cmd2 0
+[0000026f] 10: 
+[00000270]  6: playBGM 2
+[00000274] 10: 
+[00000275] 11: fgload 0 00000000 HA12AAN 1 3
+[00000285] 10: 
+[00000286] 19: 
+[00000287] ff: text 03
+{textColor 0 2}――!? 
+{textColor 0 2}That's not an illusion. 
+{textColor 0 2}As if bathing in the rain, Haruka stands on the shoreline road with her head lifted and her arms spread out. 
+{textColor 0 0}【Makoto】 "Haruka..." 
+{textColor 0 0}【Makoto】 "Haruka..." 
+{textColor 0 0}【Makoto】 "HARUKAAAA!!!" 
+
+
+[0000028a] 10: 
+[0000028b] 11: fgload 0 00000000 HA01AAN 1 3
+[0000029b] 10: 
+[0000029c] 19: 
+[0000029d] ff: text 04
+{textColor 0 2}At the sound of my voice, Haruka slowly turns around.  {textColor 0 2}The pained look in her eyes makes my chest tighten up heavily. 
+
+
+[000002a0] 10: 
+[000002a1]  7: stopBGM
+[000002a2]  0: 
+[000002a3]  a: condJump 01 VAR_(28_1e)_a1_31 (28) == (15) (81)->1 (15) (00)  * 00001b02 (005c)
+[000002b1] 10: 
+[000002b2] 11: fgload 0 00000000 HA08AAN 1 3
+[000002c2] 10: 
+[000002c3]  b: playVoice HL2D5048
+[000002cd] 10: 
+[000002ce] 19: 
+[000002cf] ff: text 05
+{textColor 1 5}【Haruka】 "... Makoto..." 
+
+
+[000002d2] 10: 
+[000002d3] 11: fgload 0 00000000 HA09AAN 1 3
+[000002e3] 10: 
+[000002e4]  b: playVoice HL2D5049
+[000002ee] 10: 
+[000002ef] 19: 
+[000002f0] ff: text 06
+{textColor 1 5}【Haruka】 "..." 
+
+
+[000002f3] 10: 
+[000002f4]  b: playVoice HL2D5050
+[000002fe] 10: 
+[000002ff] 19: 
+[00000300] ff: text 07
+{textColor 1 5}【Haruka】 "So the real deal... truly is... the better one after all...?" 
+{textColor 0 0}【Makoto】 "...!! ... You knew... who Kurumi was...?" 
+
+
+[00000303] 10: 
+[00000304]  b: playVoice HL2D5051
+[0000030e] 10: 
+[0000030f] 19: 
+[00000310] ff: text 08
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000313] 10: 
+[00000314]  6: playBGM 12
+[00000318] 10: 
+[00000319] 19: 
+[0000031a] ff: text 09
+{textColor 0 0}【Makoto】 "You're wrong! Haruka, you're the one I love!" 
+
+
+[0000031d] 10: 
+[0000031e] 11: fgload 0 00000000 HA11AAN 1 3
+[0000032e] 10: 
+[0000032f] 19: 
+[00000330] ff: text 0a
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000333] 10: 
+[00000334] 11: fgload 0 00000000 HA02AAN 1 3
+[00000344] 10: 
+[00000345]  b: playVoice HL2D5052
+[0000034f] 10: 
+[00000350] 19: 
+[00000351] ff: text 0b
+{textColor 1 5}【Haruka】 "I'm so glad..." 
+
+
+[00000354] 10: 
+[00000355]  b: playVoice HL2D5053
+[0000035f] 10: 
+[00000360] 19: 
+[00000361] ff: text 0c
+{textColor 1 5}【Haruka】 "... I really... believed that you'd say that..." 
+{textColor 0 0}【Makoto】 "...?" 
+
+
+[00000364] 10: 
+[00000365]  b: playVoice HL2D5054
+[0000036f] 10: 
+[00000370] 19: 
+[00000371] ff: text 0d
+{textColor 1 5}【Haruka】 "I thought that if it was you, then you'd say that." 
+{textColor 0 0}【Makoto】 "Haruka..." 
+{textColor 0 0}【Makoto】 "... Are you mad?" 
+
+
+[00000374] 10: 
+[00000375]  b: playVoice HL2D5055
+[0000037f] 10: 
+[00000380] 19: 
+[00000381] ff: text 0e
+{textColor 1 5}【Haruka】 "... No... I'm not." 
+{textColor 0 0}【Makoto】 "I think that you made a misunderstanding about Kurumi and I..." 
+
+
+[00000384] 10: 
+[00000385] 11: fgload 0 00000000 HA01AAN 1 3
+[00000395] 10: 
+[00000396]  b: playVoice HL2D5056
+[000003a0] 10: 
+[000003a1] 19: 
+[000003a2] ff: text 0f
+{textColor 1 5}【Haruka】 "... Yes. I can see now that I was wrong." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[000003a5] 10: 
+[000003a6]  b: playVoice HL2D5057
+[000003b0] 10: 
+[000003b1] 19: 
+[000003b2] ff: text 10
+{textColor 1 5}【Haruka】 "When I saw Kurumi smiling like that with you in the room, my head went completely blank..." 
+{textColor 0 0}【Makoto】 "That's why I'm telling you you're wrong!" 
+
+
+[000003b5] 10: 
+[000003b6]  b: playVoice HL2D5058
+[000003c0] 10: 
+[000003c1] 19: 
+[000003c2] ff: text 11
+{textColor 1 5}【Haruka】 "I know...{delay 5} But will you hear me out...?{delay 5}{delay 5} And so, I didn't know what I should do. As I thought, I was no good at all... because I'm not the real one..." 
+{textColor 0 0}【Makoto】 "HARUKA!" 
+{textColor 0 0}【Makoto】 "Didn't I tell you to never say that again!?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}Her sincere gaze bores straight into me, as if she's trying to bring something to my attention. 
+{textColor 0 0}【Makoto】 "... I looked for you..." 
+{textColor 0 0}【Makoto】 "... I looked for you...{delay 5}{delay 5}{delay 5} because I was worried to death about you..." 
+{textColor 0 0}【Makoto】 "Because I don't want...{delay 5}{delay 5}{delay 5} to lose my most precious person..." 
+
+
+[000003c5] 10: 
+[000003c6]  b: playVoice HL2D5059
+[000003d0] 10: 
+[000003d1] 19: 
+[000003d2] ff: text 12
+{textColor 1 5}【Haruka】 "... I'm alive, aren't I?{delay 5}{delay 5}{delay 5} Here..." 
+
+
+[000003d5] 10: 
+[000003d6]  2: cmd2 6
+[000003da] 10: 
+[000003db]  f: removeBG 0 0 2
+[000003e5] 10: 
+[000003e6] 10: bgload 00000000 EV_HA08 0 1
+[000003f3] 10: 
+[000003f4] 19: 
+[000003f5] ff: text 13
+{textColor 0 2}When she says that, Haruka takes my palm and pushes it against her chest... 
+{textColor 0 2}*Thump, thump*...{delay 5}{delay 5} *Thump, thump*...  {textColor 0 2}The sound of Haruka's heart is transmitted to my hand... 
+{textColor 0 2}The echo of her life...  {textColor 0 2}The trembling of her soul...  {textColor 0 2}The proof...{delay 5}{delay 5} that she's alive... 
+
+
+[000003f8] 10: 
+[000003f9]  b: playVoice HL2D5060
+[00000403] 10: 
+[00000404] 19: 
+[00000405] ff: text 14
+{textColor 1 5}【Haruka】 "What's wrong? Didn't you have a headache...?" 
+{textColor 0 2}Haruka is playing dumb, making fun of me.  {textColor 0 2}But she's not doing so out of ill will. 
+{textColor 0 2}I know that.  {textColor 0 2}Her heartbeat is telling me that. 
+{textColor 0 0}【Makoto】 "... So you really were the one...{delay 5}{delay 5}{delay 5} with the medicine." 
+
+
+[00000408] 10: 
+[00000409]  b: playVoice HL2D5061
+[00000413] 10: 
+[00000414] 19: 
+[00000415] ff: text 15
+{textColor 1 5}【Haruka】 "I was outside when I was hit by the night wind. It then started to rain... So I calmed down a bit...{delay 5}{delay 5} And then, I realized it... I... was jealous..." 
+
+
+[00000418] 10: 
+[00000419]  b: playVoice HL2D5062
+[00000423] 10: 
+[00000424] 19: 
+[00000425] ff: text 16
+{textColor 1 5}【Haruka】 "Since I didn't understand that concept until recently, I didn't know what to do with my own feelings...{delay 5}{delay 5} I didn't know how to handle my growing jealousy..." 
+
+
+[00000428] 10: 
+[00000429]  b: playVoice HL2D5073
+[00000433] 10: 
+[00000434] 19: 
+[00000435] ff: text 17
+{textColor 1 5}【Haruka】 "I've changed since meeting you. {delay 5}{delay 5}I've understood that I can live as my own self." 
+
+
+[00000438] 10: 
+[00000439]  b: playVoice H_135_01
+[00000443] 10: 
+[00000444] 19: 
+[00000445] ff: text 18
+{textColor 1 5}【Haruka】 "So Kurumi and I are different, right? {delay 5}{delay 5}It's fine if I trust you, right?" 
+{textColor 0 0}【Makoto】 "Yeah, that's right." 
+{textColor 0 0}【Makoto】 "Didn't I tell you on the pier?" 
+{textColor 0 0}【Makoto】 "'To me, you are the most important existence in the whole world, someone that can never be replaced by anything'..." 
+
+
+[00000448] 10: 
+[00000449]  b: playVoice HL2D5063
+[00000453] 10: 
+[00000454] 19: 
+[00000455] ff: text 19
+{textColor 1 5}【Haruka】 "Makoto..." 
+
+
+[00000458] 10: 
+[00000459]  f: removeBG 1 0 2
+[00000463] 10: 
+[00000464] 19: 
+[00000465] ff: text 1a
+{textColor 0 2}I embrace the cold, soaking wet Haruka in the pouring rain. 
+{textColor 0 2}My hands tremble as I feel the remaining sensation of her heartbeat. 
+{textColor 0 2}Right now, Haruka is within me.  {textColor 0 2}Her heartbeat has engraved itself within me. 
+{textColor 0 2}A gentle light seems to begin driving away the darkness before our eyes that wrapped us up... 
+
+
+[00000468] 10: 
+[00000469]  7: stopBGM
+[0000046a] 10: 
+[0000046b] 19: 
+[0000046c] ff: text 1b
+{textColor 0 2}... ... ... 
+
+
+[0000046f]  0: 
+[00000470]  5: delay 60
+[00000475] 10: 
+[00000476] 19: 
+[00000477] ff: text 1c
+{textColor 0 0}【Makoto】 "Haruka, can I ask you something? Why is it that you love rain... no, water so much?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "No, you don't need to force yourself to say it if you don't want to. I'm just a little curious..." 
+
+
+[0000047a] 10: 
+[0000047b]  b: playVoice HL2D5064
+[00000485] 10: 
+[00000486] 19: 
+[00000487] ff: text 1d
+{textColor 1 5}【Haruka】 "... It's a bond." 
+{textColor 0 0}【Makoto】 "A bond?" 
+
+
+[0000048a] 10: 
+[0000048b]  b: playVoice HL2D5065
+[00000495] 10: 
+[00000496] 19: 
+[00000497] ff: text 1e
+{textColor 1 5}【Haruka】 "Yes, a bond... I remember almost nothing about my real father... But the only memory I have of him is us together in the water once..." 
+
+
+[0000049a] 10: 
+[0000049b]  b: playVoice h_136_01
+[000004a5] 10: 
+[000004a6] 19: 
+[000004a7] ff: text 1f
+{textColor 1 5}【Haruka】 "No, it might just have been my father in the water, or just me in the water.{delay 5}{delay 5} Anyway, that is the only vivid image of him I have within me..." 
+{textColor 0 0}【Makoto】 "Your father...{delay 5}{delay 5} and the...{delay 5}{delay 5}{delay 5} water." 
+
+
+[000004aa] 10: 
+[000004ab]  b: playVoice HL2D5066
+[000004b5] 10: 
+[000004b6] 19: 
+[000004b7] ff: text 20
+{textColor 1 5}【Haruka】 "So that's why... I love water. It's the only bond... between me and my father." 
+{textColor 0 0}【Makoto】 "Hey, don't forget that I'm also here now." 
+{textColor 0 2}I tightly embrace Haruka. 
+
+
+[000004ba] 10: 
+[000004bb]  b: playVoice HL2D5067
+[000004c5] 10: 
+[000004c6] 19: 
+[000004c7] ff: text 21
+{textColor 1 5}【Haruka】 "... I won't...{delay 5}{delay 5}{delay 5} I'm really happy..." 
+
+
+[000004ca]  0: 
+[000004cb]  5: delay 60
+[000004d0] 10: 
+[000004d1] 10: bgload 00000000 BG13NR 0 1
+[000004de] 10: 
+[000004df]  1: cmd1 26
+[000004e4] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 0
+[000004ef] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 44
+[000004fb] 10: 
+[000004fc] 17: showClock
+[000004fd] 10: 
+[000004fe]  6: playBGM 2
+[00000502] 10: 
+[00000503]  8: playSFX SE030 0
+[0000050d] 10: 
+[0000050e] 19: 
+[0000050f] ff: text 22
+{textColor 0 0}【Makoto】 "Well then, shall we head back then?" 
+{textColor 0 2}Haruka nods. 
+
+
+[00000512] 10: 
+[00000513] 11: fgload 0 00000000 HA02ABN 1 3
+[00000523] 10: 
+[00000524] 19: 
+[00000525] ff: text 23
+{textColor 0 2}We separate our bodies from each other, but make up for it by holding hands. 
+{textColor 0 2}Haruka's small palm is covered in pleasantly cool, comfortable water. 
+{textColor 0 2}Just like that, we begin to walk towards the lodge... 
+
+
+[00000528] 10: 
+[00000529]  9: stopSFX
+[0000052a] 10: 
+[0000052b] 19: 
+[0000052c] ff: text 24
+{textColor 0 0}【Makoto】 "Ugh, it's cold..." 
+{textColor 0 0}【Makoto】 "If I get a cold from this, then I guess it's your fault, right?" 
+{textColor 0 2}A smile rises to my face while I make a sarcastic quip. 
+{textColor 0 2}... Of course, I just said it as a joke... 
+{textColor 0 2}But Haruka... 
+
+
+[0000052f] 10: 
+[00000530] 11: fgload 0 00000000 HA09ABN 1 3
+[00000540] 10: 
+[00000541]  b: playVoice HL2D6003
+[0000054b] 10: 
+[0000054c] 19: 
+[0000054d] ff: text 25
+{textColor 1 5}【Haruka】 "*sniff*..." 
+{textColor 0 2}... suddenly looks like she's about to cry. 
+{textColor 0 0}【Makoto】 "I-I'm sorry... It was just a joke! This isn't enough to make me catch a cold!" 
+{textColor 0 2}I hastily apologize to her... 
+{textColor 0 2}Just then... 
+
+
+[00000550] 10: 
+[00000551] 11: fgload 0 00000000 HA02ABN 1 3
+[00000561] 10: 
+[00000562]  b: playVoice HL2D6004
+[0000056c] 10: 
+[0000056d] 19: 
+[0000056e] ff: text 26
+{textColor 1 5}【Haruka】 "Hee hee..." 
+{textColor 0 0}【Makoto】 "... Huh?" 
+
+
+[00000571] 10: 
+[00000572]  b: playVoice HL2D6005
+[0000057c] 10: 
+[0000057d] 19: 
+[0000057e] ff: text 27
+{textColor 1 5}【Haruka】 "Hee hee hee... I'm not crying." 
+{textColor 0 0}【Makoto】 "A... Ah! That was cruel! When did you learn how make crocodile tears!?" 
+
+
+[00000581] 10: 
+[00000582] 11: fgload 0 00000000 HA07ABN 1 3
+[00000592] 10: 
+[00000593]  b: playVoice HL2D6006
+[0000059d] 10: 
+[0000059e] 19: 
+[0000059f] ff: text 28
+{textColor 1 5}【Haruka】 "Well... It's{delay 5}. A.{delay 5} Secret." 
+{textColor 0 0}【Makoto】 "Haruka... your personality seems to have changed somewhat..." 
+
+
+[000005a2] 10: 
+[000005a3] 11: fgload 0 00000000 HA02ABN 1 3
+[000005b3] 10: 
+[000005b4]  b: playVoice HL2D6007
+[000005be] 10: 
+[000005bf] 19: 
+[000005c0] ff: text 29
+{textColor 1 5}【Haruka】 "You're the one who's changed, right?" 
+{textColor 0 2}Me, huh...  {textColor 0 2}I instinctively smile. 
+
+
+[000005c3] 10: 
+[000005c4]  b: playVoice HL2D6008
+[000005ce] 10: 
+[000005cf] 19: 
+[000005d0] ff: text 2a
+{textColor 1 5}【Haruka】 "Ehee hee...♪" 
+
+
+[000005d3] 10: 
+[000005d4] 11: fgload 0 00000000 HA07ABN 1 3
+[000005e4] 10: 
+[000005e5]  b: playVoice HL2D6009
+[000005ef] 10: 
+[000005f0] 19: 
+[000005f1] ff: text 2b
+{textColor 1 5}【Haruka】 "Ahahahahahahahaha♪" 
+{textColor 0 2}Our laughter begins to merge in the sound of the rainfall. 
+{textColor 0 2}Although we're soaked to the bone and our bodies are shivering from the cold, we are the happiest people in the world at this moment. 
+
+
+[000005f4] 10: 
+[000005f5]  7: stopBGM
+[000005f6] 10: 
+[000005f7] 19: 
+[000005f8] ff: text 2c
+{textColor 0 2}But... 
+
+
+[000005fb] 10: 
+[000005fc]  f: removeBG 0 4 2
+[00000606] 10: 
+[00000607] 12: removeFG 0 3
+[0000060e] 10: 
+[0000060f]  8: playSFX SE030 0
+[00000619] 10: 
+[0000061a] 19: 
+[0000061b] ff: text 2d
+{textColor 0 2}... ... ... 
+
+
+[0000061e] 10: 
+[0000061f] 10: bgload 00000000 bg13nr 4 1
+[0000062c] 10: 
+[0000062d]  9: stopSFX
+[0000062e] 10: 
+[0000062f] 11: fgload 0 00000000 HA11ABN 1 3
+[0000063f] 10: 
+[00000640]  b: playVoice HL2D6012
+[0000064a] 10: 
+[0000064b] 19: 
+[0000064c] ff: text 2e
+{textColor 1 5}【Haruka】 "Ah, that puppy!" 
+{textColor 0 2}In that instant, I feel like I've been knocked down to the pits of hell. 
+{textColor 0 2}Hope changes into despair. 
+{textColor 0 2}It's the second coming...{delay 30} of my previous...{delay 5}{delay 5} nightmare... 
+
+
+[0000064f] 10: 
+[00000650] 12: removeFG 0 3
+[00000657] 10: 
+[00000658]  6: playBGM 7
+[0000065c] 10: 
+[0000065d] 11: fgload 0 00000000 SA11BAN 2 3
+[0000066d] 10: 
+[0000066e] 19: 
+[0000066f] ff: text 2f
+{textColor 0 2}Down the road is Saki, frozen in place with an umbrella in hand.  
+
+[00000672] 10: 
+[00000673] 12: removeFG 0 3
+[0000067a] 10: 
+[0000067b] 19: 
+[0000067c] ff: text 30
+{textColor 0 2}The puppy then runs towards her at full speed. 
+
+
+[0000067f] 10: 
+[00000680]  f: removeBG 1 0 3
+[0000068a] 10: 
+[0000068b] 10: bgload 00000000 BG13NR 0 3
+[00000698] 10: 
+[00000699] 19: 
+[0000069a] ff: text 31
+{textColor 0 2}A car approaches from the other side of the curve!  {textColor 0 2}A bright red car with its headlights lit...! 
+{textColor 0 2}The puppy feverishly runs without looking aside.  {textColor 0 2}It hasn't noticed the car! It can only see Saki, who's right before its eyes! 
+
+
+[0000069d] 10: 
+[0000069e] 19: 
+[0000069f] ff: text 32
+{textColor 0 2}――The sound of the car's horn pierces my eardrums! 
+{textColor 0 2}And at the same time, Haruka...  Haruka...  {textColor 0 2}shakes off my hand and starts running!!! 
+
+[000006a2] ff: text 33
+{textColor 0 2}{choiceOpt 1 -> No! I've got to hold Haruka back! }{choiceOpt 2 -> I'll protect the puppy! }
+
+[000006a5] 10: 
+[000006a6]  3: choice v_a1_08 00 00
+[000006ab]  0: 
+[000006ac]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000701 (0009)
+[000006ba] fe: varop VAR_(28_0a)_a1_31 (14) := (00) 1
+[000006c5] 10: 
+[000006c6] 19: 
+[000006c7] ff: text 34
+{textColor 0 0}【Makoto】 "Haruka, don't!" 
+{textColor 0 2}Reflexively, I quickly stretch out my hand and grab Haruka's arm. 
+
+
+[000006ca] 10: 
+[000006cb] 11: fgload 0 00000000 HA04ABN 1 3
+[000006db] 10: 
+[000006dc]  b: playVoice HL2D6013
+[000006e6] 10: 
+[000006e7] 19: 
+[000006e8] ff: text 35
+{textColor 1 5}【Haruka】 "But that puppy will...! I can't!!!" 
+
+
+[000006eb] 10: 
+[000006ec] 12: removeFG 0 0
+[000006f3] 10: 
+[000006f4] 19: 
+[000006f5] ff: text 36
+{textColor 0 2}――Haruka's shout pierces my ears. 
+{textColor 0 2}I unintentionally lessen the power in my hand... 
+{textColor 0 2}In the next instant... 
+
+
+[000006f8] 10: 
+[000006f9] 19: 
+[000006fa] ff: text 37
+{textColor 0 2}Haruka shakes off my hand again and starts running! 
+{textColor 0 0}【Makoto】 "――Haruka!" 
+{textColor 0 2}Haruka rushes over to the puppy, picks it up, and holds it against her chest as if to protect it. 
+{textColor 0 2}Immediately afterwards, the bright red frame of the car draws near her! 
+{textColor 0 0}【Makoto】 "...!!!" 
+
+
+[000006fd]  0: 
+[000006fe]  7: goto7 00000755 (000a)
+[00000701] 10: 
+[00000702] 10: bgload 00000000 bg13nr 0 1
+[0000070f] 10: 
+[00000710] 19: 
+[00000711] ff: text 38
+{textColor 0 2}I can't just stand by and let the puppy die like this! On the other hand, there's no way that I can let Haruka sacrifice herself either! 
+{textColor 0 2}Which means there's only one way left... 
+{textColor 0 2}I reflexively rush out onto the road. 
+{textColor 0 2}I get ahead of Haruka, and pick the puppy up in my arms before she can. 
+
+
+[00000714] 10: 
+[00000715]  b: playVoice HL2D6015
+[0000071f] 10: 
+[00000720] 19: 
+[00000721] ff: text 39
+{textColor 1 5}【Haruka】 "MAKOTO! NO!!!" 
+
+
+[00000724] 10: 
+[00000725]  b: playVoice HL2D6016
+[0000072f] 10: 
+[00000730] 19: 
+[00000731] ff: text 3a
+{textColor 1 6}【Saki】 "KYAAAAAAA!!" 
+{textColor 0 2}In the next instant...  
+
+[00000734] 10: 
+[00000735]  8: playSFX se072 1
+[0000073f] 10: 
+[00000740]  1: cmd1 1
+[00000744] 10: 
+[00000745]  1: cmd1 4
+[00000749] 10: 
+[0000074a] 19: 
+[0000074b] ff: text 3b
+{textColor 0 2}... I am knocked aside from behind with great force! 
+
+
+[0000074e] 10: 
+[0000074f]  9: stopSFX
+[00000750] 10: 
+[00000751] 19: 
+[00000752] ff: text 3c
+{textColor 0 2}I go rolling to the edge of the road while holding the puppy against my chest. 
+{textColor 0 2}I immediately lift my face, and shift my focus to the center of the road... 
+{textColor 0 0}【Makoto】 "Ha... Haruka!!!" 
+{textColor 0 2}That's right... the one who pushed me away from behind was Haruka! 
+
+
+[00000755] 10: 
+[00000756]  7: stopBGM
+[00000757] 10: 
+[00000758]  8: playSFX SE140 1
+[00000762] 10: 
+[00000763]  1: cmd1 31
+[00000768] 10: 
+[00000769]  2: cmd2 6
+[0000076d] 10: 
+[0000076e]  f: removeBG 1 0 1
+[00000778] 10: 
+[00000779]  2: cmd2 9
+[0000077d] 10: 
+[0000077e]  9: stopSFX
+[0000077f] 10: 
+[00000780]  b: playVoice HL2D6017
+[0000078a] 10: 
+[0000078b] 19: 
+[0000078c] ff: text 3d
+{textColor 1 6}【Saki】 "{delay 5}!{delay 5}!{delay 5}!{delay 5}!" 
+
+
+[0000078f] 10: 
+[00000790]  8: playSFX SE075 1
+[0000079a] 10: 
+[0000079b]  a: waitForSFX
+[0000079c] 10: 
+[0000079d] 19: 
+[0000079e] ff: text 3e
+{textColor 0 2}Saki places her hand over her mouth, frozen in place. I can't... move either. 
+{textColor 0 2}Saki and I are watching Haruka's body...{delay 5}{delay 5} which has been sent flying... 
+{textColor 0 2}It all happens as if it's in slow motion.  Haruka's body slowly,{delay 30} slowly draws an arc in midair. 
+
+
+[000007a1] 10: 
+[000007a2] 10: bgload 00000000 BG13NR 0 1
+[000007af] 10: 
+[000007b0]  1: cmd1 26
+[000007b5] 10: 
+[000007b6]  8: playSFX SE065 1
+[000007c0] 10: 
+[000007c1] 19: 
+[000007c2] ff: text 3f
+{textColor 0 2}Her slender body falls onto the asphalt face-up... as if it's been thrown onto it. 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 2}Time{delay 5}{delay 5}{delay 5}{delay 5} stops. 
+
+
+[000007c5] 10: 
+[000007c6]  6: playBGM 6
+[000007ca]  0: 
+[000007cb]  a: condJump 00 VAR_(28_1e)_a1_31 (28) != (15) (81)->1 (15) (00)  * 000007e2 (000c)
+[000007d9] 10: 
+[000007da] 19: 
+[000007db] ff: text 40
+{textColor 0 2}Haruka had firmly held the puppy against her chest, and it's still there, completely unharmed. 
+{textColor 0 2}The puppy slightly shakes its now soaked head, worms its way out of Haruka's arms, and jumps off of her. 
+{textColor 0 2}It starts to run over towards Saki's feet as if nothing happened... 
+{textColor 0 2}Haruka's body is illuminated by the headlights, her pale figure sticking out in the downpour. 
+
+
+[000007de]  0: 
+[000007df]  7: goto7 000007e7 (000d)
+[000007e2] 10: 
+[000007e3] 19: 
+[000007e4] ff: text 41
+{textColor 0 2}Haruka lies on the ground, not even twitching. 
+{textColor 0 2}Her body is illuminated by the headlights, her pale figure sticking out in the downpour. 
+{textColor 0 2}The puppy slightly shakes its now soaked head, worms its way out of my arms, and jumps off of me. 
+{textColor 0 2}It starts to run over towards Saki's feet as if nothing happened... 
+
+
+[000007e7] 10: 
+[000007e8] 19: 
+[000007e9] ff: text 42
+{textColor 0 2}My legs won't stop shaking.  {textColor 0 2}I can't move my stiffened limbs.  {textColor 0 2}Saki is also silently standing stock-still, oblivious to the playful puppy at her feet. 
+{textColor 0 0}【Makoto】 "... Ha-{delay 5}{delay 5}{delay 5}Haru...{delay 5}{delay 5}{delay 5} ka...?" 
+{textColor 0 2}My voice has never trembled this much before in my life.  {textColor 0 2}Saki's eyes well with tears, and she slowly shakes her head back and forth. 
+{textColor 0 2}No way...{delay 5}{delay 5} This isn't...{delay 5}{delay 5} This isn't... 
+
+
+[000007ec] 10: 
+[000007ed]  7: stopBGM
+[000007ee] 10: 
+[000007ef]  f: removeBG 1 0 2
+[000007f9] 10: 
+[000007fa] 19: 
+[000007fb] ff: text 43
+{textColor 0 2}A red liquid on the asphalt catches my eye.  {textColor 0 2}Blood...  A large quantity of fresh red blood is pouring out of Haruka's body. 
+{textColor 0 2}It slowly begins to spread, soaking the already wet asphalt... 
+{textColor 0 0}【Makoto】 "HARUKAAAAAAAAAAAAAAA!!!!!" 
+{textColor 0 2}I wring out a loud scream from within my body. 
+{textColor 0 2}I couldn't... protect Haruka... 
+
+
+[000007fe] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 77
+[0000080a] 10: 
+[0000080b]  6: playBGM 10
+[0000080f] 10: 
+[00000810] 19: 
+[00000811] ff: text 44
+{textColor 0 2}No! I can't give up here! 
+{textColor 0 2}Something inside me tells me that. 
+{textColor 0 2}Haruka's still alive.  {textColor 0 2}Her flame of light hasn't flickered out yet. 
+
+
+[00000814]  0: 
+[00000815]  a: condJump 00 VAR_(28_1e)_a1_31 (28) != (15) (81)->1 (15) (00)  * 0000082c (0010)
+[00000823] 10: 
+[00000824] 19: 
+[00000825] ff: text 45
+{textColor 0 2}There's one possibility remaining.  I'll risk everything on that possibility! 
+
+
+[00000828]  0: 
+[00000829]  7: goto7 00000849 (0011)
+[0000082c] 10: 
+[0000082d] 19: 
+[0000082e] ff: text 46
+{textColor 0 2}There's one possibility remaining.  I'll risk everything on that possibility! 
+
+[00000831] ff: text 47
+{textColor 0 2}{choiceOpt 1 -> Hurry to the clinic. }{choiceOpt 2 -> I've got to go to the lodge. }
+
+[00000834] 10: 
+[00000835]  3: choice v_a1_08 00 00
+[0000083a]  0: 
+[0000083b]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 0000089c (0012)
+[00000849] 10: 
+[0000084a]  8: playSFX SE102 1
+[00000854] 10: 
+[00000855]  a: waitForSFX
+[00000856] 10: 
+[00000857] 10: bgload 00000000 BG35NR 4 1
+[00000864] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 2
+[0000086f] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 25
+[0000087b] 10: 
+[0000087c] 17: showClock
+[0000087d] 10: 
+[0000087e] 19: 
+[0000087f] ff: text 48
+{textColor 0 2}The driver took Haruka in his car, and it's been approximately half an hour since we've arrived at the clinic. 
+{textColor 0 2}We woke up the sleeping doctor and quickly brought Haruka into the sickroom. 
+
+
+[00000882] 10: 
+[00000883]  f: removeBG 1 0 2
+[0000088d] 10: 
+[0000088e]  7: stopBGM
+[0000088f] 10: 
+[00000890]  2: cmd2 6
+[00000894]  0: 
+[00000895]  7: goto7 00001b59 (005d)
+[00000898]  0: 
+[00000899]  7: goto7 000008fd (0013)
+[0000089c] 10: 
+[0000089d] 10: bgload 00000000 BG13NR 0 1
+[000008aa] 10: 
+[000008ab]  1: cmd1 26
+[000008b0] 10: 
+[000008b1] 19: 
+[000008b2] ff: text 49
+{textColor 0 0}【Makoto】 "Saki, I'll leave Haruka to you!" 
+
+
+[000008b5] 10: 
+[000008b6] 11: fgload 0 00000000 SA11BAN 1 3
+[000008c6] 10: 
+[000008c7]  b: playVoice HL2D6018
+[000008d1] 10: 
+[000008d2] 19: 
+[000008d3] ff: text 4a
+{textColor 1 6}【Saki】 "... Huh? Where are you going!?" 
+{textColor 0 0}【Makoto】 "Neither of us can give Haruka a blood transfusion!" 
+
+
+[000008d6] 10: 
+[000008d7] 12: removeFG 0 3
+[000008de] 10: 
+[000008df]  8: playSFX SE040 1
+[000008e9] 10: 
+[000008ea] 19: 
+[000008eb] ff: text 4b
+{textColor 0 2}At this rate, even if she goes to the clinic, Haruka won't have enough blood to survive. 
+{textColor 0 2}I entrust Haruka to the driver who hit her to go to clinic, and start running to seek the one who has the same blood type as Haruka...  Her Original...{delay 5}{delay 5} Kurumi. 
+{textColor 0 2}If I'm looking for her, then she should be at the lodge right now! 
+
+
+[000008ee] 10: 
+[000008ef]  f: removeBG 0 4 2
+[000008f9]  0: 
+[000008fa]  7: goto7 000008fd (0015)
+[000008fd] 10: 
+[000008fe] 10: bgload 00000000 BG00NR 4 1
+[0000090b] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[00000916] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 5
+[00000921] 10: 
+[00000922] 17: showClock
+[00000923]  0: 
+[00000924]  5: delay 60
+[00000929] 10: 
+[0000092a]  2: cmd2 6
+[0000092e] 10: 
+[0000092f]  f: removeBG 0 0 3
+[00000939] 10: 
+[0000093a]  8: playSFX SE000 1
+[00000944] 10: 
+[00000945] 10: bgload 00000000 BG02N 4 1
+[00000952] 10: 
+[00000953] 14: multifgload2 00000000 YU07CAA 2 00000000 OK10CA 3
+[00000966] 10: 
+[00000967] 19: 
+[00000968] ff: text 4c
+{textColor 0 2}I run through the pouring rain until I finally arrive at the lodge. 
+{textColor 0 2}Out of breath, I enter the living room to find that Okuhiko and Yuka are having a party all to themselves. 
+{textColor 0 2}The area around them has become mountains of snacks and empty beer cans.  {textColor 0 2}It seems like Okuhiko has bonded with the very drunk Yuka. 
+{textColor 0 2}I firmly hold back my explosive anger, and survey the room.  {textColor 0 2}Kurumi was here when I left... 
+{textColor 0 2}... But she's nowhere to be found.  Where did that girl go...? 
+
+[0000096b] ff: text 4d
+{textColor 0 2}{choiceOpt 1 -> Ask Yuka. }{choiceOpt 2 -> Ask Okuhiko. }
+
+[0000096e] 10: 
+[0000096f]  3: choice v_a1_08 00 00
+[00000974]  0: 
+[00000975]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000b52 (0016)
+[00000983] 10: 
+[00000984] 19: 
+[00000985] ff: text 4e
+{textColor 0 0}【Makoto】 "Hey, Yuka, listen to me!" 
+
+
+[00000988] 10: 
+[00000989] 15: removeAllFG 3
+[0000098d] 10: 
+[0000098e] 11: fgload 0 00000000 YU02CBA 1 3
+[0000099e] 10: 
+[0000099f]  b: playVoice HL2D6019
+[000009a9] 10: 
+[000009aa] 19: 
+[000009ab] ff: text 4f
+{textColor 1 4}【Yuka】 "Yesh?" 
+{textColor 0 0}【Makoto】 "What's your blood type?" 
+
+
+[000009ae] 10: 
+[000009af]  b: playVoice HL2D6020
+[000009b9] 10: 
+[000009ba] 19: 
+[000009bb] ff: text 50
+{textColor 1 4}【Yuka】 "Uhh...{delay 5}{delay 5} Whaa ish it again?" 
+{textColor 0 0}【Makoto】 "Hurry up and answer me, dammit!" 
+
+
+[000009be] 10: 
+[000009bf] 11: fgload 0 00000000 YU06CBA 1 3
+[000009cf] 10: 
+[000009d0]  b: playVoice HL2D6021
+[000009da] 10: 
+[000009db] 19: 
+[000009dc] ff: text 51
+{textColor 1 4}【Yuka】 "Eyam finkin' sherioushly! Don't talk to me like dat!" 
+{textColor 0 2}Damn... she really reeks of liquor.{delay 5}{delay 5} She must have drunk a lot... 
+{textColor 0 0}【Makoto】 "I get... I'm sorry, so please hurry up and tell me!{delay 5}{delay 5} I'm begging you!" 
+
+
+[000009df] 10: 
+[000009e0] 11: fgload 0 00000000 YU02CBA 1 3
+[000009f0] 10: 
+[000009f1]  b: playVoice HL2D6022
+[000009fb] 10: 
+[000009fc] 19: 
+[000009fd] ff: text 52
+{textColor 1 4}【Yuka】 "Mmm, very well. Eyam...{delay 5} umm, 'A+'." 
+{textColor 0 0}【Makoto】 "Damn! So it was no use after all..." 
+
+
+[00000a00] 10: 
+[00000a01] 11: fgload 0 00000000 YU01CBA 1 3
+[00000a11] 10: 
+[00000a12]  b: playVoice HL2D6023
+[00000a1c] 10: 
+[00000a1d] 19: 
+[00000a1e] ff: text 53
+{textColor 1 4}【Yuka】 "Huh? Or maybe ish 'B+'??" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000a21] 10: 
+[00000a22] 11: fgload 0 00000000 YU07CBA 1 3
+[00000a32] 10: 
+[00000a33]  b: playVoice HL2D6024
+[00000a3d] 10: 
+[00000a3e] 19: 
+[00000a3f] ff: text 54
+{textColor 1 4}【Yuka】 "Huh? But eye alsho feel ish 'C+'... {delay 5}{delay 5}Eye dunno. Ahahahaha!" 
+{textColor 0 2}Y-You damn drunkard...  Repressing the urge to yell at her, I try to get information about Kurumi out of her. 
+{textColor 0 0}【Makoto】 "Well, forget the whole blood type thing... What happened with Kurumi?" 
+
+
+[00000a42] 10: 
+[00000a43] 11: fgload 0 00000000 YU01CBA 1 3
+[00000a53] 10: 
+[00000a54]  b: playVoice HL2D6025
+[00000a5e] 10: 
+[00000a5f] 19: 
+[00000a60] ff: text 55
+{textColor 1 4}【Yuka】 "Kurumi-tan? Dunno." 
+{textColor 0 2}Crap. I click my tongue.  {textColor 0 2}Has she already gone home? 
+{textColor 0 0}【Makoto】 "See you. I'm gonna look for Kurumi." 
+
+
+[00000a63] 10: 
+[00000a64] 11: fgload 0 00000000 YU04CBA 1 3
+[00000a74] 10: 
+[00000a75]  b: playVoice HL2D6026
+[00000a7f] 10: 
+[00000a80] 19: 
+[00000a81] ff: text 56
+{textColor 1 4}【Yuka】 "Huld on, Mako-tan! If yer talkin' to me, den come and have a drink!" 
+{textColor 0 0}【Makoto】 "I don't have time for that! Haruka was run over by a car!! She needs Kurumi's help!" 
+
+
+[00000a84] 10: 
+[00000a85] 11: fgload 0 00000000 YU10CBA 1 3
+[00000a95] 10: 
+[00000a96]  b: playVoice HL2D6027
+[00000aa0] 10: 
+[00000aa1] 19: 
+[00000aa2] ff: text 57
+{textColor 1 4}【Yuka】 "Huh? Run ove bai Kurumi? ... Haruka wash run over bai Kurumi-tan?" 
+{textColor 0 0}【Makoto】 "Forget it! Later!!" 
+
+
+[00000aa5] 10: 
+[00000aa6] 12: removeFG 0 3
+[00000aad] 10: 
+[00000aae] 19: 
+[00000aaf] ff: text 58
+{textColor 0 2}Shit! I've lost a considerable amount of time! Even so, just where could Kurumi be? 
+
+
+[00000ab2] 10: 
+[00000ab3]  8: playSFX SE000 1
+[00000abd] 10: 
+[00000abe]  f: removeBG 0 4 2
+[00000ac8] 10: 
+[00000ac9]  1: cmd1 26
+[00000ace] 10: 
+[00000acf]  8: playSFX SE030 0
+[00000ad9] 10: 
+[00000ada] 19: 
+[00000adb] ff: text 59
+{textColor 0 2}I once again throw myself into the pelting rain... 
+
+
+[00000ade] 10: 
+[00000adf] 18: cmd18
+[00000ae0] 10: 
+[00000ae1]  9: stopSFX
+[00000ae2] 10: 
+[00000ae3]  8: playSFX SE040 1
+[00000aed]  0: 
+[00000aee]  5: delay 180
+[00000af3] 10: 
+[00000af4]  9: stopSFX
+[00000af5] 10: 
+[00000af6]  7: stopBGM
+[00000af7] 10: 
+[00000af8]  2: cmd2 6
+[00000afc] 10: 
+[00000afd] 19: 
+[00000afe] ff: text 5a
+{textColor 0 2}... ... ... 
+
+
+[00000b01] 10: 
+[00000b02] 10: bgload 00000000 BG35NR 0 1
+[00000b0f] 10: 
+[00000b10]  1: cmd1 26
+[00000b15] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 4
+[00000b20] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 10
+[00000b2b] 10: 
+[00000b2c] 17: showClock
+[00000b2d] 10: 
+[00000b2e] 19: 
+[00000b2f] ff: text 5b
+{textColor 0 2}In the end, I couldn't find Kurumi, so I returned to the clinic. 
+
+
+[00000b32] 10: 
+[00000b33]  2: cmd2 6
+[00000b37] 10: 
+[00000b38] 10: bgload 00000000 EV_HA10B 0 1
+[00000b45] 10: 
+[00000b46] 19: 
+[00000b47] ff: text 5c
+{textColor 0 2}Haruka lies down on the bed, her face pale... 
+
+
+[00000b4a]  0: 
+[00000b4b]  7: goto7 00001bbf (005e)
+[00000b4e]  0: 
+[00000b4f]  7: goto7 00000cf8 (0017)
+[00000b52] 10: 
+[00000b53] 15: removeAllFG 3
+[00000b57] 10: 
+[00000b58] 19: 
+[00000b59] ff: text 5d
+{textColor 0 0}【Makoto】 "Okuhiko! Haruka's in trouble!!" 
+{textColor 0 2}Just then, Okuhiko, who had been held down by Yuka, quickly stands up. 
+
+
+[00000b5c] 10: 
+[00000b5d] 11: fgload 0 00000000 OK11CB 1 0
+[00000b6d] 10: 
+[00000b6e]  b: playVoice HL2D6028
+[00000b78] 10: 
+[00000b79] 19: 
+[00000b7a] ff: text 5e
+{textColor 0 0}【Okuhiko】 "Wh-What!? What happened to Haruka-chan!?" 
+{textColor 0 0}【Makoto】 "... She was run over... by a car..." 
+
+
+[00000b7d] 10: 
+[00000b7e] 12: removeFG 0 0
+[00000b85] 10: 
+[00000b86]  f: removeBG 1 6 2
+[00000b90] 10: 
+[00000b91]  8: playSFX SE071 1
+[00000b9b] 10: 
+[00000b9c]  a: waitForSFX
+[00000b9d] 10: 
+[00000b9e]  1: cmd1 1
+[00000ba2] 10: 
+[00000ba3] 10: bgload 00000000 BG02N 6 1
+[00000bb0] 10: 
+[00000bb1]  8: playSFX se065 1
+[00000bbb] 10: 
+[00000bbc]  a: waitForSFX
+[00000bbd] 10: 
+[00000bbe] 19: 
+[00000bbf] ff: text 5f
+{textColor 0 2}In the next instant, I collapse from receiving an intense blow to my left cheek.  {textColor 0 2}Okuhiko had hit me with a very powerful straight left... 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000bc2] 10: 
+[00000bc3] 11: fgload 0 00000000 OK04CB 1 3
+[00000bd3] 10: 
+[00000bd4]  b: playVoice HL2D6029
+[00000bde] 10: 
+[00000bdf] 19: 
+[00000be0] ff: text 60
+{textColor 0 0}【Okuhiko】 "You stupid bastard! Why did that happen while she was with you!?" 
+{textColor 0 0}【Makoto】 "... Sorry..." 
+
+
+[00000be3] 10: 
+[00000be4] 11: fgload 0 00000000 OK05CB 1 3
+[00000bf4] 10: 
+[00000bf5]  b: playVoice HL2D6030
+[00000bff] 10: 
+[00000c00] 19: 
+[00000c01] ff: text 61
+{textColor 0 0}【Okuhiko】 "Apologizing won't solve anything!{delay 5}{delay 5} So, what should I do!?" 
+{textColor 0 0}【Makoto】 "Okuhiko..." 
+
+
+[00000c04] 10: 
+[00000c05] 11: fgload 0 00000000 OK04CB 1 3
+[00000c15] 10: 
+[00000c16]  b: playVoice HL2D6031
+[00000c20] 10: 
+[00000c21] 19: 
+[00000c22] ff: text 62
+{textColor 0 0}【Okuhiko】 "Shut up! I'm not doing this for your sake! I'm doing it for Haruka-chan's!" 
+{textColor 0 2}This is the first time I've seen Okuhiko look so serious.  {textColor 0 2}He's... really serious about Haruka's sake... 
+{textColor 0 0}【Makoto】 "I understand. Listen carefully..." 
+{textColor 0 0}【Makoto】 "To save Haruka, we need a large amount of blood.  But the clinic on this island doesn't have any blood compatible with her type in stock." 
+{textColor 0 0}【Makoto】 "That's why there's no other method but to give her a direct blood transfusion." 
+{textColor 0 0}【Makoto】 "We have to take it from someone who has a blood type of B-, like Haruka, or O-..." 
+
+
+[00000c25] 10: 
+[00000c26] 11: fgload 0 00000000 OK06CB 1 3
+[00000c36] 10: 
+[00000c37]  b: playVoice HL2D6032
+[00000c41] 10: 
+[00000c42] 19: 
+[00000c43] ff: text 63
+{textColor 0 0}【Okuhiko】 "What was that...? Goddammit, I'm A+... Is there anyone else?" 
+{textColor 0 0}【Makoto】 "Kurumi is B-..." 
+
+
+[00000c46] 10: 
+[00000c47] 11: fgload 0 00000000 OK05CB 1 3
+[00000c57] 10: 
+[00000c58]  b: playVoice HL2D6033
+[00000c62] 10: 
+[00000c63] 19: 
+[00000c64] ff: text 64
+{textColor 0 0}【Okuhiko】 "If you need Kurumi-chan, she went outside earlier!" 
+{textColor 0 0}【Makoto】 "Did she go back to Lunabeach?" 
+
+
+[00000c67] 10: 
+[00000c68]  b: playVoice HL2D6034
+[00000c72] 10: 
+[00000c73] 19: 
+[00000c74] ff: text 65
+{textColor 0 0}【Okuhiko】 "I don't know! She didn't say if she was going back!" 
+{textColor 0 0}【Makoto】 "All right, then I'll try going to Lunabeach!" 
+{textColor 0 0}【Makoto】 "You search around this area! If by any chance Kurumi comes here..." 
+
+
+[00000c77] 10: 
+[00000c78] 12: removeFG 0 3
+[00000c7f] 10: 
+[00000c80]  8: playSFX SE000 1
+[00000c8a] 10: 
+[00000c8b]  f: removeBG 0 4 2
+[00000c95] 10: 
+[00000c96]  1: cmd1 26
+[00000c9b] 10: 
+[00000c9c]  8: playSFX SE030 0
+[00000ca6] 10: 
+[00000ca7] 10: bgload 00000000 BG00NR 4 1
+[00000cb4] 10: 
+[00000cb5] 19: 
+[00000cb6] ff: text 66
+{textColor 0 2}I write down the clinic's contact address on a note, give it to Okuhiko, and rush out into the rain. 
+
+
+[00000cb9] 10: 
+[00000cba]  9: stopSFX
+[00000cbb] 10: 
+[00000cbc]  b: playVoice HL2D6035
+[00000cc6] 10: 
+[00000cc7] 19: 
+[00000cc8] ff: text 67
+{textColor 0 0}【Okuhiko】 "Ishihara! I'm counting on you!" 
+
+
+[00000ccb] 10: 
+[00000ccc]  8: playSFX SE040 1
+[00000cd6] 10: 
+[00000cd7] 10: bgload 00000000 bg12nr 4 1
+[00000ce4] 10: 
+[00000ce5] 19: 
+[00000ce6] ff: text 68
+{textColor 0 2}I quickly start running towards Lunabeach. 
+{textColor 0 2}If she's not here, the possibility she returned to Lunabeach is very high. 
+{textColor 0 2}And in the worst-case scenario that she's not there, if I borrow the bicycle at the shop, I can search faster... 
+
+
+[00000ce9] 10: 
+[00000cea]  f: removeBG 0 4 2
+[00000cf4]  0: 
+[00000cf5]  7: goto7 00000cf8 (0019)
+[00000cf8] 10: 
+[00000cf9]  9: stopSFX
+[00000cfa] 10: 
+[00000cfb] 10: bgload 00000000 BG06NR 4 1
+[00000d08] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[00000d13] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 45
+[00000d1f] 10: 
+[00000d20] 17: showClock
+[00000d21] 10: 
+[00000d22] 19: 
+[00000d23] ff: text 69
+{textColor 0 2}BANG, BANG! BANG, BANG!  ... I pound on the door to Lunabeach with enough force to break it. 
+
+
+[00000d26] 10: 
+[00000d27]  b: playVoice HL2D6036
+[00000d31] 10: 
+[00000d32] 19: 
+[00000d33] ff: text 6a
+{textColor 1 8}【Izumi】 "Yesss... who is it〜?" 
+{textColor 0 2}It seems that Izumi-san is still awake. 
+{textColor 0 0}【Makoto】 "It's me! It's Ishihara!" 
+
+
+[00000d36] 10: 
+[00000d37]  8: playSFX SE002 1
+[00000d41] 10: 
+[00000d42] 11: fgload 0 00000000 IZ10BAN 1 3
+[00000d52] 10: 
+[00000d53]  b: playVoice HL2D6037
+[00000d5d] 10: 
+[00000d5e] 19: 
+[00000d5f] ff: text 6b
+{textColor 1 8}【Izumi】 "Yes, yes. What is it?" 
+{textColor 0 2}When the door opens, I see Izumi-san standing there while rubbing the sleep out of her very drowsy eyes. 
+
+
+[00000d62] 10: 
+[00000d63] 11: fgload 0 00000000 IZ02BAN 1 3
+[00000d73] 10: 
+[00000d74]  b: playVoice HL2D6038
+[00000d7e] 10: 
+[00000d7f] 19: 
+[00000d80] ff: text 6c
+{textColor 1 8}【Izumi】 "Geez... I'm not done counting the stock, you know...{delay 5}{delay 5} Makoto-kun, would you give me a little help?" 
+{textColor 0 0}【Makoto】 "N-{delay 5}{delay 5}Now's not the time for that! Is Kurumi back!?" 
+
+
+[00000d83] 10: 
+[00000d84] 11: fgload 0 00000000 IZ06BAN 1 3
+[00000d94] 10: 
+[00000d95]  b: playVoice HL2D6039
+[00000d9f] 10: 
+[00000da0] 19: 
+[00000da1] ff: text 6d
+{textColor 1 8}【Izumi】 "Kurumi isn't here right now. She said she was going to visit the lodge, so..." 
+{textColor 0 2}Damn... She didn't come back here either!? 
+{textColor 0 0}【Makoto】 "Haruka was in a car accident... she needs... a blood transfusion!!" 
+
+
+[00000da4] 10: 
+[00000da5] 11: fgload 0 00000000 IZ11BAN 1 3
+[00000db5] 10: 
+[00000db6]  b: playVoice HL2D6041
+[00000dc0] 10: 
+[00000dc1] 19: 
+[00000dc2] ff: text 6e
+{textColor 1 8}【Izumi】 "W-What was that!? Haruka-chan's been hurt?" 
+{textColor 0 0}【Makoto】 "Calm down, Izumi-san! So... what's your blood type!?" 
+
+
+[00000dc5] 10: 
+[00000dc6] 11: fgload 0 00000000 IZ06BAN 1 3
+[00000dd6] 10: 
+[00000dd7] 19: 
+[00000dd8] ff: text 6f
+{textColor 0 2}But unfortunately, her blood type is O+. 
+{textColor 0 2}Damn...!  So Kurumi really is the only one...? 
+{textColor 0 0}【Makoto】 "Haruka is B-!  Kurumi's...{delay 5}{delay 5} Kurumi's also B-, isn't she!?" 
+
+
+[00000ddb] 10: 
+[00000ddc] 11: fgload 0 00000000 IZ11BAN 1 3
+[00000dec] 10: 
+[00000ded] 19: 
+[00000dee] ff: text 70
+{textColor 0 2}Izumi-san frantically nods at my words. 
+{textColor 0 2}I feel a little relieved and restless at the same time. 
+{textColor 0 2}(Kurumi!  Where are you right now!?) 
+{textColor 0 2}(Even though... Even though you're the only one I can rely on right now...!!!) 
+
+
+[00000df1] 10: 
+[00000df2] 11: fgload 0 00000000 IZ05BAN 1 3
+[00000e02] 10: 
+[00000e03]  b: playVoice HL2D6043
+[00000e0d] 10: 
+[00000e0e] 19: 
+[00000e0f] ff: text 71
+{textColor 1 8}【Izumi】 "What should I do?" 
+{textColor 0 0}【Makoto】 "Izumi-san, stay here!" 
+{textColor 0 0}【Makoto】 "If by any chance Kurumi and I miss each other and she comes back, I want you to take her to this clinic!" 
+{textColor 0 2}I quickly write the address of the clinic Haruka's at, and hand it to Izumi-san. 
+{textColor 0 0}【Makoto】 "Well then, I'm going to look! ... Ah, is it all right if I borrow the bike!?" 
+
+
+[00000e12] 10: 
+[00000e13] 11: fgload 0 00000000 IZ04BAN 1 3
+[00000e23] 10: 
+[00000e24]  b: playVoice HL2D6044
+[00000e2e] 10: 
+[00000e2f] 19: 
+[00000e30] ff: text 72
+{textColor 1 8}【Izumi】 "Of course! The faster you are, the better!! Save her... Save Haruka!" 
+
+
+[00000e33] 10: 
+[00000e34] 12: removeFG 0 3
+[00000e3b] 10: 
+[00000e3c] 19: 
+[00000e3d] ff: text 73
+{textColor 0 2}I give her a powerful nod, and jump on the bike... 
+{textColor 0 2}The sharp, piercing rain mercilessly obstructs my path.  {textColor 0 2}It feels like everything in this world is trying to interfere with my actions. 
+{textColor 0 2}But I have to go.  {textColor 0 2}Even if the whole world turns against me...  {textColor 0 2}I will definitely save Haruka!! 
+
+
+[00000e40] 10: 
+[00000e41]  f: removeBG 0 0 2
+[00000e4b] 10: 
+[00000e4c]  7: stopBGM
+[00000e4d] 10: 
+[00000e4e] 10: bgload 00000000 BG13NR 0 1
+[00000e5b] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[00000e66] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 50
+[00000e72] 10: 
+[00000e73] 17: showClock
+[00000e74] 10: 
+[00000e75]  6: playBGM 13
+[00000e79] 10: 
+[00000e7a] 19: 
+[00000e7b] ff: text 74
+{textColor 0 2}Well then... where should I look?  {textColor 0 2}What place would Kurumi go out to at this time... 
+{textColor 0 2}...!! 
+{textColor 0 2}Hey! Makoto!!  {textColor 0 2}Goddammit, calm down!!  {textColor 0 2}Why would a high-schooler go out this late on a stormy night!? 
+{textColor 0 2}Calm down... calm down...  {textColor 0 2}First, I've got to think calmly...  {textColor 0 2}I won't find her if I search blindly... 
+{textColor 0 2}Think about why Kurumi went outside.  {textColor 0 2}Remember... Remember... Remember!  {textColor 0 2}Remember Kurumi's behavior when I left the lodge! 
+{textColor 0 2}There's got to be a hint somewhere in Kurumi's speech and conduct that should help me find her!! 
+{textColor 0 2}... 
+{textColor 0 2}The reason Kurumi had to go outside... What was it...? 
+
+[00000e7e] ff: text 75
+{textColor 0 2}{choiceOpt 1 -> To look for me...? }{choiceOpt 2 -> She suddenly wanted to take a walk...? }{choiceOpt 3 -> I don't know... }
+
+[00000e81] 10: 
+[00000e82]  3: choice v_a1_08 00 00
+[00000e87]  0: 
+[00000e88]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000f27 (001a)
+[00000e96] 10: 
+[00000e97]  7: stopBGM
+[00000e98] 10: 
+[00000e99]  2: cmd2 6
+[00000e9d] 10: 
+[00000e9e]  1: cmd1 32
+[00000ea3] 10: 
+[00000ea4]  f: removeBG 1 0 1
+[00000eae] 10: 
+[00000eaf] 11: fgload 0 00000000 KU08BB 1 3
+[00000ebf] 10: 
+[00000ec0]  b: playVoice HL2D5044
+[00000eca] 10: 
+[00000ecb] 19: 
+[00000ecc] ff: text 76
+{textColor 1 7}【Kurumi】 "Wait! Wait, Onii-chan! Where are you going!? Don't leave Kurumi alone!!" 
+
+
+[00000ecf] 10: 
+[00000ed0]  2: cmd2 13
+[00000ed4] 10: 
+[00000ed5] 10: bgload 00000000 BG13NR 0 1
+[00000ee2] 10: 
+[00000ee3]  1: cmd1 26
+[00000ee8] 10: 
+[00000ee9] 19: 
+[00000eea] ff: text 77
+{textColor 0 2}Suddenly, Kurumi's words fly by my mind... 
+{textColor 0 2}(Don't tell me...  She went out...{delay 5}{delay 5}{delay 5} in order to{delay 5}{delay 5} look for me...?) 
+
+
+[00000eed] 10: 
+[00000eee]  b: playVoice HL1D5067
+[00000ef8] 10: 
+[00000ef9] 19: 
+[00000efa] ff: text 78
+{textColor 1 7}【Kurumi】 "So Kurumi wants to make as many memories as possible with you and the others in the time we have left." 
+{textColor 0 2}Kurumi... Kurumi came to see me.  {textColor 0 2}Since I'm going back tomorrow...  {textColor 0 2}Since we might not be able to see each other again... 
+
+
+[00000efd] 10: 
+[00000efe]  6: playBGM 13
+[00000f02] 10: 
+[00000f03] 19: 
+[00000f04] ff: text 79
+{textColor 0 2}But even if that's true, that still doesn't give me any specific clues to Kurumi's whereabouts. 
+{textColor 0 2}At any rate, it's already been more than two hours since I left the lodge... 
+{textColor 0 2}Unfortunately, I have no choice but to search the whole island. 
+{textColor 0 2}I'll start around here first. 
+{textColor 0 2}To search farther away would be a waste of time. 
+{textColor 0 2}Once again, I push my body weight into the pedals... 
+
+
+[00000f07] fe: varop VAR_(28_0a)_a1_33 (14) := (00) 1
+[00000f12] 10: 
+[00000f13]  f: removeBG 0 0 2
+[00000f1d] 10: 
+[00000f1e]  9: stopSFX
+[00000f1f]  0: 
+[00000f20]  7: goto7 00000f86 (001e)
+[00000f23]  0: 
+[00000f24]  7: goto7 00000f86 (001c)
+[00000f27]  0: 
+[00000f28]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 00000f60 (001b)
+[00000f36] 10: 
+[00000f37] 19: 
+[00000f38] ff: text 7a
+{textColor 0 2}(Damn! Did she suddenly want to take a walk{delay 5}{delay 5}... is that it!?) 
+{textColor 0 2}Geez, why at such an important time, Kurumi!? 
+{textColor 0 0}【Makoto】 "In the first place, why would you go out and take a walk in the middle of a rainy night!?" 
+{textColor 0 2}Although no one else is around, I shout this in an urge to vent. 
+{textColor 0 2}The slowly creeping shadow of fate turns my intense irritation to anger.  {textColor 0 2}I try to channel my rage into my legs, and start pedaling the bike like a speed demon. 
+{textColor 0 2}She's definitely got to be nearby. 
+{textColor 0 2}I'll definitely find you, Kurumi! 
+{textColor 0 2}Wait for me, Haruka!! 
+
+
+[00000f3b] 10: 
+[00000f3c]  8: playSFX SE030 0
+[00000f46] 10: 
+[00000f47] 19: 
+[00000f48] ff: text 7b
+{textColor 0 2}In the pouring rain, I commence my search for Kurumi. 
+
+
+[00000f4b] 10: 
+[00000f4c]  f: removeBG 0 0 2
+[00000f56] 10: 
+[00000f57]  9: stopSFX
+[00000f58]  0: 
+[00000f59]  7: goto7 00000f86 (001e)
+[00000f5c]  0: 
+[00000f5d]  7: goto7 00000f86 (001c)
+[00000f60] 10: 
+[00000f61] 19: 
+[00000f62] ff: text 7c
+{textColor 0 2}... I don't know!!!  {textColor 0 2}There's no way I would know!! 
+{textColor 0 2}In the first place, if she's a normal girl, then she shouldn't be outside on this rainy night! 
+{textColor 0 2}But it's impossible for me to read the mentality of an abnormal girl. 
+{textColor 0 2}(No, wait...) 
+{textColor 0 2}Just then, I am struck with a certain thought. 
+{textColor 0 2}(Why didn't Kurumi come back even though it's so late?) 
+{textColor 0 2}(... Perhaps it's because something happened to Kurumi as well!) 
+{textColor 0 2}The uneasiness inside me begins to grow more and more. 
+
+
+[00000f65] 10: 
+[00000f66]  8: playSFX SE030 0
+[00000f70] 10: 
+[00000f71] 19: 
+[00000f72] ff: text 7d
+{textColor 0 2}In the endless downpour, I pedal on the bike with all my strength. 
+{textColor 0 2}(Haruka... Kurumi... wait for me!!) 
+
+
+[00000f75] 10: 
+[00000f76]  f: removeBG 0 0 2
+[00000f80] 10: 
+[00000f81]  9: stopSFX
+[00000f82]  0: 
+[00000f83]  7: goto7 00000f86 (001e)
+[00000f86] 10: 
+[00000f87]  f: removeBG 0 0 2
+[00000f91] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 2
+[00000f9c] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 0
+[00000fa7] 10: 
+[00000fa8] 17: showClock
+[00000fa9] 10: 
+[00000faa] 19: 
+[00000fab] ff: text 7e
+{textColor 0 2}Haruka... Is Haruka still alive...? 
+{textColor 0 2}If my memories are correct, then my watch alarm should go off shortly after Haruka dies... 
+{textColor 0 2}That's certainly...{delay 5}{delay 5}{delay 5} "4:30 A.M."... 
+{textColor 0 2}There's no mistake.  {textColor 0 2}Because the alarm was set for the time I went to go see the shiranui with Haruka... 
+{textColor 0 2}So that means for my time limit, I have... {delay 5}{delay 5}{delay 5}Two and a half hours left!! 
+{textColor 0 2}Where do I look...?  {textColor 0 2}Where should I look...!?  {textColor 0 2}Where the hell should I look...!? 
+{textColor 0 2}My hands that are grasping the handles slip.  {textColor 0 2}My legs get twisted from pedaling the bike.  {textColor 0 2}Although it seems like I'm about to fall countless times, I don't slow down. 
+{textColor 0 2}Kurumi... Kurumi... Where are you...?  Where are you right now...?  Tell me... Kurumi...! 
+
+[00000fae] ff: text 7f
+{textColor 0 2}{choiceOpt 1 -> Tsukiya Hotel. }{choiceOpt 2 -> Moon Beach. }{choiceOpt 3 -> Viewpoint Park. }
+
+[00000fb1] 10: 
+[00000fb2]  3: choice v_a1_08 00 00
+[00000fb7] fe: varop VAR_(28_0a)_a1_0b (14) := (00) 0
+[00000fc2] fe: varop VAR_(28_0a)_a1_0c (14) := (00) 0
+[00000fcd]  0: 
+[00000fce]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000fef (001f)
+[00000fdc] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 3
+[00000fe7]  0: 
+[00000fe8]  7: goto7 00001105 (002a)
+[00000feb]  0: 
+[00000fec]  7: goto7 00001020 (0021)
+[00000fef]  0: 
+[00000ff0]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 00001011 (0020)
+[00000ffe] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 1
+[00001009]  0: 
+[0000100a]  7: goto7 000011ea (0031)
+[0000100d]  0: 
+[0000100e]  7: goto7 00001020 (0021)
+[00001011] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 8
+[0000101c]  0: 
+[0000101d]  7: goto7 000012cf (0038)
+[00001020] 10: 
+[00001021]  f: removeBG 0 4 2
+[0000102b]  0: 
+[0000102c]  5: delay 60
+[00001031] 10: 
+[00001032] 10: bgload 00000000 BG06NR 4 1
+[0000103f] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[0000104a]  0: 
+[0000104b]  b: unknownB 004a
+[0000104e]  0: 
+[0000104f]  a: condJump 01 VAR_(28_1e)_a1_0b (28) == (15) (83)->3 (15) (00)  * 000015b1 (0052)
+[0000105d]  0: 
+[0000105e]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (82)->2 (15) (00)  * 0000107b (0025)
+[0000106c] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[00001077]  0: 
+[00001078]  b: unknownB 0046
+[0000107b]  0: 
+[0000107c]  a: condJump 01 VAR_(28_1e)_a1_31 (28) == (15) (81)->1 (15) (00)  * 00001bbf (005e)
+[0000108a] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[00001095]  0: 
+[00001096]  b: unknownB 004d
+[00001099] 10: 
+[0000109a] 19: 
+[0000109b] ff: text 80
+{textColor 0 2}Where should I head next? 
+
+[0000109e] ff: text 81
+{textColor 0 2}{choiceOpt 1 -> Tsukiya Hotel. }{choiceOpt 2 -> Moon Beach. }{choiceOpt 3 -> Viewpoint Park. }
+
+[000010a1] 10: 
+[000010a2]  3: choice v_a1_08 00 00
+[000010a7] fe: varop VAR_(28_0a)_a1_0b (14) += (00) 1
+[000010b2]  0: 
+[000010b3]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000010d4 (0026)
+[000010c1] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 3
+[000010cc]  0: 
+[000010cd]  7: goto7 00001105 (002a)
+[000010d0]  0: 
+[000010d1]  7: goto7 00001105 (0028)
+[000010d4]  0: 
+[000010d5]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000010f6 (0027)
+[000010e3] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 1
+[000010ee]  0: 
+[000010ef]  7: goto7 000011ea (0031)
+[000010f2]  0: 
+[000010f3]  7: goto7 00001105 (0028)
+[000010f6] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 8
+[00001101]  0: 
+[00001102]  7: goto7 000012cf (0038)
+[00001105] 10: 
+[00001106]  f: removeBG 0 4 2
+[00001110]  0: 
+[00001111]  5: delay 60
+[00001116] 10: 
+[00001117] 10: bgload 00000000 BG08NR 4 1
+[00001124] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[0000112f]  0: 
+[00001130]  b: unknownB 004a
+[00001133]  0: 
+[00001134]  a: condJump 01 VAR_(28_1e)_a1_0b (28) == (15) (83)->3 (15) (00)  * 000015b1 (0052)
+[00001142]  0: 
+[00001143]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (82)->2 (15) (00)  * 00001160 (002c)
+[00001151] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[0000115c]  0: 
+[0000115d]  b: unknownB 0046
+[00001160]  0: 
+[00001161]  a: condJump 01 VAR_(28_1e)_a1_31 (28) == (15) (81)->1 (15) (00)  * 00001bbf (005e)
+[0000116f] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[0000117a]  0: 
+[0000117b]  b: unknownB 004d
+[0000117e] 10: 
+[0000117f] 19: 
+[00001180] ff: text 82
+{textColor 0 2}Where should I head next? 
+
+[00001183] ff: text 83
+{textColor 0 2}{choiceOpt 1 -> Lunabeach. }{choiceOpt 2 -> Moon Beach. }{choiceOpt 3 -> Viewpoint Park. }
+
+[00001186] 10: 
+[00001187]  3: choice v_a1_08 00 00
+[0000118c] fe: varop VAR_(28_0a)_a1_0b (14) += (00) 1
+[00001197]  0: 
+[00001198]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000011b9 (002d)
+[000011a6] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 3
+[000011b1]  0: 
+[000011b2]  7: goto7 00001020 (0023)
+[000011b5]  0: 
+[000011b6]  7: goto7 000011ea (002f)
+[000011b9]  0: 
+[000011ba]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000011db (002e)
+[000011c8] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 4
+[000011d3]  0: 
+[000011d4]  7: goto7 000011ea (0031)
+[000011d7]  0: 
+[000011d8]  7: goto7 000011ea (002f)
+[000011db] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 11
+[000011e6]  0: 
+[000011e7]  7: goto7 000012cf (0038)
+[000011ea] 10: 
+[000011eb]  f: removeBG 0 4 2
+[000011f5]  0: 
+[000011f6]  5: delay 60
+[000011fb] 10: 
+[000011fc] 10: bgload 00000000 BG16NR 4 1
+[00001209] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[00001214]  0: 
+[00001215]  b: unknownB 004a
+[00001218]  0: 
+[00001219]  a: condJump 01 VAR_(28_1e)_a1_0b (28) == (15) (83)->3 (15) (00)  * 000015b1 (0052)
+[00001227]  0: 
+[00001228]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (82)->2 (15) (00)  * 00001245 (0033)
+[00001236] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[00001241]  0: 
+[00001242]  b: unknownB 0046
+[00001245]  0: 
+[00001246]  a: condJump 01 VAR_(28_1e)_a1_31 (28) == (15) (81)->1 (15) (00)  * 00001bbf (005e)
+[00001254] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[0000125f]  0: 
+[00001260]  b: unknownB 004d
+[00001263] 10: 
+[00001264] 19: 
+[00001265] ff: text 84
+{textColor 0 2}Where should I head next? 
+
+[00001268] ff: text 85
+{textColor 0 2}{choiceOpt 1 -> Lunabeach. }{choiceOpt 2 -> Princess Beach. }{choiceOpt 3 -> Viewpoint Park. }
+
+[0000126b] 10: 
+[0000126c]  3: choice v_a1_08 00 00
+[00001271] fe: varop VAR_(28_0a)_a1_0b (14) += (00) 1
+[0000127c]  0: 
+[0000127d]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 0000129e (0034)
+[0000128b] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 1
+[00001296]  0: 
+[00001297]  7: goto7 00001020 (0023)
+[0000129a]  0: 
+[0000129b]  7: goto7 000012cf (0036)
+[0000129e]  0: 
+[0000129f]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000012c0 (0035)
+[000012ad] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 10
+[000012b8]  0: 
+[000012b9]  7: goto7 000013b4 (003f)
+[000012bc]  0: 
+[000012bd]  7: goto7 000012cf (0036)
+[000012c0] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 7
+[000012cb]  0: 
+[000012cc]  7: goto7 000012cf (0038)
+[000012cf] 10: 
+[000012d0]  f: removeBG 0 4 2
+[000012da]  0: 
+[000012db]  5: delay 60
+[000012e0] 10: 
+[000012e1] 10: bgload 00000000 BG19NR 4 1
+[000012ee] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[000012f9]  0: 
+[000012fa]  b: unknownB 004a
+[000012fd]  0: 
+[000012fe]  a: condJump 01 VAR_(28_1e)_a1_0b (28) == (15) (83)->3 (15) (00)  * 000015b1 (0052)
+[0000130c]  0: 
+[0000130d]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (82)->2 (15) (00)  * 0000132a (003a)
+[0000131b] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[00001326]  0: 
+[00001327]  b: unknownB 0046
+[0000132a]  0: 
+[0000132b]  a: condJump 01 VAR_(28_1e)_a1_31 (28) == (15) (81)->1 (15) (00)  * 00001bbf (005e)
+[00001339] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[00001344]  0: 
+[00001345]  b: unknownB 004d
+[00001348] 10: 
+[00001349] 19: 
+[0000134a] ff: text 86
+{textColor 0 2}Where should I head next? 
+
+[0000134d] ff: text 87
+{textColor 0 2}{choiceOpt 1 -> Lunabeach. }{choiceOpt 2 -> Princess Beach. }{choiceOpt 3 -> Moon Beach. }
+
+[00001350] 10: 
+[00001351]  3: choice v_a1_08 00 00
+[00001356] fe: varop VAR_(28_0a)_a1_0b (14) += (00) 1
+[00001361]  0: 
+[00001362]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00001383 (003b)
+[00001370] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 8
+[0000137b]  0: 
+[0000137c]  7: goto7 00001020 (0023)
+[0000137f]  0: 
+[00001380]  7: goto7 000013b4 (003d)
+[00001383]  0: 
+[00001384]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000013a5 (003c)
+[00001392] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 13
+[0000139d]  0: 
+[0000139e]  7: goto7 000013b4 (003f)
+[000013a1]  0: 
+[000013a2]  7: goto7 000013b4 (003d)
+[000013a5] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 7
+[000013b0]  0: 
+[000013b1]  7: goto7 000011ea (0031)
+[000013b4] 10: 
+[000013b5]  f: removeBG 0 4 2
+[000013bf]  0: 
+[000013c0]  5: delay 60
+[000013c5] 10: 
+[000013c6] 10: bgload 00000000 BG17NR 4 1
+[000013d3] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[000013de]  0: 
+[000013df]  b: unknownB 004a
+[000013e2]  0: 
+[000013e3]  a: condJump 01 VAR_(28_1e)_a1_0b (28) == (15) (83)->3 (15) (00)  * 000015b1 (0052)
+[000013f1]  0: 
+[000013f2]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (82)->2 (15) (00)  * 0000140f (0041)
+[00001400] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[0000140b]  0: 
+[0000140c]  b: unknownB 0046
+[0000140f]  0: 
+[00001410]  a: condJump 01 VAR_(28_1e)_a1_31 (28) == (15) (81)->1 (15) (00)  * 00001bbf (005e)
+[0000141e] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 2
+[00001429]  0: 
+[0000142a]  b: unknownB 004d
+[0000142d] 10: 
+[0000142e] 19: 
+[0000142f] ff: text 88
+{textColor 0 2}Where should I head next? 
+
+[00001432] ff: text 89
+{textColor 0 2}{choiceOpt 1 -> Lunabeach. }{choiceOpt 2 -> Viewpoint Park. }{choiceOpt 3 -> Moon Beach. }
+
+[00001435] 10: 
+[00001436]  3: choice v_a1_08 00 00
+[0000143b] fe: varop VAR_(28_0a)_a1_0b (14) += (00) 1
+[00001446]  0: 
+[00001447]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00001468 (0042)
+[00001455] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 8
+[00001460]  0: 
+[00001461]  7: goto7 00001020 (0023)
+[00001464]  0: 
+[00001465]  7: goto7 00001499 (0044)
+[00001468]  0: 
+[00001469]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 0000148a (0043)
+[00001477] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 13
+[00001482]  0: 
+[00001483]  7: goto7 000012cf (0038)
+[00001486]  0: 
+[00001487]  7: goto7 00001499 (0044)
+[0000148a] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 10
+[00001495]  0: 
+[00001496]  7: goto7 000011ea (0031)
+[00001499] 10: 
+[0000149a] 19: 
+[0000149b] ff: text 8a
+{textColor 0 2}I can't find her...  {textColor 0 2}I can't find Kurumi... 
+{textColor 0 2}I want to go to the clinic...  I want to be by Haruka's side... 
+
+[0000149e] ff: text 8b
+{textColor 0 2}{choiceOpt 1 -> Fucking dumbass! You can't let Haruka die! }{choiceOpt 2 -> Haruka... I'm sorry... I couldn't... }
+
+[000014a1] 10: 
+[000014a2]  3: choice v_a1_08 00 00
+[000014a7]  0: 
+[000014a8]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000014bf (0047)
+[000014b6] 10: 
+[000014b7] 19: 
+[000014b8] ff: text 8c
+{textColor 0 2}Not yet...!  {textColor 0 2}I won't... give up...!  {textColor 0 2}I pedal even harder... as if to cast aside my own weakness. 
+
+
+[000014bb]  0: 
+[000014bc]  7: goto7 00001504 (0048)
+[000014bf] 10: 
+[000014c0]  7: stopBGM
+[000014c1] 10: 
+[000014c2] 19: 
+[000014c3] ff: text 8d
+{textColor 0 2}I can't find Kurumi...  {textColor 0 2}I decide to give up on the search. 
+
+
+[000014c6] 10: 
+[000014c7]  f: removeBG 1 0 2
+[000014d1] 10: 
+[000014d2]  2: cmd2 6
+[000014d6] 10: 
+[000014d7]  f: removeBG 1 6 2
+[000014e1] 10: 
+[000014e2] 19: 
+[000014e3] ff: text 8e
+{textColor 0 2}But I have one last remaining hope...  {textColor 0 2}The helicopter heading towards the clinic transporting the blood. 
+{textColor 0 2}... ... ... 
+
+
+[000014e6] 10: 
+[000014e7] 10: bgload 00000000 ev_ha10b 0 1
+[000014f4] 10: 
+[000014f5] 19: 
+[000014f6] ff: text 8f
+{textColor 0 2}Haruka lies down on the bed, her face pale... 
+
+
+[000014f9] fe: varop VAR_(28_0a)_a1_31 (14) := (00) 1
+[00001504] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 0
+[0000150f]  0: 
+[00001510]  e: return
+[00001511] fe: varop VAR_(28_0a)_a0_fd (14) += (00) VAR_(28_0a)_a1_0c
+[0000151d] 14: unsupported 20 
+[0000151e]  0: 
+[0000151f] fe: varop VAR_(28_0a)_a1_0c (14) := (00) 0
+[0000152a]  0: 
+[0000152b]  a: condJump 00 VAR_(28_1e)_a0_fd (28) <  (15) (a0_a0)->60 (15) (00)  * 00001551 (004c)
+[0000153a] fe: varop VAR_(28_0a)_a0_fd (14) -= (00) 60
+[00001546] fe: varop VAR_(28_0a)_a0_fc (14) += (00) 1
+[00001551] 10: 
+[00001552] 17: showClock
+[00001553] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 0
+[0000155e]  0: 
+[0000155f]  e: return
+[00001560]  0: 
+[00001561]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (80)->0 (15) (00)  * 00001578 (004e)
+[0000156f] 10: 
+[00001570] 19: 
+[00001571] ff: text 90
+{textColor 0 2}I don't see Kurumi here...  {textColor 0 2}I'll go look somewhere else. 
+
+
+[00001574]  0: 
+[00001575]  7: goto7 000015a4 (0050)
+[00001578]  0: 
+[00001579]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (81)->1 (15) (00)  * 00001590 (004f)
+[00001587] 10: 
+[00001588] 19: 
+[00001589] ff: text 91
+{textColor 0 2}No good! She's nowhere to be found!!  {textColor 0 2}Where could she possibly be...!? 
+
+
+[0000158c]  0: 
+[0000158d]  7: goto7 000015a4 (0050)
+[00001590]  0: 
+[00001591]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (82)->2 (15) (00)  * 000015a4 (0051)
+[0000159f] 10: 
+[000015a0] 19: 
+[000015a1] ff: text 92
+{textColor 0 2}To what extent will fortune abandon me? 
+{textColor 0 2}Am I being toyed around by some invisible power or something? 
+{textColor 0 2}But whether or not such a power exists, it doesn't concern the current me. 
+{textColor 0 2}Even if it exists, I'll throw that power down. 
+{textColor 0 2}I'll smash fate into tiny pieces! 
+{textColor 0 2}Haruka... Haruka... Wait for me...! 
+
+
+[000015a4] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 0
+[000015af]  0: 
+[000015b0]  e: return
+[000015b1] fe: varop VAR_(28_0a)_a1_0b (14) := (00) 0
+[000015bc] fe: varop VAR_(28_0a)_a1_0c (14) := (00) 0
+[000015c7] 10: 
+[000015c8] 19: 
+[000015c9] ff: text 93
+{textColor 0 2}I ride the bike at full speed... 
+{textColor 0 0}【Makoto】 "KURUMIIII! ANSWER MEEEEE!!" 
+
+
+[000015cc] 10: 
+[000015cd]  8: playSFX SE030 0
+[000015d7] 10: 
+[000015d8] 19: 
+[000015d9] ff: text 94
+{textColor 0 2}My cries are drowned out by the noisy rainfall. It's even hard for me to hear myself. 
+{textColor 0 0}【Makoto】 "Dammit... damn you, Kurumi..." 
+{textColor 0 2}I instinctively start complaining about Kurumi...  {textColor 0 2}But back then, I was the one who abandoned her and left the lodge. 
+{textColor 0 2}If I had been nicer towards her, then this probably wouldn't have happened... 
+{textColor 0 2}I bite my lips, and recommence my search for Kurumi. 
+
+
+[000015dc] 10: 
+[000015dd]  9: stopSFX
+[000015de] 10: 
+[000015df]  7: stopBGM
+[000015e0] 10: 
+[000015e1]  f: removeBG 0 0 1
+[000015eb] 10: 
+[000015ec] 10: bgload 00000000 BG13NR 0 1
+[000015f9] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 3
+[00001604] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 30
+[00001610] 10: 
+[00001611] 17: showClock
+[00001612] 10: 
+[00001613]  8: playSFX SE030 0
+[0000161d] 10: 
+[0000161e] 19: 
+[0000161f] ff: text 95
+{textColor 0 2}When I come to my senses, I've been brought to a standstill in the middle of the road. 
+{textColor 0 2}Over there... is the scene of Haruka's accident... 
+{textColor 0 2}Although the rain has washed most of it away, there are still painful traces of blood on the asphalt remaining. 
+{textColor 0 2}As usual, the rain shows no signs of stopping.  {textColor 0 2}If anything, it's only grown stronger. 
+{textColor 0 2}My entire body is soaked, as if I'd been through a waterfall. 
+{textColor 0 2}I feel completely frozen and numb.  {textColor 0 2}My hands grasping the handles,{delay 5}{delay 5} my feet on the pedals...{delay 5}{delay 5} I can't feel them...{delay 5}{delay 5} I can't feel anything... 
+{textColor 0 2}I can't find Kurumi...  {textColor 0 2}I've dropped by Lunabeach at fixed intervals all this time, but there's no sign of her coming back. 
+{textColor 0 2}Even though I've searched so much, I can't find her...  {textColor 0 2}It's as if the existence known as Kurumi has completely vanished from this planet... 
+{textColor 0 2}The current time is "3:30 A.M."... 
+{textColor 0 2}Only one hour... until my time limit is up... 
+{textColor 0 2}Is it...{delay 5}{delay 5} too late now...? 
+{textColor 0 2}At the very least, I might be able to make it to the clinic in time to stay by Haruka's side until the end... 
+{textColor 0 2}Or should I not give up and continue searching...?  Even if it's a useless endeavor... 
+
+[00001622] ff: text 96
+{textColor 0 2}{choiceOpt 1 -> I should at least stay with her... }{choiceOpt 2 -> I won't give up until the end!! }
+
+[00001625] 10: 
+[00001626]  3: choice v_a1_08 00 00
+[0000162b]  0: 
+[0000162c]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 0000166d (0054)
+[0000163a] 10: 
+[0000163b] 19: 
+[0000163c] ff: text 97
+{textColor 0 2}At the very least... At the very least, I should stay by her at least at the very end...  {textColor 0 2}That's... the only thing the current me can do... 
+{textColor 0 2}I cheer up my stiff body once more, and head to the clinic where Haruka is waiting. 
+
+
+[0000163f] 10: 
+[00001640]  2: cmd2 6
+[00001644] 10: 
+[00001645]  f: removeBG 1 0 2
+[0000164f] 10: 
+[00001650]  9: stopSFX
+[00001651] 10: 
+[00001652] 19: 
+[00001653] ff: text 98
+{textColor 0 2}... ... ... 
+
+
+[00001656] 10: 
+[00001657] 10: bgload 00000000 EV_HA10B 0 1
+[00001664] 10: 
+[00001665] 19: 
+[00001666] ff: text 99
+{textColor 0 2}Haruka lies down on the bed, her face pale... 
+
+
+[00001669]  0: 
+[0000166a]  7: goto7 00001bbf (005e)
+[0000166d] 10: 
+[0000166e]  9: stopSFX
+[0000166f] 10: 
+[00001670]  6: playBGM 20
+[00001675] 10: 
+[00001676] 19: 
+[00001677] ff: text 9a
+{textColor 0 2}(There's no way in hell... that I'll give up until the end!!) 
+{textColor 0 2}I... I swore it...  {textColor 0 2}On that day... that night when I saw the shiranui with Haruka... 
+{textColor 0 2}"I'll protect Haruka,"...{delay 5}{delay 5}{delay 5}{delay 5} ... I swore that...!! 
+
+
+[0000167a] 10: 
+[0000167b]  2: cmd2 6
+[0000167f] 10: 
+[00001680]  1: cmd1 32
+[00001685] 10: 
+[00001686]  f: removeBG 1 0 1
+[00001690] 10: 
+[00001691] 11: fgload 0 00000000 HA01AB 1 3
+[000016a1] 10: 
+[000016a2]  b: playVoice REV009
+[000016aa] 10: 
+[000016ab] 19: 
+[000016ac] ff: text 9b
+{textColor 1 5}【Haruka】 "I understand... I'll trust you." 
+
+
+[000016af] 10: 
+[000016b0] 12: removeFG 0 3
+[000016b7] 10: 
+[000016b8] 19: 
+[000016b9] ff: text 9c
+{textColor 0 2}Haruka's voice... 
+{textColor 0 2}That's right... Haruka trusts me!  {textColor 0 2}So... I can't betray Haruka! 
+
+
+[000016bc] 10: 
+[000016bd]  2: cmd2 13
+[000016c1] 10: 
+[000016c2]  f: removeBG 0 0 2
+[000016cc] 10: 
+[000016cd] 19: 
+[000016ce] ff: text 9d
+{textColor 0 2}... But... at this rate... 
+{textColor 0 2}At this rate, history will just repeat itself, right...?  {textColor 0 2}And then... will I be sent flying back to the past again...? 
+{textColor 0 2}The next time I go back, I won't necessarily have my memories. 
+{textColor 0 2}I might lose all my memories of Haruka.  {textColor 0 2}And naturally, Haruka will forget about me too... 
+
+
+[000016d1] 10: 
+[000016d2]  1: cmd1 32
+[000016d7] 10: 
+[000016d8]  f: removeBG 1 0 1
+[000016e2] 10: 
+[000016e3] 11: fgload 0 00000000 HA07AB 1 3
+[000016f3] 10: 
+[000016f4]  b: playVoice REV010
+[000016fc] 10: 
+[000016fd] 19: 
+[000016fe] ff: text 9e
+{textColor 1 5}【Haruka】 "I won't leave. I also love this world where you exist too much..." 
+
+
+[00001701] 10: 
+[00001702]  2: cmd2 13
+[00001706] 10: 
+[00001707]  f: removeBG 0 0 2
+[00001711] 10: 
+[00001712] 19: 
+[00001713] ff: text 9f
+{textColor 0 2}Suddenly...{delay 5}{delay 5} memories of Haruka go rushing through me...  {textColor 0 2}When she looked at me...{delay 5}{delay 5} her gaze...  {textColor 0 2}The feel of her arms...{delay 5}{delay 5} her warmth...{delay 5}{delay 5}{delay 5}{delay 5} Her soft lips... 
+
+
+[00001716]  0: 
+[00001717]  5: delay 30
+[0000171c] 10: 
+[0000171d] 19: 
+[0000171e] ff: text a0
+{textColor 0 2}――I don't want to forget that!  {textColor 0 2}――I don't want to lose that! 
+{textColor 0 2}So I've got to think! 
+{textColor 0 2}Am I forgetting something...?  {textColor 0 2}Is there something important that I'm forgetting...? 
+{textColor 0 2}Once again, I shift through the threads of my memories.  {textColor 0 2}I concentrate all my nerves... 
+
+
+[00001721] 10: 
+[00001722]  7: stopBGM
+[00001723] 10: 
+[00001724] 19: 
+[00001725] ff: text a1
+{textColor 0 2}...!? 
+
+
+[00001728]  0: 
+[00001729]  a: condJump 00 VAR_(28_1e)_a1_33 (28) != (15) (81)->1 (15) (00)  * 00001746 (0056)
+[00001737] 10: 
+[00001738] 19: 
+[00001739] ff: text a2
+{textColor 0 2}A flash suddenly runs through my head.  The thing I remember in that instant... is... 
+
+
+[0000173c]  0: 
+[0000173d]  5: delay 30
+[00001742]  0: 
+[00001743]  7: goto7 00001855 (0058)
+[00001746] 10: 
+[00001747] 19: 
+[00001748] ff: text a3
+{textColor 0 2}A flash suddenly runs through my head.  The thing I remember in that instant... is... 
+
+[0000174b] ff: text a4
+{textColor 0 2}{choiceOpt 1 -> Kurumi's words... }{choiceOpt 2 -> My words... }
+
+[0000174e] 10: 
+[0000174f]  3: choice v_a1_08 00 00
+[00001754]  0: 
+[00001755]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00001855 (0057)
+[00001763] 10: 
+[00001764]  1: cmd1 32
+[00001769] 10: 
+[0000176a]  f: removeBG 1 0 1
+[00001774] 10: 
+[00001775] 11: fgload 0 00000000 KU07AB 1 3
+[00001785] 10: 
+[00001786]  b: playVoice L1D2N073
+[00001790] 10: 
+[00001791] 19: 
+[00001792] ff: text a5
+{textColor 1 7}【Kurumi】 "After this, do you wanna go on a Mystery Tour?" 
+
+
+[00001795] 10: 
+[00001796]  b: playVoice L1D2N074
+[000017a0] 10: 
+[000017a1] 19: 
+[000017a2] ff: text a6
+{textColor 1 7}【Kurumi】 "Yep. Kurumi wants to go check out that so-called 'Shiki no Mori Shrine' and see if the rumors are true or not." 
+
+
+[000017a5] 10: 
+[000017a6]  b: playVoice L1D2N075
+[000017b0] 10: 
+[000017b1] 19: 
+[000017b2] ff: text a7
+{textColor 1 7}【Kurumi】 "Well? It sounds kinda fun, doesn't it?" 
+
+
+[000017b5] 10: 
+[000017b6]  2: cmd2 13
+[000017ba] 10: 
+[000017bb]  f: removeBG 0 0 2
+[000017c5] 10: 
+[000017c6]  6: playBGM 10
+[000017ca] 10: 
+[000017cb] 19: 
+[000017cc] ff: text a8
+{textColor 0 2}That's right...  {textColor 0 2}On the night of the 2nd, Kurumi definitely said that. 
+{textColor 0 2}I picture Kurumi's pouting face at Izumi-san's opposition... 
+
+
+[000017cf] 10: 
+[000017d0] 10: bgload 00000000 BG13NR 0 1
+[000017dd] 10: 
+[000017de]  1: cmd1 26
+[000017e3] 10: 
+[000017e4] 19: 
+[000017e5] ff: text a9
+{textColor 0 2}I realize that I still haven't searched that shrine yet. 
+{textColor 0 2}Perhaps... Kurumi's... at the shrine...? 
+{textColor 0 2}I unhesitantly ride towards the shrine... 
+
+
+[000017e8] 10: 
+[000017e9]  f: removeBG 0 4 2
+[000017f3] 10: 
+[000017f4]  8: playSFX SE030 0
+[000017fe] 10: 
+[000017ff] 10: bgload 00000000 BG24NR 4 1
+[0000180c] 10: 
+[0000180d] 19: 
+[0000180e] ff: text aa
+{textColor 0 2}But... Kurumi's not here either... 
+{textColor 0 2}... She's not... here either...  {textColor 0 2}Haruka... what should I... 
+
+
+[00001811] 10: 
+[00001812]  2: cmd2 6
+[00001816] 10: 
+[00001817]  f: removeBG 0 0 2
+[00001821] 10: 
+[00001822]  9: stopSFX
+[00001823] 10: 
+[00001824]  7: stopBGM
+[00001825] 10: 
+[00001826] 19: 
+[00001827] ff: text ab
+{textColor 0 2}... ... ... 
+
+
+[0000182a] 10: 
+[0000182b]  f: removeBG 1 0 2
+[00001835] 10: 
+[00001836] 19: 
+[00001837] ff: text ac
+{textColor 0 2}And I have one last remaining hope...  {textColor 0 2}The helicopter heading towards the clinic transporting the blood. 
+{textColor 0 2}... ... ... 
+
+
+[0000183a] 10: 
+[0000183b] 10: bgload 00000000 EV_HA10B 0 1
+[00001848] 10: 
+[00001849] 19: 
+[0000184a] ff: text ad
+{textColor 0 2}Haruka lies down on the bed, her face pale... 
+
+
+[0000184d]  0: 
+[0000184e]  7: goto7 00001bbf (005e)
+[00001851]  0: 
+[00001852]  7: goto7 000018c7 (0059)
+[00001855] 10: 
+[00001856]  1: cmd1 32
+[0000185b] 10: 
+[0000185c]  f: removeBG 1 0 1
+[00001866] 10: 
+[00001867] 19: 
+[00001868] ff: text ae
+{textColor 0 0}【Makoto】 "I'm going to look for Haruka!" 
+
+
+[0000186b] 10: 
+[0000186c] 11: fgload 0 00000000 KU11BB 1 3
+[0000187c] 10: 
+[0000187d]  b: playVoice ETC189
+[00001885] 10: 
+[00001886] 19: 
+[00001887] ff: text af
+{textColor 1 7}【Kurumi】 "Huh?" 
+{textColor 0 0}【Makoto】 "I'll be back soon, so wait in the lodge!" 
+
+
+[0000188a] 10: 
+[0000188b]  2: cmd2 13
+[0000188f] 10: 
+[00001890]  f: removeBG 0 0 2
+[0000189a] 10: 
+[0000189b]  6: playBGM 10
+[0000189f] 10: 
+[000018a0] 10: bgload 00000000 BG13NR 0 1
+[000018ad] 10: 
+[000018ae]  1: cmd1 26
+[000018b3] 10: 
+[000018b4] 19: 
+[000018b5] ff: text b0
+{textColor 0 2}That's right...  {textColor 0 2}When I left the lodge, I definitely said that. 
+{textColor 0 2}"Wait at the lodge!" ... 
+{textColor 0 2}Entrusting everything on my last hope, I ride to the lodge... 
+
+
+[000018b8] 10: 
+[000018b9]  f: removeBG 0 4 2
+[000018c3]  0: 
+[000018c4]  7: goto7 000018c7 (005b)
+[000018c7] 10: 
+[000018c8]  f: removeBG 0 4 2
+[000018d2] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 3
+[000018dd] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 45
+[000018e9] 10: 
+[000018ea] 17: showClock
+[000018eb] 10: 
+[000018ec]  8: playSFX SE030 0
+[000018f6] 10: 
+[000018f7] 19: 
+[000018f8] ff: text b1
+{textColor 0 2}Just a little more, and I'll be at the lodge...  {textColor 0 2}But...{delay 5}{delay 5} If Kurumi isn't there either...  {textColor 0 2}I can think nothing but bad thoughts. 
+{textColor 0 2}――Just then, someone calls out! 
+
+
+[000018fb] 10: 
+[000018fc]  b: playVoice HL2D6045
+[00001906] 10: 
+[00001907] 19: 
+[00001908] ff: text b2
+{textColor 0 0}【Okuhiko】 "HEY! ISHIHARAAA!!! I FOUND HER, OVER HERE!!" 
+{textColor 0 2}Okuhiko's shouting voice brings me to my senses.  {textColor 0 2}I pedal towards the direction of his voice with enough force to break the bike's pedals! 
+{textColor 0 0}【Makoto】 "OKUHIKO!! WHERE ARE YOU!?" 
+{textColor 0 2}My vision is obstructed by the heavy rain, so I can only advance in the direction of his voice. 
+
+
+[0000190b] 10: 
+[0000190c]  b: playVoice HL2D6046
+[00001916] 10: 
+[00001917] 19: 
+[00001918] ff: text b3
+{textColor 0 0}【Okuhiko】 "Over here! Towards the lodge!!" 
+
+
+[0000191b] 10: 
+[0000191c] 10: bgload 00000000 BG00NR 4 1
+[00001929] 10: 
+[0000192a] 14: multifgload2 00000000 OK05CAN 2 00000000 KU01BAN 3
+[0000193d] 10: 
+[0000193e] 19: 
+[0000193f] ff: text b4
+{textColor 0 2}Kurumi and Okuhiko descend the lodge's stairs huddling close together.  {textColor 0 2}She's restlessly holding a large umbrella... 
+
+
+[00001942] 10: 
+[00001943]  9: stopSFX
+[00001944] 10: 
+[00001945] 11: fgload 1 00000000 KU04BAN 0 3
+[00001955] 10: 
+[00001956]  b: playVoice HL2D6047
+[00001960] 10: 
+[00001961] 19: 
+[00001962] ff: text b5
+{textColor 1 7}【Kurumi】 "Ah! Where did you go, Onii-chan!?" 
+{textColor 0 0}【Makoto】 "I was... looking for you!!!" 
+
+
+[00001965] 10: 
+[00001966] 11: fgload 1 00000000 KU03BAN 0 3
+[00001976] 10: 
+[00001977]  b: playVoice HL2D6048
+[00001981] 10: 
+[00001982] 19: 
+[00001983] ff: text b6
+{textColor 1 7}【Kurumi】 "For Kurumi? ... But Onii-chan, you left so suddenly..." 
+{textColor 0 2}The umbrella Kurumi is holding out is designed for men.  {textColor 0 2}Could it be... that she went outside to try to give it to me? 
+{textColor 0 2}But now's not the time to think about things like that! 
+{textColor 0 0}【Makoto】 "Kurumi! Ride in the back!" 
+
+
+[00001986] 10: 
+[00001987] 11: fgload 1 00000000 KU11BAN 0 3
+[00001997] 10: 
+[00001998]  b: playVoice HL2D6049
+[000019a2] 10: 
+[000019a3] 19: 
+[000019a4] ff: text b7
+{textColor 1 7}【Kurumi】 "Huh, huh? Don't be pushy, Onii-chan〜" 
+{textColor 0 0}【Makoto】 "Look, just hurry!!" 
+
+
+[000019a7] 10: 
+[000019a8] 12: removeFG 1 3
+[000019af] 10: 
+[000019b0] 19: 
+[000019b1] ff: text b8
+{textColor 0 2}Once I confirm Kurumi is riding on the luggage carrier,  {textColor 0 2}I pedal the bike faster than I ever have before. 
+
+
+[000019b4] 10: 
+[000019b5] 13: moveFG 0 1
+[000019bc] 10: 
+[000019bd] 11: fgload 0 00000000 OK04CAN 1 3
+[000019cd] 10: 
+[000019ce]  b: playVoice HL2D6050
+[000019d8] 10: 
+[000019d9] 19: 
+[000019da] ff: text b9
+{textColor 0 0}【Okuhiko】 "I'll leave the rest to you!" 
+
+
+[000019dd] 10: 
+[000019de] 12: removeFG 0 3
+[000019e5] 10: 
+[000019e6] 10: bgload 00000000 BG12NR 4 1
+[000019f3] 10: 
+[000019f4]  8: playSFX SE030 0
+[000019fe] 10: 
+[000019ff] 19: 
+[00001a00] ff: text ba
+{textColor 0 2}Dammit! Can I make it in time!?  {textColor 0 2}Now that Kurumi's riding with me, I head straight for the clinic. 
+{textColor 0 2}On the way, Kurumi's umbrella gets blown away by the wind, but I can't worry about that.  {textColor 0 2}It seems Kurumi has also realized that I'm not my usual self right now, and so she remains quiet. 
+
+
+[00001a03] 10: 
+[00001a04]  f: removeBG 0 0 2
+[00001a0e] 10: 
+[00001a0f]  9: stopSFX
+[00001a10] 10: 
+[00001a11] 19: 
+[00001a12] ff: text bb
+{textColor 0 2}... ... ... 
+{textColor 0 2}I was so focused on pedaling that I don't know what happened after that... 
+
+
+[00001a15] 10: 
+[00001a16] 10: bgload 00000000 BG35NR 0 1
+[00001a23] 10: 
+[00001a24] 19: 
+[00001a25] ff: text bc
+{textColor 0 2}When I come to my senses, the clinic is right before my eyes. 
+{textColor 0 2}But the bike's chain has become wrecked, so it can never be used again. 
+{textColor 0 0}【Makoto】 "... Kurumi...{delay 5}{delay 5} go into that clinic..." 
+{textColor 0 0}【Makoto】 "... I'm counting on you...{delay 5}{delay 5}{delay 5} please save her..." 
+
+
+[00001a28] 10: 
+[00001a29] 11: fgload 0 00000000 KU05BBN 1 3
+[00001a39] 10: 
+[00001a3a]  b: playVoice HL2D6051
+[00001a44] 10: 
+[00001a45] 19: 
+[00001a46] ff: text bd
+{textColor 1 7}【Kurumi】 "...!{delay 5}{delay 5} Got it!!" 
+
+
+[00001a49] 10: 
+[00001a4a] 12: removeFG 0 3
+[00001a51] 10: 
+[00001a52]  f: removeBG 1 0 2
+[00001a5c] 10: 
+[00001a5d] 19: 
+[00001a5e] ff: text be
+{textColor 0 2}And then, my consciousness drifts far away from reality... 
+{textColor 0 2}(Haruka...{delay 5}{delay 5} please...{delay 5}{delay 5} live...) 
+
+
+[00001a61] 10: 
+[00001a62]  2: cmd2 6
+[00001a66] 10: 
+[00001a67]  f: removeBG 1 0 2
+[00001a71] 10: 
+[00001a72]  7: stopBGM
+[00001a73]  0: 
+[00001a74]  5: delay 120
+[00001a79] 10: 
+[00001a7a] 10: bgload 00000000 EV_HA10B 0 1
+[00001a87] 10: 
+[00001a88] 19: 
+[00001a89] ff: text bf
+{textColor 0 2}When I wake up, I see Haruka's peaceful sleeping face before my eyes... 
+{textColor 0 2}That face...{delay 5}{delay 5} it's like she's Sleeping Beauty herself. 
+{textColor 0 2}No... "sleeping face" might not be the correct expression... 
+{textColor 0 2}Perhaps... Haruka's... 
+{textColor 0 2}I stare at Haruka's face for a short time. 
+{textColor 0 2}... How much time has passed? 
+{textColor 0 2}Unable to hold it in, hot tears spill over and fall from my eyes.  {textColor 0 2}My endless flood of tears begins to fall from my eyes onto Haruka's face... 
+{textColor 0 0}【Makoto】 "Haruka..." 
+{textColor 0 2}Before I know it, I forget the pain in my whole body, and kiss Haruka on her lips. 
+
+
+[00001a8c]  0: 
+[00001a8d]  5: delay 60
+[00001a92] 10: 
+[00001a93] 19: 
+[00001a94] ff: text c0
+{textColor 0 2}... It's warm...  {textColor 0 2}... Haruka's breath... is warm...  {textColor 0 2}――WARM!? 
+
+
+[00001a97] 10: 
+[00001a98] 10: bgload 00000000 EV_HA10A 0 1
+[00001aa5] 10: 
+[00001aa6]  6: playBGM 12
+[00001aaa] 10: 
+[00001aab]  b: playVoice HL2D6052
+[00001ab5] 10: 
+[00001ab6] 19: 
+[00001ab7] ff: text c1
+{textColor 1 5}【Haruka】 "... Good morning." 
+{textColor 0 0}【Makoto】 "Haruka..." 
+
+
+[00001aba] 10: 
+[00001abb]  b: playVoice HL2D6053
+[00001ac5] 10: 
+[00001ac6] 19: 
+[00001ac7] ff: text c2
+{textColor 1 5}【Haruka】 "Sleeping Beauty...{delay 30} was awakened by a kiss, right?" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00001aca] 10: 
+[00001acb]  f: removeBG 1 0 2
+[00001ad5] 10: 
+[00001ad6] 19: 
+[00001ad7] ff: text c3
+{textColor 0 2}... ... ... 
+{textColor 0 2}There's so much I want to talk to her about.  {textColor 0 2}There's so much I want to ask her.  {textColor 0 2}But first and foremost, I just want to tell her this. 
+{textColor 0 0}【Makoto】 "I'm so glad... {delay 5}{delay 5}{delay 5}{delay 5}{delay 5}that you're alive..." 
+{textColor 0 0}【Makoto】 "Because you're my irreplaceable...{delay 5}{delay 5}{delay 5} most precious...{delay 5}{delay 5} person..." 
+{textColor 0 2}And then, I gently embrace Haruka.  {textColor 0 2}Her body's warmth is ensuring her existence... 
+
+
+[00001ada] 10: 
+[00001adb]  8: playSFX SE134 1
+[00001ae5] 10: 
+[00001ae6]  f: removeBG 0 0 0
+[00001af0] 10: 
+[00001af1]  9: stopSFX
+[00001af2] 10: 
+[00001af3]  7: stopBGM
+[00001af4]  0: 
+[00001af5]  5: delay 120
+[00001afa] 10: 
+[00001afb]  4: jump HL2D7
+[00001b02] 10: 
+[00001b03] 12: removeFG 0 3
+[00001b0a] 10: 
+[00001b0b]  6: playBGM 7
+[00001b0f] 10: 
+[00001b10] 11: fgload 0 00000000 SA11BAN 2 3
+[00001b20] 10: 
+[00001b21] 19: 
+[00001b22] ff: text c4
+{textColor 0 0}【Makoto】 "!!" 
+{textColor 0 2}Saki is way ahead on the street... 
+{textColor 0 2}The puppy, having found its master, goes running towards her from the opposite side. 
+
+
+[00001b25] 10: 
+[00001b26] 12: removeFG 0 3
+[00001b2d] 10: 
+[00001b2e]  f: removeBG 1 6 2
+[00001b38] 10: 
+[00001b39] 19: 
+[00001b3a] ff: text c5
+{textColor 0 2}And then, the headlights cut through the darkness... 
+{textColor 0 2}... From thereon out, it's the second coming of my former nightmare.  {textColor 0 2}Everything is the same as that time, as that night... 
+
+
+[00001b3d] 10: 
+[00001b3e] 19: 
+[00001b3f] ff: text c6
+{textColor 0 0}【Makoto】 "HARUKAAAAA!!!!!" 
+{textColor 0 2}I wring out a loud scream from within my body...  {textColor 0 2}I failed again... I couldn't save her... 
+{textColor 0 2}I... I... couldn't protect Haruka... 
+
+
+[00001b42] 10: 
+[00001b43]  2: cmd2 6
+[00001b47] 10: 
+[00001b48]  f: removeBG 1 0 2
+[00001b52] 10: 
+[00001b53]  7: stopBGM
+[00001b54] 10: 
+[00001b55] 19: 
+[00001b56] ff: text c7
+{textColor 0 2}... ... ... 
+
+
+[00001b59] 10: 
+[00001b5a] 10: bgload 00000000 EV_HA10B 0 1
+[00001b67] 10: 
+[00001b68] 19: 
+[00001b69] ff: text c8
+{textColor 0 2}With his skillful handling, the doctor performs "hemostasis treatment", which seems to have at least successfully stopped the bleeding. 
+{textColor 0 2}However, by the looks of things, I know that it's too early to jump to conclusions. 
+
+
+[00001b6c] 10: 
+[00001b6d]  6: playBGM 14
+[00001b71] 10: 
+[00001b72]  b: playVoice isya009
+[00001b7b] 10: 
+[00001b7c] 19: 
+[00001b7d] ff: text c9
+{textColor 0 0}【Doctor】 "... I hate to tell you this, but{delay 5}{delay 5}... She's already lost most of the blood in her body. {delay 5}{delay 5}... Her blood pressure{delay 5}{delay 5} is already considerably low..." 
+
+
+[00001b80] 10: 
+[00001b81]  b: playVoice isya010
+[00001b8a] 10: 
+[00001b8b] 19: 
+[00001b8c] ff: text ca
+{textColor 0 0}【Doctor】 "She only...{delay 5}{delay 5} has an hour or two left..." 
+
+
+[00001b8f] 10: 
+[00001b90]  b: playVoice HL2D6054
+[00001b9a] 10: 
+[00001b9b] 19: 
+[00001b9c] ff: text cb
+{textColor 1 6}【Saki】 "No way!" 
+
+
+[00001b9f] 10: 
+[00001ba0]  b: playVoice isya011
+[00001ba9] 10: 
+[00001baa] 19: 
+[00001bab] ff: text cc
+{textColor 0 0}【Doctor】 "A blood transfusion... As long as she has a blood transfusion, she might recover somehow." 
+
+
+[00001bae] 10: 
+[00001baf]  b: playVoice isya014
+[00001bb8] 10: 
+[00001bb9] 19: 
+[00001bba] ff: text cd
+{textColor 0 0}【Doctor】 "... Her blood type is B-... Are either of you B- or O-?" 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 2}I now know that our blood types are incompatible.  {textColor 0 2}But there's nothing I can do about it anymore.  {textColor 0 2}I can't do anything about it... 
+
+
+[00001bbd] 10: 
+[00001bbe]  7: stopBGM
+[00001bbf] 10: 
+[00001bc0] 19: 
+[00001bc1] ff: text ce
+{textColor 0 2}I touch Haruka's hand. 
+{textColor 0 2}Haruka, who was energetic just a few hours ago...  Haruka, who was smiling just hours ago...  Haruka, who was looking at me just a few hours ago... 
+
+
+[00001bc4] 10: 
+[00001bc5] 10: bgload 00000000 EV_HA10A 0 1
+[00001bd2] 10: 
+[00001bd3] 19: 
+[00001bd4] ff: text cf
+{textColor 0 2}At that moment, Haruka's eyes suddenly open. 
+{textColor 0 0}【Makoto】 "...!" 
+
+
+[00001bd7] 10: 
+[00001bd8]  b: playVoice HL2D6056
+[00001be2] 10: 
+[00001be3] 19: 
+[00001be4] ff: text d0
+{textColor 1 5}【Haruka】 "Makoto...?" 
+{textColor 0 2}Haruka's eyes are blank.  {textColor 0 2}She stares into space, not noticing me. 
+{textColor 0 0}【Makoto】 "I'm right here...{delay 5}{delay 5}{delay 5} Haruka..." 
+{textColor 0 2}I grasp Haruka's hand.  I grasp it strongly, {delay 5} stronger than ever before, hoping that she'll notice my existence... 
+
+
+[00001be7] 10: 
+[00001be8]  b: playVoice HL2D6057
+[00001bf2] 10: 
+[00001bf3] 19: 
+[00001bf4] ff: text d1
+{textColor 1 5}【Haruka】 "That hurts..." 
+{textColor 0 2}She says it in a weak voice. I frantically lessen the power of my grip. 
+{textColor 0 0}【Makoto】 "S-{delay 5}{delay 5}Sorry..." 
+
+
+[00001bf7] 10: 
+[00001bf8]  b: playVoice HL2D6058
+[00001c02] 10: 
+[00001c03] 19: 
+[00001c04] ff: text d2
+{textColor 1 5}【Haruka】 "No, don't be..." 
+{textColor 0 2}She continues staring into space. She might not even have the power to turn her own head... 
+
+
+[00001c07] 10: 
+[00001c08]  6: playBGM 21
+[00001c0d] 10: 
+[00001c0e] 19: 
+[00001c0f] ff: text d3
+{textColor 0 0}【Makoto】 "Haruka... Haruka...  {textColor 0 2}I...{delay 5}{delay 5} I{delay 5}{delay 5} don't{delay 5} want{delay 5} to{delay 5} lose{delay 5} you{delay 5}..." 
+{textColor 0 2}Guh.{delay 5}{delay 5} A thick sounds comes from inside my chest.  My voice has become tearful, bursting out of me like water gushing from a dam. 
+{textColor 0 0}【Makoto】 "I don't want that.{delay 5}{delay 5}{delay 5} I couldn't bear it..." 
+
+
+[00001c12] 10: 
+[00001c13]  b: playVoice HL2D6059
+[00001c1d] 10: 
+[00001c1e] 19: 
+[00001c1f] ff: text d4
+{textColor 1 5}【Haruka】 "... It's all right,{delay 5}{delay 5} Makoto." 
+
+
+[00001c22] 10: 
+[00001c23]  b: playVoice HL2D6060
+[00001c2d] 10: 
+[00001c2e] 19: 
+[00001c2f] ff: text d5
+{textColor 1 5}【Haruka】 "Because soon,{delay 5}{delay 5} we'll go fishing together again..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00001c32] 10: 
+[00001c33]  b: playVoice HL2D6061
+[00001c3d] 10: 
+[00001c3e] 19: 
+[00001c3f] ff: text d6
+{textColor 1 5}【Haruka】 "... I'm sorry, Makoto.{delay 5} I'm a little tired...{delay 5}{delay 5}{delay 5} I guess{delay 5}{delay 5} I shouldn't have taken that evening stroll after all..." 
+{textColor 0 0}【Makoto】 "... Ha{delay 5}{delay 5}... Haruka..." 
+
+
+[00001c42] 10: 
+[00001c43]  b: playVoice HL2D6062
+[00001c4d] 10: 
+[00001c4e] 19: 
+[00001c4f] ff: text d7
+{textColor 1 5}【Haruka】 "I've got to sleep...{delay 5}{delay 5}{delay 5} Yuka's going to scold me for this tomorrow..." 
+
+
+[00001c52] 10: 
+[00001c53]  7: stopBGM
+[00001c54] 10: 
+[00001c55] 19: 
+[00001c56] ff: text d8
+{textColor 0 2}Her eyes slowly begin to close... 
+{textColor 0 2}No... Wait...{delay 5}{delay 5} Wait...{delay 5}{delay 5}{delay 5} Haruka... 
+
+
+[00001c59] 10: 
+[00001c5a]  b: playVoice HL2D6063
+[00001c64] 10: 
+[00001c65] 19: 
+[00001c66] ff: text d9
+{textColor 1 5}【Haruka】 "I'm going to sleep now, okay...? {delay 5}{delay 5}{delay 5}{delay 5}Go{delay 5}od...{delay 5}{delay 5}{delay 5}{delay 5} ni{delay 5}ght..." 
+
+
+[00001c69] 10: 
+[00001c6a] 10: bgload 00000000 ev_ha10b 0 1
+[00001c77] 10: 
+[00001c78] 19: 
+[00001c79] ff: text da
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}Haruka's hand limply slips out of my own and dangles... 
+{textColor 0 2}In the next instant... Something slips out of it. 
+
+
+[00001c7c] 10: 
+[00001c7d]  8: playSFX SE090 1
+[00001c87] 10: 
+[00001c88] 19: 
+[00001c89] ff: text db
+{textColor 0 2}The object lying on the floor... is... 
+
+
+[00001c8c] 10: 
+[00001c8d] 10: bgload 00000000 ev_al02 0 1
+[00001c9a] 10: 
+[00001c9b]  9: stopSFX
+[00001c9c] 10: 
+[00001c9d]  6: playBGM 15
+[00001ca1] 10: 
+[00001ca2] 19: 
+[00001ca3] ff: text dc
+{textColor 0 2}It's that bell again... 
+{textColor 0 0}【Makoto】 "!!" 
+
+
+[00001ca6] 10: 
+[00001ca7] 10: bgload 00000000 EV_HA10B 0 1
+[00001cb4] 10: 
+[00001cb5] 19: 
+[00001cb6] ff: text dd
+{textColor 0 2}I look at Haruka's face.  It looks peaceful,{delay 5} so very{delay 5} peaceful. 
+{textColor 0 2}Her eyes will never open again... 
+{textColor 0 2}(Damn this thing, damn this thing...!) 
+
+
+[00001cb9] 10: 
+[00001cba]  8: playSFX SE091 1
+[00001cc4] 10: 
+[00001cc5] 19: 
+[00001cc6] ff: text de
+{textColor 0 2}I kick the fallen bell away.  {textColor 0 2}The bell rings as it recoils off the wall. 
+
+
+[00001cc9] 10: 
+[00001cca]  f: removeBG 1 0 2
+[00001cd4] 10: 
+[00001cd5] 19: 
+[00001cd6] ff: text df
+{textColor 0 2}My field of vision clouds.  {textColor 0 2}And in that instant, I break down weeping.  {textColor 0 2}The tears pour out of me one after another.  {textColor 0 2}I can't stop.  I don't want them to stop. 
+{textColor 0 2}In the end, I couldn't change anything.  {textColor 0 2}Although I knew everything beforehand, I couldn't change anything. 
+
+
+[00001cd9] 10: 
+[00001cda]  8: playSFX SE132 1
+[00001ce4] 10: 
+[00001ce5] 19: 
+[00001ce6] ff: text e0
+{textColor 0 2}(... So history will repeat countless times...?) 
+{textColor 0 2}And so, I will probably go to meet Haruka again.  {textColor 0 2}――A Haruka who doesn't know me... 
+
+
+[00001ce9]  0: 
+[00001cea]  5: delay 60
+[00001cef] 10: 
+[00001cf0]  f: removeBG 0 1 1
+[00001cfa] 10: 
+[00001cfb]  9: stopSFX
+[00001cfc] 10: 
+[00001cfd]  7: stopBGM
+[00001cfe] 10: 
+[00001cff]  4: jump staffroll
+[00001d0a]  0: 
+[00001d0b]  0: 

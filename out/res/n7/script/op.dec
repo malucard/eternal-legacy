@@ -1,0 +1,74 @@
+[00000014] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 121
+[00000020] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 255
+[0000002c] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000038] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000044] 10: 
+[00000045]  f: removeBG 0 0 2
+[0000004f] 10: 
+[00000050]  6: playBGM 15
+[00000054] 10: 
+[00000055]  1: cmd1 22
+[0000005a] 10: 
+[0000005b] 19: 
+[0000005c] ff: text 00
+{textColor 0 2}(Why{delay 5}...?) 
+{textColor 0 2}Could those be my words?  {textColor 0 2}Or... someone else's? 
+{textColor 0 2}No, right now, it's doubtful whether these are even "words" or not. 
+{textColor 0 2}There's nothing here.  {textColor 0 2}No sound, no color, no wind...  {textColor 0 2}It feels like I'm swaying around in a cloudy liquid. 
+{textColor 0 2}It's so cold...  {textColor 0 2}With every breath I take, my windpipe and lungs let out a dry sound as if they're frozen... 
+
+
+[0000005f] 10: 
+[00000060]  2: cmd2 2
+[00000064] 10: 
+[00000065]  f: removeBG 0 0 2
+[0000006f] 10: 
+[00000070] 10: bgload 00000000 EV_AL01 0 1
+[0000007d] 10: 
+[0000007e] 19: 
+[0000007f] ff: text 01
+{textColor 0 2}That heavily dangling palm is clutching onto a small fragment of light. 
+{textColor 0 2}――A bell? 
+{textColor 0 2}It's a small sphere... The smooth, metal surface shines as it emits a cold light. 
+{textColor 0 2}The bottom has a long, narrow hole carved into it, and a small, dull crimson string is tied to the top. 
+{textColor 0 2}Before long, the bell begins to quietly slip out of the palm... It then... 
+
+
+[00000082] 10: 
+[00000083] 10: bgload 00000000 EV_AL01B 0 1
+[00000090] 10: 
+[00000091]  8: playSFX SE090 1
+[0000009b] 10: 
+[0000009c] 19: 
+[0000009d] ff: text 02
+{textColor 0 2}... slips out and falls. 
+
+
+[000000a0] 10: 
+[000000a1]  9: stopSFX
+[000000a2] 10: 
+[000000a3]  f: removeBG 1 1 1
+[000000ad] 10: 
+[000000ae] 19: 
+[000000af] ff: text 03
+{textColor 0 2}I tearfully cling to her chest as my body's trembling gradually intensifies. 
+{textColor 0 2}In my arms, I can feel her cold, wet skin...  {textColor 0 2}Her thin limbs are stiff...  {textColor 0 2}Looking at her ghastly pale, almost transparent cheeks, I feel like she might shatter into a thousand pieces if I touched her cheek. 
+{textColor 0 2}As if she were a doll made of glass.  {textColor 0 2}She has already stopped moving.  {textColor 0 2}She doesn't speak or smile. 
+{textColor 0 2}With her radiance and warmth completely gone, all that's left of her... is an empty shell. 
+{textColor 0 2}A completely...{delay 5}{delay 5}{delay 5} empty shell. 
+{textColor 0 2}Today is Saturday, April 6th, 2019.  {textColor 0 2}――I've lost her. 
+{textColor 0 2}(Why{delay 5}...?) 
+{textColor 0 2}Only that hoarse voice fills this empty void... 
+
+
+[000000b2] 10: 
+[000000b3]  7: stopBGM
+[000000b4] 10: 
+[000000b5]  f: removeBG 0 0 0
+[000000bf] 10: 
+[000000c0]  2: cmd2 8
+[000000c4]  0: 
+[000000c5]  5: delay 300
+[000000ca] 10: 
+[000000cb]  4: jump L1D1AA
+[000000d3]  0: 

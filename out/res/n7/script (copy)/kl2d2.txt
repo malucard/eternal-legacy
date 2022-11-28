@@ -1,0 +1,1325 @@
+[00000024] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 2
+[0000002f] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 2
+[0000003a] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000046] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000052] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 1
+[0000005d]  0: 
+[0000005e]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 00000072 (0002)
+[0000006c] 10: 
+[0000006d] 1c: cmd1C
+[0000006e]  0: 
+[0000006f]  7: goto7 0000007d (0003)
+[00000072] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[0000007d]  0: 
+[0000007e]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 0000008e (0005)
+[0000008c] 10: 
+[0000008d] 18: cmd18
+[0000008e] 10: 
+[0000008f] 1b: dayIntro 00000000 BGCAL2.cps
+[00000096] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 31
+[000000a2] 10: 
+[000000a3] 10: bgload 00000000 BG07A 0 1
+[000000b0] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 2
+[000000bb] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 2
+[000000c6] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 12
+[000000d1] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 0
+[000000dc] 10: 
+[000000dd] 17: showClock
+[000000de] 10: 
+[000000df] 19: 
+[000000e0] ff: text 00
+{textColor 0 2}It's noon. 
+{textColor 0 2}Kurumi and I are alone in Lunabeach. 
+{textColor 0 2}That's right... In the end, Kurumi didn't go to the pool. 
+{textColor 0 2}I told Izumi-san "I didn't really want to go to the pool anyway," ... In other words, I told her I'd stay behind and nurse Kurumi. 
+{textColor 0 2}(Of course, I already know she's faking her headache...) 
+
+
+[000000e3] 10: 
+[000000e4] 11: fgload 0 00000000 IZ01BA 1 3
+[000000f4] 10: 
+[000000f5] 19: 
+[000000f6] ff: text 01
+{textColor 0 2}Izumi-san hesitated about accepting my proposal for a while, but... 
+
+
+[000000f9] 10: 
+[000000fa]  b: playVoice KL2D2000
+[00000104] 10: 
+[00000105] 19: 
+[00000106] ff: text 02
+{textColor 1 8}【Izumi】 "Well, I'll leave Kurumi to you then." 
+
+
+[00000109] 10: 
+[0000010a] 12: removeFG 0 3
+[00000111] 10: 
+[00000112] 19: 
+[00000113] ff: text 03
+{textColor 0 2}... Shortly after she said that, everyone left to go to the pool...  {textColor 0 2}... 
+
+
+[00000116] 10: 
+[00000117] 11: fgload 0 00000000 KU01AB 1 3
+[00000127] 10: 
+[00000128]  6: playBGM 4
+[0000012c] 10: 
+[0000012d]  b: playVoice KL2D2001
+[00000137] 10: 
+[00000138] 19: 
+[00000139] ff: text 04
+{textColor 1 7}【Kurumi】 "Hey? Are... you hungry?" 
+
+
+[0000013c] 10: 
+[0000013d]  b: playVoice KL2D2002
+[00000147] 10: 
+[00000148] 19: 
+[00000149] ff: text 05
+{textColor 1 7}【Kurumi】 "Kurumi's starving..." 
+{textColor 0 0}【Makoto】 "I haven't had anything to eat all morning." 
+
+
+[0000014c] 10: 
+[0000014d] 11: fgload 0 00000000 KU02AB 1 3
+[0000015d] 10: 
+[0000015e]  b: playVoice KL2D2003
+[00000168] 10: 
+[00000169] 19: 
+[0000016a] ff: text 06
+{textColor 1 7}【Kurumi】 "Well then, shall Kurumi make something?" 
+{textColor 0 0}【Makoto】 "I'd be happy if you did, but... is your headache any better?" 
+{textColor 0 2}I decide to feign ignorance. 
+
+
+[0000016d] 10: 
+[0000016e] 11: fgload 0 00000000 KU07AB 1 3
+[0000017e] 10: 
+[0000017f]  b: playVoice KL2D2004
+[00000189] 10: 
+[0000018a] 19: 
+[0000018b] ff: text 07
+{textColor 1 7}【Kurumi】 "Yep. It's completely gone♪" 
+
+
+[0000018e] 10: 
+[0000018f] 11: fgload 0 00000000 KU01AB 1 3
+[0000019f] 10: 
+[000001a0]  b: playVoice KL2D2005
+[000001aa] 10: 
+[000001ab] 19: 
+[000001ac] ff: text 08
+{textColor 1 7}【Kurumi】 "... Anyway... what do you want to eat?" 
+{textColor 0 2}I immediately respond. 
+{textColor 0 0}【Makoto】 "Carbonara!!" 
+
+
+[000001af] 10: 
+[000001b0] 11: fgload 0 00000000 KU02AB 1 3
+[000001c0] 10: 
+[000001c1]  b: playVoice KL2D2006
+[000001cb] 10: 
+[000001cc] 19: 
+[000001cd] ff: text 09
+{textColor 1 7}【Kurumi】 "All right♪ Leave it to Kurumi♪" 
+{textColor 0 2}With those words, Kurumi disappears into the kitchen. 
+
+
+[000001d0] 10: 
+[000001d1]  7: stopBGM
+[000001d2] 10: 
+[000001d3]  f: removeBG 0 0 2
+[000001dd] 10: 
+[000001de]  6: playBGM 14
+[000001e2] 10: 
+[000001e3] 18: cmd18
+[000001e4] 10: 
+[000001e5] 1a: cmd1A 1
+[000001e9] 10: 
+[000001ea]  1: cmd1 25
+[000001ef] 10: 
+[000001f0] 19: 
+[000001f1] ff: text 0a
+{textColor 0 2}Kurumi's homemade carbonara tastes even more delicious than it did last time.  {textColor 0 2}I feel that her carbonara definitely outclasses Izumi-san's cooking from yesterday.  {textColor 0 2}After we finish eating, we talk about Shigezo Morino and the rodents. 
+{textColor 0 2}... Several hours later, Kurumi seems very energetic again.  {textColor 0 2}No, she never had a headache in the first place... She was just feeling lonely from not being able to go to the pool, but I can't feel any of that from her now.  {textColor 0 2}Is Kurumi trying to act as cheerful as she can right now?  {textColor 0 2}Or maybe she's not lonely at all because I've been by her side the whole time. 
+ {textColor 0 2}(Her scar... I wonder what Kurumi is thinking about right now?)   {textColor 0 2}It goes without saying that there's no way I can just bring it up...  {textColor 0 2}Not until Kurumi wants to bring it up herself... Until that time comes, I'll just continue to wait patiently. 
+{textColor 0 2}Then, during that beautiful starry night on Lunabeach's rooftop, Kurumi will quietly begin to talk about it... 
+
+
+[000001f4] 10: 
+[000001f5]  2: cmd2 5
+[000001f9] 10: 
+[000001fa] 18: cmd18
+[000001fb] 10: 
+[000001fc] 1a: cmd1A 0
+[00000200] 10: 
+[00000201]  7: stopBGM
+[00000202] 10: 
+[00000203] 10: bgload 00000000 BG07A 0 1
+[00000210] 10: 
+[00000211]  6: playBGM 4
+[00000215] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 13
+[00000220] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 12
+[0000022b] 10: 
+[0000022c] 17: showClock
+[0000022d] 10: 
+[0000022e] 19: 
+[0000022f] ff: text 0b
+{textColor 0 2}Having completed phase one of my plan, I find that we still have plenty of time to spare. 
+{textColor 0 2}Just then, I am struck with a good idea... 
+{textColor 0 0}【Makoto】 "Hey, Kurumi?" 
+
+
+[00000232] 10: 
+[00000233] 11: fgload 0 00000000 KU01AB 1 3
+[00000243] 10: 
+[00000244]  b: playVoice KL2D2007
+[0000024e] 10: 
+[0000024f] 19: 
+[00000250] ff: text 0c
+{textColor 1 7}【Kurumi】 "Huh?" 
+{textColor 0 0}【Makoto】 "Do you believe in the power of premonitions?" 
+
+
+[00000253] 10: 
+[00000254]  b: playVoice KL2D2008
+[0000025e] 10: 
+[0000025f] 19: 
+[00000260] ff: text 0d
+{textColor 1 7}【Kurumi】 "The power of premonitions? By the 'power of premonitions'... are you talking about precognition?" 
+{textColor 0 2}Precog what...? What's that? 
+{textColor 0 0}【Makoto】 "Well, anyway, I'm talking about the special ability to perceive specific events in the future before they occur." 
+{textColor 0 0}【Makoto】 "Kurumi, do you believe that such a special ability exists?" 
+
+
+[00000263] 10: 
+[00000264] 11: fgload 0 00000000 KU03AB 1 3
+[00000274] 10: 
+[00000275]  b: playVoice KL2D2009
+[0000027f] 10: 
+[00000280] 19: 
+[00000281] ff: text 0e
+{textColor 1 7}【Kurumi】 "Kurumi thinks it would be cool if it did〜" 
+
+
+[00000284] 10: 
+[00000285]  b: playVoice KL2D2010
+[0000028f] 10: 
+[00000290] 19: 
+[00000291] ff: text 0f
+{textColor 1 7}【Kurumi】 "But... why are you asking?" 
+{textColor 0 0}【Makoto】 "Heh heh heh heh heh..." 
+
+
+[00000294] 10: 
+[00000295] 11: fgload 0 00000000 KU01AB 1 3
+[000002a5] 10: 
+[000002a6]  b: playVoice KL2D2011
+[000002b0] 10: 
+[000002b1] 19: 
+[000002b2] ff: text 10
+{textColor 1 7}【Kurumi】 "?" 
+{textColor 0 0}【Makoto】 "The truth is, I have that power myself..." 
+
+
+[000002b5] 10: 
+[000002b6] 11: fgload 0 00000000 KU10AB 1 3
+[000002c6] 10: 
+[000002c7]  b: playVoice KL2D2012
+[000002d1] 10: 
+[000002d2] 19: 
+[000002d3] ff: text 11
+{textColor 1 7}【Kurumi】 "Huh?" 
+{textColor 0 0}【Makoto】 "I guess just saying that isn't enough for you to believe me, huh?" 
+
+
+[000002d6] 10: 
+[000002d7]  b: playVoice KL2D2013
+[000002e1] 10: 
+[000002e2] 19: 
+[000002e3] ff: text 12
+{textColor 1 7}【Kurumi】 "Mmm..." 
+{textColor 0 0}【Makoto】 "All right then. Why don't I just prove it to you...?" 
+
+
+[000002e6] 10: 
+[000002e7]  b: playVoice KL2D2014
+[000002f1] 10: 
+[000002f2] 19: 
+[000002f3] ff: text 13
+{textColor 1 7}【Kurumi】 "Are you going to accurately guess something that's going to happen in the future?" 
+{textColor 0 0}【Makoto】 "That's right." 
+
+
+[000002f6] 10: 
+[000002f7] 11: fgload 0 00000000 KU06AB 1 3
+[00000307] 10: 
+[00000308]  b: playVoice KL2D2015
+[00000312] 10: 
+[00000313] 19: 
+[00000314] ff: text 14
+{textColor 1 7}【Kurumi】 "You're lying! That kinda thing's impossible for you〜!" 
+{textColor 0 2}All right... Everything's going exactly as planned... 
+{textColor 0 0}【Makoto】 "Then how about we make a bet?" 
+
+
+[00000317] 10: 
+[00000318]  b: playVoice KL2D2016
+[00000322] 10: 
+[00000323] 19: 
+[00000324] ff: text 15
+{textColor 1 7}【Kurumi】 "A bet?" 
+{textColor 0 0}【Makoto】 "Yeah. If my predictions are correct, there's something I want you to do for me." 
+
+
+[00000327] 10: 
+[00000328] 11: fgload 0 00000000 KU01AB 1 3
+[00000338] 10: 
+[00000339]  b: playVoice KL2D2017
+[00000343] 10: 
+[00000344] 19: 
+[00000345] ff: text 16
+{textColor 1 7}【Kurumi】 "???" 
+{textColor 0 2}Kurumi tilts her head, and I explain the details of the bet and the events that will happen in the near future. 
+{textColor 0 2}Here's my prediction... 
+{textColor 0 2}"When Yuka returns to Lunabeach, she'll definitely be drunk." 
+{textColor 0 2}"And then Yuka will point to a mug in your hand, and make a dumb joke that ends with the phrase 'Kurumilk'." 
+{textColor 0 2}"After that, Yuka will say 'I want to eat fresh toro.'" 
+{textColor 0 2}... I tell her those three events. 
+{textColor 0 2}The bet itself is simple. 
+{textColor 0 2}"If I'm right, then when Yuka talks about 'toro', you must not say 'let's go fishing!'" 
+{textColor 0 2}And Kurumi... 
+
+
+[00000348] 10: 
+[00000349] 11: fgload 0 00000000 KU02AB 1 3
+[00000359] 10: 
+[0000035a]  b: playVoice KL2D2018
+[00000364] 10: 
+[00000365] 19: 
+[00000366] ff: text 17
+{textColor 1 7}【Kurumi】 "All right, got it♪ You're on♪" 
+{textColor 0 2}... cheerfully consents. 
+{textColor 0 2}If everything goes according to the plan, then none of us will go fishing today. 
+{textColor 0 2}And if we don't go fishing... that's right... the incident where Saki gets swallowed up by that wave won't happen 
+{textColor 0 2}――But will my plan succeed??? 
+
+
+[00000369] 10: 
+[0000036a]  7: stopBGM
+[0000036b] 10: 
+[0000036c]  f: removeBG 0 3 2
+[00000376] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 119
+[00000382] 10: 
+[00000383] 10: bgload 00000000 BG07A 0 1
+[00000390] 10: 
+[00000391]  6: playBGM 8
+[00000395] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 15
+[000003a0] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 25
+[000003ac] 10: 
+[000003ad] 17: showClock
+[000003ae] 10: 
+[000003af] 19: 
+[000003b0] ff: text 18
+{textColor 0 2}Two hours later, everyone comes back in quick succession... 
+
+
+[000003b3] 10: 
+[000003b4] 14: multifgload2 00000000 YU12AAA 2 00000000 IZ06BA 3
+[000003c7] 10: 
+[000003c8]  b: playVoice KL2D2019
+[000003d2] 10: 
+[000003d3] 19: 
+[000003d4] ff: text 19
+{textColor 1 4}【Yuka】 "Gyahahahahahahaha♪" 
+{textColor 0 2}Yuka is drunk, just as expected. 
+{textColor 0 2}Kurumi's jaw has dropped as she looks back and forth between Yuka and I. 
+
+
+[000003d7] 10: 
+[000003d8]  b: playVoice KL2D2020
+[000003e2] 10: 
+[000003e3] 19: 
+[000003e4] ff: text 1a
+{textColor 1 8}【Izumi】 "It seems she had quite a lot of beer to drink..." 
+{textColor 0 2}Izumi-san explains the circumstances to Kurumi while looking a little disturbed. 
+
+
+[000003e7] 10: 
+[000003e8] 12: removeFG 1 3
+[000003ef] 10: 
+[000003f0]  b: playVoice KL2D2021
+[000003fa] 10: 
+[000003fb] 19: 
+[000003fc] ff: text 1b
+{textColor 1 4}【Yuka】 "Kurumi-tan... Hau aah yuu feelin'?" 
+
+
+[000003ff] 10: 
+[00000400] 11: fgload 1 00000000 KU03AA 0 3
+[00000410] 10: 
+[00000411]  b: playVoice KL2D2022
+[0000041b] 10: 
+[0000041c] 19: 
+[0000041d] ff: text 1c
+{textColor 1 7}【Kurumi】 "G-Good... After Kurumi had a nap, she got completely better..." 
+{textColor 0 2}She's unable to hide just how shocked she is... 
+{textColor 0 2}Just as I had said, Kurumi is holding a mug in her right hand with a thin film of hot milk in it. 
+
+
+[00000420] 10: 
+[00000421] 11: fgload 0 00000000 YU07AAA 2 3
+[00000431] 10: 
+[00000432]  b: playVoice KL2D2023
+[0000043c] 10: 
+[0000043d] 19: 
+[0000043e] ff: text 1d
+{textColor 1 4}【Yuka】 "Ohhhh! Dash gud, dash gud, nahahahaha♪" 
+
+
+[00000441] 10: 
+[00000442] 11: fgload 0 00000000 YU12AAA 2 3
+[00000452] 10: 
+[00000453]  b: playVoice L1D2A404
+[0000045d] 10: 
+[0000045e] 19: 
+[0000045f] ff: text 1e
+{textColor 1 4}【Yuka】 "Ah!!" 
+{textColor 0 2}Yuka suddenly leans forward and points to the mug in Kurumi's hand. 
+
+
+[00000462] 10: 
+[00000463]  b: playVoice KL2D2025
+[0000046d] 10: 
+[0000046e] 19: 
+[0000046f] ff: text 1f
+{textColor 1 4}【Yuka】 "Eye have jusht come up wif shomefing amashin'!" 
+
+
+[00000472] 10: 
+[00000473] 11: fgload 1 00000000 KU01AA 0 3
+[00000483] 10: 
+[00000484] 19: 
+[00000485] ff: text 20
+{textColor 1 7}【Kurumi】 "...?" 
+
+
+[00000488] 10: 
+[00000489]  b: playVoice KL2D2026
+[00000493] 10: 
+[00000494] 19: 
+[00000495] ff: text 21
+{textColor 1 4}【Yuka】 "Whaa doo yuu get when yuu crosh Kurumi wif milk?" 
+
+
+[00000498] 10: 
+[00000499]  b: playVoice KL2D2027
+[000004a3] 10: 
+[000004a4] 19: 
+[000004a5] ff: text 22
+{textColor 1 7}【Kurumi】 "...???" 
+
+
+[000004a8] 10: 
+[000004a9]  b: playVoice KL2D2028
+[000004b3] 10: 
+[000004b4] 19: 
+[000004b5] ff: text 23
+{textColor 1 4}【Yuka】 "Ish a joke, a joke!" 
+
+
+[000004b8] 10: 
+[000004b9]  b: playVoice KL2D2029
+[000004c3] 10: 
+[000004c4] 19: 
+[000004c5] ff: text 24
+{textColor 1 4}【Yuka】 "Whaa doo yuu get when yuu crosh Kurumi wif milk? ... Kurumilk!" 
+
+
+[000004c8] 10: 
+[000004c9] 11: fgload 1 00000000 KU11AA 0 3
+[000004d9] 10: 
+[000004da]  b: playVoice KL2D2030
+[000004e4] 10: 
+[000004e5] 19: 
+[000004e6] ff: text 25
+{textColor 1 7}【Kurumi】 "... N-No way..." 
+{textColor 0 0}【Makoto】 "Well? Didn't I tell you?" 
+{textColor 0 2}I whisper this into Kurumi's ear. 
+
+
+[000004e9] 10: 
+[000004ea] 11: fgload 0 00000000 YU08AA 2 3
+[000004fa] 10: 
+[000004fb]  b: playVoice KL2D2031
+[00000505] 10: 
+[00000506] 19: 
+[00000507] ff: text 26
+{textColor 1 4}【Yuka】 "Huh? Huuuuuuuh? Wash dat naht funee?" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000050a] 10: 
+[0000050b] 11: fgload 1 00000000 KU01AA 0 3
+[0000051b] 10: 
+[0000051c] 19: 
+[0000051d] ff: text 27
+{textColor 1 7}【Kurumi】 "..." 
+
+
+[00000520] 10: 
+[00000521]  b: playVoice KL2D2032
+[0000052b] 10: 
+[0000052c] 19: 
+[0000052d] ff: text 28
+{textColor 1 4}【Yuka】 "Sho it washn't funee... Eye shee..." 
+
+
+[00000530] 10: 
+[00000531] 11: fgload 0 00000000 YU10AAA 2 3
+[00000541] 10: 
+[00000542]  b: playVoice KL2D2033
+[0000054c] 10: 
+[0000054d] 19: 
+[0000054e] ff: text 29
+{textColor 1 4}【Yuka】 "Haah..." 
+{textColor 0 2}... Yuka lets out a big sigh, and suddenly looks mopey... Here it comes... 
+
+
+[00000551] 10: 
+[00000552] 11: fgload 0 00000000 YU01AAA 2 3
+[00000562] 10: 
+[00000563]  b: playVoice KL2D2034
+[0000056d] 10: 
+[0000056e] 19: 
+[0000056f] ff: text 2a
+{textColor 1 4}【Yuka】 "To... To... To..." 
+
+
+[00000572] 10: 
+[00000573]  b: playVoice KL2D2035
+[0000057d] 10: 
+[0000057e] 19: 
+[0000057f] ff: text 2b
+{textColor 1 4}【Yuka】 "To... To... To..." 
+
+
+[00000582] 10: 
+[00000583]  b: playVoice KL2D2036
+[0000058d] 10: 
+[0000058e] 19: 
+[0000058f] ff: text 2c
+{textColor 1 4}【Yuka】 "Toro." 
+
+
+[00000592] 10: 
+[00000593] 11: fgload 1 00000000 KU11AA 0 3
+[000005a3] 10: 
+[000005a4] 19: 
+[000005a5] ff: text 2d
+{textColor 1 7}【Kurumi】 "!?" 
+
+
+[000005a8] 10: 
+[000005a9] 11: fgload 0 00000000 YU04AAA 2 3
+[000005b9] 10: 
+[000005ba]  b: playVoice KL2D2038
+[000005c4] 10: 
+[000005c5] 19: 
+[000005c6] ff: text 2e
+{textColor 1 4}【Yuka】 "Eye wanna eat toro..." 
+
+
+[000005c9] 10: 
+[000005ca]  b: playVoice KL2D2039
+[000005d4] 10: 
+[000005d5] 19: 
+[000005d6] ff: text 2f
+{textColor 1 4}【Yuka】 "Eye wanna eat toro!!" 
+
+
+[000005d9] 10: 
+[000005da]  b: playVoice KL2D2040
+[000005e4] 10: 
+[000005e5] 19: 
+[000005e6] ff: text 30
+{textColor 1 7}【Kurumi】 "Y-Yuka-san... why...???" 
+
+
+[000005e9] 10: 
+[000005ea]  b: playVoice KL2D2041
+[000005f4] 10: 
+[000005f5] 19: 
+[000005f6] ff: text 31
+{textColor 1 4}【Yuka】 "Ish faine! Eye want toro! Eye jusht wanna eat shum TOROOOOOOOO!!!" 
+{textColor 0 2}Kurumi looks towards me for help. 
+{textColor 0 2}I give her an encouraging nod. 
+{textColor 0 2}But... 
+
+
+[000005f9] 10: 
+[000005fa] 11: fgload 1 00000000 KU12AA 0 3
+[0000060a] 10: 
+[0000060b]  b: playVoice KL2D2042
+[00000615] 10: 
+[00000616] 19: 
+[00000617] ff: text 32
+{textColor 1 7}【Kurumi】 "Y-You can't, Yuka-san! We absolutely cannot go fishing! Kurumi promised so!" 
+{textColor 0 2}... Kurumi's response is too direct. 
+{textColor 0 2}This will only end up causing the reverse effect... 
+
+
+[0000061a] 10: 
+[0000061b] 11: fgload 0 00000000 YU01AAA 2 3
+[0000062b] 10: 
+[0000062c]  b: playVoice KL2D2043
+[00000636] 10: 
+[00000637] 19: 
+[00000638] ff: text 33
+{textColor 1 4}【Yuka】 "Huh? Pisshing?" 
+{textColor 0 2}Luckily, Yuka's so drunk that she ended up mishearing Kurumi. 
+{textColor 0 2}It seems that the crisis has been averted at the last moment... 
+
+
+[0000063b] 10: 
+[0000063c]  f: removeBG 0 2 2
+[00000646] 10: 
+[00000647]  7: stopBGM
+[00000648] 10: 
+[00000649] 18: cmd18
+[0000064a] 10: 
+[0000064b] 1a: cmd1A 1
+[0000064f] 10: 
+[00000650]  1: cmd1 25
+[00000655] 10: 
+[00000656] 19: 
+[00000657] ff: text 34
+{textColor 0 2}After that, it's all Yuka's stage.  {textColor 0 2}The intoxicated Yuka goes through some violent mood swings, from being calm, to inconsolable, to laughing loudly...   {textColor 0 2}... And before I know it, it's gotten dark. 
+{textColor 0 2}At any rate, the incident where Saki almost drowned has been erased from our history.   {textColor 0 2}"The next seven days will be happy ones." ――It seems the plan's progressing favorably so far... 
+
+
+[0000065a] 10: 
+[0000065b]  2: cmd2 5
+[0000065f] 10: 
+[00000660] 18: cmd18
+[00000661] 10: 
+[00000662] 1a: cmd1A 0
+[00000666] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 9
+[00000671] 10: 
+[00000672] 10: bgload 00000000 BG07N 0 1
+[0000067f] 10: 
+[00000680]  6: playBGM 4
+[00000684] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 19
+[00000690] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 37
+[0000069c] 10: 
+[0000069d] 17: showClock
+[0000069e] 10: 
+[0000069f] 19: 
+[000006a0] ff: text 35
+{textColor 0 2}After we finish the delicious dinner Izumi-san cooked for us... everyone goes to Moon Beach. 
+{textColor 0 2}Kurumi also tries to follow the others and go outside, but I decide to grab her by the arm and pull her back. 
+
+
+[000006a3] 10: 
+[000006a4] 11: fgload 0 00000000 KU01AB 1 3
+[000006b4] 10: 
+[000006b5]  b: playVoice KL2D2044
+[000006bf] 10: 
+[000006c0] 19: 
+[000006c1] ff: text 36
+{textColor 1 7}【Kurumi】 "Huh? What?" 
+{textColor 0 2}Kurumi turns around, questioning me. 
+{textColor 0 0}【Makoto】 "No, I just wanted to talk..." 
+{textColor 0 2}Of course, I have nothing to talk about. 
+{textColor 0 2}I just absolutely can't let Kurumi go to Moon Beach. 
+{textColor 0 2}Soon, Izumi-san will probably start telling the others the story of the "Shiki no Mori Shrine." 
+{textColor 0 2}If possible, I want these seven days to end without Kurumi learning about the shrine. 
+{textColor 0 2}What's Kurumi's connection to the shrine? ――I still don't know... 
+
+
+[000006c4] 10: 
+[000006c5]  b: playVoice KL2D2045
+[000006cf] 10: 
+[000006d0] 19: 
+[000006d1] ff: text 37
+{textColor 1 7}【Kurumi】 "Talk?" 
+{textColor 0 0}【Makoto】 "Umm... how do I put this... err..." 
+
+
+[000006d4] 10: 
+[000006d5] 11: fgload 0 00000000 KU02AB 1 3
+[000006e5] 10: 
+[000006e6]  b: playVoice KL2D2046
+[000006f0] 10: 
+[000006f1] 19: 
+[000006f2] ff: text 38
+{textColor 1 7}【Kurumi】 "... Oh, got it! You're trying to talk about your prediction earlier, right?" 
+{textColor 0 0}【Makoto】 "Ah, um... well... didn't I tell you so?" 
+
+
+[000006f5] 10: 
+[000006f6]  b: playVoice KL2D2047
+[00000700] 10: 
+[00000701] 19: 
+[00000702] ff: text 39
+{textColor 1 7}【Kurumi】 "But Kurumi already figured out the trick." 
+{textColor 0 0}【Makoto】 "What trick?" 
+
+
+[00000705] 10: 
+[00000706]  b: playVoice KL2D2048
+[00000710] 10: 
+[00000711] 19: 
+[00000712] ff: text 3a
+{textColor 1 7}【Kurumi】 "You planned it with Yuka-san from the start, right?" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000715] 10: 
+[00000716] 11: fgload 0 00000000 KU07AB 1 3
+[00000726] 10: 
+[00000727]  b: playVoice KL2D2049
+[00000731] 10: 
+[00000732] 19: 
+[00000733] ff: text 3b
+{textColor 1 7}【Kurumi】 "Geez, it's useless to play dumb, you know? It has to be that! Kurumi can't think of any other way than that!" 
+{textColor 0 0}【Makoto】 "... I guess you got me?" 
+
+
+[00000736] 10: 
+[00000737]  b: playVoice KL2D2050
+[00000741] 10: 
+[00000742] 19: 
+[00000743] ff: text 3c
+{textColor 1 7}【Kurumi】 "Kurumi knew it♪ That's what she thought♪" 
+
+
+[00000746] 10: 
+[00000747] 11: fgload 0 00000000 KU02AB 1 3
+[00000757] 10: 
+[00000758]  b: playVoice KL2D2051
+[00000762] 10: 
+[00000763] 19: 
+[00000764] ff: text 3d
+{textColor 1 7}【Kurumi】 "Then Kurumi will head to Moon Be-" 
+{textColor 0 0}【Makoto】 "Hold it!" 
+{textColor 0 2}Just as Kurumi tries to go outside, I grab her arm again. 
+{textColor 0 2}Izumi-san's story has probably only just begun. 
+{textColor 0 0}【Makoto】 "Hey... Kurumi, do you love scary stories?" 
+
+
+[00000767] 10: 
+[00000768] 11: fgload 0 00000000 KU07AB 1 3
+[00000778] 10: 
+[00000779]  b: playVoice KL2D2052
+[00000783] 10: 
+[00000784] 19: 
+[00000785] ff: text 3e
+{textColor 1 7}【Kurumi】 "Yep♪ She loves them♪" 
+{textColor 0 0}【Makoto】 "Then I shall tell you a scary story!" 
+
+
+[00000788] 10: 
+[00000789]  b: playVoice KL2D2053
+[00000793] 10: 
+[00000794] 19: 
+[00000795] ff: text 3f
+{textColor 1 7}【Kurumi】 "Sure♪ Maybe next time?" 
+{textColor 0 2}Kurumi says this, and turns around. 
+{textColor 0 2}I hold her back by the arm yet again. 
+{textColor 0 0}【Makoto】 "I'm telling you to wait!" 
+
+
+[00000798] 10: 
+[00000799] 11: fgload 0 00000000 KU05AB 1 3
+[000007a9] 10: 
+[000007aa]  b: playVoice KL2D2054
+[000007b4] 10: 
+[000007b5] 19: 
+[000007b6] ff: text 40
+{textColor 1 7}【Kurumi】 "Geez, what is it!?" 
+{textColor 0 0}【Makoto】 "I can't tell you next time. If I don't tell you this time, I'll... I'll forget it..." 
+
+
+[000007b9] 10: 
+[000007ba] 11: fgload 0 00000000 KU01AB 1 3
+[000007ca] 10: 
+[000007cb]  b: playVoice KL2D2055
+[000007d5] 10: 
+[000007d6] 19: 
+[000007d7] ff: text 41
+{textColor 1 7}【Kurumi】 "Hmm... then Kurumi'll listen just for a little bit." 
+{textColor 0 0}【Makoto】 "All right. Then I'll begin." 
+
+
+[000007da] 10: 
+[000007db] 11: fgload 0 00000000 KU02AB 1 3
+[000007eb] 10: 
+[000007ec]  b: playVoice KL2D2056
+[000007f6] 10: 
+[000007f7] 19: 
+[000007f8] ff: text 42
+{textColor 1 7}【Kurumi】 "Okay." 
+{textColor 0 0}【Makoto】 "I heard this from my friend..." 
+{textColor 0 0}【Makoto】 "There's this mountain trail on a pass... with this loooong tunnel-" 
+
+
+[000007fb] 10: 
+[000007fc] 11: fgload 0 00000000 KU01AB 1 3
+[0000080c] 10: 
+[0000080d]  b: playVoice KL2D2057
+[00000817] 10: 
+[00000818] 19: 
+[00000819] ff: text 43
+{textColor 1 7}【Kurumi】 "Oh, Kurumi's heard that one already..." 
+{textColor 0 2}With that, Kurumi turns around. 
+{textColor 0 2}I reach out to hold her back...  {textColor 0 2}... but I miss. 
+{textColor 0 2}Kurumi evades my grasp, and rushes out the door... 
+{textColor 0 2}(C-Crap...!) 
+
+
+[0000081c] 10: 
+[0000081d]  7: stopBGM
+[0000081e] 10: 
+[0000081f]  f: removeBG 0 0 2
+[00000829] 10: 
+[0000082a] 10: bgload 00000000 BG16N 0 1
+[00000837] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 19
+[00000843] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 42
+[0000084f] 10: 
+[00000850] 17: showClock
+[00000851] 10: 
+[00000852] 19: 
+[00000853] ff: text 44
+{textColor 0 2}I run after her, but by the time I get there... 
+
+
+[00000856] 10: 
+[00000857]  6: playBGM 14
+[0000085b] 10: 
+[0000085c] 11: fgload 0 00000000 KU01AAN 2 3
+[0000086c] 10: 
+[0000086d]  b: playVoice KL2D2058
+[00000877] 10: 
+[00000878] 19: 
+[00000879] ff: text 45
+{textColor 1 7}【Kurumi】 "Hey, what were you talking about?" 
+
+
+[0000087c] 10: 
+[0000087d] 11: fgload 1 00000000 SA01BAN 0 3
+[0000088d] 10: 
+[0000088e]  b: playVoice KL2D2059
+[00000898] 10: 
+[00000899] 19: 
+[0000089a] ff: text 46
+{textColor 1 6}【Saki】 "There's a shrine nearby." 
+
+
+[0000089d] 10: 
+[0000089e] 12: removeFG 1 3
+[000008a5] 10: 
+[000008a6] 11: fgload 1 00000000 OK02AAN 0 3
+[000008b6] 10: 
+[000008b7]  b: playVoice KL2D2060
+[000008c1] 10: 
+[000008c2] 19: 
+[000008c3] ff: text 47
+{textColor 0 0}【Okuhiko】 "Izumi-san was in the middle of telling us a rumor about that shrine." 
+
+
+[000008c6] 10: 
+[000008c7]  b: playVoice KL2D2061
+[000008d1] 10: 
+[000008d2] 19: 
+[000008d3] ff: text 48
+{textColor 1 7}【Kurumi】 "Hmm..." 
+
+
+[000008d6] 10: 
+[000008d7]  b: playVoice KL2D2062
+[000008e1] 10: 
+[000008e2] 19: 
+[000008e3] ff: text 49
+{textColor 0 0}【Okuhiko】 "Kurumi-chan, you've never heard of that shrine before?" 
+
+
+[000008e6] 10: 
+[000008e7]  b: playVoice KL2D2063
+[000008f1] 10: 
+[000008f2] 19: 
+[000008f3] ff: text 4a
+{textColor 1 7}【Kurumi】 "Nope. First time Kurumi's ever heard of it!" 
+
+
+[000008f6] 10: 
+[000008f7]  b: playVoice KL2D2064
+[00000901] 10: 
+[00000902] 19: 
+[00000903] ff: text 4b
+{textColor 0 0}【Okuhiko】 "Well then, isn't that exciting?" 
+{textColor 0 2}It isn't exciting at all... 
+
+
+[00000906] 10: 
+[00000907] 12: removeFG 1 3
+[0000090e] 10: 
+[0000090f] 11: fgload 1 00000000 SA01BAN 0 3
+[0000091f] 10: 
+[00000920]  b: playVoice KL2D2065
+[0000092a] 10: 
+[0000092b] 19: 
+[0000092c] ff: text 4c
+{textColor 1 6}【Saki】 "Well then, Izumi-san, will you continue?" 
+
+
+[0000092f] 10: 
+[00000930] 12: removeFG 0 3
+[00000937] 10: 
+[00000938] 11: fgload 0 00000000 IZ06BAN 2 3
+[00000948] 10: 
+[00000949]  b: playVoice KL2D2066
+[00000953] 10: 
+[00000954] 19: 
+[00000955] ff: text 4d
+{textColor 1 8}【Izumi】 "Y-Yes..." 
+{textColor 1 8}【Izumi】 "..." 
+
+
+[00000958] 10: 
+[00000959]  b: playVoice KL2D2067
+[00000963] 10: 
+[00000964] 19: 
+[00000965] ff: text 4e
+{textColor 1 6}【Saki】 "Izumi... san?" 
+
+
+[00000968] 10: 
+[00000969]  b: playVoice KL2D2068
+[00000973] 10: 
+[00000974] 19: 
+[00000975] ff: text 4f
+{textColor 1 8}【Izumi】 "Umm..." 
+
+
+[00000978] 10: 
+[00000979]  b: playVoice KL2D2069
+[00000983] 10: 
+[00000984] 19: 
+[00000985] ff: text 50
+{textColor 1 8}【Izumi】 "Where was I?" 
+
+
+[00000988] 10: 
+[00000989]  b: playVoice KL2D2070
+[00000993] 10: 
+[00000994] 19: 
+[00000995] ff: text 51
+{textColor 1 6}【Saki】 "You were up to the part where you initially thought it was nothing more than a myth." 
+
+
+[00000998] 10: 
+[00000999]  b: playVoice KL2D2071
+[000009a3] 10: 
+[000009a4] 19: 
+[000009a5] ff: text 52
+{textColor 1 8}【Izumi】 "I see... Yes, that's right. When I first heard that story, I was also doubtful. But then..." 
+
+
+[000009a8] 10: 
+[000009a9]  f: removeBG 0 0 2
+[000009b3] 10: 
+[000009b4]  6: playBGM 8
+[000009b8] 10: 
+[000009b9] 18: cmd18
+[000009ba] 10: 
+[000009bb] 1a: cmd1A 1
+[000009bf] 10: 
+[000009c0]  1: cmd1 25
+[000009c5] 10: 
+[000009c6] 19: 
+[000009c7] ff: text 53
+{textColor 0 2}Haah...  {textColor 0 2}But there's nothing more that can be done here, anyway...  {textColor 0 2}Just because Kurumi's heard the story of the shrine now doesn't necessarily mean that history will repeat itself..  {textColor 0 2}This is only the trigger for that incident...  {textColor 0 2}No, it might not actually be the trigger in the first place. 
+{textColor 0 2}What really caused it was Kurumi overhearing my conversation with Izumi-san.  {textColor 0 2}If it hadn't happened, then that incident would never have happened.  {textColor 0 2}That means that if I can prevent that conversation, then I can avert that tragedy.  {textColor 0 2}I can't do anything about events that have already occurred, after all. 
+ {textColor 0 2}――Anyway, I've got to think positively!{delay 5}{delay 5}  {textColor 0 2}I immediately pull myself together. 
+
+
+[000009ca] 10: 
+[000009cb]  2: cmd2 5
+[000009cf] 10: 
+[000009d0] 18: cmd18
+[000009d1] 10: 
+[000009d2] 1a: cmd1A 0
+[000009d6] 10: 
+[000009d7]  7: stopBGM
+[000009d8] 10: 
+[000009d9] 10: bgload 00000000 BG16N 0 1
+[000009e6] 10: 
+[000009e7]  b: playVoice KL2D2072
+[000009f1] 10: 
+[000009f2] 19: 
+[000009f3] ff: text 54
+{textColor 1 8}【Izumi】 "No way! Absolutely not!" 
+{textColor 0 2}Izumi-san's shout abruptly brings me back to reality. 
+
+
+[000009f6] 10: 
+[000009f7] 14: multifgload2 00000000 IZ05BAN 2 00000000 KU01AAN 3
+[00000a0a] 10: 
+[00000a0b]  b: playVoice KL2D2073
+[00000a15] 10: 
+[00000a16] 19: 
+[00000a17] ff: text 55
+{textColor 1 7}【Kurumi】 "Huh, why not?" 
+
+
+[00000a1a] 10: 
+[00000a1b]  b: playVoice KL2D2074
+[00000a25] 10: 
+[00000a26] 19: 
+[00000a27] ff: text 56
+{textColor 1 8}【Izumi】 "'Why not'!?" 
+
+
+[00000a2a] 10: 
+[00000a2b]  b: playVoice KL2D2075
+[00000a35] 10: 
+[00000a36] 19: 
+[00000a37] ff: text 57
+{textColor 1 8}【Izumi】 "Weren't you listening, Kurumi? That story I told you just now wasn't a joke. Do you understand that?" 
+
+
+[00000a3a] 10: 
+[00000a3b]  b: playVoice KL2D2076
+[00000a45] 10: 
+[00000a46] 19: 
+[00000a47] ff: text 58
+{textColor 1 7}【Kurumi】 "Kurumi understands... But... if we only look at it from a distance, then..." 
+
+
+[00000a4a] 10: 
+[00000a4b]  b: playVoice KL2D2077
+[00000a55] 10: 
+[00000a56] 19: 
+[00000a57] ff: text 59
+{textColor 1 8}【Izumi】 "See, you don't understand. You don't understand at all!" 
+
+
+[00000a5a] 10: 
+[00000a5b]  b: playVoice KL2D2078
+[00000a65] 10: 
+[00000a66] 19: 
+[00000a67] ff: text 5a
+{textColor 1 7}【Kurumi】 "But..." 
+
+
+[00000a6a] 10: 
+[00000a6b]  b: playVoice KL2D2079
+[00000a75] 10: 
+[00000a76] 19: 
+[00000a77] ff: text 5b
+{textColor 1 8}【Izumi】 "No buts! No means no!" 
+
+
+[00000a7a] 10: 
+[00000a7b]  b: playVoice KL2D2080
+[00000a85] 10: 
+[00000a86] 19: 
+[00000a87] ff: text 5c
+{textColor 1 8}【Izumi】 "All right? Do you understand?" 
+
+
+[00000a8a] 10: 
+[00000a8b] 11: fgload 1 00000000 KU05AAN 0 3
+[00000a9b] 10: 
+[00000a9c]  b: playVoice KL2D2081
+[00000aa6] 10: 
+[00000aa7] 19: 
+[00000aa8] ff: text 5d
+{textColor 1 7}【Kurumi】 "Boo..." 
+
+
+[00000aab] 10: 
+[00000aac]  f: removeBG 0 0 2
+[00000ab6] 10: 
+[00000ab7] 10: bgload 00000000 BG06N 0 1
+[00000ac4] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 19
+[00000ad0] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 48
+[00000adc] 10: 
+[00000add] 17: showClock
+[00000ade] 10: 
+[00000adf]  6: playBGM 8
+[00000ae3] 10: 
+[00000ae4] 11: fgload 0 00000000 YU01AAN 1 3
+[00000af4] 10: 
+[00000af5]  b: playVoice KL2D2082
+[00000aff] 10: 
+[00000b00] 19: 
+[00000b01] ff: text 5e
+{textColor 1 4}【Yuka】 "Well then, goodnight, Izumi-san, Kurumi-chan." 
+
+
+[00000b04] 10: 
+[00000b05] 12: removeFG 0 3
+[00000b0c] 10: 
+[00000b0d] 14: multifgload2 00000000 IZ02BAN 2 00000000 KU02AAN 3
+[00000b20] 10: 
+[00000b21]  b: playVoice KL2D2083
+[00000b2b] 10: 
+[00000b2c] 19: 
+[00000b2d] ff: text 5f
+{textColor 1 8}【Izumi】 "Goodnight. Please be careful on your way back, okay?" 
+
+
+[00000b30] 10: 
+[00000b31]  b: playVoice KL2D2084
+[00000b3b] 10: 
+[00000b3c] 19: 
+[00000b3d] ff: text 60
+{textColor 1 7}【Kurumi】 "Bye bye♪" 
+{textColor 0 2}Once everyone finishes saying their goodbyes, the two sisters disappear into the shop. 
+
+
+[00000b40] 10: 
+[00000b41] 15: removeAllFG 3
+[00000b45] 10: 
+[00000b46] 19: 
+[00000b47] ff: text 61
+{textColor 0 2}Or so I think... 
+
+
+[00000b4a] 10: 
+[00000b4b]  b: playVoice KL2D2085
+[00000b55] 10: 
+[00000b56] 19: 
+[00000b57] ff: text 62
+{textColor 1 7}【Kurumi】 "Oh!! Almost forgot!" 
+
+
+[00000b5a] 10: 
+[00000b5b]  8: playSFX SE005 1
+[00000b65] 10: 
+[00000b66] 11: fgload 0 00000000 KU01ABN 1 3
+[00000b76] 10: 
+[00000b77] 19: 
+[00000b78] ff: text 63
+{textColor 0 2}Kurumi comes out again, throwing open the door with all her might... 
+{textColor 0 2}(Huh? This is strange...) 
+{textColor 0 2}Didn't Kurumi come back out last time because she had forgotten to deliver Saki's message? 
+{textColor 0 2}But this time, nothing happened to Saki... 
+
+
+[00000b7b] 10: 
+[00000b7c]  b: playVoice KL2D2086
+[00000b86] 10: 
+[00000b87] 19: 
+[00000b88] ff: text 64
+{textColor 1 7}【Kurumi】 "You know what? Kurumi remembered there's something she had to tell you!" 
+{textColor 1 1}【Everyone】 "???" 
+
+
+[00000b8b] 10: 
+[00000b8c]  b: playVoice KL2D2087
+[00000b96] 10: 
+[00000b97] 19: 
+[00000b98] ff: text 65
+{textColor 1 7}【Kurumi】 "From now on, Kurumi has decided to call Okuhiko-kun 'Okkun'♪" 
+
+
+[00000b9b] 10: 
+[00000b9c]  b: playVoice KL2D2088
+[00000ba6] 10: 
+[00000ba7] 19: 
+[00000ba8] ff: text 66
+{textColor 0 0}【Okuhiko】 "... Huh?" 
+
+
+[00000bab] 10: 
+[00000bac]  b: playVoice KL2D2089
+[00000bb6] 10: 
+[00000bb7] 19: 
+[00000bb8] ff: text 67
+{textColor 1 7}【Kurumi】 "And she's decided to call Makoto-kun 'Onii-chan'♪" 
+
+
+[00000bbb] 10: 
+[00000bbc]  b: playVoice KL2D2090
+[00000bc6] 10: 
+[00000bc7] 19: 
+[00000bc8] ff: text 68
+{textColor 0 0}【Okuhiko】 "Onii-chan?" 
+
+
+[00000bcb] 10: 
+[00000bcc]  b: playVoice KL2D2091
+[00000bd6] 10: 
+[00000bd7] 19: 
+[00000bd8] ff: text 69
+{textColor 1 4}【Yuka】 "Onii-chan?" 
+
+
+[00000bdb] 10: 
+[00000bdc]  b: playVoice KL2D2092
+[00000be6] 10: 
+[00000be7] 19: 
+[00000be8] ff: text 6a
+{textColor 1 5}【Haruka】 "Onii-chan?" 
+
+
+[00000beb] 10: 
+[00000bec]  b: playVoice KL2D2093
+[00000bf6] 10: 
+[00000bf7] 19: 
+[00000bf8] ff: text 6b
+{textColor 1 7}【Kurumi】 "Is that all right, Onii-chan?" 
+{textColor 0 0}【Makoto】 "Yeah, it's all right." 
+{textColor 0 2}I answer positively. 
+{textColor 0 2}"Onii-chan"...  {textColor 0 2}I've missed being called that.  {textColor 0 2}Those words soothe my heart... 
+
+
+[00000bfb] 10: 
+[00000bfc] 11: fgload 0 00000000 KU07ABN 1 3
+[00000c0c] 10: 
+[00000c0d]  b: playVoice KL2D2094
+[00000c17] 10: 
+[00000c18] 19: 
+[00000c19] ff: text 6c
+{textColor 1 7}【Kurumi】 "Eheh♪ That's good♪" 
+
+
+[00000c1c] 10: 
+[00000c1d]  b: playVoice KL2D2095
+[00000c27] 10: 
+[00000c28] 19: 
+[00000c29] ff: text 6d
+{textColor 1 7}【Kurumi】 "Well then, goodnight everyone♪" 
+{textColor 0 2}Kurumi goes back into Lunabeach while waving her hand widely. 
+{textColor 0 2}So she came out here just to tell us that... 
+{textColor 0 2}I instinctively break out into a grin. 
+
+
+[00000c2c] 10: 
+[00000c2d]  7: stopBGM
+[00000c2e] 10: 
+[00000c2f]  f: removeBG 0 0 2
+[00000c39] 10: 
+[00000c3a] 10: bgload 00000000 BG01N 0 1
+[00000c47] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 21
+[00000c53] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 38
+[00000c5f] 10: 
+[00000c60] 17: showClock
+[00000c61] 10: 
+[00000c62] 19: 
+[00000c63] ff: text 6e
+{textColor 0 2}When we return to the lodge, I take a bath, brush my teeth, change into my nightclothes, and lie down on the bed. 
+{textColor 0 0}【Makoto】 "Aaah..." 
+{textColor 0 2}As I yawn... 
+
+
+[00000c66] 10: 
+[00000c67]  8: playSFX SE006 1
+[00000c71] 10: 
+[00000c72] 19: 
+[00000c73] ff: text 6f
+{textColor 0 2}... I hear a knock on the door. 
+{textColor 0 0}【Makoto】 "Yes, come in." 
+
+
+[00000c76] 10: 
+[00000c77] 11: fgload 0 00000000 HA01CB 1 3
+[00000c87] 10: 
+[00000c88]  9: stopSFX
+[00000c89] 10: 
+[00000c8a]  6: playBGM 2
+[00000c8e] 10: 
+[00000c8f]  b: playVoice KL2D2096
+[00000c99] 10: 
+[00000c9a] 19: 
+[00000c9b] ff: text 70
+{textColor 1 5}【Haruka】 "Um..." 
+{textColor 0 0}【Makoto】 "Haruka? What's wrong?" 
+
+
+[00000c9e] 10: 
+[00000c9f]  b: playVoice KL2D2097
+[00000ca9] 10: 
+[00000caa] 19: 
+[00000cab] ff: text 71
+{textColor 1 5}【Haruka】 "Makoto... can you fish?" 
+{textColor 0 0}【Makoto】 "Fish?" 
+{textColor 0 2}Ah, now that I think about it, tomorrow is the day Haruka and I went fishing... 
+{textColor 0 0}【Makoto】 "Yeah! I'm great at fishing!" 
+{textColor 0 2}I answer cheerfully. 
+
+
+[00000cae] 10: 
+[00000caf]  b: playVoice KL2D2098
+[00000cb9] 10: 
+[00000cba] 19: 
+[00000cbb] ff: text 72
+{textColor 1 5}【Haruka】 "Then... will you teach me tomorrow?" 
+{textColor 0 0}【Makoto】 "Of course!" 
+
+
+[00000cbe] 10: 
+[00000cbf]  b: playVoice KL2D2099
+[00000cc9] 10: 
+[00000cca] 19: 
+[00000ccb] ff: text 73
+{textColor 1 5}【Haruka】 "Really?" 
+{textColor 0 0}【Makoto】 "Really!" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "...?" 
+
+
+[00000cce] 10: 
+[00000ccf] 11: fgload 0 00000000 HA02CB 1 3
+[00000cdf] 10: 
+[00000ce0]  b: playVoice KL2D2100
+[00000cea] 10: 
+[00000ceb] 19: 
+[00000cec] ff: text 74
+{textColor 1 5}【Haruka】 "Thank you." 
+{textColor 0 0}【Makoto】 "No, no... I haven't even taught you yet..." 
+{textColor 0 0}【Makoto】 "Isn't it too early to be thanking me?" 
+
+
+[00000cef] 10: 
+[00000cf0]  b: playVoice KL2D2101
+[00000cfa] 10: 
+[00000cfb] 19: 
+[00000cfc] ff: text 75
+{textColor 1 5}【Haruka】 "Yes... but... thank you." 
+{textColor 0 0}【Makoto】 "... Well then, tomorrow?" 
+
+
+[00000cff] 10: 
+[00000d00]  b: playVoice KL2D2102
+[00000d0a] 10: 
+[00000d0b] 19: 
+[00000d0c] ff: text 76
+{textColor 1 5}【Haruka】 "Yes." 
+
+
+[00000d0f] 10: 
+[00000d10] 12: removeFG 0 3
+[00000d17] 10: 
+[00000d18] 19: 
+[00000d19] ff: text 77
+{textColor 0 2}Haruka leaves the room. 
+{textColor 0 2}I look back on my previous thoughts... 
+{textColor 0 2}"The next seven days will be happy ones." 
+{textColor 0 2}"I will guide them to happiness..." 
+{textColor 0 2}... That's my other important duty. 
+{textColor 0 2}I didn't even hesitate to accept Haruka's offer to go fishing... 
+
+
+[00000d1c] 10: 
+[00000d1d]  7: stopBGM
+[00000d1e] 10: 
+[00000d1f]  f: removeBG 0 0 0
+[00000d29] 10: 
+[00000d2a]  4: jump KL2D3
+[00000d31]  0: 
+[00000d32]  0: 
+[00000d33]  0: 

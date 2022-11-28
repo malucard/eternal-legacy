@@ -1,0 +1,331 @@
+[00000030] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 2
+[0000003b] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 2
+[00000046] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000052] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[0000005e] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 1
+[00000069]  0: 
+[0000006a]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 0000007e (0002)
+[00000078] 10: 
+[00000079] 1c: cmd1C
+[0000007a]  0: 
+[0000007b]  7: goto7 00000089 (0003)
+[0000007e] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[00000089]  0: 
+[0000008a]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 0000009a (0005)
+[00000098] 10: 
+[00000099] 18: cmd18
+[0000009a] 10: 
+[0000009b] 1b: dayIntro 00000000 BGCAL2.cps
+[000000a2] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 140
+[000000ae] 10: 
+[000000af] 10: bgload 00000000 BG15A 0 1
+[000000bc] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[000000c8] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 4
+[000000d3] 10: 
+[000000d4] 17: showClock
+[000000d5] 10: 
+[000000d6]  6: playBGM 9
+[000000da] 10: 
+[000000db]  8: playSFX SE021 1
+[000000e5] 10: 
+[000000e6] 19: 
+[000000e7] ff: text 00
+{textColor 0 2}I know that Saki will be swallowed up by that monstrous wave today.  {textColor 0 2}I have to find some way to prevent it... 
+{textColor 0 2}When I think about it, it was because of this incident when everything started going wrong... 
+{textColor 0 2}Well, it's great and all that I've decided to try to prevent it, but where do I begin and how? 
+{textColor 0 2}In the end, I went with the flow along with everyone else, and now we've finally arrived here. 
+{textColor 0 2}We walk to the pier while carrying our fishing rods.  At this rate, the result will be the same as last time. 
+{textColor 0 2}No way...!  I can't let that happen...!  {textColor 0 2}Absolutely not...!! 
+{textColor 0 2}Anyway, I need to stop Saki from going out towards the pier...  No, before that, should I stop Saki and Haruka's quarrel...? 
+
+[000000ea] ff: text 01
+{textColor 0 2}{choiceOpt 1 -> Call out to Saki. }{choiceOpt 2 -> Call out to Haruka. }
+
+[000000ed] 10: 
+[000000ee]  3: choice v_a1_08 00 00
+[000000f3]  0: 
+[000000f4]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000001b6 (0006)
+[00000102] 10: 
+[00000103] 19: 
+[00000104] ff: text 02
+{textColor 0 2}I call out to Saki. 
+
+
+[00000107] 10: 
+[00000108]  7: stopBGM
+[00000109] 10: 
+[0000010a] 19: 
+[0000010b] ff: text 03
+{textColor 0 0}【Makoto】 "Hey, Saki!" 
+
+
+[0000010e] 10: 
+[0000010f] 11: fgload 0 00000000 SA01BA 1 3
+[0000011f] 10: 
+[00000120]  6: playBGM 3
+[00000124] 10: 
+[00000125]  b: playVoice HL2D2000
+[0000012f] 10: 
+[00000130] 19: 
+[00000131] ff: text 04
+{textColor 1 6}【Saki】 "What?" 
+{textColor 0 0}【Makoto】 "Um..." 
+{textColor 0 0}【Makoto】 "Err..." 
+{textColor 0 0}【Makoto】 "Well..." 
+
+
+[00000134] 10: 
+[00000135] 11: fgload 0 00000000 SA05BA 1 3
+[00000145] 10: 
+[00000146]  b: playVoice HL2D2001
+[00000150] 10: 
+[00000151] 19: 
+[00000152] ff: text 05
+{textColor 1 6}【Saki】 "Geez, spit it out already." 
+{textColor 0 2}(D-Dammit...!  I can't think of anything to say...!) 
+{textColor 0 2}Umm...  What to say,  what to say... 
+
+
+[00000155] 10: 
+[00000156] 12: removeFG 0 3
+[0000015d] 10: 
+[0000015e]  7: stopBGM
+[0000015f] 10: 
+[00000160]  b: playVoice HL2D2002
+[0000016a] 10: 
+[0000016b] 19: 
+[0000016c] ff: text 06
+{textColor 1 4}【Yuka】 "Hey, Makoto?" 
+
+
+[0000016f] 10: 
+[00000170] 11: fgload 0 00000000 YU08AB 1 3
+[00000180] 10: 
+[00000181]  6: playBGM 13
+[00000185] 10: 
+[00000186] 19: 
+[00000187] ff: text 07
+{textColor 0 2}Just then, Yuka calls out to me. 
+{textColor 0 0}【Makoto】 "I'm a little busy right now!" 
+
+
+[0000018a] 10: 
+[0000018b]  b: playVoice HL2D2003
+[00000195] 10: 
+[00000196] 19: 
+[00000197] ff: text 08
+{textColor 1 4}【Yuka】 "I have something important to talk about." 
+{textColor 0 0}【Makoto】 "I told you, I'm busy!" 
+
+
+[0000019a] 10: 
+[0000019b]  b: playVoice HL2D2004
+[000001a5] 10: 
+[000001a6] 19: 
+[000001a7] ff: text 09
+{textColor 1 4}【Yuka】 "I have a bad feeling..." 
+{textColor 0 0}【Makoto】 "I know that!" 
+{textColor 0 0}【Makoto】 "I told you... right now, I'm..." 
+
+
+[000001aa] 10: 
+[000001ab] 12: removeFG 0 3
+[000001b2]  0: 
+[000001b3]  7: goto7 0000024f (0007)
+[000001b6] 10: 
+[000001b7] 19: 
+[000001b8] ff: text 0a
+{textColor 0 2}I call out to Haruka. 
+{textColor 0 0}【Makoto】 "Say, Haruka? Would you like me to teach you how to fish?" 
+
+
+[000001bb] 10: 
+[000001bc] 11: fgload 0 00000000 HA01AA 1 3
+[000001cc] 10: 
+[000001cd]  6: playBGM 2
+[000001d1] 10: 
+[000001d2] 19: 
+[000001d3] ff: text 0b
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "When it comes to fishing, I'm not the greatest, but I can still..." 
+
+
+[000001d6] 10: 
+[000001d7] 12: removeFG 0 3
+[000001de] 10: 
+[000001df]  7: stopBGM
+[000001e0] 10: 
+[000001e1]  b: playVoice HL2D2006
+[000001eb] 10: 
+[000001ec] 19: 
+[000001ed] ff: text 0c
+{textColor 0 0}【Okuhiko】 "Hey, Ishihara!" 
+
+
+[000001f0] 10: 
+[000001f1] 11: fgload 0 00000000 OK05AB 1 3
+[00000201] 10: 
+[00000202]  6: playBGM 13
+[00000206] 10: 
+[00000207]  b: playVoice HL2D2007
+[00000211] 10: 
+[00000212] 19: 
+[00000213] ff: text 0d
+{textColor 0 0}【Okuhiko】 "You're getting way too friendly with Haruka-chan." 
+{textColor 0 0}【Makoto】 "It doesn't concern you!" 
+
+
+[00000216] 10: 
+[00000217] 11: fgload 0 00000000 OK04AB 1 3
+[00000227] 10: 
+[00000228]  b: playVoice HL2D2008
+[00000232] 10: 
+[00000233] 19: 
+[00000234] ff: text 0e
+{textColor 0 0}【Okuhiko】 "It does concern me!" 
+{textColor 0 0}【Makoto】 "Look, just piss off!  I'm busy right now!" 
+
+
+[00000237] 10: 
+[00000238]  b: playVoice HL2D2009
+[00000242] 10: 
+[00000243] 19: 
+[00000244] ff: text 0f
+{textColor 0 0}【Okuhiko】 "With what!?" 
+{textColor 0 0}【Makoto】 "Instead of wasting time with you, I could be...!!" 
+
+
+[00000247] 10: 
+[00000248] 12: removeFG 0 3
+[0000024f] 10: 
+[00000250] 19: 
+[00000251] ff: text 10
+{textColor 0 2}At that time, I hear the echo of Saki's voice.  Saki and Haruka had started quarreling without me noticing.  I immediately start running... 
+
+
+[00000254] 10: 
+[00000255] 11: fgload 0 00000000 SA11BA 1 3
+[00000265] 10: 
+[00000266]  b: playVoice HL2D2005
+[00000270] 10: 
+[00000271] 19: 
+[00000272] ff: text 11
+{textColor 1 6}【Saki】 "AAAAAH!" 
+
+
+[00000275] 10: 
+[00000276]  8: playSFX SE022 1
+[00000280] 10: 
+[00000281] 19: 
+[00000282] ff: text 12
+{textColor 0 2}Saki screams at the same time as the booming roar of a wave breaks out. 
+{textColor 0 2}I didn't make it in time. The unbelievably large wave strikes the pier with a large sheet of water! 
+
+
+[00000285] 10: 
+[00000286] 12: removeFG 0 0
+[0000028d] 10: 
+[0000028e] 19: 
+[0000028f] ff: text 13
+{textColor 0 2}As it strikes, the wave devours Saki and drags her into the ocean! 
+{textColor 0 2}I'm frozen in place. 
+{textColor 0 2}(Dammit...) 
+{textColor 0 2}(I couldn't prevent it...  Even though I knew about it, I couldn't prevent it...) 
+
+
+[00000292] 10: 
+[00000293]  8: playSFX SE123 1
+[0000029d] 10: 
+[0000029e] 19: 
+[0000029f] ff: text 14
+{textColor 0 2}Izumi-san runs and dives into the ocean off of the tip of the pier! 
+{textColor 0 2}(Izumi-san...!) 
+
+
+[000002a2] 10: 
+[000002a3]  7: stopBGM
+[000002a4] 10: 
+[000002a5] 19: 
+[000002a6] ff: text 15
+{textColor 0 2}(――No, she should be all right...) 
+{textColor 0 2}... ... ... 
+
+
+[000002a9] 10: 
+[000002aa]  6: playBGM 9
+[000002ae] 10: 
+[000002af]  8: playSFX SE021 1
+[000002b9] 10: 
+[000002ba] 19: 
+[000002bb] ff: text 16
+{textColor 0 2}In the end, Izumi-san saves her again.  {textColor 0 2}I stand stock-still on the beach. 
+
+
+[000002be] 10: 
+[000002bf]  f: removeBG 1 0 2
+[000002c9] 10: 
+[000002ca] 19: 
+[000002cb] ff: text 17
+{textColor 0 2}(I tried to change this...  I tried hard to change this...) 
+{textColor 0 2}But the reality is that the incident happened again. 
+{textColor 0 2}Then is it impossible for just my will to change history...? 
+
+
+[000002ce] 10: 
+[000002cf]  f: removeBG 0 0 2
+[000002d9] 10: 
+[000002da] 10: bgload 00000000 BG11E 0 1
+[000002e7] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[000002f3] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 42
+[000002ff] 10: 
+[00000300] 17: showClock
+[00000301] 10: 
+[00000302] 19: 
+[00000303] ff: text 18
+{textColor 0 2}On the way back, everyone seems to be at ease. 
+{textColor 0 2}I guess you could say that the tension in the atmosphere somehow unwinded.  {textColor 0 2}Everybody seems to be relieved that everything turned out all right. 
+{textColor 0 2}The fiery, red sunset is also probably contributing to the reason why everyone's hearts are calming down. 
+{textColor 0 2}However... 
+{textColor 0 2}However, I'm probably the only one still anxious... 
+
+
+[00000306] 10: 
+[00000307]  7: stopBGM
+[00000308] 10: 
+[00000309]  f: removeBG 0 0 2
+[00000313] 10: 
+[00000314] 10: bgload 00000000 BG01N 0 1
+[00000321] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 22
+[0000032d] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 26
+[00000339] 10: 
+[0000033a] 17: showClock
+[0000033b] 10: 
+[0000033c] 19: 
+[0000033d] ff: text 19
+{textColor 0 2}"How can I change history? Is it even possible?"  ... That's the question endlessly revolving in my mind. 
+
+
+[00000340] 10: 
+[00000341]  6: playBGM 10
+[00000345] 10: 
+[00000346] 19: 
+[00000347] ff: text 1a
+{textColor 0 2}When I get into bed, I can only continue thinking the same thing. 
+{textColor 0 2}I failed to prevent Saki from being swallowed up by that monstrous wave. 
+{textColor 0 2}Still, it's not like this past is exactly the same as my memories of the one before... 
+{textColor 0 2}No, in the first place, is it accurate to consider this the "past"?  {textColor 0 2}After all, events you experience at points ahead in time are not the "past", but the "future"... 
+{textColor 0 2}Either way, it doesn't change that tomorrow will be a challenge.  The day Haruka was revealed to be a clone... 
+{textColor 0 2}I have to find some way to stop that from happening. 
+{textColor 0 2}But can my will alone really change history...!? 
+{textColor 0 2}Or is the future, being what it is, just something I cannot comprehend, and therefore cannot change...? 
+{textColor 0 2}I think as hard as I can, but I am unable to settle my disordered thoughts. 
+{textColor 0 2}And then...  {textColor 0 2}And then, before I know it, I fall into a deep sleep... 
+
+
+[0000034a] 10: 
+[0000034b]  f: removeBG 0 0 0
+[00000355] 10: 
+[00000356]  7: stopBGM
+[00000357] 10: 
+[00000358]  4: jump HL2D3
+[0000035f]  0: 

@@ -1,0 +1,1804 @@
+[00000034] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 6
+[0000003f] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 6
+[0000004a] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000056] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000062] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 6
+[0000006d]  0: 
+[0000006e]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 00000082 (0002)
+[0000007c] 10: 
+[0000007d] 1c: cmd1C
+[0000007e]  0: 
+[0000007f]  7: goto7 0000008d (0003)
+[00000082] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[0000008d]  0: 
+[0000008e]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 0000009e (0005)
+[0000009c] 10: 
+[0000009d] 18: cmd18
+[0000009e] 10: 
+[0000009f] 1b: dayIntro 00000000 BGCAL6.cps
+[000000a6] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 33
+[000000b2] 10: 
+[000000b3]  f: removeBG 1 0 2
+[000000bd] 10: 
+[000000be]  6: playBGM 10
+[000000c2] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 0
+[000000cd] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 7
+[000000d8] 10: 
+[000000d9] 17: showClock
+[000000da]  0: 
+[000000db]  5: delay 60
+[000000e0] 10: 
+[000000e1] 19: 
+[000000e2] ff: text 00
+{textColor 0 2}It's probably past 10:00 now, isn't it? 
+{textColor 0 2}It seems Kurumi finally got tired of talking, as she headed up to Lunabeach's second floor while rubbing her sleepy eyes. 
+{textColor 0 2}At last, I'm finally in a situation where Izumi-san and I are alone. 
+{textColor 0 2}In that time, I keep reminding myself that I have to ask Izumi-san about "that story", no matter what. 
+{textColor 0 2}I continue to tell myself that I ought to start talking to her about it, but I keep feeling like the timing isn't exactly right. 
+{textColor 0 2}Instead, we continue to chatter on about trivial things... 
+{textColor 0 2}Exactly two hours have passed since Kurumi went up to go to sleep. 
+{textColor 0 2}The date display on my watch has already changed to the 6th... 
+
+
+[000000e5] 10: 
+[000000e6]  7: stopBGM
+[000000e7] 10: 
+[000000e8]  f: removeBG 0 0 2
+[000000f2] 10: 
+[000000f3] 10: bgload 00000000 BG07N 0 1
+[00000100] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 0
+[0000010b] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 8
+[00000116] 10: 
+[00000117] 17: showClock
+[00000118] 10: 
+[00000119] 11: fgload 0 00000000 IZ02BB 1 3
+[00000129] 10: 
+[0000012a]  b: playVoice KL1D6000
+[00000134] 10: 
+[00000135] 19: 
+[00000136] ff: text 01
+{textColor 1 8}【Izumi】 "All right...{delay 5} well then, perhaps it's about time that I go to sleep as well..." 
+
+
+[00000139] 10: 
+[0000013a] 12: removeFG 0 3
+[00000141] 10: 
+[00000142] 19: 
+[00000143] ff: text 02
+{textColor 0 2}Izumi-san tries to stand up. 
+{textColor 0 0}【Makoto】 "Izumi-san...!" 
+{textColor 0 2}I frantically try to stop her. 
+
+
+[00000146] 10: 
+[00000147] 11: fgload 0 00000000 IZ01BB 1 3
+[00000157] 10: 
+[00000158] 19: 
+[00000159] ff: text 03
+{textColor 1 8}【Izumi】 "...?" 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}And then, I finally decide to ask about "that story." 
+
+
+[0000015c] 10: 
+[0000015d]  6: playBGM 9
+[00000161] 10: 
+[00000162] 19: 
+[00000163] ff: text 04
+{textColor 0 0}【Makoto】 "Izumi-san...{delay 5}{delay 5} could you please... {delay 5}{delay 5}tell me the rest of that story from yesterday?" 
+
+
+[00000166] 10: 
+[00000167]  b: playVoice KL1D6001
+[00000171] 10: 
+[00000172] 19: 
+[00000173] ff: text 05
+{textColor 1 8}【Izumi】 "Th-{delay 5}The story from yesterday...{delay 5}{delay 5} what story?" 
+{textColor 0 0}【Makoto】 "The story you were telling me...{delay 5} on that pier..." 
+
+
+[00000176] 10: 
+[00000177] 11: fgload 0 00000000 IZ06BB 1 3
+[00000187] 10: 
+[00000188] 19: 
+[00000189] ff: text 06
+{textColor 0 2}In that instant, Izumi-san's expression turns tense. 
+
+
+[0000018c] 10: 
+[0000018d]  b: playVoice KL1D6002
+[00000197] 10: 
+[00000198] 19: 
+[00000199] ff: text 07
+{textColor 1 8}【Izumi】 "R-{delay 5}{delay 5}Right...{delay 5}{delay 5} That story...{delay 5}{delay 5}{delay 5} huh...?" 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000019c] 10: 
+[0000019d]  b: playVoice KL1D6003
+[000001a7] 10: 
+[000001a8] 19: 
+[000001a9] ff: text 08
+{textColor 1 8}【Izumi】 "Makoto-kun..." 
+
+
+[000001ac] 10: 
+[000001ad]  b: playVoice KL1D6004
+[000001b7] 10: 
+[000001b8] 19: 
+[000001b9] ff: text 09
+{textColor 1 8}【Izumi】 "You might think 'Why are you saying this now?', but...{delay 5}{delay 5} That story...{delay 5}{delay 5} I don't think it's something I should have told you." 
+{textColor 0 0}【Makoto】 "Huh...?" 
+
+
+[000001bc] 10: 
+[000001bd]  b: playVoice KL1D6005
+[000001c7] 10: 
+[000001c8] 19: 
+[000001c9] ff: text 0a
+{textColor 1 8}【Izumi】 "After all, that story...{delay 5}{delay 5} is something I feel that I mustn't tell anyone else..." 
+
+
+[000001cc] 10: 
+[000001cd]  b: playVoice KL1D6006
+[000001d7] 10: 
+[000001d8] 19: 
+[000001d9] ff: text 0b
+{textColor 1 8}【Izumi】 "For Kurumi's...{delay 5}{delay 5}{delay 5} sake..." 
+{textColor 0 0}【Makoto】 "Izumi-san..." 
+{textColor 0 0}【Makoto】 "I...{delay 5}{delay 5} saw it... {delay 5}{delay 5}I saw the scar on Kurumi's back..." 
+
+
+[000001dc] 10: 
+[000001dd] 11: fgload 0 00000000 IZ11BB 1 3
+[000001ed] 10: 
+[000001ee]  b: playVoice KL1D6007
+[000001f8] 10: 
+[000001f9] 19: 
+[000001fa] ff: text 0c
+{textColor 1 8}【Izumi】 "!!!" 
+{textColor 0 0}【Makoto】 "But I...{delay 5}{delay 5}{delay 5} I said nothing..." 
+
+
+[000001fd] 10: 
+[000001fe] 11: fgload 0 00000000 IZ06BB 1 3
+[0000020e] 10: 
+[0000020f] 19: 
+[00000210] ff: text 0d
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "To be honest...{delay 5} it was much more horrifying...{delay 5}{delay 5} than I ever could have imagined..." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "Kurumi's scar and that story...{delay 5} there's a connection between them, isn't there?" 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "Right now, it seems that Kurumi is still bothered by that scar..." 
+{textColor 0 0}【Makoto】 "One way or another, I want to heal... {delay 5}Kurumi's emotional scars..." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "She didn't get that scar from falling down the stairs{delay 5}{delay 5}――did she?" 
+{textColor 0 0}【Makoto】 "'She probably got it shortly after she was born,'{delay 5}{delay 5}... Kurumi's realized that, you know." 
+{textColor 0 0}【Makoto】 "What was the real cause?" 
+{textColor 0 0}【Makoto】 "The shrine...{delay 5}{delay 5} Kurumi's kidnapping...{delay 5}{delay 5} the fact that she may not be your real sister... They're all connected somehow, right?" 
+{textColor 0 0}【Makoto】 "Please tell me, Izumi-san!" 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 2}Izumi-san keeps her eyes firmly on the ground, her mouth tightly shut. 
+{textColor 0 2}At this rate, she's not going to tell me anything, is she?  {textColor 0 2}――Just what happened to Kurumi as a baby? 
+{textColor 0 2}If I don't know that, then I don't think I can heal Kurumi's scars. 
+{textColor 0 2}No...{delay 5}{delay 5} more importantly, it might be that I just want to learn everything about Kurumi above everything else. 
+{textColor 0 2}I want to find the main cause of Kurumi's pain, and take away that suffering...{delay 5}{delay 5} I have to. 
+
+
+[00000213] 10: 
+[00000214]  7: stopBGM
+[00000215]  0: 
+[00000216]  5: delay 60
+[0000021b] 10: 
+[0000021c]  6: playBGM 5
+[00000220] 10: 
+[00000221]  b: playVoice KL1D6008
+[0000022b] 10: 
+[0000022c] 19: 
+[0000022d] ff: text 0e
+{textColor 1 8}【Izumi】 "Kurumi is..." 
+{textColor 0 2}Izumi-san suddenly starts speaking. 
+
+
+[00000230] 10: 
+[00000231]  b: playVoice KL1D6009
+[0000023b] 10: 
+[0000023c] 19: 
+[0000023d] ff: text 0f
+{textColor 1 8}【Izumi】 "Kurumi is...{delay 5}{delay 5}{delay 5} my real...{delay 5}{delay 5}{delay 5} sister." 
+
+
+[00000240] 10: 
+[00000241]  b: playVoice KL1D6010
+[0000024b] 10: 
+[0000024c] 19: 
+[0000024d] ff: text 10
+{textColor 1 8}【Izumi】 "Even if we're not related by blood...{delay 5}{delay 5} she's still my real sister..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000250] 10: 
+[00000251]  b: playVoice KL1D6011
+[0000025b] 10: 
+[0000025c] 19: 
+[0000025d] ff: text 11
+{textColor 1 8}【Izumi】 "Ever since long ago, Kurumi and I were always together..." 
+
+
+[00000260] 10: 
+[00000261]  b: playVoice KL1D6012
+[0000026b] 10: 
+[0000026c] 19: 
+[0000026d] ff: text 12
+{textColor 1 8}【Izumi】 "Because our parents were always away from home, ever since she was a kid, I've been Kurumi's substitute mother." 
+
+
+[00000270] 10: 
+[00000271]  b: playVoice KL1D6013
+[0000027b] 10: 
+[0000027c] 19: 
+[0000027d] ff: text 13
+{textColor 1 8}【Izumi】 "From aiding her with cooking to her troubles with homework, I saw it all..." 
+
+
+[00000280] 10: 
+[00000281]  b: playVoice KL1D6014
+[0000028b] 10: 
+[0000028c] 19: 
+[0000028d] ff: text 14
+{textColor 1 8}【Izumi】 "Before I knew it, in the blink of an eye, it was my duty to attend her parent's visit days and her parent-teacher conferences..." 
+
+
+[00000290] 10: 
+[00000291]  b: playVoice KL1D6015
+[0000029b] 10: 
+[0000029c] 19: 
+[0000029d] ff: text 15
+{textColor 1 8}【Izumi】 "Now that I think about it...{delay 5}{delay 5} when Kurumi was in 3rd grade...{delay 5} her homeroom teacher gave the assignment of 'please draw a picture of your mother'..." 
+
+
+[000002a0] 10: 
+[000002a1]  b: playVoice KL1D6016
+[000002ab] 10: 
+[000002ac] 19: 
+[000002ad] ff: text 16
+{textColor 1 8}【Izumi】 "But what Kurumi drew...{delay 5} was a picture of me..." 
+
+
+[000002b0] 10: 
+[000002b1]  b: playVoice KL1D6017
+[000002bb] 10: 
+[000002bc] 19: 
+[000002bd] ff: text 17
+{textColor 1 8}【Izumi】 "When she got home, Kurumi said, 'the teacher scolded me', and cried..." 
+
+
+[000002c0] 10: 
+[000002c1]  b: playVoice KL1D6018
+[000002cb] 10: 
+[000002cc] 19: 
+[000002cd] ff: text 18
+{textColor 1 8}【Izumi】 "At that time, I was in middle school, but I immediately stormed into the elementary school's staff room to yell at that teacher." 
+
+
+[000002d0] 10: 
+[000002d1]  b: playVoice KL1D6019
+[000002db] 10: 
+[000002dc] 19: 
+[000002dd] ff: text 19
+{textColor 1 8}【Izumi】 "And you know what? {delay 5}{delay 5}Kurumi...{delay 5}{delay 5} stuck her tongue out at that homeroom teacher while hiding behind my back..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000002e0] 10: 
+[000002e1]  b: playVoice KL1D6020
+[000002eb] 10: 
+[000002ec] 19: 
+[000002ed] ff: text 1a
+{textColor 1 8}【Izumi】 "... She was always following me, tottering all the way..." 
+
+
+[000002f0] 10: 
+[000002f1]  b: playVoice KL1D6021
+[000002fb] 10: 
+[000002fc] 19: 
+[000002fd] ff: text 1b
+{textColor 1 8}【Izumi】 "We brushed our teeth together, were together when we slept... and even when I got phone calls from boyfriends, Kurumi was by my side." 
+
+
+[00000300] 10: 
+[00000301]  b: playVoice KL1D6022
+[0000030b] 10: 
+[0000030c] 19: 
+[0000030d] ff: text 1c
+{textColor 1 8}【Izumi】 "I was the one who understood Kurumi the best." 
+
+
+[00000310] 10: 
+[00000311]  b: playVoice KL1D6023
+[0000031b] 10: 
+[0000031c] 19: 
+[0000031d] ff: text 1d
+{textColor 1 8}【Izumi】 "And conversely, I thought Kurumi was the one who understood me the best as well..." 
+
+
+[00000320] 10: 
+[00000321]  b: playVoice KL1D6024
+[0000032b] 10: 
+[0000032c] 19: 
+[0000032d] ff: text 1e
+{textColor 1 8}【Izumi】 "That Kurumi... there's no one more important to me than her..." 
+
+
+[00000330] 10: 
+[00000331]  b: playVoice KL1D6025
+[0000033b] 10: 
+[0000033c] 19: 
+[0000033d] ff: text 1f
+{textColor 1 8}【Izumi】 "Because Kurumi's the person that she is..." 
+
+
+[00000340] 10: 
+[00000341]  b: playVoice KL1D6026
+[0000034b] 10: 
+[0000034c] 19: 
+[0000034d] ff: text 20
+{textColor 1 8}【Izumi】 "... It doesn't matter if we're not related by blood." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000350] 10: 
+[00000351]  b: playVoice KL1D6027
+[0000035b] 10: 
+[0000035c] 19: 
+[0000035d] ff: text 21
+{textColor 1 8}【Izumi】 "That's why... I've had enough..." 
+
+
+[00000360] 10: 
+[00000361]  b: playVoice KL1D6028
+[0000036b] 10: 
+[0000036c] 19: 
+[0000036d] ff: text 22
+{textColor 1 8}【Izumi】 "I'll keep her away from the shrine... no matter what..." 
+
+
+[00000370] 10: 
+[00000371]  b: playVoice KL1D6029
+[0000037b] 10: 
+[0000037c] 19: 
+[0000037d] ff: text 23
+{textColor 1 8}【Izumi】 "As for that story... I've already decided to bury it deep within me..." 
+
+
+[00000380] 10: 
+[00000381] 11: fgload 0 00000000 IZ01BB 1 3
+[00000391] 10: 
+[00000392] 19: 
+[00000393] ff: text 24
+{textColor 0 2}After Izumi-san finishes talking, her eyes become very relaxed. {textColor 0 2}There's absolutely no way I can pry any further. 
+{textColor 0 2}(This is Izumi-san and Kurumi's problem...) 
+{textColor 0 2}(In the first place, it might have been something that an outsider like me shouldn't have gotten involved with in the first place.) 
+{textColor 0 2}That's what I think...  {textColor 0 2}And, at that time... 
+
+
+[00000396] 10: 
+[00000397] 12: removeFG 0 3
+[0000039e] 10: 
+[0000039f]  7: stopBGM
+[000003a0]  0: 
+[000003a1]  5: delay 30
+[000003a6] 10: 
+[000003a7]  8: playSFX SE101 1
+[000003b1] 10: 
+[000003b2] 19: 
+[000003b3] ff: text 25
+{textColor 0 2}... We hear a sound...  {textColor 0 2}... We then turn around... 
+
+
+[000003b6] 10: 
+[000003b7] 14: multifgload2 00000000 IZ11BA 2 00000000 KU08BA 3
+[000003ca] 10: 
+[000003cb]  b: playVoice KL1D6030
+[000003d5] 10: 
+[000003d6] 19: 
+[000003d7] ff: text 26
+{textColor 1 8}【Izumi】 "Ku...{delay 5}{delay 5}{delay 5} Kurumi..." 
+{textColor 0 2}My heart stops. 
+
+
+[000003da] 10: 
+[000003db]  b: playVoice KL1D6031
+[000003e5] 10: 
+[000003e6] 19: 
+[000003e7] ff: text 27
+{textColor 1 7}【Kurumi】 "Is it true?" 
+
+
+[000003ea] 10: 
+[000003eb]  b: playVoice KL1D6032
+[000003f5] 10: 
+[000003f6] 19: 
+[000003f7] ff: text 28
+{textColor 1 7}【Kurumi】 "Is it really true?" 
+
+
+[000003fa] 10: 
+[000003fb] 11: fgload 0 00000000 IZ08BA 2 3
+[0000040b] 10: 
+[0000040c] 19: 
+[0000040d] ff: text 29
+{textColor 1 8}【Izumi】 "..." 
+
+
+[00000410] 10: 
+[00000411]  b: playVoice KL1D6033
+[0000041b] 10: 
+[0000041c] 19: 
+[0000041d] ff: text 2a
+{textColor 1 7}【Kurumi】 "Kurumi isn't Onee-chan's...{delay 5}{delay 5}{delay 5} sister?" 
+
+
+[00000420] 10: 
+[00000421] 11: fgload 0 00000000 IZ06BA 2 3
+[00000431] 10: 
+[00000432]  b: playVoice KL1D6034
+[0000043c] 10: 
+[0000043d] 19: 
+[0000043e] ff: text 2b
+{textColor 1 8}【Izumi】 "You're wrong, Kurumi!{delay 5}{delay 5}{delay 5} That's-" 
+
+
+[00000441] 10: 
+[00000442]  b: playVoice KL1D6035
+[0000044c] 10: 
+[0000044d] 19: 
+[0000044e] ff: text 2c
+{textColor 1 7}【Kurumi】 "You liar..." 
+
+
+[00000451] 10: 
+[00000452]  b: playVoice KL1D6036
+[0000045c] 10: 
+[0000045d] 19: 
+[0000045e] ff: text 2d
+{textColor 1 7}【Kurumi】 "Everyone...{delay 5}{delay 5}{delay 5} Everyone...{delay 5}{delay 5}{delay 5} is deceiving Kurumi..." 
+
+
+[00000461] 10: 
+[00000462] 11: fgload 0 00000000 IZ08BA 2 3
+[00000472] 10: 
+[00000473]  b: playVoice KL1D6037
+[0000047d] 10: 
+[0000047e] 19: 
+[0000047f] ff: text 2e
+{textColor 1 8}【Izumi】 "I'm telling you, that's-" 
+
+
+[00000482] 10: 
+[00000483] 11: fgload 1 00000000 KU04BA 0 3
+[00000493] 10: 
+[00000494]  b: playVoice KL1D6038
+[0000049e] 10: 
+[0000049f] 19: 
+[000004a0] ff: text 2f
+{textColor 1 7}【Kurumi】 "YOU LIAR!!" 
+
+
+[000004a3] 10: 
+[000004a4] 12: removeFG 1 3
+[000004ab] 10: 
+[000004ac]  8: playSFX SE000 1
+[000004b6] 10: 
+[000004b7] 19: 
+[000004b8] ff: text 30
+{textColor 0 2}Kurumi starts to rush right out of Lunabeach! 
+{textColor 0 0}【Makoto】 "KURUMIIII!!" 
+
+
+[000004bb] 10: 
+[000004bc] 12: removeFG 0 3
+[000004c3] 10: 
+[000004c4]  9: stopSFX
+[000004c5] 10: 
+[000004c6] 10: bgload 00000000 BG06NR 4 1
+[000004d3] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 34
+[000004df] 10: 
+[000004e0]  6: playBGM 7
+[000004e4] 10: 
+[000004e5] 19: 
+[000004e6] ff: text 31
+{textColor 0 2}She bolts open the door and runs outside.  {textColor 0 2}I look for Kurumi, looking left and right. 
+{textColor 0 2}Step, step, step, step...  {textColor 0 2}I can hear footsteps on the sand.  {textColor 0 2}――She's at Moon Beach! 
+
+
+[000004e9] 10: 
+[000004ea] 10: bgload 00000000 BG16NR 4 1
+[000004f7] 10: 
+[000004f8] 19: 
+[000004f9] ff: text 32
+{textColor 0 2}I jump over the banks, and land on the sandy beach.  {textColor 0 2}I see Kurumi's back as she runs south down the beach... 
+{textColor 0 2}I start running, kicking off the sand. 
+{textColor 0 2}I fill my body with strength as I run...  {textColor 0 2}The sand flies up behind me as I run across it...  {textColor 0 2}Kurumi's getting closer and closer... 
+{textColor 0 0}【Makoto】 "Kurumi!" 
+{textColor 0 2}... I firmly grab her slim arm.  {textColor 0 2}The two of us stagger and pitch forward.  {textColor 0 2}I regain my balance, and turn Kurumi around... 
+
+
+[000004fc] 10: 
+[000004fd]  7: stopBGM
+[000004fe] 10: 
+[000004ff] 10: bgload 00000000 EV_KU07 0 1
+[0000050c] 10: 
+[0000050d] 19: 
+[0000050e] ff: text 33
+{textColor 0 0}【Makoto】 "Kurumi..." 
+{textColor 0 2}Kurumi is crying.  {textColor 0 2}Large teardrops begin to pour out of her eyes... 
+{textColor 0 2}She keeps wiping them away with her palms, but more tears just keep on coming. 
+
+
+[00000511] 10: 
+[00000512]  6: playBGM 12
+[00000516] 10: 
+[00000517]  b: playVoice KL1D6039
+[00000521] 10: 
+[00000522] 19: 
+[00000523] ff: text 34
+{textColor 1 7}【Kurumi】 "O...{delay 5}{delay 5}{delay 5} Onii-chan..." 
+
+
+[00000526] 10: 
+[00000527]  b: playVoice KL1D6040
+[00000531] 10: 
+[00000532] 19: 
+[00000533] ff: text 35
+{textColor 1 7}【Kurumi】 "Onii-chan..." 
+{textColor 0 2}Her shoulders repeatedly tremble as she tries as hard as she can to hold back her weeping...  {textColor 0 2}... Kurumi's desperately...{delay 5}{delay 5}{delay 5} trying to say something... 
+
+
+[00000536] 10: 
+[00000537]  b: playVoice KL1D6041
+[00000541] 10: 
+[00000542] 19: 
+[00000543] ff: text 36
+{textColor 1 7}【Kurumi】 "You're...{delay 5}{delay 5}{delay 5} You're the... {delay 5}{delay 5}{delay 5}You're the same...{delay 5}{delay 5}{delay 5} as..." 
+
+
+[00000546] 10: 
+[00000547]  b: playVoice KL1D6042
+[00000551] 10: 
+[00000552] 19: 
+[00000553] ff: text 37
+{textColor 1 7}【Kurumi】 "Onii-chan...{delay 5}{delay 5}{delay 5} you're the same as him..." 
+
+
+[00000556] 10: 
+[00000557]  b: playVoice KL1D6043
+[00000561] 10: 
+[00000562] 19: 
+[00000563] ff: text 38
+{textColor 1 7}【Kurumi】 "You're the same...{delay 5}{delay 5}{delay 5} as...{delay 5}{delay 5}{delay 5} that...{delay 5}{delay 5}{delay 5} senpai..." 
+{textColor 0 2}Senpai...? 
+{textColor 0 2}By "senpai"...{delay 5}{delay 5}{delay 5} she must be referring to that guy from her middle school days... 
+
+
+[00000566] 10: 
+[00000567]  b: playVoice KL1D6044
+[00000571] 10: 
+[00000572] 19: 
+[00000573] ff: text 39
+{textColor 1 7}【Kurumi】 "Everyone's...{delay 5}{delay 5}{delay 5} Everyone's...{delay 5}{delay 5}{delay 5} lying..." 
+
+
+[00000576] 10: 
+[00000577]  b: playVoice KL1D6045
+[00000581] 10: 
+[00000582] 19: 
+[00000583] ff: text 3a
+{textColor 1 7}【Kurumi】 "Even...{delay 5}{delay 5}{delay 5} Onii-chan..." 
+
+
+[00000586] 10: 
+[00000587]  b: playVoice KL1D6046
+[00000591] 10: 
+[00000592] 19: 
+[00000593] ff: text 3b
+{textColor 1 7}【Kurumi】 "Even though...{delay 5}{delay 5}{delay 5} Kurumi trusted you..." 
+{textColor 0 0}【Makoto】 "Kurumi...{delay 5}{delay 5}{delay 5} what are you talking about!? I-" 
+
+
+[00000596] 10: 
+[00000597]  b: playVoice KL1D6047
+[000005a1] 10: 
+[000005a2] 19: 
+[000005a3] ff: text 3c
+{textColor 1 7}【Kurumi】 "Kurumi...{delay 5}{delay 5}{delay 5} heard you just now!" 
+{textColor 0 0}【Makoto】 "'Heard'...?" 
+
+
+[000005a6] 10: 
+[000005a7]  b: playVoice KL1D6048
+[000005b1] 10: 
+[000005b2] 19: 
+[000005b3] ff: text 3d
+{textColor 1 7}【Kurumi】 "'It was much more horrifying...{delay 5}{delay 5}{delay 5} than I ever could have imagined...'" 
+
+
+[000005b6] 10: 
+[000005b7]  b: playVoice KL1D6049
+[000005c1] 10: 
+[000005c2] 19: 
+[000005c3] ff: text 3e
+{textColor 1 7}【Kurumi】 "Horrifying...{delay 5}{delay 5}{delay 5} you said that, didn't you!?" 
+{textColor 0 2}I feel like a dagger has been thrust into my heart... 
+{textColor 0 2}I definitely...{delay 5}{delay 5}{delay 5} said that.  {textColor 0 2}"Horrifying"...  {textColor 0 2}"Horrifying"...{delay 5}{delay 5}{delay 5} I said that. 
+
+
+[000005c6] 10: 
+[000005c7]  b: playVoice KL1D6050
+[000005d1] 10: 
+[000005d2] 19: 
+[000005d3] ff: text 3f
+{textColor 1 7}【Kurumi】 "Everyone...{delay 5}{delay 5}{delay 5} everyone...{delay 5}{delay 5}{delay 5} everyone Kurumi loves... {delay 5}{delay 5}{delay 5}just does nothing but..." 
+
+
+[000005d6] 10: 
+[000005d7]  b: playVoice KL1D6051
+[000005e1] 10: 
+[000005e2] 19: 
+[000005e3] ff: text 40
+{textColor 1 7}【Kurumi】 "Always...{delay 5}{delay 5}{delay 5} deceive Kurumi..." 
+{textColor 0 0}【Makoto】 "We're not decei-" 
+
+
+[000005e6] 10: 
+[000005e7]  b: playVoice KL1D6052
+[000005f1] 10: 
+[000005f2] 19: 
+[000005f3] ff: text 41
+{textColor 1 7}【Kurumi】 "Stop lying already!" 
+
+
+[000005f6] 10: 
+[000005f7]  b: playVoice KL1D6053
+[00000601] 10: 
+[00000602] 19: 
+[00000603] ff: text 42
+{textColor 1 7}【Kurumi】 "Papa...{delay 5}{delay 5}{delay 5} Mama...{delay 5}{delay 5}{delay 5} Onee-chan...{delay 5}{delay 5}{delay 5} and Onii-chan..." 
+
+
+[00000606] 10: 
+[00000607]  b: playVoice KL1D6054
+[00000611] 10: 
+[00000612] 19: 
+[00000613] ff: text 43
+{textColor 1 7}【Kurumi】 "... Kurumi hates them..." 
+
+
+[00000616] 10: 
+[00000617]  b: playVoice KL1D6055
+[00000621] 10: 
+[00000622] 19: 
+[00000623] ff: text 44
+{textColor 1 7}【Kurumi】 "... Kurumi hates..." 
+{textColor 0 0}【Makoto】 "Kurumi...{delay 5}{delay 5}{delay 5} you're wrong. We were just thinking of y―" 
+
+
+[00000626] 10: 
+[00000627]  b: playVoice KL1D6056
+[00000631] 10: 
+[00000632] 19: 
+[00000633] ff: text 45
+{textColor 1 7}【Kurumi】 "I hate you!" 
+
+
+[00000636] 10: 
+[00000637]  b: playVoice KL1D6057
+[00000641] 10: 
+[00000642] 19: 
+[00000643] ff: text 46
+{textColor 1 7}【Kurumi】 "I HATE EVERYONE!!" 
+{textColor 0 0}【Makoto】 "Kurumi―" 
+
+
+[00000646] 10: 
+[00000647]  b: playVoice KL1D6058
+[00000651] 10: 
+[00000652] 19: 
+[00000653] ff: text 47
+{textColor 1 7}【Kurumi】 "Leave me alone! JUST LEAVE ME ALONE ALREADY!!" 
+
+
+[00000656] 10: 
+[00000657]  7: stopBGM
+[00000658] 10: 
+[00000659] 10: bgload 00000000 BG16NR 0 1
+[00000666] 10: 
+[00000667]  6: playBGM 13
+[0000066b] 10: 
+[0000066c] 19: 
+[0000066d] ff: text 48
+{textColor 0 2}Kurumi breaks off into a run.  {textColor 0 2}Rain begins to fall from the sky... 
+{textColor 0 2}(I have to go after her!) 
+{textColor 0 2}(If I let her go now, then...) 
+{textColor 0 2}(... She'll never recover!) 
+{textColor 0 2}――I pick up the pursuit. 
+{textColor 0 0}【Makoto】 "Kurumi!" 
+{textColor 0 2}I call out to her to stop, but she doesn't turn around.  {textColor 0 2}Kurumi climbs up the bank...  {textColor 0 2}She jumps down to the other side, and vanishes.  {textColor 0 2}I race to the top of the bank. 
+{textColor 0 2}Once I'm there, my eyes scan the beach. 
+{textColor 0 2}...  {textColor 0 2}She's gone...!  {textColor 0 2}She's nowhere to be found!  {textColor 0 2}I look everywhere, but there's no sign of her! 
+
+
+[00000670] 10: 
+[00000671] 10: bgload 00000000 BG13NR 4 1
+[0000067e] 10: 
+[0000067f] 19: 
+[00000680] ff: text 49
+{textColor 0 2}I descend the bank.  {textColor 0 2}I run to the west, down the road alongside the coastline...  {textColor 0 2}... I continue to run for a while, but there's still no trace of her in this direction. 
+
+
+[00000683] 10: 
+[00000684] 10: bgload 00000000 BG13ZNR 4 1
+[00000691] 10: 
+[00000692] 19: 
+[00000693] ff: text 4a
+{textColor 0 2}I go back the way I came. 
+{textColor 0 0}【Makoto】 "KURUMIIII!!" 
+{textColor 0 2}I scream, even though I know there's no way she'll answer... 
+
+
+[00000696] 10: 
+[00000697]  7: stopBGM
+[00000698] 10: 
+[00000699] 19: 
+[0000069a] ff: text 4b
+{textColor 0 2}... 
+
+
+[0000069d] 10: 
+[0000069e] 10: bgload 00000000 BG06NR 4 1
+[000006ab] 10: 
+[000006ac] 19: 
+[000006ad] ff: text 4c
+{textColor 0 2}In the end, I'm back in front of Lunabeach... 
+{textColor 0 2}(Kurumi...) 
+{textColor 0 2}(Where did you go...{delay 5}{delay 5}{delay 5} Kurumi...) 
+
+
+[000006b0] 10: 
+[000006b1]  f: removeBG 0 3 2
+[000006bb]  0: 
+[000006bc]  5: delay 120
+[000006c1] 10: 
+[000006c2]  6: playBGM 14
+[000006c6] 10: 
+[000006c7] 10: bgload 00000000 BG06NR 0 1
+[000006d4] 10: 
+[000006d5]  1: cmd1 26
+[000006da] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 0
+[000006e5] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 32
+[000006f1] 10: 
+[000006f2] 17: showClock
+[000006f3] 10: 
+[000006f4] 19: 
+[000006f5] ff: text 4d
+{textColor 0 2}Something cold and wet hits me on the forehead over and over again... 
+{textColor 0 2}(Rain, huh...?) 
+{textColor 0 2}It's beginning to drizzle...{delay 5}{delay 5}{delay 5} In order to avoid it, I go under the overhang of Lunabeach. 
+{textColor 0 2}I look at the rain for a while... 
+{textColor 0 2}(A place Kurumi would go... {delay 5}{delay 5}{delay 5}a place Kurumi would go... a place Kurumi would go...) 
+{textColor 0 2}(A place Kurumi would go... Come to think of it...) 
+
+
+[000006f8] 10: 
+[000006f9]  b: playVoice L1D4N069
+[00000703] 10: 
+[00000704] 19: 
+[00000705] ff: text 4e
+{textColor 1 7}【Kurumi】 "Kurumi...{delay 5}{delay 5}{delay 5} remembers this place." 
+
+
+[00000708] 10: 
+[00000709]  b: playVoice L1D4N070
+[00000713] 10: 
+[00000714] 19: 
+[00000715] ff: text 4f
+{textColor 1 7}【Kurumi】 "Kurumi's...{delay 5}{delay 5}{delay 5} been here before..." 
+
+
+[00000718] 10: 
+[00000719]  b: playVoice L1D4N085
+[00000723] 10: 
+[00000724] 19: 
+[00000725] ff: text 50
+{textColor 1 7}【Kurumi】 "That shrine...{delay 5}{delay 5}{delay 5} had a very nostalgic scent to it." 
+
+
+[00000728] 10: 
+[00000729]  b: playVoice L1D4N086
+[00000733] 10: 
+[00000734] 19: 
+[00000735] ff: text 51
+{textColor 1 7}【Kurumi】 "It was the smell of the traditional clothes...{delay 5}{delay 5}{delay 5} that Kurumi got as hand-me-downs from Onee-chan when she was younger..." 
+{textColor 0 2}I start running once more... 
+
+
+[00000738] 10: 
+[00000739]  2: cmd2 6
+[0000073d] 10: 
+[0000073e]  f: removeBG 0 4 2
+[00000748] 10: 
+[00000749]  8: playSFX SE030 0
+[00000753] 10: 
+[00000754] 10: bgload 00000000 BG23NR 4 1
+[00000761] 10: 
+[00000762]  1: cmd1 26
+[00000767] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 0
+[00000772] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 47
+[0000077e] 10: 
+[0000077f] 17: showClock
+[00000780] 10: 
+[00000781] 19: 
+[00000782] ff: text 52
+{textColor 0 2}By the time I arrive in front of the long staircase, the drizzle has become a constant rain. 
+{textColor 0 2}I wipe off the raindrops from my soaked forehead with the back of my hand. 
+{textColor 0 2}(Kurumi is definitely up ahead...) 
+{textColor 0 2}I begin to run up the stairs... 
+
+
+[00000785] 10: 
+[00000786] 10: bgload 00000000 BG24NR 4 1
+[00000793] 10: 
+[00000794]  1: cmd1 20
+[00000799] 10: 
+[0000079a] 19: 
+[0000079b] ff: text 53
+{textColor 0 2}In the deep darkness, the shrine stands out like something faintly white against a dark background. 
+{textColor 0 2}The raindrops pelting the roof become a thin mist that envelops the shrine. 
+{textColor 0 2}Its faint and gray appearance makes it look like a mirage. 
+{textColor 0 2}I tumble into the illusion-like shrine while slipping across the stone paving, wet from the rain. 
+
+
+[0000079e] 10: 
+[0000079f]  9: stopSFX
+[000007a0] 10: 
+[000007a1]  2: cmd2 1
+[000007a5] 10: 
+[000007a6]  2: cmd2 6
+[000007aa] 10: 
+[000007ab]  f: removeBG 0 4 2
+[000007b5] 10: 
+[000007b6]  8: playSFX SE030 0
+[000007c0] 10: 
+[000007c1] 10: bgload 00000000 BG25NN 4 1
+[000007ce] 10: 
+[000007cf] 19: 
+[000007d0] ff: text 54
+{textColor 0 2}――She's not here.  {textColor 0 2}She's not here...  {textColor 0 2}Kurumi isn't here either... 
+{textColor 0 2}Frustrated, I can feel my blood rush through my body. 
+{textColor 0 2}I'm enraged for running all this way for nothing and being unable to voice my frustrations. 
+{textColor 0 2}My restlessness reaches nearly unrestrainable levels, and just seems to burst open. 
+{textColor 0 2}I vent my irritation by kicking one of the shrine's pillars as hard as I can.  {textColor 0 2}Even so, I'm still mad... 
+{textColor 0 2}I wander aimlessly around the shrine. 
+{textColor 0 2}Suddenly, I look at my watch. 
+{textColor 0 2}"6 SAT 12:54 A.M." 
+
+
+[000007d3] 10: 
+[000007d4]  9: stopSFX
+[000007d5] 10: 
+[000007d6]  7: stopBGM
+[000007d7] 10: 
+[000007d8]  8: playSFX SE090 1
+[000007e2] 10: 
+[000007e3] 19: 
+[000007e4] ff: text 55
+{textColor 0 2}The sound...{delay 5}{delay 5}{delay 5} of that bell...? 
+{textColor 0 2}(No...{delay 5}{delay 5}{delay 5} that's wrong!) 
+{textColor 0 2}That's a different sound than the bell in my dream. 
+{textColor 0 2}It's an altar bell――a bell dangling from a small building modeled after a small Shinto shrine that rests on the altar. 
+{textColor 0 2}There's probably a draft blowing from somewhere that's causing the bell to swing... 
+{textColor 0 2}"Bell"...  {textColor 0 2}"Bell"...  {textColor 0 2}"Bell"...  {textColor 0 2}It can't be... 
+
+
+[000007e7] 10: 
+[000007e8]  9: stopSFX
+[000007e9] 10: 
+[000007ea] 10: bgload 00000000 EV_AL01 0 1
+[000007f7] 10: 
+[000007f8]  6: playBGM 15
+[000007fc] 10: 
+[000007fd] 19: 
+[000007fe] ff: text 56
+{textColor 0 2}What if, by any chance, Kurumi has that bell right now...?  {textColor 0 2}At that moment, cold shivers run up my spine. 
+{textColor 0 2}No, that's impossible!  {textColor 0 2}I definitely threw that bell into the ocean on the night of the 1st! 
+{textColor 0 2}But...{delay 5}{delay 5}{delay 5} what if that bell were washed ashore to the beach by waves...? 
+{textColor 0 2}Today is Saturday, April 6th.  {textColor 0 2}If that dream was a prophetic dream, then... 
+
+
+[00000801] 10: 
+[00000802]  8: playSFX SE030 0
+[0000080c] 10: 
+[0000080d] 10: bgload 00000000 BG25NN 0 1
+[0000081a] 10: 
+[0000081b] 19: 
+[0000081c] ff: text 57
+{textColor 0 2}I violently shake my head to shake off that delusion. 
+{textColor 0 2}(There's no way...) 
+{textColor 0 2}(No matter what... that's absolutely impossible!) 
+{textColor 0 2}I bite down on my lip hard. 
+{textColor 0 2}The shrine's exterior... {delay 5}{delay 5}I stare at the edge of the rooftop, where rain is flowing down like a waterfall. 
+{textColor 0 2}Rage surges in my heart like billows. 
+{textColor 0 2}I try to wash away that hopeless dream, but it just won't disappear. 
+{textColor 0 2}Like a deep stain, whenever I try to wipe it away, it just spreads even more throughout my mind... 
+{textColor 0 2}(Anyway...{delay 5}{delay 5}{delay 5} I need to keep looking...) 
+{textColor 0 2}(There's no way I can leave her alone as she is right now...) 
+{textColor 0 2}The cold rain...{delay 5}{delay 5}{delay 5} I run once again in the rumbling, roaring downpour... 
+
+
+[0000081f] 10: 
+[00000820]  9: stopSFX
+[00000821] 10: 
+[00000822]  7: stopBGM
+[00000823] 10: 
+[00000824]  f: removeBG 0 4 2
+[0000082e] 10: 
+[0000082f]  6: playBGM 14
+[00000833] 10: 
+[00000834]  8: playSFX SE030 0
+[0000083e] 10: 
+[0000083f] 10: bgload 00000000 BG13NR 4 1
+[0000084c] 10: 
+[0000084d]  1: cmd1 26
+[00000852] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[0000085d] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 14
+[00000868] 10: 
+[00000869] 17: showClock
+[0000086a] 10: 
+[0000086b] 19: 
+[0000086c] ff: text 58
+{textColor 0 2}I keep running as fast as I can as the rain beats on me.  {textColor 0 2}I keep looking for Kurumi... 
+
+
+[0000086f] 10: 
+[00000870]  f: removeBG 0 4 2
+[0000087a] 10: 
+[0000087b] 10: bgload 00000000 BG17NR 4 1
+[00000888] 10: 
+[00000889] 19: 
+[0000088a] ff: text 59
+{textColor 0 2}Princess Beach...{delay 5}{delay 5}{delay 5} the sand on the shore has become hardened from all the water. 
+
+
+[0000088d] 10: 
+[0000088e]  b: playVoice KL1D5069
+[00000898] 10: 
+[00000899] 19: 
+[0000089a] ff: text 5a
+{textColor 1 7}【Kurumi】 "Hey, Mr. Crab. Wanna play Rock-Paper-Scissors with Kurumi?" 
+{textColor 0 2}Suddenly, I hear Kurumi's voice.  {textColor 0 2}I turn around and survey my surroundings. 
+{textColor 0 2}However...{delay 5}{delay 5}{delay 5} no one's there...  {textColor 0 2}Kurumi's nowhere to be found... 
+{textColor 0 2}The cold rain is stealing away more and more of my body heat. 
+{textColor 0 2}My field of vision becomes hazy, and I'm unable to focus on anything.  {textColor 0 2}My consciousness becomes dim due to the dizziness in my head. 
+{textColor 0 2}(Kurumi...) 
+
+
+[0000089d] 10: 
+[0000089e]  b: playVoice KL1D5072
+[000008a8] 10: 
+[000008a9] 19: 
+[000008aa] ff: text 5b
+{textColor 1 7}【Kurumi】 "Huh?" 
+
+
+[000008ad] 10: 
+[000008ae]  b: playVoice KL1D5073
+[000008b8] 10: 
+[000008b9] 19: 
+[000008ba] ff: text 5c
+{textColor 1 7}【Kurumi】 "No...{delay 5}{delay 5}{delay 5} it's nothing!" 
+
+
+[000008bd] 10: 
+[000008be]  b: playVoice KL1D5074
+[000008c8] 10: 
+[000008c9] 19: 
+[000008ca] ff: text 5d
+{textColor 1 7}【Kurumi】 "Kurumi just picked up something a little interesting!" 
+{textColor 0 2}Something...{delay 5}{delay 5}{delay 5} interesting... 
+
+
+[000008cd] 10: 
+[000008ce]  7: stopBGM
+[000008cf] 10: 
+[000008d0]  9: stopSFX
+[000008d1] 10: 
+[000008d2]  8: playSFX SE090 1
+[000008dc] 10: 
+[000008dd] 19: 
+[000008de] ff: text 5e
+{textColor 0 2}It couldn't be that the thing...  {textColor 0 2}... That she picked up back then...  {textColor 0 2}was the "bell"...? 
+{textColor 0 2}Is that it...?  {textColor 0 2}Is that really it...?{delay 5}{delay 5}{delay 5} 
+{textColor 0 2}I shiver in fear.  {textColor 0 2}The strength throughout my body begins to disappear... 
+{textColor 0 2}Against my will, I struggle to take a step forward. 
+{textColor 0 2}Just like that, I stagger as I leave Princess Beach... 
+
+
+[000008e1] 10: 
+[000008e2]  f: removeBG 0 4 2
+[000008ec] 10: 
+[000008ed] 10: bgload 00000000 BG12NR 4 1
+[000008fa] 10: 
+[000008fb]  6: playBGM 21
+[00000900] 10: 
+[00000901]  8: playSFX SE030 0
+[0000090b] 10: 
+[0000090c]  b: playVoice REV011
+[00000914] 10: 
+[00000915] 19: 
+[00000916] ff: text 5f
+{textColor 1 7}【Kurumi】 "Ah,{delay 5}{delay 5} Onii-chan♪" 
+
+
+[00000919] 10: 
+[0000091a]  b: playVoice REV012
+[00000922] 10: 
+[00000923] 19: 
+[00000924] ff: text 60
+{textColor 1 7}【Kurumi】 "Kurumi came here to meet Onii-chan!" 
+
+
+[00000927] 10: 
+[00000928]  b: playVoice REV013
+[00000930] 10: 
+[00000931] 19: 
+[00000932] ff: text 61
+{textColor 1 7}【Kurumi】 "So let's go{delay 5}{delay 5} watch some crab sumo♪" 
+
+
+[00000935] 10: 
+[00000936]  9: stopSFX
+[00000937] 10: 
+[00000938]  2: cmd2 6
+[0000093c] 10: 
+[0000093d]  f: removeBG 0 4 2
+[00000947] 10: 
+[00000948]  8: playSFX SE030 0
+[00000952] 10: 
+[00000953] 10: bgload 00000000 BG02NN 4 1
+[00000960] 10: 
+[00000961]  b: playVoice REV014
+[00000969] 10: 
+[0000096a] 19: 
+[0000096b] ff: text 62
+{textColor 1 7}【Kurumi】 "Onii-chan?" 
+
+
+[0000096e] 10: 
+[0000096f]  b: playVoice REV015
+[00000977] 10: 
+[00000978] 19: 
+[00000979] ff: text 63
+{textColor 1 7}【Kurumi】 "Wanna go see{delay 5}{delay 5} an interesting place?" 
+
+
+[0000097c] 10: 
+[0000097d]  b: playVoice REV016
+[00000985] 10: 
+[00000986] 19: 
+[00000987] ff: text 64
+{textColor 1 7}【Kurumi】 "You'll see♪{delay 5}{delay 5} Come with Kurumi♪" 
+
+
+[0000098a] 10: 
+[0000098b] 10: bgload 00000000 BG01NN 4 1
+[00000998] 10: 
+[00000999] 19: 
+[0000099a] ff: text 65
+{textColor 0 2}My bedroom...  {textColor 0 2}An empty bedroom...  {textColor 0 2}So she didn't come to the lodge after all... 
+
+
+[0000099d] 10: 
+[0000099e]  b: playVoice REV017
+[000009a6] 10: 
+[000009a7] 19: 
+[000009a8] ff: text 66
+{textColor 1 7}【Kurumi】 "Onii-chan!" 
+
+
+[000009ab] 10: 
+[000009ac]  b: playVoice REV018
+[000009b4] 10: 
+[000009b5] 19: 
+[000009b6] ff: text 67
+{textColor 1 7}【Kurumi】 "Hey, Onii-chan!" 
+
+
+[000009b9] 10: 
+[000009ba]  b: playVoice REV019
+[000009c2] 10: 
+[000009c3] 19: 
+[000009c4] ff: text 68
+{textColor 1 7}【Kurumi】 "Geez, if you don't wake up soon, aren't you going to be late!?" 
+{textColor 0 2}... These auditory hallucinations still won't stop. 
+{textColor 0 2}Kurumi's voice continues to echo in my eardrums.  {textColor 0 2}It's like they're rebuking me... 
+
+
+[000009c7] 10: 
+[000009c8]  9: stopSFX
+[000009c9] 10: 
+[000009ca]  f: removeBG 0 0 2
+[000009d4] 10: 
+[000009d5]  8: playSFX SE030 0
+[000009df] 10: 
+[000009e0] 10: bgload 00000000 BG16NR 4 1
+[000009ed] 10: 
+[000009ee]  1: cmd1 26
+[000009f3] 10: 
+[000009f4] 19: 
+[000009f5] ff: text 69
+{textColor 0 2}Moon Beach... 
+
+
+[000009f8] 10: 
+[000009f9]  f: removeBG 0 4 2
+[00000a03] 10: 
+[00000a04] 10: bgload 00000000 BG11NR 4 1
+[00000a11] 10: 
+[00000a12] 19: 
+[00000a13] ff: text 6a
+{textColor 0 2}The shopping district... 
+
+
+[00000a16] 10: 
+[00000a17]  f: removeBG 0 4 2
+[00000a21] 10: 
+[00000a22] 10: bgload 00000000 BG10NR 4 1
+[00000a2f] 10: 
+[00000a30] 19: 
+[00000a31] ff: text 6b
+{textColor 0 2}The harbor... 
+
+
+[00000a34] 10: 
+[00000a35]  f: removeBG 0 4 2
+[00000a3f] 10: 
+[00000a40] 10: bgload 00000000 BG14NR 4 1
+[00000a4d] 10: 
+[00000a4e] 19: 
+[00000a4f] ff: text 6c
+{textColor 0 2}She's nowhere to be found...  {textColor 0 2}I've wandered all around the island, searching for Kurumi... 
+{textColor 0 2}I drag along my numb feet... 
+
+
+[00000a52] 10: 
+[00000a53]  9: stopSFX
+[00000a54] 10: 
+[00000a55]  7: stopBGM
+[00000a56] 10: 
+[00000a57]  2: cmd2 6
+[00000a5b] 10: 
+[00000a5c]  f: removeBG 0 0 2
+[00000a66]  0: 
+[00000a67]  5: delay 120
+[00000a6c] 10: 
+[00000a6d]  8: playSFX SE030 0
+[00000a77] 10: 
+[00000a78] 10: bgload 00000000 BG19NR 4 1
+[00000a85] 10: 
+[00000a86]  1: cmd1 26
+[00000a8b] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 4
+[00000a96] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 55
+[00000aa2] 10: 
+[00000aa3] 17: showClock
+[00000aa4] 10: 
+[00000aa5] 19: 
+[00000aa6] ff: text 6d
+{textColor 0 2}I finally arrive at Viewpoint Park, but in the end, I'm unable to find Kurumi. 
+{textColor 0 2}In the darkness, I hear the sound of the waves crashing against the cape. 
+{textColor 0 2}It seems like the "darkness" itself that's enveloped the world is letting out a furious roar. 
+
+
+[00000aa9] 10: 
+[00000aaa]  9: stopSFX
+[00000aab] 10: 
+[00000aac] 19: 
+[00000aad] ff: text 6e
+{textColor 0 2}Viewpoint Park...  {textColor 0 2}This is where I first... 
+
+
+[00000ab0] 10: 
+[00000ab1]  2: cmd2 6
+[00000ab5] 10: 
+[00000ab6]  f: removeBG 1 0 2
+[00000ac0] 10: 
+[00000ac1]  1: cmd1 32
+[00000ac6] 10: 
+[00000ac7] 10: bgload 00000000 EV_KU02 0 1
+[00000ad4] 10: 
+[00000ad5]  6: playBGM 12
+[00000ad9] 10: 
+[00000ada] 19: 
+[00000adb] ff: text 6f
+{textColor 0 2}... saw Kurumi's eyes clouded by sadness. 
+
+
+[00000ade] 10: 
+[00000adf]  b: playVoice REV020
+[00000ae7] 10: 
+[00000ae8] 19: 
+[00000ae9] ff: text 70
+{textColor 1 7}【Kurumi】 "Did you know?{delay 5}{delay 5}{delay 5} Kurumi loves floating in the water... Like a jellyfish..." 
+
+
+[00000aec] 10: 
+[00000aed]  b: playVoice REV021
+[00000af5] 10: 
+[00000af6] 19: 
+[00000af7] ff: text 71
+{textColor 1 7}【Kurumi】 "When she does that, it feels kinda nostalgic..." 
+
+
+[00000afa] 10: 
+[00000afb]  b: playVoice REV022
+[00000b03] 10: 
+[00000b04] 19: 
+[00000b05] ff: text 72
+{textColor 1 7}【Kurumi】 "The truth is...{delay 5}{delay 5}{delay 5} Kurumi...{delay 5}{delay 5}{delay 5} really wanted to go with everyone..." 
+
+
+[00000b08] 10: 
+[00000b09]  b: playVoice REV023
+[00000b11] 10: 
+[00000b12] 19: 
+[00000b13] ff: text 73
+{textColor 1 7}【Kurumi】 "To the pool...{delay 5}{delay 5}{delay 5} and the hot springs..." 
+
+
+[00000b16] 10: 
+[00000b17]  2: cmd2 13
+[00000b1b] 10: 
+[00000b1c]  f: removeBG 1 0 2
+[00000b26] 10: 
+[00000b27] 10: bgload 00000000 BG19NR 0 1
+[00000b34] 10: 
+[00000b35]  1: cmd1 26
+[00000b3a] 10: 
+[00000b3b] 19: 
+[00000b3c] ff: text 74
+{textColor 0 2}I called Kurumi's scar "horrifying." I'd intended to take that pain away... but the truth is, I was avoiding it. 
+{textColor 0 2}I loathe that scar. I can't even touch it. I can't heal Kurumi's scar. 
+{textColor 0 2}Her true scar――is the one that's been very deeply engraved into the innermost depths of her heart... 
+{textColor 0 2}(I wonder what she's...{delay 5}{delay 5}{delay 5} thinking about right now.) 
+{textColor 0 2}(The scar...{delay 5}{delay 5}{delay 5} her relation by blood... {delay 5}{delay 5}{delay 5}both of those were huge shocks to her...) 
+{textColor 0 2}...  {textColor 0 2}No... if that's the case...  {textColor 0 2}If that's the case, then is Kurumi really at the shrine...!? 
+{textColor 0 2}The scar and her blood relationship... {delay 5}{delay 5}{delay 5}and the fact that there's no doubt that the shrine's connected to her somehow. 
+{textColor 0 2}Kurumi probably already knows that... I said something similar in my talk with Izumi-san. 
+{textColor 0 2}When I was making those enquiries to Izumi-san, Kurumi heard me say those things, and thought to herself... 
+{textColor 0 2}(I'll try going to the shrine one more time...) 
+{textColor 0 2}The instant I think that, the eastern sky starts to become bright.  {textColor 0 2}The morning sun slowly creeps overhead. 
+{textColor 0 2}However, its light is completely shrouded by heavy rain clouds... 
+
+
+[00000b3f] 10: 
+[00000b40]  7: stopBGM
+[00000b41] 10: 
+[00000b42]  f: removeBG 0 4 2
+[00000b4c]  0: 
+[00000b4d]  5: delay 120
+[00000b52] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 32
+[00000b5e] 10: 
+[00000b5f] 10: bgload 00000000 BG24R 4 1
+[00000b6c] 10: 
+[00000b6d]  1: cmd1 20
+[00000b72] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 5
+[00000b7d] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 33
+[00000b89] 10: 
+[00000b8a] 17: showClock
+[00000b8b] 10: 
+[00000b8c]  6: playBGM 11
+[00000b90] 10: 
+[00000b91]  8: playSFX SE030 0
+[00000b9b] 10: 
+[00000b9c] 19: 
+[00000b9d] ff: text 75
+{textColor 0 2}I ascend the long staircase.  {textColor 0 2}The night has been completely vanquished by the dawn.  {textColor 0 2}I can't see anyone in the shrine grounds, hazy from the rain. 
+{textColor 0 2}The ground is violently pounded by swarms of large rain drops...  {textColor 0 2}The sound of the rainfall is so loud that it feels like it could erase the whole world itself. 
+{textColor 0 2}I take a breath of the wet air.  {textColor 0 2}My nasal cavities are pierced by the cold. 
+{textColor 0 2}... The whole grounds have become one large water puddle. 
+{textColor 0 2}I take two steps, slowly walking into the puddle of water. The cold sound of my footsteps as I walk across the water echoes in the mist. 
+{textColor 0 2}I get closer and closer to the dim, white mirage-like shrine.  {textColor 0 2}Its vague features gradually start to become clearer. 
+{textColor 0 2}I can see that the door to the shrine has been thrown open.  {textColor 0 2}Dust from inside the door flutters about in the darkness. 
+{textColor 0 2}With each step forward that I take, the inner details of the shrine become clearer and clearer. 
+{textColor 0 2}It's as if all the particles of darkness in the shrine disappeared swiftly and soundlessly, like they were sucked up by something. 
+
+
+[00000ba0] 10: 
+[00000ba1]  2: cmd2 1
+[00000ba5] 10: 
+[00000ba6]  7: stopBGM
+[00000ba7] 10: 
+[00000ba8] 19: 
+[00000ba9] ff: text 76
+{textColor 0 2}Before long...  {textColor 0 2}... I find her. 
+
+
+[00000bac] 10: 
+[00000bad]  9: stopSFX
+[00000bae] 10: 
+[00000baf]  6: playBGM 14
+[00000bb3] 10: 
+[00000bb4]  8: playSFX SE030 0
+[00000bbe] 10: 
+[00000bbf] 19: 
+[00000bc0] ff: text 77
+{textColor 0 2}I see a girl silently standing still inside the shrine...{delay 5}{delay 5}{delay 5} 
+{textColor 0 2}... It's Kurumi...  {textColor 0 2}... Kurumi... 
+{textColor 0 0}【Makoto】 "KURUMI!!!" 
+{textColor 0 2}I kick off the ground.  {textColor 0 2}I run in order to push my way through the pelting rain.  {textColor 0 2}I use whatever energy I have left to sprint towards her. 
+{textColor 0 2}Even though I trip and stumble over puddles, I still keep running. 
+{textColor 0 0}【Makoto】 "KURUMIIIIIIIII!!!" 
+{textColor 0 2}I scream again.  {textColor 0 2}But the ruthless sound of the rain drowns out my voice.  {textColor 0 2}Kurumi doesn't notice me. 
+{textColor 0 2}She's standing stock still in the middle of the shrine dejectedly, as stiff as a doll. 
+{textColor 0 2}... But I'm almost there.  {textColor 0 2}I'm almost there... {delay 5}{delay 5}{delay 5}Kurumi is right before my eyes.  {textColor 0 2}Just a few more steps, and I'll have reached that short staircase. 
+{textColor 0 0}【Makoto】 "Kurumi!" 
+{textColor 0 2}Nearly out of breath, I barely manage to wring out my voice. 
+
+
+[00000bc3] 10: 
+[00000bc4] 19: 
+[00000bc5] ff: text 78
+{textColor 0 2}Kurumi...{delay 5}{delay 5}{delay 5} quietly turns around.  {textColor 0 2}Gently,{delay 5}{delay 5}{delay 5} without a sound... 
+
+
+[00000bc8] 10: 
+[00000bc9] 11: fgload 0 00000000 KU08BA 1 3
+[00000bd9] 10: 
+[00000bda]  7: stopBGM
+[00000bdb] 10: 
+[00000bdc]  9: stopSFX
+[00000bdd]  0: 
+[00000bde]  5: delay 60
+[00000be3] 10: 
+[00000be4]  b: playVoice KL1D6059
+[00000bee] 10: 
+[00000bef] 19: 
+[00000bf0] ff: text 79
+{textColor 1 7}【Kurumi】 "Onii-chan..." 
+{textColor 0 2}She...{delay 5}{delay 5}{delay 5} mutters this in a lonely voice...  {textColor 0 2}――At that very instant! 
+
+
+[00000bf3] 10: 
+[00000bf4] 12: removeFG 0 3
+[00000bfb] 10: 
+[00000bfc]  1: cmd1 7
+[00000c00] 10: 
+[00000c01]  1: cmd1 13
+[00000c05] 10: 
+[00000c06]  8: playSFX SE117 1
+[00000c10] 10: 
+[00000c11] 19: 
+[00000c12] ff: text 7a
+{textColor 0 2}The earth shakes.  {textColor 0 2}I lose my footing and fall forward, crashing onto the ground face first.  {textColor 0 2}It's a raging earthquake...  {textColor 0 2}The violent tremors come in waves. 
+{textColor 0 2}It feel like I'm in the belly of a writhing monster...  {textColor 0 2}The suffering, anguished, raging earth...  {textColor 0 2}The thick pillars make a creaking sound as they grate. 
+{textColor 0 2}Small splinters come falling from the ceiling as it tears apart.  {textColor 0 2}When I look up, I see that the shrine is now slanting left and right, like a swaying heat haze. 
+{textColor 0 2}――It's collapsing...  {textColor 0 2}――The shrine...{delay 5}{delay 5}{delay 5} is collapsing... 
+{textColor 0 2}(Kurumi...) 
+{textColor 0 2}――At this rate, Kurumi will...!!!  {textColor 0 2}I push myself up with my hands, but the moment I try to stand up... 
+
+
+[00000c15] 10: 
+[00000c16]  9: stopSFX
+[00000c17] 10: 
+[00000c18]  8: playSFX SE116 1
+[00000c22]  0: 
+[00000c23]  5: delay 60
+[00000c28] 10: 
+[00000c29]  8: playSFX SE117 1
+[00000c33] 10: 
+[00000c34]  2: cmd2 6
+[00000c38] 10: 
+[00000c39]  f: removeBG 1 0 2
+[00000c43] 10: 
+[00000c44]  2: cmd2 11
+[00000c48] 10: 
+[00000c49]  2: cmd2 10
+[00000c4d]  0: 
+[00000c4e]  5: delay 300
+[00000c53] 10: 
+[00000c54]  9: stopSFX
+[00000c55] 10: 
+[00000c56]  6: playBGM 15
+[00000c5a] 10: 
+[00000c5b] 19: 
+[00000c5c] ff: text 7b
+{textColor 0 2}A mountain of rubble...  {textColor 0 2}Where the shrine once stood is now a cruel mountain of rubble.  {textColor 0 2}The broken pillars... the wreckage of the roof that's been smashed to pieces... 
+{textColor 0 2}I start to reach for a thick plank of wood.  {textColor 0 2}With all of my strength, I brace myself as I try to lift it. 
+{textColor 0 2}However, the plank is way too heavy, and won't budge an inch. 
+{textColor 0 2}I muster even more strength as I try to put everything I've got into lifting it.  {textColor 0 2}The grave sound of creaking echoes. 
+{textColor 0 2}... My hands, wet from the rain, slip. 
+{textColor 0 2}My fingernails burst open and pop off.  {textColor 0 2}I feel a sharp pain... bright red, fresh blood comes pouring from the fingertips that have had their nails torn off. 
+{textColor 0 2}Even so, I don't give up.  {textColor 0 2}I mustn't be bothered with the pain.  {textColor 0 2}I don't care if my bones break or if my flesh is torn off. 
+{textColor 0 2}I'll use everything I've got... {delay 5}{delay 5}{delay 5}I put so much brutal power into my body that my blood vessels almost rupture, and use it to lift up the thick plank... 
+
+
+[00000c5f] 10: 
+[00000c60] 10: bgload 00000000 EV_AL01 0 1
+[00000c6d] 10: 
+[00000c6e] 19: 
+[00000c6f] ff: text 7c
+{textColor 0 2}Kurumi...  {textColor 0 2}Looking at Kurumi's ghastly pale, almost transparent cheeks, I feel like she might shatter into a thousand pieces if I touched her cheek. 
+{textColor 0 2}As if she were a doll made of glass...  {textColor 0 2}Her heavily dangling palm is clutching onto a small fragment of light. 
+
+
+[00000c72] 10: 
+[00000c73]  7: stopBGM
+[00000c74] 10: 
+[00000c75] 19: 
+[00000c76] ff: text 7d
+{textColor 0 2}――The bell.  {textColor 0 2}It's that bell...  {textColor 0 2}That cold, silver light... {delay 5}{delay 5}{delay 5}That dull, crimson string... 
+{textColor 0 2}Before long, the bell begins to quietly slip out of the palm...  {textColor 0 2}...{delay 5}{delay 5}{delay 5} It then...{delay 5}{delay 5}{delay 5} slips out and falls. 
+
+
+[00000c79] 10: 
+[00000c7a]  8: playSFX SE090 1
+[00000c84] 10: 
+[00000c85]  f: removeBG 1 0 2
+[00000c8f] 10: 
+[00000c90] 19: 
+[00000c91] ff: text 7e
+{textColor 0 2}I bury my face into Kurumi's chest.  {textColor 0 2}My body's trembling gradually intensifies. 
+{textColor 0 2}In my arms, I can feel her cold, wet skin...  {textColor 0 2}Her thin limbs are stiff...  {textColor 0 2}This is Kurumi's...{delay 5}{delay 5}{delay 5} empty shell... 
+{textColor 0 0}【Makoto】 "Why{delay 5}..." 
+{textColor 0 2}My hoarse voice alone fills this empty void... 
+
+
+[00000c94] 10: 
+[00000c95]  9: stopSFX
+[00000c96] 10: 
+[00000c97]  6: playBGM 12
+[00000c9b] 10: 
+[00000c9c] 19: 
+[00000c9d] ff: text 7f
+{textColor 0 2}... 
+
+
+[00000ca0] 10: 
+[00000ca1]  b: playVoice REV024
+[00000ca9] 10: 
+[00000caa] 19: 
+[00000cab] ff: text 80
+{textColor 1 7}【Kurumi】 Because the moon was all alone, it was lonely, and would cry during the night. 'Sob, sob...{delay 5}{delay 5}{delay 5} sob, sob'..." 
+
+
+[00000cae] 10: 
+[00000caf]  b: playVoice REV025
+[00000cb7] 10: 
+[00000cb8] 19: 
+[00000cb9] ff: text 81
+{textColor 1 7}【Kurumi】 "Even so, the moon was still lonely, and so its tears gave birth to children. A lot of children..." 
+
+
+[00000cbc] 10: 
+[00000cbd]  b: playVoice REV026
+[00000cc5] 10: 
+[00000cc6] 19: 
+[00000cc7] ff: text 82
+{textColor 1 7}【Kurumi】 "The child of the moon and the sea, the jellyfish..." 
+
+
+[00000cca] 10: 
+[00000ccb]  b: playVoice REV027
+[00000cd3] 10: 
+[00000cd4] 19: 
+[00000cd5] ff: text 83
+{textColor 1 7}【Kurumi】 "Kurumi was looking at the jellyfish." 
+{textColor 0 2}... 
+
+
+[00000cd8] 10: 
+[00000cd9]  b: playVoice REV028
+[00000ce1] 10: 
+[00000ce2] 19: 
+[00000ce3] ff: text 84
+{textColor 1 7}【Kurumi】 "Kurumi's dream..." 
+
+
+[00000ce6] 10: 
+[00000ce7]  b: playVoice REV029
+[00000cef] 10: 
+[00000cf0] 19: 
+[00000cf1] ff: text 85
+{textColor 1 7}【Kurumi】 "Is to become a wife♪" 
+
+
+[00000cf4] 10: 
+[00000cf5]  b: playVoice REV030
+[00000cfd] 10: 
+[00000cfe] 19: 
+[00000cff] ff: text 86
+{textColor 1 7}【Kurumi】 "At night, Kurumi will bury her face in her husband's warm chest... and sleep soundly..." 
+
+
+[00000d02] 10: 
+[00000d03]  b: playVoice REV031
+[00000d0b] 10: 
+[00000d0c] 19: 
+[00000d0d] ff: text 87
+{textColor 1 7}【Kurumi】 "Hey,{delay 5}{delay 5} Onii-chan?" 
+
+
+[00000d10] 10: 
+[00000d11]  b: playVoice REV032
+[00000d19] 10: 
+[00000d1a] 19: 
+[00000d1b] ff: text 88
+{textColor 1 7}【Kurumi】 "... Your chest...{delay 5}{delay 5}{delay 5} is it warm?" 
+{textColor 0 2}... 
+
+
+[00000d1e] 10: 
+[00000d1f]  b: playVoice REV033
+[00000d27] 10: 
+[00000d28] 19: 
+[00000d29] ff: text 89
+{textColor 1 7}【Kurumi】 "It's done!♪" 
+
+
+[00000d2c] 10: 
+[00000d2d]  b: playVoice REV034
+[00000d35] 10: 
+[00000d36] 19: 
+[00000d37] ff: text 8a
+{textColor 1 7}【Kurumi】 "Kurumi will call it Kurumi Unit 17!" 
+
+
+[00000d3a] 10: 
+[00000d3b]  b: playVoice REV035
+[00000d43] 10: 
+[00000d44] 19: 
+[00000d45] ff: text 8b
+{textColor 1 7}【Kurumi】 "Ah...{delay 5}{delay 5} but this folding method is a trade secret. You mustn't tell anyone about it, no matter what." 
+
+
+[00000d48] 10: 
+[00000d49]  b: playVoice REV036
+[00000d51] 10: 
+[00000d52] 19: 
+[00000d53] ff: text 8c
+{textColor 1 7}【Kurumi】 "Kurumi still hasn't told anyone either, so..." 
+{textColor 0 2}... 
+
+
+[00000d56] 10: 
+[00000d57]  b: playVoice REV037
+[00000d5f] 10: 
+[00000d60] 19: 
+[00000d61] ff: text 8d
+{textColor 1 7}【Kurumi】 "This is..." 
+
+
+[00000d64] 10: 
+[00000d65]  b: playVoice REV038
+[00000d6d] 10: 
+[00000d6e] 19: 
+[00000d6f] ff: text 8e
+{textColor 1 7}【Kurumi】 "... Onii-chan." 
+
+
+[00000d72] 10: 
+[00000d73]  b: playVoice REV039
+[00000d7b] 10: 
+[00000d7c] 19: 
+[00000d7d] ff: text 8f
+{textColor 1 7}【Kurumi】 "This is Onii-chan when he's smiling!" 
+
+
+[00000d80] 10: 
+[00000d81]  7: stopBGM
+[00000d82] 10: 
+[00000d83] 19: 
+[00000d84] ff: text 90
+{textColor 0 2}I put my hand into my pocket.  {textColor 0 2}I pull out the "me" out that Kurumi folded. 
+{textColor 0 2}I place...{delay 5}{delay 5}{delay 5} "me" on my palm.  {textColor 0 2}I grasp it with all my might... 
+
+
+[00000d87] 10: 
+[00000d88]  6: playBGM 21
+[00000d8d] 10: 
+[00000d8e] 19: 
+[00000d8f] ff: text 91
+{textColor 0 2}(Kurumi...{delay 5}{delay 5}{delay 5} why...) 
+
+
+[00000d92] 10: 
+[00000d93]  b: playVoice REV040
+[00000d9b] 10: 
+[00000d9c] 19: 
+[00000d9d] ff: text 92
+{textColor 1 7}【Kurumi】 "Cross-my-heart-and-hope-to-die If-you-lie...♪" 
+
+
+[00000da0] 10: 
+[00000da1]  b: playVoice REV041
+[00000da9] 10: 
+[00000daa] 19: 
+[00000dab] ff: text 93
+{textColor 1 7}【Kurumi】 "Ah... what should we do if you lie?" 
+
+
+[00000dae] 10: 
+[00000daf]  b: playVoice REV042
+[00000db7] 10: 
+[00000db8] 19: 
+[00000db9] ff: text 94
+{textColor 1 7}【Kurumi】 "Let's see..." 
+
+
+[00000dbc] 10: 
+[00000dbd]  b: playVoice REV043
+[00000dc5] 10: 
+[00000dc6] 19: 
+[00000dc7] ff: text 95
+{textColor 1 7}【Kurumi】 "If you lie, kiss Kurumi on the cheek...{delay 5}{delay 5}{delay 5} okay?" 
+{textColor 0 2}We made a promise, right...? {delay 5}{delay 5}{delay 5}We pinkie-swore it, didn't we...?  {textColor 0 2}To go to a haunted house... together... 
+{textColor 0 2}To the amusement park...{delay 5}{delay 5}{delay 5} What should I do...?  {textColor 0 2}――What should I do, Kurumi!!? 
+
+
+[00000dca] 10: 
+[00000dcb]  b: playVoice REV044
+[00000dd3] 10: 
+[00000dd4] 19: 
+[00000dd5] ff: text 96
+{textColor 1 7}【Kurumi】 "Hey, Onii-chan?" 
+
+
+[00000dd8] 10: 
+[00000dd9]  b: playVoice REV045
+[00000de1] 10: 
+[00000de2] 19: 
+[00000de3] ff: text 97
+{textColor 1 7}【Kurumi】 "Kurumi...{delay 5}{delay 5}{delay 5} wants to show you something, okay?" 
+
+
+[00000de6] 10: 
+[00000de7]  b: playVoice REV046
+[00000def] 10: 
+[00000df0] 19: 
+[00000df1] ff: text 98
+{textColor 1 7}【Kurumi】 "If it's you, Onii-chan, then she can show you..." 
+
+
+[00000df4] 10: 
+[00000df5]  b: playVoice REV047
+[00000dfd] 10: 
+[00000dfe] 19: 
+[00000dff] ff: text 99
+{textColor 1 7}【Kurumi】 "It's all right...{delay 5}{delay 5}{delay 5} you don't have to say anything..." 
+
+
+[00000e02] 10: 
+[00000e03]  b: playVoice REV048
+[00000e0b] 10: 
+[00000e0c] 19: 
+[00000e0d] ff: text 9a
+{textColor 1 7}【Kurumi】 "All you have to do is think 'Kurumi was selfish for wanting to show it to me'..." 
+
+
+[00000e10] 10: 
+[00000e11]  b: playVoice REV049
+[00000e19] 10: 
+[00000e1a] 19: 
+[00000e1b] ff: text 9b
+{textColor 1 7}【Kurumi】 "Just seeing it...{delay 5}{delay 5}{delay 5} is enough..." 
+{textColor 0 2}Kurumi...  {textColor 0 2}I...  {textColor 0 2}I... 
+
+
+[00000e1e] 10: 
+[00000e1f]  b: playVoice REV050
+[00000e27] 10: 
+[00000e28] 19: 
+[00000e29] ff: text 9c
+{textColor 1 7}【Kurumi】 "Stop lying already!" 
+
+
+[00000e2c] 10: 
+[00000e2d]  b: playVoice REV052
+[00000e35] 10: 
+[00000e36] 19: 
+[00000e37] ff: text 9d
+{textColor 1 7}【Kurumi】 "I hate you!" 
+
+
+[00000e3a] 10: 
+[00000e3b]  b: playVoice REV053
+[00000e43] 10: 
+[00000e44] 19: 
+[00000e45] ff: text 9e
+{textColor 1 7}【Kurumi】 "I HATE EVERYONE!!" 
+
+
+[00000e48] 10: 
+[00000e49]  7: stopBGM
+[00000e4a]  0: 
+[00000e4b]  5: delay 180
+[00000e50] 10: 
+[00000e51]  6: playBGM 15
+[00000e55] 10: 
+[00000e56] 19: 
+[00000e57] ff: text 9f
+{textColor 0 2}I curse the earth.  {textColor 0 2}I curse the heavens. I curse God.  {textColor 0 2}And...{delay 5}{delay 5}{delay 5} I feel disgust...{delay 5}{delay 5}{delay 5} hatred... {delay 5}{delay 5}{delay 5}and indignation... towards myself... 
+{textColor 0 2}I tear at my chest, wanting to gouge out my heart and crush it as hard as I can with my own hands... 
+{textColor 0 2}Without an outlet to voice my rage, my whole body shudders as I try to restrain it.  {textColor 0 2}I gnaw and grind my molars, and dark blood comes overflowing out of my mouth. 
+{textColor 0 2}(If...) 
+{textColor 0 2}(If I could have one wish granted...) 
+{textColor 0 2}(It would be...) 
+{textColor 0 2}(To see Kurumi's angelic smile...) 
+{textColor 0 2}(...{delay 5}{delay 5}{delay 5} once again...) 
+
+
+[00000e5a] 10: 
+[00000e5b]  7: stopBGM
+[00000e5c] 10: 
+[00000e5d] 19: 
+[00000e5e] ff: text a0
+{textColor 0 2}I glare at the sky, and bare my teeth.  {textColor 0 2}As I scream at the top of my lungs, wringing out every single emotion from within me... 
+{textColor 0 2}I soon...  {textColor 0 2}begin to fall...  {textColor 0 2}to the bottom of hell... 
+
+
+[00000e61] 10: 
+[00000e62]  f: removeBG 0 1 1
+[00000e6c] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 0
+[00000e77] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 6
+[00000e82]  0: 
+[00000e83] 19: unknown19 0 3
+[00000e8a]  0: 
+[00000e8b] 19: unknown19 1 3
+[00000e92]  0: 
+[00000e93] 19: unknown19 2 3
+[00000e9a] 10: 
+[00000e9b] 24: cmd24 0
+[00000e9f] 10: 
+[00000ea0] 22: movie kurumi
+[00000ea8]  0: 
+[00000ea9]  5: delay 10
+[00000ead] 10: 
+[00000eae] 24: cmd24 1
+[00000eb2]  0: 
+[00000eb3]  5: delay 1
+[00000eb7] 10: 
+[00000eb8] 2d: cmd2D 00 0a 01 2d 0a 87 14 00 06
+[00000ec2]  0: 
+[00000ec3] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 1
+[00000ece] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 0
+[00000ed9] 10: 
+[00000eda] 23: cmd23
+[00000edb]  0: 
+[00000edc] 19: unknown19 0 4
+[00000ee3]  0: 
+[00000ee4] 19: unknown19 1 4
+[00000eeb]  0: 
+[00000eec] 19: unknown19 2 4
+[00000ef3] 10: 
+[00000ef4]  8: playSFX SE094 1
+[00000efe] 10: 
+[00000eff]  a: waitForSFX
+[00000f00]  0: 
+[00000f01]  5: delay 180
+[00000f06] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 255
+[00000f12] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000f1e] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000f2a] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 159
+[00000f36]  0: 
+[00000f37]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 00000f4b (0007)
+[00000f45] 10: 
+[00000f46] 1c: cmd1C
+[00000f47]  0: 
+[00000f48]  7: goto7 00000f56 (0008)
+[00000f4b] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[00000f56] 10: 
+[00000f57]  4: jump KL2D1
+[00000f5e]  0: 
+[00000f5f]  0: 

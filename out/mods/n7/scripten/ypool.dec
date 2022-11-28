@@ -1,0 +1,320 @@
+[00000034] 10: 
+[00000035] 19: 
+[00000036] ff: text 00
+{textColor 0 2}I have the urge to swim recklessly. 
+{textColor 0 2}I don't know why, but my body is just itching to do so. 
+{textColor 0 2}Is it because it's spring...? 
+{textColor 0 2}Whatever the reason, I think this is what Okuhiko meant when he said, "My soul is filled with a fiery heat." 
+
+
+[00000039] 10: 
+[0000003a]  8: playSFX SE123 1
+[00000044] 10: 
+[00000045] 19: 
+[00000046] ff: text 01
+{textColor 0 2}I immediately dive underwater. 
+{textColor 0 2}Without losing my diving speed, I start crawling up to the surface. 
+{textColor 0 2}Rustling water begins to flow from my head to my toes. 
+{textColor 0 2}I swim from end to end, then do a quick turn without taking a breather... 
+{textColor 0 2}Even I'm surprised at how nimble my body is. 
+{textColor 0 2}It feels like I'm smoothly gliding along on the water's surface. 
+{textColor 0 0}【Makoto】 "FWAAH!" 
+{textColor 0 2}When I return to the start point, I gasp for air. 
+{textColor 0 2}When I casually look up, I see someone looking down upon me from the high edge of the pool. 
+
+
+[00000049] 10: 
+[0000004a]  2: cmd2 7
+[0000004e] 10: 
+[0000004f]  7: stopBGM
+[00000050] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 92
+[0000005c] 10: 
+[0000005d] 11: fgload 0 00000000 YU02DB 1 3
+[0000006d] 10: 
+[0000006e]  6: playBGM 1
+[00000072] 10: 
+[00000073]  b: playVoice L1D2A155
+[0000007d] 10: 
+[0000007e] 19: 
+[0000007f] ff: text 02
+{textColor 1 4}【Yuka】 "Here!" 
+{textColor 0 2}It's Yuka. 
+{textColor 0 2}She bends over and holds out her right hand. 
+{textColor 0 0}【Makoto】 "Oh, thank you!" 
+{textColor 0 2}I take her hand, and step onto the poolside with one foot. 
+{textColor 0 2}I put my weight into that hand, and try to climb up, when... 
+
+
+[00000082] 10: 
+[00000083] 12: removeFG 0 0
+[0000008a] 10: 
+[0000008b]  6: playBGM 19
+[00000090] 10: 
+[00000091]  8: playSFX SE062 1
+[0000009b] 10: 
+[0000009c] 19: 
+[0000009d] ff: text 03
+{textColor 0 2}... Yuka suddenly lets go. 
+{textColor 0 2}I fall back into the pool in an awkward angle. 
+
+
+[000000a0] 10: 
+[000000a1] 11: fgload 0 00000000 YU12DA 1 3
+[000000b1] 10: 
+[000000b2]  b: playVoice L1D2A156
+[000000bc] 10: 
+[000000bd] 19: 
+[000000be] ff: text 04
+{textColor 1 4}【Yuka】 "Kyahahahahahahaha♪" 
+{textColor 0 2}I raise my face out of the water to see Yuka holding her sides and laughing her ass off while stomping one foot. 
+{textColor 0 0}【Makoto】 "H-Hamn yuu!" 
+{textColor 0 2}My voice sounds weird due to the large amount of water in my nose. 
+
+
+[000000c1] 10: 
+[000000c2]  b: playVoice L1D2A157
+[000000cc] 10: 
+[000000cd] 19: 
+[000000ce] ff: text 05
+{textColor 1 4}【Yuka】 "That was a lie♪ A joke♪" 
+{textColor 0 2}Still cracking up, Yuka reaches out her hand again. 
+
+[000000d1] ff: text 06
+{textColor 0 2}{choiceOpt 1 -> Take her hand. }{choiceOpt 2 -> Slap her hand away. }
+
+[000000d4] 10: 
+[000000d5]  3: choice v_a1_08 00 00
+[000000da]  0: 
+[000000db]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000176 (0003)
+[000000e9] fe: varop VAR_(28_0a)_a0_ff (14) += (00) 1
+[000000f4] 10: 
+[000000f5] 19: 
+[000000f6] ff: text 07
+{textColor 0 2}I decide to trust Yuka, and take her hand again. 
+{textColor 0 2}I get up on one foot again, and just as I get ready to go up... 
+
+
+[000000f9] 10: 
+[000000fa]  7: stopBGM
+[000000fb] 10: 
+[000000fc] 12: removeFG 0 0
+[00000103] 10: 
+[00000104]  6: playBGM 19
+[00000109] 10: 
+[0000010a]  8: playSFX SE062 1
+[00000114] 10: 
+[00000115] 19: 
+[00000116] ff: text 08
+{textColor 0 2}... This time, I fall into the water face first. 
+
+
+[00000119] 10: 
+[0000011a]  f: removeBG 0 0 2
+[00000124] 10: 
+[00000125] 10: bgload 00000000 EV_YU13 0 1
+[00000132] 10: 
+[00000133]  b: playVoice L1D2A158
+[0000013d] 10: 
+[0000013e] 19: 
+[0000013f] ff: text 09
+{textColor 1 4}【Yuka】 "Nyahahahahaha♪" 
+{textColor 0 2}Tears are rolling out of Yuka's eyes. 
+{textColor 0 0}【Makoto】 "Yuu pitch, shtap toing dat!" 
+{textColor 0 2}Because my ears are filled with water, I don't understand what I'm saying. 
+
+
+[00000142] 10: 
+[00000143]  b: playVoice L1D2A159
+[0000014d] 10: 
+[0000014e] 19: 
+[0000014f] ff: text 0a
+{textColor 1 4}【Yuka】 "Sorry, sorry♪ I definitely won't do it again♪" 
+
+
+[00000152] 10: 
+[00000153]  f: removeBG 0 0 2
+[0000015d] 10: 
+[0000015e] 10: bgload 00000000 BG09A 0 1
+[0000016b] fe: varop VAR_(28_0a)_a1_13 (14) := (00) 1
+[00000176] 10: 
+[00000177] 19: 
+[00000178] ff: text 0b
+{textColor 0 2}I slap Yuka's hand away, and get up onto the poolside myself. 
+
+
+[0000017b] 10: 
+[0000017c]  7: stopBGM
+[0000017d] 10: 
+[0000017e] 11: fgload 0 00000000 YU05DB 1 3
+[0000018e] 10: 
+[0000018f]  6: playBGM 1
+[00000193] 10: 
+[00000194]  b: playVoice L1D2A160
+[0000019e] 10: 
+[0000019f] 19: 
+[000001a0] ff: text 0c
+{textColor 1 4}【Yuka】 "Geez, I really was going to help you this time." 
+
+
+[000001a3]  0: 
+[000001a4]  a: condJump 00 VAR_(28_1e)_a1_13 (28) != (15) (81)->1 (15) (00)  * 000001bb (0004)
+[000001b2] 10: 
+[000001b3] 19: 
+[000001b4] ff: text 0d
+{textColor 0 2}I take a deep breath to prepare for my rebuttal... but before that, I clear the water out of my ears, and shoot the water out of my nose, all of which flow into a drain at my feet. 
+
+
+[000001b7]  0: 
+[000001b8]  7: goto7 000001c0 (0005)
+[000001bb] 10: 
+[000001bc] 19: 
+[000001bd] ff: text 0e
+{textColor 0 2}I take a deep breath to prepare for my rebuttal... but before that, I shoot the water out of my nose, which flows into a drain at my feet. 
+
+
+[000001c0] 10: 
+[000001c1] 11: fgload 0 00000000 YU06DB 1 3
+[000001d1] 10: 
+[000001d2]  b: playVoice L1D2A161
+[000001dc] 10: 
+[000001dd] 19: 
+[000001de] ff: text 0f
+{textColor 1 4}【Yuka】 "Eww! That's nasty!" 
+{textColor 0 0}【Makoto】 "Shut up, idiot!" 
+
+
+[000001e1] 10: 
+[000001e2] 11: fgload 0 00000000 YU01DB 1 3
+[000001f2] 10: 
+[000001f3]  b: playVoice L1D2A162
+[000001fd] 10: 
+[000001fe] 19: 
+[000001ff] ff: text 10
+{textColor 1 4}【Yuka】 "Ah...!" 
+
+
+[00000202] 10: 
+[00000203]  b: playVoice L1D2A163
+[0000020d] 10: 
+[0000020e] 19: 
+[0000020f] ff: text 11
+{textColor 1 4}【Yuka】 "Are you... mad at me?" 
+
+[00000212] ff: text 12
+{textColor 0 2}{choiceOpt 1 -> I am. }{choiceOpt 2 -> I'm not. }
+
+[00000215] 10: 
+[00000216]  3: choice v_a1_08 00 00
+[0000021b]  0: 
+[0000021c]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000002a1 (0007)
+[0000022a] fe: varop VAR_(28_0a)_a0_ff (14) += (00) 1
+[00000235] 10: 
+[00000236] 19: 
+[00000237] ff: text 13
+{textColor 0 0}【Makoto】 "A little." 
+
+
+[0000023a] 10: 
+[0000023b] 11: fgload 0 00000000 YU08DB 1 3
+[0000024b] 10: 
+[0000024c]  b: playVoice L1D2A164
+[00000256] 10: 
+[00000257] 19: 
+[00000258] ff: text 14
+{textColor 1 4}【Yuka】 "Huuh!!? ... Then how can I gain your forgiveness?" 
+{textColor 0 0}【Makoto】 "Hmm... let's see... for now, I'll forgive you if you treat me to a drink." 
+
+
+[0000025b] 10: 
+[0000025c] 11: fgload 0 00000000 YU01DB 1 3
+[0000026c] 10: 
+[0000026d]  b: playVoice L1D2A165
+[00000277] 10: 
+[00000278] 19: 
+[00000279] ff: text 15
+{textColor 1 4}【Yuka】 "A drink?" 
+
+
+[0000027c] 10: 
+[0000027d] 11: fgload 0 00000000 YU02DB 1 3
+[0000028d] 10: 
+[0000028e]  b: playVoice L1D2A166
+[00000298] 10: 
+[00000299] 19: 
+[0000029a] ff: text 16
+{textColor 1 4}【Yuka】 "... Okay, got it. I guess treating you is the least I can do!" 
+{textColor 0 2}Wow! I didn't think she'd be that accepting. 
+{textColor 0 2}If that's the case, maybe I should have asked for something a bit more extravagant... 
+
+
+[0000029d]  0: 
+[0000029e]  7: goto7 000002cc (0008)
+[000002a1] 10: 
+[000002a2] 19: 
+[000002a3] ff: text 17
+{textColor 0 0}【Makoto】 "No, it's not like I'm not angry, but..." 
+
+
+[000002a6] 10: 
+[000002a7] 11: fgload 0 00000000 YU02DB 1 3
+[000002b7] 10: 
+[000002b8] 19: 
+[000002b9] ff: text 18
+{textColor 0 2}Yuka giggles when she hears me. 
+{textColor 0 2}She's laughing like she can read my mind. 
+
+
+[000002bc] 10: 
+[000002bd]  b: playVoice L1D2A167
+[000002c7] 10: 
+[000002c8] 19: 
+[000002c9] ff: text 19
+{textColor 1 4}【Yuka】 "Well then, as an apology, I'll treat you to a drink!" 
+{textColor 0 0}【Makoto】 "Huh? Really?" 
+{textColor 0 2}Yuka smiles while giving me a deep nod. 
+
+
+[000002cc] 10: 
+[000002cd]  b: playVoice L1D2A168
+[000002d7] 10: 
+[000002d8] 19: 
+[000002d9] ff: text 1a
+{textColor 1 4}【Yuka】 "So, what do you want?" 
+{textColor 0 0}【Makoto】 "Beer!" 
+
+
+[000002dc] 10: 
+[000002dd] 11: fgload 0 00000000 YU05DB 1 3
+[000002ed] 10: 
+[000002ee]  b: playVoice L1D2A169
+[000002f8] 10: 
+[000002f9] 19: 
+[000002fa] ff: text 1b
+{textColor 1 4}【Yuka】 "Beer during the day? Are you nuts?" 
+{textColor 0 0}【Makoto】 "... Then anything's fine, but could you get me something carbonated, if possible?" 
+
+
+[000002fd] 10: 
+[000002fe] 11: fgload 0 00000000 YU01DB 1 3
+[0000030e] 10: 
+[0000030f]  b: playVoice L1D2A170
+[00000319] 10: 
+[0000031a] 19: 
+[0000031b] ff: text 1c
+{textColor 1 4}【Yuka】 "Got it. Something carbonated, right?" 
+
+
+[0000031e] 10: 
+[0000031f] 12: removeFG 0 3
+[00000326] 10: 
+[00000327] 19: 
+[00000328] ff: text 1d
+{textColor 0 2}Yuka walks towards the stand... 
+
+
+[0000032b] 10: 
+[0000032c]  f: removeBG 0 0 2
+[00000336] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 0
+[00000341]  0: 
+[00000342]  e: return
+[00000343]  0: 

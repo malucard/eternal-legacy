@@ -1,0 +1,1235 @@
+[000000f4] 10: 
+[000000f5] 19: 
+[000000f6] ff: text 00
+{textColor 0 2}For some reason, I get the urge to go down the slide. 
+{textColor 0 2}I'm pretty sure I saw it right by the pool. 
+{textColor 0 2}I used to love them as a kid. 
+{textColor 0 2}That time... back when I still did things without thinking about them... 
+{textColor 0 2}... Back when I thought of only having fun... 
+{textColor 0 2}... Back when I thought I could do anything when I grew up... 
+{textColor 0 2}That time is very nostalgic to me... 
+{textColor 0 2}... All right! I decide to act on my childish impulses and go down the slide! 
+{textColor 0 2}Thankfully, there aren't any kids around right now. 
+{textColor 0 2}If there were, it'd have been too embarrassing to try. 
+{textColor 0 2}... I finally arrive at the slide. 
+
+
+[000000f9] 10: 
+[000000fa]  7: stopBGM
+[000000fb] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 69
+[00000107] 10: 
+[00000108] 11: fgload 0 00000000 HA12DA 1 3
+[00000118] 10: 
+[00000119]  6: playBGM 2
+[0000011d] 10: 
+[0000011e] 19: 
+[0000011f] ff: text 01
+{textColor 0 2}I suddenly notice Haruka, who's sitting on the steps of the slide. 
+{textColor 0 2}She doesn't seem to be doing anything in particular other than hugging her knees while gazing at the sparkling sunlight reflecting off the pool's surface. 
+
+
+[00000122] 10: 
+[00000123]  2: cmd2 7
+[00000127] 10: 
+[00000128] 11: fgload 0 00000000 HA12DB 1 3
+[00000138] 10: 
+[00000139] 19: 
+[0000013a] ff: text 02
+{textColor 0 0}【Makoto】 "Yo! What's up?" 
+{textColor 0 2}I call out to Haruka. 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}She doesn't reply... Her eyes are glued on the the water's surface. 
+{textColor 0 0}【Makoto】 "This is the water slide. Do you want to ride it too?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}... Not a word. She seems so terribly focused. 
+{textColor 0 2}I follow suit and stare at the water. 
+{textColor 0 2}... There's nothing interesting or unusual about it. 
+{textColor 0 0}【Makoto】 "... Say, what are you looking at?" 
+{textColor 0 2}I ask another question. 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}She's still looking at the water... 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 0}【Makoto】 "... Say, Haruka. I don't see anything but water..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "It couldn't be that you're just looking at the water, right?" 
+{textColor 0 2}I try asking this, but even I think it's a stupid question. There's no way she'd... 
+
+
+[0000013d] 10: 
+[0000013e]  b: playVoice L1D2A276
+[00000148] 10: 
+[00000149] 19: 
+[0000014a] ff: text 03
+{textColor 1 5}【Haruka】 "... The water." 
+{textColor 0 2}Haruka finally speaks. She's still fixated on the water's surface. 
+{textColor 0 0}【Makoto】 "Huh...?" 
+
+
+[0000014d] 10: 
+[0000014e]  b: playVoice L1D2A277
+[00000158] 10: 
+[00000159] 19: 
+[0000015a] ff: text 04
+{textColor 1 5}【Haruka】 "I was looking... at the water..." 
+{textColor 0 2}Haruka replies as if it's normal to do. 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}I'm dumbfounded. 
+{textColor 0 2}Could she be mocking me? 
+
+[0000015d] ff: text 05
+{textColor 0 2}{choiceOpt 1 -> Act like I understand. }{choiceOpt 2 -> Ignore Haruka. }
+
+[00000160] 10: 
+[00000161]  3: choice v_a1_08 00 00
+[00000166]  0: 
+[00000167]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000a5f (0037)
+[00000175] fe: varop VAR_(28_0a)_a1_00 (14) += (00) 1
+[00000180] 10: 
+[00000181] 19: 
+[00000182] ff: text 06
+{textColor 0 0}【Makoto】 "I see... You were looking at the water... Yeah... yeah, I get it..." 
+{textColor 0 2}For the time being, I try to act like I understand her. 
+{textColor 0 2}However, I feel pretty bad about lying... 
+
+
+[00000185] 10: 
+[00000186]  b: playVoice L1D2A278
+[00000190] 10: 
+[00000191] 19: 
+[00000192] ff: text 07
+{textColor 1 5}【Haruka】 "I like... looking at the water..." 
+{textColor 0 2}She's still staring at it. 
+{textColor 0 2}I observe her face. 
+{textColor 0 2}She has a very apathetic expression. 
+{textColor 0 2}I don't see any signs of her mocking me, however. 
+{textColor 0 2}Now that I think about it... I remember something. 
+{textColor 0 2}Yesterday morning, she also stared at the water dripping from that faucet. 
+
+
+[00000195]  0: 
+[00000196]  a: condJump 00 VAR_(28_1e)_a1_11 (28) != (15) (80)->0 (15) (00)  * 000001a9 (0003)
+[000001a4] 10: 
+[000001a5] 19: 
+[000001a6] ff: text 08
+{textColor 0 2}She also soaked her bare feet in the waves on Princess Beach yesterday. 
+
+
+[000001a9] 10: 
+[000001aa] 19: 
+[000001ab] ff: text 09
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}The two of us fall silent again. This silence is getting uncomfortable. 
+{textColor 0 2}I want to as her "Why do you like water so much?" 
+{textColor 0 2}... But I decide not to. At any rate, I don't think she'll answer me anyway. 
+{textColor 0 2}I should change the topic. 
+{textColor 0 2}I need to bring up a topic that'll interest Haruka. 
+{textColor 0 2}... Umm, what topic would interest her... Mmm... 
+{textColor 0 2}... Hmm? 
+{textColor 0 2}Then it hits me. 
+{textColor 0 2}What topic would interest Haruka? 
+{textColor 0 2}I can't think of anything... because I don't know anything about her yet, right?! 
+{textColor 0 2}I should ask her questions about herself. Well, she might not answer me, but... 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}Well, it can't hurt to try! 
+{textColor 0 2}If things stay this awkward, I'm going to suffocate to death. 
+{textColor 0 0}【Makoto】 "Hey, Haruka?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}Like always, she doesn't turn to face me, but I know she's listening. 
+{textColor 0 2}Well then, what should I try asking her...? 
+
+[000001ae] ff: text 0a
+{textColor 0 2}{choiceOpt 1 -> Comment on how she skipped a grade. }{choiceOpt 2 -> What do you do on your days off? }{choiceOpt 3 -> What are your favorite foods? }{choiceOpt 4 -> What's your type? }
+
+[000001b1] 10: 
+[000001b2]  3: choice v_a1_08 00 00
+[000001b7] fe: varop VAR_(28_0a)_a1_0c (14) := (00) 0
+[000001c2]  0: 
+[000001c3]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000299 (000b)
+[000001d1] 10: 
+[000001d2] 19: 
+[000001d3] ff: text 0b
+{textColor 0 0}【Makoto】 "Haruka... you're one year younger than us, right?" 
+
+
+[000001d6]  0: 
+[000001d7]  a: condJump 00 VAR_(28_1e)_a1_0c (28) != (15) (80)->0 (15) (00)  * 000001f6 (0006)
+[000001e5] 10: 
+[000001e6] 11: fgload 0 00000000 HA01DB 1 3
+[000001f6] 10: 
+[000001f7] 19: 
+[000001f8] ff: text 0c
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}She doesn't respond, but I continue to talk anyway. 
+{textColor 0 0}【Makoto】 "But you're in the same grade we are. ... So that means you've skipped a grade, right?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Skipping a grade... that's amazing. Only top notch students can accomplish that!" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Seriously, that's amazing. You're a year younger than us, yet you're just as smart as we are... No, you might even be smarter than us." 
+{textColor 0 2}I keep saying "amazing." 
+{textColor 0 2}Being praised makes everyone feel good. 
+{textColor 0 2}With this, I feel that the mood has now lightened enough for us to talk normally... 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[000001fb] 10: 
+[000001fc]  b: playVoice L1D2A279
+[00000206] 10: 
+[00000207] 19: 
+[00000208] ff: text 0d
+{textColor 1 5}【Haruka】 "... Is that rare?" 
+{textColor 0 0}【Makoto】 "... Huh?" 
+
+
+[0000020b] 10: 
+[0000020c]  b: playVoice L1D2A280
+[00000216] 10: 
+[00000217] 19: 
+[00000218] ff: text 0e
+{textColor 1 5}【Haruka】 "Is that rare? Is that not normal?" 
+{textColor 0 0}【Makoto】 "Ah... that's, umm..." 
+{textColor 0 2}Her unexpected reply has left me at a loss for words. 
+{textColor 0 0}【Makoto】 "... Hmm, well, I wouldn't call it normal..." 
+
+
+[0000021b] 10: 
+[0000021c]  b: playVoice L1D2A281
+[00000226] 10: 
+[00000227] 19: 
+[00000228] ff: text 0f
+{textColor 1 5}【Haruka】 "I see..." 
+{textColor 0 0}【Makoto】 "Ah, but isn't that something to be proud of? Because it's not normal, it means you're not an ordinary human..." 
+{textColor 0 2}I decided I had to follow up on that. 
+
+
+[0000022b] 10: 
+[0000022c]  b: playVoice L1D2A282
+[00000236] 10: 
+[00000237] 19: 
+[00000238] ff: text 10
+{textColor 1 5}【Haruka】 "It doesn't... matter to me." 
+{textColor 0 0}【Makoto】 "Oh... I see..." 
+{textColor 0 2}I kinda feel like I've suffered an magnificent, honorable defeat. 
+
+
+[0000023b]  0: 
+[0000023c]  a: condJump 01 VAR_(28_1e)_a1_0c (28) == (15) (81)->1 (15) (00)  * 000006e6 (0033)
+[0000024a] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 1
+[00000255] 10: 
+[00000256] 19: 
+[00000257] ff: text 11
+{textColor 0 2}... I'll change the topic. 
+
+[0000025a] ff: text 12
+{textColor 0 2}{choiceOpt 1 -> What do you do on your days off? }{choiceOpt 2 -> What are your favorite foods? }{choiceOpt 3 -> What's your type? }
+
+[0000025d] 10: 
+[0000025e]  3: choice v_a1_08 00 00
+[00000263]  0: 
+[00000264]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 0000027a (0007)
+[00000272]  0: 
+[00000273]  7: goto7 000002a8 (000c)
+[00000276]  0: 
+[00000277]  7: goto7 00000295 (0009)
+[0000027a]  0: 
+[0000027b]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 00000291 (0008)
+[00000289]  0: 
+[0000028a]  7: goto7 0000047a (001b)
+[0000028d]  0: 
+[0000028e]  7: goto7 00000295 (0009)
+[00000291]  0: 
+[00000292]  7: goto7 000005ec (0027)
+[00000295]  0: 
+[00000296]  7: goto7 000006e6 (0031)
+[00000299]  0: 
+[0000029a]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 0000046b (001a)
+[000002a8] 10: 
+[000002a9] 19: 
+[000002aa] ff: text 13
+{textColor 0 0}【Makoto】 "Haruka, what do you do on your days off?" 
+
+
+[000002ad]  0: 
+[000002ae]  a: condJump 00 VAR_(28_1e)_a1_0c (28) != (15) (80)->0 (15) (00)  * 000002cd (000e)
+[000002bc] 10: 
+[000002bd] 11: fgload 0 00000000 HA01DB 1 3
+[000002cd] 10: 
+[000002ce] 19: 
+[000002cf] ff: text 14
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "The image I have of you is somewhat of an honor student, but not one who's glued to her desk 24/7..." 
+{textColor 0 0}【Makoto】 "On the other hand, I can't see you doing sports..." 
+{textColor 0 0}【Makoto】 "And you don't really strike me as someone with a part time job either..." 
+{textColor 0 0}【Makoto】 "... So, what is it that you really do?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Ah... Umm... If you don't want to answer that, that's fine." 
+{textColor 0 2}There goes another failed attempt... As I'm about to change the subject, Haruka speaks. 
+
+
+[000002d2] 10: 
+[000002d3]  b: playVoice L1D2A283
+[000002dd] 10: 
+[000002de] 19: 
+[000002df] ff: text 15
+{textColor 1 5}【Haruka】 "... I go home." 
+{textColor 0 0}【Makoto】 "... Home?" 
+
+
+[000002e2] 10: 
+[000002e3]  b: playVoice L1D2A284
+[000002ed] 10: 
+[000002ee] 19: 
+[000002ef] ff: text 16
+{textColor 1 5}【Haruka】 "Right, home. ... Because I live at my dorm most of the time." 
+{textColor 0 0}【Makoto】 "Ah... I see." 
+
+
+[000002f2] 10: 
+[000002f3]  b: playVoice L1D2A285
+[000002fd] 10: 
+[000002fe] 19: 
+[000002ff] ff: text 17
+{textColor 1 5}【Haruka】 "When I go home, I help my mother out..." 
+{textColor 0 0}【Makoto】 "I see. You're great, Haruka." 
+{textColor 0 2}It feels like I'm praising a child. 
+
+
+[00000302] 10: 
+[00000303]  b: playVoice L1D2A286
+[0000030d] 10: 
+[0000030e] 19: 
+[0000030f] ff: text 18
+{textColor 1 5}【Haruka】 "Makoto..." 
+{textColor 0 0}【Makoto】 "... Hmm?" 
+
+
+[00000312] 10: 
+[00000313]  b: playVoice L1D2A287
+[0000031d] 10: 
+[0000031e] 19: 
+[0000031f] ff: text 19
+{textColor 1 5}【Haruka】 "Makoto... do you like... your father and mother?" 
+{textColor 0 0}【Makoto】 "U-Umm..." 
+{textColor 0 2}I'm bewildered by her sudden question. 
+{textColor 0 2}How should I answer that? 
+
+[00000322] ff: text 1a
+{textColor 0 2}{choiceOpt 1 -> "I like them." }{choiceOpt 2 -> "I don't really like them." }
+
+[00000325] 10: 
+[00000326]  3: choice v_a1_08 00 00
+[0000032b]  0: 
+[0000032c]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000003d8 (0013)
+[0000033a] fe: varop VAR_(28_0a)_a1_00 (14) += (00) 1
+[00000345] 10: 
+[00000346] 19: 
+[00000347] ff: text 1b
+{textColor 0 0}【Makoto】 "Yeah, I like them." 
+{textColor 0 2}Those are my true feelings. 
+{textColor 0 2}They occasionally have fights, and sometimes make me feel depressed, but they're my parents, and to me, are people who should be loved. 
+{textColor 0 0}【Makoto】 "People who hate their parents... well, they definitely exist, but... I think most people who claim to hate their parents still love them deep down, you know?" 
+
+
+[0000034a] 10: 
+[0000034b]  b: playVoice L1D2A288
+[00000355] 10: 
+[00000356] 19: 
+[00000357] ff: text 1c
+{textColor 1 5}【Haruka】 "... I see." 
+{textColor 0 0}【Makoto】 "What about you?" 
+
+
+[0000035a] 10: 
+[0000035b]  b: playVoice L1D2A289
+[00000365] 10: 
+[00000366] 19: 
+[00000367] ff: text 1d
+{textColor 1 5}【Haruka】 "... I also... like them." 
+{textColor 0 2}Haruka looks at me as she says this. 
+{textColor 0 0}【Makoto】 "I see..." 
+
+
+[0000036a] 10: 
+[0000036b]  b: playVoice L1D2A290
+[00000375] 10: 
+[00000376] 19: 
+[00000377] ff: text 1e
+{textColor 1 5}【Haruka】 "... Because they... are my only bond." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}For some reason, I feel that I mustn't pry any further. 
+
+
+[0000037a]  0: 
+[0000037b]  a: condJump 01 VAR_(28_1e)_a1_0c (28) == (15) (81)->1 (15) (00)  * 000006e6 (0033)
+[00000389] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 1
+[00000394] 10: 
+[00000395] 19: 
+[00000396] ff: text 1f
+{textColor 0 2}... I'll change the topic. 
+
+[00000399] ff: text 20
+{textColor 0 2}{choiceOpt 1 -> Comment on how she skipped a grade. }{choiceOpt 2 -> What are your favorite foods? }{choiceOpt 3 -> What's your type? }
+
+[0000039c] 10: 
+[0000039d]  3: choice v_a1_08 00 00
+[000003a2]  0: 
+[000003a3]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000003b9 (000f)
+[000003b1]  0: 
+[000003b2]  7: goto7 000001d1 (0004)
+[000003b5]  0: 
+[000003b6]  7: goto7 000003d4 (0011)
+[000003b9]  0: 
+[000003ba]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000003d0 (0010)
+[000003c8]  0: 
+[000003c9]  7: goto7 0000047a (001b)
+[000003cc]  0: 
+[000003cd]  7: goto7 000003d4 (0011)
+[000003d0]  0: 
+[000003d1]  7: goto7 000005ec (0027)
+[000003d4]  0: 
+[000003d5]  7: goto7 00000467 (0018)
+[000003d8] 10: 
+[000003d9] 19: 
+[000003da] ff: text 21
+{textColor 0 0}【Makoto】 "Hmm... I don't really like them." 
+{textColor 0 2}I don't really feel this way. I'm just embarrassed to admit it. 
+{textColor 0 2}They sometimes drive me insane... 
+{textColor 0 2}... But they're my parents, and to me, are people who should be loved. 
+{textColor 0 0}【Makoto】 "Well, I am grateful to them for a lot things, but sometimes, I feel they can be so irritating." 
+{textColor 0 0}【Makoto】 "For example, I'm already 20 years old, but they still treat me like I'm a kid. I wish they'd just cut it out." 
+
+
+[000003dd] 10: 
+[000003de]  b: playVoice L1D2A291
+[000003e8] 10: 
+[000003e9] 19: 
+[000003ea] ff: text 22
+{textColor 1 5}【Haruka】 "... I see." 
+{textColor 0 0}【Makoto】 "Haruka, do you feel that way too?" 
+
+
+[000003ed] 10: 
+[000003ee]  b: playVoice L1D2A292
+[000003f8] 10: 
+[000003f9] 19: 
+[000003fa] ff: text 23
+{textColor 1 5}【Haruka】 "... I... like them." 
+{textColor 0 2}Haruka looks at me as she speaks. 
+{textColor 0 0}【Makoto】 "... I-I see." 
+
+
+[000003fd] 10: 
+[000003fe]  b: playVoice L1D2A293
+[00000408] 10: 
+[00000409] 19: 
+[0000040a] ff: text 24
+{textColor 1 5}【Haruka】 "... Because they... are my only bond." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}I begin to feel extremely awkward. 
+
+
+[0000040d]  0: 
+[0000040e]  a: condJump 01 VAR_(28_1e)_a1_0c (28) == (15) (81)->1 (15) (00)  * 000006e6 (0033)
+[0000041c] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 1
+[00000427] 10: 
+[00000428] 19: 
+[00000429] ff: text 25
+{textColor 0 2}... I'll change the topic. 
+
+[0000042c] ff: text 26
+{textColor 0 2}{choiceOpt 1 -> Comment on how she skipped a grade. }{choiceOpt 2 -> What are your favorite foods? }{choiceOpt 3 -> What's your type? }
+
+[0000042f] 10: 
+[00000430]  3: choice v_a1_08 00 00
+[00000435]  0: 
+[00000436]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 0000044c (0014)
+[00000444]  0: 
+[00000445]  7: goto7 000001d1 (0004)
+[00000448]  0: 
+[00000449]  7: goto7 00000467 (0016)
+[0000044c]  0: 
+[0000044d]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 00000463 (0015)
+[0000045b]  0: 
+[0000045c]  7: goto7 0000047a (001b)
+[0000045f]  0: 
+[00000460]  7: goto7 00000467 (0016)
+[00000463]  0: 
+[00000464]  7: goto7 000005ec (0027)
+[00000467]  0: 
+[00000468]  7: goto7 000006e6 (0031)
+[0000046b]  0: 
+[0000046c]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (82)->2 (15) (00)  * 000005ec (0026)
+[0000047a] fe: varop VAR_(28_0a)_a1_00 (14) += (00) 1
+[00000485]  0: 
+[00000486]  a: condJump 00 VAR_(28_1e)_a1_0c (28) != (15) (80)->0 (15) (00)  * 000004a5 (001d)
+[00000494] 10: 
+[00000495] 11: fgload 0 00000000 HA01DB 1 3
+[000004a5] 10: 
+[000004a6] 19: 
+[000004a7] ff: text 27
+{textColor 0 0}【Makoto】 "I'm not really picky; I'll eat just about anything." 
+{textColor 0 0}【Makoto】 "Still, I have some favorites." 
+{textColor 0 0}【Makoto】 "What I'm trying to ask is, well, do you have any favorite foods?" 
+
+
+[000004aa] 10: 
+[000004ab] 11: fgload 0 00000000 HA10DB 1 3
+[000004bb] fe: varop VAR_(28_0a)_a1_0b (14) := (00) 1
+[000004c6] 10: 
+[000004c7] 19: 
+[000004c8] ff: text 28
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}Haruka silently lowers her head. 
+{textColor 0 0}【Makoto】 "Ah... what am I saying? If you don't want to answer, that's fine..." 
+
+
+[000004cb] 10: 
+[000004cc]  b: playVoice L1D2A294
+[000004d6] 10: 
+[000004d7] 19: 
+[000004d8] ff: text 29
+{textColor 1 5}【Haruka】 "Cabbage cores..." 
+{textColor 0 2}She says this with her head still down. 
+{textColor 0 0}【Makoto】 "... H-Huh?" 
+
+
+[000004db] 10: 
+[000004dc]  b: playVoice L1D2A295
+[000004e6] 10: 
+[000004e7] 19: 
+[000004e8] ff: text 2a
+{textColor 1 5}【Haruka】 "Cabbage cores... are delicious." 
+{textColor 0 2}Haruka looks at me. There's no signs that she's joking. 
+
+
+[000004eb] 10: 
+[000004ec]  b: playVoice L1D2A296
+[000004f6] 10: 
+[000004f7] 19: 
+[000004f8] ff: text 2b
+{textColor 1 5}【Haruka】 "The day before yesterday... The day we arrived at the lodge, Yuka made... yakisoba... It was quite salty." 
+{textColor 0 0}【Makoto】 "So are you saying that there were cabbage cores in the yakisoba...?" 
+{textColor 0 2}Haruka nods. 
+{textColor 0 0}【Makoto】 "I... I see..." 
+{textColor 0 2}I'm a little shocked. I'm surprised that Haruka likes cabbage cores... but I'm even more surprised that Yuka actually cooked something edible. 
+{textColor 0 2}If I had arrived at the lodge earlier that day, I might have seen it too... I'm a bit disappointed. 
+{textColor 0 0}【Makoto】 "Th-Then... what do you dislike?" 
+{textColor 0 2}Pretending to be calm, I ask her another question. 
+
+
+[000004fb] 10: 
+[000004fc]  b: playVoice L1D2A297
+[00000506] 10: 
+[00000507] 19: 
+[00000508] ff: text 2c
+{textColor 1 5}【Haruka】 "... Eggs and milk." 
+{textColor 0 0}【Makoto】 "Huh, why's that?" 
+
+
+[0000050b] 10: 
+[0000050c]  b: playVoice L1D2A298
+[00000516] 10: 
+[00000517] 19: 
+[00000518] ff: text 2d
+{textColor 1 5}【Haruka】 "... Because they're gooey." 
+{textColor 0 0}【Makoto】 "Gooey?" 
+
+
+[0000051b] 10: 
+[0000051c]  b: playVoice L1D2A299
+[00000526] 10: 
+[00000527] 19: 
+[00000528] ff: text 2e
+{textColor 1 5}【Haruka】 "They make me feel sick..." 
+
+
+[0000052b]  0: 
+[0000052c]  a: condJump 00 VAR_(28_1e)_a1_11 (28) != (15) (80)->0 (15) (00)  * 0000053f (001f)
+[0000053a] 10: 
+[0000053b] 19: 
+[0000053c] ff: text 2f
+{textColor 0 2}I find it strange how someone who can't drink their milk and eat eggs can happily look at creatures like sea roaches. 
+{textColor 0 2}Well, I guess those simply might be a part of her likes and dislikes, but still... 
+
+
+[0000053f] 10: 
+[00000540] 19: 
+[00000541] ff: text 30
+{textColor 0 0}【Makoto】 "You don't eat them at all...?" 
+
+
+[00000544] 10: 
+[00000545]  b: playVoice L1D2A300
+[0000054f] 10: 
+[00000550] 19: 
+[00000551] ff: text 31
+{textColor 1 5}【Haruka】 "... No." 
+{textColor 0 0}【Makoto】 "You can't be picky. If you don't have eggs or milk, your body won't grow up big and..." 
+{textColor 0 2}I abruptly stop talking. 
+{textColor 0 2}What the hell am I saying? Haruka's a college student. I was treating her like a kid just now, wasn't I...? 
+{textColor 0 2}I become kind of embarrassed, and look away from Haruka. 
+
+
+[00000554] 10: 
+[00000555]  b: playVoice L1D2A300
+[0000055f] 10: 
+[00000560] 19: 
+[00000561] ff: text 32
+{textColor 1 5}【Haruka】 "... Yes." 
+{textColor 0 0}【Makoto】 "...?" 
+
+
+[00000564] 10: 
+[00000565]  b: playVoice L1D2A302
+[0000056f] 10: 
+[00000570] 19: 
+[00000571] ff: text 33
+{textColor 1 5}【Haruka】 "... I'll try to have them more often." 
+{textColor 0 0}【Makoto】 "A-Ah... Yeah." 
+{textColor 0 2}I'm a little surprised by her declaration, but also pleased that she took my advice. 
+
+
+[00000574]  0: 
+[00000575]  a: condJump 00 VAR_(28_1e)_a1_0c (28) != (15) (81)->1 (15) (00)  * 00000587 (0021)
+[00000583]  0: 
+[00000584]  7: goto7 000006e6 (0033)
+[00000587] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 1
+[00000592] 10: 
+[00000593] 19: 
+[00000594] ff: text 34
+{textColor 0 2}... I'll change the topic. 
+
+[00000597] ff: text 35
+{textColor 0 2}{choiceOpt 1 -> Comment on how she skipped a grade. }{choiceOpt 2 -> What do you do on your days off? }{choiceOpt 3 -> What's your type? }
+
+[0000059a] 10: 
+[0000059b]  3: choice v_a1_08 00 00
+[000005a0]  0: 
+[000005a1]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000005c2 (0022)
+[000005af] fe: varop VAR_(28_0a)_a1_0b (14) := (00) 0
+[000005ba]  0: 
+[000005bb]  7: goto7 000001d1 (0004)
+[000005be]  0: 
+[000005bf]  7: goto7 000005e8 (0024)
+[000005c2]  0: 
+[000005c3]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000005e4 (0023)
+[000005d1] fe: varop VAR_(28_0a)_a1_0b (14) := (00) 0
+[000005dc]  0: 
+[000005dd]  7: goto7 000002a8 (000c)
+[000005e0]  0: 
+[000005e1]  7: goto7 000005e8 (0024)
+[000005e4]  0: 
+[000005e5]  7: goto7 000005ec (0027)
+[000005e8]  0: 
+[000005e9]  7: goto7 000006e6 (0031)
+[000005ec]  0: 
+[000005ed]  a: condJump 00 VAR_(28_32)_a1_0c (3c) != (29) (80)->0 (29) (0a) CJ_18 VAR_(28_32)_a1_0b (3c) != (29) (81)->1 (29) (00)  * 00000617 (0029)
+[00000606] 10: 
+[00000607] 11: fgload 0 00000000 HA01DB 1 3
+[00000617] 10: 
+[00000618] 19: 
+[00000619] ff: text 36
+{textColor 0 0}【Makoto】 "Haruka, what kind of guy is your type?" 
+{textColor 0 2}... Wait, isn't this question a little bit too personal? 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}Of course she doesn't want to answer... That's only natural. 
+{textColor 0 0}【Makoto】 "Nevermind, sorry..." 
+{textColor 0 2}I decide to change the topic. 
+
+
+[0000061c] 10: 
+[0000061d]  b: playVoice L1D2A303
+[00000627] 10: 
+[00000628] 19: 
+[00000629] ff: text 37
+{textColor 1 5}【Haruka】 "What about you...?" 
+{textColor 0 0}【Makoto】 "Huh...?" 
+
+
+[0000062c] 10: 
+[0000062d]  b: playVoice L1D2A304
+[00000637] 10: 
+[00000638] 19: 
+[00000639] ff: text 38
+{textColor 1 5}【Haruka】 "Makoto, what's your type...?" 
+{textColor 0 2}Wha...!!! 
+{textColor 0 2}I wasn't expecting this. 
+{textColor 0 0}【Makoto】 "Umm... Umm..." 
+{textColor 0 2}Haruka is waiting for my answer with a serious expression. 
+{textColor 0 2}I need to answer properly, or this could be bad... 
+
+
+[0000063c] fe: varop VAR_(28_0a)_a1_00 (14) += (00) 1
+[00000647] 10: 
+[00000648] 19: 
+[00000649] ff: text 39
+{textColor 0 0}【Makoto】 "A quiet girl like you... I guess?" 
+
+
+[0000064c] 10: 
+[0000064d]  b: playVoice L1D2A306
+[00000657] 10: 
+[00000658] 19: 
+[00000659] ff: text 3a
+{textColor 1 5}【Haruka】 "... Like... me...?" 
+{textColor 0 2}Haruka repeats my words. 
+
+
+[0000065c] 10: 
+[0000065d] 11: fgload 0 00000000 HA10DB 1 3
+[0000066d] 10: 
+[0000066e] 19: 
+[0000066f] ff: text 3b
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}She silently lowers her head. 
+{textColor 0 2}Her expression is hard to read. 
+
+
+[00000672] 10: 
+[00000673] 11: fgload 0 00000000 HA01DB 1 3
+[00000683] 10: 
+[00000684] 19: 
+[00000685] ff: text 3c
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}The two of us are dead silent. 
+{textColor 0 2}Hmm. I guess it's time to move on to another topic. 
+
+
+[00000688]  0: 
+[00000689]  a: condJump 00 VAR_(28_1e)_a1_0c (28) != (15) (81)->1 (15) (00)  * 0000069b (002c)
+[00000697]  0: 
+[00000698]  7: goto7 000006e6 (0033)
+[0000069b] fe: varop VAR_(28_0a)_a1_0c (14) += (00) 1
+[000006a6] 10: 
+[000006a7] 19: 
+[000006a8] ff: text 3d
+{textColor 0 2}... I'll change the topic. 
+
+[000006ab] ff: text 3e
+{textColor 0 2}{choiceOpt 1 -> Comment on how she skipped a grade. }{choiceOpt 2 -> What do you do on your days off? }{choiceOpt 3 -> What are your favorite foods? }
+
+[000006ae] 10: 
+[000006af]  3: choice v_a1_08 00 00
+[000006b4]  0: 
+[000006b5]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000006cb (002d)
+[000006c3]  0: 
+[000006c4]  7: goto7 000001d1 (0004)
+[000006c7]  0: 
+[000006c8]  7: goto7 000006e6 (002f)
+[000006cb]  0: 
+[000006cc]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000006e2 (002e)
+[000006da]  0: 
+[000006db]  7: goto7 000002a8 (000c)
+[000006de]  0: 
+[000006df]  7: goto7 000006e6 (002f)
+[000006e2]  0: 
+[000006e3]  7: goto7 0000047a (001b)
+[000006e6] fe: varop VAR_(28_0a)_a1_0b (14) := (00) 0
+[000006f1] fe: varop VAR_(28_0a)_a1_0c (14) := (00) 0
+[000006fc] 10: 
+[000006fd]  b: playVoice L1D2A310
+[00000707] 10: 
+[00000708] 19: 
+[00000709] ff: text 3f
+{textColor 1 5}【Haruka】 "... Why?" 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[0000070c] 10: 
+[0000070d] 11: fgload 0 00000000 HA06DB 1 3
+[0000071d] 10: 
+[0000071e]  b: playVoice L1D2A311
+[00000728] 10: 
+[00000729] 19: 
+[0000072a] ff: text 40
+{textColor 1 5}【Haruka】 "... Why are you so curious about me?" 
+{textColor 0 2}She asks me this with a truly confused expression and voice. 
+{textColor 0 0}【Makoto】 "U... Umm, that's because..." 
+{textColor 0 2}I can't answer. The truth is, even I don't understand it very well myself. 
+
+
+[0000072d] 10: 
+[0000072e]  b: playVoice L1D2A312
+[00000738] 10: 
+[00000739] 19: 
+[0000073a] ff: text 41
+{textColor 1 5}【Haruka】 "Why?" 
+{textColor 0 2}Haruka asks again. 
+
+[0000073d] ff: text 42
+{textColor 0 2}{choiceOpt 1 -> Because I'm interested in you. }{choiceOpt 2 -> Because I like you. }
+
+[00000740] 10: 
+[00000741]  3: choice v_a1_08 00 00
+[00000746]  0: 
+[00000747]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000007a5 (0034)
+[00000755] fe: varop VAR_(28_0a)_a1_00 (14) += (00) 1
+[00000760] 10: 
+[00000761] 19: 
+[00000762] ff: text 43
+{textColor 0 0}【Makoto】 "It's because... I'm interested in you." 
+
+
+[00000765] 10: 
+[00000766]  b: playVoice L1D2A313
+[00000770] 10: 
+[00000771] 19: 
+[00000772] ff: text 44
+{textColor 1 5}【Haruka】 "You're interested... in me?" 
+{textColor 0 0}【Makoto】 "I want to know more about you, Haruka." 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[00000775] 10: 
+[00000776] 11: fgload 0 00000000 HA01DB 1 3
+[00000786] 10: 
+[00000787] 19: 
+[00000788] ff: text 45
+{textColor 0 2}I look at Haruka. 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}I stare firmly into her eyes. 
+
+
+[0000078b] 10: 
+[0000078c] 11: fgload 0 00000000 HA03DB 1 3
+[0000079c] 10: 
+[0000079d] 19: 
+[0000079e] ff: text 46
+{textColor 1 5}【Haruka】 "...!" 
+{textColor 0 2}Flustered, she averts her gaze from me. 
+{textColor 0 2}Though she's trying to hide it, Haruka is blushing... 
+
+
+[000007a1]  0: 
+[000007a2]  7: goto7 0000082c (0035)
+[000007a5] 10: 
+[000007a6] 19: 
+[000007a7] ff: text 47
+{textColor 0 0}【Makoto】 "It's because... I like you." 
+{textColor 0 2}Like? I like Haruka? 
+{textColor 0 2}Is that true? 
+{textColor 0 2}Even though we're just acquaintances? Even though I know nothing about her? 
+
+
+[000007aa] 10: 
+[000007ab] 11: fgload 0 00000000 HA01DB 1 3
+[000007bb] 10: 
+[000007bc]  b: playVoice L1D2A314
+[000007c6] 10: 
+[000007c7] 19: 
+[000007c8] ff: text 48
+{textColor 1 5}【Haruka】 "... 'Like'?" 
+{textColor 0 0}【Makoto】 "Y... Yeah." 
+{textColor 0 2}I nod before forcing myself to say this. 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}Haruka lowers her head again. 
+{textColor 0 0}【Makoto】 "Ah... Umm..." 
+{textColor 0 2}I'm on edge. Am I annoying her? 
+{textColor 0 0}【Makoto】 "Ah... err... it was just a joke, ahahaha... don't take it seriously." 
+{textColor 0 2}I desperately try to smooth this over. 
+
+
+[000007cb] 10: 
+[000007cc]  b: playVoice L1D2A315
+[000007d6] 10: 
+[000007d7] 19: 
+[000007d8] ff: text 49
+{textColor 1 5}【Haruka】 "It was... a joke?" 
+{textColor 0 0}【Makoto】 "Y... Yeah." 
+
+
+[000007db] 10: 
+[000007dc]  b: playVoice L1D2A316
+[000007e6] 10: 
+[000007e7] 19: 
+[000007e8] ff: text 4a
+{textColor 1 5}【Haruka】 "I see... I'm glad..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}As I thought, I was pestering her... 
+{textColor 0 2}I try to hide my shock. 
+
+
+[000007eb] 10: 
+[000007ec] 11: fgload 0 00000000 HA08DB 1 3
+[000007fc] 10: 
+[000007fd]  b: playVoice L1D2A317
+[00000807] 10: 
+[00000808] 19: 
+[00000809] ff: text 4b
+{textColor 1 5}【Haruka】 "Because I don't know... The meaning of the word 'like'..." 
+{textColor 0 0}【Makoto】 "Huh...?" 
+
+
+[0000080c] 10: 
+[0000080d]  b: playVoice L1D2A318
+[00000817] 10: 
+[00000818] 19: 
+[00000819] ff: text 4c
+{textColor 1 5}【Haruka】 "Because if someone told me they liked me, I wouldn't know... how to react..." 
+
+
+[0000081c] 10: 
+[0000081d]  b: playVoice L1D2A319
+[00000827] 10: 
+[00000828] 19: 
+[00000829] ff: text 4d
+{textColor 1 5}【Haruka】 "Because if someone told me they liked me, I wouldn't know... what to think..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000082c] 10: 
+[0000082d] 12: removeFG 0 3
+[00000834] 10: 
+[00000835] 19: 
+[00000836] ff: text 4e
+{textColor 0 2}We fall silent again. 
+{textColor 0 2}Once again, the atmosphere is awkward... 
+{textColor 0 0}【Makoto】 "Hey, do you want to go on the slide?" 
+{textColor 0 2}For the time being, in order to break this deadlock between us, I've got to act. 
+
+
+[00000839] 10: 
+[0000083a] 11: fgload 0 00000000 HA01DB 1 3
+[0000084a] 10: 
+[0000084b]  b: playVoice L1D2A320
+[00000855] 10: 
+[00000856] 19: 
+[00000857] ff: text 4f
+{textColor 1 5}【Haruka】 "... The slide?" 
+{textColor 0 0}【Makoto】 "See, this is the slide. You didn't notice?" 
+{textColor 0 2}Haruka nods. 
+{textColor 0 0}【Makoto】 "Do you want to ride it?" 
+
+
+[0000085a] 10: 
+[0000085b] 11: fgload 0 00000000 HA10DB 1 3
+[0000086b] 10: 
+[0000086c] 19: 
+[0000086d] ff: text 50
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}She seems hesitant. 
+{textColor 0 0}【Makoto】 "Let's do it! I know you're gonna love it, it feels great!" 
+
+
+[00000870] 10: 
+[00000871]  b: playVoice L1D2A321
+[0000087b] 10: 
+[0000087c] 19: 
+[0000087d] ff: text 51
+{textColor 1 5}【Haruka】 "Feels great...?" 
+{textColor 0 0}【Makoto】 "Yeah, when you're sliding, you can't think about anything..." 
+{textColor 0 2}I keep on insisting, exaggerating it a little bit. No, scratch that, I'm really overexaggerating... 
+
+
+[00000880] 10: 
+[00000881]  b: playVoice L1D2A322
+[0000088b] 10: 
+[0000088c] 19: 
+[0000088d] ff: text 52
+{textColor 1 5}【Haruka】 "Can't think... about anything...?" 
+{textColor 0 0}【Makoto】 "Yeah." 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[00000890] 10: 
+[00000891] 11: fgload 0 00000000 HA01DB 1 3
+[000008a1] 10: 
+[000008a2]  b: playVoice L1D2A323
+[000008ac] 10: 
+[000008ad] 19: 
+[000008ae] ff: text 53
+{textColor 1 5}【Haruka】 "Then I'll do it." 
+{textColor 0 2}Haruka answers clearly. 
+
+
+[000008b1] 10: 
+[000008b2] 11: fgload 0 00000000 HA05DB 1 3
+[000008c2] 10: 
+[000008c3] 19: 
+[000008c4] ff: text 54
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Haruka...? What's wrong?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}She's expressionless. ... No, would it be better to say that her expression has gone stiff? 
+{textColor 0 0}【Makoto】 "Haruka... could it be that you're nervous?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}She nods. 
+
+
+[000008c7] 10: 
+[000008c8] 11: fgload 0 00000000 HA08DB 1 3
+[000008d8] 10: 
+[000008d9]  b: playVoice L1D2A324
+[000008e3] 10: 
+[000008e4] 19: 
+[000008e5] ff: text 55
+{textColor 1 5}【Haruka】 "Hey..." 
+{textColor 0 2}Suddenly, Haruka grabs my hand, startling me. 
+
+
+[000008e8] 10: 
+[000008e9]  b: playVoice L1D2A325
+[000008f3] 10: 
+[000008f4] 19: 
+[000008f5] ff: text 56
+{textColor 1 5}【Haruka】 "Let's go on the slide together..." 
+
+
+[000008f8] 10: 
+[000008f9] 12: removeFG 0 3
+[00000900] 10: 
+[00000901] 19: 
+[00000902] ff: text 57
+{textColor 0 2}... ... ... 
+{textColor 0 2}In the end, it's come down to the two of us sliding together. 
+
+
+[00000905] 10: 
+[00000906] 11: fgload 0 00000000 HA12DB 1 3
+[00000916] 10: 
+[00000917] 19: 
+[00000918] ff: text 58
+{textColor 0 2}Haruka sits down between my legs as I hold her from behind. 
+{textColor 0 2}The warm water flowing from behind me feels pleasant against my back. 
+{textColor 0 2}But... at this rate... 
+{textColor 0 0}【Makoto】 "D-Don't you... think this is a little dangerous...?" 
+
+
+[0000091b] 10: 
+[0000091c]  b: playVoice L1D2A326
+[00000926] 10: 
+[00000927] 19: 
+[00000928] ff: text 59
+{textColor 1 5}【Haruka】 "It's all right... You're holding me tight enough..." 
+{textColor 0 0}【Makoto】 "No... that's not what I meant..." 
+
+
+[0000092b] 10: 
+[0000092c]  b: playVoice L1D2A327
+[00000936] 10: 
+[00000937] 19: 
+[00000938] ff: text 5a
+{textColor 1 5}【Haruka】 "Let's go...!" 
+{textColor 0 0}【Makoto】 "W-Wait, not ye...!" 
+{textColor 0 2}But Haruka doesn't wait. We take a deep breath. 
+{textColor 0 2}As we ride the flowing water, we slide down with great speed. 
+
+
+[0000093b] 10: 
+[0000093c]  b: playVoice H_037_01
+[00000946] 10: 
+[00000947] 19: 
+[00000948] ff: text 5b
+{textColor 1 5}【Haruka】 "!!..." 
+{textColor 0 2}Haruka can't help but shout. 
+{textColor 0 0}【Makoto】 "...!!" 
+{textColor 0 2}I yell for a totally different reason. 
+{textColor 0 2}While Haruka is intoxicated by the exhilarating feeling of sliding down, I don't share her sentiments. 
+{textColor 0 2}We're two adults on a water slide. The fact that we're practically glued together as well causes me to feel uneasy. 
+
+
+[0000094b]  0: 
+[0000094c]  5: delay 60
+[00000951] 10: 
+[00000952]  8: playSFX SE062 1
+[0000095c] 10: 
+[0000095d] 19: 
+[0000095e] ff: text 5c
+{textColor 0 2}We finally reach the end point. Our bodies are flung into the pool's water. 
+{textColor 0 0}【Makoto】 "Whew..." 
+{textColor 0 2}Haruka turns towards me with water dripping from her head. 
+
+
+[00000961] 10: 
+[00000962] 11: fgload 0 00000000 HA02DB 1 3
+[00000972] 10: 
+[00000973] 19: 
+[00000974] ff: text 5d
+{textColor 0 0}【Makoto】 "... Ah!" 
+
+
+[00000977] 10: 
+[00000978]  b: playVoice H_037_02
+[00000982] 10: 
+[00000983] 19: 
+[00000984] ff: text 5e
+{textColor 1 5}【Haruka】 "Hee hee..." 
+{textColor 0 2}What the... Haruka just smiled... 
+{textColor 0 2}It was just a small grin, but I've never seen her smile like that before. 
+
+
+[00000987] 10: 
+[00000988]  b: playVoice H_037_03
+[00000992] 10: 
+[00000993] 19: 
+[00000994] ff: text 5f
+{textColor 1 5}【Haruka】 "Hey... one more time." 
+{textColor 0 0}【Makoto】 "... Huh?" 
+
+
+[00000997] 10: 
+[00000998]  b: playVoice L1D2A328
+[000009a2] 10: 
+[000009a3] 19: 
+[000009a4] ff: text 60
+{textColor 1 5}【Haruka】 "Let's go... one more time." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}We took so many trips down the slide together that I lost track. 
+
+
+[000009a7] 10: 
+[000009a8]  7: stopBGM
+[000009a9] 10: 
+[000009aa]  f: removeBG 0 0 2
+[000009b4] 10: 
+[000009b5] 12: removeFG 0 0
+[000009bc] 10: 
+[000009bd] 19: 
+[000009be] ff: text 61
+{textColor 0 2}... ... ... 
+{textColor 0 2}Once I leave Haruka, I head over to the drink stand to quench my thirst. 
+
+
+[000009c1] 10: 
+[000009c2] 10: bgload 00000000 BG09A 0 1
+[000009cf] 10: 
+[000009d0]  1: cmd1 28
+[000009d5] 10: 
+[000009d6] 11: fgload 0 00000000 YU01DA 1 0
+[000009e6] 10: 
+[000009e7]  6: playBGM 1
+[000009eb] 10: 
+[000009ec]  b: playVoice L1D2A329
+[000009f6] 10: 
+[000009f7] 19: 
+[000009f8] ff: text 62
+{textColor 1 4}【Yuka】 "Huh? Well, if it isn't Makoto." 
+{textColor 0 0}【Makoto】 "Oh... Yuka." 
+
+
+[000009fb] 10: 
+[000009fc]  b: playVoice L1D2A330
+[00000a06] 10: 
+[00000a07] 19: 
+[00000a08] ff: text 63
+{textColor 1 4}【Yuka】 "You look kinda beat." 
+{textColor 0 0}【Makoto】 "Y... Yeah. I was riding on the slide together with Haruka..." 
+
+
+[00000a0b] 10: 
+[00000a0c]  b: playVoice L1D2A331
+[00000a16] 10: 
+[00000a17] 19: 
+[00000a18] ff: text 64
+{textColor 1 4}【Yuka】 "Huh...?" 
+{textColor 0 2}I tell Yuka what we were doing just now. 
+
+
+[00000a1b] 10: 
+[00000a1c]  b: playVoice L1D2A332
+[00000a26] 10: 
+[00000a27] 19: 
+[00000a28] ff: text 65
+{textColor 1 4}【Yuka】 "Hmm, that sounds kinda childish." 
+{textColor 0 0}【Makoto】 "Agreed. Perhaps this is the first time Haruka's ever been on a slide?" 
+
+
+[00000a2b] 10: 
+[00000a2c]  b: playVoice L1D2A333
+[00000a36] 10: 
+[00000a37] 19: 
+[00000a38] ff: text 66
+{textColor 1 4}【Yuka】 "Wrong, wrong... I was talking about you." 
+{textColor 0 0}【Makoto】 "Huh? Me? Why?" 
+
+
+[00000a3b] 10: 
+[00000a3c]  b: playVoice L1D2A334
+[00000a46] 10: 
+[00000a47] 19: 
+[00000a48] ff: text 67
+{textColor 1 4}【Yuka】 "Because weren't you the one who invited her in the first place? You're 20 years old, and yet you're doing things that only kids do." 
+{textColor 0 0}【Makoto】 "Ugh...!" 
+{textColor 0 2}I have no comeback. Certainly, what I did was pretty childish... 
+
+
+[00000a4b] 10: 
+[00000a4c]  b: playVoice L1D2A335
+[00000a56] 10: 
+[00000a57] 19: 
+[00000a58] ff: text 68
+{textColor 1 4}【Yuka】 "Anyway, are you thirsty? It's on me." 
+{textColor 0 0}【Makoto】 "Oh! Looks like I got lucky! Thank you very much!" 
+
+
+[00000a5b]  0: 
+[00000a5c]  7: goto7 00000ac0 (0038)
+[00000a5f] 10: 
+[00000a60] 19: 
+[00000a61] ff: text 69
+{textColor 0 2}(This is no good...) 
+{textColor 0 2}I'll just ignore Haruka for now. It's extremely unlikely I can hold up a conversation with her anyway. 
+{textColor 0 0}【Makoto】 "Haruka... I'm going on the slide now." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}With those final words, I run up the stairs to the slide. 
+
+
+[00000a64] 10: 
+[00000a65]  7: stopBGM
+[00000a66] 10: 
+[00000a67] 12: removeFG 0 3
+[00000a6e] 10: 
+[00000a6f] 19: 
+[00000a70] ff: text 6a
+{textColor 0 2}... ... ... 
+
+
+[00000a73] 10: 
+[00000a74] 19: 
+[00000a75] ff: text 6b
+{textColor 0 2}Whooooosh... 
+
+
+[00000a78] 10: 
+[00000a79]  8: playSFX SE062 1
+[00000a83] 10: 
+[00000a84] 19: 
+[00000a85] ff: text 6c
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}I went on the slide, but for some reason, it wasn't as fun as I thought it'd be. 
+{textColor 0 2}Even though it was much more fun when I was a kid... 
+{textColor 0 0}【Makoto】 "That's enough... I'll go now." 
+{textColor 0 2}I head over to the drink stand to quench my thirst. 
+
+
+[00000a88] 10: 
+[00000a89]  9: stopSFX
+[00000a8a] 10: 
+[00000a8b] 11: fgload 0 00000000 YU01DA 1 3
+[00000a9b] 10: 
+[00000a9c]  6: playBGM 1
+[00000aa0] 10: 
+[00000aa1]  b: playVoice L1D2A336
+[00000aab] 10: 
+[00000aac] 19: 
+[00000aad] ff: text 6d
+{textColor 1 4}【Yuka】 "Huh? Well, if it isn't Makoto." 
+{textColor 0 0}【Makoto】 "Oh... Yuka." 
+
+
+[00000ab0] 10: 
+[00000ab1]  b: playVoice L1D2A337
+[00000abb] 10: 
+[00000abc] 19: 
+[00000abd] ff: text 6e
+{textColor 1 4}【Yuka】 "Anyway, are you thirsty? It's on me." 
+{textColor 0 0}【Makoto】 "Oh! Looks like I got lucky! Thank you very much!" 
+
+
+[00000ac0] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 0
+[00000acb]  0: 
+[00000acc]  e: return
+[00000acd]  0: 
+[00000ace]  0: 
+[00000acf]  0: 

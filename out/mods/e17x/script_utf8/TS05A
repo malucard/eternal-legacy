@@ -1,0 +1,8291 @@
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//		Title:『Ever17』
+//		File:	
+//■□■□■□■□■□■□■□■□■□■□■□■□■□■□■
+//アクアシステムデフォルトスクリプト--ここから--
+[StartUp]
+{
+	:SceneName	"武編　５／５"
+	:Presence	2
+	[LoadTexture]
+	{
+		:Texture	0
+	}
+}
+[TaskList]
+{
+	:TaskMax	100001
+//アクアシステムデフォルトスクリプト--ここまで--
+//-----------------
+//５/５第五章（空編）
+//-----------------
+//TS05
+//5pb.--初期化コマンド--
+//	[Task100]
+//	{
+//		:Tasktype	"CallScene"
+//		:Name		"sho_com","InitTag"
+//	}
+//空ルート
+//一部つぐみルートと同じ展開
+//共通と完全に違う部分の分岐地点に印（※☆）入れておきます
+//※☆以下つぐみルートと共通
+//２０１７/５/５
+//ＡＭ７：３０
+//残り４７時間３０分（崩壊予定、７日７時）
+//5pb.-ファイル開始時基本セット-
+//	[Task110]
+//	{
+//		:Tasktype	"Window"
+//		:Visible	0
+//	}
+	[Task120]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			0
+		:SpriteDelete	1
+	}
+//☆ＢＧブラック
+//霧が漂うスクリプト効果が使えるようならお願いします。
+	[Task130]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		111	//	置換しました<<bg_black>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			0
+		:FadeWait		0
+	}
+//5pb.-24:ドリッテス・アウゲ・ネーメン（第３の眼：別テイク）-
+	[Task140]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		47	//	置換しました<<bgm24>>
+	}
+
+	[Task150]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task160]
+	{
+		:Tasktype	"Message"
+		:Message	"そこでは俺自身も闇だった。"
+		:Frame		0
+	}
+	[Task170]
+	{
+		:Tasktype	"Message"
+		:Message	"ただ、そこにあるのは、靄がかかった俺の思考……意識だけだった。"
+		:Frame		0
+	}
+	[Task180]
+	{
+		:Tasktype	"Message"
+		:Message	"広く、遠く、果てのない暗黒世界。"
+		:Frame		0
+	}
+	[Task190]
+	{
+		:Tasktype	"Message"
+		:Message	"その只中に俺はいた。"
+		:Frame		0
+	}
+	[Task200]
+	{
+		:Tasktype	"Message"
+		:Message	"いや、落ちていた。"
+		:Frame		0
+	}
+	[Task210]
+	{
+		:Tasktype	"Message"
+		:Message	"闇には、圧力があり、泥のように重く感じる。"
+		:Frame		0
+	}
+	[Task220]
+	{
+		:Tasktype	"Message"
+		:Message	"暗い暗い泥の闇に、飲み込まれ、どんどん深くへと沈んでいた。"
+		:Frame		0
+	}
+	[Task230]
+	{
+		:Tasktype	"Message"
+		:Message	"……。"
+		:Frame		0
+	}
+	[Task240]
+	{
+		:Tasktype	"Message"
+		:Message	"いや……。"
+		:Frame		0
+	}
+	[Task250]
+	{
+		:Tasktype	"Message"
+		:Message	"そうではないのかもしれない。"
+		:Frame		0
+	}
+	[Task260]
+	{
+		:Tasktype	"Message"
+		:Message	"闇が、こちらに近づいて来ているのかもしれない。"
+		:Frame		0
+	}
+	[Task270]
+	{
+		:Tasktype	"Message"
+		:Message	"すぐそこまで、忍び寄っているのかもしれない。"
+		:Frame		0
+	}
+	[Task280]
+	{
+		:Tasktype	"Message"
+		:Message	"やがて、それは……。"
+		:Frame		0
+	}
+	[Task290]
+	{
+		:Tasktype	"Message"
+		:Message	"俺に絡みついてきた……。"
+		:Frame		0
+	}
+	[Task300]
+	{
+		:Tasktype	"Message"
+		:Message	"沁み込んできた……。"
+		:Frame		0
+	}
+	[Task310]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は、目を開く……。"
+		:Frame		0
+	}
+	[Task320]
+	{
+		:Tasktype	"Message"
+		:Message	"目の前に、視えない闇が見えた……。"
+		:Frame		0
+	}
+	[Task330]
+	{
+		:Tasktype	"Message"
+		:Message	"視えない闇は、俺を覗き込んでいた……。"
+		:Frame		0
+	}
+	[Task340]
+	{
+		:Tasktype	"Message"
+		:Message	"闇と闇が見詰め合う……。"
+		:Frame		0
+	}
+	[Task350]
+	{
+		:Tasktype	"Message"
+		:Message	"その視えない闇の奥に、視えない俺が見えた気がした……。"
+		:Frame		0
+	}
+	[Task360]
+	{
+		:Tasktype	"Message"
+		:Message	"「お兄ちゃーん、おきてる？」"
+		:Name	16		//？？
+		:Character	6		//ココ
+		:Voice	14964	//	置換しました<<ts05_co000e>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+
+//5pb.-停止時間指定:f30-
+	[Task370]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+
+//音声加工夢の中的
+//名前表示？？
+	[Task380]
+	{
+		:Tasktype	"Message"
+		:Message	"そんな時、場違いな声……、いや泡が生まれた。"
+		:Frame		0
+	}
+//5pb.-09:ヴァイサー・フント（白い犬）［正式にはｗｅｉβｅｒ　Ｈｕｎｄ］-
+	[Task390]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		16	//	置換しました<<bgm09>>
+	}
+	[Task400]
+	{
+		:Tasktype	"Message"
+		:Message	"「あーーまだ寝てる！　もう、困ったお兄ちゃんなんだから！！」"
+		:Name	16		//？？
+		:Character	6		//ココ
+		:Voice	14965	//	置換しました<<ts05_co001e>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//音声加工夢の中的
+//名前表示？？
+	[Task410]
+	{
+		:Tasktype	"Message"
+		:Message	"泡は増え、俺を……意識を包み込む。"
+		:Frame		0
+	}
+	[Task420]
+	{
+		:Tasktype	"Message"
+		:Message	"「よーし、こうなったらーー！」"
+		:Name	16		//？？
+		:Character	6		//ココ
+		:Voice	14966	//	置換しました<<ts05_co002e>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//音声加工夢の中的
+//名前表示？？
+	[Task430]
+	{
+		:Tasktype	"Message"
+		:Message	"泡に包まれ、俺の意識はゆっくりと浮かび始める。"
+		:Frame		0
+	}
+//※☆空ルート
+	[Task440]
+	{
+		:Tasktype	"Message"
+		:Message	"浮上するスピードが加速する。"
+		:Frame		0
+	}
+	[Task450]
+	{
+		:Tasktype	"Message"
+		:Message	"「ゴー！！　ピピィーーー！！」"
+		:Name	16		//？？
+		:Character	6		//ココ
+		:Voice	14967	//	置換しました<<ts05_co003e>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+
+//5pb.-超必殺技が入る前の効果音？		キシーン！-
+	[Task460]
+	{
+		:Tasktype	"SePlay"
+		:SE			200	//	置換しました<<se16_02>>
+	}
+
+//音声加工夢の中的
+//名前表示？？
+	[Task470]
+	{
+		:Tasktype	"Message"
+		:Message	"「わおーーん！！」"
+		:Name	16		//？？
+		:Character	14		//ピピ
+		:Voice	17	//	置換しました<<pipi_17>>
+		:Frame		0
+	}
+//音声加工夢の中的
+//名前表示？？
+	[Task480]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、視えない闇の境界が迫る……。"
+		:Frame		0
+	}
+	[Task490]
+	{
+		:Tasktype	"SePlay"
+		:SE			128	//	置換しました<<se06_01>>
+	}
+	[Task500]
+	{
+		:Tasktype	"SeStop"
+		:SE			200	//	置換しました<<se16_02>>
+		:Div		12
+	}
+	[Task510]
+	{
+		:Tasktype		"WindowQuake"
+		:MoveType		0
+	}
+	[Task520]
+	{
+		:Tasktype	"Vibration"
+		:Left	65535
+		:Right	65535
+		:Time	400 
+	}
+	[Task530]
+	{
+		:Tasktype	"Message"
+		:Message	"ドカッ！！"
+		:Frame		0
+	}
+	[Task540]
+	{
+		:Tasktype	"Message"
+		:Message	"「ゲホッ？！」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task550]
+	{
+		:Tasktype	"Vibration"
+		:Left	0
+		:Right	0
+		:Time	0
+	}
+	[Task560]
+	{
+		:Tasktype	"Message"
+		:Message	"いきなり胸を、叩かれたような衝撃が走る。"
+		:Frame		0
+	}
+	[Task570]
+	{
+		:Tasktype	"Message"
+		:Message	"ペロ〜〜ン〜！"
+		:Frame		0
+	}
+	[Task580]
+	{
+		:Tasktype	"Message"
+		:Message	"間髪入れず、俺の顔面を生暖かいヌルベタな何かがゆっくりと這う……。"
+		:Frame		0
+	}
+	[Task590]
+	{
+		:Tasktype		"WindowQuake"
+		:MoveType		1
+	}
+	[Task600]
+	{
+		:Tasktype	"Message"
+		:Message	"「ウヒッ？！」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task610]
+	{
+		:Tasktype	"Message"
+		:Message	"「ぺろぺろぺろぺろぺろぺろぺろぺろぺろ――」"
+		:Name	16		//？？
+		:Character	14		//ピピ
+		:Voice	28	//	置換しました<<pipi_27>>
+		:Frame		0
+	}
+//名前表示？？
+	[Task620]
+	{
+		:Tasktype	"Message"
+		:Message	"猛烈なヌルベタな嵐の渦に俺は巻き込まれる。"
+		:Frame		0
+	}
+//☆ＢＧ加減圧室の中（照明点灯）
+	[Task630]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task640]
+	{
+		:Tasktype	"Sprite"
+		:Texture	14	//	置換しました<<bg09aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task650]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,245,245,255
+		:Ambient	210,205,205,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task660]
+	{
+		:Tasktype		"SpriteDeleteBG"
+		:SpriteNumber	111	//	置換しました<<bg_black>>
+		:Time			30
+		:Rule			24
+		:FadeWait		1
+	}
+	[Task670]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task680]
+	{
+		:Tasktype	"Message"
+		:Message	"堪らず俺は見開く。"
+		:Frame		0
+	}
+	[Task690]
+	{
+		:Tasktype	"Message"
+		:Message	"「ぺろぺろぺろぺろぺろぺろぺろぺろぺろ――」"
+		:Character	14		//ピピ
+		:Voice	28	//	置換しました<<pipi_27>>
+		:Frame		0
+		:Name	8		//ピピ
+	}
+	[Task700]
+	{
+		:Tasktype	"Message"
+		:Message	"「うわぁあああーーーーーっ？！」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task710]
+	{
+		:Tasktype	"Message"
+		:Message	"文字通り、目と鼻の間に、ドアップで俺を舐めまくるピピがいた。"
+		:Frame		0
+	}
+	[Task720]
+	{
+		:Tasktype	"Message"
+		:Message	"「なんじゃこりゃぁぁーーーっ！！」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＣＨココ：２／３
+	[Task730]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"ココ"
+		:Preset		1
+//★ＣＨココ：2：2
+		:Animation		1,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task740]
+	{
+		:Tasktype	"Message"
+		:Message	"「どう？　目覚めパッチリでしょ？」"
+		:Character	6		//ココ
+		:Voice	492	//	置換しました<<ts05_co004>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task750]
+	{
+		:Tasktype	"Message"
+		:Message	"得意そうに、にっこりと笑うココが、俺の顔を覗くように立っていた。"
+		:Frame		0
+	}
+	[Task760]
+	{
+		:Tasktype	"Message"
+		:Message	"「いや、たしかに目覚めパッチリだけど……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task770]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は目の前のピピを抱き上げ、脇にヒョイと退かす。"
+		:Frame		0
+	}
+	[Task780]
+	{
+		:Tasktype	"Message"
+		:Message	"「わん」"
+		:Character	14		//ピピ
+		:Voice	3	//	置換しました<<pipi_03>>
+		:Frame		0
+		:Name	8		//ピピ
+	}
+//☆ＡＮココ：2：1
+	[Task790]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		1,0
+	}
+	[Task800]
+	{
+		:Tasktype	"Message"
+		:Message	"「たけぴょんリクエストの別の起こし方、ココ二番の起こし方……『メガ・ペロペロ・ドック』はどうだった？」"
+		:Character	6		//ココ
+		:Voice	493	//	置換しました<<ts05_co005>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task810]
+	{
+		:Tasktype	"Message"
+		:Message	"「ピピの笑顔にしびれたでしょ？」"
+		:Character	6		//ココ
+		:Voice	494	//	置換しました<<ts05_co006>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//ココ二番の起こし方、つぐみルートリンクな仕掛けとして挿入。
+//☆ＡＮココ：2：2
+	[Task820]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		1,0
+	}
+	[Task830]
+	{
+		:Tasktype	"Message"
+		:Message	"ココは再び、にっこりと笑った。"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧトイレ、割れて見えない鏡
+	[Task840]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task850]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task860]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture		118	//	置換しました<<cha00a>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task870]
+	{
+		:Tasktype	"TimeWait"
+		:Time		12
+	}
+	[Task880]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		119	//	置換しました<<cha00b>>
+		:Position		640,360
+		:Priority		3
+		:Time			18
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task890]
+	{
+		:Tasktype	"TimeWait"
+		:Time		12
+	}
+	[Task900]
+	{
+		:Tasktype		"Sprite"
+		:Texture		124	//	置換しました<<cha05>>
+		:Position		1920,360
+		:Priority		2
+		:FadeIn			0
+		:FadeWait		0
+	}
+
+	[Task910]
+	{
+		:Tasktype		"SpriteMove"
+		:SpriteNumber	124	//	置換しました<<cha05>>
+		:Position		640,360,3,1.5
+		:Time			30
+		:Wait			1
+	}
+
+	[Task920]
+	{
+		:Tasktype	"TimeWait"
+		:Time		120
+	}
+
+	[Task930]
+	{
+		:Tasktype		"SpriteMove"
+		:SpriteNumber	124	//	置換しました<<cha05>>
+		:Position		0,360,3,1.5
+		:Time			30
+		:Wait			1
+	}
+
+	[Task940]
+	{
+		:Tasktype		"SpriteDelete"
+		:SpriteNumber	124	//	置換しました<<cha05>>
+		:Time			0
+		:FadeWait		0
+	}
+
+	[Task950]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			166	//	置換しました<<ibg16b>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+//☆ＳＥ顔を洗う音
+	[Task960]
+	{
+		:Tasktype	"SePlay"
+		:SE			27	//	置換しました<<se01_09>>
+	}
+	[Task970]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task980]
+	{
+		:Tasktype	"Message"
+		:Message	"「ふ〜〜〜っ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task990]
+	{
+		:Tasktype	"Message"
+		:Message	"あ〜〜酷い目にあった。"
+		:Frame		0
+	}
+	[Task1000]
+	{
+		:Tasktype	"Message"
+		:Message	"まだ顔中べとべとしている気がするよ。"
+		:Frame		0
+	}
+	[Task1010]
+	{
+		:Tasktype	"Message"
+		:Message	"まったく、ココの奴、なんちゅー起こし方してくれたんだよ。"
+		:Frame		0
+	}
+	[Task1020]
+	{
+		:Tasktype	"Message"
+		:Message	"たしかに、別の起こし方にしてくれって言ったけど……あれは無いよな。"
+		:Frame		0
+	}
+	[Task1030]
+	{
+		:Tasktype	"SeStop"
+		:Wait		0
+		:Div		1
+	}
+	[Task1040]
+	{
+		:Tasktype	"Message"
+		:Message	"はて……？"
+		:Frame		0
+	}
+	[Task1050]
+	{
+		:Tasktype	"Message"
+		:Message	"別の起こし方……？"
+		:Frame		0
+	}
+	[Task1060]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼんやりとした記憶を辿る。……確かマスタードで起こされた後、そんな事を言ったような……？"
+		:Frame		0
+	}
+	[Task1070]
+	{
+		:Tasktype	"Message"
+		:Message	"あれ……？　……俺そんな事、言ってたっけ？"
+		:Frame		0
+	}
+	[Task1080]
+	{
+		:Tasktype	"Message"
+		:Message	"まぁ何にせよ……、次はココより早起きした方がよさそうだ………。"
+		:Frame		0
+	}
+//※☆以下つぐみルートと共通
+	[Task1090]
+	{
+		:Tasktype	"Message"
+		:Message	"割れた鏡にぼんやりと俺の顔が映る。"
+		:Frame		0
+	}
+	[Task1100]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は自分の顔を覗き込んだ。"
+		:Frame		0
+	}
+	[Task1110]
+	{
+		:Tasktype	"Message"
+		:Message	"はて？　そういえば、ココに起こされる前、なんか夢を見ていたような気がするんだが……。"
+		:Frame		0
+	}
+	[Task1120]
+	{
+		:Tasktype	"Message"
+		:Message	"どんな夢だったっけ？　さっぱり思い出せない……。"
+		:Frame		0
+	}
+//☆ＳＥ顔を洗う音
+	[Task1130]
+	{
+		:Tasktype	"SePlay"
+		:SE			27	//	置換しました<<se01_09>>
+	}
+
+	[Task1140]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は再び顔を洗い、モヤモヤした気持ちを洗い流す。"
+		:Frame		0
+	}
+	[Task1150]
+	{
+		:Tasktype	"Message"
+		:Message	"さて、もう時間もないし、今日出来る事をきっちりしないとな。"
+		:Frame		0
+	}
+	[Task1160]
+	{
+		:Tasktype	"SeStop"
+		:Wait		0
+		:Div		1
+	}
+	[Task1170]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は気持ちを切り替えて、トイレを後にした。"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧ休息室（点灯）
+	[Task1180]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+
+//5pb.-デフォルト停止時間30f-
+	[Task1190]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+//5pb.-フェードアウト黒-
+	[Task1200]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task1210]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitSound"
+	}
+	[Task1220]
+	{
+		:Tasktype	"Sprite"
+		:Texture	18	//	置換しました<<bg11aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task1230]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ優私服：２／３
+	[Task1240]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：3：5
+		:Animation		2,4
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン黒-
+	[Task1250]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+//5pb.-18:クラマオク（スラップスティック）-
+	[Task1260]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		34	//	置換しました<<bgm18>>
+	}
+
+	[Task1270]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task1280]
+	{
+		:Tasktype	"Message"
+		:Message	"「倉成まったくいつまで寝てんのよ、ついにタイムリミットも２日を切ってるのよ、ちょっと自覚が足りないわよ」"
+		:Character	4		//優
+		:Voice	5132	//	置換しました<<ts05_yu000>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task1290]
+	{
+		:Tasktype	"Message"
+		:Message	"「いや申し訳ない……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1300]
+	{
+		:Tasktype	"Message"
+		:Message	"たしかにそうだった。"
+		:Frame		0
+	}
+	[Task1310]
+	{
+		:Tasktype	"Message"
+		:Message	"昨日、携帯の目覚し機能、寝る前に設定しておけばよかった。"
+		:Frame		0
+	}
+	[Task1320]
+	{
+		:Tasktype	"Message"
+		:Message	"そうしておけば、ココにあんな無茶な起こされ方されずに済んだだろう。"
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：1
+	[Task1330]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,0
+	}
+	[Task1340]
+	{
+		:Tasktype	"Message"
+		:Message	"「食事の方は、ココと少年が調達してくれたから、さっさと食べてね」"
+		:Character	4		//優
+		:Voice	5133	//	置換しました<<ts05_yu001>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task1350]
+	{
+		:Tasktype	"Message"
+		:Message	"「そして、ちゃっちゃと修理を済ませて、とっとと脱出しましょう」"
+		:Character	4		//優
+		:Voice	5134	//	置換しました<<ts05_yu002>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task1360]
+	{
+		:Tasktype	"Message"
+		:Message	"「そういえば、２番艇はメンテナンスルームにあるのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：1
+	[Task1370]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task1380]
+	{
+		:Tasktype	"Message"
+		:Message	"「さっき確認にいったら、もうすでにあったわよ。だから、さっさと食べて、ちゃっちゃと修理しちゃいましょう」"
+		:Character	4		//優
+		:Voice	5135	//	置換しました<<ts05_yu003>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task1390]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうだな、まずはさっさと食べるか」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task1400]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete			 1 
+		:Fade			 30 
+	}
+	[Task1410]
+	{
+		:Tasktype	"Message"
+		:Message	"俺はテーブルの椅子に座った。"
+		:Frame		0
+	}
+	[Task1420]
+	{
+		:Tasktype	"Message"
+		:Message	"テーブルには、深海温泉饅頭と、大量のちくわが山になっていた。"
+		:Frame		0
+	}
+	[Task1430]
+	{
+		:Tasktype	"Message"
+		:Message	"「しかし、壮絶な組み合わせだな……」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＣＨココ：２／３
+	[Task1440]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"ココ"
+		:Preset		1
+//★ＣＨココ：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task1450]
+	{
+		:Tasktype	"Message"
+		:Message	"「たけぴょん、沢山持ってきたからどんどん食べてね」"
+		:Character	6		//ココ
+		:Voice	495	//	置換しました<<ts05_co007>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task1460]
+	{
+		:Tasktype	"Message"
+		:Message	"「マヨネーズとワサビに、醤油をチョッとたらして食べると美味しいんだよ」"
+		:Character	6		//ココ
+		:Voice	496	//	置換しました<<ts05_co008>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task1470]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああ……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1480]
+	{
+		:Tasktype	"Message"
+		:Message	"俺はちくわに手を伸ばし、ココの言う通りに食べた。"
+		:Frame		0
+	}
+	[Task1490]
+	{
+		:Tasktype	"Message"
+		:Message	"「おお、意外と美味しいぞ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮココ：1：2
+	[Task1500]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		0,0
+	}
+	[Task1510]
+	{
+		:Tasktype	"Message"
+		:Message	"「でしょ！」"
+		:Character	6		//ココ
+		:Voice	497	//	置換しました<<ts05_co009>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task1520]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task1530]
+	{
+		:Tasktype	"Message"
+		:Message	"俺はちくわをパクパク食べた。"
+		:Frame		0
+	}
+//※☆空ルート
+	[Task1540]
+	{
+		:Tasktype	"Message"
+		:Message	"「……！！　来たー効くぅーーっ！！」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1550]
+	{
+		:Tasktype	"Message"
+		:Message	"ワサビが、ツーーーン！！と鼻を突きぬける。"
+		:Frame		0
+	}
+	[Task1560]
+	{
+		:Tasktype	"Message"
+		:Message	"思わず鼻を上に向ける。閉じた目から涙が出る。"
+		:Frame		0
+	}
+	[Task1570]
+	{
+		:Tasktype	"Message"
+		:Message	"「へ……"
+		:Name			1		//武
+		:ChangingPage	0
+		:KeyWait		0
+		:Frame			0
+	}
+	[Task1580]
+	{
+		:Tasktype		"WindowQuake"
+		:MoveType		1
+	}
+	[Task1590]
+	{
+		:Tasktype	"Vibration"
+		:Left	32000
+		:Right	32000
+		:Time	400
+	}
+	[Task1600]
+	{
+		:Tasktype	"Message"
+		:Message	"へっ、へっくしょい〜！！」"
+		:Name			1		//武
+		:Frame			0
+		:ChangingPage	1
+	}
+	[Task1610]
+	{
+		:Tasktype	"Message"
+		:Message	"ツーーーンが鼻を突きぬけ、大きなくしゃみがでた。"
+		:Frame		0
+	}
+	[Task1620]
+	{
+		:Tasktype	"Message"
+		:Message	"今のワサビか昨日のマスタードがまだ鼻の奥に残っているのかな？"
+		:Frame		0
+	}
+	[Task1630]
+	{
+		:Tasktype	"Message"
+		:Message	"それとも、昨日の寒中水泳の影響で風邪でもひいたかな？"
+		:Frame		0
+	}
+	[Task1640]
+	{
+		:Tasktype	"Message"
+		:Message	"うっ、また、ツーーーンとしてきた。"
+		:Frame		0
+	}
+	[Task1650]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は慌てて甘甘な饅頭を食べ、味を中和させる。"
+		:Frame		0
+	}
+	[Task1660]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、お茶を流し込む。"
+		:Frame		0
+	}
+	[Task1670]
+	{
+		:Tasktype	"Message"
+		:Message	"「ふぅ〜〜」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1680]
+	{
+		:Tasktype	"Message"
+		:Message	"人心地ついた俺は、改めてテーブルのちくわを見る。"
+		:Frame		0
+	}
+	[Task1690]
+	{
+		:Tasktype	"Message"
+		:Message	"「しかし美味しいな。ちくわがこんなに美味いとは思わなかった…………」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1700]
+	{
+		:Tasktype	"Message"
+		:Message	"「……はっ？！」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1710]
+	{
+		:Tasktype	"Message"
+		:Message	"瞬間俺は、得体の知れない深海魚が目の前に浮かぶと思い身構えた。"
+		:Frame		0
+	}
+	[Task1720]
+	{
+		:Tasktype	"Message"
+		:Message	"「…………」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1730]
+	{
+		:Tasktype	"Message"
+		:Message	"しかし、何も起こらなかった。"
+		:Frame		0
+	}
+	[Task1740]
+	{
+		:Tasktype	"Message"
+		:Message	"「……あれ？　何時もならこのタイミングで、空が仕掛けて来る筈なんだが……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1750]
+	{
+		:Tasktype	"Message"
+		:Message	"改めて休息室を見渡す。"
+		:Frame		0
+	}
+//☆ＣＨ少年：３／３
+	[Task1760]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	3
+		:Fade	30
+		[Character0]
+		{
+			:Name		"少年"
+			:Preset		4
+//★ＣＨ少年：3：2
+		:Animation		2,0
+			:Rot		0
+		}
+	//☆ＣＨ優私服：２／３
+		[Character1]
+		{
+			:Name		"優私服"
+			:Preset		1
+//★ＣＨ優私服：1：2
+		:Animation		0,0
+			:Rot		0
+		}
+	//☆ＣＨココ：１／３
+		[Character2]
+		{
+			:Name		"ココ"
+			:Preset		7
+//★ＣＨココ：7：2
+		:Animation		6,0
+			:Rot		0
+		}
+	}
+	[Task1770]
+	{
+		:Tasktype	"Message"
+		:Message	"部屋には優、ココ、少年、ピピだけが居た。"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task1780]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task1790]
+	{
+		:Tasktype	"Message"
+		:Message	"つぐみが居ないのはいつもの事だけど…………。"
+		:Frame		0
+	}
+//☆ＣＨ優私服：２／３
+	[Task1800]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：1：3
+		:Animation		0,2
+		:Rot		0
+		:Fade		20
+	}
+	[Task1810]
+	{
+		:Tasktype	"Message"
+		:Message	"「空は居ないのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1820]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は優に聞いてみた。"
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：1
+	[Task1830]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task1840]
+	{
+		:Tasktype	"Message"
+		:Message	"「あれ？　そうか言ってなかったっけ？　空ね、今、メンテナンス中だから居ないわよ」"
+		:Character	4		//優
+		:Voice	5136	//	置換しました<<ts05_yu004>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task1850]
+	{
+		:Tasktype	"Message"
+		:Message	"「メンテナンス？　空に何かあったのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1860]
+	{
+		:Tasktype	"Message"
+		:Message	"「なんでも、想定外の出来事で、システムに不具合が現れ始めたから、メンテナンスするって言っていたのよね」"
+		:Character	4		//優
+		:Voice	5137	//	置換しました<<ts05_yu005>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task1870]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task1880]
+	{
+		:Tasktype	"BgmStop"
+		:Div		156
+	}
+//パカパカ停電
+//画面一瞬ブラック
+//☆ＢＧ休息室（点灯）
+//画面一瞬ブラック
+//☆ＢＧ休息室（点灯）
+//画面一瞬ブラック
+//☆ＢＧ休息室（点灯）
+	[Task1890]
+	{
+		:Tasktype		"Flash"
+		:Color			0,0,0,255		//Black
+		:InTime			30
+		:OutTime		30
+		:TimeWait		18
+	}
+	[Task1900]
+	{
+		:Tasktype	"TimeWait"
+		:Time		156
+	}
+	[Task1910]
+	{
+		:Tasktype	"FlashStop"
+	}
+	[Task1920]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task1930]
+	{
+		:Tasktype	"Message"
+		:Message	"ふいに照明がちらついた。"
+		:Frame		0
+	}
+//☆ＣＨ少年：３／３
+	[Task1940]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	30
+		[Character0]
+		{
+			:Name		"少年"
+			:Preset		4
+//★ＣＨ少年：1：3
+		:Animation		0,2
+			:Rot		0
+		}
+	//☆ＣＨココ：１／３
+		[Character1]
+		{
+			:Name		"ココ"
+			:Preset		7
+//★ＣＨココ：3：6
+		:Animation		2,5
+			:Rot		0
+		}
+	}
+//☆ＡＮ優私服：1：6
+	[Task1950]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,5
+	}
+	[Task1960]
+	{
+		:Tasktype	"Message"
+		:Message	"「なんだ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task1970]
+	{
+		:Tasktype	"Message"
+		:Message	"「停電？」"
+		:Character	4		//優
+		:Voice	5138	//	置換しました<<ts05_yu006>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task1980]
+	{
+		:Tasktype	"Message"
+		:Message	"「ちかちか？」"
+		:Character	6		//ココ
+		:Voice	498	//	置換しました<<ts05_co010>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task1990]
+	{
+		:Tasktype	"Message"
+		:Message	"「わん？」"
+		:Character	14		//ピピ
+		:Voice	1	//	置換しました<<pipi_01>>
+		:Frame		0
+		:Name	8		//ピピ
+	}
+	[Task2000]
+	{
+		:Tasktype	"Message"
+		:Message	"「どうしたの？」"
+		:Character	5		//少年
+		:Voice	12894	//	置換しました<<ts05_sh000>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task2010]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task2020]
+	{
+		:Tasktype	"Message"
+		:Message	"今までの経験からか、俺は一瞬身構える。"
+		:Frame		0
+	}
+	[Task2030]
+	{
+		:Tasktype	"Message"
+		:Message	"……………。"
+		:Frame		0
+	}
+	[Task2040]
+	{
+		:Tasktype	"Message"
+		:Message	"しかし、何も起きなかった。"
+		:Frame		0
+	}
+
+//5pb.-04:ドリットシュトック（３階）-
+	[Task2050]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		6	//	置換しました<<bgm04>>
+	}
+//☆ＣＨ優私服：２／３
+	[Task2060]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：3：5
+		:Animation		2,4
+		:Rot		0
+		:Fade		20
+	}
+	[Task2070]
+	{
+		:Tasktype	"Message"
+		:Message	"「……ふぅ。大丈夫そうだな」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2080]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうね、変な音も聞こえないし、揺れもなかったわね」"
+		:Character	4		//優
+		:Voice	5139	//	置換しました<<ts05_yu007>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2090]
+	{
+		:Tasktype	"Message"
+		:Message	"「多分これが、想定外の出来事によるシステムの不具合ってやつじゃないかしら？」"
+		:Character	4		//優
+		:Voice	5140	//	置換しました<<ts05_yu008>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2100]
+	{
+		:Tasktype	"Message"
+		:Message	"「たしかに、今まで想定外な出来事の連発だからな……空も無理してたのかな？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：5
+	[Task2110]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,4
+	}
+	[Task2120]
+	{
+		:Tasktype	"Message"
+		:Message	"「空、っていうよりレミに問題があるようだけどね」"
+		:Character	4		//優
+		:Voice	5141	//	置換しました<<ts05_yu009>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2130]
+	{
+		:Tasktype	"Message"
+		:Message	"「まあ、レミも空も同じコンピューターで、別プログラムなだけだけど……」"
+		:Character	4		//優
+		:Voice	5142	//	置換しました<<ts05_yu010>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2140]
+	{
+		:Tasktype	"Message"
+		:Message	"「……よくわからないが、厄介ごとの種が増えそうな事なのはたしかだな」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：7
+	[Task2150]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,6
+	}
+	[Task2160]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうね……」"
+		:Character	4		//優
+		:Voice	5143	//	置換しました<<ts05_yu011>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：1
+	[Task2170]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task2180]
+	{
+		:Tasktype	"Message"
+		:Message	"「ってそうそう、それで思い出した、はいこれ」"
+		:Character	4		//優
+		:Voice	5144	//	置換しました<<ts05_yu012>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2190]
+	{
+		:Tasktype	"Message"
+		:Message	"優が大量のプリントを俺に渡す。"
+		:Frame		0
+	}
+	[Task2200]
+	{
+		:Tasktype	"Message"
+		:Message	"「なんだこれ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2210]
+	{
+		:Tasktype	"Message"
+		:Message	"俺はペラペラとプリントをめくる。何かの設計図のようにも見える。"
+		:Frame		0
+	}
+	[Task2220]
+	{
+		:Tasktype	"Message"
+		:Message	"「メンテナンス前に空に頼んでプリントしてもらった、コスミッシャー・ヴァルの修理手順が書かれたマニュアルと、修理パーツリストよ」"
+		:Character	4		//優
+		:Voice	5145	//	置換しました<<ts05_yu013>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2230]
+	{
+		:Tasktype	"Message"
+		:Message	"「これ全部か？　予想以上に多いな？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：6
+	[Task2240]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,5
+	}
+	[Task2250]
+	{
+		:Tasktype	"Message"
+		:Message	"「あ、ごめん、コスミッシャー・ヴァルの操縦マニュアルも混ぜちゃったみたい」"
+		:Character	4		//優
+		:Voice	5146	//	置換しました<<ts05_yu014>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2260]
+	{
+		:Tasktype	"Message"
+		:Message	"「操縦？　手動操縦するのか？　空に操作してもらえばいいんじゃないのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：5
+	[Task2270]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,4
+	}
+	[Task2280]
+	{
+		:Tasktype	"Message"
+		:Message	"「水中じゃ電波は届かないでしょ？　それにオートパイロットのプログラムの書き換えは、空には出来ないのよ」"
+		:Character	4		//優
+		:Voice	5147	//	置換しました<<ts05_yu015>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2290]
+	{
+		:Tasktype	"Message"
+		:Message	"「ふーーん、そうなんだ……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2300]
+	{
+		:Tasktype	"Message"
+		:Message	"ん？　……なんだろう？"
+		:Frame		0
+	}
+	[Task2310]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は優の話を聞き終えた時、何かが引っかかった。"
+		:Frame		0
+	}
+	[Task2320]
+	{
+		:Tasktype	"Message"
+		:Message	"頭の端に引っかかっている何かをたぐるように、俺は目を閉じ思考を集中し、今の会話を思い出す……。"
+		:Frame		0
+	}
+//☆ＢＧブラック
+	[Task2330]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task2340]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task2350]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task2360]
+	{
+		:Tasktype	"Message"
+		:Message	"「操縦？　手動操縦するのか？　空に操作してもらえばいいんじゃないのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2370]
+	{
+		:Tasktype	"Message"
+		:Message	"「水中じゃ電波は届かないでしょ？」"
+		:Character	4		//優
+		:Voice	14973	//	置換しました<<ts05_yu016e>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//音声回想処理
+	[Task2380]
+	{
+		:Tasktype	"Message"
+		:Message	"水中じゃ電波は届かない……。"
+		:Frame		0
+	}
+//☆ＢＧ休息室（点灯）
+	[Task2390]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task2400]
+	{
+		:Tasktype	"Sprite"
+		:Texture	18	//	置換しました<<bg11aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task2410]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ優私服：２／３
+	[Task2420]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：3：5
+		:Animation		2,4
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン黒-
+	[Task2430]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+	[Task2440]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task2450]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああああーーーーーーっ！！」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：4：9
+	[Task2460]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		3,8,0,0,60
+		:BlendTime		30
+	}
+	[Task2470]
+	{
+		:Tasktype	"Message"
+		:Message	"「ど、どうしたのよ、いきなり、びっくりするじゃない」"
+		:Character	4		//優
+		:Voice	5148	//	置換しました<<ts05_yu017>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2480]
+	{
+		:Tasktype	"Message"
+		:Message	"「おい優！　空って、コスミッシャー・ヴァルに乗れないんじゃないか？！」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：1
+	[Task2490]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task2500]
+	{
+		:Tasktype	"Message"
+//☆誤字修正
+//		:Message	"「そりや、空の本体は、ここのコンピュータールームに有る訳だから移動は無理ね」"
+		:Message	"「そりゃ、空の本体は、ここのコンピュータールームに有る訳だから移動は無理ね」"
+		:Character	4		//優
+		:Voice	5149	//	置換しました<<ts05_yu018>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2510]
+	{
+		:Tasktype	"Message"
+		:Message	"「それじゃあ、俺達は脱出出来ても、空だけは脱出できないって事なのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：5
+	[Task2520]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,4
+	}
+	[Task2530]
+	{
+		:Tasktype	"Message"
+		:Message	"「現状そうなるわね……」"
+		:Character	4		//優
+		:Voice	5150	//	置換しました<<ts05_yu019>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2540]
+	{
+		:Tasktype	"Message"
+		:Message	"「嘘だろ？　空だって俺たちの仲間じゃないか……何か、空を助ける方法はないのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2550]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうね……、考えられる方法は２つ」"
+		:Character	4		//優
+		:Voice	5151	//	置換しました<<ts05_yu020>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2560]
+	{
+		:Tasktype	"Message"
+		:Message	"「空、本体のコンピューターを、何とかしてコスミッシャー・ヴァルに積み込んで脱出する」"
+		:Character	4		//優
+		:Voice	5152	//	置換しました<<ts05_yu021>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2570]
+	{
+		:Tasktype	"Message"
+		:Message	"「だけど、空ぐらいの性能だと、本体はスパコン並に大きいと思うから無理よね……」"
+		:Character	4		//優
+		:Voice	5153	//	置換しました<<ts05_yu022>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2580]
+	{
+		:Tasktype	"Message"
+		:Message	"「もう一つはバックアップだけど……それにはバックアップする物が必要ね」"
+		:Character	4		//優
+		:Voice	5154	//	置換しました<<ts05_yu023>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2590]
+	{
+		:Tasktype	"Message"
+		:Message	"「バックアップする物？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：1
+	[Task2600]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,0
+	}
+	[Task2610]
+	{
+		:Tasktype	"Message"
+		:Message	"「ディスクよ、ハードディスクとか記録できる物」"
+		:Character	4		//優
+		:Voice	5155	//	置換しました<<ts05_yu024>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2620]
+	{
+		:Tasktype	"Message"
+		:Message	"「それがあれば、空は助かるのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2630]
+	{
+		:Tasktype	"Message"
+		:Message	"「と、思うんだけど……」"
+		:Character	4		//優
+		:Voice	5156	//	置換しました<<ts05_yu025>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2640]
+	{
+		:Tasktype	"Message"
+		:Message	"「と、思うって？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：2
+	[Task2650]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task2660]
+	{
+		:Tasktype	"Message"
+		:Message	"「……ううん、きっと私の考え過ぎね、多分、バックアップすれば空は助かるはずよ」"
+		:Character	4		//優
+		:Voice	5157	//	置換しました<<ts05_yu026>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2670]
+	{
+		:Tasktype	"Message"
+		:Message	"「……そうか、希望はあるわけだな」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2680]
+	{
+		:Tasktype	"Message"
+		:Message	"よかった……俺は心底そう思った。"
+		:Frame		0
+	}
+	[Task2690]
+	{
+		:Tasktype	"Message"
+		:Message	"空だけ助からないなんて駄目だ。絶対にみんなで助かるんだ！"
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：1
+	[Task2700]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task2710]
+	{
+		:Tasktype	"Message"
+		:Message	"「それじゃ、空のバックアップの方法、私が調べておくわ」"
+		:Character	4		//優
+		:Voice	5158	//	置換しました<<ts05_yu027>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task2720]
+	{
+		:Tasktype	"Message"
+		:Message	"「わかった、そっちは任せる。俺は目の前の厄介ごとを片付けに行ってくるか」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task2730]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は目の前のプリントを抱え、立ち上がった。"
+		:Frame		0
+	}
+//※☆以下つぐみルートと共通
+//時間経過ワイプ
+//☆ＢＧ関係者通路（点灯）
+	[Task2740]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-デフォルト停止時間30f-
+	[Task2750]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+//5pb.-フェードアウト黒-
+	[Task2760]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task2770]
+	{
+		:Tasktype	"Sprite"
+		:Texture	58	//	置換しました<<bg35aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task2780]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,193,188,255
+		:Ambient	215,163,158,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ少年：１／２
+	[Task2790]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	20
+		[Character0]
+		{
+			:Name		"少年"
+			:Preset		13
+//★ＣＨ少年：1：8
+		:Animation		0,7
+			:Rot		0
+		}
+	//☆ＣＨココ：２／２
+		[Character1]
+		{
+			:Name		"ココ"
+			:Preset		10
+//★ＣＨココ：3：4
+		:Animation		2,3
+			:Rot		0
+		}
+	}
+//5pb.-フェードイン黒-
+	[Task2800]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+//5pb.-09:ヴァイサー・フント（白い犬）［正式にはｗｅｉβｅｒ　Ｈｕｎｄ］-
+	[Task2810]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		16	//	置換しました<<bgm09>>
+	}
+	[Task2820]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task2830]
+	{
+		:Tasktype	"Message"
+		:Message	"「みんな準備はいい？」"
+		:Character	6		//ココ
+		:Voice	499	//	置換しました<<ts05_co011>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task2840]
+	{
+		:Tasktype	"Message"
+		:Message	"「はい！　隊長」"
+		:Character	5		//少年
+		:Voice	12895	//	置換しました<<ts05_sh001>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task2850]
+	{
+		:Tasktype	"Message"
+		:Message	"「わんわん！」"
+		:Character	14		//ピピ
+		:Voice	19	//	置換しました<<pipi_19>>
+		:Frame		0
+		:Name	8		//ピピ
+	}
+	[Task2860]
+	{
+		:Tasktype	"Message"
+		:Message	"「………」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮココ：1：5
+	[Task2870]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		0,4
+	}
+	[Task2880]
+	{
+		:Tasktype	"Message"
+		:Message	"「少ちゃん隊員、ピピ隊員、そして荷物運びのたけぴょん君、ほいじゃぁ出発！」"
+		:Character	6		//ココ
+		:Voice	500	//	置換しました<<ts05_co012>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task2890]
+	{
+		:Tasktype	"Message"
+		:Message	"そんな訳で、ココが先頭に立ち、俺達は、コスミッシャー・ヴァルの修理パーツ探しに出発した。"
+		:Frame		0
+	}
+	[Task2900]
+	{
+		:Tasktype	"Message"
+		:Message	"でも、なんでココが隊長なんだろう？　そんな疑問を抱きながら、俺はガラガラと台車を押した。"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧ倉庫（点灯）
+	[Task2910]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task2920]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task2930]
+	{
+		:Tasktype	"Sprite"
+		:Texture	53	//	置換しました<<bg32aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task2940]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,245,245,255
+		:Ambient	210,205,205,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ少年：１／２
+	[Task2950]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	20
+		[Character0]
+		{
+			:Name		"少年"
+			:Preset		13
+//★ＣＨ少年：1：8
+		:Animation		0,7
+			:Rot		0
+		}
+	//☆ＣＨココ：２／２
+		[Character1]
+		{
+			:Name		"ココ"
+			:Preset		10
+//★ＣＨココ：1：5
+		:Animation		0,4
+			:Rot		0
+		}
+	}
+//5pb.-フェードイン黒-
+	[Task2960]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+	[Task2970]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task2980]
+	{
+		:Tasktype	"Message"
+		:Message	"「こっちにありました」"
+		:Character	5		//少年
+		:Voice	12896	//	置換しました<<ts05_sh002>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task2990]
+	{
+		:Tasktype	"Message"
+		:Message	"「わんわん！」"
+		:Character	14		//ピピ
+		:Voice	4	//	置換しました<<pipi_04>>
+		:Frame		0
+		:Name	8		//ピピ
+	}
+//☆ＣＨ全消し
+	[Task3000]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task3010]
+	{
+		:Tasktype	"Message"
+		:Message	"倉庫に着いた俺達は、修理リストにあったパーツを探した。"
+		:Frame		0
+	}
+	[Task3020]
+	{
+		:Tasktype	"Message"
+		:Message	"中はモーターや、ライト、ケーブル等様々な部品やジャンクパーツで溢れていた。"
+		:Frame		0
+	}
+	[Task3030]
+	{
+		:Tasktype	"Message"
+		:Message	"幸い、修理で必要な新品のユニット類は、整理され番号管理されていたので探すのは比較的楽だった。"
+		:Frame		0
+	}
+	[Task3040]
+	{
+		:Tasktype	"Message"
+		:Message	"「ええと、ティエム‐ゼロ、ＴＭ‐０のユニットはっと、あった、これか」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task3050]
+	{
+		:Tasktype	"Message"
+		:Message	"「隊長、最後のパーツが見つかりました」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＣＨ少年：１／２
+	[Task3060]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	30
+		[Character0]
+		{
+			:Name		"少年"
+			:Preset		13
+//★ＣＨ少年：1：8
+		:Animation		0,7
+			:Rot		0
+		}
+	//☆ＣＨココ：２／２
+		[Character1]
+		{
+			:Name		"ココ"
+			:Preset		10
+//★ＣＨココ：2：1
+		:Animation		1,0
+			:Rot		0
+		}
+	}
+	[Task3070]
+	{
+		:Tasktype	"Message"
+		:Message	"「うむ、よくやったたけぴょん君」"
+		:Character	6		//ココ
+		:Voice	501	//	置換しました<<ts05_co013>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//★ＡＮ少年：1：1
+	[Task3080]
+	{
+		:Tasktype	"Message"
+		:Message	"「これで全部そろったの？」"
+		:Character	5		//少年
+		:Voice	12897	//	置換しました<<ts05_sh003>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task3090]
+	{
+		:Tasktype	"Message"
+		:Message	"俺はリストで確認する。"
+		:Frame		0
+	}
+	[Task3100]
+	{
+		:Tasktype	"Message"
+		:Message	"「これも、これも、これもと、ああ全部そろったみたいだな」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮココ：7：5
+	[Task3110]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		6,4
+	}
+	[Task3120]
+	{
+		:Tasktype	"Message"
+		:Message	"「またひとつ謎が解明され、ひとつの冒険が終わった、しかし……」"
+		:Character	6		//ココ
+		:Voice	502	//	置換しました<<ts05_co014>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task3130]
+	{
+		:Tasktype	"Message"
+		:Message	"修理パーツが全て集まったので、ココの冒険ごっこは締めに入ったようだ。"
+		:Frame		0
+	}
+
+//5pb.-デフォルト停止時間30f-
+	[Task3140]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+//		:Message	"「世界の謎が絶えるその日まで、我々の冒険は、ぼうけんは……おわらない……」"
+//		:Voice	<<TS05_CO015>>
+	[Task3150]
+	{
+		:Tasktype	"Message"
+		:Message	"「世界の謎が絶えるその日まで、我々の冒険は"
+		:Character	6		//ココ
+		:Voice	14451	//	置換しました<<ts05_co015a>>
+		:ModelName		"ココ"
+		:Frame		0
+		:ChangingPage	0
+		:KeyWait	0
+	}
+//☆ＡＮココ：1：5
+	[Task3160]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		0,4
+	}
+	[Task3170]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼうけんは……おわらない……」"
+		:Character	6		//ココ
+		:Voice	503	//	置換しました<<ts05_co015b>>
+		:ModelName		"ココ"
+		:Frame		0
+		:ChangingPage	1
+	}
+//台詞後半、ふらふらしておかしくなる、立ちくらみ的
+//☆ＣＨ全消し
+	[Task3180]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task3190]
+	{
+		:Tasktype	"Message"
+		:Message	"「わんわん！」"
+		:Character	14		//ピピ
+		:Voice	25	//	置換しました<<pipi_25>>
+		:Frame		0
+		:Name	8		//ピピ
+	}
+	[Task3200]
+	{
+		:Tasktype	"Message"
+		:Message	"不意に、ココの身体はふらふらと揺れる。"
+		:Frame		0
+	}
+//☆ＣＨココ：２／３
+	[Task3210]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"ココ"
+		:Preset		1
+//★ＣＨココ：4：9
+		:Animation		3,8
+		:Rot		0
+		:Fade		20
+	}
+	[Task3220]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は、慌ててココを支えた。"
+		:Frame		0
+	}
+	[Task3230]
+	{
+		:Tasktype	"Message"
+		:Message	"「ココ大丈夫か？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task3240]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん、ココちょこっと調子悪いかも……」"
+		:Character	6		//ココ
+		:Voice	504	//	置換しました<<ts05_co016>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task3250]
+	{
+		:Tasktype	"Message"
+		:Message	"俺はココのおでこに手を置いた。"
+		:Frame		0
+	}
+	[Task3260]
+	{
+		:Tasktype	"Message"
+		:Message	"少し熱っぽいような気がした。"
+		:Frame		0
+	}
+	[Task3270]
+	{
+		:Tasktype	"Message"
+		:Message	"「少年、ココを救護室に連れて行って、優に……多分制御室にいるから、優を呼んで診てもらってくれないか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//5pb.松--少年はココを支える感じで表示--
+//☆ＣＨ少年：１／２
+	[Task3280]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"少年"
+		:Preset		13
+//★ＣＨ少年：1：6
+		:Animation		0,5
+		:Rot		0
+		:Fade		20
+	}
+	[Task3290]
+	{
+		:Tasktype	"Message"
+		:Message	"「俺はパーツを運んで、修理してるから」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ少年：1：8
+	[Task3300]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"少年"
+		:Animation		0,7
+	}
+	[Task3310]
+	{
+		:Tasktype	"Message"
+		:Message	"「わかった任せて。それじゃココ行こう」"
+		:Character	5		//少年
+		:Voice	12898	//	置換しました<<ts05_sh004>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task3320]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん……」"
+		:Character	6		//ココ
+		:Voice	505	//	置換しました<<ts05_co017>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task3330]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task3340]
+	{
+		:Tasktype	"Message"
+		:Message	"ココは少年に連れられ、倉庫を出て行った。"
+		:Frame		0
+	}
+	[Task3350]
+	{
+		:Tasktype	"Message"
+		:Message	"多分疲れが出たんだと思うが……。"
+		:Frame		0
+	}
+	[Task3360]
+	{
+		:Tasktype	"Message"
+		:Message	"とにかく、ココも心配だが、一刻も早く厄介ごとを片付けて、ここから脱出しないとな。"
+		:Frame		0
+	}
+	[Task3370]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は、修理パーツを積んだ台車を押して、メンテナンスルームに向かった。"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧメンテナンスルーム（点灯）
+	[Task3380]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task3390]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task3400]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	47	//	置換しました<<bg29aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task3410]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//5pb.-06:コスミッシャー・ヴァル(宇宙クジラ）-
+	[Task3420]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		10	//	置換しました<<bgm06>>
+	}
+
+	[Task3430]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task3440]
+	{
+		:Tasktype	"Message"
+		:Message	"クジラがいた。"
+		:Frame		0
+	}
+	[Task3450]
+	{
+		:Tasktype	"Message"
+		:Message	"カタパルトの様な移動用レールの上に、クジラがいた。"
+		:Frame		0
+	}
+	[Task3460]
+	{
+		:Tasktype	"Message"
+		:Message	"これが最後の希望か……。"
+		:Frame		0
+	}
+	[Task3470]
+	{
+		:Tasktype	"Message"
+		:Message	"滑らかな流線型を持つ、クジラを模した潜水艇コスミッシャー・ヴァル。"
+		:Frame		0
+	}
+	[Task3480]
+	{
+		:Tasktype	"Message"
+		:Message	"スクリューは無く、給水口から取り入れた水をイオン化して、超伝導磁石での水流ジェットで推進する。"
+		:Frame		0
+	}
+	[Task3490]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は感慨深くクジラを眺め、そして辺りを見回した。"
+		:Frame		0
+	}
+	[Task3500]
+	{
+		:Tasktype	"Message"
+		:Message	"メンテナンスルームは、町工場以上に広く、ちょっとした格納庫ほどの広さがあった。"
+		:Frame		0
+	}
+	[Task3510]
+	{
+		:Tasktype	"Message"
+		:Message	"棚には、大型工具から、精密工具まで揃えられ、溶接用のガスやオイル、燃料の入ったドラム缶なども見える。"
+		:Frame		0
+	}
+	[Task3520]
+	{
+		:Tasktype	"Message"
+		:Message	"「さて、始めるか」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task3530]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は、最後の希望へと向かって台車を押した。"
+		:Frame		0
+	}
+//時間経過ワイプ
+	[Task3540]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task3550]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task3560]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	47	//	置換しました<<bg29aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task3570]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task3580]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task3590]
+	{
+		:Tasktype	"Message"
+		:Message	"「次は……外装７番パネルを開いて、Ｃ１０のユニットの交換、と……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task3600]
+	{
+		:Tasktype	"Message"
+		:Message	"内部のユニット交換を終えた俺は、次に外部からの修理に取り掛かろうとした。"
+		:Frame		0
+	}
+	[Task3610]
+	{
+		:Tasktype	"Message"
+		:Message	"しかし、分解整備中じゃなくてよかったな。"
+		:Frame		0
+	}
+	[Task3620]
+	{
+		:Tasktype	"Message"
+		:Message	"これくらいなら俺１人でも十分だ。"
+		:Frame		0
+	}
+	[Task3630]
+	{
+		:Tasktype	"Message"
+		:Message	"だけど、こんな時真っ先に来そうなつぐみは、今回は何故か姿を見せていない。"
+		:Frame		0
+	}
+	[Task3640]
+	{
+		:Tasktype	"Message"
+		:Message	"まあ、溶接作業とかは無いからいいんだけど、何処で何しているんだろう？"
+		:Frame		0
+	}
+//☆ＣＨ少年：２／３
+	[Task3650]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"少年"
+		:Preset		1
+//★ＣＨ少年：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task3660]
+	{
+		:Tasktype	"Message"
+		:Message	"「武、調子はどう？　手伝いに来たよ」"
+		:Character	5		//少年
+		:Voice	12899	//	置換しました<<ts05_sh005>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task3670]
+	{
+		:Tasktype	"Message"
+		:Message	"俺がつぐみの事を考えていた時、ココを救護室に連れて行った少年が戻ってきた。"
+		:Frame		0
+	}
+	[Task3680]
+	{
+		:Tasktype	"Message"
+		:Message	"「少年、ココの様子はどうだ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ少年：1：3
+	[Task3690]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"少年"
+		:Animation		0,2
+	}
+	[Task3700]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん、今は薬を飲んでベッドで休んでるよ。優に診てもらったら風邪かもしれないって」"
+		:Character	5		//少年
+		:Voice	12900	//	置換しました<<ts05_sh006>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task3710]
+	{
+		:Tasktype	"Message"
+		:Message	"「風邪か……？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task3720]
+	{
+		:Tasktype	"Message"
+		:Message	"「どうしたの武？　何か気になることでもあるの？」"
+		:Character	5		//少年
+		:Voice	12901	//	置換しました<<ts05_sh007>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task3730]
+	{
+		:Tasktype	"Message"
+		:Message	"「いや、なんでもない」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task3740]
+	{
+		:Tasktype	"Message"
+		:Message	"まぁ、救護室には医療スキャンもあるし、そこで診てもらったんなら風邪なんだろう。"
+		:Frame		0
+	}
+//☆ＡＮ少年：1：1
+	[Task3750]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"少年"
+		:Animation		0,0
+	}
+	[Task3760]
+	{
+		:Tasktype	"Message"
+		:Message	"「それで、ぼくに手伝える事ってある？」"
+		:Character	5		//少年
+		:Voice	12902	//	置換しました<<ts05_sh008>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task3770]
+	{
+		:Tasktype	"Message"
+		:Message	"「それじゃ、今から外装パネルを開くから手伝ってくれないか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task3780]
+	{
+		:Tasktype	"Message"
+		:Message	"「オッケー」"
+		:Character	5		//少年
+		:Voice	12903	//	置換しました<<ts05_sh009>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task3790]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は電動ドライバーで、パネルの固定を外した。"
+		:Frame		0
+	}
+	[Task3800]
+	{
+		:Tasktype	"Message"
+		:Message	"「よし、開くぞ」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ少年：1：8
+	[Task3810]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"少年"
+		:Animation		0,7
+	}
+	[Task3820]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は、パネルを持ち上げた、けっこう重いぞ。"
+		:Frame		0
+	}
+	[Task3830]
+	{
+		:Tasktype	"Message"
+		:Message	"「少年、俺が持ち上げてるから、中の棒をあげて、パネルを固定させてくれ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task3840]
+	{
+		:Tasktype	"Message"
+		:Message	"「わかった」"
+		:Character	5		//少年
+		:Voice	12904	//	置換しました<<ts05_sh010>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task3850]
+	{
+		:Tasktype	"Message"
+		:Message	"「ふう。よし固定したぞ、次は……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task3860]
+	{
+		:Tasktype	"Message"
+		:Message	"俺と少年は協力して、ユニットを交換していく。"
+		:Frame		0
+	}
+	[Task3870]
+	{
+		:Tasktype	"Message"
+		:Message	"そしてついに……。"
+		:Frame		0
+	}
+	[Task3880]
+	{
+		:Tasktype	"Message"
+		:Message	"「さて、このケーブルをつないで……よし、パネルを閉めるぞ」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＳＥ思いパネルが閉まる音
+	[Task3890]
+	{
+		:Tasktype	"SePlay"
+		:SE			10	//	置換しました<<se00_07>>
+		:Wait		1
+	}
+
+	[Task3900]
+	{
+		:Tasktype	"Message"
+		:Message	"バタンと大きな音をたてて、パネルが閉まる。"
+		:Frame		0
+	}
+	[Task3910]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、俺はネジを締め、パネルを固定した。"
+		:Frame		0
+	}
+	[Task3920]
+	{
+		:Tasktype	"Message"
+		:Message	"「よし、修理完了だ！」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ少年：1：2
+	[Task3930]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"少年"
+		:Animation		0,0
+	}
+	[Task3940]
+	{
+		:Tasktype	"Message"
+		:Message	"「やったね武！」"
+		:Character	5		//少年
+		:Voice	12905	//	置換しました<<ts05_sh011>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task3950]
+	{
+		:Tasktype	"Message"
+		:Message	"「イエーーーイ！」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task3960]
+	{
+		:Tasktype	"Message"
+		:Message	"「イエーーーイ！」"
+		:Character	5		//少年
+		:Voice	12906	//	置換しました<<ts05_sh012>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+//☆ＳＥパンと手を叩く音
+	[Task3970]
+	{
+		:Tasktype	"SePlay"
+		:SE			113	//	置換しました<<se05_09>>
+		:Wait		1
+	}
+
+	[Task3980]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は、手のひらを上げ、少年とハイタッチした。"
+		:Frame		0
+	}
+	[Task3990]
+	{
+		:Tasktype	"Message"
+		:Message	"「さて、後はと……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task4000]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は、修理マニュアルから、起動マニュアルに目を向ける。"
+		:Frame		0
+	}
+	[Task4010]
+	{
+		:Tasktype	"Message"
+		:Message	"「えーと、始業点検、艦艇の外部目視チェック？　この辺は、めんどくさいしパスしてもよさそうだな……」"
+		:Name	1		//武
+		:Frame		0
+	}
+//内部操縦席はほとんど使わないの背景作成なしで。
+//背景そのままで、内部に乗り込んだことにする。
+//☆ＣＨ全消し
+	[Task4020]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete			 1 
+		:Fade			 30 
+	}
+	[Task4030]
+	{
+		:Tasktype	"Message"
+		:Message	"俺はコックピットに乗り込み、再び起動マニュアルに目を向けた。"
+		:Frame		0
+	}
+	[Task4040]
+	{
+		:Tasktype	"Message"
+		:Message	"「なになに……各種スイッチ、およびブレーカーをチェックして……って、あれ？　モニターが真っ暗じゃん」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task4050]
+	{
+		:Tasktype	"Message"
+		:Message	"なにげに、バッテリー残量のアナログメーターを見る。"
+		:Frame		0
+	}
+	[Task4060]
+	{
+		:Tasktype	"Message"
+		:Message	"「バッテリー残量ゼロ……？　えーと、となると充電だよな。充電のやり方は……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task4070]
+	{
+		:Tasktype	"Message"
+		:Message	"その後、起動マニュアルとにらめっこしながら、どうにかバッテリー充電のやり方を見つける。"
+		:Frame		0
+	}
+	[Task4080]
+	{
+		:Tasktype	"Message"
+		:Message	"外部の充電パネルを開け、太い電源プラグケーブルを少年と２人で抱え、どうにか差し込んだ。"
+		:Frame		0
+	}
+	[Task4090]
+	{
+		:Tasktype	"Message"
+		:Message	"「ポチッとなっと」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task4100]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は充電装置のスイッチを入れた。"
+		:Frame		0
+	}
+	[Task4110]
+	{
+		:Tasktype	"Message"
+		:Message	"充電中のランプが灯る。"
+		:Frame		0
+	}
+	[Task4120]
+	{
+		:Tasktype	"Message"
+		:Message	"「ふう……あとは、バッテリーが満タンになるのを待つだけか……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task4130]
+	{
+		:Tasktype	"Message"
+		:Message	"過充電を防ぐ為のものか、充電装置には安全装置があり、バッテリー充電は途中で止める事ができなかった。"
+		:Frame		0
+	}
+	[Task4140]
+	{
+		:Tasktype	"Message"
+		:Message	"マニュアルの充電項目に、充電終了まで、約２４時間かかると書いてあった。"
+		:Frame		0
+	}
+	[Task4150]
+	{
+		:Tasktype	"ClockWindow"
+		:Time		12,17
+		:Frame		0
+	}
+	[Task4160]
+	{
+		:Tasktype	"Message"
+		:Message	"単なる時計と化している携帯を見ると、そこには『１２:１７』と表示されている。"
+		:Frame		0
+	}
+	[Task4170]
+	{
+		:Tasktype	"Message"
+		:Message	"充電終了まで残り、２４時間……崩壊のタイムリミットは残り約４２時間４３分……。"
+		:Frame		0
+	}
+	[Task4180]
+	{
+		:Tasktype	"Message"
+		:Message	"時間差は１８時間４３分か……。"
+		:Frame		0
+	}
+	[Task4190]
+	{
+		:Tasktype	"Message"
+		:Message	"……なんとか間に合いそうだ、な……。"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧ関係者通路（点灯）
+	[Task4200]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-デフォルト停止時間30f-
+	[Task4210]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+//5pb.-フェードアウト黒-
+	[Task4220]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task4230]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitSound"
+	}
+	[Task4240]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	58	//	置換しました<<bg35aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task4250]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,193,188,255
+		:Ambient	215,163,158,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task4260]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task4270]
+	{
+		:Tasktype	"Message"
+		:Message	"俺と少年は、修理が終わった事を優に伝えに向かった。"
+		:Frame		0
+	}
+//※☆空ルート
+	[Task4280]
+	{
+		:Tasktype	"Message"
+		:Message	"そういえば優は、空のバックアップの方法を見つけたんだろうか？"
+		:Frame		0
+	}
+//※☆以下つぐみルートと共通
+//☆ＢＧ加減圧室の中(消灯）
+//5pb.松--制御室の間違い。しかも消灯ではない。--
+	[Task4290]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task4300]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	16	//	置換しました<<bg10aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task4310]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	175,175,235,255
+		:Ambient	180,170,210,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//5pb.-18:クラマオク（スラップスティック）-
+	[Task4320]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		34	//	置換しました<<bgm18>>
+	}
+
+	[Task4330]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task4340]
+	{
+		:Tasktype	"Message"
+		:Message	"「ムッキーーーーーッ！！」"
+		:Character	4		//優
+		:Voice	5159	//	置換しました<<ts05_yu028>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4350]
+	{
+		:Tasktype	"Message"
+		:Message	"制御室に入ると、優の奇声が響いていた。"
+		:Frame		0
+	}
+//☆ＣＨ優私服：２／３
+	[Task4360]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：7：4
+		:Animation		6,3
+		:Rot		0
+		:Fade		20
+	}
+	[Task4370]
+	{
+		:Tasktype	"Message"
+		:Message	"「まったく、まったく、まったくもーーーっ」"
+		:Character	4		//優
+		:Voice	5160	//	置換しました<<ts05_yu029>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4380]
+	{
+		:Tasktype	"Message"
+		:Message	"「何で、いっつも、いっつもコレが出る訳？」"
+		:Character	4		//優
+		:Voice	5161	//	置換しました<<ts05_yu030>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4390]
+	{
+		:Tasktype	"Message"
+		:Message	"「該当する項目が見つかりませんでしたって！　別のワードをお試しくださいって！」"
+		:Character	4		//優
+		:Voice	5162	//	置換しました<<ts05_yu031>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4400]
+	{
+		:Tasktype	"Message"
+		:Message	"「本当に画一的な事ばっかり、同じ事しか言えんのかい！　アンタはオウムか、お役所か！」"
+		:Character	4		//優
+		:Voice	5163	//	置換しました<<ts05_yu032>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//画一的＝かくいつてき
+//☆ＡＮ優私服：3：5
+	[Task4410]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,4
+	}
+	[Task4420]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう、上等じゃない、こうなったら、視点を変えて、あさっての方向から攻めてやるんだからね！」"
+		:Character	4		//優
+		:Voice	5164	//	置換しました<<ts05_yu033>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4430]
+	{
+		:Tasktype	"Message"
+		:Message	"「……おい優、ちょっといいか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task4440]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は端末に向かって暴言を吐く優に、恐る恐る声をかけた。"
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：4
+	[Task4450]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,3
+	}
+	[Task4460]
+	{
+		:Tasktype	"Message"
+		:Message	"「うるさいわね！　なによ！」"
+		:Character	4		//優
+		:Voice	5165	//	置換しました<<ts05_yu034>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：6
+	[Task4470]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,5
+	}
+	[Task4480]
+	{
+		:Tasktype	"Message"
+		:Message	"「……って、倉成じゃない？」"
+		:Character	4		//優
+		:Voice	5166	//	置換しました<<ts05_yu035>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4490]
+	{
+		:Tasktype	"Message"
+		:Message	"「とりあえず、こっちの作業……コスミッシャー・ヴァルの修理は終わったぞ」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：1
+	[Task4500]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,0
+	}
+	[Task4510]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう……よかった……これでやっと脱出できるのね」"
+		:Character	4		//優
+		:Voice	5167	//	置換しました<<ts05_yu036>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4520]
+	{
+		:Tasktype	"Message"
+		:Message	"「バッテリー切れだったんで、今すぐってわけにはいかないが……。それでも、明日の今頃には脱出できそうだ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task4530]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうなんだ、でもタイムリミットには間に合った訳ね」"
+		:Character	4		//優
+		:Voice	5168	//	置換しました<<ts05_yu037>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：8：2
+	[Task4540]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		7,0
+	}
+	[Task4550]
+	{
+		:Tasktype	"Message"
+		:Message	"「倉成、それに少年も。ほんとうに、潜水艇の修理お疲れ様」"
+		:Character	4		//優
+		:Voice	5169	//	置換しました<<ts05_yu038>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4560]
+	{
+		:Tasktype	"Message"
+		:Message	"優は優しい笑顔で、俺の後ろにいる少年を覗き込むようにそう言った。"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task4570]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨ少年：２／２
+	[Task4580]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	30
+		[Character0]
+		{
+			:Name		"少年"
+			:Preset		10
+//★ＣＨ少年：1：1
+		:Animation		0,0
+			:Rot		0
+		}
+	//☆ＣＨ優私服：１／２
+		[Character1]
+		{
+			:Name		"優私服"
+			:Preset		13
+//★ＣＨ優私服：8：2
+		:Animation		7,0
+			:Rot		0
+		}
+	}
+	[Task4590]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん……」"
+		:Character	5		//少年
+		:Voice	12907	//	置換しました<<ts05_sh013>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task4600]
+	{
+		:Tasktype	"Message"
+		:Message	"少年は、少し照れたように返事を返した。"
+		:Frame		0
+	}
+	[Task4610]
+	{
+		:Tasktype	"Message"
+		:Message	"「ホント少年はよくやってくれたよ。あと、ココとピピもがんばってくれてたし……って、そうだ、ココの具合はどうなんだ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：3
+	[Task4620]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,2
+	}
+	[Task4630]
+	{
+		:Tasktype	"Message"
+		:Message	"「少し熱があるみたいだったから、薬をあげて寝かしたけど……風邪かしらね？」"
+		:Character	4		//優
+		:Voice	5170	//	置換しました<<ts05_yu039>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4640]
+	{
+		:Tasktype	"Message"
+		:Message	"「風邪かしらね？って、ちゃんと診察しなかったのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task4650]
+	{
+		:Tasktype	"Message"
+		:Message	"「今、レミ……ここのメインコンピューターって、まだメンテナンス中なのよね、だから医療スキャンをしても診断できないの、診断するのはレミだから」"
+		:Character	4		//優
+		:Voice	5171	//	置換しました<<ts05_yu040>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4660]
+	{
+		:Tasktype	"Message"
+		:Message	"「それって、いつ終わるんだ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：1
+	[Task4670]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task4680]
+	{
+		:Tasktype	"Message"
+		:Message	"「ちょっと待って、えーと今８５％だから、あと一時間くらいじゃないかしら」"
+		:Character	4		//優
+		:Voice	5172	//	置換しました<<ts05_yu041>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4690]
+	{
+		:Tasktype	"Message"
+		:Message	"優は、サブモニターに表示されていた、メンテナンス中と書かれた下のカウンターを見て、そう言った。"
+		:Frame		0
+	}
+	[Task4700]
+	{
+		:Tasktype	"Message"
+		:Message	"「まぁ、ただの風邪ならいいんだけどな」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task4710]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうね、ここの医療システム、ＬＥＭ−ＡＲＶにも限界があるし……」"
+		:Character	4		//優
+		:Voice	5173	//	置換しました<<ts05_yu042>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//レム、エーアール、ブイ
+//※☆空ルート
+//☆ＡＮ優私服：8：3
+	[Task4720]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		7,2
+	}
+	[Task4730]
+	{
+		:Tasktype	"Message"
+		:Message	"「あーーーくわばら、くわばら」"
+		:Character	4		//優
+		:Voice	5174	//	置換しました<<ts05_yu043>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4740]
+	{
+		:Tasktype	"Message"
+		:Message	"「どうしたんだ？　いきなり謎の呪文なんて唱えて」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：8：1
+	[Task4750]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		7,0
+	}
+	[Task4760]
+	{
+		:Tasktype	"Message"
+		:Message	"「縁起直しよ、縁起直し。本当は雷を避ける言葉だけど、怖い時に使うのよ」"
+		:Character	4		//優
+		:Voice	5175	//	置換しました<<ts05_yu044>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ少年：1：8
+	[Task4770]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"少年"
+		:Animation		0,7
+	}
+	[Task4780]
+	{
+		:Tasktype	"Message"
+		:Message	"「くわばら、くわばら」"
+		:Character	5		//少年
+		:Voice	12908	//	置換しました<<ts05_sh014>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task4790]
+	{
+		:Tasktype	"Message"
+		:Message	"少年は優の言葉を真似、謎の呪文を唱えた。"
+		:Frame		0
+	}
+	[Task4800]
+	{
+		:Tasktype	"Message"
+		:Message	"「じゃ、俺も言っとくか、くわばら、くわばら」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task4810]
+	{
+		:Tasktype	"Message"
+		:Message	"「他にも、夢になれ、夢になれって言うとか、くそ喰らえってのもあるわよ」"
+		:Character	4		//優
+		:Voice	5176	//	置換しました<<ts05_yu045>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4820]
+	{
+		:Tasktype	"Message"
+		:Message	"「そっちの方が、今の状況にピッタリだな」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：8：2
+	[Task4830]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		7,0
+	}
+	[Task4840]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうね」"
+		:Character	4		//優
+		:Voice	5177	//	置換しました<<ts05_yu046>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task4850]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨ優私服：２／３
+	[Task4860]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：7：7
+		:Animation		6,6
+		:Rot		0
+		:Fade		20
+	}
+	[Task4870]
+	{
+		:Tasktype	"Message"
+		:Message	"「はぁ……」"
+		:Character	4		//優
+		:Voice	5178	//	置換しました<<ts05_yu047>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4880]
+	{
+		:Tasktype	"Message"
+		:Message	"「はぁ……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task4890]
+	{
+		:Tasktype	"Message"
+		:Message	"お互い同時に溜め息をつき、そして困ったように笑った。"
+		:Frame		0
+	}
+	[Task4900]
+	{
+		:Tasktype	"Message"
+		:Message	"「それで、空のバックアップの方法って見つかったのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：7
+	[Task4910]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,6
+	}
+	[Task4920]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうそう、それよ、それが変なのよ」"
+		:Character	4		//優
+		:Voice	5179	//	置換しました<<ts05_yu048>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task4930]
+	{
+		:Tasktype	"Message"
+		:Message	"「変って？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：5
+	[Task4940]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,4
+	}
+	[Task4950]
+	{
+		:Tasktype	"Message"
+		:Message	"「空の居る場所……コンピュータールームなんだけど……」"
+		:Character	4		//優
+		:Voice	5180	//	置換しました<<ts05_yu049>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+
+//5pb.-デフォルト停止時間30f-
+	[Task4960]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+
+	[Task4970]
+	{
+		:Tasktype	"Message"
+//☆誤字修正
+//		:Message	"「ＭＡＰを調べて判ったんだけど、ここのの施設内には、コンピュータールームって、何処にも存在しないのよね」"
+		:Message	"「ＭＡＰを調べて判ったんだけど、ここの施設内には、コンピュータールームって、何処にも存在しないのよね」"
+		:Character	4		//優
+		:Voice	5181	//	置換しました<<ts05_yu050>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//コンピュータールームはヒンメル内にあるのでＭＡＰには載っていない
+	[Task4980]
+	{
+		:Tasktype	"Message"
+		:Message	"「何だって？　そりゃどういう事だ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：7
+	[Task4990]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,6
+	}
+	[Task5000]
+	{
+		:Tasktype	"Message"
+		:Message	"「さあ？　私にも判らないわ」"
+		:Character	4		//優
+		:Voice	5182	//	置換しました<<ts05_yu051>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+
+//5pb.-15:ダス・アプスズーヘン（探索・スキャン）-
+	[Task5010]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		28	//	置換しました<<bgm15>>
+	}
+
+	[Task5020]
+	{
+		:Tasktype	"Message"
+		:Message	"「空の事、コンピュータールームの事を調べようとすると、該当する項目が見つかりませんでしたって出ちゃうのよ」"
+		:Character	4		//優
+		:Voice	5183	//	置換しました<<ts05_yu052>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5030]
+	{
+		:Tasktype	"Message"
+		:Message	"「状況がわからないって事か？　それじゃ、対策の立てようがないじゃないか」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task5040]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうだ、直接空に聞くってのはどうだ？　俺達よりはレミュウに詳しいんだし、一緒に考えれば何か方法も見つかるんじゃないか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：3
+	[Task5050]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,2
+	}
+	[Task5060]
+	{
+		:Tasktype	"Message"
+		:Message	"「さすがにそれは無理かも、簡単に調べられないって事は、簡単には教えないって事、きっとトップシークレットの情報なのよ」"
+		:Character	4		//優
+		:Voice	5184	//	置換しました<<ts05_yu053>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5070]
+	{
+		:Tasktype	"Message"
+		:Message	"「トップシークレット？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task5080]
+	{
+		:Tasktype	"Message"
+//☆ボイスにあわせて修正
+//		:Message	"「そう、トップシークレット？」"
+		:Message	"「そう、トップシークレット」"
+		:Character	4		//優
+		:Voice	5185	//	置換しました<<ts05_yu054>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：1
+	[Task5090]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task5100]
+	{
+		:Tasktype	"Message"
+		:Message	"「多分、空って最新式でしょ。だからおいそれと公開できない機密のテクノロジーなんてものが含まれているのよ」"
+		:Character	4		//優
+		:Voice	5186	//	置換しました<<ts05_yu055>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5110]
+	{
+		:Tasktype	"Message"
+		:Message	"「だから、たとえ空が教える気になったとしても、禁則事項にひっかかって、空がフリーズしちゃう可能性もあるわ」"
+		:Character	4		//優
+		:Voice	5187	//	置換しました<<ts05_yu056>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5120]
+	{
+		:Tasktype	"Message"
+		:Message	"「禁則事項？　フリーズ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task5130]
+	{
+		:Tasktype	"Message"
+		:Message	"「やっちゃいけない規則って事、もし規則を破ろうとしたら、空より上の権限を持つレミが停止プログラムをかけて、空を強制的に止めちゃうってわけね」"
+		:Character	4		//優
+		:Voice	5188	//	置換しました<<ts05_yu057>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5140]
+	{
+		:Tasktype	"Message"
+		:Message	"「……てことは、空を助ける方法って無いのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：5
+	[Task5150]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,4
+	}
+	[Task5160]
+	{
+		:Tasktype	"Message"
+		:Message	"「ひょっとしたらだけど、空は助ける必要が無い……っていうか、もう助かっているって可能性も出てきたわ」"
+		:Character	4		//優
+		:Voice	5189	//	置換しました<<ts05_yu058>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5170]
+	{
+		:Tasktype	"Message"
+		:Message	"「……えっ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task5180]
+	{
+		:Tasktype	"Message"
+		:Message	"「ＭＡＰにコンピュータールームが載っていないって事は、空はここに居ないって事にならないかしら？」"
+		:Character	4		//優
+		:Voice	5190	//	置換しました<<ts05_yu059>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5190]
+	{
+		:Tasktype	"Message"
+		:Message	"「いや、それは無いんじゃないか？　だって空は俺達と一緒にいて会話だってしてるんだぜ」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：1
+	[Task5200]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,0
+	}
+	[Task5210]
+	{
+		:Tasktype	"Message"
+//☆ボイスにあわせて修正
+//		:Message	"「それは、外部センサーやシステムが繋がっているからで…………ようは、目や耳や口を含めた身体はこの施設の中にあるけど、頭はここには無いって事よ」"
+		:Message	"「それは、外部センサーやシステムが繋がっているからで…………ようは、目や耳や口を含めた身体はこの施設の中にあるけど、頭はここに無いって事よ」"
+		:Character	4		//優
+		:Voice	5191	//	置換しました<<ts05_yu060>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5220]
+	{
+		:Tasktype	"Message"
+		:Message	"「えええっ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task5230]
+	{
+		:Tasktype	"Message"
+		:Message	"空の身体は此処にあって頭が此処に無い？"
+		:Frame		0
+	}
+	[Task5240]
+	{
+		:Tasktype	"Message"
+		:Message	"俺の頭に、首から上が無い空のイメージが出現しそうになる。"
+		:Frame		0
+	}
+	[Task5250]
+	{
+		:Tasktype	"Message"
+		:Message	"ぶんぶんぶん、俺はそのイメージを描く前に追い払う。"
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：7
+	[Task5260]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,6
+	}
+	[Task5270]
+	{
+		:Tasktype	"Message"
+		:Message	"「何へんな想像してんのよ、空の本体、コンピューターは別の場所にあるかも知れないって言っているのよ」"
+		:Character	4		//優
+		:Voice	5192	//	置換しました<<ts05_yu061>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5280]
+	{
+		:Tasktype	"Message"
+		:Message	"「なんだそうか……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task5290]
+	{
+		:Tasktype	"Message"
+		:Message	"う〜む。優のやつ、よく俺の想像が判ったな。"
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：1
+	[Task5300]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,0
+	}
+	[Task5310]
+	{
+		:Tasktype	"Message"
+		:Message	"「コンピューターは別の場所……海上のインゼル・ヌルにある可能性が高いわね」"
+		:Character	4		//優
+		:Voice	5193	//	置換しました<<ts05_yu062>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5320]
+	{
+		:Tasktype	"Message"
+		:Message	"「え？　それじゃあ、海上と回線が繋がってるって言うのか？　空は海上と連絡は取れないって言ってるんだぜ、それこそ変じゃないか」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：5
+	[Task5330]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,4
+	}
+	[Task5340]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうよね……でも、空がそれを自覚してない場合も考えられるわ」"
+		:Character	4		//優
+		:Voice	5194	//	置換しました<<ts05_yu063>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//5pb.松--ボイス分割--
+//:Message	"「ま、人間だって、本当の自分自身といえる心や意識が何処にあるかなんて、アリストテレスのイデア論、プリグラムのホログラフィック・モデルとか色々な考えが出てくるくらいだから、自覚なんてないでしょう」"
+//:Voice	<<TS05_YU064 >>
+//☆ＡＮ優私服：1：1
+	[Task5350]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task5360]
+	{
+		:Tasktype	"Message"
+		:Message	"「ま、人間だって、本当の自分自身といえる心や意識が何処にあるかなんて、アリストテレスのイデア論、プリグラムのホログラフィック・モデルとか色々な考えが出てくるくらいだから」"
+		:Character	4		//優
+		:Voice	4808	//	置換しました<<ts05_yu064a>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5370]
+	{
+		:Tasktype	"Message"
+		:Message	"「自覚なんてないでしょう」"
+		:Character	4		//優
+		:Voice	4810	//	置換しました<<ts05_yu064b>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5380]
+	{
+		:Tasktype	"Message"
+		:Message	"空のいる場所……それは何処にあるのだろう？"
+		:Frame		0
+	}
+//回想色あせた感じ加工
+//☆ＢＧ魚の牧場全体（点灯）
+	[Task5390]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task5400]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task5410]
+	{
+		:Tasktype		"Sprite"
+		:Texture		117	//	置換しました<<bg_white>>
+		:Position		640,360
+		:Priority		3
+		:Rule			8
+		:FadePosition 	30
+		:FadeIn			0
+		:FadeWait		0
+	}
+	[Task5420]
+	{
+		:Tasktype	"Sprite"
+		:Texture	27	//	置換しました<<bg18aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task5430]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	165,165,190,255
+		:Ambient	160,150,165,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ空：２／３
+	[Task5440]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"空"
+		:Preset		1
+//★ＣＨ空：1：3
+		:Animation		0,0
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン白-
+	[Task5450]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	0
+	}
+	[Task5460]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task5470]
+	{
+		:Tasktype	"Message"
+		:Message	"「誰かに『見』られることによって、初めてそこに『存在』しているんだなって……」"
+		:Character	3		//空
+		:Voice	14968	//	置換しました<<ts05_so000e>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+//音声加工回想
+	[Task5480]
+	{
+		:Tasktype	"Message"
+		:Message	"「誰も『見』ていなければ、私はそこに『存在』していないんだなって……」"
+		:Character	3		//空
+		:Voice	14969	//	置換しました<<ts05_so001e>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+//音声加工回想
+//☆ＡＮ空：1：8
+	[Task5490]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,7
+	}
+	[Task5500]
+	{
+		:Tasktype	"Message"
+		:Message	"「私の『存在』は、倉成さんが感じている私の『存在』は、ミラージュで作られた視覚情報です」"
+		:Character	3		//空
+		:Voice	14970	//	置換しました<<ts05_so002e>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+//音声加工回想
+//空「私は、強化現実で作られた、データ世界と、現実世界の狭間に『存在』しているのです」
+	[Task5510]
+	{
+		:Tasktype	"Message"
+//		:Message	"「私は、拡張現実（ルビ“ＡＲ”）で作られた、データ世界と、現実世界の狭間に『存在』しているのです」"
+		:Message	"「私は、拡張[Ａ]現[Ｒ]実で作られた、データ世界と、現実世界の狭間に¥n『存在』しているのです」"
+		:Character	3		//空
+		:Voice	14971	//	置換しました<<ts05_so003e>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+//ボイスは“かくちょうげんじつ”で
+//音声加工回想
+//☆ＡＮ空：1：3
+	[Task5520]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task5530]
+	{
+		:Tasktype	"Message"
+		:Message	"「その『存在』さえ、幻影なのかも知れませんが……」"
+		:Character	3		//空
+		:Voice	14972	//	置換しました<<ts05_so004e>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+//音声加工回想
+//☆収録時、以下２ワードカット。
+//	[Task5540]
+//	{
+//		:Tasktype	"Message"
+//		:Message	"「縦、横、高さ、時間の広がりを持つ４次元に生きる人間と、データ世界で生きる私とでは、次元の違う世界。決して交わらない平行な世界にそれぞれの存在があるからです」"
+//		:Character	3		//空
+//		:Voice	<<TS05_SO005 >>
+//		:Frame		0
+//	}
+//音声加工回想
+//	[Task5550]
+//	{
+//		:Tasktype	"Message"
+//		:Message	"「薄い水の膜のような決して交わらない、認識できない境界、Ｄブレーンで隔たれた、電脳空間というブレーンワールドに……」"
+//		:Character	3		//空
+//		:Voice	<<TS05_SO006 >>
+//		:Frame		0
+//	}
+//音声加工回想
+//回想終了
+//☆ＢＧ加減圧室の中(消灯）
+	[Task5560]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト白-
+	[Task5570]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	1
+	}
+	[Task5580]
+	{
+		:Tasktype	"Sprite"
+		:Texture	16	//	置換しました<<bg10aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task5590]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	175,175,235,255
+		:Ambient	180,170,210,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ優私服：２／３
+	[Task5600]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン白-
+	[Task5610]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			255,255,255,255	//White
+		:SpriteDelete	0
+	}
+	[Task5620]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task5630]
+	{
+		:Tasktype	"Message"
+		:Message	"空のいる場所……。"
+		:Frame		0
+	}
+	[Task5640]
+	{
+		:Tasktype	"Message"
+		:Message	"現実世界の狭間……。"
+		:Frame		0
+	}
+	[Task5650]
+	{
+		:Tasktype	"Message"
+		:Message	"電脳空間……ブレーンワールド……。"
+		:Frame		0
+	}
+	[Task5660]
+	{
+		:Tasktype	"Message"
+		:Message	"それは何処にあるのだろうか……。"
+		:Frame		0
+	}
+	[Task5670]
+	{
+		:Tasktype	"Message"
+		:Message	"「ブレーンワールド…か………」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：2：6
+	[Task5680]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		1,5
+	}
+	[Task5690]
+	{
+		:Tasktype	"Message"
+		:Message	"「へー、倉成の口からブレーンワールドって言葉が出てくるなんて驚きだわ」"
+		:Character	4		//優
+		:Voice	5196	//	置換しました<<ts05_yu065>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5700]
+	{
+		:Tasktype	"Message"
+		:Message	"「詳しい意味は知らないが……空が前にそんなことを言っていた」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task5710]
+	{
+		:Tasktype	"Message"
+		:Message	"「何なんだ……その、ブレーンワールドってのは」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：1
+	[Task5720]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task5730]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうね……説明すると、超ヒモ理論を矛盾無く成立するには、１０次元、１１次元の時空が必要なわけよ」"
+		:Character	4		//優
+		:Voice	5197	//	置換しました<<ts05_yu066>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5740]
+	{
+		:Tasktype	"Message"
+		:Message	"「でも人間のようなマクロ生物が認識できるのは、縦、横、高さ、時間の広がりを持つ４次元時空まで」"
+		:Character	4		//優
+		:Voice	5198	//	置換しました<<ts05_yu067>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5750]
+	{
+		:Tasktype	"Message"
+		:Message	"「認識できないけど、あると仮定すると、重力子や、クオークなんか……」"
+		:Character	4		//優
+		:Voice	5199	//	置換しました<<ts05_yu068>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：5
+	[Task5760]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,4
+	}
+	[Task5770]
+	{
+		:Tasktype	"Message"
+		:Message	"「って、倉成、何、バカみたいに口をあんぐり開けてんのよ」"
+		:Character	4		//優
+		:Voice	5200	//	置換しました<<ts05_yu069>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5780]
+	{
+		:Tasktype	"Message"
+		:Message	"「すまん、聞いといて悪いが、多分、聞いても混乱するだけだからいいや……」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：7
+	[Task5790]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,6
+	}
+	[Task5800]
+	{
+		:Tasktype	"Message"
+		:Message	"「う〜ん、それなら、この世界は高次元空間から見ると無数にあるブレーン、膜の一枚に見えるって事よ」"
+		:Character	4		//優
+		:Voice	5201	//	置換しました<<ts05_yu070>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：1
+	[Task5810]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,0
+	}
+	[Task5820]
+	{
+		:Tasktype	"Message"
+		:Message	"「だからこの膜世界とは別の膜世界が存在する、これがブレーンワールドね」"
+		:Character	4		//優
+		:Voice	5202	//	置換しました<<ts05_yu071>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5830]
+	{
+		:Tasktype	"Message"
+		:Message	"「それってパラレルワールドの事か」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task5840]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう考えても良いけど、パラレルワールドって言ったら……」"
+		:Character	4		//優
+		:Voice	5203	//	置換しました<<ts05_yu072>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：1
+	[Task5850]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task5860]
+	{
+		:Tasktype	"Message"
+		:Message	"「他にも観測って言うか、量子学的な選択肢の可能性だけ宇宙が枝分かれしていく多世界解釈とか」"
+		:Character	4		//優
+		:Voice	5204	//	置換しました<<ts05_yu073>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5870]
+	{
+		:Tasktype	"Message"
+		:Message	"「インフレーション宇宙の無量宇宙とか、パラレルワールド設定はいろいろあるけどね」"
+		:Character	4		//優
+		:Voice	5205	//	置換しました<<ts05_yu074>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5880]
+	{
+		:Tasktype	"Message"
+		:Message	"設定って……呆れる俺をよそに、優は話を続けた。"
+		:Frame		0
+	}
+	[Task5890]
+	{
+		:Tasktype	"Message"
+		:Message	"「多分、空は自分のいる電脳空間を、ブレーンワールドって言い換えて、人間には認識出来ない世界に自分はいるって言いたかったんじゃないのかな」"
+		:Character	4		//優
+		:Voice	5206	//	置換しました<<ts05_yu075>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5900]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう言えば空の奴……たしかその時、俺の事ヒモとかって言ってたな……」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：5
+	[Task5910]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,4
+	}
+	[Task5920]
+	{
+		:Tasktype	"Message"
+		:Message	"「へぇ〜あんた空に金銭とか貢がせてるんだ？」"
+		:Character	4		//優
+		:Voice	5207	//	置換しました<<ts05_yu076>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5930]
+	{
+		:Tasktype	"Message"
+		:Message	"「なんでだよ！！」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：1
+	[Task5940]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,0
+	}
+	[Task5950]
+	{
+		:Tasktype	"Message"
+		:Message	"「冗談よ、だけどブレーンワールドって、この世界の現象で、他世界との干渉、繋がりが無ければ説明できない事を証明する為に誕生した理論よ」"
+		:Character	4		//優
+		:Voice	5208	//	置換しました<<ts05_yu077>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5960]
+	{
+		:Tasktype	"Message"
+		:Message	"「他世界との干渉、繋がり、それを空はヒモって例えたのよ」"
+		:Character	4		//優
+		:Voice	5209	//	置換しました<<ts05_yu078>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task5970]
+	{
+		:Tasktype	"Message"
+		:Message	"「確かに、俺たちみんなの間には、見えないけど絆ってヒモには結ばれてるものな」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：4
+	[Task5980]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,3
+	}
+	[Task5990]
+	{
+		:Tasktype	"Message"
+		:Message	"「倉成、うまい事いうじゃない」"
+		:Character	4		//優
+		:Voice	5210	//	置換しました<<ts05_yu079>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task6000]
+	{
+		:Tasktype	"Message"
+		:Message	"「はっはっはっ、少しは見直したか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：7
+	[Task6010]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,6
+	}
+	[Task6020]
+	{
+		:Tasktype	"Message"
+		:Message	"「はいはい」"
+		:Character	4		//優
+		:Voice	5211	//	置換しました<<ts05_yu080>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：1
+	[Task6030]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,0
+	}
+	[Task6040]
+	{
+		:Tasktype	"Message"
+		:Message	"「ま、それはさておき。ネットワークが生きているなら、地上と連絡が取れてもよさそうなモンだけど……」"
+		:Character	4		//優
+		:Voice	5212	//	置換しました<<ts05_yu081>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：3
+	[Task6050]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,2
+	}
+	[Task6060]
+	{
+		:Tasktype	"Message"
+		:Message	"「２次災害を恐れて見放されたかな……？」"
+		:Character	4		//優
+		:Voice	5213	//	置換しました<<ts05_yu082>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task6070]
+	{
+		:Tasktype	"Message"
+		:Message	"「見放されたって？　それでも連絡くらいあってもよさそうだろう」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task6080]
+	{
+		:Tasktype	"Message"
+		:Message	"「望みの無い希望は与えるなって事かもね？」"
+		:Character	4		//優
+		:Voice	5214	//	置換しました<<ts05_yu083>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task6090]
+	{
+		:Tasktype	"Message"
+		:Message	"「それなら俺達は自力で脱出すればいいさ。希望は与えられるモノじゃなく、自分で掴み取るモノだしな」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：1
+	[Task6100]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,0
+	}
+	[Task6110]
+	{
+		:Tasktype	"Message"
+		:Message	"「それに、それで空が無事なら問題ないさ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task6120]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうね……」"
+		:Character	4		//優
+		:Voice	5215	//	置換しました<<ts05_yu084>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task6130]
+	{
+		:Tasktype	"Message"
+		:Message	"「さてと、ちょっと煮詰まって来たから、私は深海温泉でリフレッシュして来るかな」"
+		:Character	4		//優
+		:Voice	5216	//	置換しました<<ts05_yu085>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task6140]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete			 1 
+		:Fade			 30 
+	}
+	[Task6150]
+	{
+		:Tasktype	"Message"
+		:Message	"そう言って、優は席を立ち部屋を退出した。"
+		:Frame		0
+	}
+	[Task6160]
+	{
+		:Tasktype	"Message"
+		:Message	"「それじゃ、少年。俺達は昼飯でも食べるとするか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＣＨ少年：２／３
+	[Task6170]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"少年"
+		:Preset		1
+//★ＣＨ少年：1：3
+		:Animation		0,2
+		:Rot		0
+		:Fade		20
+	}
+	[Task6180]
+	{
+		:Tasktype	"Message"
+		:Message	"「………」"
+		:Character	5		//少年
+		:Voice	12909	//	置換しました<<ts05_sh015>>
+//		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task6190]
+	{
+		:Tasktype	"Message"
+		:Message	"俺達の話が退屈だったのか、少年は床にしゃがみこんでいた。"
+		:Frame		0
+	}
+	[Task6200]
+	{
+		:Tasktype	"Message"
+		:Message	"「ん、どうした少年？　顔色が悪いぞ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task6210]
+	{
+		:Tasktype	"Message"
+		:Message	"「くわばら、くわばら」"
+		:Character	5		//少年
+		:Voice	12910	//	置換しました<<ts05_sh016>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task6220]
+	{
+		:Tasktype	"Message"
+		:Message	"突然少年は、謎の呪文を叫んだ。"
+		:Frame		0
+	}
+//※☆以下つぐみルートと共通
+	[Task6230]
+	{
+		:Tasktype	"Message"
+		:Message	"「なんか、悪い事でも考えたのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ少年：1：1
+	[Task6240]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"少年"
+		:Animation		0,0
+	}
+	[Task6250]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん、だけど縁起直しもしたし、もうだいじょうぶだよね」"
+		:Character	5		//少年
+		:Voice	12911	//	置換しました<<ts05_sh017>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task6260]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああ！　大丈夫だ！」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＢＧ関係者通路（点灯）
+	[Task6270]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-デフォルト停止時間30f-
+	[Task6280]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+	[Task6290]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		58	//	置換しました<<bg35aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task6300]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,193,188,255
+		:Ambient	215,163,158,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task6310]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task6320]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は少年と２人、売店で食料を調達しに向かった。"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧみやげもの売り場中（点灯）
+	[Task6330]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task6340]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task6350]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitSound"
+	}
+	[Task6360]
+	{
+		:Tasktype	"Sprite"
+		:Texture	52	//	置換しました<<bg31aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task6370]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,245,245,255
+		:Ambient	210,205,205,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ少年：２／３
+	[Task6380]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"少年"
+		:Preset		1
+//★ＣＨ少年：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン黒-
+	[Task6390]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+//5pb.-02:エルストボーデン（１階）-
+	[Task6400]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		2	//	置換しました<<bgm02>>
+	}
+
+	[Task6410]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task6420]
+	{
+		:Tasktype	"Message"
+		:Message	"みやげもの売り場に入った俺達は、入り口付近に積んであった買い物カゴを取り、その中にそれぞれ食べたいものを入れていった。"
+		:Frame		0
+	}
+	[Task6430]
+	{
+		:Tasktype	"Message"
+		:Message	"「さて、少年、選び終わったか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task6440]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん」"
+		:Character	5		//少年
+		:Voice	12912	//	置換しました<<ts05_sh018>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task6450]
+	{
+		:Tasktype	"Message"
+		:Message	"少年の持つカゴは、ドライフルーツやジャム、冷凍蜜柑など、果物系で埋まっていた。"
+		:Frame		0
+	}
+//☆ＢＧみやげもの売り場前（点灯）
+	[Task6460]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task6470]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			51	//	置換しました<<bg30aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task6480]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	255,245,245,255
+		:Ambient	210,205,205,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task6490]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task6500]
+	{
+		:Tasktype	"Message"
+		:Message	"店の外に出ると、カゴを抱えた少年は走り出した。"
+		:Frame		0
+	}
+	[Task6510]
+	{
+		:Tasktype	"Message"
+		:Message	"「おいおい、少年どこに行くんだ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＣＨ少年：２／３
+	[Task6520]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"少年"
+		:Preset		1
+//★ＣＨ少年：1：1
+		:Animation		0,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task6530]
+	{
+		:Tasktype	"Message"
+		:Message	"「ココのとこ、ココにもご飯が必要でしょ」"
+		:Character	5		//少年
+		:Voice	12913	//	置換しました<<ts05_sh019>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task6540]
+	{
+		:Tasktype	"Message"
+		:Message	"少年の後を追おうかと思ったが、結局少年に任せることにした。"
+		:Frame		0
+	}
+	[Task6550]
+	{
+		:Tasktype	"Message"
+		:Message	"少年の顔が必死だったからだ。"
+		:Frame		0
+	}
+	[Task6560]
+	{
+		:Tasktype	"Message"
+		:Message	"「ココの事は任せたぞ！」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task6570]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task6580]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は走り去る少年に手を振った。"
+		:Frame		0
+	}
+	[Task6590]
+	{
+		:Tasktype	"Message"
+		:Message	"青春……そんな言葉が頭に浮かんだ。"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧ休息室（点灯）
+	[Task6600]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task6610]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task6620]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	18	//	置換しました<<bg11aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task6630]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task6640]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task6650]
+	{
+		:Tasktype	"Message"
+		:Message	"１人で食事を終えた俺は、つぐみにも修理が終わった事を伝えようと思った。"
+		:Frame		0
+	}
+	[Task6660]
+	{
+		:Tasktype	"Message"
+		:Message	"空につぐみを探してもらおうかと呼んでみたが、姿を見せなかった。"
+		:Frame		0
+	}
+	[Task6670]
+	{
+		:Tasktype	"Message"
+		:Message	"まだメンテナンス中なんだろうか？"
+		:Frame		0
+	}
+	[Task6680]
+	{
+		:Tasktype	"Message"
+		:Message	"優にメンテナンスの時間を聞いてから、１時間以上経ったような気もするんだけどな？"
+		:Frame		0
+	}
+	[Task6690]
+	{
+		:Tasktype	"Message"
+		:Message	"しょうがない、自力で捜すか。"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧ一般通路直進（点灯)
+	[Task6700]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task6710]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task6720]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	61	//	置換しました<<bg36aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task6730]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task6740]
+	{
+		:Tasktype	"Message"
+		:Message	"つぐみを探しがてら、ドリットシュトックの脱出ポッドの状態を確認しに向かった。"
+		:Frame		0
+	}
+	[Task6750]
+	{
+		:Tasktype	"Message"
+		:Message	"一応、この目で確かめたかったからだ。"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧ脱出ポッド搭乗口（ＩＢＦ点灯)
+	[Task6760]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task6770]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task6780]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	77	//	置換しました<<bg43aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task6790]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task6800]
+	{
+		:Tasktype	"Message"
+		:Message	"やはり、……無い。"
+		:Frame		0
+	}
+//☆ＢＧ一般通路Rカーブ（点灯）
+	[Task6810]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task6820]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture			64	//	置換しました<<bg37aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task6830]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task6840]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task6850]
+	{
+		:Tasktype	"Message"
+		:Message	"なんか、無い事は判っていたが、判るとよけいがっかりするな。"
+		:Frame		0
+	}
+//※☆空ルート
+	[Task6860]
+	{
+		:Tasktype	"Message"
+		:Message	"さっきの優の話を思い出す。"
+		:Frame		0
+	}
+	[Task6870]
+	{
+		:Tasktype	"Message"
+		:Message	"望みの無い希望は与えるなって事かもね……か。"
+		:Frame		0
+	}
+	[Task6880]
+	{
+		:Tasktype	"Message"
+		:Message	"たしかに、望みの無い希望ってのは、絶望と同じようなものだもんな……。"
+		:Frame		0
+	}
+	[Task6890]
+	{
+		:Tasktype	"Message"
+		:Message	"ええい、くわばらくわばら、くそ喰らえってんだ。"
+		:Frame		0
+	}
+	[Task6900]
+	{
+		:Tasktype	"Message"
+		:Message	"何、弱気になってるんだ俺、しっかりしろ！"
+		:Frame		0
+	}
+	[Task6910]
+	{
+		:Tasktype	"Message"
+		:Message	"絶対にみんなで助かるんだ！"
+		:Frame		0
+	}
+//※☆以下つぐみルートと共通
+//☆ＢＧクラゲゴンドラ乗り場（点灯）
+	[Task6920]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-デフォルト停止時間30f-
+	[Task6930]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+//5pb.-フェードアウト黒-
+	[Task6940]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task6950]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitSound"
+	}
+	[Task6960]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	34	//	置換しました<<bg22aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task6970]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task6980]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task6990]
+	{
+		:Tasktype	"Message"
+		:Message	"ぼんやりと歩いていたら、何かの乗り物の発着プールのような場所にたどり着いた。"
+		:Frame		0
+	}
+	[Task7000]
+	{
+		:Tasktype	"Message"
+		:Message	"そこには半透明の、何か生き物的な乗り物が見えた。"
+		:Frame		0
+	}
+	[Task7010]
+	{
+		:Tasktype	"Message"
+		:Message	"「ここは、どこだ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task7020]
+	{
+		:Tasktype	"Message"
+		:Message	"俺の口から、独り言がこぼれた。"
+		:Frame		0
+	}
+	[Task7030]
+	{
+		:Tasktype	"Message"
+		:Message	"「クヴァレ……」"
+		:Name	16		//？？
+		:Character	2		//つぐみ
+		:Voice	3927	//	置換しました<<ts05_tu000>>
+		:ModelName		"つぐみ","つぐみ濡れ","つぐみ３４"
+		:Frame		0
+		:SoundPosition	0,127
+	}
+//この部分名前表示なし
+	[Task7040]
+	{
+		:Tasktype	"Message"
+		:Message	"「クヴァレ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task7050]
+	{
+		:Tasktype	"Message"
+		:Message	"このクラゲゴンドラのことか？"
+		:Frame		0
+	}
+	[Task7060]
+	{
+		:Tasktype	"Message"
+		:Message	"そう教えてくれた声には、聞き覚えがある。"
+		:Frame		0
+	}
+//5pb.-07:クヴァレ（くらげ）-
+	[Task7070]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		12	//	置換しました<<bgm07>>
+	}
+//☆ＣＨつぐみ：２／３
+	[Task7080]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"つぐみ"
+		:Preset		1
+//★ＣＨつぐみ：3：1
+		:Animation		2,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task7090]
+	{
+		:Tasktype	"Message"
+		:Message	"振り向くとそこにつぐみが立っていた。"
+		:Frame		0
+	}
+	[Task7100]
+	{
+		:Tasktype	"Message"
+		:Message	"「あっ、つぐみ！　ここに居たのか。探したぞ」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task7110]
+	{
+		:Tasktype	"Message"
+		:Message	"「私に何の用なの……」"
+		:Character	2		//つぐみ
+		:Voice	3928	//	置換しました<<ts05_tu001>>
+		:ModelName		"つぐみ","つぐみ濡れ","つぐみ３４"
+		:Frame		0
+	}
+	[Task7120]
+	{
+		:Tasktype	"Message"
+		:Message	"「グッドニュースだ！　コスミッシャー・ヴァルの修理は終わったぞ。充電はまだだが、明日の今頃には俺達は脱出出来るんだ！」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮつぐみ：3：7
+	[Task7130]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"つぐみ"
+		:Animation		2,6
+	}
+	[Task7140]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう……」"
+		:Character	2		//つぐみ
+		:Voice	3929	//	置換しました<<ts05_tu002>>
+		:ModelName		"つぐみ","つぐみ濡れ","つぐみ３４"
+		:Frame		0
+	}
+//興味なさそうな返事
+	[Task7150]
+	{
+		:Tasktype	"Message"
+		:Message	"「一時はどうなるかと思ったけど、希望を捨てないで、あきらめないで動けば何とかなるもんだな」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task7160]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうね……」"
+		:Character	2		//つぐみ
+		:Voice	3930	//	置換しました<<ts05_tu003>>
+		:ModelName		"つぐみ","つぐみ濡れ","つぐみ３４"
+		:Frame		0
+	}
+//※☆空ルート
+//☆ＣＨ全消し
+	[Task7170]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task7180]
+	{
+		:Tasktype	"Message"
+		:Message	"つぐみは俺を無視するように、俺の目の前を横切りクヴァレへ向かう。"
+		:Frame		0
+	}
+	[Task7190]
+	{
+		:Tasktype	"Message"
+		:Message	"「つぐみ、ソレって乗れるのかな？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＣＨつぐみ：２／３
+	[Task7200]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"つぐみ"
+		:Preset		1
+//★ＣＨつぐみ：3：1
+		:Animation		2,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task7210]
+	{
+		:Tasktype	"Message"
+		:Message	"「ソレって、クヴァレのこと？　クラゲ型水中カプセルのゴンドラよ」"
+		:Character	2		//つぐみ
+		:Voice	3931	//	置換しました<<ts05_tu004>>
+		:ModelName		"つぐみ","つぐみ濡れ","つぐみ３４"
+		:Frame		0
+	}
+	[Task7220]
+	{
+		:Tasktype	"Message"
+		:Message	"「通常運用は、オペレーターが居ないから無理だけど、整備モードなら、中からでもコントロールができるわ」"
+		:Character	2		//つぐみ
+		:Voice	3932	//	置換しました<<ts05_tu005>>
+		:ModelName		"つぐみ","つぐみ濡れ","つぐみ３４"
+		:Frame		0
+	}
+//☆ＡＮつぐみ：1：1
+	[Task7230]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"つぐみ"
+		:Animation		0,0
+	}
+	[Task7240]
+	{
+		:Tasktype	"Message"
+		:Message	"「だけど、外周に構築されたチューブの中を、水流に乗って移動するだけのもの、ここからの脱出には使えないわね」"
+		:Character	2		//つぐみ
+		:Voice	3933	//	置換しました<<ts05_tu006>>
+		:ModelName		"つぐみ","つぐみ濡れ","つぐみ３４"
+		:Frame		0
+	}
+	[Task7250]
+	{
+		:Tasktype	"Message"
+		:Message	"つぐみはそういいながら、クラゲ型水中カプセルへ乗り込もうとする。"
+		:Frame		0
+	}
+	[Task7260]
+	{
+		:Tasktype	"Message"
+		:Message	"「つぐみはクヴァレに乗るのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮつぐみ：1：8
+	[Task7270]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"つぐみ"
+		:Animation		0,7
+	}
+	[Task7280]
+	{
+		:Tasktype	"Message"
+		:Message	"「ええ、絶望を捜しにね……」"
+		:Character	2		//つぐみ
+		:Voice	3934	//	置換しました<<ts05_tu007>>
+		:ModelName		"つぐみ","つぐみ濡れ","つぐみ３４"
+		:Frame		0
+	}
+	[Task7290]
+	{
+		:Tasktype	"Message"
+		:Message	"「……絶望」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task7300]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task7310]
+	{
+		:Tasktype	"Message"
+		:Message	"一瞬、俺があっけに取られている間につぐみはクヴァレの中へ消えた。"
+		:Frame		0
+	}
+	[Task7320]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、クヴァレは滑るようにカタパルトから動き出し、ゲートへと消えていった……。"
+		:Frame		0
+	}
+//※☆以下つぐみルートと共通
+//時間経過ワイプ
+//☆ＢＧ救護室
+	[Task7330]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-デフォルト停止時間30f-
+	[Task7340]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+//5pb.-フェードアウト黒-
+	[Task7350]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task7360]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitSound"
+	}
+	[Task7370]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	12	//	置換しました<<bg08aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task7380]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task7390]
+	{
+		:Tasktype	"Message"
+		:Message	"なんとなく頭痛を感じた俺は、ココの様子も見がてら、薬でも飲もうかと救護室へ来た。"
+		:Frame		0
+	}
+	[Task7400]
+	{
+		:Tasktype	"Message"
+		:Message	"ベッドで寝ているはずのココの姿は見えなかった。"
+		:Frame		0
+	}
+	[Task7410]
+	{
+		:Tasktype	"Message"
+		:Message	"やっぱりただの風邪で、たいした事はなかったんだろうな。"
+		:Frame		0
+	}
+	[Task7420]
+	{
+		:Tasktype	"Message"
+		:Message	"俺はそんな事を考えながら、頭痛薬を飲んだ。"
+		:Frame		0
+	}
+//☆ＢＧ加減圧室の中(消灯）
+//5pb.松--制御室の間違い。しかも消灯ではない。--
+	[Task7430]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task7440]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task7450]
+	{
+		:Tasktype	"Sprite"
+		:Texture	16	//	置換しました<<bg10aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		0
+		:FadeWait	0
+	}
+	[Task7460]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	175,175,235,255
+		:Ambient	180,170,210,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ優私服：２／３
+	[Task7470]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"優私服"
+		:Preset		1
+//★ＣＨ優私服：7：4
+		:Animation		6,3
+		:Rot		0
+		:Fade		0
+	}
+//5pb.-フェードイン黒-
+	[Task7480]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+
+//5pb.-18:クラマオク（スラップスティック）-
+	[Task7490]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		34	//	置換しました<<bgm18>>
+	}
+
+	[Task7500]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task7510]
+	{
+		:Tasktype	"Message"
+		:Message	"「ウッキーーーーーッ！！」"
+		:Character	4		//優
+		:Voice	5217	//	置換しました<<ts05_yu086>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7520]
+	{
+		:Tasktype	"Message"
+		:Message	"制御室に入ると、優の奇声が響いていた。"
+		:Frame		0
+	}
+	[Task7530]
+	{
+		:Tasktype	"Message"
+		:Message	"「まったく、まったく、まったくもーーーっ」"
+		:Character	4		//優
+		:Voice	5218	//	置換しました<<ts05_yu087>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7540]
+	{
+		:Tasktype	"Message"
+		:Message	"「何で、いっつも、いっつもコレが出る訳？」"
+		:Character	4		//優
+		:Voice	5219	//	置換しました<<ts05_yu088>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7550]
+	{
+		:Tasktype	"Message"
+		:Message	"「パスワードが違いますって！　アンタは昔の冒険の書か？」"
+		:Character	4		//優
+		:Voice	5220	//	置換しました<<ts05_yu089>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7560]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう、上等じゃない、こうなったら、アンタの冒険の書消してあげようか！　コマンドＺよ！」"
+		:Character	4		//優
+		:Voice	5221	//	置換しました<<ts05_yu090>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7570]
+	{
+		:Tasktype	"Message"
+		:Message	"「……おい優、ちょっといいか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task7580]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は軽いデジャヴを感じながら暴言を吐く優に、恐る恐る声をかけた。"
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：4
+	[Task7590]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,3
+	}
+	[Task7600]
+	{
+		:Tasktype	"Message"
+		:Message	"「うるさいわね！　なによ！」"
+		:Character	4		//優
+		:Voice	5222	//	置換しました<<ts05_yu091>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：6
+	[Task7610]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,5
+	}
+	[Task7620]
+	{
+		:Tasktype	"Message"
+		:Message	"「……って、倉成じゃない？」"
+		:Character	4		//優
+		:Voice	5223	//	置換しました<<ts05_yu092>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7630]
+	{
+		:Tasktype	"Message"
+		:Message	"「どうだ、少しは進展はあったのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：7
+	[Task7640]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,6
+	}
+	[Task7650]
+	{
+		:Tasktype	"Message"
+		:Message	"「ううん」"
+		:Character	4		//優
+		:Voice	5224	//	置換しました<<ts05_yu093>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7660]
+	{
+		:Tasktype	"Message"
+		:Message	"優はゆっくり首を振る。"
+		:Frame		0
+	}
+	[Task7670]
+	{
+		:Tasktype	"Message"
+		:Message	"モニターに向かい、キーをバーーンとピアノみたいに両手で叩いた。"
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：3
+	[Task7680]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,2
+	}
+	[Task7690]
+	{
+		:Tasktype	"Message"
+		:Message	"「パスワードさえ、発見できればね……」"
+		:Character	4		//優
+		:Voice	5225	//	置換しました<<ts05_yu094>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7700]
+	{
+		:Tasktype	"Message"
+		:Message	"「パスワードって？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task7710]
+	{
+		:Tasktype	"Message"
+		:Message	"「プロテクトを解く為の鍵……レミのセキュリティロックを外せる、緊急用の最終パスワード」"
+		:Character	4		//優
+		:Voice	5226	//	置換しました<<ts05_yu095>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7720]
+	{
+		:Tasktype	"Message"
+		:Message	"「それさえあれば、レミのあらゆるデータベースにアクセスすることが可能になるんだけど」"
+		:Character	4		//優
+		:Voice	5227	//	置換しました<<ts05_yu096>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7730]
+	{
+		:Tasktype	"Message"
+		:Message	"「そこまでしないと駄目なのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：7
+	[Task7740]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,6
+	}
+	[Task7750]
+	{
+		:Tasktype	"Message"
+		:Message	"「本当よね、普通このレベルのＩＤカードがあれば、大抵の情報はフリーでアクセス出来るんだけど……」"
+		:Character	4		//優
+		:Voice	5228	//	置換しました<<ts05_yu097>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7760]
+	{
+		:Tasktype	"Message"
+		:Message	"そう言って優はＩＤカードを俺に見せた。"
+		:Frame		0
+	}
+//※☆空ルート
+	[Task7770]
+	{
+		:Tasktype	"Message"
+		:Message	"ＩＤカードには『Ｔ．Ｙ』というイニシャルが入っていた。"
+		:Frame		0
+	}
+	[Task7780]
+	{
+		:Tasktype	"Message"
+		:Message	"「いままでゲストＩＤ使って駄目だったから、端末の近くにあったこのＩＤカードならって思ったんだけどな〜……」"
+		:Character	4		//優
+		:Voice	5229	//	置換しました<<ts05_yu098>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：5
+	[Task7790]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,4
+	}
+	[Task7800]
+	{
+		:Tasktype	"Message"
+		:Message	"「それでも空の情報、私のお父さんの情報には、アクセスできないのよ」"
+		:Character	4		//優
+		:Voice	5230	//	置換しました<<ts05_yu099>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7810]
+	{
+		:Tasktype	"Message"
+		:Message	"「アクセスできない？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task7820]
+	{
+		:Tasktype	"Message"
+		:Message	"「空の事は前にトップシークレットって言ってたけど、親父さんの情報もトップシークレットなのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//※☆以下つぐみルートと共通
+	[Task7830]
+	{
+		:Tasktype	"Message"
+		:Message	"「多分、開発スタッフの個人的なデータと一緒に、アカウントなんかの情報も入ってるんじゃないかな？」"
+		:Character	4		//優
+		:Voice	5231	//	置換しました<<ts05_yu100>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：7
+	[Task7840]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,6
+	}
+	[Task7850]
+	{
+		:Tasktype	"Message"
+		:Message	"「はぁ〜プロテクトを解けば、それが全部が分かる……はずなんだけどね」"
+		:Character	4		//優
+		:Voice	5232	//	置換しました<<ts05_yu101>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7860]
+	{
+		:Tasktype	"Message"
+		:Message	"「見つけたＩＤカードだと、パスワードの回数制限はないからいいんだけど……」"
+		:Character	4		//優
+		:Voice	5233	//	置換しました<<ts05_yu102>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7870]
+	{
+		:Tasktype	"Message"
+		:Message	"「はあ〜、キーワードでの総当たりって言っても、人力じゃ限界あるのよね……」"
+		:Character	4		//優
+		:Voice	5234	//	置換しました<<ts05_yu103>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7880]
+	{
+		:Tasktype	"Message"
+		:Message	"「空に頼めば、そのパスワードって教えてくれるんじゃないか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//※☆空ルート
+//☆ＡＮ優私服：1：5
+	[Task7890]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,4
+	}
+	[Task7900]
+	{
+		:Tasktype	"Message"
+		:Message	"「さっきも言ったけど、禁則事項にひっかかって、空がフリーズしちゃうのがオチよ」"
+		:Character	4		//優
+		:Voice	5235	//	置換しました<<ts05_yu104>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//※☆以下つぐみルートと共通
+	[Task7910]
+	{
+		:Tasktype	"Message"
+		:Message	"「だから結局、肝心な事、私の知りたい事はまだ、な〜んにもわかってないの」"
+		:Character	4		//優
+		:Voice	5236	//	置換しました<<ts05_yu105>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7920]
+	{
+		:Tasktype	"Message"
+		:Message	"そう言って、優は大げさに肩をすくめる。"
+		:Frame		0
+	}
+//☆ＡＮ優私服：1：7
+	[Task7930]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		0,6
+	}
+	[Task7940]
+	{
+		:Tasktype	"Message"
+		:Message	"「付け焼き刃の知識じゃハッキングも出来ないしね……」"
+		:Character	4		//優
+		:Voice	5237	//	置換しました<<ts05_yu106>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7950]
+	{
+		:Tasktype	"Message"
+		:Message	"「いや、“それなりの”知識くらいじゃ……無理かしらね」"
+		:Character	4		//優
+		:Voice	5238	//	置換しました<<ts05_yu107>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7960]
+	{
+		:Tasktype	"Message"
+//☆収録時修正
+//		:Message	"「そもそもハードウェアもＯＳも、システム構成の何もかもがぜんぜん違うのよ。ノイマン型じだったらまだいいんだけど……」"
+		:Message	"「そもそもハードウェアもＯＳも、システム構成の何もかもがぜんぜん違うのよ。ノイマン型だったらまだいいんだけど……」"
+		:Character	4		//優
+		:Voice	5239	//	置換しました<<ts05_yu108>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task7970]
+	{
+		:Tasktype	"Message"
+		:Message	"「まぁ、その……。いろいろお疲れ様だったってわけだ……？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ優私服：3：3
+	[Task7980]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"優私服"
+		:Animation		2,2
+	}
+	[Task7990]
+	{
+		:Tasktype	"Message"
+		:Message	"「でも……ま、いいか。多分これって私のお父さんが作ったモノ……１人で作ったんじゃないんだろうけど……」"
+		:Character	4		//優
+		:Voice	5240	//	置換しました<<ts05_yu109>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task8000]
+	{
+		:Tasktype	"Message"
+		:Message	"「それに触れられただけでも……」"
+		:Character	4		//優
+		:Voice	5241	//	置換しました<<ts05_yu110>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+//※☆空ルート
+	[Task8010]
+	{
+		:Tasktype	"Message"
+		:Message	"「空の事は……信じましょ、無事だって」"
+		:Character	4		//優
+		:Voice	5242	//	置換しました<<ts05_yu111>>
+		:ModelName		"優","優私服"
+		:Frame		0
+	}
+	[Task8020]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうだな……」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task8030]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は、優の肩に優しく手を置いた。"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧ関係者通路（点灯）
+	[Task8040]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-デフォルト停止時間30f-
+	[Task8050]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+//5pb.-フェードアウト黒-
+	[Task8060]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task8070]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitSound"
+	}
+	[Task8080]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	58	//	置換しました<<bg35aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task8090]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,193,188,255
+		:Ambient	215,163,158,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task8100]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task8110]
+	{
+		:Tasktype	"Message"
+		:Message	"優と別れた俺は、潜水艇の充電が順調に進んでいるか確認に向かった。"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧメンテナンスルーム（点灯）
+	[Task8120]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task8130]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task8140]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	47	//	置換しました<<bg29aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task8150]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//5pb.-06:コスミッシャー・ヴァル(宇宙クジラ）-
+	[Task8160]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		10	//	置換しました<<bgm06>>
+	}
+	[Task8170]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task8180]
+	{
+		:Tasktype	"Message"
+		:Message	"充電装置のランプは灯り、バッテリーメーターが示す残量も若干増えていた。"
+		:Frame		0
+	}
+	[Task8190]
+	{
+		:Tasktype	"Message"
+		:Message	"順調に充電は行われているようだった。"
+		:Frame		0
+	}
+	[Task8200]
+	{
+		:Tasktype	"Message"
+		:Message	"よし、こっちは問題はなさそうだな……。"
+		:Frame		0
+	}
+	[Task8210]
+	{
+		:Tasktype	"Message"
+		:Message	"これで俺達はここから脱出できる。"
+		:Frame		0
+	}
+	[Task8220]
+	{
+		:Tasktype	"Message"
+		:Message	"後は空の問題だけど……。"
+		:Frame		0
+	}
+	[Task8230]
+	{
+		:Tasktype	"Message"
+		:Message	"本体の移動やバックアップするにしても空の居場所が判らないんじゃなぁ……。"
+		:Frame		0
+	}
+	[Task8240]
+	{
+		:Tasktype	"Message"
+		:Message	"ぶんぶんぶん。"
+		:Frame		0
+	}
+	[Task8250]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は激しく首をふった。"
+		:Frame		0
+	}
+	[Task8260]
+	{
+		:Tasktype	"Message"
+		:Message	"優も言っていたじゃないか、空の事は無事だって信じよう。"
+		:Frame		0
+	}
+	[Task8270]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、もしもの時は、俺が全力で助けよう。"
+		:Frame		0
+	}
+//☆ＣＨ空：２／３
+	[Task8280]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"空"
+		:Preset		1
+//★ＣＨ空：2：2
+		:Animation		1,1
+		:Rot		0
+		:Fade		20
+	}
+	[Task8290]
+	{
+		:Tasktype	"Message"
+		:Message	"「あ、倉成さん、おはようございます」"
+		:Character	3		//空
+		:Voice	10747	//	置換しました<<ts05_so007>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8300]
+	{
+		:Tasktype	"Message"
+		:Message	"そんな事を考えていると、目の前にふっと空が現れた。"
+		:Frame		0
+	}
+	[Task8310]
+	{
+		:Tasktype	"Message"
+		:Message	"「おおっ、空か？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task8320]
+	{
+		:Tasktype	"Message"
+		:Message	"突然、空が現れたので俺は面食らう。"
+		:Frame		0
+	}
+//☆ＡＮ空：2：6
+	[Task8330]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		1,5
+	}
+	[Task8340]
+	{
+		:Tasktype	"Message"
+		:Message	"「すみません、驚かせてしまったみたいで……」"
+		:Character	3		//空
+		:Voice	10748	//	置換しました<<ts05_so008>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8350]
+	{
+		:Tasktype	"Message"
+		:Message	"「いや、ちょうど空の事を考えていたら、空がいたんで慌てたんだよ」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ空：5：9
+	[Task8360]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		4,8
+	}
+	[Task8370]
+	{
+		:Tasktype	"Message"
+		:Message	"「私のことを考えていたんですか？」"
+		:Character	3		//空
+		:Voice	10749	//	置換しました<<ts05_so009>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8380]
+	{
+		:Tasktype	"Message"
+		:Message	"一瞬空は照れたような顔をした。"
+		:Frame		0
+	}
+	[Task8390]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああ、空が何処にいるのかってね？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ空：1：3
+	[Task8400]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task8410]
+	{
+		:Tasktype	"Message"
+		:Message	"「ごめんなさい。今までプログラムのメンテナンスをしていたので、いなかったんです……」"
+		:Character	3		//空
+		:Voice	10750	//	置換しました<<ts05_so010>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8420]
+	{
+		:Tasktype	"Message"
+		:Message	"いや、俺が言ったのは、そういう意味じゃなかったんだけど……。"
+		:Frame		0
+	}
+//☆ＡＮ空：1：1
+	[Task8430]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task8440]
+	{
+		:Tasktype	"Message"
+		:Message	"「ＡＩ部分に、若干の思考エラーが確認されたもので、それを修正していました」"
+		:Character	3		//空
+		:Voice	10751	//	置換しました<<ts05_so011>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8450]
+	{
+		:Tasktype	"Message"
+		:Message	"「思考エラーを修正？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ空：3：3
+	[Task8460]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		2,0
+	}
+	[Task8470]
+	{
+		:Tasktype	"Message"
+		:Message	"「ええと、それはですね……」"
+		:Character	3		//空
+		:Voice	10752	//	置換しました<<ts05_so012>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8480]
+	{
+		:Tasktype	"Message"
+		:Message	"「時々、私に悪影響を与えようとする“侵入者”がいるんですよ。嘘を教えたり、意地悪をして混乱させたり……最後には、私を乗っ取ろうとするんです……」"
+		:Character	3		//空
+		:Voice	10753	//	置換しました<<ts05_so013>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8490]
+	{
+		:Tasktype	"Message"
+		:Message	"「“侵入者”？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ空：3：8
+	[Task8500]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		2,7
+	}
+	[Task8510]
+	{
+		:Tasktype	"Message"
+		:Message	"「いわゆるクラッカーの事です。彼らに悪戯をされていないかとか……バックドアを仕掛けられてないか、セキュリティホールは無いかとかを一通りチェックしていたんです」"
+		:Character	3		//空
+		:Voice	10754	//	置換しました<<ts05_so014>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+//悪戯＝いたずら
+	[Task8520]
+	{
+		:Tasktype	"Message"
+		:Message	"「結局原因はわからなかったのですが……」"
+		:Character	3		//空
+		:Voice	10755	//	置換しました<<ts05_so015>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8530]
+	{
+		:Tasktype	"Message"
+		:Message	"「侵入者がいるって事は、どこかに、海上と繋がってる回線があるって事か？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ空：4：8
+	[Task8540]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,7
+	}
+	[Task8550]
+	{
+		:Tasktype	"Message"
+//		:Message	"「そうかもしれません。昨日の電波妨害（ルビ：“ジャミング”）も、どうやら侵入者の影響のようでしたから……」"
+		:Message	"「そうかもしれません。昨日の電[ジャ]波[ミ]妨[ン]害[グ]も、どうやら侵入者の影響のようでしたから……」"
+		:Character	3		//空
+		:Voice	10756	//	置換しました<<ts05_so016>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+
+//5pb.-停止時間指定:f120-
+	[Task8560]
+	{
+		:Tasktype	"BgmStop"
+		:Div		120
+	}
+
+	[Task8570]
+	{
+		:Tasktype	"Message"
+		:Message	"「私のデータにはない、隠されたネットワークが、ドリットシュトックの下…イーベー………」"
+		:Character	3		//空
+		:Voice	10757	//	置換しました<<ts05_so017>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8580]
+	{
+		:Tasktype	"Message"
+		:Message	"突然、何か言いかけた空の動きが止まった。"
+		:Frame		0
+	}
+//禁則事項にひっかかり一旦フリーズ
+	[Task8590]
+	{
+		:Tasktype	"Message"
+		:Message	"「おい、空、どうしたんだ？！」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task8600]
+	{
+		:Tasktype	"Message"
+		:Message	"それは、まるで、空が凍りついたようにも、この場の時間が静止したようにも見えた。"
+		:Frame		0
+	}
+	[Task8610]
+	{
+		:Tasktype	"Message"
+		:Message	"「空、大丈夫か？！　しっかりしろ！！」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ空：4：5
+	[Task8620]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		3,4
+	}
+	[Task8630]
+	{
+		:Tasktype	"Message"
+		:Message	"「…フェアボーテン……レベル……デルタ……」"
+		:Character	3		//空
+		:Voice	10758	//	置換しました<<ts05_so018>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8640]
+	{
+		:Tasktype	"Message"
+		:Message	"凍りついたままの空から、機械的な声だけが聞こえた。"
+		:Frame		0
+	}
+	[Task8650]
+	{
+		:Tasktype	"Message"
+		:Message	"「空………」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task8660]
+	{
+		:Tasktype	"Message"
+		:Message	"「………………」"
+		:Character	3		//空
+		:Voice	10759	//	置換しました<<ts05_so019>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8670]
+	{
+		:Tasktype	"Message"
+		:Message	"そして沈黙……。"
+		:Frame		0
+	}
+	[Task8680]
+	{
+		:Tasktype	"Message"
+		:Message	"自分だけが、静止した時間の外に、取り残されたような錯覚を受けた。"
+		:Frame		0
+	}
+	[Task8690]
+	{
+		:Tasktype	"Message"
+		:Message	"「ズュステーム　ヴィーダラオフナーメ」"
+		:Character	3		//空
+		:Voice	10760	//	置換しました<<ts05_so020>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+//（システム再起動）
+	[Task8700]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、再び冷たい声が聞こえる。"
+		:Frame		0
+	}
+
+//5pb.-03:ツヴァイトシュトック(２階）-
+	[Task8710]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		4	//	置換しました<<bgm03>>
+	}
+//☆ＡＮ空：1：3
+	[Task8720]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task8730]
+	{
+		:Tasktype	"Message"
+		:Message	"「……すみません。ご心配をおかけしてしまって」"
+		:Character	3		//空
+		:Voice	10761	//	置換しました<<ts05_so021>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8740]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、突然時間が動き出したように、空が動き出す。"
+		:Frame		0
+	}
+	[Task8750]
+	{
+		:Tasktype	"Message"
+		:Message	"「大丈夫なのか？！　一体どうしたんだよ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task8760]
+	{
+		:Tasktype	"Message"
+		:Message	"「ちょっと……チェックに引っかかってしまって、ストップがかかったみたいです」"
+		:Character	3		//空
+		:Voice	10762	//	置換しました<<ts05_so022>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8770]
+	{
+		:Tasktype	"Message"
+		:Message	"そうか……。"
+		:Frame		0
+	}
+	[Task8780]
+	{
+		:Tasktype	"Message"
+		:Message	"優の言ってた、禁則事項にひっかかって、空がフリーズするってこういう事か……。"
+		:Frame		0
+	}
+//☆ＡＮ空：1：8
+	[Task8790]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,7
+	}
+	[Task8800]
+	{
+		:Tasktype	"Message"
+		:Message	"「話を続けますと、今までレミと私はメンテナンスをしていました」"
+		:Character	3		//空
+		:Voice	10763	//	置換しました<<ts05_so023>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8810]
+	{
+		:Tasktype	"Message"
+		:Message	"「その間に、レミュウ全体のチェックも休止状態でしたので、施設を再チェックしているんです」"
+		:Character	3		//空
+		:Voice	10764	//	置換しました<<ts05_so024>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8820]
+	{
+		:Tasktype	"Message"
+		:Message	"「その際に、メンテナンスルームの配管の一部に負荷が掛かっている場所があったので、確認をしに来たところです」"
+		:Character	3		//空
+		:Voice	10765	//	置換しました<<ts05_so025>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8830]
+	{
+		:Tasktype	"Message"
+		:Message	"「そうか、じゃ、俺に手伝える事って何かあるか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮ空：1：1
+	[Task8840]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"空"
+		:Animation		0,0
+	}
+	[Task8850]
+	{
+		:Tasktype	"Message"
+		:Message	"「それでは……お願いできますか？」"
+		:Character	3		//空
+		:Voice	10766	//	置換しました<<ts05_so026>>
+		:ModelName		"空","空２","空３"
+		:Frame		0
+	}
+	[Task8860]
+	{
+		:Tasktype	"Message"
+		:Message	"「ああ」"
+		:Name	1		//武
+		:Frame		0
+	}
+//時間経過ワイプ
+	[Task8870]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task8880]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+//☆ＣＨ全消し
+	[Task8890]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		0
+	}
+//5pb.-フェードイン黒-
+	[Task8900]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+	[Task8910]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task8920]
+	{
+		:Tasktype	"Message"
+		:Message	"その後、空の指示で配管を調整した。"
+		:Frame		0
+	}
+	[Task8930]
+	{
+		:Tasktype	"Message"
+		:Message	"調整が終わると、まだ施設のチェックが途中だという事で、空は部屋を出て行った。"
+		:Frame		0
+	}
+	[Task8940]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は、その間、空の本当の居場所が聞きたかったが、結局、聞かなかった……。"
+		:Frame		0
+	}
+	[Task8950]
+	{
+		:Tasktype	"Message"
+		:Message	"それは、あんな空を、凍りついた空を、俺は２度と見たくなかったからだろう……。"
+		:Frame		0
+	}
+	[Task8960]
+	{
+		:Tasktype	"Message"
+		:Message	"その間も充電はとどこおりなく進行していた。"
+		:Frame		0
+	}
+	[Task8970]
+	{
+		:Tasktype	"Message"
+		:Message	"充電量を示すメーターも順調に上がっている。"
+		:Frame		0
+	}
+//※☆以下つぐみルートと共通
+	[Task8980]
+	{
+		:Tasktype	"Message"
+		:Message	"潜水艇の充電は、ここの施設で一旦蓄えた電源を使っているようなので、停電がおきても問題はなさそうだ。"
+		:Frame		0
+	}
+	[Task8990]
+	{
+		:Tasktype	"Message"
+		:Message	"残り約１９時間……。"
+		:Frame		0
+	}
+	[Task9000]
+	{
+		:Tasktype	"Message"
+		:Message	"後１９時間でここから脱出が出来るんだ……。"
+		:Frame		0
+	}
+	[Task9010]
+	{
+		:Tasktype	"Message"
+		:Message	"はぁ〜。思えば、つらくて苦しい出来事の連続だったな……。"
+		:Frame		0
+	}
+	[Task9020]
+	{
+		:Tasktype	"Message"
+		:Message	"それもこれも、明日で終わるんだな。"
+		:Frame		0
+	}
+	[Task9030]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は、感慨深げに今までの事を思い出した。"
+		:Frame		0
+	}
+	[Task9040]
+	{
+		:Tasktype	"Message"
+		:Message	"……これで最後なんだし、最後くらい楽しく終わらせたいよな……。"
+		:Frame		0
+	}
+	[Task9050]
+	{
+		:Tasktype	"Message"
+		:Message	"そうだ、明日の脱出の前祝と、成功を祈っての宴会でも開くか！"
+		:Frame		0
+	}
+	[Task9060]
+	{
+		:Tasktype	"Message"
+		:Message	"そうと決めたら早速準備だな！"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧみやげもの売り場前（点灯）
+	[Task9070]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task9080]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task9090]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	51	//	置換しました<<bg30aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task9100]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task9110]
+	{
+		:Tasktype	"Message"
+		:Message	"俺はみやげ物売り場で、宴会で使う食料、飲み物を適当に選んで台車に積んでいく。"
+		:Frame		0
+	}
+	[Task9120]
+	{
+		:Tasktype	"Message"
+		:Message	"さて、どこで宴会を開こうか？"
+		:Frame		0
+	}
+	[Task9130]
+	{
+		:Tasktype	"Message"
+		:Message	"休息室っていうのもなんか味気ないし……。"
+		:Frame		0
+	}
+	[Task9140]
+	{
+		:Tasktype	"Message"
+		:Message	"そうだあそこが良いか？"
+		:Frame		0
+	}
+//時間経過ワイプ
+//☆ＢＧ憩いの間（点灯）
+	[Task9150]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-デフォルト停止時間30f-
+	[Task9160]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+	[Task9170]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task9180]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture	33	//	置換しました<<bg21aaa>>
+		:Position	640,360
+		:Priority	10
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task9190]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task9200]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task9210]
+	{
+		:Tasktype	"Message"
+		:Message	"食料、飲み物を積んだ、台車をガラガラと押した俺は、広場にやってきた。"
+		:Frame		0
+	}
+	[Task9220]
+	{
+		:Tasktype	"Message"
+		:Message	"さて、どこでやろうかな？"
+		:Frame		0
+	}
+	[Task9230]
+	{
+		:Tasktype	"Message"
+		:Message	"俺は広場を見回した。"
+		:Frame		0
+	}
+	[Task9240]
+	{
+		:Tasktype	"Message"
+		:Message	"ん……？"
+		:Frame		0
+	}
+	[Task9250]
+	{
+		:Tasktype	"Message"
+		:Message	"視界にココとピピ、少年の姿が目に入る。"
+		:Frame		0
+	}
+	[Task9260]
+	{
+		:Tasktype	"Message"
+		:Message	"ココはすっかり元気なようだけど……。"
+		:Frame		0
+	}
+	[Task9270]
+	{
+		:Tasktype	"Message"
+		:Message	"何やってんだ、あいつ……？"
+		:Frame		0
+	}
+	[Task9280]
+	{
+		:Tasktype	"Message"
+		:Message	"少年が何やらハラハラした表情でココのことを眺めている。"
+		:Frame		0
+	}
+	[Task9290]
+	{
+		:Tasktype	"Message"
+		:Message	"ピピもハラハラして見ていた。"
+		:Frame		0
+	}
+	[Task9300]
+	{
+		:Tasktype	"Message"
+		:Message	"俺はいったん台車を止めて、ココ達の所へ向かった。"
+		:Frame		0
+	}
+//※☆空ルート
+	[Task9310]
+	{
+		:Tasktype	"Message"
+		:Message	"ココはおもむろに、憩いの間の３体の女神像のうち一つに近づくと、その台座に手をかけ……。"
+		:Frame		0
+	}
+//右手で南を指差す像（過去）
+	[Task9320]
+	{
+		:Tasktype	"Message"
+		:Message	"「よいしょ！」"
+		:Character	6		//ココ
+		:Voice	506	//	置換しました<<ts05_co018>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task9330]
+	{
+		:Tasktype	"Message"
+		:Message	"……とばかりによじ登り始めた。"
+		:Frame		0
+	}
+//☆ＢＧ右手で南を指差す像
+	[Task9340]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task9350]
+	{
+		:Tasktype	"Sprite"
+		:Texture	128	//	置換しました<<ibg02a>>
+		:Position	640,360
+		:Priority	4
+		:FadeIn		1
+		:FadeWait	1
+	}
+	[Task9360]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task9370]
+	{
+		:Tasktype	"Message"
+		:Message	"「うんせ、うんせっ……」"
+		:Character	6		//ココ
+		:Voice	507	//	置換しました<<ts05_co019>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+
+//5pb.-09:ヴァイサー・フント（白い犬）［正式にはｗｅｉβｅｒ　Ｈｕｎｄ］-
+	[Task9380]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		16	//	置換しました<<bgm09>>
+	}
+
+	[Task9390]
+	{
+		:Tasktype	"Message"
+		:Message	"ココは台座の上に足を引っかけ、女神像に大きく手を廻し、抱きつくみたいな格好になっている。"
+		:Frame		0
+	}
+	[Task9400]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//☆ＣＨ少年：２／３
+	[Task9410]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"少年"
+		:Preset		1
+//★ＣＨ少年：1：3
+		:Animation		0,2
+		:Rot		0
+		:Fade		0
+	}
+	[Task9420]
+	{
+		:Tasktype		"SpriteDelete"
+		:SpriteNumber	128	//	置換しました<<ibg02a>>
+		:FadeOut		1
+		:FadeWait		1
+	}
+	[Task9430]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task9440]
+	{
+		:Tasktype	"Message"
+		:Message	"「ココ……いったい、何やってるの？」"
+		:Character	5		//少年
+		:Voice	12914	//	置換しました<<ts05_sh020>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task9450]
+	{
+		:Tasktype	"Message"
+		:Message	"少年は至極真っ当なことを聞いた。"
+		:Frame		0
+	}
+	[Task9460]
+	{
+		:Tasktype	"Message"
+		:Message	"「……さあ？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task9470]
+	{
+		:Tasktype	"Message"
+		:Message	"当然俺にも判らなかった。"
+		:Frame		0
+	}
+	[Task9480]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.松--トリミング背景を使用予定--
+	[Task9490]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		181	//	置換しました<<kbg21aaa1>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task9500]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨココ：２／３
+	[Task9510]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"ココ"
+		:Preset		1
+//★ＣＨココ：2：2
+		:Animation		1,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task9520]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task9530]
+	{
+		:Tasktype	"Message"
+		:Message	"「やっほー♪」"
+		:Character	6		//ココ
+		:Voice	508	//	置換しました<<ts05_co020>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task9540]
+	{
+		:Tasktype	"Message"
+		:Message	"「視点がちょっと高くなるだけで、見えるものは随分変わるんだねぇ〜♪」"
+		:Character	6		//ココ
+		:Voice	509	//	置換しました<<ts05_co021>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//☆ＡＮココ：7：1
+	[Task9550]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		6,0
+	}
+	[Task9560]
+	{
+		:Tasktype	"Message"
+		:Message	"「うーん……正確には、６８ｃｍ、ってとこかなぁ？」"
+		:Character	6		//ココ
+		:Voice	510	//	置換しました<<ts05_co022>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task9570]
+	{
+		:Tasktype	"Message"
+		:Message	"台座の上に立ったココは、得意満面で言った。"
+		:Frame		0
+	}
+	[Task9580]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.松--通常背景に切り替え--
+	[Task9590]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		33	//	置換しました<<bg21aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task9600]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task9610]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task9620]
+	{
+		:Tasktype	"Message"
+		:Message	"「…………？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＣＨ少年：２／３
+	[Task9630]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"少年"
+		:Preset		1
+//★ＣＨ少年：1：3
+		:Animation		0,2
+		:Rot		0
+		:Fade		20
+	}
+	[Task9640]
+	{
+		:Tasktype	"Message"
+		:Message	"「ね、ねぇココ？　その為だけに、そこに登ったの？」"
+		:Character	5		//少年
+		:Voice	12915	//	置換しました<<ts05_sh021>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task9650]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.松--トリミング背景を使用予定--
+	[Task9660]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		181	//	置換しました<<kbg21aaa1>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task9670]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨココ：２／３
+	[Task9680]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"ココ"
+		:Preset		1
+//★ＣＨココ：2：6
+		:Animation		1,5
+		:Rot		0
+		:Fade		20
+	}
+	[Task9690]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task9700]
+	{
+		:Tasktype	"Message"
+		:Message	"「ほぇ？」"
+		:Character	6		//ココ
+		:Voice	511	//	置換しました<<ts05_co023>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//☆ＡＮココ：1：1
+	[Task9710]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		0,0
+	}
+	[Task9720]
+	{
+		:Tasktype	"Message"
+		:Message	"「あー……。ううん、違うよ……」"
+		:Character	6		//ココ
+		:Voice	512	//	置換しました<<ts05_co024>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task9730]
+	{
+		:Tasktype	"Message"
+		:Message	"少し首を傾げて、ココは答える。"
+		:Frame		0
+	}
+	[Task9740]
+	{
+		:Tasktype	"Message"
+		:Message	"「この辺がね、ちょぴっと寂しかったの」"
+		:Character	6		//ココ
+		:Voice	513	//	置換しました<<ts05_co025>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//寂しかった＝サミシカッタ
+	[Task9750]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.松--通常背景に切り替え--
+	[Task9760]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		33	//	置換しました<<bg21aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task9770]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ少年：２／３
+	[Task9780]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"少年"
+		:Preset		1
+//★ＣＨ少年：1：6
+		:Animation		0,5
+		:Rot		0
+		:Fade		20
+	}
+	[Task9790]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task9800]
+	{
+		:Tasktype	"Message"
+		:Message	"「寂しい？」"
+		:Character	5		//少年
+		:Voice	12916	//	置換しました<<ts05_sh022>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+//寂しい＝サミシイ
+	[Task9810]
+	{
+		:Tasktype	"Message"
+		:Message	"「どの辺が？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task9820]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.松--トリミング背景を使用予定--
+	[Task9830]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		181	//	置換しました<<kbg21aaa1>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task9840]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨココ：２／３
+	[Task9850]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"ココ"
+		:Preset		17
+//★ＣＨココ：1：3
+		:Animation		0,2
+		:Rot		0
+		:Fade		20
+	}
+	[Task9860]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task9870]
+	{
+		:Tasktype	"Message"
+		:Message	"「背中……」"
+		:Character	6		//ココ
+		:Voice	514	//	置換しました<<ts05_co026>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task9880]
+	{
+		:Tasktype	"Message"
+		:Message	"「背中が寂しいかなぁ、と思ったの」"
+		:Character	6		//ココ
+		:Voice	515	//	置換しました<<ts05_co027>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task9890]
+	{
+		:Tasktype	"Message"
+		:Message	"女神像の背を、ココは小さな手の平でいたわるように撫でた。"
+		:Frame		0
+	}
+	[Task9900]
+	{
+		:Tasktype	"Message"
+		:Message	"「ほいでねぇ……」"
+		:Character	6		//ココ
+		:Voice	516	//	置換しました<<ts05_co028>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//☆ＡＮココ：7：2
+	[Task9910]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		6,0
+	}
+	[Task9920]
+	{
+		:Tasktype	"Message"
+		:Message	"「ぴかぷかぽかーんっ！！」"
+		:Character	6		//ココ
+		:Voice	517	//	置換しました<<ts05_co029>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//ド●えもん風に
+	[Task9930]
+	{
+		:Tasktype	"Message"
+		:Message	"「まぁーいなぁすどらいばぁーーー！！」"
+		:Character	6		//ココ
+		:Voice	518	//	置換しました<<ts05_co030>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//ド●えもん風に
+	[Task9940]
+	{
+		:Tasktype	"Message"
+		:Message	"謎の怪音と共に、マイナスドライバーがココの右手に握られる。"
+		:Frame		0
+	}
+//☆ＡＮココ：6：2
+	[Task9950]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		0,0
+	}
+	[Task9960]
+	{
+		:Tasktype	"Message"
+		:Message	"「かける、にー！！」"
+		:Character	6		//ココ
+		:Voice	519	//	置換しました<<ts05_co031>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task9970]
+	{
+		:Tasktype	"Message"
+		:Message	"さらに、もう１本、左手にドライバーが現れる。"
+		:Frame		0
+	}
+	[Task9980]
+	{
+		:Tasktype	"Message"
+		:Message	"お前それ、一体どっから出したんだ……？"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task9990]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task10000]
+	{
+		:Tasktype	"Message"
+		:Message	"と、俺が疑問に思う間もなく、ココはふたつのドライバーを、女神像の背中へ振りかざした。"
+		:Frame		0
+	}
+	[Task10010]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、ゴリゴリゴリゴリと、ドライバーの先っちょで、何かを彫り始めた……。"
+		:Frame		0
+	}
+//ＥＣＧ/EV_CO19//ネーミング無し、多分、ココ石像ごりごり//差分４
+	[Task10020]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task10030]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		233	//	置換しました<<ev_co19a>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			1
+		:FadeWait		1
+		:CGFlag			65
+	}
+	[Task10040]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task10050]
+	{
+		:Tasktype	"Message"
+		:Message	"「うんしょ、よいしょ……」"
+		:Character	6		//ココ
+		:Voice	520	//	置換しました<<ts05_co032>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10060]
+	{
+		:Tasktype	"Message"
+		:Message	"ごりごり。"
+		:Frame		0
+	}
+	[Task10070]
+	{
+		:Tasktype	"Message"
+		:Message	"ごりごりごり……。"
+		:Frame		0
+	}
+	[Task10080]
+	{
+		:Tasktype	"Message"
+		:Message	"「……？？？？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task10090]
+	{
+		:Tasktype	"Message"
+		:Message	"寂しいと言って、ココは何かを彫り始めた……。"
+		:Frame		0
+	}
+	[Task10100]
+	{
+		:Tasktype	"Message"
+		:Message	"一生懸命に彫り進めた。"
+		:Frame		0
+	}
+	[Task10110]
+	{
+		:Tasktype	"Message"
+		:Message	"「何やってるの！？」"
+		:Character	5		//少年
+		:Voice	12917	//	置換しました<<ts05_sh023>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task10120]
+	{
+		:Tasktype	"Message"
+		:Message	"少年の位置からでは、ココが何をやっているかよく見えないようだ。"
+		:Frame		0
+	}
+	[Task10130]
+	{
+		:Tasktype	"Message"
+		:Message	"「彫ってるの」"
+		:Character	6		//ココ
+		:Voice	521	//	置換しました<<ts05_co033>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10140]
+	{
+		:Tasktype	"Message"
+		:Message	"「刻んでるの……」"
+		:Character	6		//ココ
+		:Voice	522	//	置換しました<<ts05_co034>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10150]
+	{
+		:Tasktype	"Message"
+		:Message	"「この石像に、証を刻み込んでるの」"
+		:Character	6		//ココ
+		:Voice	523	//	置換しました<<ts05_co035>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//証＝あかし
+	[Task10160]
+	{
+		:Tasktype	"Message"
+		:Message	"「証を？　どうして？」"
+		:Character	5		//少年
+		:Voice	12918	//	置換しました<<ts05_sh024>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+//証＝あかし
+	[Task10170]
+	{
+		:Tasktype	"Message"
+		:Message	"「それは……」"
+		:Character	6		//ココ
+		:Voice	524	//	置換しました<<ts05_co036>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+
+//5pb.-デフォルト停止時間30f-
+	[Task10180]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+
+	[Task10190]
+	{
+		:Tasktype	"Message"
+		:Message	"「寂しかったから」"
+		:Character	6		//ココ
+		:Voice	525	//	置換しました<<ts05_co037>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10200]
+	{
+		:Tasktype	"Message"
+		:Message	"「それに、あのね……」"
+		:Character	6		//ココ
+		:Voice	526	//	置換しました<<ts05_co038>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+
+//5pb.-19:ハイルミッテル（治癒）-
+	[Task10210]
+	{
+		:Tasktype	"BgmPlay"
+		:BGM		36	//	置換しました<<bgm19>>
+	}
+
+	[Task10220]
+	{
+		:Tasktype	"Message"
+		:Message	"「悔しいの……」"
+		:Character	6		//ココ
+		:Voice	527	//	置換しました<<ts05_co039>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10230]
+	{
+		:Tasktype	"Message"
+		:Message	"「悔しかったんだ、ココは……」"
+		:Character	6		//ココ
+		:Voice	528	//	置換しました<<ts05_co040>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10240]
+	{
+		:Tasktype	"Message"
+		:Message	"小さく、ココは呟きながら、ココは作業を進めていく……。"
+		:Frame		0
+	}
+	[Task10250]
+	{
+		:Tasktype	"Message"
+		:Message	"２本のドライバーを、両手で同時に、器用に扱いながら……。"
+		:Frame		0
+	}
+	[Task10260]
+	{
+		:Tasktype	"Message"
+		:Message	"「悔しい？」"
+		:Character	5		//少年
+		:Voice	12919	//	置換しました<<ts05_sh025>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task10270]
+	{
+		:Tasktype	"Message"
+		:Message	"「今日まで誰も助けに来てくれないってことは、ココ達、見捨てられちゃったってことでしょ？」"
+		:Character	6		//ココ
+		:Voice	529	//	置換しました<<ts05_co041>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10280]
+	{
+		:Tasktype	"Message"
+		:Message	"「だから、証を、ココ達はここに居るって、証を誰かに見つけてもらおうってそう思って♪」"
+		:Character	6		//ココ
+		:Voice	530	//	置換しました<<ts05_co042>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//証＝あかし
+	[Task10290]
+	{
+		:Tasktype	"Message"
+		:Message	"「…………」"
+		:Character	5		//少年
+		:Voice	12920	//	置換しました<<ts05_sh026>>
+//		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task10300]
+	{
+		:Tasktype	"Message"
+		:Message	"「…………」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task10310]
+	{
+		:Tasktype	"Message"
+		:Message	"俺と少年は顔を見合わせた。"
+		:Frame		0
+	}
+	[Task10320]
+	{
+		:Tasktype	"Message"
+		:Message	"再び、ココの手元に視線を向ける。"
+		:Frame		0
+	}
+//☆ＢＧココの描いた針金人間
+	[Task10330]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task10340]
+	{
+		:Tasktype	"SpriteBG"
+		:Texture		162	//	置換しました<<ibg15a>>
+		:Position		640,360
+		:Priority		4
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task10350]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+
+	[Task10360]
+	{
+		:Tasktype	"Message"
+		:Message	"それらは人間の形をしていた。"
+		:Frame		0
+	}
+	[Task10370]
+	{
+		:Tasktype	"Message"
+		:Message	"簡単な人型。針金人形みたいだった。"
+		:Frame		0
+	}
+	[Task10380]
+	{
+		:Tasktype	"Message"
+		:Message	"針金の先には、丸い顔がひとつ……。"
+		:Frame		0
+	}
+	[Task10390]
+	{
+		:Tasktype	"Message"
+		:Message	"「何これ？」"
+		:Character	5		//少年
+		:Voice	3415	//	置換しました<<ts05_sh027>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+//ＥＣＧ/EV_CO19//ネーミング無し、多分、ココ石像ごりごり//差分４
+	[Task10400]
+	{
+		:Tasktype	"Message"
+		:Message	"「ココだよ」"
+		:Character	6		//ココ
+		:Voice	531	//	置換しました<<ts05_co043>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10410]
+	{
+		:Tasktype	"Message"
+		:Message	"「で、こっちがピピとチャミ」"
+		:Character	6		//ココ
+		:Voice	532	//	置換しました<<ts05_co044>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//何故ココはチャミのことを知っているのか？　ここでは謎のままとする
+	[Task10420]
+	{
+		:Tasktype	"Message"
+		:Message	"よく見ると、人間の形をした傷のそばに、見たこともない獣の姿がふたつ、刻み込まれていた。"
+		:Frame		0
+	}
+	[Task10430]
+	{
+		:Tasktype	"Message"
+		:Message	"「ここんとこは、たけぴょん、空ピー、つぐみん〜」"
+		:Character	6		//ココ
+		:Voice	533	//	置換しました<<ts05_co045>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10440]
+	{
+		:Tasktype	"Message"
+		:Message	"「んで、少ちゃんとなっきゅ〜」"
+		:Character	6		//ココ
+		:Voice	534	//	置換しました<<ts05_co046>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//※☆以下つぐみルートと共通
+	[Task10450]
+	{
+		:Tasktype	"Message"
+		:Message	"「…………」"
+		:Character	5		//少年
+		:Voice	12921	//	置換しました<<ts05_sh028>>
+//		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task10460]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task10470]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		233	//	置換しました<<ev_co19a>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			1
+		:FadeWait		1
+	}
+	[Task10480]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task10490]
+	{
+		:Tasktype	"Message"
+		:Message	"「よーし、次はぁ……」"
+		:Character	6		//ココ
+		:Voice	535	//	置換しました<<ts05_co047>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10500]
+	{
+		:Tasktype	"Message"
+		:Message	"さらにココは、何かを描こうとする。"
+		:Frame		0
+	}
+	[Task10510]
+	{
+		:Tasktype	"Message"
+		:Message	"「あれ？　それで全員じゃないのか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task10520]
+	{
+		:Tasktype	"Message"
+		:Message	"俺がそう聞いたとき――"
+		:Frame		0
+	}
+	[Task10530]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+	[Task10540]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		234	//	置換しました<<ev_co19b>>
+		:Position		640,360
+		:Priority		3
+		:FadeIn			1
+		:FadeWait		1
+		:CGFlag			66
+	}
+	[Task10550]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task10560]
+	{
+		:Tasktype	"Message"
+		:Message	"「あっ！？」"
+		:Character	6		//ココ
+		:Voice	536	//	置換しました<<ts05_co048>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10570]
+	{
+		:Tasktype	"Message"
+		:Message	"不安定な格好で台座に立っていたココが、バランスを崩す。"
+		:Frame		0
+	}
+	[Task10580]
+	{
+		:Tasktype	"Message"
+		:Message	"「あ、危ない！！」"
+		:Character	5		//少年
+		:Voice	12922	//	置換しました<<ts05_sh029>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task10590]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.-フェードアウト黒-
+	[Task10600]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:Time			12
+		:SpriteDelete	1
+	}
+
+	[Task10610]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task10620]
+	{
+		:Tasktype	"Message"
+		:Message	"咄嗟に少年が後ろから、ココの身体を支えた。"
+		:Frame		0
+	}
+	[Task10630]
+	{
+		:Tasktype	"Message"
+		:Message	"ずり落ちないように彼女の腰に手を添えて、そっと台座へと押し戻す。"
+		:Frame		0
+	}
+	[Task10640]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.松--トリミング背景を使用予定--
+	[Task10650]
+	{
+		:Tasktype		"Sprite"
+		:Texture		181	//	置換しました<<kbg21aaa1>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			0
+		:FadeWait		0
+	}
+	[Task10660]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+//☆ＣＨ少年：１／２
+	[Task10670]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	20
+		[Character0]
+		{
+			:Name		"少年"
+			:Preset		13
+//★ＣＨ少年：1：8
+		:Animation		0,7
+			:Rot		0
+		}
+	//☆ＣＨココ：２／２
+		[Character1]
+		{
+			:Name		"ココ"
+			:Preset		10
+//★ＣＨココ：2：6
+		:Animation		1,5
+			:Rot		0
+		}
+	}
+//5pb.-フェードイン黒-
+	[Task10680]
+	{
+		:Tasktype		"FadeIn"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	0
+	}
+	[Task10690]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task10700]
+	{
+		:Tasktype	"Message"
+		:Message	"「あ、ありがと……」"
+		:Character	6		//ココ
+		:Voice	537	//	置換しました<<ts05_co049>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//☆ＡＮ少年：1：1
+	[Task10710]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"少年"
+		:Animation		0,0
+	}
+	[Task10720]
+	{
+		:Tasktype	"Message"
+		:Message	"「足元、気をつけてね」"
+		:Character	5		//少年
+		:Voice	12923	//	置換しました<<ts05_sh030>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+//☆ＡＮココ：1：2
+	[Task10730]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		0,0
+	}
+	[Task10740]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん♪」"
+		:Character	6		//ココ
+		:Voice	538	//	置換しました<<ts05_co050>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//☆ＢＧ憩いの間（点灯）
+//☆ＢＧ憩いの間（点灯）
+	[Task10750]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+//5pb.松--通常背景に切り替え--
+	[Task10760]
+	{
+		:Tasktype		"SpriteBG"
+		:Texture		33	//	置換しました<<bg21aaa>>
+		:Position		640,360
+		:Priority		10
+		:FadeIn			1
+		:FadeWait		1
+		:SpriteDelete	1
+	}
+	[Task10770]
+	{
+		:Tasktype	"ChrModelLight"
+		:Diffuse	245,228,233,255
+		:Ambient	205,188,193,255
+		:Spec		255,255,255,255
+		:Angle		9,0
+	}
+	[Task10780]
+	{
+		:Tasktype	"Window"
+		:Visible	1
+	}
+	[Task10790]
+	{
+		:Tasktype	"Message"
+		:Message	"そして、バランスを取り戻したココは、ピョンと地面に着地した。"
+		:Frame		0
+	}
+//☆ＣＨココ：２／３
+	[Task10800]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Name		"ココ"
+		:Preset		1
+//★ＣＨココ：2：1
+		:Animation		1,0
+		:Rot		0
+		:Fade		20
+	}
+	[Task10810]
+	{
+		:Tasktype	"Message"
+		:Message	"「ココ、証を残すのもいいけど、俺達は明日にはここから脱出するんだぜ。どうせなら、楽しい思い出も残さないか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮココ：2：6
+	[Task10820]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		1,5
+	}
+	[Task10830]
+	{
+		:Tasktype	"Message"
+		:Message	"「楽しい思い出？」"
+		:Character	6		//ココ
+		:Voice	539	//	置換しました<<ts05_co051>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10840]
+	{
+		:Tasktype	"Message"
+		:Message	"「楽しい思い出？」"
+		:Character	5		//少年
+		:Voice	12924	//	置換しました<<ts05_sh031>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task10850]
+	{
+		:Tasktype	"Message"
+		:Message	"「そう、楽しい思い出だ！　明日の脱出の前祝と、成功を祈って宴会をしようぜ」"
+		:Name	1		//武
+		:Frame		0
+	}
+//☆ＡＮココ：2：2
+	[Task10860]
+	{
+		:Tasktype	"ChrModelAnimation"
+		:Name			"ココ"
+		:Animation		1,0
+	}
+	[Task10870]
+	{
+		:Tasktype	"Message"
+		:Message	"「わーーい宴会、宴会、大宴会。やるーーーっ！」"
+		:Character	6		//ココ
+		:Voice	540	//	置換しました<<ts05_co052>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10880]
+	{
+		:Tasktype	"Message"
+		:Message	"「準備は俺がするから、ココ達はみんなを呼んできてくれないか？」"
+		:Name	1		//武
+		:Frame		0
+	}
+	[Task10890]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん、いいよ！」"
+		:Character	6		//ココ
+		:Voice	541	//	置換しました<<ts05_co053>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+//☆ＣＨ全消し
+	[Task10900]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+//☆ＣＨ少年：１／２
+	[Task10910]
+	{
+		:Tasktype	"ChrModelOpen"
+		:Max	2
+		:Fade	30
+		[Character0]
+		{
+			:Name		"少年"
+			:Preset		13
+//★ＣＨ少年：1：1
+		:Animation		0,0
+			:Rot		0
+		}
+	//☆ＣＨココ：２／２
+		[Character1]
+		{
+			:Name		"ココ"
+			:Preset		10
+//★ＣＨココ：2：2
+		:Animation		1,0
+			:Rot		0
+		}
+	}
+	[Task10920]
+	{
+		:Tasktype	"Message"
+		:Message	"「少ちゃん、ピピいこ！」"
+		:Character	6		//ココ
+		:Voice	542	//	置換しました<<ts05_co054>>
+		:ModelName		"ココ"
+		:Frame		0
+	}
+	[Task10930]
+	{
+		:Tasktype	"Message"
+		:Message	"「うん」"
+		:Character	5		//少年
+		:Voice	12925	//	置換しました<<ts05_sh032>>
+		:ModelName		"少年"
+		:Frame		0
+	}
+	[Task10940]
+	{
+		:Tasktype	"Message"
+		:Message	"「わんわん」"
+		:Character	14		//ピピ
+		:Voice	4	//	置換しました<<pipi_04>>
+		:Frame		0
+		:Name	8		//ピピ
+	}
+//☆ＣＨ全消し
+	[Task10950]
+	{
+		:Tasktype	"ChrModelClose"
+		:AllDelete	1
+		:Fade		20
+	}
+	[Task10960]
+	{
+		:Tasktype	"Message"
+		:Message	"ココと少年、ピピは、みんなを呼びに駆け出していく。"
+		:Frame		0
+	}
+	[Task10970]
+	{
+		:Tasktype	"Message"
+		:Message	"さて、俺は準備を始めるか………。"
+		:Frame		0
+	}
+//5pb.-ファイル終了時基本セット-
+	[Task10980]
+	{
+		:Tasktype	"Window"
+		:Visible	0
+	}
+
+//5pb.-デフォルト停止時間30f-
+	[Task10990]
+	{
+		:Tasktype	"BgmStop"
+		:Div		30
+	}
+
+	[Task11000]
+	{
+		:Tasktype		"FadeOut"
+		:Type			0
+		:Color			0,0,0,255	//Black
+		:SpriteDelete	1
+	}
+	[Task11010]
+	{
+		:Tasktype	"SeStop"
+		:Div		0
+	}
+	[Task11020]
+	{
+		:Tasktype	"BgmStop"
+		:Div		0
+	}
+//5pb.--初期化コマンド--
+	[Task11030]
+	{
+		:Tasktype	"CallScene"
+		:Name		"sho_com","InitTag"
+	}
+//5pb.-ファイル移動-
+	[Task11040]
+	{
+		:Tasktype	"NextScene"
+		:NextScene	"TS05B"
+	}
+//アクアシステムデフォルトスクリプト--ここから--
+	[Task11050]
+	{
+		:Tasktype 	"End"
+	}
+}
+//アクアシステムデフォルトスクリプト--ここまで--
+//<EOF>
+//////////////////////////////////////////////////////////////////////////////////////////////////////

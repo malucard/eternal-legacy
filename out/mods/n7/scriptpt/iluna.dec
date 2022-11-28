@@ -1,0 +1,1609 @@
+[00000058] 10: 
+[00000059] 10: bgload 00000000 BG12A 0 1
+[00000066] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 9
+[00000071] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 54
+[0000007d] 10: 
+[0000007e] 17: showClock
+[0000007f] 10: 
+[00000080]  b: playVoice L1D4A401
+[0000008a] 10: 
+[0000008b] 19: 
+[0000008c] ff: text 00
+{textColor 1 7}【Kurumi】 "Onii-chaan! Waaait!" 
+{textColor 0 2}Kurumi chases after me as I walk down the forest road towards the ocean. 
+
+
+[0000008f] 10: 
+[00000090]  8: playSFX SE042 1
+[0000009a]  0: 
+[0000009b]  5: delay 60
+[000000a0] 10: 
+[000000a1]  9: stopSFX
+[000000a2] 10: 
+[000000a3] 11: fgload 0 00000000 KU10AA 1 3
+[000000b3] 10: 
+[000000b4]  6: playBGM 4
+[000000b8] 10: 
+[000000b9]  b: playVoice L1D4A402
+[000000c3] 10: 
+[000000c4] 19: 
+[000000c5] ff: text 01
+{textColor 1 7}【Kurumi】 "Haah... finally caught up to you..." 
+{textColor 0 0}【Makoto】 "Hmm? What's wrong, Kurumi?" 
+
+
+[000000c8] 10: 
+[000000c9] 11: fgload 0 00000000 KU01AA 1 3
+[000000d9] 10: 
+[000000da]  b: playVoice L1D4A403
+[000000e4] 10: 
+[000000e5] 19: 
+[000000e6] ff: text 02
+{textColor 1 7}【Kurumi】 "Kurumi was going to go to Princess Beach to watch some crab sumo wrestling, so she thought she could go with you up until she got there..." 
+{textColor 0 0}【Makoto】 "I see." 
+
+
+[000000e9]  0: 
+[000000ea]  a: condJump 00 VAR_(28_1e)_a1_26 (28) != (15) (80)->0 (15) (00)  * 000000fd (0003)
+[000000f8] 10: 
+[000000f9] 19: 
+[000000fa] ff: text 03
+{textColor 0 2}Wait, what the hell is "Crab sumo"!? Well, it's pretty self-explanatory, but... 
+
+
+[000000fd] 10: 
+[000000fe]  b: playVoice L1D4A404
+[00000108] 10: 
+[00000109] 19: 
+[0000010a] ff: text 04
+{textColor 1 7}【Kurumi】 "So, where are you going, Onii-chan?" 
+{textColor 0 0}【Makoto】 "To Lunabeach... I thought I'd try my hand at being Izumi-san's assistant..." 
+
+
+[0000010d] 10: 
+[0000010e] 11: fgload 0 00000000 KU06AA 1 3
+[0000011e] 10: 
+[0000011f]  b: playVoice L1D4A405
+[00000129] 10: 
+[0000012a] 19: 
+[0000012b] ff: text 05
+{textColor 1 7}【Kurumi】 "Hmm... you're going to see Onee-chan then..." 
+{textColor 0 2}She looks like she wants to say something. 
+
+[0000012e] ff: text 06
+{textColor 0 2}{choiceOpt 1 -> Do you want to go with me? }{choiceOpt 2 -> Is there something you want to say? }
+
+[00000131] 10: 
+[00000132]  3: choice v_a1_08 00 00
+[00000137]  0: 
+[00000138]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000256 (0004)
+[00000146] fe: varop VAR_(28_0a)_a1_02 (14) += (00) 1
+[00000151] 10: 
+[00000152] 19: 
+[00000153] ff: text 07
+{textColor 0 0}【Makoto】 "Do you want to go to Lunabeach too?" 
+
+
+[00000156] 10: 
+[00000157] 11: fgload 0 00000000 KU01AA 1 3
+[00000167] 10: 
+[00000168]  b: playVoice L1D4A406
+[00000172] 10: 
+[00000173] 19: 
+[00000174] ff: text 08
+{textColor 1 7}【Kurumi】 "Huh? But... Kurumi wants to watch the crab sumo..." 
+{textColor 0 0}【Makoto】 "The crabs won't go extinct today, right?" 
+
+
+[00000177] 10: 
+[00000178]  b: playVoice L1D4A407
+[00000182] 10: 
+[00000183] 19: 
+[00000184] ff: text 09
+{textColor 1 7}【Kurumi】 "Huh?" 
+{textColor 0 0}【Makoto】 "What I'm saying that is that you could see it whenever, like tomorrow or the day after tomorrow, right?" 
+
+
+[00000187] 10: 
+[00000188]  b: playVoice L1D4A408
+[00000192] 10: 
+[00000193] 19: 
+[00000194] ff: text 0a
+{textColor 1 7}【Kurumi】 "Oh, that's what you mean... But Kurumi wants to see the crab sumo today, no matter what..." 
+{textColor 0 0}【Makoto】 "Then I guess that's a 'no'..." 
+
+
+[00000197] 10: 
+[00000198]  b: playVoice L1D4A409
+[000001a2] 10: 
+[000001a3] 19: 
+[000001a4] ff: text 0b
+{textColor 1 7}【Kurumi】 "But couldn't you do the same, Onii-chan?" 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[000001a7] 10: 
+[000001a8]  b: playVoice L1D4A410
+[000001b2] 10: 
+[000001b3] 19: 
+[000001b4] ff: text 0c
+{textColor 1 7}【Kurumi】 "Onee-chan won't go extinct today, right?" 
+{textColor 0 0}【Makoto】 "What?" 
+
+
+[000001b7] 10: 
+[000001b8]  b: playVoice L1D4A411
+[000001c2] 10: 
+[000001c3] 19: 
+[000001c4] ff: text 0d
+{textColor 1 7}【Kurumi】 "You also can help Onee-chan whenever, right? Like tomorrow, or the day after that..." 
+{textColor 0 0}【Makoto】 "Ah... well, that's true, but..." 
+
+
+[000001c7] 10: 
+[000001c8] 11: fgload 0 00000000 KU02AA 1 3
+[000001d8] 10: 
+[000001d9]  b: playVoice L1D4A412
+[000001e3] 10: 
+[000001e4] 19: 
+[000001e5] ff: text 0e
+{textColor 1 7}【Kurumi】 "Then go to Princess Beach with Kurumi today!" 
+{textColor 0 2}Hmm... Crab sumo, huh... 
+{textColor 0 2}Well, that does sound kinda fun... 
+{textColor 0 2}But I've already decided to go to Lunabeach. 
+{textColor 0 2}However, I decide that when I'm done with that... I'll go see the crab sumo next time. 
+{textColor 0 0}【Makoto】 "I'm sorry Kurumi, but I've already decided to go to Lunabeach today." 
+{textColor 0 0}【Makoto】 "I'll see the crab sumo next time... okay?" 
+
+
+[000001e8] 10: 
+[000001e9] 11: fgload 0 00000000 KU08AA 1 3
+[000001f9] 10: 
+[000001fa]  b: playVoice L1D4A413
+[00000204] 10: 
+[00000205] 19: 
+[00000206] ff: text 0f
+{textColor 1 7}【Kurumi】 "Next time, huh..." 
+{textColor 0 2}Kurumi slumps her shoulders. 
+{textColor 0 2}But she soon seems to pull herself together... 
+
+
+[00000209] 10: 
+[0000020a] 11: fgload 0 00000000 KU02AA 1 3
+[0000021a] 10: 
+[0000021b]  b: playVoice L1D4A414
+[00000225] 10: 
+[00000226] 19: 
+[00000227] ff: text 10
+{textColor 1 7}【Kurumi】 "All right, got it. Then be sure to come next time, okay?" 
+{textColor 0 2}... and replies cheerfully. 
+{textColor 0 2}... 
+
+
+[0000022a] 10: 
+[0000022b]  b: playVoice L1D4A415
+[00000235] 10: 
+[00000236] 19: 
+[00000237] ff: text 11
+{textColor 1 7}【Kurumi】 "Well then, see you later, Onii-chan." 
+
+
+[0000023a] 10: 
+[0000023b] 12: removeFG 0 3
+[00000242] 10: 
+[00000243] 19: 
+[00000244] ff: text 12
+{textColor 0 2}Kurumi runs ahead towards Princess Beach... 
+
+
+[00000247] fe: varop VAR_(28_0a)_a1_20 (14) := (00) 1
+[00000252]  0: 
+[00000253]  7: goto7 0000034c (0005)
+[00000256]  0: 
+[00000257]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 0000034c (0006)
+[00000265] 10: 
+[00000266] 19: 
+[00000267] ff: text 13
+{textColor 0 0}【Makoto】 "Do you want to say something?" 
+
+
+[0000026a] 10: 
+[0000026b]  b: playVoice L1D4A416
+[00000275] 10: 
+[00000276] 19: 
+[00000277] ff: text 14
+{textColor 1 7}【Kurumi】 "Not really... there's nothing in particular Kurumi wants to say." 
+{textColor 0 2}I don't know why, but Kurumi seems to be getting angry right now... 
+{textColor 0 0}【Makoto】 "Why are you angry?" 
+
+
+[0000027a] 10: 
+[0000027b] 11: fgload 0 00000000 KU05AA 1 3
+[0000028b] 10: 
+[0000028c]  b: playVoice L1D4A417
+[00000296] 10: 
+[00000297] 19: 
+[00000298] ff: text 15
+{textColor 1 7}【Kurumi】 "Kurumi's not angry!" 
+{textColor 0 0}【Makoto】 "Hmm... all right, then..." 
+{textColor 1 7}【Kurumi】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 7}【Kurumi】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000029b] 10: 
+[0000029c] 11: fgload 0 00000000 KU04AA 1 0
+[000002ac] 10: 
+[000002ad]  b: playVoice L1D4A418
+[000002b7] 10: 
+[000002b8] 19: 
+[000002b9] ff: text 16
+{textColor 1 7}【Kurumi】 "Hey! How is it 'all right'!? Kurumi's angry!" 
+{textColor 0 0}【Makoto】 "So you were mad after all, weren't you..." 
+
+
+[000002bc] 10: 
+[000002bd] 11: fgload 0 00000000 KU05AA 1 0
+[000002cd] 10: 
+[000002ce]  b: playVoice L1D4A419
+[000002d8] 10: 
+[000002d9] 19: 
+[000002da] ff: text 17
+{textColor 1 7}【Kurumi】 "There's no way Kurumi's mad!" 
+{textColor 0 0}【Makoto】 "Hey, hey... which is it?" 
+
+
+[000002dd] 10: 
+[000002de]  b: playVoice L1D4A420
+[000002e8] 10: 
+[000002e9] 19: 
+[000002ea] ff: text 18
+{textColor 1 7}【Kurumi】 "Whatever! Onii-chan, you, you..." 
+{textColor 0 0}【Makoto】 "?" 
+
+
+[000002ed] 10: 
+[000002ee]  b: playVoice L1D4A421
+[000002f8] 10: 
+[000002f9] 19: 
+[000002fa] ff: text 19
+{textColor 1 7}【Kurumi】 "Even though Kurumi thought she'd take the the trouble of trying to invite you to the crab sumo!" 
+{textColor 0 0}【Makoto】 "'Trouble'... how is saying the words, 'Onii-chan, wanna go watch crab sumo with me?' trouble?" 
+
+
+[000002fd] 10: 
+[000002fe] 11: fgload 0 00000000 KU08AA 1 3
+[0000030e] 10: 
+[0000030f]  b: playVoice L1D4A422
+[00000319] 10: 
+[0000031a] 19: 
+[0000031b] ff: text 1a
+{textColor 1 7}【Kurumi】 "Waaaaah..." 
+
+
+[0000031e] 10: 
+[0000031f] 11: fgload 0 00000000 KU04AA 1 0
+[0000032f] 10: 
+[00000330]  b: playVoice L1D4A423
+[0000033a] 10: 
+[0000033b] 19: 
+[0000033c] ff: text 1b
+{textColor 1 7}【Kurumi】 "Onii-chan, you idiot!" 
+
+
+[0000033f] 10: 
+[00000340] 12: removeFG 0 3
+[00000347] 10: 
+[00000348] 19: 
+[00000349] ff: text 1c
+{textColor 0 2}Kurumi shouts this and runs off... 
+{textColor 0 2}(Damn it... what's up with Kurumi...?) 
+{textColor 0 2}I can't understand Kurumi's indignant behavior at all... 
+
+
+[0000034c] 10: 
+[0000034d]  7: stopBGM
+[0000034e] 10: 
+[0000034f]  f: removeBG 0 0 2
+[00000359] 10: 
+[0000035a]  8: playSFX SE004 1
+[00000364] 10: 
+[00000365] 10: bgload 00000000 EV_IZ01 0 1
+[00000372] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 10
+[0000037d] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 25
+[00000389] 10: 
+[0000038a] 17: showClock
+[0000038b] 10: 
+[0000038c] 19: 
+[0000038d] ff: text 1d
+{textColor 0 0}【Makoto】 "Hello there!" 
+{textColor 0 2}I open the door to Lunabeach. 
+
+
+[00000390] 10: 
+[00000391]  9: stopSFX
+[00000392] 10: 
+[00000393]  6: playBGM 8
+[00000397] 10: 
+[00000398]  b: playVoice L1D4A424
+[000003a2] 10: 
+[000003a3] 19: 
+[000003a4] ff: text 1e
+{textColor 1 8}【Izumi】 "Oh, Makoto-kun... welcome." 
+{textColor 0 0}【Makoto】 "There's no need to greet me as a customer today." 
+
+
+[000003a7] 10: 
+[000003a8]  b: playVoice L1D4A425
+[000003b2] 10: 
+[000003b3] 19: 
+[000003b4] ff: text 1f
+{textColor 1 8}【Izumi】 "Huh? Why?" 
+{textColor 0 0}【Makoto】 "Because I came to help you... For today, I will be an employee of Lunabeach." 
+
+
+[000003b7] 10: 
+[000003b8]  b: playVoice L1D4A426
+[000003c2] 10: 
+[000003c3] 19: 
+[000003c4] ff: text 20
+{textColor 1 8}【Izumi】 "An employee..." 
+{textColor 0 0}【Makoto】 "Huh? Would that be too bothersome?" 
+
+
+[000003c7] 10: 
+[000003c8]  b: playVoice L1D4A427
+[000003d2] 10: 
+[000003d3] 19: 
+[000003d4] ff: text 21
+{textColor 1 8}【Izumi】 "No, I'm really grateful that you're offering to help, but..." 
+
+
+[000003d7] 10: 
+[000003d8]  b: playVoice L1D4A428
+[000003e2] 10: 
+[000003e3] 19: 
+[000003e4] ff: text 22
+{textColor 1 8}【Izumi】 "Um... we're not accepting part-time workers right now." 
+{textColor 0 0}【Makoto】 "Ha ha ha... I didn't come here for a job." 
+{textColor 0 0}【Makoto】 "I'm just volunteering, that's all..." 
+
+
+[000003e7] 10: 
+[000003e8]  b: playVoice L1D4A429
+[000003f2] 10: 
+[000003f3] 19: 
+[000003f4] ff: text 23
+{textColor 1 8}【Izumi】 "Really?" 
+{textColor 0 0}【Makoto】 "Yeah." 
+
+
+[000003f7] 10: 
+[000003f8]  b: playVoice L1D4A430
+[00000402] 10: 
+[00000403] 19: 
+[00000404] ff: text 24
+{textColor 1 8}【Izumi】 "... All right! Well then, I'll accept your offer. What would you like to help with?" 
+{textColor 0 0}【Makoto】 "Anything you ask me to do." 
+
+
+[00000407] 10: 
+[00000408]  b: playVoice L1D4A431
+[00000412] 10: 
+[00000413] 19: 
+[00000414] ff: text 25
+{textColor 1 8}【Izumi】 "Well then... Let's see..." 
+
+
+[00000417] 10: 
+[00000418]  b: playVoice L1D4A432
+[00000422] 10: 
+[00000423] 19: 
+[00000424] ff: text 26
+{textColor 1 8}【Izumi】 "... I know. First... could you wash the plates?" 
+{textColor 0 0}【Makoto】 "Sure thing. Leave it to me to get any job done!" 
+
+
+[00000427] 10: 
+[00000428]  b: playVoice L1D4A433
+[00000432] 10: 
+[00000433] 19: 
+[00000434] ff: text 27
+{textColor 1 8}【Izumi】 "When that's done, can you clean the shop's windows for me?" 
+{textColor 0 0}【Makoto】 "Okay!" 
+
+
+[00000437] 10: 
+[00000438]  b: playVoice L1D4A434
+[00000442] 10: 
+[00000443] 19: 
+[00000444] ff: text 28
+{textColor 1 8}【Izumi】 "Then when that's done, mop the floor, then when it's dry, wax it..." 
+{textColor 0 0}【Makoto】 "Y-Yeah, that's fine." 
+
+
+[00000447] 10: 
+[00000448]  b: playVoice L1D4A435
+[00000452] 10: 
+[00000453] 19: 
+[00000454] ff: text 29
+{textColor 1 8}【Izumi】 "After that, sweep and clean the front of the shop for me..." 
+
+
+[00000457] 10: 
+[00000458]  b: playVoice L1D4A436
+[00000462] 10: 
+[00000463] 19: 
+[00000464] ff: text 2a
+{textColor 1 8}【Izumi】 "Next, refill the sugar and fresh cream on the tables..." 
+
+
+[00000467] 10: 
+[00000468]  b: playVoice L1D4A437
+[00000472] 10: 
+[00000473] 19: 
+[00000474] ff: text 2b
+{textColor 1 8}【Izumi】 "While you're at it, the lightbulbs on the second floor are dead, so I'd like it if you could replace those..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000477] 10: 
+[00000478]  b: playVoice L1D4A438
+[00000482] 10: 
+[00000483] 19: 
+[00000484] ff: text 2c
+{textColor 1 8}【Izumi】 "Oh! And finally, I need you to go shopping with me!" 
+{textColor 0 0}【Makoto】 "???" 
+
+
+[00000487] 10: 
+[00000488]  b: playVoice L1D4A439
+[00000492] 10: 
+[00000493] 19: 
+[00000494] ff: text 2d
+{textColor 1 8}【Izumi】 "Makoto-kun, you've heard about today's barbecue, right?" 
+{textColor 0 0}【Makoto】 "Barbecue?" 
+
+
+[00000497] 10: 
+[00000498]  b: playVoice L1D4A440
+[000004a2] 10: 
+[000004a3] 19: 
+[000004a4] ff: text 2e
+{textColor 1 8}【Izumi】 "You haven't heard? Everyone's gathering here today at 5:00." 
+{textColor 0 0}【Makoto】 "Ah... I see, that's what Yuka was talking about..." 
+{textColor 0 0}【Makoto】 "... Does that mean that we're going to have a barbecue here at 5:00?" 
+
+
+[000004a7] 10: 
+[000004a8]  b: playVoice L1D4A441
+[000004b2] 10: 
+[000004b3] 19: 
+[000004b4] ff: text 2f
+{textColor 1 8}【Izumi】 "There's no way we can do it here, so... we're having it on Princess Beach." 
+{textColor 0 0}【Makoto】 "Hmm... so that's it..." 
+
+
+[000004b7] 10: 
+[000004b8]  b: playVoice L1D4A442
+[000004c2] 10: 
+[000004c3] 19: 
+[000004c4] ff: text 30
+{textColor 1 8}【Izumi】 "That's why I have a lot of preparations I need to make beforehand..." 
+{textColor 0 0}【Makoto】 "I see now." 
+
+
+[000004c7] 10: 
+[000004c8]  b: playVoice L1D4A443
+[000004d2] 10: 
+[000004d3] 19: 
+[000004d4] ff: text 31
+{textColor 1 8}【Izumi】 "But because the car isn't working, I don't think I can carry all the groceries back here on my own." 
+{textColor 0 0}【Makoto】 "Oh ho." 
+
+
+[000004d7] 10: 
+[000004d8]  b: playVoice L1D4A444
+[000004e2] 10: 
+[000004e3] 19: 
+[000004e4] ff: text 32
+{textColor 1 8}【Izumi】 "So when I'm going shopping, I would like you to come with me, Makoto-kun." 
+{textColor 0 0}【Makoto】 "O-Oh..." 
+
+
+[000004e7] 10: 
+[000004e8]  b: playVoice L1D4A445
+[000004f2] 10: 
+[000004f3] 19: 
+[000004f4] ff: text 33
+{textColor 1 8}【Izumi】 "Am I asking too much of you?" 
+
+[000004f7] ff: text 34
+{textColor 0 2}{choiceOpt 1 -> Not at all! }{choiceOpt 2 -> Maybe a little. }
+
+[000004fa] 10: 
+[000004fb]  3: choice v_a1_08 00 00
+[00000500]  0: 
+[00000501]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000538 (0007)
+[0000050f] 10: 
+[00000510] 19: 
+[00000511] ff: text 35
+{textColor 0 0}【Makoto】 "That much? It'll be a piece of cake! It's no problem at all!!" 
+{textColor 0 2}I'm bluffing. 
+{textColor 0 2}I already told her I'd help with whatever she wanted me to, so there's no way I can back down now. 
+{textColor 0 2}A man's word is his honor. 
+
+
+[00000514] 10: 
+[00000515]  b: playVoice L1D4A446
+[0000051f] 10: 
+[00000520] 19: 
+[00000521] ff: text 36
+{textColor 1 8}【Izumi】 "Really? You're a lifesaver〜♪" 
+
+
+[00000524] 10: 
+[00000525]  b: playVoice L1D4A447
+[0000052f] 10: 
+[00000530] 19: 
+[00000531] ff: text 37
+{textColor 1 8}【Izumi】 "Thank you, Makoto-kun♪" 
+{textColor 0 2}That smile is all I need to get bursting with energy. 
+{textColor 0 2}I'll get to work right away! 
+
+
+[00000534]  0: 
+[00000535]  7: goto7 000005ac (0008)
+[00000538]  0: 
+[00000539]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000005ac (0009)
+[00000547] 10: 
+[00000548] 19: 
+[00000549] ff: text 38
+{textColor 0 0}【Makoto】 "It does seem a bit too much... maybe..." 
+
+
+[0000054c] 10: 
+[0000054d]  b: playVoice L1D4A448
+[00000557] 10: 
+[00000558] 19: 
+[00000559] ff: text 39
+{textColor 1 8}【Izumi】 "I-Is that so... No matter what the circumstances may be... huh..." 
+
+
+[0000055c] 10: 
+[0000055d]  b: playVoice L1D4A449
+[00000567] 10: 
+[00000568] 19: 
+[00000569] ff: text 3a
+{textColor 1 8}【Izumi】 "I guess it's impossible for you, Makoto-kun..." 
+{textColor 0 2}Crap... 
+
+
+[0000056c] 10: 
+[0000056d]  b: playVoice L1D4A450
+[00000577] 10: 
+[00000578] 19: 
+[00000579] ff: text 3b
+{textColor 1 8}【Izumi】 "If it were Gen-san, the fisherman, he'd have it all done in an hour..." 
+{textColor 0 2}Double crap... 
+
+
+[0000057c] 10: 
+[0000057d]  b: playVoice L1D4A451
+[00000587] 10: 
+[00000588] 19: 
+[00000589] ff: text 3c
+{textColor 1 8}【Izumi】 "But I guess this island is lacking in able men..." 
+{textColor 0 2}... Dammit! 
+{textColor 0 0}【Makoto】 "It's no problem at all! This much will be a piece of cake!" 
+{textColor 0 0}【Makoto】 "That's too little! It's simple! It'll be easy! Please leave it to me!" 
+
+
+[0000058c] 10: 
+[0000058d]  b: playVoice L1D4A452
+[00000597] 10: 
+[00000598] 19: 
+[00000599] ff: text 3d
+{textColor 1 8}【Izumi】 "Huh? Really? You're a lifesaver〜♪" 
+
+
+[0000059c] 10: 
+[0000059d]  b: playVoice L1D4A453
+[000005a7] 10: 
+[000005a8] 19: 
+[000005a9] ff: text 3e
+{textColor 1 8}【Izumi】 "Thank you, Makoto-kun♪" 
+{textColor 0 2}That smile fills me with a dreaded sense of impending doom... 
+{textColor 0 2}Have I... been trapped...? 
+
+
+[000005ac] 10: 
+[000005ad]  7: stopBGM
+[000005ae] 10: 
+[000005af]  f: removeBG 0 0 2
+[000005b9] 10: 
+[000005ba] 10: bgload 00000000 BG06A 0 1
+[000005c7] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 11
+[000005d2] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 17
+[000005de] 10: 
+[000005df] 17: showClock
+[000005e0] 10: 
+[000005e1] 19: 
+[000005e2] ff: text 3f
+{textColor 0 2}There's eight chores which have to be done. 
+{textColor 0 2}I have to wash the plates, clean the windows, mop the floor, wax it, sweep and clean the front of the shop, refill the sugar and fresh cream, change the light bulbs, and go shopping for the barbecue. 
+{textColor 0 2}Well, I've already finished washing the plates. 
+{textColor 0 2}Right now, I'm wiping the windows outside of the shop. 
+{textColor 0 2}*Wipe wipe wipe wipe wipe...* 
+{textColor 0 2}The windows are facing the ocean, which means they aren't filthy because of dirt. 
+{textColor 0 2}Rather, there's salt stuck to them. The grains of sand are now sticking to the windows due to the adhesion effect, as stiff and as hard as rocks. 
+{textColor 0 2}At this rate, it seems it'll probably take half a day just to polish the windows. 
+{textColor 0 2}Even it's too late, I'm regretting forcing myself to undertake such a Herculean task. 
+{textColor 0 2}And... Just then... 
+
+
+[000005e5] 10: 
+[000005e6]  1: cmd1 7
+[000005ea] 10: 
+[000005eb]  1: cmd1 14
+[000005ef] 10: 
+[000005f0]  8: playSFX SE117 1
+[000005fa] 10: 
+[000005fb] 19: 
+[000005fc] ff: text 40
+{textColor 0 2}――An earthquake hits. 
+{textColor 0 2}It feels stronger than the one on the 1st... 
+
+
+[000005ff]  0: 
+[00000600]  5: delay 60
+[00000605] 10: 
+[00000606]  8: playSFX SE124 1
+[00000610] 10: 
+[00000611] 19: 
+[00000612] ff: text 41
+{textColor 0 2}I hear the sound of tableware breaking from inside the shop. 
+{textColor 0 2}Izumi-san... 
+{textColor 0 2}I anxiously burst inside Lunabeach. 
+
+
+[00000615] 10: 
+[00000616]  2: cmd2 11
+[0000061a] 10: 
+[0000061b]  2: cmd2 10
+[0000061f] 10: 
+[00000620] 10: bgload 00000000 BG29A 0 1
+[0000062d] 10: 
+[0000062e] 19: 
+[0000062f] ff: text 42
+{textColor 0 0}【Makoto】 "Are you all right, Izumi-san!?" 
+{textColor 0 2}By the time I say that, the tremors have already calmed down. 
+
+
+[00000632] 10: 
+[00000633] 11: fgload 0 00000000 IZ08AA 1 3
+[00000643] 10: 
+[00000644]  b: playVoice L1D4A454
+[0000064e] 10: 
+[0000064f] 19: 
+[00000650] ff: text 43
+{textColor 1 8}【Izumi】 "Yes... I'm all right. But..." 
+{textColor 0 2}Izumi-san is staring at fragments of broken tableware and glass at her feet. 
+{textColor 0 0}【Makoto】 "Were those the ones that I washed and placed in the strainer earlier?" 
+
+
+[00000653] 10: 
+[00000654]  b: playVoice L1D4A455
+[0000065e] 10: 
+[0000065f] 19: 
+[00000660] ff: text 44
+{textColor 1 8}【Izumi】 "Yes..." 
+{textColor 0 2}It seems that all the time and effort I put into carefully washing them has gone to waste... 
+{textColor 0 2}No, wait... in the first place, if I hadn't washed them and just piled them up in the sink, then they probably wouldn't have broken like this. 
+{textColor 0 0}【Makoto】 "I'm sorry..." 
+{textColor 0 2}I apologize. 
+
+
+[00000663] 10: 
+[00000664] 11: fgload 0 00000000 IZ01AA 1 3
+[00000674] 10: 
+[00000675]  b: playVoice L1D4A456
+[0000067f] 10: 
+[00000680] 19: 
+[00000681] ff: text 45
+{textColor 1 8}【Izumi】 "'Sorry'? ... Makoto-kun, it's not like you caused the earthquake to happen, right?" 
+
+
+[00000684] 10: 
+[00000685]  b: playVoice L1D4A457
+[0000068f] 10: 
+[00000690] 19: 
+[00000691] ff: text 46
+{textColor 1 8}【Izumi】 "It's not your fault..." 
+{textColor 0 2}Izumi-san smiles gently at me. 
+{textColor 0 2}I feel a little better now. 
+
+
+[00000694] 10: 
+[00000695]  b: playVoice L1D4A458
+[0000069f] 10: 
+[000006a0] 19: 
+[000006a1] ff: text 47
+{textColor 1 8}【Izumi】 "But this is really annoying... There's a lot of earthquakes at this place..." 
+
+
+[000006a4] 10: 
+[000006a5]  b: playVoice L1D4A459
+[000006af] 10: 
+[000006b0] 19: 
+[000006b1] ff: text 48
+{textColor 1 8}【Izumi】 "Whenever an earthquake occurs, we lose more and more tableware..." 
+
+
+[000006b4] 10: 
+[000006b5]  b: playVoice L1D4A460
+[000006bf] 10: 
+[000006c0] 19: 
+[000006c1] ff: text 49
+{textColor 1 8}【Izumi】 "Half of the reason the manager went shopping in Italy is because of this." 
+{textColor 0 0}【Makoto】 "Hmm..." 
+
+
+[000006c4] 10: 
+[000006c5]  b: playVoice L1D4A461
+[000006cf] 10: 
+[000006d0] 19: 
+[000006d1] ff: text 4a
+{textColor 1 8}【Izumi】 "Well, no use in crying over spilled milk, right? Let's hurry and clean it up." 
+
+
+[000006d4] 10: 
+[000006d5] 12: removeFG 0 3
+[000006dc] 10: 
+[000006dd] 19: 
+[000006de] ff: text 4b
+{textColor 0 2}Izumi-san brings over a dustpan and broom. 
+{textColor 0 2}I hold the dustpan as Izumi-san gathers the pieces with the broom. 
+{textColor 0 2}The tableware and glass have broken into neat shards. 
+{textColor 0 2}Valuable things are still beautiful even after they've broken, aren't they? 
+{textColor 0 2}For some reason, that's what I think... 
+
+
+[000006e1] 10: 
+[000006e2]  f: removeBG 0 0 2
+[000006ec] 10: 
+[000006ed]  6: playBGM 16
+[000006f2] 10: 
+[000006f3] 18: cmd18
+[000006f4] 10: 
+[000006f5] 1a: cmd1A 1
+[000006f9] 10: 
+[000006fa]  1: cmd1 25
+[000006ff] 10: 
+[00000700] 19: 
+[00000701] ff: text 4c
+{textColor 0 2}When I've finished seven of my eight assignments, it's a little past 3:30.  {textColor 0 2}I finished window cleaning much earlier than I had expected, thanks to a salt removing detergent Izumi-san lent me.   {textColor 0 2}"A salt removing detergent."  {textColor 0 2}――I never knew until now something like that existed in this world. 
+{textColor 0 2}This is the same feeling of culture shock I felt in the past when a friend of mine who worked in a screw factory proudly showed me a magazine called "Monthly Toolbox".   {textColor 0 2}"Necessity is the mother of invention,"  {textColor 0 2}as he would frequently say.   {textColor 0 2}... Huh?{delay 5}{delay 5} ... Or was it something different than that? 
+
+
+[00000704] 10: 
+[00000705]  2: cmd2 5
+[00000709] 10: 
+[0000070a] 18: cmd18
+[0000070b] 10: 
+[0000070c] 1a: cmd1A 0
+[00000710] 10: 
+[00000711]  7: stopBGM
+[00000712] 10: 
+[00000713]  6: playBGM 8
+[00000717] 10: 
+[00000718] 10: bgload 00000000 BG11E 0 1
+[00000725] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[00000731] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 31
+[0000073d] 10: 
+[0000073e] 17: showClock
+[0000073f] 10: 
+[00000740] 19: 
+[00000741] ff: text 4d
+{textColor 0 2}Well, anyway, because all the tasks are done, Izumi-san and I are in the shopping district now, buying things. 
+{textColor 0 2}This is the eighth and final task... to gather everything we need for the barbecue. 
+{textColor 0 2}We buy meat, vegetables, oil, grilling sauce, and large quantities of canned beer. 
+{textColor 0 0}【Makoto】 "Do we really... need to buy so much beer?" 
+{textColor 0 2}I'm worried that I already know what her answer will be when Izumi-san... 
+
+
+[00000744] 10: 
+[00000745] 11: fgload 0 00000000 IZ01AAD 1 3
+[00000755] 10: 
+[00000756]  b: playVoice L1D4A462
+[00000760] 10: 
+[00000761] 19: 
+[00000762] ff: text 4e
+{textColor 1 8}【Izumi】 "Well, Yuka-chan requested it." 
+{textColor 0 2}... confirms my fear with that answer. 
+{textColor 0 2}Lunabeach's storehouse already has the other necessary tools, like the iron plate and charcoal. 
+{textColor 0 2}With this, we've obtained everything that we'll be using for the barbecue. 
+{textColor 0 0}【Makoto】 "Well then, shall we head back now?" 
+{textColor 0 2}I say this as I hold several bloated shopping bags in both of my hands. 
+{textColor 0 2}Just then... 
+
+
+[00000765] 10: 
+[00000766]  b: playVoice L1D4A463
+[00000770] 10: 
+[00000771] 19: 
+[00000772] ff: text 4f
+{textColor 1 8}【Izumi】 "Oh, this is bad... I forgot something. Wait here a bit, okay?" 
+
+
+[00000775] 10: 
+[00000776] 12: removeFG 0 3
+[0000077d] 10: 
+[0000077e] 19: 
+[0000077f] ff: text 50
+{textColor 0 2}... Izumi-san heads back into the store to get that something she forgot to buy. 
+{textColor 0 2}... 
+{textColor 0 2}Several minutes later, Izumi-san comes out with a plastic bottle of orange juice. 
+
+
+[00000782] 10: 
+[00000783] 11: fgload 0 00000000 IZ01AAD 1 3
+[00000793] 10: 
+[00000794]  b: playVoice L1D4A464
+[0000079e] 10: 
+[0000079f] 19: 
+[000007a0] ff: text 51
+{textColor 1 8}【Izumi】 "Haruka-chan also can't drink alcohol, right?" 
+{textColor 0 0}【Makoto】 "Huh? ... Really?" 
+
+
+[000007a3] 10: 
+[000007a4]  b: playVoice L1D4A465
+[000007ae] 10: 
+[000007af] 19: 
+[000007b0] ff: text 52
+{textColor 1 8}【Izumi】 "Yes. I feel she said so earlier." 
+
+
+[000007b3] 10: 
+[000007b4]  b: playVoice L1D4A466
+[000007be] 10: 
+[000007bf] 19: 
+[000007c0] ff: text 53
+{textColor 1 8}【Izumi】 "Well, either way, Kurumi can't drink, so at least the juice won't go to waste." 
+{textColor 0 0}【Makoto】 "Oh, that's right... Kurumi's still in high school, right?" 
+
+
+[000007c3] 10: 
+[000007c4]  b: playVoice L1D4A467
+[000007ce] 10: 
+[000007cf] 19: 
+[000007d0] ff: text 54
+{textColor 1 8}【Izumi】 "Right. After all, high-schoolers can't drink alcohol, even if they want to." 
+{textColor 0 2}Hmm... Izumi-san... she's very straight-laced. 
+
+
+[000007d3] 10: 
+[000007d4]  b: playVoice L1D4A468
+[000007de] 10: 
+[000007df] 19: 
+[000007e0] ff: text 55
+{textColor 1 8}【Izumi】 "I think she'll definitely want to drink..." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[000007e3] 10: 
+[000007e4]  b: playVoice L1D4A469
+[000007ee] 10: 
+[000007ef] 19: 
+[000007f0] ff: text 56
+{textColor 1 8}【Izumi】 "Kurumi's filled with more curiosity than most people, isn't she?" 
+
+
+[000007f3] 10: 
+[000007f4]  b: playVoice L1D4A470
+[000007fe] 10: 
+[000007ff] 19: 
+[00000800] ff: text 57
+{textColor 1 8}【Izumi】 "It seems that she's really fascinated by things that are foreign and novel to her." 
+{textColor 0 0}【Makoto】 "Ah... now that you mention it, Kurumi was the one who suggested the Test of Courage yesterday." 
+
+
+[00000803] 10: 
+[00000804]  b: playVoice L1D4A471
+[0000080e] 10: 
+[0000080f] 19: 
+[00000810] ff: text 58
+{textColor 1 8}【Izumi】 "It's really quite troublesome... She really loves those kinds of occult-like things." 
+{textColor 0 2}Occult... 
+{textColor 0 2}The word suddenly triggers a memory. 
+
+
+[00000813]  0: 
+[00000814]  a: condJump 00 VAR_(28_1e)_a1_24 (28) != (15) (81)->1 (15) (00)  * 0000086d (000a)
+[00000822] 10: 
+[00000823] 19: 
+[00000824] ff: text 59
+{textColor 0 2}"An interesting place"... last night, Kurumi said that, and took me to the shrine. 
+{textColor 0 2}She was really tenacious about investigating that place. as if she were thinking "I want to confirm the shrine's true nature!" 
+{textColor 0 2}Izumi-san sure hit the nail on the head when she said that "Kurumi's filled with more curiosity than most people." 
+{textColor 0 2}I ought to talk to her about that. 
+{textColor 0 0}【Makoto】 "Yesterday, when you all went to the hot springs, Kurumi..." 
+
+
+[00000827] 10: 
+[00000828]  b: playVoice L1D4A472
+[00000832] 10: 
+[00000833] 19: 
+[00000834] ff: text 5a
+{textColor 1 8}【Izumi】 "Huh?" 
+{textColor 0 2}Oh shit!! 
+{textColor 0 2}Izumi-san was extremely opposed to Kurumi going to the shrine. 
+{textColor 0 2}If I let it slip that Kurumi went to the shrine, Izumi-san will scold her. I'd be getting her into unnecessary trouble. 
+{textColor 0 0}【Makoto】 "... K-Kurumi told me she 'wanted to have another Test of Courage♪'..." 
+
+
+[00000837] 10: 
+[00000838] 11: fgload 0 00000000 IZ10AAD 1 3
+[00000848] 10: 
+[00000849]  b: playVoice L1D4A473
+[00000853] 10: 
+[00000854] 19: 
+[00000855] ff: text 5b
+{textColor 1 8}【Izumi】 "As I thought..." 
+{textColor 0 2}Whew... it seems she bought it... 
+{textColor 0 2}But... now I remember what I wanted to ask Izumi-san about regarding Kurumi. 
+{textColor 0 2}Why is it that Izumi-san doesn't want Kurumi to go to the shrine? 
+{textColor 0 2}Does she seriously believe that story about the God of Demons? 
+{textColor 0 2}Is that really the only reason? 
+{textColor 0 2}I resolve myself, and decide to try asking her. 
+{textColor 0 2}There shouldn't be anything wrong with at least asking... 
+
+
+[00000858] 10: 
+[00000859] 11: fgload 0 00000000 IZ01AAD 1 3
+[00000869]  0: 
+[0000086a]  7: goto7 00000872 (000b)
+[0000086d] 10: 
+[0000086e] 19: 
+[0000086f] ff: text 5c
+{textColor 0 2}"After this, do you want to go on a Mystery Tour?" 
+{textColor 0 2}... After Izumi-san finished her story on Moon Beach, Kurumi spoke with a mischievous glint in her eyes. 
+{textColor 0 2}Izumi-san sure hit the nail on the head when she said "Kurumi's filled with more curiosity than most people." 
+{textColor 0 2}At that time, because Izumi-san was extremely against it, it looked like she'd give up her plans... 
+{textColor 0 2}But... Wait, now I remember what I wanted to ask Izumi-san about regarding Kurumi. 
+{textColor 0 2}Why is it that Izumi-san doesn't want Kurumi to go to the shrine? 
+{textColor 0 2}Does she seriously believe that story about the God of Killer Demons? 
+{textColor 0 2}Is that really the only reason? 
+{textColor 0 2}I resolve myself, and decide to ask her. 
+
+
+[00000872] 10: 
+[00000873]  7: stopBGM
+[00000874] 10: 
+[00000875] 19: 
+[00000876] ff: text 5d
+{textColor 0 0}【Makoto】 "Hey, Izumi-san? Can I ask you a question?" 
+
+
+[00000879] 10: 
+[0000087a]  b: playVoice L1D4A474
+[00000884] 10: 
+[00000885] 19: 
+[00000886] ff: text 5e
+{textColor 1 8}【Izumi】 "Hmm? What?" 
+{textColor 0 0}【Makoto】 "It's about that shrine..." 
+{textColor 0 2}Izumi-san's expression darkens the the instant I utter those words. 
+{textColor 0 0}【Makoto】 "Two nights ago, Kurumi suggested going on a 'Mystery Tour.' You got really mad back then, didn't you?" 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "Why did you get so angry?" 
+
+
+[00000889] 10: 
+[0000088a] 11: fgload 0 00000000 IZ05AAD 1 3
+[0000089a] 10: 
+[0000089b]  b: playVoice L1D4A475
+[000008a5] 10: 
+[000008a6] 19: 
+[000008a7] ff: text 5f
+{textColor 1 8}【Izumi】 "Makoto-kun... Weren't you listening? It's because over there is the God of De-" 
+{textColor 0 0}【Makoto】 "I don't think that's the only reason." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "You're not telling me something, right?" 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 2}Izumi-san's mouth is shut. 
+{textColor 0 2}It seems I'm not going to make any progress by directly asking. 
+{textColor 0 2}I'll just have to trick her into confessing... 
+
+[000008aa] ff: text 60
+{textColor 0 2}{choiceOpt 1 -> "I plan to go to the shrine tonight." }{choiceOpt 2 -> "I know the truth about the God of Demons." }
+
+[000008ad] 10: 
+[000008ae]  3: choice v_a1_08 00 00
+[000008b3]  0: 
+[000008b4]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 0000090d (000d)
+[000008c2] 10: 
+[000008c3] 19: 
+[000008c4] ff: text 61
+{textColor 0 0}【Makoto】 "Izumi-san... the truth is, I was thinking about trying to go to the shrine tonight." 
+{textColor 0 2}I'm bluffing, of course. 
+{textColor 0 2}But with this, I should hopefully be able to pry the real reason out of Izumi-san, who will inevitably try to stop me. 
+
+
+[000008c7] 10: 
+[000008c8]  b: playVoice L1D4A476
+[000008d2] 10: 
+[000008d3] 19: 
+[000008d4] ff: text 62
+{textColor 1 8}【Izumi】 "Don't! Don't do it, Makoto-kun! You mustn't do it!" 
+{textColor 0 0}【Makoto】 "And why is that? I can't agree with you unless you give me a clear reason." 
+
+
+[000008d7] 10: 
+[000008d8] 11: fgload 0 00000000 IZ11AAD 1 3
+[000008e8] 10: 
+[000008e9]  b: playVoice L1D4A477
+[000008f3] 10: 
+[000008f4] 19: 
+[000008f5] ff: text 63
+{textColor 1 8}【Izumi】 "I told you, that's because..." 
+{textColor 0 2}I'll pressure her again. 
+{textColor 0 0}【Makoto】 "I'm going... to the shrine." 
+
+
+[000008f8] 10: 
+[000008f9] 11: fgload 0 00000000 IZ08AAD 1 3
+[00000909]  0: 
+[0000090a]  7: goto7 0000097e (000e)
+[0000090d]  0: 
+[0000090e]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 0000097e (000f)
+[0000091c] 10: 
+[0000091d] 19: 
+[0000091e] ff: text 64
+{textColor 0 0}【Makoto】 "Izumi-san... I know the truth about the God of Demons." 
+{textColor 0 2}Of course, I'm bluffing. 
+{textColor 0 2}This way, I can get her to think that there's no use hiding the information, meaning she'll spill the beans. 
+
+
+[00000921] 10: 
+[00000922] 11: fgload 0 00000000 IZ11AAD 1 3
+[00000932] 10: 
+[00000933]  b: playVoice L1D4A478
+[0000093d] 10: 
+[0000093e] 19: 
+[0000093f] ff: text 65
+{textColor 1 8}【Izumi】 "Huh!? You know...!?" 
+{textColor 0 0}【Makoto】 "Yes..." 
+
+
+[00000942] 10: 
+[00000943]  b: playVoice L1D4A479
+[0000094d] 10: 
+[0000094e] 19: 
+[0000094f] ff: text 66
+{textColor 1 8}【Izumi】 "No way, you know that I made up that story...?" 
+{textColor 0 2}――Made up!? 
+{textColor 0 2}――So that means she created the story about the God of Demons!? 
+{textColor 0 0}【Makoto】 "Yeah, I did..." 
+{textColor 0 2}I reply nonchalantly. 
+
+
+[00000952] 10: 
+[00000953] 11: fgload 0 00000000 IZ08AAD 1 3
+[00000963] 10: 
+[00000964]  b: playVoice L1D4A480
+[0000096e] 10: 
+[0000096f] 19: 
+[00000970] ff: text 67
+{textColor 1 8}【Izumi】 "Is... that so..." 
+{textColor 0 0}【Makoto】 "But why does it have to be a lie...?" 
+
+
+[00000973] fe: varop VAR_(28_0a)_a1_23 (14) := (00) 1
+[0000097e] 10: 
+[0000097f] 19: 
+[00000980] ff: text 68
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000983] 10: 
+[00000984]  b: playVoice L1D4A481
+[0000098e] 10: 
+[0000098f] 19: 
+[00000990] ff: text 69
+{textColor 1 8}【Izumi】 "... I understand... Then I'll tell you and you alone..." 
+
+
+[00000993] 10: 
+[00000994]  b: playVoice L1D4A482
+[0000099e] 10: 
+[0000099f] 19: 
+[000009a0] ff: text 6a
+{textColor 1 8}【Izumi】 "But not here. Shall we move to a different place?" 
+
+
+[000009a3] 10: 
+[000009a4] 12: removeFG 0 3
+[000009ab] 10: 
+[000009ac] 19: 
+[000009ad] ff: text 6b
+{textColor 0 2}Exactly as planned... 
+
+
+[000009b0] 10: 
+[000009b1]  7: stopBGM
+[000009b2] 10: 
+[000009b3] 19: 
+[000009b4] ff: text 6c
+{textColor 0 2}... 
+{textColor 0 2}But... why do I feel like such an asshole? 
+{textColor 0 2}Perhaps I might be just as interested in the shrine as Kurumi is. 
+
+
+[000009b7] 10: 
+[000009b8]  f: removeBG 0 0 2
+[000009c2] 10: 
+[000009c3]  6: playBGM 5
+[000009c7] 10: 
+[000009c8]  8: playSFX SE080 1
+[000009d2] 10: 
+[000009d3] 10: bgload 00000000 EV_IZ04 0 1
+[000009e0] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[000009ec] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 36
+[000009f8] 10: 
+[000009f9] 17: showClock
+[000009fa] 10: 
+[000009fb] 19: 
+[000009fc] ff: text 6d
+{textColor 0 2}Izumi-san stands on the pier, staring out at the golden sea. 
+{textColor 0 2}She softly runs her hand through her soft hair as a gentle breeze strokes it... 
+{textColor 0 2}It's clear from her sorrow filled eyes that she's brooding about something... 
+{textColor 0 2}This is beginning to feel like déjà vu. 
+{textColor 0 2}I've seen a pair of eyes like that quite recently before, eyes full of secrets kept locked away. 
+{textColor 0 2}Just then, Izumi-san quietly begins to bequeath me those secrets. 
+
+
+[000009ff]  0: 
+[00000a00]  a: condJump 00 VAR_(28_1e)_a1_23 (28) != (15) (81)->1 (15) (00)  * 00000a52 (0010)
+[00000a0e] 10: 
+[00000a0f]  b: playVoice L1D4A483
+[00000a19] 10: 
+[00000a1a] 19: 
+[00000a1b] ff: text 6e
+{textColor 1 8}【Izumi】 "Yes. As you know, Makoto-kun... that story was a lie..." 
+
+
+[00000a1e] 10: 
+[00000a1f]  b: playVoice L1D4A484
+[00000a29] 10: 
+[00000a2a] 19: 
+[00000a2b] ff: text 6f
+{textColor 1 8}【Izumi】 "But that doesn't mean it's all false." 
+
+
+[00000a2e] 10: 
+[00000a2f]  b: playVoice L1D4A485
+[00000a39] 10: 
+[00000a3a] 19: 
+[00000a3b] ff: text 70
+{textColor 1 8}【Izumi】 "A lot of people really did go missing at that shrine... that at least is an undeniable fact." 
+
+
+[00000a3e] 10: 
+[00000a3f]  b: playVoice L1D4A486
+[00000a49] 10: 
+[00000a4a] 19: 
+[00000a4b] ff: text 71
+{textColor 1 8}【Izumi】 "But... I thought that that alone was insufficient..." 
+
+
+[00000a4e]  0: 
+[00000a4f]  7: goto7 00000aa2 (0011)
+[00000a52] 10: 
+[00000a53]  b: playVoice L1D4A487
+[00000a5d] 10: 
+[00000a5e] 19: 
+[00000a5f] ff: text 72
+{textColor 1 8}【Izumi】 "The story about the God of Demons I told you about on Moon Beach..." 
+
+
+[00000a62] 10: 
+[00000a63]  b: playVoice L1D4A488
+[00000a6d] 10: 
+[00000a6e] 19: 
+[00000a6f] ff: text 73
+{textColor 1 8}【Izumi】 "That bit was of my own fabrication." 
+{textColor 0 0}【Makoto】 "A-A fabrication!?" 
+
+
+[00000a72] 10: 
+[00000a73]  b: playVoice L1D4A489
+[00000a7d] 10: 
+[00000a7e] 19: 
+[00000a7f] ff: text 74
+{textColor 1 8}【Izumi】 "Yes... But of course, it's not like it was all fake." 
+
+
+[00000a82] 10: 
+[00000a83]  b: playVoice L1D4A490
+[00000a8d] 10: 
+[00000a8e] 19: 
+[00000a8f] ff: text 75
+{textColor 1 8}【Izumi】 "A lot of people really did go missing at that shrine... that at least is an undeniable fact." 
+
+
+[00000a92] 10: 
+[00000a93]  b: playVoice L1D4A491
+[00000a9d] 10: 
+[00000a9e] 19: 
+[00000a9f] ff: text 76
+{textColor 1 8}【Izumi】 "But you know what? I thought that alone was insufficient..." 
+
+
+[00000aa2] 10: 
+[00000aa3] 19: 
+[00000aa4] ff: text 77
+{textColor 0 0}【Makoto】 "Insufficient... what do you mean by that?" 
+
+
+[00000aa7] 10: 
+[00000aa8]  b: playVoice L1D4A492
+[00000ab2] 10: 
+[00000ab3] 19: 
+[00000ab4] ff: text 78
+{textColor 1 8}【Izumi】 "I thought that it would be insufficient to keep you all from approaching that shrine." 
+
+
+[00000ab7] 10: 
+[00000ab8]  b: playVoice L1D4A493
+[00000ac2] 10: 
+[00000ac3] 19: 
+[00000ac4] ff: text 79
+{textColor 1 8}【Izumi】 "If the thought of people going missing was all there was to it, then you all surely would have gone to the shrine..." 
+
+
+[00000ac7] 10: 
+[00000ac8]  b: playVoice L1D4A494
+[00000ad2] 10: 
+[00000ad3] 19: 
+[00000ad4] ff: text 7a
+{textColor 1 8}【Izumi】 "So, using the shrine's name, I added what I thought was a plausible folktale to it." 
+
+
+[00000ad7] 10: 
+[00000ad8]  b: playVoice L1D4A495
+[00000ae2] 10: 
+[00000ae3] 19: 
+[00000ae4] ff: text 7b
+{textColor 1 8}【Izumi】 "I didn't care what I did as long as I could emphasize how terrifying the shrine is, even if only a little..." 
+{textColor 0 0}【Makoto】 "... Well then... what was the reason for you... not wanting us to approach the shrine?" 
+
+
+[00000ae7] 10: 
+[00000ae8]  b: playVoice L1D4A496
+[00000af2] 10: 
+[00000af3] 19: 
+[00000af4] ff: text 7c
+{textColor 1 8}【Izumi】 "I thought if you all went there, then one day, Kurumi would definitely decide to explore it..." 
+
+
+[00000af7] 10: 
+[00000af8]  b: playVoice L1D4A497
+[00000b02] 10: 
+[00000b03] 19: 
+[00000b04] ff: text 7d
+{textColor 1 8}【Izumi】 "She really is very curious, but even she wouldn't think of pulling a stupid stunt like going to a dangerous place by herself." 
+{textColor 0 0}【Makoto】 "In short, if even we didn't approach the shine, then in the end, Kurumi wouldn't go there either...?" 
+
+
+[00000b07] 10: 
+[00000b08]  b: playVoice L1D4A498
+[00000b12] 10: 
+[00000b13] 19: 
+[00000b14] ff: text 7e
+{textColor 1 8}【Izumi】 "Yes..." 
+{textColor 0 0}【Makoto】 "So it was all for Kurumi's sake, then..." 
+
+
+[00000b17] 10: 
+[00000b18]  b: playVoice L1D4A499
+[00000b22] 10: 
+[00000b23] 19: 
+[00000b24] ff: text 7f
+{textColor 1 8}【Izumi】 "Honestly, I never ever wanted Kurumi to learn about the shrine's existence..." 
+{textColor 0 0}【Makoto】 "Kurumi came back earlier than expected from visiting Saki at the clinic..." 
+{textColor 0 0}【Makoto】 "Since you were already in the middle of your story and couldn't stop there, you had no choice but to tell her as well..." 
+
+
+[00000b27] 10: 
+[00000b28]  b: playVoice L1D4A500
+[00000b32] 10: 
+[00000b33] 19: 
+[00000b34] ff: text 80
+{textColor 1 8}【Izumi】 "That's right..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "Huh? You're still not finished." 
+{textColor 0 0}【Makoto】 "I haven't heard the most important part yet." 
+
+
+[00000b37] 10: 
+[00000b38]  b: playVoice L1D4A501
+[00000b42] 10: 
+[00000b43] 19: 
+[00000b44] ff: text 81
+{textColor 1 8}【Izumi】 "You mean why I don't want Kurumi to get near the shrine... right?" 
+{textColor 0 0}【Makoto】 "... Yes." 
+{textColor 0 2}Izumi-san runs her hand through her hair again, and sighs deeply. 
+{textColor 0 2}It seems as if she's steeling herself for something important... 
+{textColor 0 2}The anticipation causes my heart to pound loudly... 
+{textColor 0 2}I patiently wait for Izumi-san to begin talking again. 
+
+
+[00000b47] 10: 
+[00000b48]  7: stopBGM
+[00000b49] 10: 
+[00000b4a]  b: playVoice L1D4A502
+[00000b54] 10: 
+[00000b55] 19: 
+[00000b56] ff: text 82
+{textColor 1 8}【Izumi】 "The truth is..." 
+
+
+[00000b59] 10: 
+[00000b5a]  b: playVoice L1D4A503
+[00000b64] 10: 
+[00000b65] 19: 
+[00000b66] ff: text 83
+{textColor 1 8}【Izumi】 "... Kurumi... might not be my real sister..." 
+
+
+[00000b69] 10: 
+[00000b6a]  8: playSFX SE021 1
+[00000b74] 10: 
+[00000b75] 19: 
+[00000b76] ff: text 84
+{textColor 0 2}――What!? 
+{textColor 0 2}I can't say a word... 
+{textColor 0 2}I can't even breathe. 
+{textColor 0 2}(Kurumi... isn't Izumi-san's... sister!?!?!?) 
+
+
+[00000b79] 10: 
+[00000b7a]  b: playVoice L1D4A504
+[00000b84] 10: 
+[00000b85] 19: 
+[00000b86] ff: text 85
+{textColor 1 8}【Izumi】 "Listen carefully..." 
+
+
+[00000b89] 10: 
+[00000b8a]  b: playVoice L1D4A505
+[00000b94] 10: 
+[00000b95] 19: 
+[00000b96] ff: text 86
+{textColor 1 8}【Izumi】 "In the past, Kurumi went missing..." 
+
+
+[00000b99] 10: 
+[00000b9a]  b: playVoice L1D4A506
+[00000ba4] 10: 
+[00000ba5] 19: 
+[00000ba6] ff: text 87
+{textColor 1 8}【Izumi】 "To put it accurately, she was kidnapped..." 
+{textColor 0 0}【Makoto】 "K-Kidnapped!?" 
+{textColor 0 2}――And just then! 
+
+
+[00000ba9] 10: 
+[00000baa] 10: bgload 00000000 BG15E 0 1
+[00000bb7] 10: 
+[00000bb8] 11: fgload 0 00000000 KU10AAD 1 3
+[00000bc8] 10: 
+[00000bc9]  b: playVoice L1D4A507
+[00000bd3] 10: 
+[00000bd4] 19: 
+[00000bd5] ff: text 88
+{textColor 1 7}【Kurumi】 "Ah! Finally found you..." 
+{textColor 0 0}【Makoto】 "Crap..." 
+
+
+[00000bd8] 10: 
+[00000bd9]  b: playVoice L1D4A508
+[00000be3] 10: 
+[00000be4] 19: 
+[00000be5] ff: text 89
+{textColor 1 8}【Izumi】 "K-Kurumi..." 
+
+
+[00000be8] 10: 
+[00000be9]  6: playBGM 4
+[00000bed] 10: 
+[00000bee] 11: fgload 0 00000000 KU05AAD 1 3
+[00000bfe] 10: 
+[00000bff]  b: playVoice L1D4A509
+[00000c09] 10: 
+[00000c0a] 19: 
+[00000c0b] ff: text 8a
+{textColor 1 7}【Kurumi】 "Are you two confessing your love during a romantic sunset?" 
+{textColor 0 0}【Makoto】 "N-No..." 
+
+
+[00000c0e] 10: 
+[00000c0f]  b: playVoice L1D4A510
+[00000c19] 10: 
+[00000c1a] 19: 
+[00000c1b] ff: text 8b
+{textColor 1 7}【Kurumi】 "Then that's fine, but... If we don't hurry back, we won't make it in time, right?" 
+
+
+[00000c1e] 10: 
+[00000c1f]  b: playVoice L1D4A511
+[00000c29] 10: 
+[00000c2a] 19: 
+[00000c2b] ff: text 8c
+{textColor 1 8}【Izumi】 "Huh...?" 
+
+
+[00000c2e] 10: 
+[00000c2f]  b: playVoice L1D4A512
+[00000c39] 10: 
+[00000c3a] 19: 
+[00000c3b] ff: text 8d
+{textColor 1 7}【Kurumi】 "For the barbecue!" 
+
+
+[00000c3e] 10: 
+[00000c3f]  b: playVoice L1D4A513
+[00000c49] 10: 
+[00000c4a] 19: 
+[00000c4b] ff: text 8e
+{textColor 1 7}【Kurumi】 "If we go back now... hmm... We'll be ten minutes late, right?" 
+{textColor 0 2}I look at my watch. 
+{textColor 0 2}"4:40 P.M."――On foot, it's about half an hour from here to Lunabeach... 
+{textColor 0 2}... Kurumi's right. 
+
+
+[00000c4e] 10: 
+[00000c4f]  b: playVoice L1D4A514
+[00000c59] 10: 
+[00000c5a] 19: 
+[00000c5b] ff: text 8f
+{textColor 1 8}【Izumi】 "W-Well then, shall we run back? 
+
+
+[00000c5e] 10: 
+[00000c5f] 11: fgload 0 00000000 KU01AAD 1 3
+[00000c6f] 10: 
+[00000c70]  b: playVoice L1D4A515
+[00000c7a] 10: 
+[00000c7b] 19: 
+[00000c7c] ff: text 90
+{textColor 1 7}【Kurumi】 "Kurumi'll be fine, but... won't it be rough on Onii-chan?" 
+
+
+[00000c7f] 10: 
+[00000c80]  b: playVoice L1D4A516
+[00000c8a] 10: 
+[00000c8b] 19: 
+[00000c8c] ff: text 91
+{textColor 1 7}【Kurumi】 "If he carries that much while running, it's bound to strain him." 
+
+
+[00000c8f] 10: 
+[00000c90]  b: playVoice L1D4A517
+[00000c9a] 10: 
+[00000c9b] 19: 
+[00000c9c] ff: text 92
+{textColor 1 8}【Izumi】 "Th-That's true. Then... let's use a boat!" 
+{textColor 0 2}Izumi-san has clearly lost her mind... 
+
+
+[00000c9f] 10: 
+[00000ca0]  b: playVoice L1D4A518
+[00000caa] 10: 
+[00000cab] 19: 
+[00000cac] ff: text 93
+{textColor 1 7}【Kurumi】 "Huh? What are you saying, Onee-chan?" 
+
+
+[00000caf] 10: 
+[00000cb0]  b: playVoice L1D4A519
+[00000cba] 10: 
+[00000cbb] 19: 
+[00000cbc] ff: text 94
+{textColor 1 8}【Izumi】 "... W-Well then... what should we do...?" 
+
+
+[00000cbf] 10: 
+[00000cc0]  b: playVoice L1D4A520
+[00000cca] 10: 
+[00000ccb] 19: 
+[00000ccc] ff: text 95
+{textColor 1 7}【Kurumi】 "Hee hee hee... Kurumi thought something like this would happen." 
+{textColor 0 0}【Makoto】 "???" 
+
+
+[00000ccf] 10: 
+[00000cd0] 11: fgload 0 00000000 KU02AAD 1 0
+[00000ce0] 10: 
+[00000ce1]  b: playVoice L1D4A521
+[00000ceb] 10: 
+[00000cec] 19: 
+[00000ced] ff: text 96
+{textColor 1 7}【Kurumi】 "Ta-da♪ It's a KuruKuru Kurumiracle♪" 
+
+
+[00000cf0] 10: 
+[00000cf1] 19: 
+[00000cf2] ff: text 97
+{textColor 0 2}Kurumi dramatically points towards the fish market. 
+{textColor 0 2}In that direction is a black car. 
+
+
+[00000cf5] 10: 
+[00000cf6]  b: playVoice L1D4A522
+[00000d00] 10: 
+[00000d01] 19: 
+[00000d02] ff: text 98
+{textColor 1 7}【Kurumi】 "Kurumi honorably prepared this taxi for you to accept." 
+{textColor 0 0}【Makoto】 "There are taxis... on this island?" 
+
+
+[00000d05] 10: 
+[00000d06]  b: playVoice L1D4A523
+[00000d10] 10: 
+[00000d11] 19: 
+[00000d12] ff: text 99
+{textColor 1 7}【Kurumi】 "Yeah, but just three of them." 
+
+
+[00000d15] 10: 
+[00000d16]  b: playVoice L1D4A524
+[00000d20] 10: 
+[00000d21] 19: 
+[00000d22] ff: text 9a
+{textColor 1 7}【Kurumi】 "C'mon, hurry! We've got quite some ground to cover!" 
+
+
+[00000d25] 10: 
+[00000d26] 12: removeFG 0 3
+[00000d2d] 10: 
+[00000d2e] 19: 
+[00000d2f] ff: text 9b
+{textColor 0 2}Kurumi pushes Izumi-san and I forward, and we get into the taxi. 
+{textColor 0 2}In the end, I never got to hear the rest of Izumi-san's story. 
+{textColor 0 2}――Kurumi's kidnapping... 
+{textColor 0 2}――The reason Izumi-san doesn't want Kurumi to go to the shrine... 
+{textColor 0 2}――And the fact that Kurumi may not be Izumi-san's sister... 
+{textColor 0 2}Just where is the so-called tangent point between these three stories? 
+{textColor 0 2}Only Izumi-san knows everything... 
+
+
+[00000d32] 10: 
+[00000d33]  f: removeBG 0 0 2
+[00000d3d] 10: 
+[00000d3e] 19: 
+[00000d3f] ff: text 9c
+{textColor 0 2}Thanks to the taxi, we were able to make it on time to meet everyone. 
+{textColor 0 2}We meet everyone at 5:00 before deciding who would carry what to Princess Beach. 
+{textColor 0 2}Everyone smiles cheerfully... 
+{textColor 0 2}Amongst all of us, Kurumi is the most enthusiastic. 
+{textColor 0 2}She's clearly looking forward to the barbecue. 
+{textColor 0 2}Izumi-san has also completely returned to her usual self. 
+{textColor 0 2}I'm engulfed in this cheerful atmosphere, and before I know it, the issue with Kurumi has been buried in the corners of my mind... 
+
+
+[00000d42] 10: 
+[00000d43]  7: stopBGM
+[00000d44] 10: 
+[00000d45]  f: removeBG 0 0 2
+[00000d4f] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 0
+[00000d5a]  0: 
+[00000d5b]  e: return

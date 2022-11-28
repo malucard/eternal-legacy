@@ -1,0 +1,1 @@
+sys_make_prop("core_version", "1.0-dev")

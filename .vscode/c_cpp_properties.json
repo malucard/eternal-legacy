@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/*",
+                "${workspaceFolder}/ext/include",
+				"${workspaceFolder}/ext/src/fpng",
+                "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include",
+                "/opt/devkitpro/libnx/include",
+                "/opt/devkitpro/portlibs/switch/include",
+                "/usr/local/pspdev/psp/include",
+                "/usr/local/pspdev/psp/sdk/include",
+                "/usr/include/freetype2",
+                "/opt/devkitpro/wut/include",
+                "/opt/openorbis/include",
+                "~/openorbis/include",
+				"/usr/x86_64-w64-mingw32/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "compilerArgs": [
+                "-include ${workspaceFolder}/src/defines.hpp",
+                "-DPLATFORM_PC",
+				"-DPLATFORM_LINUX"
+            ],
+            "intelliSenseMode": "clang-x64",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

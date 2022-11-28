@@ -1,0 +1,926 @@
+SCRIP-400					//识别码
+idumi						//图标
+测试模式					//标题（20字以内）
+ＫＩＤ						//作者名（10字以内）
+01/08/22					//日期
+进行剧本编写中各种机能的效果演示。		//注释1（24字以内）
+没有特别情节，仅做为剧本的编写参考。		//注释2（24字）
+						//注释3（24字以内）
+						//注释4（24字以内）
+//２３４５６７８９０１２３４５６７８９０１２３４文字数ゲージ
+
+//以下のように「よく使う引数（パラメータ）」をあらかじめ変数にしておくと，
+//ファイルの作成が楽になると思います。
+
+//エディタ上でコマンドの表示位置を揃えるときは，ＴＡＢを活用してください。
+//（スペースをたくさん打つのはあまりおすすめしません）
+
+	Reg			//定义变量
+{
+	seldt			//選択肢
+	temp1			//汎用
+	temp2			//汎用
+	temp3			//汎用
+	bg_alpha		//ＢＧ半透明
+	bg_mowa			//ＢＧもわもわ
+	bg_circle1		//ＢＧ円１
+	bg_circle2		//ＢＧ円２
+	bg_blind_r		//ＢＧブラインド右
+	bg_blind_l		//ＢＧブラインド左
+	bg_nofade		//ＢＧ一瞬
+	bg_line_r		//ＢＧライン右
+	bg_line_l		//ＢＧライン左
+	bg_veryslow		//ＢＧ超遅い
+	bg_slow			//ＢＧ遅い
+	bg_normal		//ＢＧふつう
+	bg_fast			//ＢＧ速い
+	bg_black		//ＢＧ黒
+	bg_white		//ＢＧ白
+	chr_a			//ＣＨＲ昼
+	chr_d			//ＣＨＲ夕
+	chr_n			//ＣＨＲ夜
+	chr_l			//ＣＨＲ左
+	chr_c			//ＣＨＲ中
+	chr_r			//ＣＨＲ右
+	chr_nofade		//ＣＨＲ一瞬
+	chr_alpha		//ＣＨＲ半透明
+	chr_blind		//ＣＨＲブラインド
+	chr_auto		//ＣＨＲ自動判別
+	eff_collision3		//ＥＦＦ衝突大
+	eff_collision2		//ＥＦＦ衝突中
+	eff_collision1		//ＥＦＦ衝突小
+	eff_quake1		//ＥＦＦ地震小
+	eff_quake3		//ＥＦＦ地震大
+	eff_quake2		//ＥＦＦ地震中
+	eff_flower_n2		//ＥＦＦ花夜大
+	eff_flower_n1		//ＥＦＦ花夜小
+	eff_flower_a2		//ＥＦＦ花昼大
+	eff_flower_a1		//ＥＦＦ花昼小
+	eff_fog_a3		//ＥＦＦ霧雨の道路
+	eff_fog_a2		//ＥＦＦ霧雨の神社
+	eff_fog_a1		//ＥＦＦ霧オープニング
+	eff_fog_c		//ＥＦＦ霧森の中
+	eff_fog_b1		//ＥＦＦ霧温泉１
+	eff_fog_b2		//ＥＦＦ霧温泉２
+	eff_rain		//ＥＦＦ雨
+	eff_sun_al		//ＥＦＦ木漏れ日左朝
+	eff_sun_ar		//ＥＦＦ木漏れ日右朝
+	eff_sun_el		//ＥＦＦ木漏れ日左夕
+	eff_sun_er		//ＥＦＦ木漏れ日右夕
+	eff_think		//ＥＦＦ回想
+	eff_all_off		//ＥＦＦ全て止める
+	eff_quake_off		//ＥＦＦ地震止める
+	eff_flower_off		//ＥＦＦ花止める
+	eff_fog_a_off		//ＥＦＦ霧Ａ止める
+	eff_fog_b_off		//ＥＦＦ霧Ｂ止める
+	eff_fog_c_off		//ＥＦＦ霧Ｃ止める
+	eff_rain_off		//ＥＦＦ雨止める
+	eff_sun_off		//ＥＦＦ木漏れ日止める
+	eff_think_off		//ＥＦＦ回想止める
+}
+
+	seldt = 0		//選択肢
+	temp1 = 0		//汎用
+	temp2 = 0		//汎用
+	temp3 = 0		//汎用
+	bg_alpha = 0		//ＢＧ半透明
+	bg_mowa = 1		//ＢＧもわもわ
+	bg_circle1 = 2		//ＢＧ円１
+	bg_circle2 = 3		//ＢＧ円２
+	bg_blind_r = 4		//ＢＧブラインド右
+	bg_blind_l = 5		//ＢＧブラインド左
+	bg_nofade = 6		//ＢＧ一瞬
+	bg_line_r = 7		//ＢＧライン右
+	bg_line_l = 8		//ＢＧライン左
+	bg_veryslow = 0		//ＢＧ超遅い
+	bg_slow = 1		//ＢＧ遅い
+	bg_normal = 2		//ＢＧふつう
+	bg_fast = 3		//ＢＧ速い
+	bg_black = 0		//ＢＧ黒
+	bg_white = 1		//ＢＧ白
+	chr_a = 0		//ＣＨＲ昼
+	chr_d = 1		//ＣＨＲ夕
+	chr_n = 2		//ＣＨＲ夜
+	chr_l = 2		//ＣＨＲ左
+	chr_c = 1		//ＣＨＲ中
+	chr_r = 0		//ＣＨＲ右
+	chr_nofade = 0		//ＣＨＲ一瞬
+	chr_alpha = 1		//ＣＨＲ半透明
+	chr_blind = 2		//ＣＨＲブラインド
+	chr_auto = 3		//ＣＨＲ自動判別
+	eff_collision3 = 0	//ＥＦＦ衝突大
+	eff_collision2 = 1	//ＥＦＦ衝突中
+	eff_collision1 = 2	//ＥＦＦ衝突小
+	eff_quake1 = 3		//ＥＦＦ地震小
+	eff_quake3 = 4		//ＥＦＦ地震大
+	eff_quake2 = 5		//ＥＦＦ地震中
+	eff_flower_n2 = 6	//ＥＦＦ花夜大
+	eff_flower_n1 = 7	//ＥＦＦ花夜小
+	eff_flower_a2 = 8	//ＥＦＦ花昼大
+	eff_flower_a1 = 9	//ＥＦＦ花昼小
+	eff_fog_a3 = 10		//ＥＦＦ霧雨の道路
+	eff_fog_a2 = 11		//ＥＦＦ霧雨の神社
+	eff_fog_a1 = 12		//ＥＦＦ霧オープニング
+	eff_fog_c = 13		//ＥＦＦ霧森の中
+	eff_fog_b1 = 14		//ＥＦＦ霧温泉１
+	eff_fog_b2 = 15		//ＥＦＦ霧温泉２
+	eff_rain = 16		//ＥＦＦ雨
+	eff_sun_al = 17		//ＥＦＦ木漏れ日左朝
+	eff_sun_ar = 18		//ＥＦＦ木漏れ日右朝
+	eff_sun_el = 19		//ＥＦＦ木漏れ日左夕
+	eff_sun_er = 20		//ＥＦＦ木漏れ日右夕
+	eff_think = 21		//ＥＦＦ回想
+	eff_all_off = 0		//ＥＦＦ全て止める
+	eff_quake_off = 1	//ＥＦＦ地震止める
+	eff_flower_off = 2	//ＥＦＦ花止める
+	eff_fog_a_off = 3	//ＥＦＦ霧Ａ止める
+	eff_fog_b_off = 4	//ＥＦＦ霧Ｂ止める
+	eff_fog_c_off = 5	//ＥＦＦ霧Ｃ止める
+	eff_rain_off = 6	//ＥＦＦ雨止める
+	eff_sun_off = 7		//ＥＦＦ木漏れ日止める
+	eff_think_off = 8	//ＥＦＦ回想止める
+
+
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+	Textmode	0
+
+	\c0,2;
+	测试模式开始。\p
+
+:START
+
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+	DispBG	"BG00A",BG_ALPHA,BG_SLOW
+
+	\c0,2;
+	选择测试菜单。\k
+
+	Select	seldt
+{
+	文字显示
+	背景显示
+	角色显示
+	效果显示
+}
+
+	if	seldt == 0,testmode_font
+	if	seldt == 1,testmode_bg
+	if	seldt == 2,testmode_chr
+	if	seldt == 3,testmode_efx
+
+	goto	start
+
+:testmode_font
+
+	\c0,2;
+	测试文字颜色。\p
+	\c0,0;
+	文字颜色０。\n
+	男性角色的文字颜色。\p
+	【阿诚】\n
+	「用这种颜色来表示」\p
+	\c0,1;
+	文字颜色１。\p
+	发言者是「大家」的时候使用。\p
+	\c0,2;
+	文字颜色２。\p
+	主要用于表示本文。\p
+	\c0,3;
+	文字颜色３。\p
+	【亿彦】\n
+	「我是这种颜色，怎么样？」\p
+	\c0,4;
+	文字颜色４。\p
+	【优夏】\n
+	「我是这种颜色，怎么样呢？」\p
+	\c0,5;
+	文字颜色５。\p
+	【阿遥】\n
+	「我是这种颜色，你觉得怎么样？」\p
+	\c0,6;
+	文字颜色６。\p
+	【沙纪】\n
+	「我是这种颜色，怎么样？」\p
+	\c0,7;
+	文字颜色７。\p
+	【至美】\n
+	「我是是这种颜色，不知道怎么样呀～」\p
+	\c0,8;
+	文字颜色８。\p
+	【逸美】\n
+	「我是这种颜色，怎么样？」\p
+
+	Textmode	2
+	Wait	60
+
+	\c0,2;
+	测试文字速度。\k\n
+	现在的显示速度，是默认（游戏初期）时的速度。\p
+	\w1;
+	现在的文字速度是１。\n
+	一下全显示出来。\p
+	\w5;
+	现在的文字速度是５。\n
+	是和默认速度同样的速度。\p
+	\w10;
+	现在的文字速度是１０。\p
+	\w15;
+	现在的文字速度是１５。\p
+	\w20;
+	现在的文字速度是２０。\n
+	比这个还要慢的话，可能会让人觉得急不可耐。\p
+	\w;
+	让文字速度回到初期状态。\p
+
+	Wait	30
+
+	\w9;\c0,7;
+	大致
+	\w7;\c0,3;
+	这样的也能
+	\w3;\c0,5;
+	做得到
+	\w15;
+	……\n
+	\w8;\c0,4;
+	只是
+	\w22;\c0,2;
+	有可能
+	\w;\c0,0;
+	不太好认。\p
+
+	Wait	30
+
+	Textmode	2
+	ClrBG	,,BG_BLACK
+	\c0,2;
+	还要继续进行测试模式吗？\k
+
+	Select	seldt
+{
+	进行
+	不进行
+}
+
+	if	seldt == 1,testend
+
+	goto	START
+
+:testmode_bg
+
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+	\c0,2;
+	测试背景显示类型。\p
+
+	在正常显示的时候，「交错」「日圆１」「日圆２」不会有效果，请不要指定。\n
+	这些效果只能用在背景消隐时。\p
+	DispBG	"BG06A",BG_ALPHA,BG_NORMAL
+	\c0,2;
+	显示类型：半透明（默认）\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG06A",BG_MOWA,BG_NORMAL
+	\c0,2;
+	显示类型：交错\n
+	※不能使用\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG06A",BG_CIRCLE1,BG_NORMAL
+	\c0,2;
+	显示类型：日圆１（没有晕色）\n
+	※不能使用\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG06A",BG_CIRCLE2,BG_NORMAL
+	\c0,2;
+	显示类型：日圆２（带有晕色）\n
+	※不能使用\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG06A",BG_BLIND_R,BG_NORMAL
+	\c0,2;
+	显示类型：右边黑色\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG06A",BG_BLIND_L,BG_NORMAL
+	\c0,2;
+	显示类型：左边黑色\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG06A",BG_NOFADE,BG_FAST
+	\c0,2;
+	显示类型：在一瞬间显示\n
+	（请不要指定显示速度，或者使用「快速」）\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG06A",BG_LINE_R,BG_NORMAL
+	\c0,2;
+	显示类型：右边线条\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG06A",BG_LINE_L,BG_NORMAL
+	\c0,2;
+	显示类型：左边线条\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	Textmode	2
+	Wait	60
+
+	\c0,2;
+	测试ＢＧ（背景）显示速度。\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	\c0,2;
+	极为缓慢的显示\p
+	DispBG	"BG09A",BG_ALPHA,BG_VERYSLOW
+	\w1;
+	极为缓慢的显示\n\w;
+	显示类型：半透明（默认）\p
+	ClrBG	BG_ALPHA,BG_VERYSLOW,BG_BLACK
+
+	Wait	30
+
+	缓慢的显示\p
+	DispBG	"BG09A",BG_ALPHA,BG_SLOW
+	\c0,2;
+	\w1;
+	缓慢的显示\n\w;
+	显示类型：半透明（默认）\p
+	ClrBG	BG_ALPHA,BG_SLOW,BG_BLACK
+
+	Wait	30
+
+	普通的显示\p
+        DispBG	"BG09A",BG_ALPHA,BG_NORMAL
+	\c0,2;
+	\w1;
+	普通的显示\n\w;
+	显示类型：半透明（默认）\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	快速显示\p
+	DispBG	"BG09A",BG_ALPHA,BG_FAST
+	\c0,2;
+	\w1;
+	快速显示\n\w;
+	显示类型：半透明（默认）\p
+	ClrBG	BG_ALPHA,BG_FAST,BG_BLACK
+
+	Textmode	2
+	Wait	60
+
+	\c0,2;
+	测试ＢＧ（背景）的消隐。\p
+
+	DispBG	"BG19A",BG_ALPHA,BG_NORMAL
+	\c0,2;
+	消隐类型：半透明（默认）\n
+	消隐颜色：黑色\p
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG19A",BG_ALPHA,BG_NORMAL
+	\c0,2;
+	消隐类型：交错\n
+	消隐颜色：白色\p
+	ClrBG	BG_MOWA,BG_NORMAL,BG_WHITE
+
+	Wait	30
+
+	DispBG	"BG19A",BG_ALPHA,BG_
+	\c0,2;
+	消隐类型：日圆１（没有晕色）\n
+	消隐颜色：黑色\p
+	ClrBG	BG_CIRCLE1,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG19A",BG_ALPHA,BG_NORMAL
+	\c0,2;
+	消隐类型：日圆２（带有晕色）\n
+	消隐颜色：白色\p
+	ClrBG	BG_CIRCLE2,BG_NORMAL,BG_WHITE
+
+	Wait	30
+
+	DispBG	"BG19A",BG_ALPHA,BG_NORMAL
+	\c0,2;
+	消隐类型：右边黑色\n
+	消隐颜色：黑色\p
+	ClrBG	BG_BLIND_R,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG19A",BG_ALPHA,BG_NORMAL
+	\c0,2;
+	消隐类型：左边黑色\n
+	消隐颜色：白色\p
+	ClrBG	BG_BLIND_L,BG_NORMAL,BG_WHITE
+
+	Wait	30
+
+	DispBG	"BG19A",BG_ALPHA,BG_NORMAL
+	\c0,2;
+	消隐类型：一瞬间消隐\n
+	消隐颜色：黑色\n
+	（请指定消隐速度，或者是使用「快速」）\p
+	ClrBG	BG_NOFADE,BG_FAST,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG19A",BG_ALPHA,BG_NORMAL
+	\c0,2;
+	消隐类型：右边线条\n
+	消隐颜色：黑色\p
+	ClrBG	BG_LINE_R,BG_NORMAL,BG_BLACK
+
+	Wait	30
+
+	DispBG	"BG19A",BG_ALPHA,BG_NORMAL
+	\c0,2;
+	消隐类型：左边线条\n
+	消隐颜色：白色\p
+	ClrBG	BG_LINE_L,BG_NORMAL,BG_WHITE
+
+	Wait	30
+
+	Textmode	2
+	ClrBG	,,BG_BLACK
+	\c0,2;
+	继续进行测试模式吗？\k
+
+	Select	seldt
+{
+	进行
+	不进行
+}
+
+	if	seldt == 1,testend
+
+	goto	START
+
+:testmode_chr
+
+	ClrBG	BG_ALPHA,BG_NORMAL,BG_BLACK
+	DispBG	"BG29A"
+
+	\c0,2;
+	测试角色显示。\p
+	显示角色的时候，显示方法（渐变）基本上请使用「自动」。只有在使用「一瞬间显示」的场合下，才每次都指定。\p
+
+	\c0,2;
+	远景角色的显示。\p
+
+	DispCHA	0,"YU02AAA",CHR_A,CHR_C
+	\c1,4;【优夏】\n
+	「这一回～」\p
+
+	\c0,2;
+	角色表情变化。\p
+
+	DispCHA	0,"YU10AAA",CHR_A,CHR_C
+	\c1,4;【优夏】\n
+	「啊？已经开始了吗？」\p
+
+	\c0,2;
+	…………\p
+
+	DispCHA	0,"YU01AAA",CHR_A,CHR_C
+	\c1,4;【优夏】\n
+	「哎呀，失礼了……」\p
+
+	\c1,4;【优夏】\n
+	「先去清醒清醒，请您稍等一会儿！」\p
+
+	\c0,2;
+	角色消隐。\p
+
+	ClrCHA	0
+
+	\c0,2;
+	…………\p
+
+	Textmode	2
+	Wait	60
+
+	DispCHA	0,"YU01AA",CHR_A,CHR_C
+	\c1,4;【优夏】\n
+	「让您久等了～」\p
+
+	\c1,4;【优夏】\n
+	「对了，介绍到什么地方了呀」\p
+
+	\c1,6;【？？】\n
+	「优夏，你稍微让一下好吗？」\p
+
+	\c0,2;
+	角色移动（站立位置的变更）。\p
+
+	MoveCHA	0,CHR_L
+
+	\c1,4;【优夏】\n
+	「好啊，怎么了？」\p
+
+	\c0,2;
+	角色显示（第二个）。\p
+
+	DispCHA	1,"SA01AA",CHR_A,CHR_R
+	\c1,4;【优夏】\n
+	「啊，这不是沙纪吗？」\p
+	\c1,6;【沙纪】\n
+	「我也被叫到这里来了。」\p
+
+	\c0,2;
+	角色表情变化。\p
+
+	DispCHA	1,"SA10AA",CHR_A,CHR_R
+	\c1,6;【沙纪】\n
+	「这里到底是在做什么呀？」\p
+	DispCHA	0,"YU03AA",CHR_A,CHR_L
+	\c1,4;【优夏】\n
+	「我觉得应该是正在进行介绍……」\p
+	\c1,6;【沙纪】\n
+	「介绍？」\p
+	DispCHA	0,"YU08AA",CHR_A,CHR_L
+	\c1,4;【优夏】\n
+	「啊，对啊……」\p
+	\c1,4;【优夏】\n
+	「嗯，怎么说才好呢……」\p
+	DispCHA	1,"SA05AA",CHR_A,CHR_R
+	\c1,6;【沙纪】\n
+	「不知道是怎么回事儿？好象你也不太清楚呀？」\p
+	\c1,6;【沙纪】\n
+	「你不会，\k一直到刚才还在喝酒吧？」\p
+
+	\c0,2;
+	一瞬间变化表情。\p
+
+	DispCHA	0,"YU11AA",CHR_A,CHR_L,CHR_NOFADE
+	\c1,4;【优夏】\n
+	「哎呀，你怎么知道的呀！」\p
+	DispCHA	1,"SA07AA",CHR_A,CHR_R,CHR_NOFADE
+	\c1,6;【沙纪】\n
+	「当、当然了，你的举动太古怪了，优夏。」\p
+
+	\c0,2;
+	两个角色同时消隐。\p
+
+	ClrCHA2
+
+	\c1,6;【沙纪】\n
+	「对了，我们俩为什么会被叫到这里来呀？」\p
+	\c1,4;【优夏】\n
+	「啊，是因为逸美提议，说要大家一起吃晚饭呀。」\p
+
+	\c0,2;
+	…………\p
+
+	Textmode	2
+	Wait	60
+
+	DispBG	"BG29E"
+
+	\c0,2;
+	两个角色同时显示。\p
+
+	DispCHA2	"HA01AA","KU01AA",CHR_D,CHR_L
+	\c1,7;【至美】\n
+	「当啷！至至至美魔术～」\p
+	\c1,5;【阿遥】\n
+	「…………」\p
+
+	\c0,2;
+	应用篇。\p
+
+	DispCHA	1,"KU07AA",CHR_D,CHR_R
+	\c1,7;【至美】\n
+	「今天晚上的饭菜会是什么呢～」\p
+	\c1,7;【至美】\n
+	「阿遥呀，你想吃什么呀？我帮你告诉姐姐。」\p
+	\c1,5;【阿遥】\n
+	「…………」\p
+	\c1,5;【阿遥】\n
+	「……火锅。」\p
+
+	DispCHA	1,"KU10AA",CHR_D,CHR_R
+	\c1,7;【至美】\n
+	「这个季节吃火锅，会不会有点……」\p
+	\c1,5;【阿遥】\n
+	「是螃蟹……火锅。」\p
+
+	DispCHA	1,"KU11AA",CHR_D,CHR_R,CHR_NOFADE
+	\c1,7;【至美】\n
+	「螃蟹！？」\p
+	\c1,5;【阿遥】\n
+	「刚才我在海岸边看到了～」\p
+	\c1,5;【阿遥】\n
+	「红红的，夹子很大的螃蟹」\p
+	\c1,7;【至美】\n
+	「哇，那可是我的一大嗜好呀……」\p
+
+	DispCHA	0,"HA02AA",CHR_D,CHR_L
+	\c1,5;【阿遥】\n
+	「我去抓来怎么样呀？」\p
+	DispCHA	1,"KU12AA",CHR_D,CHR_R
+	\c1,7;【至美】\n
+	「喂，喂，阿遥！其实……」\p
+	DispCHA	1,"KU08AA",CHR_D,CHR_R
+	\c1,7;【至美】\n
+	「至美，对煮过的螃蟹壳过敏……」\p
+	\c1,7;【至美】\n
+	「我怎么都接受不了那种象弹簧片一样的感觉……」\p
+	DispCHA	1,"KU02AA",CHR_D,CHR_R
+	\c1,7;【至美】\n
+	「所以呀，怎么样？我们还是吃别的吧！」\p
+
+	ClrCHA	1
+//	ClrCHA2
+
+	\c1,7;【至美】\n
+	「姐姐！今天，吃咖、咖喱饭怎么样？」\p
+
+	Textmode	2
+	Wait	60
+
+	DispCHA	0,"HA08AA",CHR_D,CHR_L
+	\c1,5;【阿遥】\n
+	「那多好吃呀，可是她……」\p
+
+	ClrCHA	0
+//	ClrCHA2
+
+	Textmode	2
+	Wait	60
+
+	DispBG	"BG07N"
+
+	\c0,2;
+	近景的角色显示。\p
+
+	DispCHA	0,"YU01AB",CHR_N,CHR_C
+
+	\c1,4;【优夏】\n
+	「请不要让两个近景角色同时显示……\k\n因为这里太窄了。」\p
+	\c1,8;【逸美】\n
+	「你在说什么么？优夏？」\p
+	\c1,4;【优夏】\n
+	「什么都没说……」\p
+
+	ClrCHA	0
+
+	Wait	30
+
+	DispCHA	0,"IZ02AB",CHR_N,CHR_C
+
+	\c1,8;【逸美】\n
+	「不同角色在同一个位置登场的时候，不要持续显示，而应象这样，先把前面的那个角色消掉为好。」\p
+	\c1,4;【优夏】\n
+	「你有什么事儿吗，逸美？」\p
+
+	DispCHA	0,"IZ01AB",CHR_N,CHR_C
+
+	\c1,8;【逸美】\n
+	「啊，没、没什么。」\p
+
+	ClrCHA	0
+
+	Wait	30
+
+	Textmode	2
+	ClrBG	,,BG_BLACK
+	\c0,2;
+	继续进行测试模式吗？\k
+
+	Select	seldt
+{
+	进行
+	不进行
+}
+
+	if	seldt == 1,testend
+
+	goto	START
+
+:testmode_efx
+
+	\c0,2;
+	测试画面效果。\p
+
+	Effect	eff_collision1
+	冲突１，弱\p
+	EffectOff	eff_all_off
+	Wait	30
+	Effect	eff_collision2
+	冲突２，中等\p
+	EffectOff	eff_all_off
+	Wait	30
+	Effect	eff_collision3
+	冲突３，强\p
+	EffectOff	eff_all_off
+
+	Textmode	2
+	Wait	60
+	EffectOff	eff_all_off
+
+	DispBG	"BG24A"
+
+	Effect	eff_quake1
+	地震１，弱\p
+	EffectOff	eff_quake_off
+	Wait	30
+	Effect	eff_quake2
+	地震２，中等\p
+	EffectOff	eff_quake_off
+	Wait	30
+	Effect	eff_quake3
+	地震３，强\p
+	EffectOff	eff_quake_off
+
+	Textmode	2
+	Wait	60
+	EffectOff	eff_all_off
+
+	DispBG	"BG27N"
+
+	Effect	eff_flower_n1
+	花瓣：夜晚用，少\p
+	EffectOff	eff_flower_off
+	Wait	30
+	Effect	eff_flower_n2
+	花瓣：夜晚用，多\p
+	EffectOff	eff_flower_off
+
+	Textmode	2
+	Wait	60
+	EffectOff	eff_all_off
+
+	DispBG	"BG27A"
+
+	Effect	eff_flower_a1
+	花瓣：白天用，少\p
+	EffectOff	eff_flower_off
+	Wait	30
+	Effect	eff_flower_a2
+	花瓣：白天用，多\p
+	EffectOff	eff_flower_off
+
+	Textmode	2
+	Wait	60
+	EffectOff	eff_all_off
+
+	DispBG	"BG13R"
+
+	Effect	eff_fog_a3
+	雾：雨中的道路\p
+	EffectOff	eff_fog_a_off
+	Wait	30
+
+	DispBG	"BG24R"
+
+	Effect	eff_fog_a2
+	雾：雨中的神社\p
+	EffectOff	eff_fog_a_off
+	Wait	30
+
+	ClrBG	,,BG_BLACK
+
+	Effect	eff_fog_a1
+	雾：序幕\p
+	EffectOff	eff_fog_a_off
+	Wait	30
+
+	Textmode	2
+	Wait	60
+	EffectOff	eff_all_off
+
+	DispBG	"BG28R"
+
+	Effect	eff_fog_c
+	雾：森林中\p
+	EffectOff	eff_fog_c_off
+	Wait	30
+
+	DispBG	"BG22A"
+
+	Effect	eff_fog_b1
+	雾：温泉１\p
+	EffectOff	eff_fog_b_off
+	Wait	30
+
+	DispBG	"BG22N"
+
+	Effect	eff_fog_b2
+	雾：温泉２\p
+	EffectOff	eff_fog_b_off
+	Wait	30
+
+	Textmode	2
+	Wait	60
+	EffectOff	eff_all_off
+
+	DispBG	"BG35NR"
+
+	Effect	eff_rain
+	雨\p
+	EffectOff	eff_rain_off
+	Wait	30
+
+	Textmode	2
+	Wait	60
+	EffectOff	eff_all_off
+
+	DispBG	"BG04A"
+
+	Effect	eff_sun_al
+	从树叶间隙射过来的阳光：从左边开始，早晨\p
+	EffectOff	eff_sun_off
+	Wait	30
+
+	Effect	eff_sun_ar
+	从树叶间隙射过来的阳光：从右边开始，早晨\p
+	EffectOff	eff_sun_off
+	Wait	30
+
+	DispBG	"BG04E"
+
+	Effect	eff_sun_el
+	从树叶间隙射过来的阳光：从左边开始，傍晚\p
+	EffectOff	eff_sun_off
+	Wait	30
+
+	Effect	eff_sun_er
+	从树叶间隙射过来的阳光：从右边开始，傍晚\p
+	EffectOff	eff_sun_off
+	Wait	30
+
+	Textmode	2
+	Wait	60
+	EffectOff	eff_all_off
+
+	ClrBG	,,BG_BLACK
+	ClrBG	,,BG_WHITE
+
+	Effect	eff_think
+	DispBG	"BG04N"
+
+	回想场面使用的画面框\p
+	要显示·消除这种效果的时候，先把画面变成纯白，就可以比较流畅地移动到回想的画面。\p
+
+	ClrBG	,,BG_WHITE
+	EffectOff	eff_think_off
+	Wait	30
+
+	ClrBG	,,BG_BLACK
+
+	Textmode	2
+	Wait	60
+	EffectOff	eff_all_off
+
+	Wait	30
+
+	Textmode	2
+	ClrBG	,,BG_BLACK
+	\c0,2;
+	继续进行测试模式吗？\k
+
+	Select	seldt
+{
+	进行
+	不进行
+}
+
+	if	seldt == 1,testend
+
+	goto	START
+
+:testend
+
+	\c0,2;
+	测试模式结束。\p
+	辛苦了。\p
+
+	Textmode	2
+	ClrBG	,,BG_BLACK
+	EffectOff	eff_all_off
+
+end
+

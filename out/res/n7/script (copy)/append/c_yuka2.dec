@@ -1,0 +1,829 @@
+@label ap_START
+@setvar v_a1_3c = 209
+@text ~
+delay 15
+@setvar v_a0_fb = 2
+dayIntro 00000000 bgcal2
+bgload 00000000 BG09A 0 4 0 0 2
+cmd1 30
+@setvar v_a0_fc = 11
+@setvar v_a0_fd = 52
+showClock
+playBGM 8
+@text Just as we promised yesterday, the six of us go to the pool. 
+@text Kurumi stays behind this time too, due to her headache. 
+@text There isn't even a single cloud visible in the clear blue sky. The gentle spring sunlight bathes us with its warming rays. The air contains a faint scent of seawater. 
+@text Everyone spends the time having fun, like last time. 
+@text But I... I'm... the only one feeling depressed. 
+@text Right now, I'm lying down on a deck chair while idly passing the time. 
+@text My mind feels clear and my body's languid... 
+@text It's as if I'm in the middle of some kind of dream. 
+@text There's a group of kids playing innocently in the water... 
+@text It's nothing but a peaceful scene. 
+@text 【Yuka】 "Haah..." 
+@text ... Even so, a sigh leaks from my mouth. 
+@text It feels like a heavy darkness has enveloped my heart. 
+@text Could the irritation I felt yesterday still be bugging me...? 
+@text Or did I simply not get enough sleep...? 
+@text ... 
+@text Or could it be both...? 
+@text Well, either way, it doesn't change the fact that I'm feeling melancholic. 
+@text And so I clap my knees, and stand up. 
+@text At times like this, it's time for a change in pace. 
+@text For starters... 
+@text (Time to get beer♪) 
+@text ... I make a bee-line for the beverage stand. 
+@text Suddenly, I see someone performing a crawl at the racing section of the pool. 
+@text ... It's Makoto. 
+@text My gaze shifts from Makoto to his goal. 
+@text I impulsively decide to head over there instead of the stand...
+@text ~
+cmd2 7
+removeBG 0 0 2
+bgload 00000000 BG09A 0 4 0 0 2
+cmd1 30
+@setvar v_a0_fc = 12
+@setvar v_a0_fd = 3
+showClock
+@text 【Makoto】 "FWAAH!" 
+@text Makoto reaches the end of the pool, and gasps for air as he shoots his face out of the water.  
+@text I peer down on him from the high edge of the pool.
+fgload 0 00000000 YU02DA 1 3
+@text 【Yuka】 "Here." 
+@text I bend over and hold out my right hand. 
+@text 【Makoto】 "Oh, thank you." 
+@text Makoto thanks me, takes my hand, and step onto the poolside with one foot. 
+@text He puts his weight into his hand and looks about ready to climb up. 
+@text Naturally, I intend to...   
+@choice Pull him up.|Let go of him midway.
+@setvar vap_seldt = selected
+@if seldt < 1
+@    goto ap_SEL_YUKAHAND
+@fi
+@setvar v_lf_yuka_handoff = 1
+@label ap_SEL_YUKAHAND
+removeFG 0 3
+cmd2 7
+@text At that time...
+removeBG 0 0 2
+@text ――Whoosh! 
+@text ... In a completely unexpected turn of events, my arm is pulled back with great strength.
+@text ~
+playSFX 62 1
+@text For an instant, it feels like Heaven and Earth have been reversed. By the time I come to my senses, I've fallen into the pool at an awkward angle.
+bgload 00000000 BG09A 0 4 0 0 2
+cmd1 30
+playBGM 19
+@text 【Makoto】 "Gahahahahahahaha♪" 
+@text I raise my face out of the water to see Makoto, who is now on top of the poolside, laughing his ass off at me at me. 
+@text I finally realize that what happened just now was Makoto's doing. 
+@text 【Yuka】 "Ba-Bagodo!" 
+@text My voice sounds weird due to the large amount of water in my nose. 
+@text 【Yuka】 "Jeesh, whaa ah yuu doin'...!" 
+@text I frown while climbing out of the pool.
+@if v_lf_yuka_handoff > 0
+@	goto ap_MIEMIE
+@fi
+@goto ap_HANADETERU
+@label ap_MIEMIE
+@text 【Makoto】 "I can see right through you."
+fgload 0 00000000 YU04DA 1 3
+@text 【Yuka】 "W-Whaa ah yuu tocking abaut?" 
+@text 【Makoto】 "You were planning on letting me go, right?"
+playSFX 120 1
+@text (――Ugh!) 
+@text 【Makoto】 "It was obvious."
+fgload 0 00000000 YU08DA 1 3
+@text I'm so dejected that my shoulders drop. 
+@text 【Makoto】 "So now we're even..." 
+@text 【Yuka】 "... No." 
+@text 【Makoto】 "Huh?"
+fgload 0 00000000 YU04DA 1 3
+@text 【Yuka】 "No way, no way! We're not even at all!" 
+@text 【Yuka】 "After all, no matter how you think about it, I haven't done anything to you." 
+@text 【Yuka】 "I'm the 'victim', and you're the 'assailant', right!?" 
+@text 【Makoto】 "Ugh...!" 
+@text 【Makoto】 "... Th-Then how can I make it up to you?"
+fgload 0 00000000 YU02DA 1 3
+@text (Hee hee hee... Makoto is so predictable.) 
+@text 【Yuka】 "Well, if you insist, then...♪" 
+@text Makoto suddenly smiles. 
+@text 【Makoto】 "Yeah, I'll get you one cup of anything... except alcohol." 
+@text ... It seems I'm the one who is predictable...
+@goto ap_YUKA_GOU
+@label ap_HANADETERU
+@text 【Makoto】 "Ah, your nose is dripping with snot... how dirty!"
+playSFX 120 1
+@text (――!!!!!)
+fgload 0 00000000 YU04DA 1 3
+@text 【Yuka】 "U-U-Ughhhh..." 
+@text As my body trembles with rising anger, I clench my hands into fists. 
+@text (Is that any way to treat a girl!?) 
+@text 【Makoto】 "Ah..." 
+@text 【Makoto】 "Are you... mad at me?"
+fgload 0 00000000 YU06DA 1 3
+@text 【Yuka】 "I'm not!" 
+@text Pissed off, I shout this in defiance of Makoto's composed words and attitude. 
+@text If say "I'm mad", then it'll kinda feel like I've lost to him. 
+@text But boy, is his face looking really punchable right about now... 
+@text 【Makoto】 "All right! Got it! It can't be helped, so I'll treat you to a drink!" 
+@text ... He said it. 
+@text Those simple words "I'll treat you to a drink" have rapidly brightened my vision.
+fgload 0 00000000 YU02DA 1 3
+@text 【Yuka】 "Huh? Beer?♪" 
+@text 【Makoto】 "Dumbass! I'm not letting you drink alcohol!"
+@label ap_YUKA_GOU
+fgload 0 00000000 YU05DA 1 3
+@text 【Yuka】 "Whyyyy not...?" 
+@text 【Makoto】 "You know why!" 
+@text 【Yuka】 "Boo..." 
+@text 【Makoto】 "Well, I'll go and buy you something appropriate... so wait here."
+removeFG 0 3
+stopBGM
+@text He says that, and heads over to the drink stand... 
+@text As I stare at him walking away, I realize something. 
+@text Right now, I can't feel a single fragment of the depression I felt earlier... 
+@text (Hmm...) 
+@text (Looks like I don't need that beer right now after all...) 
+@text Having reached that conclusion, I nod to myself.
+@text ~
+cmd2 7
+removeBG 0 0 2
+bgload 00000000 ev_yu15b 0 4 0 0 2
+@setvar v_a0_fc = 13
+@setvar v_a0_fd = 33
+showClock
+playBGM 1
+@text After I've had lunch, I sit down in the deck chair again, and blankly stare at the scene before my my eyes. 
+@text Well, it's slightly different from earlier, as I have a cup of beer in my hand...
+bgload 00000000 ev_yu15a 0 4 0 0 2
+@text I gulp down the beer while foam covers my lips.
+bgload 00000000 ev_yu15b 0 4 0 0 2
+@text 【Yuka】 "Fwah...!" 
+@text A comfortable stimulus like an electric shock travels down my entire body through my throat. My whole body is wrapped up in an uplifting feeling. 
+@text Thanks to that, I stop thinking of unnecessary things. 
+@text The words "good wine makes good blood" come to mind. 
+@text (The power of alcohol is really amazing♪) 
+@text I am embraced by a feeling of ectasy... 
+@text ... 
+@text 【Makoto】 "Ah, Yuka! Not again!" 
+@text Makoto spots me, then frantically runs over to where I am. 
+@text 【Yuka】 "Ah, Mako-tan♪ Doo yuu wanna drink too?" 
+@text 【Makoto】 "Hell no! How many times do I have to tell you until you understand!?" 
+@text He violently snatches the beer from my hand. 
+@text 【Yuka】 "Aaaah! Whaa da hell ah yuu doin'!!" 
+@text I take the stolen beer back from Makoto. 
+@text 【Yuka】 "Dish ish maine!" 
+@text 【Makoto】 "..."
+bgload 00000000 ev_yu15a 0 4 0 0 2
+@text 【Yuka】 "Gulp, gulp...♪" 
+@text 【Makoto】 "Hey, Yuka..."
+bgload 00000000 ev_yu15b 0 4 0 0 2
+@text 【Yuka】 "Hmm?" 
+@text 【Makoto】 "How many have you had?" 
+@text 【Yuka】 "Huh?" 
+@text 【Makoto】 "I'm asking you how many cups of beer you've had."
+bgload 00000000 ev_yu15c 0 4 0 0 2
+@text 【Yuka】 "Umm... well..." 
+@text 【Yuka】 "1... 2..." 
+@text 【Yuka】 "..."
+bgload 00000000 ev_yu15b 0 4 0 0 2
+@text 【Yuka】 "Eye dunno." 
+@text 【Makoto】 "..."
+bgload 00000000 ev_yu15a 0 4 0 0 2
+@text 【Yuka】 "Gulp, gulp...♪" 
+@text 【Makoto】 "Hey... I'll remind you of something so that you don't forget."
+bgload 00000000 ev_yu15b 0 4 0 0 2
+@text 【Yuka】 "??" 
+@text 【Makoto】 "It's about Saki..." 
+@text He says that, and snatches the cup from my hand a second time.
+bgload 00000000 ev_yu15c 0 4 0 0 2
+@text 【Yuka】 "AHH!!!!" 
+@text Makoto firmly grips my shoulders, looks at me with a serious expression, then quickly begins to explain. 
+@text My mind is fuzzy, so I barely understand anything he says, but I do catch the words "fishing" and "it'll be a big problem if we go."
+bgload 00000000 ev_yu15b 0 4 0 0 2
+@text 【Yuka】 "Ish faine, ish faine!" 
+@text 【Yuka】 "If we don't go fishin', then ishent it arright?" 
+@text Even so, Makoto's expression is uneasy... 
+@text 【Yuka】 "Eyem tellin' yuu, ish faine!" 
+@text 【Makoto】 "..." 
+@text 【Makoto】 "Fine, I'll trust you..." 
+@text Makoto holds out the cup while saying this. 
+@text 【Yuka】 "Leef it to me! Nahahahaha...♪" 
+@text And, at that time...
+bgload 00000000 BG09A 0 4 0 0 2
+cmd1 30
+fgload 1 00000000 IZ01DA 1 3
+@text 【Izumi】 "Hello, Makoto-kun, Yuka-chan." 
+@text ... Suddenly, Izumi-san appears from behind us.  
+@text 【Makoto】 "GYAAA!?!?!?"
+@text ~
+playSFX 111 1
+@text He spills the beer all over my head. 
+@text 【Yuka】 "Ugh... yuu shuck..."
+fgload 1 00000000 IZ11DA 1 3
+@text 【Izumi】 "What are you two doing?" 
+@text 【Makoto】 "Ah... no... uh... nothing really." 
+@text 【Makoto】 "M-More importantly, how long have you been there...?"
+fgload 1 00000000 IZ01DA 1 3
+@text 【Izumi】 "... I got here just now." 
+@text 【Makoto】 "I-Is that so? ... Whew." 
+@text 【Izumi】 "??" 
+@text 【Makoto】 "Oh, that's right, Haruka called for me!!" 
+@text With that, Makoto suddenly runs away.
+fgload 1 00000000 IZ11DA 1 3
+@text 【Izumi】 "?????" 
+@text Izumi-san tilts her head in confusion, while I, being left behind, make an indignant face, feeling uncomfortable all the while...
+@text ~
+cmd2 7
+removeBG 0 0 2
+removeFG 1 3
+stopBGM
+delay 60
+bgload 00000000 BG09A 0 4 0 0 2
+cmd1 30
+@setvar v_a0_fc = 13
+@setvar v_a0_fd = 48
+showClock
+playBGM 5
+@text After that, I took a shower. 
+@text Thanks to that, I finally sobered up by the time I got back... 
+@text Right now, I'm sitting in a deck chair next to Izumi-san. 
+@text In my right hand is a cup full of beer, while Izumi-san is drinking black tea. 
+@text The gentle afternoon begins to pass by ever so slowly... 
+@text Suddenly, Izumi-san looks over towards the water slide. 
+@text I do the same. 
+@text ... I see Makoto and Haruka sliding down it together. 
+@text 【Yuka】 "..." 
+@text Just when they reach the bottom, Haruka tugs on Makoto's arm, and the two of them head to the staircase together. 
+@text It seems they're going for a return trip.
+fgload 0 00000000 IZ01DB 1 3
+@text 【Izumi】 "Makoto's getting along well with her." 
+@text 【Yuka】 "You're right..." 
+@text 【Yuka】 "But it feels like Haruka is dragging Makoto along, doesn't it?" 
+@text Haruka is dragging along the completely exhausted Makoto. I can tell that much from here.
+fgload 0 00000000 IZ12DB 1 3
+@text 【Izumi】 "Sorry, I was thinking aloud. When I said 'her', I was referring to you, Yuka." 
+@text 【Yuka】 "Huh?" 
+@text Thump... My heart gives a little jump.
+fgload 0 00000000 IZ02DB 1 3
+@text 【Izumi】 "You two seem quite close, don't you?" 
+@text 【Yuka】 "..." 
+@text 【Izumi】 "I can't believe it. After all, the two of you only just met each other♪" 
+@text 【Yuka】 "..."
+fgload 0 00000000 IZ01DB 1 3
+@text 【Izumi】 "Hey, what's really going on between you two?" 
+@text 【Yuka】 "N-Nothing..." 
+@text 【Izumi】 "Really...? But earlier, you two were..." 
+@text 【Izumi】 "... Now that I think about it, what were you and Makoto-kun talking about earlier?" 
+@text 【Yuka】 "W-Who knows...?"
+fgload 0 00000000 IZ02DB 1 3
+@text 【Izumi】 "Oh? Is it a secret between you two?" 
+@text 【Yuka】 "I really don't know. I completely forgot when I sobered up..." 
+@text 【Izumi】 "Hmm..."
+removeFG 0 3
+@text I only give a vague answer. 
+@text ... Well, half of it's a lie, but... 
+@text Now that I've sobered up, I can guess the general idea of what he was saying. 
+@text After this comes the incident where Saki almost drowned... 
+@text What should we do in order to prevent that...? 
+@text ... Naturally, I can't tell anyone else about it. 
+@text I give a sidelong glance at Izumi-san. 
+@text Having fortunately already lost interest in our topic, Izumi-san is happily enjoying the fragrance of a new cup of black tea. 
+@text Before long, our conversation has completely ceased... 
+@text I casually glance at the other side of the pool. 
+@text (Oh...?) 
+@text Having finally part ways with Haruka, Makoto is currently caught up in conversation with Saki. 
+@text (What are they talking about...?) 
+@text The two of them burst into laughter. 
+@text Especially Saki, whose laughing is so loud that I can hear it from all the way over here... 
+@text 【Yuka】 "..." 
+@text I feel a prickling pain in my chest. 
+@text Not only is my chest in pain, but it's also hard to breathe, causing my body to get hot. 
+@text For some reason, looking at this scene makes me sick. 
+@text Then all I have to do is not look at it... But strangely, I can't look away from them. 
+@text ... 
+@text A little bit later, it seems that Makoto has decided to treat her to a drink, as he walks towards the drink stand. 
+@text While my eyes follow Makoto, I speak to Izumi-san. 
+@text 【Yuka】 "Hey, Izumi-san?"
+fgload 0 00000000 IZ01DB 1 3
+@text 【Izumi】 "Hmm?" 
+@text 【Yuka】 "Do you think there are people... with 'exact resemblances'?"
+fgload 0 00000000 IZ11DB 1 3
+@text 【Izumi】 "Huh?" 
+@text 【Yuka】 "..."
+fgload 0 00000000 IZ06DB 1 3
+@text 【Izumi】 "Hmm..." 
+@text 【Izumi】 "I think that there are blood relatives who have similar faces and personalities, right...?" 
+@text 【Yuka】 "..." 
+@text 【Yuka】 "Then let's just say they don't resemble each other at all on the surface..." 
+@text 【Yuka】 "Even so, do you think there are pairs of people like that in this world?"
+fgload 0 00000000 IZ10DB 1 3
+@text 【Izumi】 "Hmm..." 
+@text Her gaze wanders around for a bit...
+fgload 0 00000000 IZ08DB 1 3
+@text 【Izumi】 "Mmm... I wonder, do they really?" 
+@text She quietly looks at the pool.
+fgload 0 00000000 IZ01DB 1 3
+@text 【Izumi】 "Yuka-chan, have you met someone like that?" 
+@text 【Yuka】 "..." 
+@text The swaying and waving water shimmers in the sunlight. 
+@text ... It glitters like that night sky. 
+@text 【Yuka】 "... No." 
+@text 【Yuka】 "I just asked out of curiosity..." 
+@text 【Izumi】 "..." 
+@text 【Yuka】 "Aah, I mustn't get drunk..."
+removeFG 0 3
+@text But despite my words, I end up drinking several cups of beer. 
+@text I'm bitter... I don't know why, but that's how I feel.
+cmd2 7
+removeBG 0 0 2
+stopBGM
+cmd1 25
+playBGM 1
+@text As the day goes on, the temperature drops considerably, and so we get ready to leave for Lunabeach. At that time, I'm so drunk that I can barely walk. That's no wonder... 
+@text In total, I drank no less than twenty cups of beer...  But! It's all Makoto's fault!!! 
+@text In the time I've been worrying about everything, Makoto has been enjoying himself! Because he neglected me like that, I had no choice but to just drink it all away!!! 
+@text As I continue to mentally complain, I force myself to chug down more beer.  Before long, my anger and thought processes fly away towards a distant dimension...
+removeBG 0 0 2
+cmd2 5
+bgload 00000000 BG16A 0 4 0 0 2
+@setvar v_a0_fc = 15
+@setvar v_a0_fd = 18
+showClock
+@text Just like we did on our way here, we go back through Moon Beach. 
+@text On the way back, Makoto grabs my hand while continuing to sprout gibberish. 
+@text 【Makoto】 "All right, Yuka? You can't say or have 'toro', got it?"
+fgload 0 00000000 YU02AAA 1 3
+@text 【Yuka】 "Huh? ... Did yuu shay 'toro'?"
+fgload 0 00000000 YU07AAA 1 3
+@text 【Yuka】 "Shilly Mako-tan, we're naht in a bullfightin' arena!" 
+@text 【Makoto】 "..."
+removeFG 0 3
+@text Makoto makes a sour face and furrows his eyebrows. I can't tell whether it's from being unable to stomach my reply or from being overwhelmed by the stench of alcohol in my breath. 
+@text 【Makoto】 "Then I'll try saying it another way..." 
+@text 【Makoto】 "All right, Yuka? You must absolutely not say 'I want to eat tuna', okay?" 
+@text This time, I don't understand him at all... 
+@text But his whispers are tickling me, so I just give a suitable nod of affirmation. 
+@text 【Makoto】 "Do you really understand?"
+fgload 0 00000000 YU07AAA 1 3
+@text 【Yuka】 "Geesh, don't worree abaut it... Eye got it!"
+removeFG 0 3
+@text So he must mean "toro" as in the fatty part of tuna. Um... so I can't have "toro", right? 
+@text Yeah, yeah, yeah... Of course I understand that. 
+@text So the next time I'm at a sushi shop, I'll just order a "sea urchin" instead.
+removeBG 0 0 2
+stopBGM
+bgload 00000000 BG07A 0 4 0 0 2
+@setvar v_a0_fc = 15
+@setvar v_a0_fd = 26
+showClock
+playBGM 8
+fgload 0 00000000 KU02AA 1 3
+@text 【Kurumi】 "Morning!" 
+@text When we arrive at Lunabeach, we are greeted by the now completely cheerful Kurumi-chan. 
+@text I feel jealous of her youth and her quick recovery ability. 
+@text And then...
+moveFG 0 0
+fgload 1 00000000 YU12AAA 2 3
+@text 【Yuka】 "Eye have jusht come up wif shomefing amashin'!" 
+@text 【Makoto】 "Yeah, yeah, when you cross Kurumi and milk, you get 'Kurumilk'... Now let's move on!" 
+@text ... Makoto's sense of humor is like an old-timer's.
+fgload 0 00000000 KU07AA 0 3
+@text 【Kurumi】 "Kyahahahahahahaha♪ Well done! That's great!"
+fgload 1 00000000 YU07AAA 2 3
+@text 【Yuka】 "Gyahahahahahahaha♪ Makoto... yer too funee...♪" 
+@text 【Yuka】 "Yuu jusht meid a portmanteau...♪" 
+@text 【Yuka】 "Makoto, yer too much...♪" 
+@text 【Makoto】 "..."
+removeAllFG 3
+@text And then, when I finish laughing... 
+@text 【Yuka】 "Haah..." 
+@text When I finish laughing...
+stopBGM
+fgload 0 00000000 YU01AAA 1 3
+@text 【Yuka】 "To... to... to..." 
+@text Suddenly, I feel a certain desire welling up. 
+@text My whole body shakes with this strong wish, completely stealing away any reason I had left.  
+@text 【Yuka】 "To... to... to..." 
+@text ... Oh? Why does Makoto seem to be foaming at the mouth...? 
+@text ... But I ignore him. 
+@text 【Yuka】 "To... to... to..."
+@text ~
+delay 60
+@text 【Yuka】 "Tower." 
+@text 【Makoto】 "?????" 
+@text 【Yuka】 "Eye wanna shee... da lighthoushe tower..."
+fgload 0 00000000 YU04AAA 1 3
+@text 【Yuka】 "Eye wanna shee da lighthoushe tower!!"
+removeBG 0 0 2
+removeFG 0 3
+bgload 00000000 BG19A 0 4 0 0 2
+@setvar v_a0_fc = 15
+@setvar v_a0_fd = 47
+showClock
+playBGM 8
+@text And thus, in order to see the lighthouse tower, we go to Viewpoint Park at the tip of the cape. 
+@text The five besides Kurumi and I are standing by the cherry blossoms before the park. 
+@text Now that I think about it, this is the first time Saki, Haruka, and Okuhiko-kun have seen the cherry blossoms here. 
+@text That amazing sight may be overwhelming them. 
+@text Well, anyway, in order to fulfill my desire, Kurumi-chan and I play around the lighthouse tower. 
+@text Round and round the lighthouse tower... 
+@text We chase each other like children in a daze. 
+@text At this moment, I haven't realized it yet. 
+@text My actions have resulted in preventing that terrible event from happening...
+removeBG 0 0 2
+stopBGM
+bgload 00000000 BG19E 0 4 0 0 2
+@setvar v_a0_fc = 16
+@setvar v_a0_fd = 38
+showClock
+playBGM 16
+@text We pass the time in Viewpoint Park idly. 
+@text One person admires the cherry blossoms in full bloom... Another's thoughts turn to what lies beyond the sea... 
+@text ... And yet another person frolics like an innocent child while trying to claw their way up the lighthouse... 
+@text Incidentally, the one trying to climb up the lighthouse is... 
+@text ... 
+@text ... Well, that's a secret. 
+@text And so, it's finally the end of the afternoon... 
+@text By the time I'm gazing at this setting sun, I've completely sobered up. 
+@text The seven of us are lined in a row by the cape's fence, watching the bright red sun as it sinks below the horizon. 
+@text Is it just my imagination, or does it feel like the sun's setting at a faster speed than usual?  
+@text It's like a smoothly descending curtain. 
+@text I feel a little reluctance to see it set and go away... 
+@text I casually turn my attention towards the scenery around me. 
+@text Because of the setting sun, the scenery is dyed red. 
+@text Everything before my eyes is a bright red color that makes it look like it's burning... 
+@text The current time is 4:38 P.M. 
+@text The event where Saki nearly drowned has been erased from this time axis. 
+@text With this, it's likely that Saki and Haruka's quarrel tomorrow won't happen. 
+@text There's nothing to worry about... Even so...
+removeBG 0 0 2
+@text Even so, what is this growing feeling of anxiety in my chest? 
+@text This red world makes me uneasy... It feels like as if the anxiety flowing into my beating heart is like light shining in from the cracks of a ceiling in a dark room... 
+@text My body faintly trembles.
+bgload 00000000 BG19E 0 4 0 0 2
+@text ... Suddenly, I feel warmth in my left hand. 
+@text When I look, I see that Makoto is gripping my hand. 
+@text His face is turned straight towards the setting sun. 
+@text Pleasant heat passes into my left hand. 
+@text It's a serene feeling... ... Like being wrapped up in a warm, soft feather. 
+@text I... gently grasp his hand back. I get a strong reaction from his hand. 
+@text Makoto is staring beyond the sea. 
+@text But it doesn't seem like his pink dyed cheeks are from the setting sunlight alone... 
+@text I find it extremely funny, but I suppress a laugh in my throat. 
+@text Before I know it, the turbulent ocean in my heart has calmed down and returned to normal. 
+@text My anxiety has disappeared to parts unknown. 
+@text I look towards the direction of the shrine. 
+@text I think I can stay like this for a little while. 
+@text Even if it's only for an extremely short amount of time... 
+@text Please allow me this peace. 
+@text Please, god of time...
+@text ~
+removeBG 0 0 2
+delay 180
+cmd1 25
+@text We wait until the sun has completely set, then return to Lunabeach. This is the third time I've watched the sunset on this island. 
+@text Suddenly, I remember the promise Makoto and I exchanged.  "We'll see the morning of April 7th together." 
+@text I won't stop believing until I see the beauty of the morning I've never seen.
+removeBG 0 0 2
+cmd2 5
+stopBGM
+bgload 00000000 BG06N 0 4 0 0 2
+@setvar v_a0_fc = 20
+@setvar v_a0_fd = 14
+showClock
+playBGM 8
+@text We are treated to dinner at Lunabeach. 
+@text After dinner, we say goodbye to Izumi-san and Kurumi-chan, and go outside. 
+@text Right after that...
+fgload 0 00000000 KU01AAn 1 3
+@text 【Kurumi】 "Oh! Kurumi almost forgot!" 
+@text Kurumi-chan comes out again alone. 
+@text 【Yuka】 "???" 
+@text 【Makoto】 "???"
+fgload 0 00000000 KU07AAn 1 3
+@text 【Kurumi】 "From now on, Kurumi has decided to call Okuhiko-kun 'Okkun'♪" 
+@text 【Kurumi】 "And she's decided to call Makoto-kun 'Onii-chan'♪" 
+@text Both of them accept these nicknames. 
+@text In fact, Makoto seems to have been looking forward to this, as he is now smiling. 
+@text "Okkun"... "Onii-chan"... 
+@text It's a familiar sound that makes my heart tremble...
+removeFG 0 3
+removeBG 0 0 2
+stopBGM
+bgload 00000000 BG16N 0 4 0 0 2
+@setvar v_a0_fc = 20
+@setvar v_a0_fd = 23
+showClock
+playBGM 18
+playSFX 24 1
+@text Right now, we're walking on Moon Beach. 
+@text Like last time, the others are returning to the lodge via the paved road. 
+@text After we parted from Kurumi-chan, I told Makoto-kun that I wanted "the two of us to talk alone", and so we decided took a different route from the others. 
+@text Haruka and Okuhiko-kun seemed kinda curious about what we're up to, but they don't seem to be looking into it. 
+@text However, just before we parted, Saki let out some disgruntled words... 
+@text ... ... ... 
+@text The moon is alone in the sky. 
+@text Light shines down from it. 
+@text The moonlight illuminates the black sea, causing the light to reflect off of it and making the waves breaking on the ocean sparkle with a silver sheen. 
+@text Is the tide rising right now? Or is it fading away? 
+@text The silver waves just come back and forth, back and forth... 
+@text That dull rhythm keeps repeating itself over and over.
+stopSFX
+@text 【Yuka】 "Wouldn't you say things are going better than we thought?" 
+@text 【Makoto】 "Yeah..." 
+@text Yes... so far, our plan's running smoothly. 
+@text If this continues, everything in these six days will create a good history, and nothing bad will happen. 
+@text 【Makoto】 "Hey...?" 
+@text While staring at the ocean, Makoto mutters this.
+fgload 0 00000000 YU01ABn 1 3
+@text I turn around, as if to say "What?" 
+@text 【Makoto】 "Somewhere in this ocean lies the other bell..." 
+@text 【Makoto】 "Our lifeline..."
+fgload 0 00000000 YU08ABn 1 3
+@text 【Yuka】 "Yeah..." 
+@text 【Makoto】 "And... that bell will wash up on this beach tomorrow afternoon... right?" 
+@text 【Yuka】 "... Yeah." 
+@text I nod while touching the bell in my pocket. 
+@text In the last loop, I definitely picked up the bell on the afternoon of the 3rd. 
+@text That's why we decided yesterday that we would resume the search for that bell tomorrow afternoon.
+fgload 0 00000000 YU01ABn 1 3
+@text 【Yuka】 "We'll look for it tomorrow together, right?" 
+@text 【Makoto】 "..." 
+@text 【Makoto】 "No... I won't." 
+@text 【Yuka】 "..." 
+@text 【Makoto】 "You know what a time paradox is, right?"   
+@choice I know.|I don't know.
+@setvar vap_seldt = selected
+@if seldt > 0
+@    goto ap_TP_SIRANAI
+@fi
+@text 【Yuka】 "Theoretically, it's an inconsistency that could possibly be created by time travel... right?" 
+@text 【Makoto】 "Y-Yeah..." 
+@text Apparently finding it comical to hear me say something like "theoretically", Makoto nods while holding back a laugh. 
+@text 【Yuka】 "In other words..." 
+@text 【Yuka】 "Let's say I used a time machine, and went back to a period of time way before my own mom was born." 
+@text 【Yuka】 "And there, I stopped my mom's mom, in other words, my grandma, from marrying my grandpa..."  
+@text 【Yuka】 "... Then it's possible my mom wouldn't be born..." 
+@text 【Yuka】 "And, if my mom wasn't born, then naturally, I would never have been born either." 
+@text 【Yuka】 "But I'm still existing." 
+@text 【Yuka】 "So the question is 'Just what am I?'" 
+@text 【Makoto】 "Yeah..." 
+@text 【Makoto】 "But even if the balance of history is altered by that one step, there's an easy way to think about it that'll make perfect sense." 
+@text 【Yuka】 "??" 
+@text 【Makoto】 "In other words, to use your example, even if your grandmother didn't give birth to your mother..." 
+@text 【Makoto】 "A different married couple somewhere in the world would still give birth to your mother, and in the end, your mother and father would still meet..." 
+@text 【Yuka】 "And I would be born...?"
+@goto ap_PARA_EXT
+@label ap_TP_SIRANAI
+fgload 0 00000000 YU08ABn 1 3
+@text 【Yuka】 "A time paradox...?" 
+@text 【Makoto】 "Theoretically, it's an inconsistency that could possibly be created by time travel."
+fgload 0 00000000 YU01ABn 1 3
+@text 【Yuka】 "I-I see..." 
+@text It's kinda funny hearing the word "theoretically" coming from Makoto. 
+@text 【Makoto】 "To explain it simply..." 
+@text 【Makoto】 "Let's say I had a time machine, and went back in time to a period way before my mom was born." 
+@text 【Makoto】 "And there, I stopped my mom's mom, in other words, my grandma, from marrying my grandpa..." 
+@text 【Makoto】 "... Then it's possible that my mom wouldn't be born..." 
+@text 【Makoto】 "And, if my mom wasn't born, it's only natural that I wouldn't be born either." 
+@text 【Makoto】 "But I'm still existing." 
+@text 【Makoto】 "So the question is 'Just what am I'?" 
+@text 【Yuka】 "Huh..." 
+@text 【Makoto】 "But even if the balance of history is altered by that one step, there's an easy way to think about it that'll make perfect sense." 
+@text 【Yuka】 "??" 
+@text 【Makoto】 "In other words, to use my example, even if my gradma didn't give birth to my mom..." 
+@text 【Makoto】 "A different married couple somewhere in the world would still give birth to my mom, and in the end, my mom and old man would still meet..." 
+@text 【Yuka】 "And you'd be born...?"
+@label ap_PARA_EXT
+@text 【Makoto】 "That's right... If you think that way, then that means no matter what happens, history can't change..." 
+@text "No matter what happens, history can't change."  
+@text Those are very unpleasant words... 
+@text 【Makoto】 "Of course... this is nothing more than an empty theory, right?" 
+@text Makoto says that with a smile, as if he was reading my mind. 
+@text 【Makoto】 "In short, what I want to say is..." 
+@text 【Yuka】 "If you also go searching for the bell tomorrow, then we won't find it?" 
+@text 【Makoto】 "Right. Of course, there's still a possibility that it won't be a problem and that we might find it anyway, but..."
+fgload 0 00000000 YU05ABn 1 3
+@text 【Yuka】 "Hmm... if that's the case, then it doesn't matter which one we do, as the probability won't change, right?" 
+@text 【Yuka】 "And besides, the 'us' in this time have done quite different things than last time, correct?" 
+@text 【Yuka】 "Saki didn't nearly drown... and-" 
+@text 【Makoto】 "Yeah, I know. The fact that we're right here itself has already made things different from the last loop."
+fgload 0 00000000 YU01ABn 1 3
+@text 【Yuka】 "Then... isn't it okay if we search together?" 
+@text The thought of me searching for the bell alone is extraordinarily discouraging. 
+@text That's why I've been by Makoto's side all this time up until now... 
+@text 【Makoto】 "Possibly... but you know what?" 
+@text 【Makoto】 "To us, finding the bell is a good event." 
+@text 【Makoto】 "Think about it. We're doing everything we can to change the bad events into good ones. But we absolutely don't want to change anything related to the good events." 
+@text 【Makoto】 "To reproduce that good event... means repeating the events of the good event itself!" 
+@text 【Yuka】 "...?" 
+@text 【Makoto】 "... I have a bad feeling about what could happen if we search together." 
+@text 【Makoto】 "When it came to the first bell, the time it was looked for and the number of people looking for it changed, so the one who found it changed..."  
+@text 【Makoto】 "The next time might be the same." 
+@text 【Makoto】 "If we go search together, then we might luckily find it, but..."
+fgload 0 00000000 YU08ABn 1 3
+@text 【Yuka】 "You're saying someone else might pick it up before us..." 
+@text Makoto slowly nods while he continues to talk. 
+@text 【Makoto】 "This isn't a simple problem." 
+@text 【Makoto】 "It's already impossible to even attempt to guess the changes that will occur in the future as a result of our actions..." 
+@text 【Makoto】 "But history will surely change..." 
+@text 【Makoto】 "No, we will MAKE history change!" 
+@text 【Makoto】 "In order to do that, I think it'd be safest if we repeat events that created a good result." 
+@text 【Makoto】 "There are parts of history we should change, and parts of history we shouldn't change..." 
+@text 【Makoto】 "If the result is unforseeable, then... I want to trust my intuition!" 
+@text 【Yuka】 "..."
+removeFG 0 3
+stopBGM
+playSFX 24 1
+@text I silently gaze at the beach. 
+@text The silver waves just come back and forth, back and forth... This monotonous pattern keeps repeating itself over and over. 
+@text Is the tide rising right now? Or is it fading away? 
+@text I slowly take off my shoes and socks, and step towards the ocean. 
+@text The waves drench my feet. 
+@text It's pleasantly cool... ... And it's very comfortable. 
+@text I slowly turn away from the salty ocean wind.
+stopSFX
+fgload 0 00000000 YU02AAn 1 3
+@text 【Yuka】 "... Got it." 
+@text 【Yuka】 "I'll search for the bell alone tomorrow..." 
+@text 【Yuka】 "And... I'll definitely find it!!"
+removeFG 0 3
+playBGM 16
+@text I still feel discouraged. I still want Makoto's help. 
+@text But... but... 
+@text 【Makoto】 "Yeah, I'll leave it to you!" 
+@text ... I want to see that smile. ... I want to become Makoto's strength. 
+@text At the very least, I've become Makoto's strength for now. 
+@text 【Makoto】 "All right..." 
+@text Suddenly, Makoto also takes off his shoes and socks, and throws them aside. 
+@text He runs over to me. 
+@text 【Makoto】 "I'm in a rather good mood now, so I felt like joining you." 
+@text Even though I'm making a dubious face, Makoto smiles as he says this. 
+@text Suddenly, I notice that our shadows are overlapping each other. 
+@text The waves just come back and forth, back and forth, running over the shadows... 
+@text The shadows don't sway, and continue to remain in place. 
+@text 【Makoto】 "Ah!" 
+@text Just then, Makoto speaks up.
+bgload 00000000 BG30N 0 4 0 0 2
+@text A shooting star streams across the night sky...  
+@text ――I've gotta make a wish! 
+@text I instantly make a firm, powerful wish... 
+@text Before long, the shooting star moves far away and disappears.
+bgload 00000000 BG16N 0 4 0 0 2
+@text 【Makoto】 "... Yuka?"
+fgload 0 00000000 YU01ABn 1 3
+@text 【Yuka】 "Hmm?" 
+@text 【Makoto】 "What did you wish for?" 
+@text 【Yuka】 "... What about you?" 
+@text 【Makoto】 "I-It was..." 
+@text 【Makoto】 "... for you to find the bell tomorrow..." 
+@text 【Yuka】 "I see." 
+@text 【Makoto】 "... So, what'd you wish for?" 
+@text 【Yuka】 "I..." 
+@text 【Makoto】 "..."
+fgload 0 00000000 YU02ABn 1 3
+@text 【Yuka】 "... I'm not telling♪" 
+@text 【Makoto】 "Huh? What's up with that?" 
+@text 【Yuka】 "Heh heh... you want me to tell you?" 
+@text 【Makoto】 "It's because I wanted you to tell me that I asked in the first place!"
+fgload 0 00000000 YU06ABn 1 3
+@text 【Yuka】 "Ah! I don't like that attitude of yours!" 
+@text 【Yuka】 "That's it, I'm not telling!" 
+@text 【Makoto】 "... Th-That's unfair! So I'm the only one who said it!?"
+fgload 0 00000000 YU10ABn 1 3
+@text 【Yuka】 "It wasn't really anything that big, so you're not missing out on much." 
+@text 【Makoto】 "If it's not that big, then you can tell me, can't you?"
+fgload 0 00000000 YU01ABn 1 3
+@text 【Yuka】 "... It's a little personal... You understand, right?" 
+@text 【Makoto】 "..." 
+@text 【Makoto】 "... Then can you promise me something?"
+fgload 0 00000000 YU02ABn 1 3
+@text 【Yuka】 "Okay." 
+@text 【Makoto】 "Don't forget these words, all right?"
+fgload 0 00000000 YU01ABn 1 3
+@text 【Yuka】 "Sure." 
+@text 【Makoto】 "'Promises must definitely be kept.'"
+fgload 0 00000000 YU08ABn 1 3
+@text 【Yuka】 "Y-Yeah... I know that!" 
+@text 【Makoto】 "Good... Well then, it's high time we head back."
+removeFG 0 3
+@text We put on our shoes and start walking towards the lodge. 
+@text While walking, I mentally repeat the wish I made earlier one ore time. 
+@text The wish I made on that shooting star of hope...
+bgload 00000000 BG30N 0 4 0 0 2
+@text "I wish that we'll always be together...!" 
+@text My wish... 
+@text My wish... is something that cannot be conveyed in words...
+removeBG 0 0 2
+stopBGM
+bgload 00000000 BG12N 0 4 0 0 2
+@setvar v_a0_fc = 21
+@setvar v_a0_fd = 27
+showClock
+@text We start climbing up the hill road while exchanging trivial conversation.
+bgload 00000000 BG00N 0 4 0 0 2
+@text And then, at the time the lodge begins to come into our field of vision... 
+@text 【???】 "Welcome back." 
+@text 【Yuka】 "!?" 
+@text 【Makoto】 "!?"
+playBGM 3
+fgload 0 00000000 SA06AAn 1 3
+@text Saki is standing there with her arms crossed.
+moveFG 0 0
+fgload 1 00000000 YU11AAn 2 3
+@text 【Yuka】 "... Huh? Saki, why are you..." 
+@text 【Makoto】 "You didn't go back yet...?" 
+@text 【Saki】 "It took you quite a long time to come back, so I got worried."
+fgload 0 00000000 SA01AAn 0 3
+@text Saki undoes her crossed arms, and slowly approaches us. 
+@text 【Saki】 "Nevertheless, you two are getting along real well..."
+fgload 1 00000000 YU08AAn 2 3
+@text While she says that, she looks back and forth between Makoto and I. 
+@text Her tone seems incredibly sharp and biting... 
+@text 【Makoto】 "... What? If you've got something you want to say, say it clearly." 
+@text When he says that, Saki's tone changes...
+fgload 0 00000000 SA08AAn 0 3
+@text 【Saki】 "Don't get so angry... Now you're making me even more worried..." 
+@text 【Makoto】 "Oh, umm..." 
+@text 【Makoto】 "... Sorry about that... err... We got a little caught up in our conversation..."
+fgload 0 00000000 SA01AAn 0 3
+@text 【Saki】 "No... it's okay. As long as you came back all right, that's good enough..." 
+@text 【Makoto】 "I-I see..."
+fgload 1 00000000 YU05AAn 2 3
+@text 【Yuka】 "..." 
+@text I feel a surge of anger flaring up in my chest from of their conversation...
+fgload 1 00000000 YU06AAn 2 3
+@text 【Yuka】 "... Well then, your business is all done, isn't it? We're going inside now, so why don't you head on home too?" 
+@text I aggressively tug on Makoto's arm as I try to pass by Saki.
+fgload 0 00000000 SA05AAn 0 3
+@text 【Saki】 "... Wait! I still haven't finished my business yet." 
+@text 【Yuka】 "?" 
+@text 【Makoto】 "?"
+fgload 0 00000000 SA01AAn 0 3
+@text 【Saki】 "I... want to talk to Yuka."
+fgload 1 00000000 YU01AAn 2 3
+@text 【Yuka】 "Huh? W-With me...?" 
+@text Saki nods. 
+@text 【Yuka】 "Wh-Why...?"
+fgload 0 00000000 SA08AAn 0 3
+@text 【Saki】 "... Well, you see..." 
+@text Just then, Saki glances at Makoto. 
+@text 【Makoto】 "?" 
+@text 【Saki】 "..."
+fgload 0 00000000 SA01AAn 0 3
+@text 【Saki】 "... No, never mind. Maybe next time..." 
+@text 【Yuka】 "Huh?" 
+@text 【Makoto】 "Hmm? Is it me? Am I being a third wheel or something? If that's the case, I'll go away..." 
+@text 【Saki】 "No... it's fine. I've decided that I need to give this more thought before talking about it."
+fgload 0 00000000 SA08AAn 0 3
+@text 【Saki】 "Yes... I haven't put my thoughts together yet..." 
+@text 【Yuka】 "...??"
+fgload 0 00000000 SA01AAn 0 3
+@text 【Saki】 "Well then... goodnight."
+removeAllFG 3
+@text With just those words, she slips right past me.  
+@text When she passes me, I smell a sweet scent wrapped around Saki's body. 
+@text It smells like the sweet aroma of flowers... 
+@text Before long, Saki has disappeared into the darkness. 
+@text 【Yuka】 "..." 
+@text 【Makoto】 "..." 
+@text All that's left is the two of us, standing there as we exchange glances...
+removeBG 0 0 2
+stopBGM
+bgload 00000000 BG36NN 0 4 0 0 2
+@setvar v_a0_fc = 21
+@setvar v_a0_fd = 52
+showClock
+playBGM 9
+@text I take a bath, brush my teeth, change my clothes, and lie on my bed. 
+@text I look at the clock, and find it's close to 10:00 P.M. 
+@text 【Yuka】 "Fwaah〜..." 
+@text I open my mouth widely, and yawn loudly. Anyway, I'm dead tired... 
+@text Last night, I almost got no sleep, and on top of that, I've been very busy for the last two days. 
+@text I don't even know if I've locked the door, as I'm too tired to check. 
+@text (Tomorrow... what happens tomorrow?) 
+@text I desperately review the facts of tomorrow's events in my head to affirm. 
+@text (Tomorrow... after breakfast, we went to tennis as scheduled...) 
+@text (... We took a break to eat Saki's sandwiches, we continued playing... I went shopping...) 
+@text (Then I have to go find the bell... Makoto's lifeline...) 
+@text (And then, we had the dinnerthat Izumi-san made...) 
+@text (... H-Huh?) What did we eat?) 
+@text (... I forgot...) 
+@text (Anyway, we ate Izumi-san's meal...) 
+@text (And then...) 
+@text (And then...) 
+@text I've reached my limit. 
+@text I can't think any more... 
+@text I turn my body, and curl up in the covers. 
+@text As my consciousness fades, I let my body get overtaken by sleep. 
+@text The world in front of me fades into white.
+removeBG 0 0 2
+@text Before long, my consciousness is taken to the comfortable world of sleep... 
+@text ... And then, I have a different dream than last night――――.
+removeBG 0 0 2
+stopBGM
+delay 60
+jump c_yuka3.snr
+returnTitle

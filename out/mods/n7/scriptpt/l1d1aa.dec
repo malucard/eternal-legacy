@@ -1,0 +1,1610 @@
+[0000004c] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 39
+[00000058] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 1
+[00000063] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 1
+[0000006e] 10:
+[0000006f] 10: bgload 00000000 BG01A 0 1
+[0000007c] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 9
+[00000087] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 17
+[00000093] 10:
+[00000094]  8: playSFX SE108 1
+[0000009e] 10:
+[0000009f] 19:
+[000000a0] ff: text 00
+{textColor 0 2}Eu acordei de repente, dando um chutão nos lençóis.
+{textColor 0 2}Ainda atordoado, estou encarando o teto.
+{textColor 0 2}Não reconheço esse teto... É inclinado e feito de várias tábuas de madeira colocadas juntas e espaçadas igualmente.
+{textColor 0 2}Essas tábuas devem ter sido feitas sem espaço entre elas. O cheiro leve da madeira fica no ar.
+{textColor 0 2}Eu percebo que estou congelando, meu corpo coberto de suor.
+{textColor 0 2}Eu respiro fundo e expiro lentamente.  {textColor 0 2}O cheiro morno de madeira entra no meu nariz e enche a minha cabeça.
+{textColor 0 2}Levei mais três fôlegos até chegar ao ponto de entender onde eu estou.
+{textColor 0 2}(Ah, certo...{delay 30} Eu estou{delay 15} no retiro...)
+
+
+[000000a3] 10: movie op
+[000000a4]  f: removeBG 0 0 2
+[000000ae] 10:
+[000000af] 1b: dayIntro 00000000 BGCAL1.cps
+[000000b6] 10:
+[000000b7] 10: bgload 00000000 BG01A 0 1
+[000000c4] 10:
+[000000c5]  6: playBGM 8
+[000000c9] 10:
+[000000ca] 19:
+[000000cb] ff: text 01
+{textColor 0 2}Eu me levantei devagar, sentando na ponta da cama.
+{textColor 0 2}Os lençóis que eu chutei estão caídos pelo chão agora.
+{textColor 0 2}Mas eu ainda não tenho força para pegar eles.
+{textColor 0 2}Meu corpo inteiro está lerdo.  {textColor 0 2}Minha garganta está ressecada e implorando por água...  Me sinto como se estivesse acordando de ressaca.
+{textColor 0 2}Apesar dos protestos do meu corpo, eu levantei meu braço esquerdo para olhar a hora no meu relógio.
+{textColor 0 2}O relógio digital diz...  {textColor 0 2}(1 SEG 09:17){delay 5}{delay 5} na tela.
+{textColor 0 2}Eu abaixei meu braço...  {textColor 0 2}(Hah...)  {textColor 0 2}... E respirei fundo de novo.
+{textColor 0 2}(Que pesadelo horrível...)
+{textColor 0 2}――Hã?
+{textColor 0 2}De repente, uma incerteza se prendeu em mim.
+{textColor 0 2}"Pesadelo".  {textColor 0 2}A palavra "pesadelo".
+{textColor 0 2}Eu não sei o que está me perturbando.  {textColor 0 2}Ainda assim, no fundo, eu me sinto meio perturbado.
+{textColor 0 2}(... Um pesadelo.)
+{textColor 0 2}(Mas foi só isso mesmo...?)
+{textColor 0 2}(Sábado, 6 de abril.)
+{textColor 0 2}(Em cinco dias...)
+{textColor 0 2}Sem me dar conta, eu conto os dias até sábado na minha mão direita.
+{textColor 0 2}(Nossa, o que eu tô fazendo... Acho que ainda estou sonolento.)
+{textColor 0 2}Eu dou um sorriso frio, rindo de mim mesmo.
+{textColor 0 2}――Mas, nesse momento!
+
+
+[000000ce] 10:
+[000000cf]  7: stopBGM
+[000000d0] 10:
+[000000d1]  8: playSFX SE000 1
+[000000db] 10:
+[000000dc]  a: waitForSFX
+[000000dd] 10:
+[000000de] 19:
+[000000df] ff: text 02
+{textColor 0 2}A porta do meu quarto foi aberta com tanta força que poderia ter sido quebrada.
+
+
+[000000e2] 10:
+[000000e3]  f: removeBG 0 0 3
+[000000ed] 10:
+[000000ee]  c: createPanBG 00000000 EV_YU01 2 4 0 0 0
+[000000fe] 10:
+[000000ff]  e: movePanBG 0 4 0 16
+[00000107] 10:
+[00000108] 19:
+[00000109] ff: text 03
+{textColor 0 2}De pé na porta, eu vi...  {textColor 0 2}Eu vi...
+{textColor 0 2}...{delay 5}{delay 5} Hm,{delay 5}{delay 5}{delay 5} quem é ela mesmo?
+{textColor 0 2}De repente, ela falou algo.
+
+
+[0000010c] 10:
+[0000010d]  b: playVoice L1D1A000
+[00000117] 10:
+[00000118] 19:
+[00000119] ff: text 04
+{textColor 1 4}【???】 "O{delay 5}{delay 5}... O que aconteceu!?"
+{textColor 0 2}Parece que ela está procurando alguma coisa em desespero.
+
+
+[0000011c] 10:
+[0000011d]  b: playVoice L1D1A001
+[00000127] 10:
+[00000128] 19:
+[00000129] ff: text 05
+{textColor 1 4}【???】 "Por quê...!?"
+{textColor 0 2}A garota repetiu.  {textColor 0 2}Claro, eu não sei do que ela está falando.
+{textColor 0 0}【Makoto】 "... C-{delay 5}{delay 5}Como é?"
+{textColor 0 2}Eu acho que pareço um idiota, mas é tarde para retirar o que disse.  {textColor 0 2}A garota se assustou com a minha resposta e respirou fundo.
+{textColor 0 2}Ela não falou nada, mas está me olhando diretamente nos olhos.
+{textColor 0 2}... Isso é meio estranho.
+{textColor 0 2}É quase como uma vez no mercado em que uma menina se agarrou à minha perna dizendo "Papai〜♪"
+{textColor 0 2}É, é o mesmo ar vergonhoso.
+
+[0000012c] ff: text 06
+{textColor 0 2}{choiceOpt 1 -> Tentar dar um sorriso reconfortante. }{choiceOpt 2 -> Perguntar com calma "Aconteceu alguma coisa?" }
+
+[0000012f] 10:
+[00000130]  3: choice v_a1_08 00 00
+[00000135]  0:
+[00000136]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000002df (0002)
+[00000144] 10:
+[00000145] 19:
+[00000146] ff: text 07
+{textColor 0 2}Eu a dei o mesmo sorriso reconfortante que dei àquela menina.
+{textColor 0 2}Nesse momento...
+
+
+[00000149] 10:
+[0000014a]  6: playBGM 1
+[0000014e] 10:
+[0000014f]  b: playVoice L1D1A002
+[00000159] 10:
+[0000015a] 19:
+[0000015b] ff: text 08
+{textColor 1 4}【???】 "Hã...?{delay 5}{delay 5}{delay 5} Foi...{delay 5}{delay 5} isso...? Então aquilo...{delay 5}{delay 5} foi só...{delay 5}{delay 5} isso...?"
+{textColor 0 2}Pelo tom da voz dela, ela está mais "se perguntando" do que "me perguntando".
+{textColor 0 2}De qualquer forma, eu ainda não sei o que está acontecendo.
+
+
+[0000015e] 10:
+[0000015f]  b: playVoice L1D1A003
+[00000169] 10:
+[0000016a] 19:
+[0000016b] ff: text 09
+{textColor 1 4}【???】 "Então, aquilo foi...{delay 5}{delay 5} foi..."
+{textColor 0 2}Ah, agora eu entendi mais ou menos por que ela está agindo assim.
+{textColor 0 2}É simples. Ela deve ainda estar sonolenta.
+{textColor 0 2}Quando ela acordou, ela estava numa cama completamente diferente, com um cheiro completamente diferente... e uma luz completamente diferente...
+{textColor 0 2}Ela deve achar que isso ainda é um sonho.
+{textColor 0 2}Isso acontece muito em viagens.  {textColor 0 2}Eu também tive o mesmo delírio agora...
+{textColor 0 0}【Makoto】 "Tá tudo bem?"
+{textColor 0 2}Eu perguntei isso, ainda sorrindo.
+
+
+[0000016e] 10:
+[0000016f]  d: removeD 0
+[00000173] 10:
+[00000174] 10: bgload 00000000 BG01A 0 1
+[00000181] 10:
+[00000182] 11: fgload 0 00000000 YU03CA 1 3
+[00000192] 10:
+[00000193]  b: playVoice L1D1A004
+[0000019d] 10:
+[0000019e] 19:
+[0000019f] ff: text 0a
+{textColor 1 4}【???】 "A-Ah... É..."
+
+
+[000001a2] 10:
+[000001a3] 11: fgload 0 00000000 YU01CA 1 3
+[000001b3] 10:
+[000001b4]  b: playVoice L1D1A005
+[000001be] 10:
+[000001bf] 19:
+[000001c0] ff: text 0b
+{textColor 1 4}【???】 "... Sim. Tudo bem."
+{textColor 0 0}【Makoto】 "Tem certeza? Você não me parece tão bem."
+
+
+[000001c3] 10:
+[000001c4]  b: playVoice L1D1A006
+[000001ce] 10:
+[000001cf] 19:
+[000001d0] ff: text 0c
+{textColor 1 4}【???】 "Você...{delay 5}{delay 5} acha?"
+{textColor 0 0}【Makoto】 "Sim, você tá muito pálida."
+
+
+[000001d3] 10:
+[000001d4] 11: fgload 0 00000000 YU03CA 1 3
+[000001e4] 10:
+[000001e5]  b: playVoice L1D1A007
+[000001ef] 10:
+[000001f0] 19:
+[000001f1] ff: text 0d
+{textColor 1 4}【???】 "Hã?"
+{textColor 0 2}Ela disse isso e colocou as mãos nas bochechas...
+
+[000001f4] 10:
+[000001f5] 11: fgload 0 00000000 YU07CA 1 3
+[00000205] 10:
+[00000206] 19:
+[00000207] ff: text 0e
+{textColor 0 2}... Mas depois começou a rir de repente.
+
+
+[0000020a] 10:
+[0000020b]  b: playVoice L1D1A008
+[00000215] 10:
+[00000216] 19:
+[00000217] ff: text 0f
+{textColor 1 4}【???】 "Você diz isso, Makoto, mas você parece que acabou de subir do fundo de um túmulo!"
+{textColor 0 0}【Makoto】 "Hã?"
+{textColor 0 2}Eu logo coloquei a mão no rosto, imitando o que a garota acabou de fazer.
+{textColor 0 2}――Não, espera!  {textColor 0 2}Eu quase não percebi.
+{textColor 0 2}"Makoto".  {textColor 0 2}Ela com certeza falou isso agora.  Dizendo só 'Makoto' assim...
+{textColor 0 0}【Makoto】 "Ei, sabe..."
+
+
+[0000021a] 10:
+[0000021b] 11: fgload 0 00000000 YU01CA 1 3
+[0000022b] 10:
+[0000022c]  b: playVoice L1D1A009
+[00000236] 10:
+[00000237] 19:
+[00000238] ff: text 10
+{textColor 1 4}【???】 "Não, tá tudo bem..."
+{textColor 0 2}A garota me interrompeu e continuou.
+
+
+[0000023b] 10:
+[0000023c]  b: playVoice L1D1A010
+[00000246] 10:
+[00000247] 19:
+[00000248] ff: text 11
+{textColor 1 4}【???】 "Sério, não foi nada, então não se preocupe!"
+{textColor 0 0}【Makoto】 "Não, não tô falando de-"
+
+
+[0000024b] 10:
+[0000024c] 11: fgload 0 00000000 YU02CA 1 3
+[0000025c] 10:
+[0000025d]  b: playVoice L1D1A011
+[00000267] 10:
+[00000268] 19:
+[00000269] ff: text 12
+{textColor 1 4}【???】 "Me desculpe por me intrometer de repente assim."
+
+
+[0000026c] 10:
+[0000026d]  b: playVoice L1D1A012
+[00000277] 10:
+[00000278] 19:
+[00000279] ff: text 13
+{textColor 1 4}【???】 "É só que... como eu digo... acho que eu entendi algo errado..."
+
+
+[0000027c] 10:
+[0000027d] 11: fgload 0 00000000 YU01CA 1 3
+[0000028d] 10:
+[0000028e]  b: playVoice L1D1A013
+[00000298] 10:
+[00000299] 19:
+[0000029a] ff: text 14
+{textColor 1 4}【???】 "Certo. Enfim, por favor esqueça que isso aconteceu."
+{textColor 0 0}【Makoto】 "Esquecer disso?"
+
+
+[0000029d] 10:
+[0000029e]  b: playVoice L1D1A014
+[000002a8] 10:
+[000002a9] 19:
+[000002aa] ff: text 15
+{textColor 1 4}【???】 "Se não se importa. Então, te vejo depois."
+
+
+[000002ad] 10:
+[000002ae] 12: removeFG 0 3
+[000002b5] 10:
+[000002b6] 19:
+[000002b7] ff: text 16
+{textColor 0 0}【Makoto】 "E-esper-"
+
+
+[000002ba] 10:
+[000002bb]  8: playSFX SE001 1
+[000002c5] 10:
+[000002c6]  a: waitForSFX
+[000002c7] 10:
+[000002c8]  8: playSFX SE011 1
+[000002d2] 10:
+[000002d3]  a: waitForSFX
+[000002d4] 10:
+[000002d5]  7: stopBGM
+[000002d6] 10:
+[000002d7] 19:
+[000002d8] ff: text 17
+{textColor 0 2}Mas antes que eu pudesse dizer "espera", ela já tinha saído e fechado a porta.
+{textColor 0 0}【Makoto】 "Ah... Nossa..."
+{textColor 0 2}Ainda assim, ela não está sendo um pouco familiar demais comigo?
+{textColor 0 2}"Makoto"{delay 5}{delay 5}... não fale de gente que você mal conhece sem nenhum honorífico!
+{textColor 0 2}Isso não é grosseiro?  Só nos conhecemos ontem...
+
+
+[000002db]  0:
+[000002dc]  7: goto7 000004f8 (0003)
+[000002df]  0:
+[000002e0]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000004f8 (0004)
+[000002ee] fe: varop VAR_(28_0a)_a0_ff (14) += (00) 1
+[000002f9] 10:
+[000002fa] 19:
+[000002fb] ff: text 18
+{textColor 0 0}【Makoto】 "Aconteceu alguma coisa?"
+{textColor 0 2}É nessas horas em que é importante ter calma.  {textColor 0 2}Eu não quero que a situação fique mais estranha...
+{textColor 0 2}Nesse momento...
+
+
+[000002fe] 10:
+[000002ff]  6: playBGM 1
+[00000303] 10:
+[00000304]  b: playVoice L1D1A015
+[0000030e] 10:
+[0000030f] 19:
+[00000310] ff: text 19
+{textColor 1 4}【???】 "Hã? Aquilo... foi...?"
+
+
+[00000313] 10:
+[00000314]  b: playVoice L1D1A016
+[0000031e] 10:
+[0000031f] 19:
+[00000320] ff: text 1a
+{textColor 1 4}【???】 "Então, quer dizer que, aquilo foi..."
+{textColor 0 2}Enquanto ela fala, ela olha pelo quarto. Ela parece estar muito confusa.
+
+
+[00000323] 10:
+[00000324]  b: playVoice L1D1A017
+[0000032e] 10:
+[0000032f] 19:
+[00000330] ff: text 1b
+{textColor 1 4}【???】 "Foi só um... 'sonho'?"
+{textColor 0 0}【Makoto】 "Tá tudo bem?"
+{textColor 0 0}【Makoto】 "Você ainda tá sonolenta, não tá?"
+{textColor 0 2}Eu disse isso e dei um sorriso simpático.
+
+
+[00000333] 10:
+[00000334]  d: removeD 0
+[00000338] 10:
+[00000339] 10: bgload 00000000 BG01A 0 1
+[00000346] 10:
+[00000347] 11: fgload 0 00000000 YU03CA 1 3
+[00000357] 10:
+[00000358]  b: playVoice L1D1A018
+[00000362] 10:
+[00000363] 19:
+[00000364] ff: text 1c
+{textColor 1 4}【???】 "Sonolenta..."
+
+
+[00000367] 10:
+[00000368] 11: fgload 0 00000000 YU01CA 1 3
+[00000378] 10:
+[00000379]  b: playVoice L1D1A019
+[00000383] 10:
+[00000384] 19:
+[00000385] ff: text 1d
+{textColor 1 4}【???】 "... É. Deve ser isso. Acho que é."
+{textColor 0 2}Ela disse isso, mas parece que ela não entendeu que esse é o mundo real.
+{textColor 0 0}【Makoto】 "Que tipo de sonho foi?"
+{textColor 0 2}Eu perguntei isso.
+
+
+[00000388] 10:
+[00000389]  b: playVoice L1D1A020
+[00000393] 10:
+[00000394] 19:
+[00000395] ff: text 1e
+{textColor 1 4}【???】 "Hã?"
+{textColor 0 2}Ela pareceu surpresa, então eu perguntei de novo.
+{textColor 0 0}【Makoto】 "Seu sonho foi sobre o quê?"
+
+
+[00000398] 10:
+[00000399] 11: fgload 0 00000000 YU03CA 1 3
+[000003a9] 10:
+[000003aa]  b: playVoice L1D1A021
+[000003b4] 10:
+[000003b5] 19:
+[000003b6] ff: text 1f
+{textColor 1 4}【???】 "A-Ah. Foi... Na verdade, eu não lembro muito bem."
+
+
+[000003b9] 10:
+[000003ba]  b: playVoice L1D1A022
+[000003c4] 10:
+[000003c5] 19:
+[000003c6] ff: text 20
+{textColor 1 4}【???】 "Mas é estranho. Acho que quando eu acordei, eu me lembrava..."
+{textColor 0 2}Ela tocou na bochecha com o indicador, pensando.
+{textColor 0 0}【Makoto】 "Eu entendo..."
+{textColor 0 0}【Makoto】 "Como quando você se acorda de um sonho rindo, mas aí não consegue lembrar qual foi a graça{delay 5}{delay 5}... ou algo assim."
+{textColor 0 0}【Makoto】 "Tudo que sobra é uma sensação feliz..."
+
+
+[000003c9] 10:
+[000003ca] 11: fgload 0 00000000 YU01CA 1 3
+[000003da] 10:
+[000003db]  b: playVoice L1D1A023
+[000003e5] 10:
+[000003e6] 19:
+[000003e7] ff: text 21
+{textColor 1 4}【???】 "É, mais ou menos assim. Só que, no meu caso, não foi muito feliz..."
+{textColor 0 0}【Makoto】 "...?"
+
+
+[000003ea] 10:
+[000003eb] 11: fgload 0 00000000 YU08CA 1 3
+[000003fb] 10:
+[000003fc]  b: playVoice L1D1A024
+[00000406] 10:
+[00000407] 19:
+[00000408] ff: text 22
+{textColor 1 4}【???】 "... Acho que foi{delay 5}{delay 5}... desespero."
+{textColor 0 2}Nesse momento, ela entristeceu.
+{textColor 0 2}("Desespero"...)
+{textColor 0 2}Falando nisso, hoje eu também tive um "sonho" meio sinistro...
+
+
+[0000040b] 10:
+[0000040c] 11: fgload 0 00000000 YU02CA 1 3
+[0000041c] 10:
+[0000041d]  b: playVoice L1D1A025
+[00000427] 10:
+[00000428] 19:
+[00000429] ff: text 23
+{textColor 1 4}【???】 "Mas, tudo bem."
+{textColor 0 2}De repente, ela começa a sorrir.
+
+
+[0000042c] 10:
+[0000042d]  b: playVoice L1D1A026
+[00000437] 10:
+[00000438] 19:
+[00000439] ff: text 24
+{textColor 1 4}【???】 "Estou feliz que foi só um pesadelo."
+{textColor 0 0}【Makoto】 "Hã? Você não disse que não lembra o que aconteceu nele?"
+
+
+[0000043c] 10:
+[0000043d]  b: playVoice L1D1A027
+[00000447] 10:
+[00000448] 19:
+[00000449] ff: text 25
+{textColor 1 4}【???】 "Não, não é isso...{delay 5}{delay 5} Como eu digo?{delay 5}{delay 5} Eu quero dizer que estou feliz que o sonho finalmente acabou..."
+
+
+[0000044c] 10:
+[0000044d]  b: playVoice L1D1A028
+[00000457] 10:
+[00000458] 19:
+[00000459] ff: text 26
+{textColor 1 4}【???】 "Mesmo que eu não lembre, tenho certeza que foi o pior pesadelo que eu já tive."
+{textColor 0 2}Olhando para ela, eu percebi que seu corpo inteiro está coberto de suor.
+{textColor 0 2}Ela parece uma paciente que acabou de fugir do hospital.  {textColor 0 2}O rosto dela também está palído...
+
+
+[0000045c] 10:
+[0000045d] 11: fgload 0 00000000 YU01CA 1 3
+[0000046d] 10:
+[0000046e]  b: playVoice L1D1A029
+[00000478] 10:
+[00000479] 19:
+[0000047a] ff: text 27
+{textColor 1 4}【???】 "Então, me desculpe me intrometer de repente."
+{textColor 0 0}【Makoto】 "Não, sem problema. Eu também acabei de acordar."
+
+
+[0000047d] 10:
+[0000047e] 11: fgload 0 00000000 YU03CA 1 3
+[0000048e] 10:
+[0000048f]  b: playVoice L1D1A030
+[00000499] 10:
+[0000049a] 19:
+[0000049b] ff: text 28
+{textColor 1 4}【???】 "Agora estou meio envergonhada, falando tudo aquilo sem nexo, do nada... É como se eu fosse sonâmbula."
+{textColor 0 2}Ela sorriu, nervosa, enquanto alisa o cabelo bagunçado com a mão direita.
+{textColor 0 2}Em troca, eu sorri de volta.
+
+
+[0000049e] 10:
+[0000049f] 11: fgload 0 00000000 YU01CA 1 3
+[000004af] 10:
+[000004b0]  b: playVoice L1D1A031
+[000004ba] 10:
+[000004bb] 19:
+[000004bc] ff: text 29
+{textColor 1 4}【???】 "Vamos fingir que isso nunca aconteceu, tá? Isso é um segredo entre eu e você, Makoto."
+{textColor 0 2}Eu acenei com a cabeça, concordando, e ela saiu do quarto.
+
+
+[000004bf] 10:
+[000004c0] 12: removeFG 0 3
+[000004c7] 10:
+[000004c8]  8: playSFX SE001 1
+[000004d2] 10:
+[000004d3]  a: waitForSFX
+[000004d4] 10:
+[000004d5]  7: stopBGM
+[000004d6] 10:
+[000004d7] 19:
+[000004d8] ff: text 2a
+{textColor 0 2}... ...
+
+[000004db] 10:
+[000004dc]  8: playSFX SE011 1
+[000004e6] 10:
+[000004e7]  a: waitForSFX
+[000004e8] 10:
+[000004e9] 19:
+[000004ea] ff: text 2b
+{textColor 0 2}...{delay 5}{delay 5} Não, espera!
+{textColor 0 2}Eu quase não percebi.
+{textColor 0 2}"Makoto".  {textColor 0 2}Ela com certeza falou isso agora.  Só "Makoto"...
+{textColor 0 2}Só nos conhecemos ontem; por quê tá me chamando disso sem nenhum honorífico!?
+
+
+[000004ed] fe: varop VAR_(28_0a)_a1_0f (14) := (00) 1
+[000004f8] 10:
+[000004f9]  6: playBGM 8
+[000004fd] 10:
+[000004fe] 19:
+[000004ff] ff: text 2c
+{textColor 0 2}(Aah, tanto faz.)
+{textColor 0 2}(Talvez ela seja aquele tipo...)
+{textColor 0 2}(O tipo que logo se torna amiga de todos...)
+{textColor 0 2}(E ela não me parece mal.)
+{textColor 0 2}... Eu me espreguicei, me levantei, e comecei a pensar.
+{textColor 0 2}(Hmm, ela me disse o nome dela, qual foi mesmo...?)
+{textColor 0 2}Tenho certeza que começa com "Yu"...  {textColor 0 2}Yuriko...{delay 5}{delay 5} Yukie...{delay 5}{delay 5} Yumi...{delay 5}{delay 5} Yue...{delay 5}{delay 5} Yuka...
+{textColor 0 2}――Yuka...?  {textColor 0 2}É, é esse! É "Yuka".
+{textColor 0 2}Agora eu lembro. {textColor 0 2} Ela me disse quando se introduziu ontem.
+{textColor 0 2}E o sobrenome é... "Kawashima"{delay 5}{delay 5}... não é?
+{textColor 0 2}Yuka Kawashima...
+{textColor 0 2}...
+{textColor 0 0}【Makoto】 "Então é..."
+{textColor 0 2}Murmurando, eu saí para a sala de estar.
+
+
+[00000502] 10:
+[00000503]  f: removeBG 0 0 2
+[0000050d] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 8
+[00000518] 10:
+[00000519]  8: playSFX SE001 1
+[00000523] 10:
+[00000524] 10: bgload 00000000 BG02A 0 1
+[00000531] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 9
+[0000053c] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 27
+[00000548] 10:
+[00000549] 17: showClock
+[0000054a] 10:
+[0000054b] 19:
+[0000054c] ff: text 2d
+{textColor 0 2}O teto é meio ventoso...  {textColor 0 2}A sala é bem espaçosa...  {textColor 0 2}Tudo nela é novo e bem organizado, como uma exposição.
+{textColor 0 2}A parede ao sul tem uma janela de vidro enorme.  {textColor 0 2}Ela dá uma vista fantástica do mar azul e vasto.
+{textColor 0 2}Não tem mais ninguém aqui.  {textColor 0 2}Yuka deve ter voltado para o quarto dela.
+{textColor 0 2}Eu decidi me sentar no sofá, então fui a ele.
+{textColor 0 2}De repente, eu percebi que alguém colocou um cinzeiro de alumínio em cima dele.  {textColor 0 2}No cinzeiro há jogada um única e solitária bituca de cigarro.
+{textColor 0 0}【Makoto】 "Nossa, que idiota colocou um cinzeiro logo aqui...?"
+{textColor 0 2}Eu peguei ele e o coloquei em uma mesa redonda à minha frente.  {textColor 0 2}Com isso, eu afundei no sofá macio.
+{textColor 0 2}Atrás da janela de vidro enorme, o sol da manhã vem brilhando do leste, com a sua refleção cintilando no oceano.
+{textColor 0 2}É uma cena de tirar o fôlego.  Reclinado no sofá, observando o mar, eu...
+
+[0000054f] ff: text 2e
+{textColor 0 2}{choiceOpt 1 -> Tentar organizar os meus pensamentos. }{choiceOpt 2 -> Só relaxar. }
+
+[00000552] 10:
+[00000553]  3: choice v_a1_08 00 00
+[00000558]  0:
+[00000559]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000005ce (0005)
+[00000567] 10:
+[00000568] 19:
+[00000569] ff: text 2f
+{textColor 0 2}Eu... tentei organizar os meus pensamentos.
+{textColor 0 2}――Primeiro, o retiro.  {textColor 0 2}Bem, eu digo "retiro", mas isso não é para um clube nem nada.
+{textColor 0 2}O "Retiro do Seminário".  ... Em todos os meus 20 longos anos de vida, essa é a primeira vez que eu já ouvi falar de um retiro tão bizarro.
+{textColor 0 2}Na verdade, eu não entendo muito bem todos os sistemas da minha faculdade, já que eu perco muitas aulas.
+{textColor 0 2}No começo do mês passado, quando foram publicados os resultados da prova final e a lista de quem ia ou não passar para o próximo ano, eu rapidamente olhei para o quadro, e vi...
+{textColor 0 2}"Lista de Membros do Seminário do Curso de Psicologia do Departamento de Literatura."
+{textColor 0 2}... Foi por esse anúncio que eu soube que fui colocado no "Quinto Grupo do Retiro do Seminário de (Algo): Grupo da Kawashima".
+{textColor 0 2}(O nome oficial do Retiro do Seminário é...{delay 5}{delay 5} É...{delay 5}{delay 5}{delay 5} Eu esqueci.)
+{textColor 0 2}(Não importa, o que quer dizer com isso de "Seminário"!?)
+{textColor 0 2}Perto daquela lista havia uma folha de papel, que dizia...
+{textColor 0 2}(O Retiro do Seminário é projetado para ser um encontro social informal entre membros de cada grupo do Seminário de (Algo), como listado.)
+{textColor 0 2}(Devido à capacidade de cada chalé e outras circunstâncias, cada grupo vai se hospedar em datas e horas diferentes, então preste atenção à sua.)
+{textColor 0 2}(Além disso, se não puder participar por certo motivo, você deve enviar um relatório.)
+{textColor 0 2}(Caso contrário, se faltar sem permissão, você será imediatamente expulso(a), independentemente do seu motivo.)
+{textColor 0 2}... É isso que estava escrito.
+{textColor 0 2}O nosso, o Grupo da Kawashima, foi colocado no chalé de domingo, 31 de março, até domingo, 7 de abril.
+{textColor 0 2}O fim do anúncio dizia: "Outros detalhes vão ser dados pelo(a) líder designado(a) a seu grupo. Isso é tudo."
+{textColor 0 2}É claro, faz sentido que a líder do Grupo da Kawashima é a própria Kawashima.
+{textColor 0 2}Certo. Ou seja, aquela garota sonolenta que entrou no meu quarto quando acordei.
+{textColor 0 2}Alguns dias depois, ela me ligou sobre o que eu vi no quadro.
+
+
+[0000056c] 10:
+[0000056d]  f: removeBG 0 0 1
+[00000577] 10:
+[00000578]  b: playVoice L1D1A032
+[00000582] 10:
+[00000583] 19:
+[00000584] ff: text 30
+{textColor 1 4}【Yuka】 "... Então eu digo aos outros dois membros que 'Devemos nos encontrar no local, de qualquer forma.'"
+
+
+[00000587] 10:
+[00000588]  b: playVoice L1D1A033
+[00000592] 10:
+[00000593] 19:
+[00000594] ff: text 31
+{textColor 1 4}【Yuka】 "... Ah, não tem problema. Você pode pegar a passagem de barco no escritório de Assuntos Estudantis..."
+
+
+[00000597] 10:
+[00000598]  b: playVoice L1D1A034
+[000005a2] 10:
+[000005a3] 19:
+[000005a4] ff: text 32
+{textColor 1 4}【Yuka】 "É...{delay 5}{delay 5}{delay 5} É...{delay 5}{delay 5}{delay 5} Hm... Você vai ter até a noite do dia 31 para chegar lá, então deve dar certo para você."
+
+
+[000005a7] 10:
+[000005a8]  b: playVoice L1D1A035
+[000005b2] 10:
+[000005b3] 19:
+[000005b4] ff: text 33
+{textColor 1 4}【Yuka】 "Então tá, te vejo lá!"
+
+
+[000005b7] 10:
+[000005b8] 10: bgload 00000000 BG02A 0 1
+[000005c5] 10:
+[000005c6] 19:
+[000005c7] ff: text 34
+{textColor 0 2}... Eu acabei chegando aqui antes de noite... um pouco depois das 10:00?
+{textColor 0 2}Eu moro a mais ou menos 200 km daqui, mas ainda consegui chegar aqui - nessa ilha no meio do nada - com segurança.
+{textColor 0 2}Na verdade, me sinto como se tivessem me arrastado para longe de casa sem motivo.
+{textColor 0 2}...
+
+
+[000005ca]  0:
+[000005cb]  7: goto7 000005e2 (0006)
+[000005ce]  0:
+[000005cf]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000005e2 (0007)
+[000005dd] 10:
+[000005de] 19:
+[000005df] ff: text 35
+{textColor 0 2}Eu... não pensei sobre nada, e só relaxei.
+{textColor 0 2}... ... ...
+
+
+[000005e2] 10:
+[000005e3]  7: stopBGM
+[000005e4] 10:
+[000005e5] 19:
+[000005e6] ff: text 36
+{textColor 0 2}Logo após...
+
+
+[000005e9] 10:
+[000005ea]  8: playSFX SE002 1
+[000005f4] 10:
+[000005f5] 19:
+[000005f6] ff: text 37
+{textColor 0 2}... A porta para a sala abriu aos poucos.
+{textColor 0 2}Quem entra é...
+
+
+[000005f9] 10:
+[000005fa]  9: stopSFX
+[000005fb] 10:
+[000005fc]  6: playBGM 2
+[00000600] 10:
+[00000601] 11: fgload 0 00000000 HA01CA 1 3
+[00000611] 10:
+[00000612] 19:
+[00000613] ff: text 38
+{textColor 0 2}... Hã??  {textColor 0 2}Ah, é. Certo... Pensando nisso, acho que eu ainda não sei o nome dessa garota...
+{textColor 0 0}【Makoto】 "Bom dia."
+{textColor 0 2}Eu a cumprimentei da maneira mais animada que pude.
+
+
+[00000616] 10:
+[00000617] 19:
+[00000618] ff: text 39
+{textColor 1 5}【???】 "..."
+{textColor 0 2}Eu esperei vários segundos por uma resposta, mas não recebi uma.
+
+
+[0000061b] 10:
+[0000061c] 11: fgload 0 00000000 HA12CA 1 3
+[0000062c]  0:
+[0000062d]  5: delay 30
+[00000632] 10:
+[00000633] 12: removeFG 0 3
+[0000063a] 10:
+[0000063b] 19:
+[0000063c] ff: text 3a
+{textColor 0 2}Ela me ignorou completamente e logo desapareceu na cozinha, como se nada tivesse acontecido.
+{textColor 0 2}Não, ela pode não ter me ignorado de propósito, já que pareceu ser um comportamento inconsciente e natural para ela.
+{textColor 0 2}Por exemplo, se ela pensou que ouviu o cumprimento vindo da TV, ela provavelmente teria ignorado ele.
+{textColor 0 2}Tendo sido ignorado, eu fiquei determinado a resolver esse problema do "bom dia", então eu cambaleei aos pés e me direcionei à cozinha.
+
+
+[0000063f] 10:
+[00000640] 10: bgload 00000000 BG32A 4 1
+[0000064d] 10:
+[0000064e] 10: bgload 00000000 BG33A 4 1
+[0000065b] 10:
+[0000065c]  f: removeBG 0 0 2
+[00000666] 10:
+[00000667]  c: createPanBG 00000000 EV_HA01 2 4 0 0 3
+[00000677] 10:
+[00000678]  e: movePanBG 0 4 0 16
+[00000680] 10:
+[00000681] 19:
+[00000682] ff: text 3b
+{textColor 0 2}Em uma tentativa de consertar a situação, eu me virei a ela e tentei dizer "Bom dia", de novo.
+{textColor 0 0}【Makoto】 "Bom dia."
+{textColor 1 5}【???】 "..."
+
+
+[00000685] 10:
+[00000686]  8: playSFX SE104 1
+[00000690] 10:
+[00000691] 19:
+[00000692] ff: text 3c
+{textColor 0 2}Sem uma palavra, ela abriu a torneira da pia, enchendo o seu copo de vidro de água.
+{textColor 0 2}Com um som mínimo, ela bebeu o copo inteiro com um grande gole.
+
+[00000695] 10:
+[00000696]  9: stopSFX
+[00000697] ff: text 3d
+{textColor 0 2}{choiceOpt 1 -> A terceira é de vez. }{choiceOpt 2 -> Tentar dizer outra coisa. }
+
+[0000069a] 10:
+[0000069b]  3: choice v_a1_08 00 00
+[000006a0]  0:
+[000006a1]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000006fe (0008)
+[000006af] 10:
+[000006b0] 19:
+[000006b1] ff: text 3e
+{textColor 0 2}Não posso desistir agora.  {textColor 0 2}Eu devo tentar mais, não devo?
+{textColor 0 0}【Makoto】 "Bom dia!"
+{textColor 0 2}A garota colocou o seu copo vazio dentro da pia e suspirou, ao sussurrar...
+
+
+[000006b4] 10:
+[000006b5]  b: playVoice L1D1A038
+[000006bf] 10:
+[000006c0] 19:
+[000006c1] ff: text 3f
+{textColor 1 5}【???】 "Bom dia."
+{textColor 0 2}Porém, ela disse isso sem olhar para mim.
+{textColor 0 2}É como se ela estivesse cumprimentando a água caindo da torneira no meu lugar.
+{textColor 0 0}【Makoto】 "Ei...{delay 5}{delay 5} Eu... te desagradei... de alguma forma?"
+
+
+[000006c4] 10:
+[000006c5]  b: playVoice L1D1A039
+[000006cf] 10:
+[000006d0] 19:
+[000006d1] ff: text 40
+{textColor 1 5}【???】 "Por que você acha isso?"
+{textColor 0 2}O olhar dela ainda está preso à torneira.
+{textColor 0 0}【Makoto】 "Por quê...? Bem, porque... Porque meio que parece que você está... me evitando."
+{textColor 1 5}【???】 "..."
+{textColor 0 2}Ela não me respondeu.
+{textColor 0 2}Ela não só não respondeu, mas não se moveu.  {textColor 0 2}Assim, não importa quanto eu insista, parece que ela nunca mais vai falar por toda a eternidade.
+{textColor 0 0}【Makoto】 "Desculpa."
+{textColor 0 2}Achei que devia me desculpar.  {textColor 0 2}Eu acho que não devia ter atormentado ela assim.
+{textColor 0 2}(Eu tenho que me desculpar por ser grosseiro, não tenho?)
+{textColor 0 2}Logo, a sua pequena boca abriu levemente.
+
+
+[000006d4] 10:
+[000006d5]  b: playVoice L1D1A041
+[000006df] 10:
+[000006e0] 19:
+[000006e1] ff: text 41
+{textColor 1 5}【???】 "É porque..."
+
+
+[000006e4]  0:
+[000006e5]  5: delay 30
+[000006ea] 10:
+[000006eb]  b: playVoice L1D1A042
+[000006f5] 10:
+[000006f6] 19:
+[000006f7] ff: text 42
+{textColor 1 5}【???】 "É porque... Eu sou diferente..."
+
+
+[000006fa]  0:
+[000006fb]  7: goto7 0000076e (0009)
+[000006fe]  0:
+[000006ff]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 0000076e (000a)
+[0000070d] fe: varop VAR_(28_0a)_a1_00 (14) += (00) 1
+[00000718] fe: varop VAR_(28_0a)_a1_10 (14) := (00) 1
+[00000723] 10:
+[00000724] 19:
+[00000725] ff: text 43
+{textColor 0 0}【Makoto】 "Então, você dormiu bem ontem?"
+{textColor 0 2}Isso soou incrivelmente forçado e clichê. {textColor 0 2}Eu senti um calor nas minhas orelhas.
+{textColor 0 0}【Makoto】 "Não por ser grosseiro, mas você não dormiu muito, não foi?"
+{textColor 1 5}【???】 "..."
+{textColor 0 2}Nenhuma resposta.  {textColor 0 2}Ela só está observando a água cair da torneira.
+{textColor 0 0}【Makoto】 "Ah, você tá se sentindo deprimida...?  Já que você foi tirada das suas férias preciosas contra sua vontade.  Na verdade, isso meio que me chateou, também."
+{textColor 1 5}【???】 "..."
+{textColor 0 0}【Makoto】 "Mas sabe, não tem o que fazer. Já é tarde.  Já era.{delay 5}{delay 5} Mhm."
+{textColor 0 0}【Makoto】 "Então, devemos melhor passar o tempo neste retiro com otimismo,{delay 5}{delay 5} produtividade,{delay 5}{delay 5} e energia-"
+
+
+[00000728] 10:
+[00000729]  b: playVoice L1D1A045
+[00000733] 10:
+[00000734] 19:
+[00000735] ff: text 44
+{textColor 1 5}【???】 "Não tem sentido."
+{textColor 0 2}A garota disse isso meio que de repente.
+
+
+[00000738] 10:
+[00000739]  b: playVoice L1D1A046
+[00000743] 10:
+[00000744] 19:
+[00000745] ff: text 45
+{textColor 1 5}【???】 "Eu não tenho nada a ganhar disso."
+{textColor 0 0}【Makoto】 "'Nada a ganhar'{delay 5}{delay 5}{delay 5}...?"
+{textColor 0 2}Essas palavras secaram a minha boca. {textColor 0 2} Estou sem palavras.
+
+
+[00000748] 10:
+[00000749]  b: playVoice L1D1A047
+[00000753] 10:
+[00000754] 19:
+[00000755] ff: text 46
+{textColor 1 5}【???】 "Porque eu..."
+
+
+[00000758]  0:
+[00000759]  5: delay 30
+[0000075e] 10:
+[0000075f]  b: playVoice L1D1A048
+[00000769] 10:
+[0000076a] 19:
+[0000076b] ff: text 47
+{textColor 1 5}【???】 "Porque eu...{delay 5}{delay 5} não sou nada..."
+
+
+[0000076e] 10:
+[0000076f] 19:
+[00000770] ff: text 48
+{textColor 0 0}【Makoto】 "O quê?"
+
+
+[00000773] 10:
+[00000774] 10: bgload 00000000 BG33A 0 1
+[00000781] 10:
+[00000782] 19:
+[00000783] ff: text 49
+{textColor 0 2}Antes que eu possa perguntar de novo, ela passou logo por mim e voltou à sala de estar.
+
+
+[00000786] 10:
+[00000787] 10: bgload 00000000 BG32A 4 1
+[00000794] 10:
+[00000795] 10: bgload 00000000 BG02A 4 1
+[000007a2] 10:
+[000007a3] 19:
+[000007a4] ff: text 4a
+{textColor 0 2}Até antes, eu estava sentado no sofá confortável.  {textColor 0 2}Mas agora, a garota está sentada onde eu estava, de maneira modesta.
+{textColor 0 2}Enquanto eu tento pensar no que dizer...
+
+
+[000007a7] 10:
+[000007a8]  7: stopBGM
+[000007a9] 10:
+[000007aa]  8: playSFX SE001 1
+[000007b4] 10:
+[000007b5] 19:
+[000007b6] ff: text 4b
+{textColor 0 2}... É nessa hora que "ele" apareceu, entrando na sala de estar e esfregando os olhos.
+
+
+[000007b9] 10:
+[000007ba]  9: stopSFX
+[000007bb] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 59
+[000007c7] 10:
+[000007c8]  6: playBGM 8
+[000007cc] 10:
+[000007cd] 11: fgload 0 00000000 OK01CA 1 3
+[000007dd] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 9
+[000007e8] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 34
+[000007f4] 10:
+[000007f5] 17: showClock
+[000007f6] 10:
+[000007f7]  b: playVoice L1D1A049
+[00000801] 10:
+[00000802] 19:
+[00000803] ff: text 4c
+{textColor 0 0}【???】 "Opa!"
+{textColor 0 2}Ele falou isso com uma voz tão exagerada que me fez arrepiar de nojo.  {textColor 0 2}É como a saudação de um ditador desprezando o seu povo.
+{textColor 0 2}Ele olhou para mim, enquanto estou de pé no centro da sala, e depois se virou à garota silenciosa.
+
+
+[00000806] 10:
+[00000807] 11: fgload 0 00000000 OK02CA 1 3
+[00000817] 10:
+[00000818]  b: playVoice L1D1A050
+[00000822] 10:
+[00000823] 19:
+[00000824] ff: text 4d
+{textColor 0 0}【???】 "Hã? Eu não estou... interrompendo algo, estou?"
+
+
+[00000827] 10:
+[00000828] 12: removeFG 0 3
+[0000082f] 10:
+[00000830] 19:
+[00000831] ff: text 4e
+{textColor 0 2}Ele perguntou isso à garota ao ignorar a minha presença.  {textColor 0 2}Claro, ela não respondeu.
+
+
+[00000834] 10:
+[00000835] 11: fgload 0 00000000 OK07CA 1 3
+[00000845] 10:
+[00000846]  b: playVoice L1D1A051
+[00000850] 10:
+[00000851] 19:
+[00000852] ff: text 4f
+{textColor 0 0}【???】 "Não, claro que não é isso. Ha ha ha!"
+
+
+[00000855] 10:
+[00000856] 11: fgload 0 00000000 OK05CA 1 3
+[00000866] 10:
+[00000867] 19:
+[00000868] ff: text 50
+{textColor 0 2}Enquanto ria, ele se virou para mim de novo.  {textColor 0 2}Seus olhos estão cheios de desprezo...
+{textColor 0 2}(Ele tem algo contra mim...?)
+
+
+[0000086b] 10:
+[0000086c] 12: removeFG 0 3
+[00000873] 10:
+[00000874] 19:
+[00000875] ff: text 51
+{textColor 0 2}Com um bocejo alto, ele andou lentamente ao sofá e se sentou nele.  {textColor 0 2}Ele mantém cerca de 50 cm entre a garota e ele.
+{textColor 0 2}50 cm... É meio que íncrível.  {textColor 0 2}É uma distância que não é muito longe para ser distante, mas não perto de mais para ser esquisito.
+{textColor 0 2}Ele fez isso tão sem esforço que deve ser algo natural para ele, um processo gravado e guardado no cérebro, como seria controlar um carro ou uma bicicleta.
+{textColor 0 2}Deve ser isso que se chama um "mestre".
+{textColor 0 2}... Esse cara é o único cujo nome eu ouvi antes de vir aqui.
+{textColor 0 2}"Okuhiko Iida".  {textColor 0 2}Se você fosse aluno na minha faculdade, já teria ouvido esse nome pelo menos uma vez.
+{textColor 0 2}Aposto que mesmo se perguntar a alguém que não é, teria ouvido falar dele, o 'Filho do Grupo Financeiro Iida'.
+{textColor 0 2}De qualquer forma, a família Iida, de classe alta, têm vidas das quais nós de classe trabalhadora só podemos sonhar. Como Okuhiko é o herdeiro da família, foi planejado que ele se tornará o chefe algum dia.
+{textColor 0 2}Na escola, não havia um dia sem fofoca sobre ele.
+{textColor 0 2}"Ele sempre tem milhões de yen na mala do Ferraro que ele tanto ama", ou...
+{textColor 0 2}"Ouvi que ele fez negócios com uma celebridade, e aí..." A maioria das histórias são basicamente...
+{textColor 0 2}"Dois anos atrás, aquilo aconteceu com ele, mas quando ele deu isso e fez aquilo..." ... Coisas estranhas, vagas assim.
+{textColor 0 2}E ontem à noite, eu conheci o ínfame "Okuhiko" em pessoa.
+
+[00000878] ff: text 52
+{textColor 0 2}{choiceOpt 1 -> Lembrar do que aconteceu à noite. }{choiceOpt 2 -> Conversar com Okuhiko. }
+
+[0000087b] 10:
+[0000087c]  3: choice v_a1_08 00 00
+[00000881]  0:
+[00000882]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000a16 (000c)
+[00000890] 10:
+[00000891]  f: removeBG 1 0 1
+[0000089b] 10:
+[0000089c]  1: cmd1 32
+[000008a1] 10:
+[000008a2] 10: bgload 00000000 BG00N 0 1
+[000008af] 10:
+[000008b0] 19:
+[000008b1] ff: text 53
+{textColor 0 2}――Domingo, 31 de março.  {textColor 0 2}Quando eu cheguei aqui, havia passado um pouco das 22:00.
+{textColor 0 2}O exterior do chalé estava iluminado pelo luar. Minha imaginação enlouqueceu, impressionado pela beleza e por quão maior ele era do que eu tinha imaginado.
+{textColor 0 2}Quando eu ouvi falar de um "alojamento administrado pela faculdade", eu pensei que seria extremamente apertado e sujo, como um motel acabado e bem barato. Claramente, eu errei.
+{textColor 0 2}Não acredito que a faculdade tenha uma propriedade tão luxuosa só para esse retiro.  {textColor 0 2}Talvez seja um local de férias para os funcionários.
+{textColor 0 2}... É nisso que eu estava pensando ao abrir a porta da frente.
+
+
+[000008b4] 10:
+[000008b5]  8: playSFX SE001 1
+[000008bf] 10:
+[000008c0] 10: bgload 00000000 BG02N 0 1
+[000008cd] 10:
+[000008ce] 19:
+[000008cf] ff: text 54
+{textColor 0 2}A sala tinha uma atmosfera misteriosa e estranha.
+{textColor 0 2}――No chão, uma garota sentada sozinha, agarrando os joelhos.
+{textColor 0 2}――Na mesa de jantar, uma garota com o queixo nas mãos, olhando para algum lugar distante.
+{textColor 0 2}――Reclinado no sofá, um homem girando uma taça de vinho na mão.
+{textColor 0 2}Ninguém conversava com ninguém; acho que nem existia uma conversa.
+{textColor 0 2}Estava completamente silencioso...  {textColor 0 2}Não, às vezes eu ouvia o som do homem engolindo o vinho, mas só isso.
+{textColor 0 2}Logo, a garota da mesa redonda me percebeu...
+
+
+[000008d2] 10:
+[000008d3] 11: fgload 0 00000000 YU02AA 1 3
+[000008e3] 10:
+[000008e4]  b: playVoice L1D1A052
+[000008ee] 10:
+[000008ef] 19:
+[000008f0] ff: text 55
+{textColor 1 4}【???】 "Ah, que bom que você conseguiu vir〜"
+{textColor 0 2}... Foi o que ela disse.
+{textColor 0 2}Da forma que ela disse isso, pareceu que ela estava muito mais cansada do que eu.
+
+
+[000008f3] 10:
+[000008f4]  b: playVoice L1D1A053
+[000008fe] 10:
+[000008ff] 19:
+[00000900] ff: text 56
+{textColor 1 4}【???】 "Um, você é Makoto-kun... quer dizer, 'Makoto{delay 5}{delay 5}{delay 5} Ishihara'... certo?"
+{textColor 0 0}【Makoto】 "S-Sim..."
+
+
+[00000903] 10:
+[00000904] 11: fgload 0 00000000 YU01AA 1 3
+[00000914] 10:
+[00000915]  b: playVoice L1D1A054
+[0000091f] 10:
+[00000920] 19:
+[00000921] ff: text 57
+{textColor 1 4}【???】 "Prazer em te conhecer♪"
+
+
+[00000924] 10:
+[00000925]  b: playVoice L1D1A055
+[0000092f] 10:
+[00000930] 19:
+[00000931] ff: text 58
+{textColor 1 4}【Yuka】 "Eu sou Yuka...{delay 5}{delay 5} 'Yuka Kawashima'. Eu não sei porque, mas mas antes que eu percebesse, eu me tornei a 'líder' desse grupo."
+
+
+[00000934] 10:
+[00000935] 11: fgload 0 00000000 YU10AA 1 3
+[00000945] 10:
+[00000946]  b: playVoice L1D1A056
+[00000950] 10:
+[00000951] 19:
+[00000952] ff: text 59
+{textColor 1 4}【Yuka】 "Minhas notas não são tão boas assim, e meu comportamento também não é dos melhores. Devem ter me escolhido por sorteio ou algo assim."
+
+
+[00000955] 10:
+[00000956] 11: fgload 0 00000000 YU01AA 1 3
+[00000966] 10:
+[00000967]  b: playVoice L1D1A057
+[00000971] 10:
+[00000972] 19:
+[00000973] ff: text 5a
+{textColor 1 4}【Yuka】 "Enfim, prazer!"
+{textColor 0 0}【Makoto】 "Ah... o prazer é meu."
+
+
+[00000976] 10:
+[00000977] 12: removeFG 0 3
+[0000097e] 10:
+[0000097f] 19:
+[00000980] ff: text 5b
+{textColor 0 2}Depois de dizer isso, virei meu olhar para os outros dois.
+{textColor 0 2}A garota agarrando os joelhos estava encarando o chão sem se mover nem um pouco.  {textColor 0 2}Ela parecia até uma estátua de gesso que foi instalada aqui.
+{textColor 0 2}O homem pôs a taça de vinho à luz da lâmpada para ver a cor do vinho.  {textColor 0 2}Ao fazer isso, ele começou a falar.
+
+
+[00000983] 10:
+[00000984] 11: fgload 0 00000000 OK01AA 1 3
+[00000994] 10:
+[00000995]  b: playVoice L1D1A058
+[0000099f] 10:
+[000009a0] 19:
+[000009a1] ff: text 5c
+{textColor 0 0}【Okuhiko】 "Okuhiko Iida... Já deve ter ouvido falar de mim."
+{textColor 0 0}【Makoto】 "Hã? Não pode ser... o herdeiro do Grupo Financeiro Iida?"
+
+
+[000009a4] 10:
+[000009a5] 11: fgload 0 00000000 OK05AA 1 3
+[000009b5] 10:
+[000009b6]  b: playVoice L1D1A059
+[000009c0] 10:
+[000009c1] 19:
+[000009c2] ff: text 5d
+{textColor 0 0}【Okuhiko】 "Não gosto muito desse seu tom..."
+{textColor 0 0}【Makoto】 "?"
+
+
+[000009c5] 10:
+[000009c6] 11: fgload 0 00000000 OK02AA 1 3
+[000009d6] 10:
+[000009d7]  b: playVoice L1D1A060
+[000009e1] 10:
+[000009e2] 19:
+[000009e3] ff: text 5e
+{textColor 0 0}【Okuhiko】 "Ah, tanto faz. Sim, eu sou esse 'Okuhiko Iida'. Prazer te conhecer."
+{textColor 0 0}【Makoto】 "... Prazer em te{delay 5}{delay 5}... conhecer também..."
+{textColor 0 2}Eu estava tão surpreso que errei meu cumprimento. Não pude evitar.
+{textColor 0 2}"Okuhiko Iida"{delay 5}{delay 5}――Eu não acreditei que o ínfame "Okuhiko" está no mesmo grupo que eu!
+{textColor 0 2}De repente, eu comecei a contemplar se deveria inventar uma doença para ir para casa.  {textColor 0 2}Eu estava começando a ficar deprimido.
+
+
+[000009e6] 10:
+[000009e7] 12: removeFG 0 3
+[000009ee] 10:
+[000009ef] 19:
+[000009f0] ff: text 5f
+{textColor 0 2}... Depois disso, nós mal trocamos sequer uma palavra, e fomos às nossas camas.  {textColor 0 2}Ao fim, a garota agarrando os joelhos não tinha falado nada.
+
+
+[000009f3] 10:
+[000009f4]  2: cmd2 13
+[000009f8] 10:
+[000009f9]  f: removeBG 1 0 2
+[00000a03] 10:
+[00000a04]  2: cmd2 13
+[00000a08] 10:
+[00000a09] 10: bgload 00000000 BG02A 0 1
+[00000a16] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 14
+[00000a21] 10:
+[00000a22] 19:
+[00000a23] ff: text 60
+{textColor 0 0}【Makoto】 "Ei, Okuhiko?"
+{textColor 0 2}Eu chamei ele de novo.
+
+
+[00000a26] 10:
+[00000a27] 11: fgload 0 00000000 OK01CA 1 3
+[00000a37] 10:
+[00000a38]  b: playVoice L1D1A061
+[00000a42] 10:
+[00000a43] 19:
+[00000a44] ff: text 61
+{textColor 0 0}【Okuhiko】 "Sim?"
+{textColor 0 2}Eu estava entediado, procurando uma conversa. Okuhiko pareceu interessado.
+{textColor 0 0}【Makoto】 "É só que... Esse tal 'Retiro do Seminário', qual exatamente é o propósito disso?"
+
+
+[00000a47] 10:
+[00000a48] 11: fgload 0 00000000 OK10CA 1 3
+[00000a58] 10:
+[00000a59]  b: playVoice L1D1A062
+[00000a63] 10:
+[00000a64] 19:
+[00000a65] ff: text 62
+{textColor 0 0}【Okuhiko】 "Ishihara, você não leu o quadro?"
+
+
+[00000a68] 10:
+[00000a69]  b: playVoice L1D1A063
+[00000a73] 10:
+[00000a74] 19:
+[00000a75] ff: text 63
+{textColor 0 0}【Okuhiko】 "Não estava escrito que é 'um encontro social informal entre os membros do grupo'? Então, não tem propósito."
+
+
+[00000a78] 10:
+[00000a79] 11: fgload 0 00000000 OK01CA 1 3
+[00000a89] 10:
+[00000a8a]  b: playVoice L1D1A064
+[00000a94] 10:
+[00000a95] 19:
+[00000a96] ff: text 64
+{textColor 0 0}【Okuhiko】 "Se nos dermos bem e virarmos amigos, tá tudo bem."
+{textColor 0 0}【Makoto】 "Só isso? ... Se é assim, não acha que uma semana é de mais pra isso?"
+
+
+[00000a99] 10:
+[00000a9a]  b: playVoice L1D1A065
+[00000aa4] 10:
+[00000aa5] 19:
+[00000aa6] ff: text 65
+{textColor 0 0}【Okuhiko】 "Ah, não liga pra cada detalhe. Eu acho que isso não é tão ruim."
+{textColor 0 2}Como se para enfatizar, Okuhiko continuou com:
+
+
+[00000aa9] 10:
+[00000aaa]  b: playVoice L1D1A066
+[00000ab4] 10:
+[00000ab5] 19:
+[00000ab6] ff: text 66
+{textColor 0 0}【Okuhiko】 "Não acha, Haruka-chan?"
+{textColor 0 2}――Haruka!?  {textColor 0 2}――Então o nome dessa garota é "Haruka"!
+
+
+[00000ab9] 10:
+[00000aba] 13: moveFG 0 2
+[00000ac1] 10:
+[00000ac2] 11: fgload 1 00000000 HA10CA 0 3
+[00000ad2] 10:
+[00000ad3] 11: fgload 0 00000000 OK02CA 2 3
+[00000ae3] 10:
+[00000ae4]  b: playVoice L1D1A067
+[00000aee] 10:
+[00000aef] 19:
+[00000af0] ff: text 67
+{textColor 0 0}【Okuhiko】 "Não acha?"
+{textColor 0 2}Okuhiko deu a Haruka um sorriso refinado e doce.
+{textColor 0 2}Logo...
+
+
+[00000af3] 10:
+[00000af4]  b: playVoice L1D1A068
+[00000afe] 10:
+[00000aff] 19:
+[00000b00] ff: text 68
+{textColor 1 5}【Haruka】 "Esse cheiro... é horrível."
+{textColor 0 2}... Ela falou de repente.
+
+
+[00000b03] 10:
+[00000b04] 11: fgload 0 00000000 OK11CA 2 3
+[00000b14] 10:
+[00000b15]  b: playVoice L1D1A069
+[00000b1f] 10:
+[00000b20] 19:
+[00000b21] ff: text 69
+{textColor 0 0}【Okuhiko】 "Hã??"
+{textColor 0 2}Ele ficou de boca aberta. Acho que ele não está acostumado a ser completamente ignorado assim.
+
+
+[00000b24] 10:
+[00000b25]  b: playVoice L1D1A070
+[00000b2f] 10:
+[00000b30] 19:
+[00000b31] ff: text 6a
+{textColor 1 5}【Haruka】 "Esse cheiro..."
+{textColor 0 2}Haruka olhou para o cinzeiro de alumínio que eu tinha colocado na mesa redonda.
+
+
+[00000b34] 10:
+[00000b35] 11: fgload 0 00000000 OK02CA 2 3
+[00000b45] 10:
+[00000b46]  b: playVoice L1D1A071
+[00000b50] 10:
+[00000b51] 19:
+[00000b52] ff: text 6b
+{textColor 0 0}【Okuhiko】 "É um cigarro... Então você odeia o cheiro de cigarros, Haruka-chan?"
+
+
+[00000b55] 10:
+[00000b56] 11: fgload 1 00000000 HA01CA 0 3
+[00000b66] 10:
+[00000b67] 19:
+[00000b68] ff: text 6c
+{textColor 0 2}Haruka confirma com a cabeça.
+{textColor 0 0}【Makoto】 "Falando nisso, o cigarro não já deve ter se apagado há muito tempo?"
+
+
+[00000b6b] 10:
+[00000b6c] 11: fgload 0 00000000 OK05CA 2 3
+[00000b7c] 10:
+[00000b7d]  b: playVoice L1D1A072
+[00000b87] 10:
+[00000b88] 19:
+[00000b89] ff: text 6d
+{textColor 0 0}【Okuhiko】 "Ishihara〜, você acha mesmo que o cheiro de um cigarro é uma coisa que simplesmente some assim?"
+
+
+[00000b8c] 10:
+[00000b8d]  b: playVoice L1D1A073
+[00000b97] 10:
+[00000b98] 19:
+[00000b99] ff: text 6e
+{textColor 0 0}【Okuhiko】 "Um fumante frequente pode não perceber, mas um não fumante pode perceber imediatamente."
+{textColor 0 0}【Makoto】 "???"
+
+
+[00000b9c] 10:
+[00000b9d]  b: playVoice L1D1A074
+[00000ba7] 10:
+[00000ba8] 19:
+[00000ba9] ff: text 6f
+{textColor 0 0}【Okuhiko】 "Você deve ter um pouco mais de cuidado para não incomodar os outros..."
+{textColor 0 0}【Makoto】 "E-{delay 5}{delay 5}Ei, espera! Eu não fumo!"
+
+
+[00000bac] 10:
+[00000bad] 11: fgload 0 00000000 OK10CA 2 3
+[00000bbd] 10:
+[00000bbe]  b: playVoice L1D1A075
+[00000bc8] 10:
+[00000bc9] 19:
+[00000bca] ff: text 70
+{textColor 0 0}【Okuhiko】 "Você não tem um pingo de decência, tem...?"
+{textColor 0 0}【Makoto】 "E-{delay 5}{delay 5}Escuta, não fui eu!"
+
+
+[00000bcd] 10:
+[00000bce] 11: fgload 0 00000000 OK07CA 2 3
+[00000bde] 10:
+[00000bdf]  b: playVoice L1D1A076
+[00000be9] 10:
+[00000bea] 19:
+[00000beb] ff: text 71
+{textColor 0 0}【Okuhiko】 "... Ha ha, não tente nos enganar."
+
+
+[00000bee] 10:
+[00000bef]  b: playVoice L1D1A077
+[00000bf9] 10:
+[00000bfa] 19:
+[00000bfb] ff: text 72
+{textColor 0 0}【Okuhiko】 "Vou perguntar uma coisa... Quem foi a primeira pessoa a entrar nessa sala hoje?"
+{textColor 0 0}【Makoto】 "Eu... Mas quando eu entrei, esse cinzeiro já estava ali, em cima do sofá..."
+
+
+[00000bfe] 10:
+[00000bff]  b: playVoice L1D1A078
+[00000c09] 10:
+[00000c0a] 19:
+[00000c0b] ff: text 73
+{textColor 0 0}【Okuhiko】 "Ho ho{delay 5}{delay 5}... Então é isso..."
+{textColor 0 0}【Makoto】 "..."
+
+
+[00000c0e] 10:
+[00000c0f] 11: fgload 0 00000000 OK01CA 2 3
+[00000c1f] 10:
+[00000c20]  b: playVoice L1D1A079
+[00000c2a] 10:
+[00000c2b] 19:
+[00000c2c] ff: text 74
+{textColor 0 0}【Okuhiko】 "Bem, acho que posso acreditar em você..."
+
+
+[00000c2f] 10:
+[00000c30]  b: playVoice L1D1A080
+[00000c3a] 10:
+[00000c3b] 19:
+[00000c3c] ff: text 75
+{textColor 0 0}【Okuhiko】 "Em troca, eu declaro que de hoje em diante, o interior do chalé é uma área sem fumantes... {delay 5}{delay 5}Só isso, pode seguir isso?"
+{textColor 0 2}(Você não acredita em nada!)  Logo quando eu ia responder...
+
+
+[00000c3f] 10:
+[00000c40] 11: fgload 1 00000000 HA05CA 0 3
+[00000c50] 10:
+[00000c51] 19:
+[00000c52] ff: text 76
+{textColor 0 2}... Haruka se levantou em silêncio.
+{textColor 0 2}Enquanto nós observamos o que ela fazia, ela pegou o cinzeiro de alumínio e andou à cozinha.
+
+
+[00000c55] 10:
+[00000c56] 15: removeAllFG 3
+[00000c5a] 10:
+[00000c5b] 19:
+[00000c5c] ff: text 77
+{textColor 0 2}Eu só vi o rosto dela pelo lado, mas deu pra perceber que ela está com raiva.
+{textColor 0 2}Seu olhar afiado, frio como o gelo...
+
+
+[00000c5f] 10:
+[00000c60]  7: stopBGM
+[00000c61] 10:
+[00000c62]  f: removeBG 0 3 2
+[00000c6c] 10:
+[00000c6d] 10: bgload 00000000 BG02A 0 1
+[00000c7a] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 9
+[00000c85] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 42
+[00000c91] 10:
+[00000c92] 17: showClock
+[00000c93] 10:
+[00000c94]  6: playBGM 1
+[00000c98] 10:
+[00000c99]  8: playSFX SE002 1
+[00000ca3] 10:
+[00000ca4] 11: fgload 0 00000000 YU01AA 1 3
+[00000cb4] 10:
+[00000cb5]  b: playVoice L1D1A081
+[00000cbf] 10:
+[00000cc0] 19:
+[00000cc1] ff: text 78
+{textColor 1 4}【Yuka】 "Bom dia!"
+{textColor 0 2}A Yuka que entra na sala de estar parece uma pessoa completamente diferente de antes.
+{textColor 0 2}O seu cabelo arrumado está saltando levemente, e ela trocou de roupa para um vestido rosa sem uma única ruga.
+{textColor 0 2}Mas a maior mudança é o rosto... Ela parece uma criança animada para sair para uma viagem.
+{textColor 0 2}Por um instante, nossos olhos se encontraram. Me lembrando do que aconteceu de manhã, eu sorri.
+
+
+[00000cc4] 10:
+[00000cc5] 11: fgload 0 00000000 YU03AA 1 3
+[00000cd5] 10:
+[00000cd6] 19:
+[00000cd7] ff: text 79
+{textColor 0 2}Ainda um pouco envergonhada, Yuka parou de olhar para mim enquanto mexia no cabelo.
+{textColor 0 0}【Makoto】 "Bom dia."
+
+
+[00000cda] 10:
+[00000cdb]  b: playVoice L1D1A082
+[00000ce5] 10:
+[00000ce6] 19:
+[00000ce7] ff: text 7a
+{textColor 0 0}【Okuhiko】 "Opa!"
+{textColor 0 2}Okuhiko também respondeu ao cumprimento.
+{textColor 0 2}Haruka, obviamente, não respondeu com nada.
+{textColor 0 2}Tendo limpado o cinzeiro, ela está sentada em silêncio numa cadeira em frente da cozinha.
+
+
+[00000cea] 10:
+[00000ceb] 11: fgload 0 00000000 YU01AA 1 3
+[00000cfb] 10:
+[00000cfc]  b: playVoice L1D1A083
+[00000d06] 10:
+[00000d07] 19:
+[00000d08] ff: text 7b
+{textColor 1 4}【Yuka】 "Vocês já tomaram café da manhã?"
+{textColor 0 2}Yuka disse isso, se virando para ver nós três.
+{textColor 0 0}【Makoto】 "Não, ainda não..."
+
+
+[00000d0b] 10:
+[00000d0c] 11: fgload 0 00000000 YU02AA 1 3
+[00000d1c] 10:
+[00000d1d]  b: playVoice L1D1A084
+[00000d27] 10:
+[00000d28] 19:
+[00000d29] ff: text 7c
+{textColor 1 4}【Yuka】 "Ah. Então, acho que vou fazer pra vocês."
+{textColor 0 0}【Makoto】 "Hã!?"
+
+
+[00000d2c] 10:
+[00000d2d] 11: fgload 0 00000000 YU01AA 1 3
+[00000d3d] 10:
+[00000d3e]  b: playVoice L1D1A085
+[00000d48] 10:
+[00000d49] 19:
+[00000d4a] ff: text 7d
+{textColor 1 4}【Yuka】 "Tem algum problema?"
+
+[00000d4d] ff: text 7e
+{textColor 0 2}{choiceOpt 1 -> "Yuka, você sabe cozinhar?" }{choiceOpt 2 -> "Não é isso... Nós temos ingredientes?" }
+
+[00000d50] 10:
+[00000d51]  3: choice v_a1_08 00 00
+[00000d56]  0:
+[00000d57]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000dcb (000d)
+[00000d65] fe: varop VAR_(28_0a)_a0_ff (14) += (00) 1
+[00000d70] 10:
+[00000d71] 19:
+[00000d72] ff: text 7f
+{textColor 0 0}【Makoto】 "Yuka, você sabe cozinhar?"
+
+
+[00000d75] 10:
+[00000d76] 11: fgload 0 00000000 YU06AA 1 3
+[00000d86] 10:
+[00000d87]  b: playVoice L1D1A086
+[00000d91] 10:
+[00000d92] 19:
+[00000d93] ff: text 80
+{textColor 1 4}【Yuka】 "... Por acaso você duvida?"
+{textColor 0 0}【Makoto】 "Não... nada assim..."
+
+
+[00000d96] 10:
+[00000d97] 11: fgload 0 00000000 YU01AA 1 3
+[00000da7] 10:
+[00000da8]  b: playVoice L1D1A087
+[00000db2] 10:
+[00000db3] 19:
+[00000db4] ff: text 81
+{textColor 1 4}【Yuka】 "Então, não tem problema, tem?"
+{textColor 0 0}【Makoto】 "C-Certo..."
+{textColor 0 2}Yuka e culinária...
+{textColor 0 2}Por um tempo, eu me perdi nas minhas fantasias ao conectar os dois pontos.
+{textColor 0 2}A comida de uma garota...
+{textColor 0 2}Como homem, não dá para descrever a felicidade que essa situação me traz.
+{textColor 0 0}【Makoto】 "Posso ajudar de alguma forma?"
+{textColor 0 2}Eu perguntei isso a ela, já que achei que não deveria só esperar terminar.
+
+
+[00000db7] 10:
+[00000db8]  b: playVoice L1D1A088
+[00000dc2] 10:
+[00000dc3] 19:
+[00000dc4] ff: text 82
+{textColor 1 4}【Yuka】 "Hm? Não, tá tudo bem. Só espera e assiste TV. Eu posso fazer isso sozinha!"
+
+
+[00000dc7]  0:
+[00000dc8]  7: goto7 00000def (000e)
+[00000dcb]  0:
+[00000dcc]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 00000def (000f)
+[00000dda] 10:
+[00000ddb] 19:
+[00000ddc] ff: text 83
+{textColor 0 0}【Makoto】 "Não é isso... Nós temos ingredientes?"
+
+
+[00000ddf] 10:
+[00000de0]  b: playVoice L1D1A089
+[00000dea] 10:
+[00000deb] 19:
+[00000dec] ff: text 84
+{textColor 1 4}【Yuka】 "Ah, sem problema. O grupo anterior deixou muito."
+
+
+[00000def] 10:
+[00000df0] 19:
+[00000df1] ff: text 85
+{textColor 0 0}【Makoto】 "Certo."
+
+
+[00000df4] 10:
+[00000df5]  b: playVoice L1D1A090
+[00000dff] 10:
+[00000e00] 19:
+[00000e01] ff: text 86
+{textColor 1 4}【Yuka】 "Acho que vai demorar uns 15 minutos. Ah, pode ser pão?"
+{textColor 0 2}Okuhiko acenou com a cabeça, como se dizendo "deixo com você". Eu segui o exemplo.
+
+
+[00000e04] 10:
+[00000e05]  b: playVoice L1D1A091
+[00000e0f] 10:
+[00000e10] 19:
+[00000e11] ff: text 87
+{textColor 1 4}【Yuka】 "E você, Haruka?"
+
+
+[00000e14] 10:
+[00000e15]  b: playVoice L1D1A092
+[00000e1f] 10:
+[00000e20] 19:
+[00000e21] ff: text 88
+{textColor 1 4}【Yuka】 "Pode ser pão pra você também?"
+{textColor 0 2}Haruka também acenou com a cabeça, sem tirar os olhos da superfície da mesa.
+
+
+[00000e24] 10:
+[00000e25] 11: fgload 0 00000000 YU02AA 1 3
+[00000e35] 10:
+[00000e36]  b: playVoice L1D1A093
+[00000e40] 10:
+[00000e41] 19:
+[00000e42] ff: text 89
+{textColor 1 4}【Yuka】 "Então, termino logo, então esperem um pouco."
+
+
+[00000e45] 10:
+[00000e46] 12: removeFG 0 3
+[00000e4d] 10:
+[00000e4e] 19:
+[00000e4f] ff: text 8a
+{textColor 0 2}Yuka começou a ir à cozinha.
+{textColor 0 2}Nesse momento...
+{textColor 0 0}【Makoto】 "Ah, é mesmo!"
+{textColor 0 2}... Eu lembrei de algo, e imediatamente chamei a atenção de Yuka.
+
+
+[00000e52] 10:
+[00000e53] 11: fgload 0 00000000 YU01AA 1 3
+[00000e63] 10:
+[00000e64]  b: playVoice L1D1A094
+[00000e6e] 10:
+[00000e6f] 19:
+[00000e70] ff: text 8b
+{textColor 1 4}【Yuka】 "O que é?"
+{textColor 0 0}【Makoto】 "Quero te perguntar uma coisa... Yuka, você fuma?"
+
+
+[00000e73] 10:
+[00000e74] 11: fgload 0 00000000 YU05AA 1 3
+[00000e84] 10:
+[00000e85]  b: playVoice L1D1A095
+[00000e8f] 10:
+[00000e90] 19:
+[00000e91] ff: text 8c
+{textColor 1 4}【Yuka】 "É claro que eu não fumo..."
+
+
+[00000e94] 10:
+[00000e95] 11: fgload 0 00000000 YU10AA 1 3
+[00000ea5] 10:
+[00000ea6]  b: playVoice L1D1A096
+[00000eb0] 10:
+[00000eb1] 19:
+[00000eb2] ff: text 8d
+{textColor 1 4}【Yuka】 "Basta ver essa pele perfeita, que é óbvio〜♪"
+
+
+[00000eb5] 10:
+[00000eb6] 12: removeFG 0 3
+[00000ebd] 10:
+[00000ebe] 19:
+[00000ebf] ff: text 8e
+{textColor 0 2}Yuka pôs as mãos nas bochechas e entrou na cozinha, falando "mhm, mhm" para si mesma...
+{textColor 0 2}Se não foi ela, então quem fumou?
+{textColor 0 2}Yuka,{delay 5} Haruka,{delay 5} Okuhiko{delay 5}... qual desses três está mentindo?
+{textColor 0 0}【Makoto】 "Mmm..."
+{textColor 0 2}Eu gemi, pensando.
+
+
+[00000ec2] 10:
+[00000ec3]  f: removeBG 0 3 2
+[00000ecd] 10:
+[00000ece]  7: stopBGM
+[00000ecf] 10:
+[00000ed0]  4: jump L1D1AB

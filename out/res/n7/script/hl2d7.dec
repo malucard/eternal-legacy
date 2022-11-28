@@ -1,0 +1,551 @@
+[00000058] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 7
+[00000063] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 0
+[0000006e]  0: 
+[0000006f]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 0000007f (0002)
+[0000007d] 10: 
+[0000007e] 18: cmd18
+[0000007f] 10: 
+[00000080] 1b: dayIntro 00000000 BGCAL7.cps
+[00000087] 10: 
+[00000088] 10: bgload 00000000 BG02A 0 1
+[00000095] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 80
+[000000a1] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 13
+[000000ac] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 0
+[000000b7] 10: 
+[000000b8] 17: showClock
+[000000b9] 10: 
+[000000ba]  6: playBGM 17
+[000000bf] 10: 
+[000000c0] 14: multifgload2 00000000 YU02AA 2 00000000 OK01AA 3
+[000000d3] 10: 
+[000000d4]  b: playVoice HL2D7000
+[000000de] 10: 
+[000000df] 19: 
+[000000e0] ff: text 00
+{textColor 1 4}【Yuka】 "Then we'll be going back before you. You two will be all alone, so don't get any funny ideas!" 
+
+
+[000000e3] 10: 
+[000000e4]  b: playVoice HL2D7001
+[000000ee] 10: 
+[000000ef] 19: 
+[000000f0] ff: text 01
+{textColor 0 0}【Okuhiko】 "No kidding. Hey, Ishihara, you owe me big time!" 
+
+
+[000000f3] 10: 
+[000000f4] 15: removeAllFG 3
+[000000f8] 10: 
+[000000f9] 19: 
+[000000fa] ff: text 02
+{textColor 0 2}The next day, Yuka and Okuhiko left the lodge ahead of me.  {textColor 0 2}As expected, if they stayed any longer, it would mess up their plans in the near future. 
+{textColor 0 2}It seems that Saki has also returned to her own life. 
+
+
+[000000fd] 10: 
+[000000fe]  f: removeBG 0 0 2
+[00000108] 10: 
+[00000109] 10: bgload 00000000 BG10A 0 1
+[00000116] 10: 
+[00000117] 19: 
+[00000118] ff: text 03
+{textColor 0 2}Haruka was transferred to a large hospital on the mainland, where it was arranged for her to receive a work up. 
+{textColor 0 2}Actually, her only major problem was the heavy bleeding, but of course there was no way she could just go back like that. 
+{textColor 0 2}Besides, she lost so much blood all at once that her physical strength probably wouldn't return immediately. 
+{textColor 0 2}Of course, I decided to attend on Haruka.  {textColor 0 2}Afterwards, I took the ferry to the mainland and headed straight for the hospital. 
+{textColor 0 2}Just being able to be together with Haruka is fine...  {textColor 0 2}... It's been approximately two weeks since I've left the island and found myself enjoying this happiness... 
+
+
+[0000011b] 10: 
+[0000011c]  f: removeBG 1 0 2
+[00000126] 10: 
+[00000127]  7: stopBGM
+[00000128] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 8
+[00000133] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 1
+[0000013e] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 13
+[00000149] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 20
+[00000155] 10: 
+[00000156] 17: showClock
+[00000157] 10: 
+[00000158] 19: 
+[00000159] ff: text 04
+{textColor 0 2}And so, the next day dawns... 
+
+
+[0000015c] 10: 
+[0000015d]  8: playSFX SE006 1
+[00000167] 10: 
+[00000168] 19: 
+[00000169] ff: text 05
+{textColor 0 2}Just past noon, someone knocks on the door to Haruka's hospital room.  {textColor 0 2}It's true that it's visiting hours right now, but who...? 
+{textColor 0 2}Right now, Haruka is sleeping on her bed, breathing peacefully... 
+{textColor 0 0}【Makoto】 "... Yes, it's open." 
+
+
+[0000016c] 10: 
+[0000016d]  8: playSFX SE002 1
+[00000177] 10: 
+[00000178] 19: 
+[00000179] ff: text 06
+{textColor 0 2}The door is opened rather quietly, and the owner of the knock appears. 
+
+
+[0000017c] 10: 
+[0000017d]  9: stopSFX
+[0000017e] 10: 
+[0000017f]  6: playBGM 5
+[00000183] 10: 
+[00000184] 19: 
+[00000185] ff: text 07
+{textColor 0 0}【Makoto】 "... Izumi-san!" 
+{textColor 0 2}Yes, the one standing over there is Izumi-san. 
+{textColor 0 2}Izumi-san is carrying a fruit basket with apples and oranges piled up, and quietly enters the hospital room. 
+
+
+[00000188] 10: 
+[00000189]  b: playVoice HL2D7002
+[00000193] 10: 
+[00000194] 19: 
+[00000195] ff: text 08
+{textColor 1 8}【Izumi】 "... I'm sorry I didn't come to visit sooner...{delay 5}{delay 5} Kurumi has school, so she said she'll come on Sunday..." 
+{textColor 0 0}【Makoto】 "... No, it's fine.{delay 5}{delay 5}{delay 5} But{delay 5}{delay 5} Izumi-san, about Haruka..." 
+
+
+[00000198] 10: 
+[00000199]  b: playVoice HL2D7003
+[000001a3] 10: 
+[000001a4] 19: 
+[000001a5] ff: text 09
+{textColor 1 8}【Izumi】 "Yes... Despite how it may seem, I was very hesitant... Honestly, I wonder if it's even all right for someone like me to come here..." 
+{textColor 0 0}【Makoto】 "That's..." 
+
+
+[000001a8] 10: 
+[000001a9]  b: playVoice HL2D7004
+[000001b3] 10: 
+[000001b4] 19: 
+[000001b5] ff: text 0a
+{textColor 1 8}【Izumi】 "Is Haruka asleep?" 
+{textColor 0 0}【Makoto】 "Yeah. She fell asleep some time ago." 
+
+
+[000001b8] 10: 
+[000001b9]  b: playVoice HL2D7005
+[000001c3] 10: 
+[000001c4] 19: 
+[000001c5] ff: text 0b
+{textColor 1 8}【Izumi】 "If that's the case... then I'll continue my story.{delay 5}{delay 5}{delay 5} I've decided I should be honest to my own feelings after all." 
+
+
+[000001c8] 10: 
+[000001c9]  b: playVoice I_154_01
+[000001d3] 10: 
+[000001d4] 19: 
+[000001d5] ff: text 0c
+{textColor 1 8}【Izumi】 "On that night... when I heard Haruka was in a car accident, I was really worried...{delay 5}{delay 5} from the bottom of my heart..." 
+
+
+[000001d8] 10: 
+[000001d9]  b: playVoice I_154_02
+[000001e3] 10: 
+[000001e4] 19: 
+[000001e5] ff: text 0d
+{textColor 1 8}【Izumi】 "Yes, a lot happened, but Haruka is my little sister...{delay 5}{delay 5}{delay 5} our bonds of blood and her being a clone has nothing to do with it...{delay 5}{delay 5}{delay 5} It's not that kind of problem..." 
+{textColor 0 2}As she says that, Izumi-san suddenly smiles. 
+
+
+[000001e8] 10: 
+[000001e9]  b: playVoice HL2D7006
+[000001f3] 10: 
+[000001f4] 19: 
+[000001f5] ff: text 0e
+{textColor 1 8}【Izumi】 "... What a convenient way of thinking. {delay 5}{delay 5}{delay 5}But it's fine if I'm not forgiven. I just can't forgive myself as it is now..." 
+{textColor 0 2}Suddenly, large tears start falling from Izumi-san's eyes. 
+{textColor 0 0}【Makoto】 "... Why don't you talk to Haruka about that?" 
+
+
+[000001f8] 10: 
+[000001f9]  b: playVoice HL2D7007
+[00000203] 10: 
+[00000204] 19: 
+[00000205] ff: text 0f
+{textColor 1 8}【Izumi】 "... Huh?" 
+{textColor 0 2}I then slowly speak again as if I'm trying to persuade myself as well as Izumi-san. 
+{textColor 0 0}【Makoto】 "The truth is that Haruka longs for connections with other people...{delay 5}{delay 5}{delay 5} bonds, that is.  {textColor 0 0}That's why...{delay 5}{delay 5} I think she'll forgive you.." 
+
+
+[00000208] 10: 
+[00000209]  b: playVoice HL2D7008
+[00000213] 10: 
+[00000214] 19: 
+[00000215] ff: text 10
+{textColor 1 8}【Izumi】 "Makoto-kun..." 
+{textColor 0 0}【Makoto】 "Well, I don't think you need to force yourself to tell Kurumi the truth, but..." 
+
+
+[00000218] 10: 
+[00000219]  b: playVoice HL2D7009
+[00000223] 10: 
+[00000224] 19: 
+[00000225] ff: text 11
+{textColor 1 8}【Izumi】 "... You're right.{delay 5}{delay 5} I understand.{delay 5}{delay 5} Then I'll come again tomorrow. At that time..." 
+{textColor 0 0}【Makoto】 "Yes, please do so." 
+{textColor 0 2}... ... ... 
+{textColor 0 2}And so, the next day, when Izumi-san came to Haruka's hospital room, I excused myself and left the two of them alone. 
+{textColor 0 2}So I don't know what kind of conversation they had.  {textColor 0 2}When I tried indirectly asking Haruka about it afterwards, she just shook her head and smiled... 
+{textColor 0 2}However, when they called me back into the hospital room, they were embracing each other and their eyes were as red as a rabbit's. That alone is enough for me to know what was said... 
+
+
+[00000228] 10: 
+[00000229]  f: removeBG 0 0 2
+[00000233] 10: 
+[00000234]  7: stopBGM
+[00000235] 10: 
+[00000236] 19: 
+[00000237] ff: text 12
+{textColor 0 2}... ... ... 
+{textColor 0 2}And then one week after that... Haruka is finally allowed to leave the hospital. 
+
+
+[0000023a] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 14
+[00000245] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 0
+[00000250] 10: 
+[00000251] 10: bgload 00000000 BG07A 0 1
+[0000025e] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 14
+[00000269] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 0
+[00000274] 10: 
+[00000275] 17: showClock
+[00000276] 10: 
+[00000277]  6: playBGM 17
+[0000027c] 10: 
+[0000027d] 14: multifgload2 00000000 IZ02AA 2 00000000 KU02AA 3
+[00000290] 10: 
+[00000291]  b: playVoice HL2D7010
+[0000029b] 10: 
+[0000029c] 19: 
+[0000029d] ff: text 13
+{textColor 1 8}【Izumi】 "I'm really glad. For a while, I was really worried over what would happen." 
+
+
+[000002a0] 10: 
+[000002a1]  b: playVoice HL2D7011
+[000002ab] 10: 
+[000002ac] 19: 
+[000002ad] ff: text 14
+{textColor 1 7}【Kurumi】 "Same. Back then, Onii-chan said nothing and took off with Kurumi on the bike! Kurumi thought she was being kidnapped. She was really scared!!" 
+{textColor 0 2}On Sunday, after leaving the hospital, Haruka and I returned to the island to pick up the luggage we'd left behind. 
+{textColor 0 2}We gathered our luggage at the lodge... and so, we're at Lunabeach right now, saying our final farewells. 
+
+
+[000002b0] 10: 
+[000002b1] 15: removeAllFG 3
+[000002b5] 10: 
+[000002b6] 11: fgload 0 00000000 HA08AB 1 3
+[000002c6] 10: 
+[000002c7]  b: playVoice HL2D7012
+[000002d1] 10: 
+[000002d2] 19: 
+[000002d3] ff: text 15
+{textColor 1 5}【Haruka】 "I'm really sorry...{delay 5}{delay 5}{delay 5} that I worried you..." 
+
+
+[000002d6] 10: 
+[000002d7] 12: removeFG 0 3
+[000002de] 10: 
+[000002df] 14: multifgload2 00000000 IZ12AA 2 00000000 KU07AA 3
+[000002f2] 10: 
+[000002f3]  b: playVoice HL2D7013
+[000002fd] 10: 
+[000002fe] 19: 
+[000002ff] ff: text 16
+{textColor 1 8}【Izumi】 "It's fine, it's fine. All that matters is that you're all right." 
+
+
+[00000302] 10: 
+[00000303]  b: playVoice HL2D7014
+[0000030d] 10: 
+[0000030e] 19: 
+[0000030f] ff: text 17
+{textColor 1 7}【Kurumi】 "Right, right. You were okay, Haruka-san, so there were no problems." 
+{textColor 0 0}【Makoto】 "H-{delay 5}{delay 5}{delay 5}Hold on!{delay 5}{delay 5} You weren't worried about my body?" 
+{textColor 0 2}That's right.  I pushed myself so hard on that day that I ended up commuting to the hospital for three days due to getting my body battered, bruises, and muscle pain. 
+{textColor 0 2}If you ruled out Haruka's heavy bleeding, I was in a more serious state than she was... 
+
+
+[00000312] 10: 
+[00000313] 11: fgload 1 00000000 KU02AA 0 3
+[00000323] 10: 
+[00000324]  b: playVoice HL2D7015
+[0000032e] 10: 
+[0000032f] 19: 
+[00000330] ff: text 18
+{textColor 1 7}【Kurumi】 "You were fine, weren't you? You're a guy, after all..." 
+
+
+[00000333] 10: 
+[00000334] 15: removeAllFG 3
+[00000338] 10: 
+[00000339] 11: fgload 0 00000000 HA07AB 1 3
+[00000349] 10: 
+[0000034a]  b: playVoice HL2D7016
+[00000354] 10: 
+[00000355] 19: 
+[00000356] ff: text 19
+{textColor 1 5}【Haruka】 "Yes, yes. You're a sturdy one, aren't you?" 
+{textColor 0 0}【Makoto】 "Damn it... not you too, Haruka..." 
+
+
+[00000359] 10: 
+[0000035a]  8: playSFX SE135 1
+[00000364] 10: 
+[00000365] 12: removeFG 0 3
+[0000036c] 10: 
+[0000036d] 11: fgload 0 00000000 IZ01AA 2 3
+[0000037d] 10: 
+[0000037e]  b: playVoice HL2D7017
+[00000388] 10: 
+[00000389] 19: 
+[0000038a] ff: text 1a
+{textColor 1 8}【Izumi】 "Oh, it looks like the bus is coming." 
+
+
+[0000038d] 10: 
+[0000038e]  f: removeBG 0 4 2
+[00000398] 10: 
+[00000399] 12: removeFG 0 3
+[000003a0] 10: 
+[000003a1] 10: bgload 00000000 BG06A 4 1
+[000003ae] 10: 
+[000003af] 14: multifgload2 00000000 KU01AA 2 00000000 HA01AA 3
+[000003c2] 10: 
+[000003c3]  b: playVoice HL2D7018
+[000003cd] 10: 
+[000003ce] 19: 
+[000003cf] ff: text 1b
+{textColor 1 7}【Kurumi】 "Well then, take care! Be sure to come back again!!" 
+
+
+[000003d2] 10: 
+[000003d3]  b: playVoice HL2D7019
+[000003dd] 10: 
+[000003de] 19: 
+[000003df] ff: text 1c
+{textColor 1 5}【Haruka】 "Yes. It's a promise." 
+
+
+[000003e2] 10: 
+[000003e3] 12: removeFG 0 3
+[000003ea] 10: 
+[000003eb] 11: fgload 0 00000000 IZ02AA 2 3
+[000003fb] 10: 
+[000003fc]  b: playVoice HL2D7020
+[00000406] 10: 
+[00000407] 19: 
+[00000408] ff: text 1d
+{textColor 1 8}【Izumi】 "That's right... because your two older sisters will be here..." 
+
+
+[0000040b] 10: 
+[0000040c] 11: fgload 1 00000000 HA02AA 0 3
+[0000041c] 10: 
+[0000041d]  b: playVoice HL2D7021
+[00000427] 10: 
+[00000428] 19: 
+[00000429] ff: text 1e
+{textColor 1 5}【Haruka】 "... Yes... thank you..." 
+{textColor 0 2}Izumi-san looks straight at Haruka.  Her eyes are cloudy with tears.  {textColor 0 2}And... Haruka is the same... 
+
+
+[0000042c] 10: 
+[0000042d] 12: removeFG 0 3
+[00000434] 10: 
+[00000435] 11: fgload 0 00000000 KU02AA 2 3
+[00000445] 10: 
+[00000446]  b: playVoice HL2D7022
+[00000450] 10: 
+[00000451] 19: 
+[00000452] ff: text 1f
+{textColor 1 7}【Kurumi】 "Huh? What are you talking about, Onee-chan? Haruka-san is the older sister here. Because she's with Onii-chan〜" 
+
+
+[00000455] 10: 
+[00000456] 11: fgload 1 00000000 HA07AA 0 3
+[00000466] 10: 
+[00000467]  b: playVoice HL2D7023
+[00000471] 10: 
+[00000472] 19: 
+[00000473] ff: text 20
+{textColor 1 5}【Haruka】 "Yes... you're right. You're a good girl, Kurumi." 
+
+
+[00000476] 10: 
+[00000477] 11: fgload 0 00000000 KU03AA 2 3
+[00000487] 10: 
+[00000488]  b: playVoice HL2D7024
+[00000492] 10: 
+[00000493] 19: 
+[00000494] ff: text 21
+{textColor 1 7}【Kurumi】 "Yep!" 
+
+
+[00000497] 10: 
+[00000498] 12: removeFG 1 3
+[0000049f] 10: 
+[000004a0] 11: fgload 1 00000000 IZ01AA 0 3
+[000004b0] 10: 
+[000004b1] 19: 
+[000004b2] ff: text 22
+{textColor 0 2}It's time for the bus to depart.  I take my luggage as well as Haruka's, and start walking. 
+{textColor 0 0}【Makoto】 "Well then, see you next year!" 
+
+
+[000004b5] 10: 
+[000004b6] 11: fgload 0 00000000 KU07AA 2 3
+[000004c6] 10: 
+[000004c7]  b: playVoice HL2D7025
+[000004d1] 10: 
+[000004d2] 19: 
+[000004d3] ff: text 23
+{textColor 1 7}【Kurumi】 "Bye bye!" 
+
+
+[000004d6] 10: 
+[000004d7] 15: removeAllFG 3
+[000004db] 10: 
+[000004dc]  7: stopBGM
+[000004dd] 10: 
+[000004de] 10: bgload 00000000 EV_HA09 0 1
+[000004eb] 10: 
+[000004ec]  6: playBGM 12
+[000004f0] 10: 
+[000004f1] 19: 
+[000004f2] ff: text 24
+{textColor 0 2}Haruka is waving her hand towards outside the window...  {textColor 0 2}It's clear that she's going to miss them... 
+{textColor 0 2}But there's no signs that this parting is a sad one. 
+{textColor 0 2}Haruka's perfectly clear smile is bathed by the gentle spring sunlight. 
+{textColor 0 2}In that expression of hers, something has vividly emerged: it's clearly her heart. 
+{textColor 0 2}Right now, Haruka might have finally been awoken from an eternal sleep that lasted one hundred years... 
+
+
+[000004f5] 10: 
+[000004f6]  b: playVoice HL2D7026
+[00000500] 10: 
+[00000501] 19: 
+[00000502] ff: text 25
+{textColor 1 5}【Haruka】 "Goodbye...{delay 5}{delay 5}{delay 5} Goodbye... my sisters!! {delay 5}{delay 5}{delay 5}{delay 5}... We'll meet again..." 
+{textColor 0 2}And she is released from the curse of time.  {textColor 0 2}From now on, I won't be able to repeat and do things over. 
+{textColor 0 2}... Even so... Even so, Haruka is by my side. 
+{textColor 0 2}As long as Haruka has her precious smile, I can keep walking, no matter time may throw at me. 
+{textColor 0 2}Because the one who discovered their own existence... {delay 60}wasn't just Haruka... 
+
+
+[00000505] 10: 
+[00000506] 18: cmd18
+[00000507]  0: 
+[00000508]  5: delay 180
+[0000050d] 10: 
+[0000050e]  f: removeBG 0 0 0
+[00000518] 10: 
+[00000519]  7: stopBGM
+[0000051a]  0: 
+[0000051b]  a: condJump 00 VAR_(28_1e)_a0_cc (28) != (15) (80)->0 (15) (00)  * 0000055c (0004)
+[00000529] fe: varop VAR_(28_0a)_a0_cc (14) := (00) 1
+[00000534]  0: 
+[00000535]  a: condJump 01 VAR_(28_04)_a0_cb (00) _COP_03 (03) ->VAR_(28_04)_a0_cd (00) (03)  * 0123abcd (2802)
+[00000546]  3: unsupported 3 
+[00000547] a0: unsupported 160 
+[00000548] ce: unsupported 206 
+[00000549]  0: 
+[0000054a] 10: 
+[0000054b]  1: cmd1 3
+[0000054f]  3: unsupported 3 
+[00000550]  0: 
+[00000551] fe: varop VAR_(28_02)_a3_e7 (00) := (00) 1
+[0000055c]  0: 
+[0000055d]  a: condJump 00 VAR_(28_1e)_a1_46 (28) != (15) (80)->0 (15) (00)  * 00000576 (0006)
+[0000056b] fe: varop VAR_(28_0a)_a1_46 (14) := (00) 1
+[00000576]  0: 
+[00000577]  a: condJump 00 VAR_(28_1e)_a0_c8 (28) != (15) (80)->0 (15) (00)  * 00000590 (0008)
+[00000585] fe: varop VAR_(28_0a)_a0_c8 (14) := (00) 1
+[00000590]  0: 
+[00000591]  a: condJump 00 VAR_(28_1e)_a0_c9 (28) != (15) (80)->0 (15) (00)  * 000005aa (000a)
+[0000059f] fe: varop VAR_(28_0a)_a0_c9 (14) := (00) 1
+[000005aa]  0: 
+[000005ab]  a: condJump 00 VAR_(28_1e)_a1_45 (28) != (15) (80)->0 (15) (00)  * 000005c4 (000c)
+[000005b9] fe: varop VAR_(28_0a)_a1_45 (14) := (00) 1
+[000005c4]  0: 
+[000005c5]  a: condJump 00 VAR_(28_1e)_a1_48 (28) != (15) (80)->0 (15) (00)  * 00000616 (000e)
+[000005d3] fe: varop VAR_(28_0a)_a1_48 (14) := (00) 1
+[000005de] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cb
+[000005ea] 14: unsupported 20 
+[000005eb]  0: 
+[000005ec] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cc
+[000005f8] 14: unsupported 20 
+[000005f9]  0: 
+[000005fa] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_cd
+[00000606] 14: unsupported 20 
+[00000607]  0: 
+[00000608] fe: varop VAR_(28_0a)_a1_48 (14) |= (00) VAR_(28_0a)_a0_ce
+[00000614] 14: unsupported 20 
+[00000615]  0: 
+[00000616] fe: varop VAR_(28_0a)_a1_47 (14) := (00) 2
+[00000621] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 0
+[0000062c] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 6
+[00000637]  0: 
+[00000638] 19: unknown19 0 3
+[0000063f]  0: 
+[00000640] 19: unknown19 1 3
+[00000647]  0: 
+[00000648] 19: unknown19 2 3
+[0000064f] 10: 
+[00000650] 24: cmd24 0
+[00000654] 10: 
+[00000655] 22: movie end1
+[0000065b]  0: 
+[0000065c]  5: delay 10
+[00000660] 10: 
+[00000661] 24: cmd24 1
+[00000665]  0: 
+[00000666]  5: delay 1
+[0000066a] 10: 
+[0000066b] 2d: cmd2D 00 0a 01 2d 0a 87 14 00 0f
+[00000675]  0: 
+[00000676] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 1
+[00000681] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 0
+[0000068c] 10: 
+[0000068d] 23: cmd23
+[0000068e]  0: 
+[0000068f] 19: unknown19 0 4
+[00000696]  0: 
+[00000697] 19: unknown19 1 4
+[0000069e]  0: 
+[0000069f] 19: unknown19 2 4
+[000006a6] fe: varop VAR_(28_0a)_a1_0b (14) := (00) 1
+[000006b1] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cb
+[000006bd] 14: unsupported 20 
+[000006be]  0: 
+[000006bf] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cc
+[000006cb] 14: unsupported 20 
+[000006cc]  0: 
+[000006cd] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cd
+[000006d9] 14: unsupported 20 
+[000006da]  0: 
+[000006db] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_ce
+[000006e7] 14: unsupported 20 
+[000006e8]  0: 
+[000006e9]  0: 
+[000006ea]  a: condJump 00 VAR_(28_32)_a1_0b (3c) != (29) (81)->1 (29) (08) || VAR_(28_32)_a1_49 (3c) != (29) (80)->0 (29) (00)  * 0000070e (0011)
+[00000703] fe: varop VAR_(28_0a)_a1_49 (14) := (00) 1
+[0000070e]  0: 
+[0000070f]  a: condJump 01 VAR_(28_02)_a3_e7 (00) != (01) (81)->1 (00) (00)  * 0000072d (0012)
+[00000710]  a: condJump 00 VAR_(28_32)_a1_0b (3c) != (29) (80)->5 (29) (00)  * 0000072d (0012)
+[0000071d] 10: 
+[0000071e] 19: 
+[0000071f] fd: notice 26
+{textColor 0 2}Izumi Cure route unlocked. 
+
+
+[00000722] fe: varop VAR_(28_02)_a3_e7 (00) := (00) 0
+[0000072d] 10: 
+[0000072e] 1e: returnTitle 00 03 00 06
+[00000733]  0: 

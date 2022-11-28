@@ -1,0 +1,435 @@
+removeBG 0 0 2
+
+@text Begin test mode.
+@label ap_START
+removeBG 0 0 2
+bgload 00000000 BG00A 0 4 0 0 2
+@text Please select a test menu.  
+@choice Text Display|BG Display|CHR Display|Effect Display
+@setvar vap_seldt = selected
+@if seldt == 0
+@    goto ap_testmode_font
+@fi
+@if seldt == 1
+@    goto ap_testmode_bg
+@fi
+@if seldt == 2
+@    goto ap_testmode_chr
+@fi
+@if seldt == 3
+@    goto ap_testmode_efx
+@fi
+@goto ap_start
+@label ap_testmode_font
+@text Letter color text. 
+@text Letter color 0. Male character letter color. 
+@text 【Makoto】 "This is the color that will appear." 
+@text Letter color 1. 
+@text This will be used when "Everyone" speaks. 
+@text Letter color 2. 
+@text This will be used when the protagonist speaks. 
+@text Letter color 3. 
+@text 【Okuhiko】 "What do you think about this color?" 
+@text Letter color 4. 
+@text 【Yuka】 "What'cha feel about this color?" 
+@text Letter color 5. 
+@text 【Haruka】 "What do you think about this color?" 
+@text Letter color 6. 
+@text 【Saki】 "What're your thoughts on this color?" 
+@text Letter color 7. 
+@text 【Kurumi】 "What do you feel about this color, huh♪" 
+@text Letter color 8. 
+@text 【Izumi】 "How do you feel about this color?"
+
+delay 60
+@text Testing text speed. The current speed is default. 
+@text The current text speed is 1. All the text will display at once. 
+@text The current text speed is 5. This is the default speed. 
+@text The current text speed is 10. 
+@text The current text speed is 15. 
+@text The current text speed is 20. This is the slowest it gets. 
+@text Return text speed to default.
+delay 30
+@text Just once I'll do this... It might be just too difficult for you to read. 
+delay 30
+
+removeBG 0 0 2
+@text Continue test mode?  
+@choice Yes|No
+@setvar vap_seldt = selected
+@if seldt == 1
+@    goto ap_testend
+@fi
+@goto ap_START
+@label ap_testmode_bg
+removeBG 0 0 2
+@text BG display type test. 
+@text In the case of display types "White Fade", "Circle 1", or "Circle 2", please specify when you want to use it. (These are erasure functions.)
+bgload 00000000 BG06A 0 4 0 0 2
+@text Display type "semi-transparent (default)
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG06A 0 4 0 0 2
+@text Display type: white fade *Wrong use.
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG06A 0 4 0 0 2
+@text Display type: Circle 1 (No fading) *Wrong use.
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG06A 0 4 0 0 2
+@text Display type: Circle 2 (Fading) *Wrong use.
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG06A 0 4 0 0 2
+@text Display type: Blind right.
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG06A 0 4 0 0 2
+@text Display type: Blind left
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG06A 0 4 0 0 2
+@text Display type: Instant display. (Please use "fast" speed if it is too fast.)
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG06A 0 4 0 0 2
+@text Display type: Line right.
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG06A 0 4 0 0 2
+@text Display type: Line left.
+removeBG 0 0 2
+
+delay 60
+@text BG display speed test.
+removeBG 0 0 2
+@text Very slow display
+bgload 00000000 BG09A 0 4 0 0 2
+@text Very slow display Display type: Semi-transparent (default)
+removeBG 0 0 2
+delay 30
+@text Slow display
+bgload 00000000 BG09A 0 4 0 0 2
+@text Slow display Display type: Semi-transparent (default)
+removeBG 0 0 2
+delay 30
+@text Normal display
+bgload 00000000 BG09A 0 4 0 0 2
+@text Normal display Display type: Semi-transparent (default)
+removeBG 0 0 2
+delay 30
+@text Fast display
+bgload 00000000 BG09A 0 4 0 0 2
+@text Fast display Display type: semi-transparent (default)
+removeBG 0 0 2
+
+delay 60
+@text BG erasure test.
+bgload 00000000 BG19A 0 4 0 0 2
+@text Erasure type: Semi-transparent (default) Erasure color: black
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG19A 0 4 0 0 2
+@text Erasure type: White Fade Erasure color: white
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG19A 0 4 0 0 2
+@text Erasure type: Circle 1 (no fading) Erasure color: Black
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG19A 0 4 0 0 2
+@text Erasure type: Circle 2 (Fading) Erasure color: white
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG19A 0 4 0 0 2
+@text Erasure type: Blind right Erasure color: Black
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG19A 0 4 0 0 2
+@text Erasure type: Blind left Erasure color: White
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG19A 0 4 0 0 2
+@text Erasure type: Instant erasure Erasure color: black (Please use "fast" speed if it is too fast.)
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG19A 0 4 0 0 2
+@text Erasure type: Line right Erasure color: Black
+removeBG 0 0 2
+delay 30
+bgload 00000000 BG19A 0 4 0 0 2
+@text Erasure type: Line left Erasure color: White
+removeBG 0 0 2
+delay 30
+
+removeBG 0 0 2
+@text Continue test mode?  
+@choice Yes|No
+@setvar vap_seldt = selected
+@if seldt == 1
+@    goto ap_testend
+@fi
+@goto ap_START
+@label ap_testmode_chr
+removeBG 0 0 2
+bgload 00000000 BG29A 0 4 0 0 2
+@text CHR test. 
+@text When characters are shown, the standard display method is "Auto". If you're using "instant display", please specify expression. 
+@text Background character display.
+fgload 0 00000000 YU02AAA 1 3
+@text 【Yuka】 "Hellllooooo♪" 
+@text Character expression change.
+fgload 0 00000000 YU10AAA 1 3
+@text 【Yuka】 "Huh? It's already begun?" 
+@text ...
+fgload 0 00000000 YU01AAA 1 3
+@text 【Yuka】 "No, that's rude, rude..." 
+@text 【Yuka】 "It'll be a while before I'm sober, so wait a bit." 
+@text Character erasure
+removeFG 0 3
+@text ...
+
+delay 60
+fgload 0 00000000 YU01AA 1 3
+@text 【Yuka】 "Thanks for waiting――" 
+@text 【Yuka】 "Well then, what should I explain." 
+@text 【???】 "Yuka, would you get out of the way?" 
+@text Character removal.
+moveFG 0 1
+@text 【Yuka】 "Huh? What?" 
+@text Character display (2nd person).
+fgload 1 00000000 SA01AA 1 3
+@text 【Yuka】 "Oh, it's Saki." 
+@text 【Saki】 "I was called here too." 
+@text Character expression change.
+fgload 1 00000000 SA10AA 1 3
+@text 【Saki】 "What are we doing here?"
+fgload 0 00000000 YU03AA 1 3
+@text 【Yuka】 "I think we're here to explain..." 
+@text 【Saki】 "Explain?"
+fgload 0 00000000 YU08AA 1 3
+@text 【Yuka】 "Er, let's see..." 
+@text 【Yuka】 "Hmmm, I wonder how I should put it..."
+fgload 1 00000000 SA05AA 1 3
+@text 【Saki】 "I don't get it; you need to be clearer." 
+@text 【Saki】 "Could it be that you got drunk earlier? 
+@text Instantly change expression.
+fgload 0 00000000 YU11AA 1 3
+@text 【Yuka】 "Huh, how do you know that!?"
+fgload 1 00000000 SA07AA 1 3
+@text 【Saki】 "B-Because you're acting strange, Yuka?" 
+@text Simultaneously display two characters.
+removeAllFG 3
+@text 【Saki】 "By the way, why were we called here?" 
+@text 【Yuka】 "Right, everyone was invited here to eat dinner by Izumi-san."...
+
+delay 60
+bgload 00000000 BG29E 0 4 0 0 2
+@text Simultaneously display 2 characters.
+multifgload2 00000000 HA01AA 0 00000000 KU01AA 3
+@text 【Kurumi】 "Tada! It's KuruKuru Kurumi Magic♪" 
+@text 【Haruka】 "..." 
+@text Practical Assessment.
+fgload 1 00000000 KU07AA 1 3
+@text 【Kurumi】 "What will tonight's side dish be〜" 
+@text 【Kurumi】 "Hey, Haruka-san, what do you want to eat? Leave it to Onee-chan." 
+@text 【Haruka】 "..." 
+@text 【Haruka】 "... Shabu-shabu."
+fgload 1 00000000 KU10AA 1 3
+@text 【Kurumi】 "Kurumi wonders whether we even have shabu-shabu this season..." 
+@text 【Haruka】 "Shabu-shabu... from crab."
+fgload 1 00000000 KU11AA 1 3
+@text 【Kurumi】 "Crab!?" 
+@text 【Haruka】 "I found a crab on the shore earlier." 
+@text 【Haruka】 "It was a crab with giant red claws." 
+@text 【Kurumi】 "Wow, that's the Sumo Crab..."
+fgload 0 00000000 HA02AA 1 3
+@text 【Haruka】 "I caught it."
+fgload 1 00000000 KU12AA 1 3
+@text 【Kurumi】 "H-Hey, Haruka-san! The truth is..."
+fgload 1 00000000 KU08AA 1 3
+@text 【Kurumi】 "Kurumi is allergic to boiled crab shells..." 
+@text 【Kurumi】 "She can't stand that soft, scratchy feeling..."
+fgload 1 00000000 KU02AA 1 3
+@text 【Kurumi】 "So let's eat something else!"
+removeFG 1 3
+@text 【Kurumi】 "Onee-chan! Let's have curry today."
+
+delay 60
+fgload 0 00000000 HA08AA 1 3
+@text 【Haruka】 "Even though it's delicious..."
+removeFG 0 3
+
+delay 60
+bgload 00000000 BG07N 0 4 0 0 2
+@text Foreground character display.
+fgload 0 00000000 YU01AB 1 3
+@text 【Yuka】 "There can only be two characters in the foreground at the same time. ...It's very cramped." 
+@text 【Izumi】 "Did you say something, Yuka-chan?" 
+@text 【Yuka】 "Nope, nothing."
+removeFG 0 3
+delay 30
+fgload 0 00000000 IZ02AB 1 3
+@text 【Izumi】 "If you have two characters on the screen at the same time, but want to display a different character, then it's best to erase a character." 
+@text 【Yuka】 "Is something wrong, Izumi-san?"
+fgload 0 00000000 IZ01AB 1 3
+@text 【Izumi】 "No, it's nothing."
+removeFG 0 3
+delay 30
+
+removeBG 0 0 2
+@text Continue test mode?  
+@choice Yes|No
+@setvar vap_seldt = selected
+@if seldt == 1
+@    goto ap_testend
+@fi
+@goto ap_START
+@label ap_testmode_efx
+@text Scene effect test.
+
+@text Collision 1, weak
+
+delay 30
+
+@text Collision 2, middle
+
+delay 30
+
+@text Collision 3, strong
+
+
+delay 60
+
+bgload 00000000 BG24A 0 4 0 0 2
+
+@text Earthquake 1, weak
+
+delay 30
+
+@text Earthquake 2, middle
+
+delay 30
+
+@text Earthquake 3, strong
+
+
+delay 60
+
+bgload 00000000 BG27N 0 4 0 0 2
+
+@text Flowers: Night, few
+
+delay 30
+
+@text Flowers: Night, many
+
+
+delay 60
+
+bgload 00000000 BG27A 0 4 0 0 2
+
+@text Flowers: Day, few
+
+delay 30
+
+@text Flowers: Day, many
+
+
+delay 60
+
+bgload 00000000 BG13R 0 4 0 0 2
+
+@text Fog: Rainy road
+
+delay 30
+bgload 00000000 BG24R 0 4 0 0 2
+
+@text Fog: Rainy shrine
+
+delay 30
+removeBG 0 0 2
+
+@text Fog: Opening
+
+delay 30
+
+delay 60
+
+bgload 00000000 BG28R 0 4 0 0 2
+
+@text Fog: Forest
+
+delay 30
+bgload 00000000 BG22A 0 4 0 0 2
+
+@text Fog: Hot springs 1
+
+delay 30
+bgload 00000000 BG22N 0 4 0 0 2
+
+@text Fog: Hot springs 2
+
+delay 30
+
+delay 60
+
+bgload 00000000 BG35NR 0 4 0 0 2
+
+@text Rain
+
+delay 30
+
+delay 60
+
+bgload 00000000 BG04A 0 4 0 0 2
+
+@text Sunlight through trees, left, morning
+
+delay 30
+
+@text Sunlight through trees, right, morning
+
+delay 30
+bgload 00000000 BG04E 0 4 0 0 2
+
+@text Sunlight through trees, left, afternoon
+
+delay 30
+
+@text Sunlight through trees, right, afternoon
+
+delay 30
+
+delay 60
+
+removeBG 0 0 2
+removeBG 0 0 2
+
+bgload 00000000 BG04N 0 4 0 0 2
+@text During the flashback scene slides, when the effects appear / disappear, the screen will go white, and the screen in non-flashback scenes will be relatively smooth.
+removeBG 0 0 2
+
+delay 30
+removeBG 0 0 2
+
+delay 60
+
+delay 30
+
+removeBG 0 0 2
+@text Continue test mode?  
+@choice Yes|No
+@setvar vap_seldt = selected
+@if seldt == 1
+@    goto ap_testend
+@fi
+@goto ap_START
+@label ap_testend
+@text Test mode has ended. 
+@text Good work.
+
+removeBG 0 0 2
+
+returnTitle

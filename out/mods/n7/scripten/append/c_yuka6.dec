@@ -1,0 +1,570 @@
+@label ap_START
+@setvar v_a1_3c = 213
+@text ~
+delay 15
+@setvar v_a0_fb = 6
+dayIntro 00000000 bgcal6
+removeBG 0 0 2
+@text 【Yuka】 "U... Ugh..." 
+@text I-It's freezing... 
+@text 【Yuka】 "Mmmmm..." 
+@text 【Yuka】 "... Hmm?"
+removeBG 0 0 2
+@text 【Yuka】 "..." 
+@text My head feels cloudy, and my eyesight is blurry...
+bgload 00000000 BG36N 0 4 0 0 2
+@setvar v_a0_fc = 4
+@setvar v_a0_fd = 28
+showClock
+@text Before long, my vision begins to clear up... I finally reach the point where I'm able to perceive my surroundings. 
+@text The lights in the room are still on. It seems like I dozed off without realizing it... 
+@text I slept on top of the covers, which is why I woke up chilled to the bone. 
+@text I can hear the sound of the rainfall outside. 
+@text The downpour gets more and more intense... 
+@text I tilt my head to look at the clock. 
+@text It's past 4:30. 
+@text (I'll just go back to sleep...) 
+@text I get up and walk over to the light switch to turn off the lights. 
+@text And then, I stop when I see the purple bottle I placed on the floor. 
+@text It's the lilac fragrance I received from Saki. 
+@text 【Yuka】 "..." 
+@text I'll go see Saki once morning comes... 
+@text I'll meet with her one more time and talk... and then... 
+@text ... And then... 
+@text ... 
+@text Because I'm half asleep, my brain cells aren't functioning properly... 
+@text Either way, it seems that today's going to be a busy day. 
+@text 【Yuka】 "... For now, I'll just sleep..." 
+@text ――Click.
+bgload 00000000 BG36NN 0 4 0 0 2
+@text (I'll just get some good sleep, then think about it when I wake up...) 
+@text As I tell myself this, I get back on my bed...
+@text ~
+stopSFX
+@text ~
+removeBG 0 0 2
+delay 120
+@text ... Just as I feel myself slipping into unconsciousness...
+@text ~
+playSFX 0 1
+@text A clamorous sound suddenly echoes.
+bgload 00000000 BG36NN 0 4 0 0 2
+@setvar v_a0_fc = 4
+@setvar v_a0_fd = 54
+showClock
+@text ~
+playSFX 108 1
+@text I jump to my feet, and look towards the door...
+fgload 0 00000000 IZ08BAn 1 3
+@text (I-Izumi-san...?) 
+@text 【Izumi】 "Kurumi's..." 
+@text 【Izumi】 "Kurumi's gone!"
+removeBG 0 0 2
+removeFG 0 3
+bgload 00000000 BG02NR 0 4 0 0 2
+@setvar v_a0_fc = 4
+@setvar v_a0_fd = 58
+showClock
+playBGM 13
+@text We've all gathered in the living room, an unusual sight. 
+@text Saki... and Makoto are here. 
+@text Saki is standing with a grim expression... 
+@text Makoto is sitting in a dining chair with an absent-minded expression... 
+@text I want to go talk with them, but now's not the time for that! 
+@text My utmost attention is focused on Izumi-san.
+fgload 0 00000000 IZ08BA 1 3
+@text 【Izumi】 "I suddenly woke up in the middle of the night... and when I looked around..."
+moveFG 0 2
+fgload 1 00000000 SA11BA 0 3
+@text 【Saki】 "Kurumi-chan was gone..." 
+@text 【Izumi】 "Yes..." 
+@text 【Izumi】 "I searched alone at first, trying all the places I could think of..." 
+@text 【Izumi】 "Inside the shop, the area around Moon Beach, all of it..." 
+@text 【Saki】 "Do you know of any other places Kurumi-chan would go?" 
+@text 【Saki】 "Or do you have any clues...?" 
+@text Izumi-san closes her eyes and softly shakes her head.
+removeAllFG 3
+@text 【Yuka】 "..." 
+@text This conversation... I've definitely had this conversation before...  
+@text Yes... this is... 
+@text This conversation happened in the last loop, when Kurumi-chan went missing... 
+@text (...!!!) 
+@text (If that's the case... if that's the case!) 
+@text My whole body starts shivering...
+removeBG 0 0 2
+cmd1 32
+bgload 00000000 EV_YU05 0 4 0 0 2
+@text ――A flashback dashes through my mind! 
+@text My memories are showing me a vivid image of that scene...!! 
+@text The image of Kurumi-chan sitting down... in that dim shrine...!!!
+removeBG 0 0 2
+cmd2 13
+bgload 00000000 BG02NR 0 4 0 0 2
+@text (Wh-Why...? Why...!?) 
+@text (I don't... I don't understand why...) 
+@text A sharp pain starts running through my head. 
+@text Right now, I'm so confused that I can't think straight. 
+@text I slowly look up at the clock. 
+@text It's almost... 5:00... 
+@text Today is April 6th... 
+@text The 6th... 
+@text 5:00... on the 6th...
+removeBG 0 0 2
+@text "Then no matter what happens, history wouldn't change." 
+@text "Everything which occurs in the world has been predetermined from the beginning." 
+@text Even though we planned to change it... 
+@text The truth is, nothing has changed... 
+@text Aside from some very minor things, nothing... has changed... 
+@text 【Saki】 "Anyway, sitting still here won't get anything solved..." 
+@text 【Saki】 "... Why don't we all quickly split up and look for Kurumi?" 
+@text ... It feels like her voice is coming from somewhere far, far away. 
+@text ...
+stopBGM
+bgload 00000000 BG02NR 0 4 0 0 2
+@text ~
+playSFX 0 1
+@text A sudden sound brings me back to reality.
+playBGM 13
+@text 【Saki】 "Hold on, Makoto-kun! Where are you going!?" 
+@text At that moment, I see... Makoto rushing out the front door! 
+@text ――Wham! 
+@text In that instant, it feels like all the blood in my body has been drained away. 
+@text It can't be...! 
+@text It can't be, it can't be...! 
+@text My body moves faster than I can think.
+@text ~
+playSFX 0 1
+fgload 0 00000000 SA11BA 1 3
+@text 【Saki】 "... Huh!? Y-Yuka!?"
+removeFG 0 3
+@text I rush out into the downpour, chasing after Makoto as fast as I can.
+bgload 00000000 BG12NR 0 4 0 0 2
+playSFX 30 1
+cmd1 26
+@text I go flying through the cold, large raindrops. 
+@text I see Makoto far ahead of me, sprinting as fast as I am, with all of his might. 
+@text The muddy ground constantly trips me up. 
+@text Even so, I don't slow down, and continue to run fiercely. 
+@text I've... I've got to stop Makoto! 
+@text I know where he's going. 
+@text To... that shrine! 
+@text At this rate... at this rate...! 
+@text It won't just be Kurumi, but Makoto as well...!! 
+@text I bellow as loud as I can. 
+@text 【Yuka】 "MAKOTO! MAKOTO!" 
+@text ... 
+@text But Makoto doesn't turn around...
+stopSFX
+playSFX 40 1
+bgload 00000000 BG13ZNR 0 4 0 0 2
+playSFX 30 1
+@text We come out to the coastline. 
+@text It feels like the rain has gotten even stronger. 
+@text My whole body is soaked, and my arms and legs have gone numb. 
+@text Soon, we'll reach the T-junction that leads to the shrine. 
+@text If I reach that shrine, then there's no doubt that history will repeat itself. 
+@text But... 
+@text But that doesn't matter right now! 
+@text All I want to do is to stop Makoto from going to the shrine. 
+@text ――The earthquake will cause the ground to shake. ――The shrine will collapse. ――And we'll be sqaushed by the debris... 
+@text (I can't let that happen...! Absolutely not!!) 
+@text I clench my teeth to make that horrible scene go away. 
+@text (We'll return to the free world...!) 
+@text (We'll see the sunrise of the 7th together...!)  
+@text 【Yuka】 "――That's right, we promised each other!!!"
+bgload 00000000 BG23NR 0 4 0 0 2
+@text I've reached the long staircase that leads up to the shrine―― 
+@text I've finally caught up to Makoto.
+stopSFX
+stopBGM
+@text 【Yuka】 "Wait!" 
+@text I grab Makoto's arm, then slip around so that I'm in front of him...
+cmd2 6
+playBGM 21
+bgload 00000000 EV_YU09A 0 4 0 0 2
+@text ... I stand in front of the staircase, and spread my arms. 
+@text 【Makoto】 "Yuka..." 
+@text 【Yuka】 "Don't go!" 
+@text 【Yuka】 "Please... don't go!" 
+@text 【Makoto】 "Kurumi's... Kurumi's in this shrine." 
+@text 【Makoto】 "So I've got... to go..." 
+@text 【Makoto】 "I've got... to save Kurumi..." 
+@text I know that. 
+@text I want to save Kurumi-chan too... 
+@text But...! 
+@text 【Yuka】 "No! I absolutely can't let you... Absolutely not..." 
+@text I understand. 
+@text The one that Makoto is trying to save isn't just Kurumi. 
+@text 【Makoto】 "Get out of the way, Yuka... There's no time..." 
+@text Just like last time, he's trying to protect me.  
+@text Just like he swore he would under that starry sky... 
+@text 【Yuka】 "If you go in there, things will turn out the same way again...!" 
+@text 【Yuka】 "Nothing will change..." 
+@text 【Yuka】 "We won't be able to return to the free world!"  
+@text 【Makoto】 "Yeah... I know..." 
+@text 【Makoto】 "Certainly, that much is true right now..." 
+@text 【Makoto】 "But..." 
+@text Makoto takes something out of his pocket. 
+@text It's his bell, the one Kurumi found at Moon Beach on the 3rd...
+playSFX 90 1
+@text He... drops the bell... on the ground. 
+@text And then... 
+@text 【Yuka】 "... Huh?"
+playSFX 100 1
+@text ... With all of his strength, he stomps on it.
+playSFX 30 1
+@text ... 
+@text All that's left are shattered, small metal pieces. 
+@text They're shining in a puddle... 
+@text In other words, out of his own free will... 
+@text ... Makoto has just severed the thread of his life.
+stopSFX
+@text 【Makoto】 "... This is the end." 
+@text 【Yuka】 "... Makoto..." 
+@text 【Makoto】 "I can't go back again..." 
+@text 【Makoto】 "I can't... go back to the past..." 
+@text 【Makoto】 "I will end... everything here..." 
+@text 【Yuka】 "..." 
+@text Makoto's words wring my heart. 
+@text I can't go back to the past... 
+@text So... in other words...?
+bgload 00000000 EV_YU09B 0 4 0 0 2
+@text 【Yuka】 "No..." 
+@text 【Yuka】 "I don't want that!" 
+@text The desperation I've been able to hold back up until now comes pouring out. 
+@text 【Yuka】 "No more... I don't... want this!" 
+@text ――This feeling definitely isn't anger. 
+@text 【Yuka】 "I don't want to lose... another precious person!" 
+@text ――On the other hand, it's not sadness. 
+@text 【Yuka】 "I don't want to lose you..." 
+@text ――Nor is it pity, misery, or compassion. 
+@text 【Yuka】 "You went as far... as risking your own life... trying to save... mine..." 
+@text ――It's just my plain feelings for Makoto at the bottom of my heart... 
+@text 【Yuka】 "Please... please..." 
+@text 【Makoto】 "..." 
+@text Without a word, he brushes past my shoulder, and walks past me. 
+@text The time it takes for him to pass by me feels long, like it's in slow motion. 
+@text In that slow motion moment... 
+@text I look at his eyes as he passes by me. 
+@text They're swelling with determination. 
+@text Where have I seen... eyes that resemble those before...?
+removeBG 0 0 2
+@text ――In that instant, a certain scene that I remember is reflected before my eyes. 
+@text A scene dyed in orange... 
+@text It's of that boy, at that time... 
+@text At that place...   
+@choice In front of the burning hotel.|In the art room after school.
+@setvar vap_seldt = selected
+@if seldt == 0
+@    goto ap_hotel_de_sibou
+@fi
+@goto ap_bijyutsu_de_go
+@label ap_hotel_de_sibou
+@text I was watching the flames blow up from the windows of the 3rd floor of that burning hotel.  
+@text That image from that dark night that looked like a depiction of hell... 
+@text Someone was glaring at that hotel. 
+@text ... It was him. 
+@text If you were to follow his glance, you could see someone at the windows on the 4th floor. 
+@text There was a person still trapped inside. 
+@text At that moment, the boy boldly plunged into the hellfire. 
+@text The one left behind in that fire... ... was definitely me... 
+@text Tears well up in my eyes. 
+@text Gradually, the scenery before me shifts and warps...
+removeBG 0 0 2
+stopBGM
+bgload 00000000 BG23NR 0 4 0 0 2
+cmd1 26
+playSFX 30 1
+@text While my overflowing tears are pouring out... 
+@text I'm still at the foot of the shrine's staircase... 
+@text I see Makoto running up the staircase. 
+@text The pouring rain brings me back to my senses. 
+@text 【Yuka】 "Makoto!!"
+stopSFX
+playSFX 42 1
+@text I wipe my tears away, and chase after him. 
+@text I run as fast as I can up the stairs. 
+@text The rain hits me hard, as if it's trying to stop me from going. 
+@text (I won't let the same history repeat itself... I'll...!)
+stopSFX
+bgload 00000000 BG24NR 0 4 0 0 2
+playSFX 30 1
+@text By the time I reach the top, Makoto is already running past the shrine grounds. 
+@text 【Yuka】 "WAIT!" 
+@text When he hears me, Makoto stops and turns around. 
+@text 【Makoto】 "Stay away!" 
+@text 【Makoto】 "Stay here..." 
+@text ... In that instant, Makoto goes running off. 
+@text But I ignore Makoto and run into the shrine. 
+@text 【Makoto】 "Yuka!"
+stopSFX
+@goto ap_jinjya_ni_go
+@label ap_bijyutsu_de_go
+@text The empty art room. 
+@text The art room after school, before nightfall. 
+@text I'd been squinting because of the light from the setting sun coming in through the window. 
+@text Before my eyes, someone was drawing in a sketchbook. 
+@text ... It was that boy. 
+@text Before long, he finished his drawing, and presented it to me. 
+@text It was a drawing of two doves flying out of the window. 
+@text And then... 
+@text 【Boy】 "If you stay tied down, you can never be free."  
+@text 【Boy】 "If you want to be free, then you mustn't be afraid." 
+@text ... He said that, and pointed outside the open window.
+cmd1 18
+@text Outside were cherry blossoms in full bloom... 
+@text They fluttered about wondrously, concealing everything in front of them...
+@text ~
+cmd2 12
+delay 90
+cmd2 0
+bgload 00000000 BG23NR 0 4 0 0 2
+cmd1 26
+playSFX 30 1
+@text The light pink petals transform into transparent drops of rain... 
+@text I'm still at the foot of the shrine's staircase... 
+@text I see Makoto running up the staircase. 
+@text The pouring rain brings me back to my senses.
+@text ~
+stopSFX
+stopBGM
+@text (N... No...) 
+@text (No... I don't want this...) 
+@text (I... If Makoto's going, then I should go in to make sure he stays safe...!)
+@text ~
+playSFX 118 1
+@text (――――!?) 
+@text Suddenly, in the darkness, I see a radiance as bright as the sun! 
+@text I'm not thinking of myself, but being considerate of Makoto first!! 
+@text In other words, this is...!! 
+@text 【Yuka】 "Makoto...!!" 
+@text I run up to Makoto, and grab him by the arm, pulling him towards me. 
+@text 【Makoto】 "... Wha-!? C-Cut it out and get back!"
+cmd2 6
+bgload 00000000 EV_YU09B 0 4 0 0 2
+playBGM 12
+@text 【Yuka】 "I love you..." 
+@text 【Makoto】 "!?" 
+@text 【Yuka】 "I've loved you... all this time..." 
+@text 【Yuka】 "It's true that I went to this shrine because I couldn't forget that boy. But..." 
+@text 【Yuka】 "But I realized it was wrong... That feeling was wrong..." 
+@text 【Yuka】 "Makoto, I love you..." 
+@text 【Makoto】 "...Y-Yu――"
+playSFX 72 1
+@text ――And then I thrust Makoto away! 
+@text Makoto falls behind me, dancing in the air briefly before hitting the ground with a thud. 
+@text 【Yuka】 "From the beginning, from that moment where everything began, I've loved you!!"
+playSFX 30 1
+@text ... 
+@text The pelting rain beats mercilessly from the sky... 
+@text While sitting on the ground, Makoto stares up, looking dumbfounded. 
+@text 【Yuka】 "..." 
+@text I've told him my feelings... 
+@text This is enough...
+stopSFX
+bgload 00000000 BG23NR 0 4 0 0 2
+playSFX 30 1
+cmd1 26
+@text I bite down on my lips hard, then turn around and start running up the staircase. 
+@text The one to save Kurumi-chan won't be Makoto, but me! 
+@text Right now, the one that this weak person known as "me" wants to protect the most... is... 
+@text (It's not myself.... it's Makoto!!) 
+@text I order myself to keep kicking off the stone steps. 
+@text 【Makoto】 "YUKAAAAAAA!!!!" 
+@text Makoto is chasing after me...! 
+@text 【Yuka】 "Stay away..." 
+@text 【Yuka】 "Please... stay away!"
+@text ~
+delay 30
+@text 【Yuka】 "STAY AWAAAY!!!!" 
+@text My bitter scream breaks through the roar of the rain and echoes loudly...
+bgload 00000000 BG24N 0 4 0 0 2
+@text With all my strength, I run up the staircase, and step onto the shrine's grounds. 
+@text And then, without stopping, I run into the shrine with the speed of a hurricane.
+stopSFX
+stopBGM
+@label ap_jinjya_ni_go
+@text ~
+removeBG 0 0 2
+cmd2 6
+delay 90
+bgload 00000000 BG25NN 0 4 0 0 2
+cmd2 0
+@text (――What!?) 
+@text The shrine is completely empty... 
+@text (... No way! Kurumi-chan should've been here!!)  
+@text I look around in confusion. 
+@text (――!?) 
+@text I can feel a faint draft of wind... 
+@text ... Could it be!? 
+@text I move aside the small altar at the front wall, and pass through the hole. 
+@text 【Makoto】 "Hey! Yuka!" 
+@text I can hear Makoto behind me. 
+@text (This is bad! I've got to hurry!!) 
+@text I go out to the backside of the shrine as fast as I can――!
+bgload 00000000 EV_YU12 0 4 0 0 2
+@text However... 
+@text (Wh-Why!? What... is this??) 
+@text Makoto comes out from the hole in the wall. 
+@text And then, he surveys the area, then looks at me. 
+@text Kurumi's not here either... 
+@text Makoto is looking at me with curious eyes... 
+@text Mine are probably the same...
+cmd1 14
+playSFX 117 1
+@text ... Before long, the earth begins to violently shake.
+removeBG 0 0 2
+cmd2 0
+@text Our time limit's up――――. 
+@text Those words flash through my mind. 
+@text I put my hand into my pocket, looking for the bell... 
+@text ... Wait, "bell"? 
+@text ... Makoto!? 
+@text Makoto's here, but he has no bell!!! 
+@text The tremors increase in intensity.
+stopSFX
+playSFX 116 1
+@text Overhead, small splinters are falling, the wooden structure collasping. 
+@text I look behind me, and see Makoto staring at this with wide eyes.
+stopSFX
+@text (――――――――!!!) 
+@text Althogh I can't think anymore, there's still one thought in my head... 
+@text Just one single firm thought!
+@if v_lf_already_dead == 0
+@	goto ap_nodead
+@fi
+@text I wish...
+@goto ap_back_to_the_future
+@label ap_nodead
+@text I wish...   
+@choice For us to be together forever...!|For a miracle to happen once more...!
+@setvar vap_seldt = selected
+@if seldt == 0
+@    goto ap_go_to_the_future
+@fi
+@goto ap_back_to_the_future
+@label ap_go_to_the_future
+@text "We'll be together forever...!" 
+@text I take out the bell, and grasp it tightly.
+bgload 00000000 EV_YU12 0 4 0 0 2
+playBGM 21
+@text 【Yuka】 "I'll go with you too..." 
+@text 【Makoto】 "!?" 
+@text ... And just like that... 
+@text ... I... 
+@text ... throw the bell... 
+@text ... into the sea...
+playSFX 116 1
+removeBG 0 0 2
+playSFX 117 1
+@text At the same time, I hear the sound of the shrine crumbling... 
+@text With this... 
+@text Everything is over... 
+@text ――At that time, Makoto fiercely lunges forward!
+@text ~
+delay 60
+@text He grabs me, pushes down on the ground and jumps... 
+@text ... With that force, we flutter around up in mid-air. 
+@text Makoto and I embrace each other as we fall down towards the black sea...
+@text ~
+stopSFX
+delay 60
+playSFX 90 1
+@text ... I see a shooting star. 
+@text That star of hope makes a clear sound...
+stopSFX
+stopBGM
+@text And finally, I lose consciousness――.
+@text ~
+removeBG 0 0 2
+delay 180
+@text ... 
+@text ... 
+@text ――I'm in a black space. 
+@text ――There, I find a fragment of my memories. 
+@text ――A memory of that far off day, when I looked at that clear sky and heard the story about the twins... 
+@text "The two of them were so close that they were always together, no matter what time." 
+@text "So likewise... They wanted to die at the same time..." 
+@text "And so Pollux made a request to Zeus." 
+@text "'Take away my immortality'." 
+@text "Zeus granted that wish, and the two of them went up to the heavens together..." 
+@text "... They became a constellation that shines in the winter skies..." 
+@text ...
+@text ~
+playSFX 90 1
+delay 180
+jump c_yuka7.snr
+@label ap_back_to_the_future
+@text "Let a miracle happen once more...!" 
+@text If the things known as "miracles" exist in this world, then... 
+@text (Please! One more time...!!) 
+@text I take out the bell and grasp it.
+bgload 00000000 BG31R 0 4 0 0 2
+@text At that time, Makoto leaps forward! 
+@text But it's too late.
+removeBG 0 0 2
+playSFX 117 1
+cmd1 5
+@text Before I can touch Makoto, I am struck by a sudden impact from above. 
+@text And then... my consciousness is torn to pieces――.
+@text ~
+stopSFX
+delay 240
+@text ~
+playBGM 15
+delay 60
+@text I'm so... cold... 
+@text My whole body has gone numb. I can't move. 
+@text Strangely, there's no pain. 
+@text I close my eyes partly, and focus my faint, dim field of vision.
+bgload 00000000 EV_AL01 0 4 0 0 2
+@text I see my heavily dangling palm. 
+@text On top of it is a small fragment of light... 
+@text ――It's the bell. 
+@text I've already lost all sensation in my hand. 
+@text Is that really my hand...? 
+@text (Is this... a dream...?) 
+@text ... Something is touching my cheek. 
+@text It's someone's bloodstained hand... 
+@text Right in front of me... is Makoto. 
+@text He crawled over here with all of his strength. 
+@text He's touching my frail cheek... 
+@text That hand gradually weakens.
+stopBGM
+@text (Yes. This is definitely... some kind of nightmare...)
+removeBG 0 0 2
+playBGM 22
+@text I'm still sleeping in the lodge... 
+@text (I'll definitely wake up right now...) 
+@text When I wake up, I'll immediately reconcile with Makoto... 
+@text Tomorrow afternoon, we'll be riding on the rocky ferry home. 
+@text Before long, we'll return to our daily lives, and all of these events will just become recollections. 
+@text At college, Makoto and I will meet up with each other, and talk about the past. 
+@text Our current selves will become memories for our future selves. 
+@text And occasionally, I'll open my album of memories and look back at the time I met Makoto... 
+@text We'll definitely be able to talk about those times with a smile. 
+@text We might even be able to talk about it with others. 
+@text Yes, for example... with Saki. 
+@text (I'll definitely wake up right now...) 
+@text (... I'll definitely wake up...) 
+@text (... I'll definitely... wake...) 
+@text (... I'll... definitely...)
+removeBG 0 0 2
+@text The life in Makoto's eyes begins to grow dimmer... 
+@text This is a dream... that cannot be woken from....  
+@text 【Yuka】 "Why...?" 
+@text My hoarse voice fills this empty void. 
+@text In my fading consciousness, Makoto's existence has... 
+@text ... I feel the Makoto I know has completely disappeared. 
+@text Endless tears pour down my face.
+stopBGM
+@text Before long, the bell...
+bgload 00000000 EV_AL01B 0 4 0 0 2
+@text ~
+playSFX 90 1
+@text Gently slips out of my palm...
+@text ~
+delay 60
+removeBG 0 0 2
+delay 180
+returnTitle

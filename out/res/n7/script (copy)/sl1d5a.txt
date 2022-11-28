@@ -1,0 +1,1983 @@
+[00000054] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 5
+[0000005f] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 5
+[0000006a] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000076] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000082] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 5
+[0000008d]  0: 
+[0000008e]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 000000a2 (0002)
+[0000009c] 10: 
+[0000009d] 1c: cmd1C
+[0000009e]  0: 
+[0000009f]  7: goto7 000000ad (0003)
+[000000a2] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[000000ad]  0: 
+[000000ae]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 000000be (0005)
+[000000bc] 10: 
+[000000bd] 18: cmd18
+[000000be] 10: 
+[000000bf] 1b: dayIntro 00000000 BGCAL5SA.cps
+[000000c6] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 54
+[000000d2] 10: 
+[000000d3] 10: bgload 00000000 BG01NN 0 1
+[000000e0] 10: 
+[000000e1]  6: playBGM 9
+[000000e5] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 5
+[000000f0] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 5
+[000000fb] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[00000106] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 10
+[00000111] 10: 
+[00000112] 17: showClock
+[00000113] 10: 
+[00000114] 19: 
+[00000115] ff: text 00
+{textColor 0 2}Suddenly... I wake up. 
+{textColor 0 2}It's not that I had a nightmare, or heard a loud sound. 
+{textColor 0 2}I just somehow woke up for no reason... 
+{textColor 0 2}I take a look at my watch, which I'd placed on my bedside. 
+{textColor 0 2}"1:10 A.M."... It's probably only been about three hours since I went to bed. 
+{textColor 0 2}My mind is surprisingly wide awake, so I try to do multiplication tables in my mind to help me go back to sleep. 
+{textColor 0 2}I try this countless times... 
+{textColor 0 2}It's no use- I'm too alert. 
+{textColor 0 2}Resigning myself, I slip out of bed and head out to the living room... 
+
+
+[00000118] 10: 
+[00000119]  7: stopBGM
+[0000011a] 10: 
+[0000011b] 10: bgload 00000000 BG02NN 4 1
+[00000128] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[00000133] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 25
+[0000013f] 10: 
+[00000140] 17: showClock
+[00000141] 10: 
+[00000142] 19: 
+[00000143] ff: text 01
+{textColor 0 2}Of course, there's no one in the living room. 
+{textColor 0 2}I let out a sigh in the quiet, empty room. 
+{textColor 0 2}I can hear Okuhiko snoring from up in the loft. 
+{textColor 0 2}Then, all of the sudden... 
+
+
+[00000146] 10: 
+[00000147]  b: playVoice KL1D5000
+[00000151] 10: 
+[00000152] 19: 
+[00000153] ff: text 02
+{textColor 0 0}【Okuhiko】 "Hey! Wait!" 
+{textColor 0 2}... Okuhiko suddenly shouts in a roaring voice.  {textColor 0 2}When I look up in surprise... 
+
+
+[00000156] fe: varop VAR_(28_0a)_a1_0b (14) := (00) VAR_(28_0a)_a0_cb
+[00000162] 14: unsupported 20 
+[00000163]  0: 
+[00000164] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cc
+[00000170] 14: unsupported 20 
+[00000171]  0: 
+[00000172] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cd
+[0000017e] 14: unsupported 20 
+[0000017f]  0: 
+[00000180] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_ce
+[0000018c] 14: unsupported 20 
+[0000018d]  0: 
+[0000018e]  0: 
+[0000018f]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (80)->0 (15) (00)  * 000001b1 (0006)
+[0000019d] 10: 
+[0000019e]  b: playVoice KL1D5001
+[000001a8] 10: 
+[000001a9] 19: 
+[000001aa] ff: text 03
+{textColor 0 0}【Okuhiko】 "This is bad...{delay 5}{delay 5} I...{delay 5}{delay 5} don't have...{delay 5}{delay 5} enough...{delay 5}{delay 5}{delay 5} energy...{delay 5}{delay 5}{delay 5}{delay 5}... Zzz..." 
+
+
+[000001ad]  0: 
+[000001ae]  7: goto7 0000022a (000a)
+[000001b1]  0: 
+[000001b2]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (81)->1 (15) (00)  * 000001d4 (0007)
+[000001c0] 10: 
+[000001c1]  b: playVoice KL1D5002
+[000001cb] 10: 
+[000001cc] 19: 
+[000001cd] ff: text 04
+{textColor 0 0}【Okuhiko】 "Neutrino Energy, Power On! ...{delay 5}{delay 5} Trans〜{delay 5}{delay 5}form! ...{delay 5}{delay 5} There!{delay 5}{delay 5}{delay 5}{delay 5} ... Zzz..." 
+
+
+[000001d0]  0: 
+[000001d1]  7: goto7 0000022a (000a)
+[000001d4]  0: 
+[000001d5]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (82)->2 (15) (00)  * 000001f7 (0008)
+[000001e3] 10: 
+[000001e4]  b: playVoice KL1D5003
+[000001ee] 10: 
+[000001ef] 19: 
+[000001f0] ff: text 05
+{textColor 0 0}【Okuhiko】 "You've shown yourself, Mysterious Hi-Tech Vacuum Cleaner Man...{delay 5}{delay 5} Ugh...{delay 5}{delay 5} He's...{delay 5}{delay 5} sucking...{delay 5}{delay 5} me in...{delay 5}{delay 5}{delay 5}{delay 5} ... Zzz..." 
+
+
+[000001f3]  0: 
+[000001f4]  7: goto7 0000022a (000a)
+[000001f7]  0: 
+[000001f8]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (83)->3 (15) (00)  * 0000021a (0009)
+[00000206] 10: 
+[00000207]  b: playVoice KL1D5004
+[00000211] 10: 
+[00000212] 19: 
+[00000213] ff: text 06
+{textColor 0 0}【Okuhiko】 "Good work...{delay 5}{delay 5}{delay 5}{delay 5} Zzz..." 
+
+
+[00000216]  0: 
+[00000217]  7: goto7 0000022a (000a)
+[0000021a] 10: 
+[0000021b]  b: playVoice KL1D5005
+[00000225] 10: 
+[00000226] 19: 
+[00000227] ff: text 07
+{textColor 0 0}【Okuhiko】 "Hey! ... Kid!{delay 5}{delay 5} ... Get off of the stage! {delay 5}{delay 5} ... Hey, stop it!{delay 5}{delay 5} ... Don't...{delay 5}{delay 5} lower...{delay 5}{delay 5} that zipper!{delay 5}{delay 5}{delay 5}{delay 5} ... Zzz..." 
+
+
+[0000022a] fe: varop VAR_(28_0a)_a1_0b (14) := (00) 0
+[00000235] 10: 
+[00000236] 19: 
+[00000237] ff: text 08
+{textColor 0 2}... It seems he's just sleeptalking. 
+{textColor 0 2}(Whew... man, what kind of dream is he having anyway...?) 
+{textColor 0 2}I ignore Okuhiko, and casually decide to try going outside the lodge... 
+
+
+[0000023a] 10: 
+[0000023b] 10: bgload 00000000 BG00N 4 1
+[00000248] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[00000253] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 28
+[0000025f] 10: 
+[00000260] 17: showClock
+[00000261] 10: 
+[00000262] 19: 
+[00000263] ff: text 09
+{textColor 0 2}From an opening in the forest, I can vaguely see that the lights in Saki's summer house are on. 
+{textColor 0 2}(That's right... there's something I've got to ask Saki!) 
+{textColor 0 2}I determinedly head towards the summer house. 
+
+
+[00000266] 10: 
+[00000267]  f: removeBG 0 4 2
+[00000271] 10: 
+[00000272]  8: playSFX SE088 1
+[0000027c]  0: 
+[0000027d]  5: delay 60
+[00000282] 10: 
+[00000283] 10: bgload 00000000 BG04N 4 1
+[00000290] 10: 
+[00000291] 19: 
+[00000292] ff: text 0a
+{textColor 0 2}In any case, there's just too many things about Saki that are bothering me. 
+{textColor 0 2}The bell... Haruka... 
+{textColor 0 2}I'll make sure I get the full story this time. 
+{textColor 0 2}I'm unusually confident right now. 
+{textColor 0 2}When I arrive at the summer house, I start to reach for the buzzer. 
+{textColor 0 2}At that time... 
+
+
+[00000295] 10: 
+[00000296]  8: playSFX SE084 1
+[000002a0] 10: 
+[000002a1] 19: 
+[000002a2] ff: text 0b
+{textColor 0 2}(Hmm...?) 
+{textColor 0 2}I feel like I can hear Saki's voice. 
+{textColor 0 2}I try to strain my ears. 
+
+
+[000002a5] 10: 
+[000002a6]  8: playSFX SE085 1
+[000002b0] 10: 
+[000002b1]  b: playVoice SL1D5000
+[000002bb] 10: 
+[000002bc] 19: 
+[000002bd] ff: text 0c
+{textColor 1 6}【Saki】 "Wait. Didn't I tell you to wait?" 
+
+
+[000002c0] 10: 
+[000002c1]  9: stopSFX
+[000002c2] 10: 
+[000002c3]  6: playBGM 18
+[000002c8] 10: 
+[000002c9]  8: playSFX SE084 1
+[000002d3] 10: 
+[000002d4] 19: 
+[000002d5] ff: text 0d
+{textColor 0 2}I was right. 
+{textColor 0 2}I walk towards the direction of the voice. 
+{textColor 0 2}I circle halfway around the wide grounds, and arrive at the backyard. 
+{textColor 0 2}There's light coming from the area around the back door. 
+{textColor 0 2}Saki's lively voice grows louder as I get closer. 
+{textColor 0 2}I can also hear some kind of high-pitched bark... 
+
+
+[000002d8] 10: 
+[000002d9]  8: playSFX SE083 1
+[000002e3] 10: 
+[000002e4] 19: 
+[000002e5] ff: text 0e
+{textColor 0 2}I stop and stare. 
+
+
+[000002e8] 10: 
+[000002e9] 10: bgload 00000000 EV_SA04 0 1
+[000002f6] 10: 
+[000002f7] 19: 
+[000002f8] ff: text 0f
+{textColor 0 2}Saki's there. 
+{textColor 0 2}She's wearing a pair of glasses, and is holding, in her arms, a playful puppy by her feet. 
+{textColor 0 2}It seems to be a stray puppy. 
+{textColor 0 2}It's the source of that bark I heard just now... 
+
+
+[000002fb] 10: 
+[000002fc]  b: playVoice SL1D5001
+[00000306] 10: 
+[00000307] 19: 
+[00000308] ff: text 10
+{textColor 1 6}【Saki】 "You worried me! Where did you go?" 
+
+
+[0000030b] 10: 
+[0000030c]  8: playSFX SE083 1
+[00000316] 10: 
+[00000317] 19: 
+[00000318] ff: text 11
+{textColor 0 2}The puppy she's holding happily licks her cheek. 
+{textColor 0 2}She lets out a ticklish laugh. 
+{textColor 0 2}I'm surprised to see Saki so different from her usual self. 
+{textColor 0 2}Of course, I'm not talking about her glasses. 
+{textColor 0 2}I'm talking about how gentle, peaceful, and content she looks. 
+
+
+[0000031b] 10: 
+[0000031c]  b: playVoice SL1D5002
+[00000326] 10: 
+[00000327] 19: 
+[00000328] ff: text 12
+{textColor 1 6}【Saki】 "Okay, wait there for a little bit." 
+
+
+[0000032b] 10: 
+[0000032c]  8: playSFX SE084 1
+[00000336] 10: 
+[00000337] 19: 
+[00000338] ff: text 13
+{textColor 0 2}Saki puts the puppy down, and disappears into the house. 
+{textColor 0 2}The dog wags its tail back and forth and starts barking in its high-pitched voice. 
+{textColor 0 2}I approach the back door. 
+{textColor 0 2}The puppy almost notices me, so I head for cover. 
+{textColor 0 2}Saki comes out. 
+{textColor 0 2}She's holding a plastic container with something inside. 
+{textColor 0 2}The puppy vigorously wags its tail as it barks in anticipation. 
+
+
+[0000033b] 10: 
+[0000033c]  8: playSFX SE083 1
+[00000346] 10: 
+[00000347]  b: playVoice SL1D5003
+[00000351] 10: 
+[00000352] 19: 
+[00000353] ff: text 14
+{textColor 1 6}【Saki】 "Shh. You won't get a treat if you're naughty." 
+{textColor 0 2}Saki scolds the puppy a bit before opening the plastic container. 
+{textColor 0 2}Inside are leftovers of a splendid meat dish. 
+{textColor 0 2}Saki crouches down, and presents the plastic container to the puppy. 
+{textColor 0 2}It excitedly chews on the meat. 
+{textColor 0 2}――I see! 
+{textColor 0 2}I recall the quarrel at the barbecue. 
+{textColor 0 2}The beef she took back then... she actually planned to split it with this puppy... 
+{textColor 0 2}It seems that she felt very uneasy about stealing the beef from us, but at that point, she'd gone too far to retreat... 
+
+
+[00000356] 10: 
+[00000357]  b: playVoice SL1D5004
+[00000361] 10: 
+[00000362] 19: 
+[00000363] ff: text 15
+{textColor 1 6}【Saki】 "Don't eat so quickly... or you'll choke." 
+{textColor 0 2}Saki gently pets the puppy on its back, her face brimming with affection. 
+{textColor 0 2}Even though she's nothing but extremely aggressive and foul-mouthed towards the rest of us... 
+{textColor 0 2}(She really is a kind girl deep down, isn't she...?) 
+{textColor 0 2}I quietly leave so that Saki doesn't notice me. 
+{textColor 0 2}My thoughts of questioning Saki have completely disappeared. 
+{textColor 0 2}It seems like I'll be going to sleep in a good mood... 
+
+
+[00000366] 10: 
+[00000367]  7: stopBGM
+[00000368] 10: 
+[00000369]  f: removeBG 0 0 2
+[00000373] 10: 
+[00000374] 10: bgload 00000000 BG01NN 0 1
+[00000381] 10: 
+[00000382] 19: 
+[00000383] ff: text 16
+{textColor 0 2}That feel-good state lingers as I go to bed, and allows me to quickly fall asleep... 
+
+
+[00000386] 10: 
+[00000387]  f: removeBG 0 3 2
+[00000391]  0: 
+[00000392]  5: delay 60
+[00000397] 10: 
+[00000398] 10: bgload 00000000 BG01NN 0 1
+[000003a5] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[000003b0] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 52
+[000003bc] 10: 
+[000003bd] 17: showClock
+[000003be] 10: 
+[000003bf] 19: 
+[000003c0] ff: text 17
+{textColor 0 2}But that slumber is brief. 
+
+
+[000003c3] 10: 
+[000003c4]  8: playSFX SE009 1
+[000003ce]  0: 
+[000003cf]  5: delay 12
+[000003d3] 10: 
+[000003d4]  8: playSFX SE009 1
+[000003de] 10: 
+[000003df] 19: 
+[000003e0] ff: text 18
+{textColor 0 2}(It's so noisy... Who is it? Just when I finally got into a good mood...) 
+{textColor 0 2}Just before I can fall deeply asleep, that sound disturbs it. 
+{textColor 0 2}It's the sound of tapping on the window... 
+{textColor 0 2}The small window on the wide ceiling... someone's tapping it... 
+{textColor 0 2}Irritated, I stand on top of my bed. 
+{textColor 0 2}I stand on my tiptoes and open the ceiling window. 
+{textColor 0 2}Pulling up with both of my arms, I raise the upper half of my body outside the window... 
+{textColor 0 0}【Makoto】 "!?" 
+
+
+[000003e3] 10: 
+[000003e4]  6: playBGM 3
+[000003e8] 10: 
+[000003e9] 19: 
+[000003ea] ff: text 19
+{textColor 0 2}It's Saki. 
+{textColor 0 2}Saki tapped the window with a long tree branch. 
+{textColor 0 2}When Saki notices me, she averts her face as she becomes flustered, and talks rapidly. 
+
+
+[000003ed] 10: 
+[000003ee]  b: playVoice SL1D5005
+[000003f8] 10: 
+[000003f9] 19: 
+[000003fa] ff: text 1a
+{textColor 1 6}【Saki】 "I'm just in the middle of a walk." 
+{textColor 0 0}【Makoto】 "Come again?" 
+
+
+[000003fd] 10: 
+[000003fe]  b: playVoice SL1D5006
+[00000408] 10: 
+[00000409] 19: 
+[0000040a] ff: text 1b
+{textColor 1 6}【Saki】 "It's not like I came here to see you." 
+{textColor 0 0}【Makoto】 "Uh... what?" 
+
+
+[0000040d] 10: 
+[0000040e]  b: playVoice SL1D5007
+[00000418] 10: 
+[00000419] 19: 
+[0000041a] ff: text 1c
+{textColor 1 6}【Saki】 "In other words, it's all just a coincidence." 
+{textColor 0 0}【Makoto】 "Right..." 
+
+
+[0000041d] 10: 
+[0000041e]  b: playVoice SL1D5008
+[00000428] 10: 
+[00000429] 19: 
+[0000042a] ff: text 1d
+{textColor 1 6}【Saki】 "It's just that... while I'm here... thank you for this morning." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[0000042d] 10: 
+[0000042e]  b: playVoice SL1D5009
+[00000438] 10: 
+[00000439] 19: 
+[0000043a] ff: text 1e
+{textColor 1 6}【Saki】 "For the basket!" 
+{textColor 0 0}【Makoto】 "'While I'm here'..." 
+
+
+[0000043d] 10: 
+[0000043e]  b: playVoice SL1D5010
+[00000448] 10: 
+[00000449] 19: 
+[0000044a] ff: text 1f
+{textColor 1 6}【Saki】 "Well then, that means I've thanked you." 
+
+[0000044d] ff: text 20
+{textColor 0 2}{choiceOpt 1 -> "Wait." }{choiceOpt 2 -> "Y-Yeah..." }
+
+[00000450] 10: 
+[00000451]  3: choice v_a1_08 00 00
+[00000456]  0: 
+[00000457]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000522 (000c)
+[00000465] fe: varop VAR_(28_0a)_a1_01 (14) += (00) 1
+[00000470] 10: 
+[00000471] 19: 
+[00000472] ff: text 21
+{textColor 0 0}【Makoto】 "Wait." 
+
+
+[00000475] 10: 
+[00000476]  b: playVoice SL1D5011
+[00000480] 10: 
+[00000481] 19: 
+[00000482] ff: text 22
+{textColor 1 6}【Saki】 "Good night." 
+{textColor 0 0}【Makoto】 "Hey, I said wait!" 
+{textColor 0 0}【Makoto】 "Will you wait right there? Okay? Stay right there! Don't run off!" 
+
+
+[00000485] 10: 
+[00000486] 19: 
+[00000487] ff: text 23
+{textColor 0 2}Without waiting for Saki to reply, I shut the window, and get off the bed. 
+
+
+[0000048a] 10: 
+[0000048b] 10: bgload 00000000 BG03N 4 1
+[00000498] 10: 
+[00000499] 19: 
+[0000049a] ff: text 24
+{textColor 0 2}I quickly change my clothes and sneak outside. 
+{textColor 0 0}【Makoto】 "Saki!" 
+{textColor 0 2}I abruptly shout in alarm. Where is she? 
+
+
+[0000049d] 10: 
+[0000049e]  b: playVoice SL1D5012
+[000004a8] 10: 
+[000004a9] 19: 
+[000004aa] ff: text 25
+{textColor 1 6}【Saki】 "I'm right here!" 
+{textColor 0 0}【Makoto】 "Oh, good. You surprised me." 
+
+
+[000004ad] 10: 
+[000004ae] 11: fgload 0 00000000 SA01AAN 1 3
+[000004be] 10: 
+[000004bf]  b: playVoice SL1D5013
+[000004c9] 10: 
+[000004ca] 19: 
+[000004cb] ff: text 26
+{textColor 1 6}【Saki】 "I'm the one who's surprised. Yelling like that... So, what is it?" 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[000004ce] 10: 
+[000004cf]  b: playVoice SL1D5014
+[000004d9] 10: 
+[000004da] 19: 
+[000004db] ff: text 27
+{textColor 1 6}【Saki】 "Your business. What's your business with me?" 
+{textColor 0 0}【Makoto】 "I don't have any, but..." 
+
+
+[000004de] 10: 
+[000004df]  b: playVoice SL1D5015
+[000004e9] 10: 
+[000004ea] 19: 
+[000004eb] ff: text 28
+{textColor 1 6}【Saki】 "Then I'm going home." 
+{textColor 0 0}【Makoto】 "Hey, hey, I don't have to have business with you, do I? You've come all this way, after all..." 
+
+
+[000004ee] 10: 
+[000004ef]  b: playVoice SL1D5016
+[000004f9] 10: 
+[000004fa] 19: 
+[000004fb] ff: text 29
+{textColor 1 6}【Saki】 "Didn't I just tell you that coming here in the middle of my walk was a complete coincidence?" 
+{textColor 0 0}【Makoto】 "Why... in the middle of the night?" 
+
+
+[000004fe] 10: 
+[000004ff]  b: playVoice SL1D5017
+[00000509] 10: 
+[0000050a] 19: 
+[0000050b] ff: text 2a
+{textColor 1 6}【Saki】 "It doesn't matter, does it?" 
+{textColor 0 0}【Makoto】 "If it's doesn't matter, then come here." 
+
+
+[0000050e] 10: 
+[0000050f]  b: playVoice SL1D5018
+[00000519] 10: 
+[0000051a] 19: 
+[0000051b] ff: text 2b
+{textColor 1 6}【Saki】 "No way. The stars will move." 
+
+
+[0000051e]  0: 
+[0000051f]  7: goto7 00000605 (000d)
+[00000522] 10: 
+[00000523] 19: 
+[00000524] ff: text 2c
+{textColor 0 0}【Makoto】 "Y-Yeah..." 
+
+
+[00000527] 10: 
+[00000528]  b: playVoice SL1D5019
+[00000532] 10: 
+[00000533] 19: 
+[00000534] ff: text 2d
+{textColor 1 6}【Saki】 "Well then, good night." 
+{textColor 0 0}【Makoto】 "... Good night." 
+
+
+[00000537] 10: 
+[00000538] 19: 
+[00000539] ff: text 2e
+{textColor 0 2}Saki quickly goes down the lodge's staircase and leaves. 
+{textColor 0 2}I shut the window, and crawl into my bed again. 
+{textColor 0 2}Even though it was only for a short time, having the window open has caused the room to get freezing cold. 
+{textColor 0 2}I pull the covers over my head to try to preserve my escaping body temperature. 
+{textColor 0 2}And then, I think of Saki... 
+{textColor 0 2}The Saki who isn't honest towards other people. 
+{textColor 0 2}The Saki who doesn't show any weakness to other people. 
+{textColor 0 2}The Saki who is prouder than others. 
+{textColor 0 2}But I'm the only one who knows. 
+{textColor 0 2}I know the fact that Saki is a nice girl better than anyone else... 
+{textColor 0 2}... She's simply a little bad at expressing her feelings. 
+{textColor 0 2}What she did just now was the best she could do to express her thanks. 
+{textColor 0 2}While thinking about that, I feel that it's kinda lonely for Saki just to go home like that. 
+{textColor 0 2}(Saki...) 
+{textColor 0 2}Unable to keep my emotions in check, I push aside the covers. 
+{textColor 0 2}(I might have enough time to make it...) 
+
+
+[0000053c] 10: 
+[0000053d] 10: bgload 00000000 BG00N 4 1
+[0000054a] 10: 
+[0000054b] 19: 
+[0000054c] ff: text 2f
+{textColor 0 2}I quickly change my clothes and sneak outside. 
+{textColor 0 0}【Makoto】 "Saki!" 
+{textColor 0 2}There's no way she's here... Even so, I can't help but yell. 
+
+
+[0000054f] 10: 
+[00000550]  b: playVoice SL1D5020
+[0000055a] 10: 
+[0000055b] 19: 
+[0000055c] ff: text 30
+{textColor 1 6}【Saki】 "I'm right here!" 
+{textColor 0 0}【Makoto】 "Huh...!?" 
+
+
+[0000055f] 10: 
+[00000560] 11: fgload 0 00000000 SA01AAN 1 3
+[00000570] 10: 
+[00000571] 19: 
+[00000572] ff: text 31
+{textColor 0 0}【Makoto】 "What's this, you're still here... You surprised me." 
+
+
+[00000575] 10: 
+[00000576]  b: playVoice SL1D5021
+[00000580] 10: 
+[00000581] 19: 
+[00000582] ff: text 32
+{textColor 1 6}【Saki】 "I'm the one who's surprised. Yelling like that... So, what is it?" 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[00000585] 10: 
+[00000586]  b: playVoice SL1D5022
+[00000590] 10: 
+[00000591] 19: 
+[00000592] ff: text 33
+{textColor 1 6}【Saki】 "Your business. What's your business with me?" 
+{textColor 0 0}【Makoto】 "I don't have any, but..." 
+
+
+[00000595] 10: 
+[00000596]  b: playVoice SL1D5023
+[000005a0] 10: 
+[000005a1] 19: 
+[000005a2] ff: text 34
+{textColor 1 6}【Saki】 "Then I'm going back." 
+{textColor 0 0}【Makoto】 "Hey, hold on!" 
+
+
+[000005a5] 10: 
+[000005a6]  b: playVoice SL1D5024
+[000005b0] 10: 
+[000005b1] 19: 
+[000005b2] ff: text 35
+{textColor 1 6}【Saki】 "You don't have any business with me, right?" 
+{textColor 0 0}【Makoto】 "Nope." 
+
+
+[000005b5] 10: 
+[000005b6]  b: playVoice SL1D5025
+[000005c0] 10: 
+[000005c1] 19: 
+[000005c2] ff: text 36
+{textColor 1 6}【Saki】 "Then it's fine, isn't it?" 
+{textColor 0 0}【Makoto】 "... Well, do YOU have any business after this, Saki?" 
+
+
+[000005c5] 10: 
+[000005c6]  b: playVoice SL1D5026
+[000005d0] 10: 
+[000005d1] 19: 
+[000005d2] ff: text 37
+{textColor 1 6}【Saki】 "Nope." 
+{textColor 0 0}【Makoto】 "If that's the case... since you've come all this way, you ought to rest for a while." 
+
+
+[000005d5] 10: 
+[000005d6]  b: playVoice SL1D5027
+[000005e0] 10: 
+[000005e1] 19: 
+[000005e2] ff: text 38
+{textColor 1 6}【Saki】 "Didn't I just tell you that coming here in the middle of my walk was a complete coincidence?" 
+{textColor 0 0}【Makoto】 "Why... in the middle of the night?" 
+
+
+[000005e5] 10: 
+[000005e6]  b: playVoice SL1D5028
+[000005f0] 10: 
+[000005f1] 19: 
+[000005f2] ff: text 39
+{textColor 1 6}【Saki】 "It doesn't matter, does it?" 
+{textColor 0 0}【Makoto】 "If it's doesn't matter, then come here." 
+
+
+[000005f5] 10: 
+[000005f6]  b: playVoice SL1D5029
+[00000600] 10: 
+[00000601] 19: 
+[00000602] ff: text 3a
+{textColor 1 6}【Saki】 "No way. The stars will move." 
+
+
+[00000605] 10: 
+[00000606]  7: stopBGM
+[00000607] 10: 
+[00000608] 12: removeFG 0 3
+[0000060f] 10: 
+[00000610] 19: 
+[00000611] ff: text 3b
+{textColor 0 0}【Makoto】 "Stars?" 
+
+
+[00000614] 10: 
+[00000615] 10: bgload 00000000 BG30N 0 1
+[00000622] 10: 
+[00000623] 19: 
+[00000624] ff: text 3c
+{textColor 0 2}I suddenly look up. 
+{textColor 0 2}I'm taken aback as my heart is awestruck. 
+{textColor 0 2}The cloudless night sky is adorned with bright stars. 
+{textColor 0 2}I didn't notice them at all... 
+
+
+[00000627] 10: 
+[00000628] 10: bgload 00000000 BG00N 0 1
+[00000635] 10: 
+[00000636] 11: fgload 0 00000000 SA01AAN 1 3
+[00000646] 10: 
+[00000647]  b: playVoice SL1D5030
+[00000651] 10: 
+[00000652] 19: 
+[00000653] ff: text 3d
+{textColor 1 6}【Saki】 "The stars around here are at the height of their beauty around this season." 
+{textColor 0 0}【Makoto】 "So you like stars, Saki?" 
+
+
+[00000656] 10: 
+[00000657]  b: playVoice SL1D5031
+[00000661] 10: 
+[00000662] 19: 
+[00000663] ff: text 3e
+{textColor 1 6}【Saki】 "Not particularly." 
+{textColor 0 0}【Makoto】 "I get it... You definitely like them, right?" 
+{textColor 1 6}【Saki】 "..." 
+
+
+[00000666] 10: 
+[00000667] 12: removeFG 0 3
+[0000066e] 10: 
+[0000066f] 19: 
+[00000670] ff: text 3f
+{textColor 0 2}I remember what happened when I went to the summer house earlier. 
+{textColor 0 2}I feel that the sight of Saki looking at the stars really suits her, just as the sight of her being affectionate to that puppy was... 
+{textColor 0 2}Saki hangs her head down, and walks quickly. 
+{textColor 0 0}【Makoto】 "Where are you going?" 
+
+
+[00000673] 10: 
+[00000674]  b: playVoice SL1D5033
+[0000067e] 10: 
+[0000067f] 19: 
+[00000680] ff: text 40
+{textColor 1 6}【Saki】 "Over there." 
+{textColor 0 2}She starts walking towards the forest path. 
+{textColor 0 0}【Makoto】 "Then I'll go too." 
+
+
+[00000683] 10: 
+[00000684]  b: playVoice SL1D5034
+[0000068e] 10: 
+[0000068f] 19: 
+[00000690] ff: text 41
+{textColor 1 6}【Saki】 "Don't get close to me." 
+{textColor 0 0}【Makoto】 "Understood, mistress..." 
+{textColor 0 2}For some reason, I'm not angry. 
+{textColor 0 2}A strange emotion stirs inside of me as I follow her. 
+
+
+[00000693] 10: 
+[00000694] 10: bgload 00000000 BG12N 4 1
+[000006a1] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 2
+[000006ac] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 5
+[000006b7] 10: 
+[000006b8] 17: showClock
+[000006b9] 10: 
+[000006ba] 19: 
+[000006bb] ff: text 42
+{textColor 0 2}I don't know how far she plans on going, but Saki steadily descends the forest path's hill road. 
+{textColor 0 2}I follow her as I leisurely look up at the stars. 
+{textColor 0 2}I don't know the names of the constellations, but looking at them like this feels strangely romantic. 
+{textColor 0 2}(I remember that there were times where I would innocently look at the stars when I was a kid...) 
+{textColor 0 2}At that time, I didn't think that there was a world where you thought about girls in terms of "like or dislike". 
+{textColor 0 2}It's a very nostalgic time, but... 
+{textColor 0 2}... The current me... 
+
+
+[000006be] 10: 
+[000006bf] 11: fgload 0 00000000 SA01AAN 1 3
+[000006cf] 10: 
+[000006d0]  b: playVoice SL1D5035
+[000006da] 10: 
+[000006db] 19: 
+[000006dc] ff: text 43
+{textColor 1 6}【Saki】 "Makoto-kun, why are you walking so slowly?" 
+{textColor 0 0}【Makoto】 "Hey, Saki? Could you come here for a second?" 
+
+
+[000006df] 10: 
+[000006e0]  b: playVoice SL1D5036
+[000006ea] 10: 
+[000006eb] 19: 
+[000006ec] ff: text 44
+{textColor 1 6}【Saki】 "Why?" 
+{textColor 0 0}【Makoto】 "You'll see." 
+{textColor 0 2}... The current me already knows that world exists. 
+{textColor 0 2}I can't return to who I was. I've already learned too many things, both good and bad. 
+
+
+[000006ef] 10: 
+[000006f0] 11: fgload 0 00000000 SA01ABN 1 3
+[00000700] 10: 
+[00000701]  b: playVoice SL1D5037
+[0000070b] 10: 
+[0000070c] 19: 
+[0000070d] ff: text 45
+{textColor 1 6}【Saki】 "What?" 
+{textColor 0 2}Saki asks this as she tilts her head. 
+{textColor 0 2}I... 
+
+[00000710] ff: text 46
+{textColor 0 2}{choiceOpt 1 -> Lie down and stretch }{choiceOpt 2 -> Push Saki down as she walks. }
+
+[00000713] 10: 
+[00000714]  3: choice v_a1_08 00 00
+[00000719]  0: 
+[0000071a]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000007dd (000f)
+[00000728] 10: 
+[00000729] 12: removeFG 0 0
+[00000730] 10: 
+[00000731] 10: bgload 00000000 BG30N 0 1
+[0000073e] 10: 
+[0000073f]  6: playBGM 16
+[00000744] 10: 
+[00000745] 19: 
+[00000746] ff: text 47
+{textColor 0 2}I lie down face-up and stretch. 
+
+
+[00000749] 10: 
+[0000074a]  b: playVoice SL1D5038
+[00000754] 10: 
+[00000755] 19: 
+[00000756] ff: text 48
+{textColor 1 6}【Saki】 "What... are you doing?" 
+{textColor 0 2}Saki looks at me with a suspicious expression. 
+{textColor 0 0}【Makoto】 "I've never seen anything so beautiful before." 
+
+
+[00000759] 10: 
+[0000075a]  b: playVoice SL1D5039
+[00000764] 10: 
+[00000765] 19: 
+[00000766] ff: text 49
+{textColor 1 6}【Saki】 "... Wha-!? What's this... all of the sudden..." 
+{textColor 0 0}【Makoto】 "These stars." 
+
+
+[00000769] 10: 
+[0000076a]  b: playVoice SL1D5040
+[00000774] 10: 
+[00000775] 19: 
+[00000776] ff: text 4a
+{textColor 1 6}【Saki】 "Huh...?" 
+{textColor 0 2}Saki follows my gaze until she sees that I'm looking at the stars. 
+
+
+[00000779] 10: 
+[0000077a]  b: playVoice SL1D5041
+[00000784] 10: 
+[00000785] 19: 
+[00000786] ff: text 4b
+{textColor 1 6}【Saki】 "Y... Yeah, you're right..." 
+{textColor 0 0}【Makoto】 "Why are you flustered?" 
+
+
+[00000789] 10: 
+[0000078a]  b: playVoice SL1D5042
+[00000794] 10: 
+[00000795] 19: 
+[00000796] ff: text 4c
+{textColor 1 6}【Saki】 "I-I'm not flustered, dammit!" 
+{textColor 0 2}I grin at Saki's agitation and look up at the stars again. 
+{textColor 0 0}【Makoto】 "Come on, you should try it." 
+
+
+[00000799] 10: 
+[0000079a]  b: playVoice SL1D5043
+[000007a4] 10: 
+[000007a5] 19: 
+[000007a6] ff: text 4d
+{textColor 1 6}【Saki】 "Huh...?" 
+{textColor 0 0}【Makoto】 "Lie down like this and gaze at the stars. It feels great." 
+{textColor 0 2}I stretch my body out under this starry sky. It really does feel great. 
+{textColor 0 0}【Makoto】 "Well? Why don't you give it a try?" 
+{textColor 0 2}Saki firmly stares at me. 
+
+
+[000007a9] 10: 
+[000007aa]  b: playVoice SL1D5044
+[000007b4] 10: 
+[000007b5] 19: 
+[000007b6] ff: text 4e
+{textColor 1 6}【Saki】 "... Only a commoner would find this entertaining." 
+{textColor 0 0}【Makoto】 "That's right. That's why I'm doing it, right?" 
+
+
+[000007b9] 10: 
+[000007ba]  b: playVoice SL1D5045
+[000007c4] 10: 
+[000007c5] 19: 
+[000007c6] ff: text 4f
+{textColor 1 6}【Saki】 "And you're childish, too." 
+{textColor 0 0}【Makoto】 "That's because I did this a lot when I was a kid." 
+{textColor 0 2}Just then, Saki's face suddenly softens. 
+
+
+[000007c9] 10: 
+[000007ca]  b: playVoice SL1D5046
+[000007d4] 10: 
+[000007d5] 19: 
+[000007d6] ff: text 50
+{textColor 1 6}【Saki】 "If you wanted me to lay by your side so badly, you only had to ask..." 
+{textColor 0 2}As she says this, she slowly sits on the ground. 
+{textColor 0 2}She shyly lays back, her body sprawled on the grass. 
+
+
+[000007d9]  0: 
+[000007da]  7: goto7 0000084e (0010)
+[000007dd] fe: varop VAR_(28_0a)_a1_01 (14) += (00) 2
+[000007e8] 10: 
+[000007e9]  8: playSFX SE061 1
+[000007f3] 10: 
+[000007f4] 12: removeFG 0 0
+[000007fb] 10: 
+[000007fc]  1: cmd1 3
+[00000800] 10: 
+[00000801]  1: cmd1 5
+[00000805] 10: 
+[00000806]  f: removeBG 0 6 2
+[00000810] 10: 
+[00000811] 19: 
+[00000812] ff: text 51
+{textColor 0 2}When I get close enough to Saki, I suddenly push her down as she walks. 
+{textColor 1 6}【Saki】 "!!!" 
+{textColor 0 2}I collapse onto the forest path along with with Saki. When she tries to get back up, I push her down from the side. 
+
+
+[00000815] 10: 
+[00000816]  b: playVoice SL1D5048
+[00000820] 10: 
+[00000821] 19: 
+[00000822] ff: text 52
+{textColor 1 6}【Saki】 "Wh-What the hell are you doing!? No!" 
+{textColor 0 0}【Makoto】 "Don't make a fuss. Just stay like this." 
+{textColor 0 2}As I hold down the struggling Saki with my arm, I point to the sky. 
+
+
+[00000825] 10: 
+[00000826]  6: playBGM 16
+[0000082b] 10: 
+[0000082c] 10: bgload 00000000 BG30N 0 1
+[00000839] 10: 
+[0000083a] 19: 
+[0000083b] ff: text 53
+{textColor 1 6}【Saki】 "...?" 
+{textColor 0 2}Saki suddenly looks up at the starry sky. 
+{textColor 0 0}【Makoto】 "When I was a kid, I did this a lot." 
+{textColor 0 0}【Makoto】 "When the stars were beautiful, I would watch them like this." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 2}I take my hand off of Saki. 
+{textColor 0 2}She's still stiffly curled up near me. 
+{textColor 0 0}【Makoto】 "Why don't you give it a try...?" 
+{textColor 1 6}【Saki】 "..." 
+
+
+[0000083e] 10: 
+[0000083f]  b: playVoice SL1D5046
+[00000849] 10: 
+[0000084a] 19: 
+[0000084b] ff: text 54
+{textColor 1 6}【Saki】 "... If you wanted me to lay by your side so badly, you only had to ask..." 
+{textColor 0 2}She shyly lays back, her body sprawled on the grass. 
+
+
+[0000084e] 10: 
+[0000084f] 10: bgload 00000000 EV_SA05 0 1
+[0000085c] 10: 
+[0000085d]  b: playVoice SL1D5049
+[00000867] 10: 
+[00000868] 19: 
+[00000869] ff: text 55
+{textColor 1 6}【Saki】 "This isn't bad... it's like a natural planetarium." 
+{textColor 0 2}(Oh brother...) 
+{textColor 0 2}(Such a stubborn rich girl...) 
+{textColor 0 2}I look towards Saki with a bitter smile. 
+{textColor 0 2}Saki is stargazing with a rather content expression... 
+{textColor 0 2}She doesn't pay any attention to me, staring dazedly at the stars. 
+{textColor 0 2}The dark blue starry sky shines in Saki's large eyes. 
+{textColor 0 2}Her pale cheeks get wet with the evening dew. 
+{textColor 0 2}She instinctively touches it with her fingertip, and flicks it off her skin. 
+{textColor 0 2}She sighs, and her soft hair becomes loose. 
+{textColor 0 2}Her unraveled hair is beautiful, befitting of a fascinatingly elegant woman. 
+{textColor 0 2}The night wears on by. 
+{textColor 0 2}Saki and I continue to lie on the ground while being bathed by the stars' radiance... 
+{textColor 0 2}... ... ... 
+
+
+[0000086c] 10: 
+[0000086d] 10: bgload 00000000 BG30N 0 1
+[0000087a] 10: 
+[0000087b]  7: stopBGM
+[0000087c] 10: 
+[0000087d] 19: 
+[0000087e] ff: text 56
+{textColor 0 2}――If this were a movie, then things would have ended perfectly, but...  {textColor 0 2}... Reality is something that doesn't often go that well. 
+
+
+[00000881] 10: 
+[00000882] 10: bgload 00000000 BG12N 0 1
+[0000088f] 10: 
+[00000890]  6: playBGM 3
+[00000894] 10: 
+[00000895] 11: fgload 0 00000000 SA05AAN 1 3
+[000008a5] 10: 
+[000008a6]  b: playVoice SL1D5050
+[000008b0] 10: 
+[000008b1] 19: 
+[000008b2] ff: text 57
+{textColor 1 6}【Saki】 "How do you plan on taking responsibility for this?" 
+{textColor 0 0}【Makoto】 "'Responsibility'? It's just a little mud. It's not something to worry about, is it?" 
+
+
+[000008b5] 10: 
+[000008b6] 11: fgload 0 00000000 SA04AAN 1 3
+[000008c6] 10: 
+[000008c7]  b: playVoice SL1D5051
+[000008d1] 10: 
+[000008d2] 19: 
+[000008d3] ff: text 58
+{textColor 1 6}【Saki】 "You might be fine with it, but I sure as hell am not. Ab-so-lute-ly not!" 
+{textColor 0 2}It seems this rich girl is quite the neat freak. 
+{textColor 0 2}When we got up to head back, we found that we had gotten mud on our clothes, causing Saki to start a hissy fit... 
+{textColor 0 0}【Makoto】 "Understood, mistress. I shall clean it off as you desire..." 
+{textColor 0 2}I begin to write on the mud using the back of my hand. 
+
+
+[000008d6] 10: 
+[000008d7] 11: fgload 0 00000000 SA12AAN 1 3
+[000008e7] 10: 
+[000008e8]  b: playVoice SL1D5052
+[000008f2] 10: 
+[000008f3] 19: 
+[000008f4] ff: text 59
+{textColor 1 6}【Saki】 "Could you not be so irresponsible?" 
+{textColor 0 0}【Makoto】 "Huh? What am I, your slave...?" 
+
+
+[000008f7] 10: 
+[000008f8]  b: playVoice SL1D5053
+[00000902] 10: 
+[00000903] 19: 
+[00000904] ff: text 5a
+{textColor 1 6}【Saki】 "Swear that you definitely won't get mud on me." 
+{textColor 0 0}【Makoto】 "What!?" 
+
+
+[00000907] 10: 
+[00000908]  b: playVoice SL1D5054
+[00000912] 10: 
+[00000913] 19: 
+[00000914] ff: text 5b
+{textColor 1 6}【Saki】 "Swear it." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 2}(Damn it, why do I have to do something like this...?) 
+{textColor 0 2}Although I grumble in my mind, I reluctantly make the oath. 
+{textColor 0 0}【Makoto】 "I. DEFINITELY. WON'T. GET. MUD. ON. YOU. SAKI." 
+
+
+[00000917] 10: 
+[00000918]  b: playVoice SL1D5055
+[00000922] 10: 
+[00000923] 19: 
+[00000924] ff: text 5c
+{textColor 1 6}【Saki】 "Henceforth, you will not forgive any living creature who gets mud on me, with no exceptions. All right now, swear it." 
+{textColor 0 0}【Makoto】 "Huh? ... So if that means if something gets mud on you, I have to exact revenge on it no matter what?" 
+
+
+[00000927] 10: 
+[00000928]  b: playVoice SL1D5056
+[00000932] 10: 
+[00000933] 19: 
+[00000934] ff: text 5d
+{textColor 1 6}【Saki】 "Are you complaining? As a commoner, you should be kneeling before me!" 
+
+
+[00000937] 10: 
+[00000938] 12: removeFG 0 3
+[0000093f] 10: 
+[00000940] 19: 
+[00000941] ff: text 5e
+{textColor 0 2}(Oh brother... she has quite the nerve...) 
+{textColor 0 2}(She really is a rich girl...) 
+{textColor 0 2}Even so, Saki... seems to be having a lot of fun... 
+{textColor 0 2}While looking at her face... I'm starting to figure that this isn't so bad. 
+{textColor 0 2}Saki really is a kind person. 
+{textColor 0 2}She's just unable to express that very well. 
+{textColor 0 2}Right now, I realize I'm the only one to have seen the essence of Saki's true character. 
+{textColor 0 2}I think at the very least, I can listen to what she has to say, right? 
+
+
+[00000944] 10: 
+[00000945]  f: removeBG 0 0 0
+[0000094f] 10: 
+[00000950]  7: stopBGM
+[00000951]  0: 
+[00000952]  5: delay 60
+[00000957] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 85
+[00000963] 10: 
+[00000964]  6: playBGM 8
+[00000968] 10: 
+[00000969] 10: bgload 00000000 BG02AR 0 1
+[00000976] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 10
+[00000981] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 0
+[0000098c] 10: 
+[0000098d] 17: showClock
+[0000098e] 10: 
+[0000098f] 19: 
+[00000990] ff: text 5f
+{textColor 0 2}In the morning... I wake up, my head feeling kinda blank. 
+{textColor 0 2}It might be because a whole lot of things happened yesterday. 
+{textColor 0 2}I'm in a dreamy state of mind, unable to sort things out in my head. 
+{textColor 0 2}When I absentmindedly enter the living room, I find Yuka with a very sharp expression. 
+
+
+[00000993] 10: 
+[00000994] 11: fgload 0 00000000 YU01AA 1 3
+[000009a4] 10: 
+[000009a5]  b: playVoice SL1D5057
+[000009af] 10: 
+[000009b0] 19: 
+[000009b1] ff: text 60
+{textColor 1 4}【Yuka】 "Good morning." 
+{textColor 0 0}【Makoto】 "Morning... Where are Haruka and Okuhiko?" 
+
+
+[000009b4] 10: 
+[000009b5]  b: playVoice SL1D5058
+[000009bf] 10: 
+[000009c0] 19: 
+[000009c1] ff: text 61
+{textColor 1 4}【Yuka】 "They've already left." 
+{textColor 0 0}【Makoto】 "Both of them?" 
+
+
+[000009c4] 10: 
+[000009c5]  b: playVoice SL1D5059
+[000009cf] 10: 
+[000009d0] 19: 
+[000009d1] ff: text 62
+{textColor 1 4}【Yuka】 "Yes, both of them... Does it bother you?" 
+{textColor 0 0}【Makoto】 "No... Just surprised that Haruka would be in the mood to go with Okuhiko..." 
+
+
+[000009d4] 10: 
+[000009d5]  b: playVoice SL1D5060
+[000009df] 10: 
+[000009e0] 19: 
+[000009e1] ff: text 63
+{textColor 1 4}【Yuka】 "It seems that Okuhiko-kun is kinda serious about Haruka, huh?" 
+{textColor 0 0}【Makoto】 "Serious? That's guy's a clear menace to women." 
+
+
+[000009e4] 10: 
+[000009e5]  b: playVoice SL1D5061
+[000009ef] 10: 
+[000009f0] 19: 
+[000009f1] ff: text 64
+{textColor 1 4}【Yuka】 "Up until now, yeah. But if he seriously falls in love with a girl, then maybe she'll start to return his feelings." 
+{textColor 0 0}【Makoto】 "Well, he's rich." 
+
+
+[000009f4] 10: 
+[000009f5]  b: playVoice SL1D5062
+[000009ff] 10: 
+[00000a00] 19: 
+[00000a01] ff: text 65
+{textColor 1 4}【Yuka】 "That's not it. He just really understands women!" 
+{textColor 0 0}【Makoto】 "Ah ha... So Yuka... you like Oku..." 
+
+
+[00000a04] 10: 
+[00000a05] 11: fgload 0 00000000 YU04AA 1 0
+[00000a15] 10: 
+[00000a16]  b: playVoice SL1D5063
+[00000a20] 10: 
+[00000a21] 19: 
+[00000a22] ff: text 66
+{textColor 1 4}【Yuka】 "Idiot. It's not like that." 
+
+
+[00000a25] 10: 
+[00000a26] 11: fgload 0 00000000 YU05AA 1 3
+[00000a36] 10: 
+[00000a37]  b: playVoice SL1D5064
+[00000a41] 10: 
+[00000a42] 19: 
+[00000a43] ff: text 67
+{textColor 1 4}【Yuka】 "Anyway, what are you going to do from now on?" 
+{textColor 0 0}【Makoto】 "Well... I'm a bit concerned about something..." 
+
+
+[00000a46] 10: 
+[00000a47]  b: playVoice SL1D5065
+[00000a51] 10: 
+[00000a52] 19: 
+[00000a53] ff: text 68
+{textColor 1 4}【Yuka】 "You mean Saki...?" 
+{textColor 0 0}【Makoto】 "Well, yeah." 
+
+
+[00000a56] 10: 
+[00000a57]  b: playVoice SL1D5066
+[00000a61] 10: 
+[00000a62] 19: 
+[00000a63] ff: text 69
+{textColor 1 4}【Yuka】 "Why are you so concerned about her? She's just a..." 
+{textColor 0 0}【Makoto】 "Yuka, do you ever think you may simply be misunderstanding Saki?" 
+
+
+[00000a66] 10: 
+[00000a67] 11: fgload 0 00000000 YU04AA 1 0
+[00000a77] 10: 
+[00000a78]  b: playVoice SL1D5067
+[00000a82] 10: 
+[00000a83] 19: 
+[00000a84] ff: text 6a
+{textColor 1 4}【Yuka】 "If that's the case, the why don't you bring her here and solve the misunderstanding, huh?" 
+{textColor 0 0}【Makoto】 "Hey, why are you mad..." 
+
+
+[00000a87] 10: 
+[00000a88] 11: fgload 0 00000000 YU05AA 1 3
+[00000a98] 10: 
+[00000a99]  b: playVoice SL1D5068
+[00000aa3] 10: 
+[00000aa4] 19: 
+[00000aa5] ff: text 6b
+{textColor 1 4}【Yuka】 "Hurry up and bring her here." 
+{textColor 0 2}It seems Yuka's still upset about the barbecue yesterday. 
+{textColor 0 2}Our friendships are falling apart because of something this stupid... 
+{textColor 0 2}Particularly Saki and Yuka's, who were old friends from middle school. 
+{textColor 0 2}If possible, I want the two of them to make up. 
+{textColor 0 0}【Makoto】 "All right, I understand. Then I'll go invite her over." 
+{textColor 0 0}【Makoto】 "... Will you wait for a bit?" 
+
+
+[00000aa8] 10: 
+[00000aa9]  b: playVoice SL1D5070
+[00000ab3] 10: 
+[00000ab4] 19: 
+[00000ab5] ff: text 6c
+{textColor 1 4}【Yuka】 "Fine..." 
+
+
+[00000ab8] 10: 
+[00000ab9] 12: removeFG 0 3
+[00000ac0] 10: 
+[00000ac1] 19: 
+[00000ac2] ff: text 6d
+{textColor 0 2}I quickly head for Saki's summer house. 
+
+
+[00000ac5] 10: 
+[00000ac6]  f: removeBG 0 4 2
+[00000ad0] 10: 
+[00000ad1]  7: stopBGM
+[00000ad2] 10: 
+[00000ad3] 10: bgload 00000000 BG04R 4 1
+[00000ae0] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 10
+[00000aeb] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 8
+[00000af6] 10: 
+[00000af7] 17: showClock
+[00000af8] 10: 
+[00000af9] 19: 
+[00000afa] ff: text 6e
+{textColor 0 2}When I arrive at the front door, I hear sounds from the backyard. 
+{textColor 0 2}Perhaps Saki might be there. 
+{textColor 0 2}I circle around the house. 
+{textColor 0 0}【Makoto】 "Yo, Saki!" 
+
+
+[00000afd] 10: 
+[00000afe] 11: fgload 0 00000000 SA11AA 1 3
+[00000b0e] 10: 
+[00000b0f]  6: playBGM 3
+[00000b13] 10: 
+[00000b14]  b: playVoice SL1D5071
+[00000b1e] 10: 
+[00000b1f] 19: 
+[00000b20] ff: text 6f
+{textColor 1 6}【Saki】 "M-Makoto-kun...!" 
+{textColor 0 0}【Makoto】 "Can you come to the lodge now?" 
+
+
+[00000b23] 10: 
+[00000b24] 11: fgload 0 00000000 SA01AA 1 3
+[00000b34] 10: 
+[00000b35]  b: playVoice SL1D5072
+[00000b3f] 10: 
+[00000b40] 19: 
+[00000b41] ff: text 70
+{textColor 1 6}【Saki】 "... All right. I'll go later." 
+{textColor 0 0}【Makoto】 "Why? I have come here as your escort, Your Highness." 
+
+
+[00000b44] 10: 
+[00000b45] 11: fgload 0 00000000 SA05AA 1 0
+[00000b55] 10: 
+[00000b56]  b: playVoice SL1D5073
+[00000b60] 10: 
+[00000b61] 19: 
+[00000b62] ff: text 71
+{textColor 1 6}【Saki】 "It's fine, just go ahead!" 
+{textColor 0 2}Saki's acting strangely restless. 
+{textColor 0 2}When I see that, I suddenly realize it. 
+{textColor 0 2}Saki's waiting for that puppy... 
+{textColor 0 2}It will come here seeking breakfast... 
+{textColor 0 2}I close in on Saki's ear and whisper this. 
+{textColor 0 0}【Makoto】 "So you're waiting for it?" 
+
+
+[00000b65] 10: 
+[00000b66] 11: fgload 0 00000000 SA11AA 1 3
+[00000b76] 10: 
+[00000b77]  b: playVoice SL1D5074
+[00000b81] 10: 
+[00000b82] 19: 
+[00000b83] ff: text 72
+{textColor 1 6}【Saki】 "Huh!?" 
+{textColor 0 2}Startled, she backs away from me and glares at me. 
+{textColor 0 0}【Makoto】 "I saw what happened last night. You gave it meat, didn't you?" 
+
+
+[00000b86] 10: 
+[00000b87] 11: fgload 0 00000000 SA08AA 1 3
+[00000b97] 10: 
+[00000b98]  b: playVoice SL1D5075
+[00000ba2] 10: 
+[00000ba3] 19: 
+[00000ba4] ff: text 73
+{textColor 1 6}【Saki】 "... You saw it?" 
+{textColor 0 0}【Makoto】 "It was cute." 
+
+
+[00000ba7] 10: 
+[00000ba8]  b: playVoice SL1D5076
+[00000bb2] 10: 
+[00000bb3] 19: 
+[00000bb4] ff: text 74
+{textColor 1 6}【Saki】 "That was just... I dropped it on the floor, and just thought it'd be a bit of a a waste, so I gave the beef to it. Besides... it's a really dirty puppy. It's not cu-" 
+{textColor 0 0}【Makoto】 "No, when I said 'it was cute', I was talking about you, Saki." 
+
+
+[00000bb7] 10: 
+[00000bb8] 11: fgload 0 00000000 SA11AA 1 3
+[00000bc8] 10: 
+[00000bc9]  b: playVoice SL1D5077
+[00000bd3] 10: 
+[00000bd4] 19: 
+[00000bd5] ff: text 75
+{textColor 1 6}【Saki】 "... Huh?" 
+{textColor 0 0}【Makoto】 "That puppy will definitely come again. It's become a sort of habit for it, after all." 
+
+
+[00000bd8] 10: 
+[00000bd9] 11: fgload 0 00000000 SA05AA 1 3
+[00000be9] 10: 
+[00000bea]  b: playVoice SL1D5078
+[00000bf4] 10: 
+[00000bf5] 19: 
+[00000bf6] ff: text 76
+{textColor 1 6}【Saki】 "I-If it comes again, then I'll just send it away. I don't want a stray dog clinging to me, you know." 
+
+
+[00000bf9] 10: 
+[00000bfa]  8: playSFX SE052 1
+[00000c04] 10: 
+[00000c05] 19: 
+[00000c06] ff: text 77
+{textColor 0 0}【Makoto】 "... Oh, here it is." 
+{textColor 0 2}I hear rustling in the bushes, and then the puppy shows up. 
+
+
+[00000c09] 10: 
+[00000c0a]  8: playSFX SE084 2
+[00000c14] 10: 
+[00000c15] 19: 
+[00000c16] ff: text 78
+{textColor 0 2}When it recognizes Saki, it dashes towards her. 
+{textColor 0 2}And then, it jumps at her feet. 
+
+
+[00000c19] 10: 
+[00000c1a]  8: playSFX SE083 1
+[00000c24] 10: 
+[00000c25] 19: 
+[00000c26] ff: text 79
+{textColor 0 2}It lively wags its tail as it begins to whine and beg. 
+{textColor 0 2}It seems that it's completely attached to Saki. 
+{textColor 0 2}It's obvious the puppy has known her for a long time. 
+{textColor 0 2}Despite this, Saki stands stock still. 
+{textColor 0 2}Now that she's said she "doesn't want it clinging to me,", she's reached the point where she can't back out. 
+{textColor 0 2}Well, this is just typical of her... 
+{textColor 0 0}【Makoto】 "I see. I thought there was something weird about the whole pizza thing." 
+
+
+[00000c29] 10: 
+[00000c2a] 11: fgload 0 00000000 SA10AA 1 3
+[00000c3a] 10: 
+[00000c3b]  b: playVoice SL1D5079
+[00000c45] 10: 
+[00000c46] 19: 
+[00000c47] ff: text 7a
+{textColor 1 6}【Saki】 "What are you talking about?" 
+{textColor 0 0}【Makoto】 "I'm talking about the day we met at Lunabeach. Kurumi made a mistake with the pizza delivery. You were planning on giving it to this little guy, right?" 
+
+
+[00000c4a] 10: 
+[00000c4b]  b: playVoice SL1D5080
+[00000c55] 10: 
+[00000c56] 19: 
+[00000c57] ff: text 7b
+{textColor 1 6}【Saki】 "No way..." 
+{textColor 0 0}【Makoto】 "I thought you were really overreacting back then, getting so angry over a late pizza. Now I see that's also because you wanted to feed this little guy..." 
+
+
+[00000c5a] 10: 
+[00000c5b] 11: fgload 0 00000000 SA05AA 1 3
+[00000c6b] 10: 
+[00000c6c]  b: playVoice SL1D5081
+[00000c76] 10: 
+[00000c77] 19: 
+[00000c78] ff: text 7c
+{textColor 1 6}【Saki】 "You're wrong!" 
+{textColor 0 0}【Makoto】 "Furthermore, it took you six hours to go to complain for compensation. Why? Were you having so much fun playing with it that you didn't want to leave?" 
+
+
+[00000c7b] 10: 
+[00000c7c]  b: playVoice SL1D5082
+[00000c86] 10: 
+[00000c87] 19: 
+[00000c88] ff: text 7d
+{textColor 1 6}【Saki】 "You're wrong! That's not it!" 
+{textColor 0 0}【Makoto】 "All this time... you've been taking care of it way before we came to this island, haven't you?" 
+
+
+[00000c8b] 10: 
+[00000c8c] 11: fgload 0 00000000 SA04AA 1 3
+[00000c9c] 10: 
+[00000c9d]  b: playVoice SL1D5083
+[00000ca7] 10: 
+[00000ca8] 19: 
+[00000ca9] ff: text 7e
+{textColor 1 6}【Saki】 "I said you're wrong, dammit! Didn't I tell you that I don't want this wild dog to be clinging to me!?" 
+{textColor 0 2}Saki steps back and tries to run away from the puppy at her feet. She waves her hand, as if to say "Shoo!" 
+{textColor 0 2}The puppy innocently approaches Saki. 
+{textColor 0 2}When it does this, Saki gets desperate and tries to drive it away with more force than last time. 
+{textColor 0 0}【Makoto】 "You don't have to hide it." 
+
+
+[00000cac] 10: 
+[00000cad] 11: fgload 0 00000000 SA05AA 1 3
+[00000cbd] 10: 
+[00000cbe]  b: playVoice SL1D5084
+[00000cc8] 10: 
+[00000cc9] 19: 
+[00000cca] ff: text 7f
+{textColor 1 6}【Saki】 "I'm not hiding anything!" 
+
+
+[00000ccd] 10: 
+[00000cce] 12: removeFG 0 3
+[00000cd5] 10: 
+[00000cd6] 19: 
+[00000cd7] ff: text 80
+{textColor 0 2}Suddenly, she crouches down. She picks the puppy up and lightly throws it. 
+
+
+[00000cda] 10: 
+[00000cdb]  b: playVoice SL1D5085
+[00000ce5] 10: 
+[00000ce6] 19: 
+[00000ce7] ff: text 81
+{textColor 1 6}【Saki】 "Shoo! Go away!" 
+
+
+[00000cea] 10: 
+[00000ceb]  8: playSFX SE084 1
+[00000cf5] 10: 
+[00000cf6] 19: 
+[00000cf7] ff: text 82
+{textColor 0 2}The puppy misunderstands, thinking that Saki is trying to play with it. It happily returns to her feet. 
+{textColor 0 2}Saki lightly throws it again. 
+{textColor 0 2}The puppy returns to Saki. 
+
+
+[00000cfa] 10: 
+[00000cfb]  b: playVoice SL1D5086
+[00000d05] 10: 
+[00000d06] 19: 
+[00000d07] ff: text 83
+{textColor 1 6}【Saki】 "Stay away from me! Leave now!" 
+{textColor 0 2}She tries again and again to drive it away, but the puppy always returns. 
+{textColor 0 2}It gets so playful at times that it's starting to get Saki's clothes dirty with mud and dust. 
+
+
+[00000d0a] 10: 
+[00000d0b] 11: fgload 0 00000000 SA08AA 1 3
+[00000d1b] 10: 
+[00000d1c]  b: playVoice SL1D5087
+[00000d26] 10: 
+[00000d27] 19: 
+[00000d28] ff: text 84
+{textColor 1 6}【Saki】 "Go ahead to the lodge. When I've sent it away, I'll go there as soon as I can!" 
+
+
+[00000d2b] 10: 
+[00000d2c] 12: removeFG 0 3
+[00000d33] 10: 
+[00000d34] 19: 
+[00000d35] ff: text 85
+{textColor 0 2}Saki's eyes are faintly blurred as she says this. 
+{textColor 0 2}As usual, the dog jumps up on her. 
+{textColor 0 2}The puppy's muddy footprint get on Saki's chest. It's like it's pressing a stamp on her... 
+{textColor 0 2}(All right...) 
+{textColor 0 2}I just got a good idea. 
+{textColor 0 2}In the first place, Saki is being too much of a hypocrite. An occasional drastic measure is all right. 
+{textColor 0 0}【Makoto】 "Ah! Don't I... have to exact revenge?" 
+{textColor 0 2}I pick the dog up in my arms, and I lightly hit it several times. 
+
+
+[00000d38] 10: 
+[00000d39]  8: playSFX SE070 2
+[00000d43]  0: 
+[00000d44]  5: delay 12
+[00000d48] 10: 
+[00000d49]  8: playSFX SE086 1
+[00000d53] 10: 
+[00000d54] 19: 
+[00000d55] ff: text 86
+{textColor 0 2}H-Huh? I'm going easy on it, but... 
+
+
+[00000d58] 10: 
+[00000d59] 11: fgload 0 00000000 SA05AB 1 3
+[00000d69] 10: 
+[00000d6a]  b: playVoice SL1D5088
+[00000d74] 10: 
+[00000d75] 19: 
+[00000d76] ff: text 87
+{textColor 1 6}【Saki】 "What the hell are you doing!?" 
+{textColor 0 2}Saki's face turns pale when she hears the puppy's scream. 
+{textColor 0 2}I gently let go of the puppy. The puppy runs away, frightened of me... 
+{textColor 0 2}Saki tries to chase it, and it jumps on her chest, wiping more mud on it. 
+{textColor 0 0}【Makoto】 "I can't forgive any living creature that gets mud on you." 
+
+
+[00000d79] 10: 
+[00000d7a]  b: playVoice SL1D5089
+[00000d84] 10: 
+[00000d85] 19: 
+[00000d86] ff: text 88
+{textColor 1 6}【Saki】 "But it's just a puppy, right!?" 
+{textColor 0 0}【Makoto】 "I made a vow. It doesn't matter if it's a puppy or not!" 
+
+
+[00000d89] 10: 
+[00000d8a] 12: removeFG 0 3
+[00000d91] 10: 
+[00000d92] 19: 
+[00000d93] ff: text 89
+{textColor 0 2}The puppy timidly comes back. 
+{textColor 0 2}I lightly kick it with my tiptoes... 
+
+
+[00000d96] 10: 
+[00000d97]  8: playSFX SE071 1
+[00000da1] 10: 
+[00000da2] 19: 
+[00000da3] ff: text 8a
+{textColor 0 2}... That was my intention, but the puppy is knocked down for a third time and lets out a sharp yelp. 
+
+
+[00000da6] 10: 
+[00000da7]  8: playSFX SE086 1
+[00000db1] 10: 
+[00000db2]  b: playVoice SL1D5090
+[00000dbc] 10: 
+[00000dbd] 19: 
+[00000dbe] ff: text 8b
+{textColor 1 6}【Saki】 "STOP!!" 
+{textColor 0 2}Saki holds the fallen over puppy in her arms. It's like a mother protecting her child from a life-and-death situation... 
+
+
+[00000dc1] 10: 
+[00000dc2] 11: fgload 0 00000000 SA05AA 1 3
+[00000dd2] 10: 
+[00000dd3] 19: 
+[00000dd4] ff: text 8c
+{textColor 0 2}The puppy cries into Saki's chest. 
+{textColor 0 2}Saki turns around and looks at me. Her glare is sharply piercing me. 
+{textColor 0 0}【Makoto】 "... N-No, it's just, I kinda lost my head back there, no, that's not it, uh, how do I put it..." 
+
+
+[00000dd7] 10: 
+[00000dd8] 11: fgload 0 00000000 SA04AB 1 3
+[00000de8] 10: 
+[00000de9]  7: stopBGM
+[00000dea] 10: 
+[00000deb]  1: cmd1 3
+[00000def] 10: 
+[00000df0]  8: playSFX SE073 1
+[00000dfa] 10: 
+[00000dfb]  f: removeBG 1 6 2
+[00000e05] 10: 
+[00000e06] 12: removeFG 0 0
+[00000e0d]  0: 
+[00000e0e]  5: delay 60
+[00000e13] 10: 
+[00000e14]  f: removeBG 1 6 2
+[00000e1e] 10: 
+[00000e1f] 19: 
+[00000e20] ff: text 8d
+{textColor 0 2}My excuses prove futile, as I receive a slap from Saki. 
+
+
+[00000e23] 10: 
+[00000e24]  f: removeBG 0 6 2
+[00000e2e] 10: 
+[00000e2f] 10: bgload 00000000 BG04R 0 1
+[00000e3c] 10: 
+[00000e3d] 11: fgload 0 00000000 SA04AA 1 0
+[00000e4d] 10: 
+[00000e4e] 19: 
+[00000e4f] ff: text 8e
+{textColor 0 2}The Saki before my eyes is trembling with rage. 
+
+
+[00000e52] 10: 
+[00000e53]  b: playVoice SL1D5091
+[00000e5d] 10: 
+[00000e5e] 19: 
+[00000e5f] ff: text 8f
+{textColor 1 6}【Saki】 "Go away! I don't want to see the face of someone who would be so cruel to this puppy!" 
+
+
+[00000e62] 10: 
+[00000e63] 12: removeFG 0 3
+[00000e6a] 10: 
+[00000e6b] 19: 
+[00000e6c] ff: text 90
+{textColor 0 2}Still holding the dog, Saki runs into her house. 
+{textColor 0 2}I stand frozen in place, dumbfounded... 
+{textColor 0 2}My cheek is hotly stinging with pain. 
+
+
+[00000e6f] 10: 
+[00000e70]  f: removeBG 0 0 2
+[00000e7a] 10: 
+[00000e7b] 10: bgload 00000000 BG00R 0 1
+[00000e88] 10: 
+[00000e89]  6: playBGM 9
+[00000e8d] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 10
+[00000e98] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 22
+[00000ea4] 10: 
+[00000ea5] 17: showClock
+[00000ea6] 10: 
+[00000ea7] 19: 
+[00000ea8] ff: text 91
+{textColor 0 2}When I return to the lodge, Yuka is waiting on the terrace. 
+
+
+[00000eab] 10: 
+[00000eac] 10: bgload 00000000 BG03R 5 1
+[00000eb9] 10: 
+[00000eba] 11: fgload 0 00000000 YU01AA 1 3
+[00000eca] 10: 
+[00000ecb]  b: playVoice SL1D5092
+[00000ed5] 10: 
+[00000ed6] 19: 
+[00000ed7] ff: text 92
+{textColor 1 4}【Yuka】 "Judging by that face, you crashed and burned, huh?" 
+{textColor 0 0}【Makoto】 "What, did the swelling give it away?" 
+
+
+[00000eda] 10: 
+[00000edb]  b: playVoice SL1D5093
+[00000ee5] 10: 
+[00000ee6] 19: 
+[00000ee7] ff: text 93
+{textColor 1 4}【Yuka】 "Huh? That's not what I meant, but... What, did she hit you?" 
+{textColor 0 0}【Makoto】 "Well, it was just some petty revenge..." 
+
+
+[00000eea] 10: 
+[00000eeb] 11: fgload 0 00000000 YU05AA 1 3
+[00000efb] 10: 
+[00000efc]  b: playVoice SL1D5094
+[00000f06] 10: 
+[00000f07] 19: 
+[00000f08] ff: text 94
+{textColor 1 4}【Yuka】 "Somehow, I thought that was the case. Saki hasn't changed from the past. She's selfish, and never apologizes even when she knows she's wrong." 
+{textColor 0 0}【Makoto】 "Wait a minute! You've got it all wrong, it wasn't because of that. It was my fault that it happened." 
+
+
+[00000f0b] 10: 
+[00000f0c]  b: playVoice SL1D5095
+[00000f16] 10: 
+[00000f17] 19: 
+[00000f18] ff: text 95
+{textColor 1 4}【Yuka】 "It just sounds like you're spoiling her and letting her get full of herself." 
+{textColor 0 0}【Makoto】 "I'm telling you, that's wrong! You really are misunderstanding Saki." 
+
+
+[00000f1b] 10: 
+[00000f1c] 11: fgload 0 00000000 YU06AA 1 3
+[00000f2c] 10: 
+[00000f2d]  b: playVoice SL1D5096
+[00000f37] 10: 
+[00000f38] 19: 
+[00000f39] ff: text 96
+{textColor 1 4}【Yuka】 "You think so?" 
+{textColor 0 0}【Makoto】 "Of course." 
+
+
+[00000f3c] 10: 
+[00000f3d] 11: fgload 0 00000000 YU05AA 1 3
+[00000f4d] 10: 
+[00000f4e]  b: playVoice SL1D5097
+[00000f58] 10: 
+[00000f59] 19: 
+[00000f5a] ff: text 97
+{textColor 1 4}【Yuka】 "But Saki's still obsessed about the Magician's Portrait incident." 
+{textColor 0 0}【Makoto】 "Magician's Portrait?" 
+{textColor 0 2}Now that I think about it... didn't Saki said something to Yuka on the 3rd...? 
+{textColor 0 2}"Shut up, Yuka! Why don't you just go draw your little pictures like you did back then...!?" 
+
+
+[00000f5d] 10: 
+[00000f5e] 11: fgload 0 00000000 YU01AA 1 3
+[00000f6e] 10: 
+[00000f6f]  b: playVoice SL1D5098
+[00000f79] 10: 
+[00000f7a] 19: 
+[00000f7b] ff: text 98
+{textColor 1 4}【Yuka】 "It was during our middle school culture festival. The class was drawing a picture called the Magician's Portrait. I wonder how long we drew it for?" 
+{textColor 1 4}【Yuka】 "Anyway, it covered one of the walls of our classroom. Everyone divided the work by coloring their own portion of it." 
+{textColor 0 0}【Makoto】 "Saki was in your class at the time?" 
+
+
+[00000f7e] 10: 
+[00000f7f]  b: playVoice SL1D5099
+[00000f89] 10: 
+[00000f8a] 19: 
+[00000f8b] ff: text 99
+{textColor 1 4}【Yuka】 "Yeah. You need a rough sketch before the coloring, right? Saki and I each drew one. We disagreed over which to use, so we left it up to a class vote." 
+{textColor 0 0}【Makoto】 "So in the end, they picked yours, Yuka?" 
+
+
+[00000f8e] 10: 
+[00000f8f] 11: fgload 0 00000000 YU08AA 1 3
+[00000f9f] 10: 
+[00000fa0]  b: playVoice SL1D5100
+[00000faa] 10: 
+[00000fab] 19: 
+[00000fac] ff: text 9a
+{textColor 1 4}【Yuka】 "Saki looked very bitter. She was almost scary to look at. That's when, when it happened..." 
+{textColor 0 0}【Makoto】 "When what happened?" 
+
+
+[00000faf] 10: 
+[00000fb0] 11: fgload 0 00000000 YU05AA 1 3
+[00000fc0] 10: 
+[00000fc1]  b: playVoice SL1D5101
+[00000fcb] 10: 
+[00000fcc] 19: 
+[00000fcd] ff: text 9b
+{textColor 1 4}【Yuka】 "The completed painting was totally destroyed... someone snuck into the school in the middle of the night and did it!" 
+{textColor 0 0}【Makoto】 "Huh!?" 
+
+
+[00000fd0] 10: 
+[00000fd1]  b: playVoice SL1D5102
+[00000fdb] 10: 
+[00000fdc] 19: 
+[00000fdd] ff: text 9c
+{textColor 1 4}【Yuka】 "Everyone blamed her, though she insisted they were wrong. Even though the homeroom teacher gave her a warning, she absolutely refused to apologize. And that's not all." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000fe0] 10: 
+[00000fe1]  b: playVoice SL1D5103
+[00000feb] 10: 
+[00000fec] 19: 
+[00000fed] ff: text 9d
+{textColor 1 4}【Yuka】 "She told me, 'No matter what you draw, it'll never be called art. But if you like drawing so badly, then go ahead and draw forever' ... She said that in front of the whole class!" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000ff0] 10: 
+[00000ff1] 11: fgload 0 00000000 YU04AA 1 3
+[00001001] 10: 
+[00001002]  b: playVoice SL1D5104
+[0000100c] 10: 
+[0000100d] 19: 
+[0000100e] ff: text 9e
+{textColor 1 4}【Yuka】 "I didn't want to talk about that that incident, but... Saki's been obssessed with it the whole time. That's why she lunges at me whenever something happens." 
+{textColor 0 0}【Makoto】 "... Did Saki really do it?" 
+
+
+[00001011] 10: 
+[00001012] 11: fgload 0 00000000 YU05AA 1 3
+[00001022] 10: 
+[00001023]  b: playVoice SL1D5105
+[0000102d] 10: 
+[0000102e] 19: 
+[0000102f] ff: text 9f
+{textColor 1 4}【Yuka】 "It seems a janitor on patrol saw her running! I don't know if Saki really did it, but she hasn't grown out of being so stubborn." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00001032] 10: 
+[00001033]  b: playVoice SL1D5106
+[0000103d] 10: 
+[0000103e] 19: 
+[0000103f] ff: text a0
+{textColor 1 4}【Yuka】 "Argh, it's giving me a headache! Okay? Could you just forget about the whole Saki thing?" 
+{textColor 0 0}【Makoto】 "But, she's... Saki's really a nice person, right?" 
+
+
+[00001042] 10: 
+[00001043] 11: fgload 0 00000000 YU04AA 1 0
+[00001053] 10: 
+[00001054]  b: playVoice SL1D5107
+[0000105e] 10: 
+[0000105f] 19: 
+[00001060] ff: text a1
+{textColor 1 4}【Yuka】 "I said to just forget about Saki!" 
+{textColor 0 0}【Makoto】 "No, I can't!" 
+
+
+[00001063] 10: 
+[00001064] 11: fgload 0 00000000 YU05AA 1 3
+[00001074] 10: 
+[00001075]  b: playVoice SL1D5108
+[0000107f] 10: 
+[00001080] 19: 
+[00001081] ff: text a2
+{textColor 1 4}【Yuka】 "..." 
+{textColor 0 0}【Makoto】 "Since before we came to this island, she's been taking care of this stray puppy the whole time." 
+{textColor 0 0}【Makoto】 "It's a very small puppy. She took the beef yesterday because she wanted to give it to the puppy." 
+
+
+[00001084] 10: 
+[00001085] 11: fgload 0 00000000 YU06AA 1 3
+[00001095] 10: 
+[00001096]  b: playVoice SL1D5109
+[000010a0] 10: 
+[000010a1] 19: 
+[000010a2] ff: text a3
+{textColor 1 4}【Yuka】 "... Well then, why didn't she just say that in the first pla-" 
+{textColor 0 0}【Makoto】 "She wouldn't. She's the kind of person who would never say that." 
+{textColor 0 0}【Makoto】 "Don't you understand? It's part of that stubborn personality you were talking about..." 
+
+
+[000010a5] 10: 
+[000010a6] 11: fgload 0 00000000 YU08AA 1 3
+[000010b6] 10: 
+[000010b7]  b: playVoice SL1D5110
+[000010c1] 10: 
+[000010c2] 19: 
+[000010c3] ff: text a4
+{textColor 1 4}【Yuka】 "Makoto..." 
+{textColor 0 0}【Makoto】 "She really is a nice person." 
+{textColor 1 4}【Yuka】 "..." 
+{textColor 0 0}【Makoto】 "Destroying a picture... she's not the kind of person who could do that..." 
+
+
+[000010c6] 10: 
+[000010c7]  b: playVoice SL1D5111
+[000010d1] 10: 
+[000010d2] 19: 
+[000010d3] ff: text a5
+{textColor 1 4}【Yuka】 "I get it..." 
+
+
+[000010d6] 10: 
+[000010d7]  b: playVoice SL1D5112
+[000010e1] 10: 
+[000010e2] 19: 
+[000010e3] ff: text a6
+{textColor 1 4}【Yuka】 "I get it, so... will you call Saki here? One more time..." 
+
+
+[000010e6] 10: 
+[000010e7] 12: removeFG 0 3
+[000010ee] 10: 
+[000010ef] 10: bgload 00000000 BG00R 4 1
+[000010fc] 10: 
+[000010fd] 19: 
+[000010fe] ff: text a7
+{textColor 0 2}I give her a deep nod, and run down the short staircase. 
+
+
+[00001101] 10: 
+[00001102]  7: stopBGM
+[00001103] 10: 
+[00001104]  6: playBGM 10
+[00001108] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 10
+[00001113] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 26
+[0000111f] 10: 
+[00001120] 17: showClock
+[00001121] 10: 
+[00001122] 19: 
+[00001123] ff: text a8
+{textColor 0 2}When I start walking towards Saki's summer house... I hear the cheerful voices of a man and woman. 
+{textColor 0 2}When I look towards the forest path, I see Haruka and Okuhiko returning. 
+{textColor 0 2}Over there, I see Haruka with an expression I've never seen on her before. 
+{textColor 0 2}An expression brimming with emotion... Up until now, I've never could have imagined such a human-like expression from Haruka. 
+{textColor 0 2}To be honest, I'm shocked... 
+{textColor 0 2}My mental state is like that of a a father who is watching his daughter with a boyfriend for the first time. 
+{textColor 0 2}I probably feel something close to that. 
+
+
+[00001126] 10: 
+[00001127] 11: fgload 0 00000000 OK01AA 1 3
+[00001137] 10: 
+[00001138]  b: playVoice SL1D5116
+[00001142] 10: 
+[00001143] 19: 
+[00001144] ff: text a9
+{textColor 0 0}【Okuhiko】 "Hey, Ishihara. You're sure up late. You ought to rise early on beautiful days like this! Or maybe it's you they speak of in 'In spring, one sleeps a sleep that knows no dawn.'" 
+{textColor 0 0}【Makoto】 "Shut up... I don't need your help!" 
+
+
+[00001147] 10: 
+[00001148] 11: fgload 0 00000000 OK07AA 1 3
+[00001158] 10: 
+[00001159]  b: playVoice SL1D5117
+[00001163] 10: 
+[00001164] 19: 
+[00001165] ff: text aa
+{textColor 0 0}【Okuhiko】 "Being jealous is unsightly for a man. You should try acting a little cooler." 
+{textColor 0 0}【Makoto】 "Didn't I just say I didn't need your help!? Don't speak until I say so!" 
+
+
+[00001168] 10: 
+[00001169] 11: fgload 0 00000000 OK02AA 1 3
+[00001179] 10: 
+[0000117a]  b: playVoice SL1D5118
+[00001184] 10: 
+[00001185] 19: 
+[00001186] ff: text ab
+{textColor 0 0}【Okuhiko】 "Oh? I guess this is where 'Those that lie down with dogs shall get up with fleas,' applies, huh?" 
+{textColor 0 0}【Makoto】 "What!?" 
+
+
+[00001189] 10: 
+[0000118a] 11: fgload 0 00000000 OK07AA 1 3
+[0000119a] 10: 
+[0000119b]  b: playVoice SL1D5119
+[000011a5] 10: 
+[000011a6] 19: 
+[000011a7] ff: text ac
+{textColor 0 0}【Okuhiko】 "I recommend that you shouldn't get influenced so much by hysterical rich girls, though it seems like she really pulled a number on you." 
+{textColor 0 0}【Makoto】 "What was that, Okuhiko!? Who did you hear that fr-...!?" 
+
+
+[000011aa] 10: 
+[000011ab] 13: moveFG 0 2
+[000011b2] 10: 
+[000011b3] 11: fgload 1 00000000 HA10AA 0 3
+[000011c3] 10: 
+[000011c4] 19: 
+[000011c5] ff: text ad
+{textColor 0 2}I am taken aback when I notice Haruka's stare... 
+{textColor 0 2}Her glare coldly pierces me, even more unnerving now that her expression isn't its usual deadpan self. 
+{textColor 0 0}【Makoto】 "Haruka..." 
+
+
+[000011c8] 10: 
+[000011c9] 15: removeAllFG 3
+[000011cd] 10: 
+[000011ce] 19: 
+[000011cf] ff: text ae
+{textColor 0 2}Haruka suddenly averts her glare, slips past me, and walks up the stairs. 
+{textColor 0 2}Okuhiko follows her lead. 
+{textColor 0 2}I turn towards the departing Haruka, unable to say anything. 
+{textColor 0 2}A very unpleasant feeling grabs my heart, and I turn to go towards Saki's summer house once again... 
+
+
+[000011d2] 10: 
+[000011d3]  f: removeBG 0 0 2
+[000011dd] 10: 
+[000011de]  7: stopBGM
+[000011df] 10: 
+[000011e0]  4: jump SL1D5B

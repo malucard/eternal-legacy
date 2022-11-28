@@ -1,0 +1,316 @@
+[00000024] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 4
+[0000002f] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 4
+[0000003a] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000046] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000052] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 4
+[0000005d]  0: 
+[0000005e]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 00000072 (0002)
+[0000006c] 10: 
+[0000006d] 1c: cmd1C
+[0000006e]  0: 
+[0000006f]  7: goto7 0000007d (0003)
+[00000072] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[0000007d]  0: 
+[0000007e]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 0000008e (0005)
+[0000008c] 10: 
+[0000008d] 18: cmd18
+[0000008e] 10: 
+[0000008f] 1b: dayIntro 00000000 BGCAL4.cps
+[00000096] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 11
+[000000a1] 10: 
+[000000a2]  f: removeBG 1 0 2
+[000000ac] 10: 
+[000000ad]  1: cmd1 32
+[000000b2] 10: 
+[000000b3] 10: bgload 00000000 BG13N 0 1
+[000000c0] 10: 
+[000000c1]  6: playBGM 6
+[000000c5] 10: 
+[000000c6] 19: 
+[000000c7] ff: text 00
+{textColor 0 2}A car with its headlights on comes driving down from the tip of the curve. 
+
+
+[000000ca] 10: 
+[000000cb]  b: playVoice HL2D3080
+[000000d5] 10: 
+[000000d6] 19: 
+[000000d7] ff: text 01
+{textColor 1 6}【Saki】 "!!!" 
+
+
+[000000da] 10: 
+[000000db] 19: 
+[000000dc] ff: text 02
+{textColor 0 2}When Saki turns around and lets out a small scream, a puppy trying to run leaps into my field of vision. 
+{textColor 0 2}The puppy is oblivious to the car, which releases a sharp honk. 
+{textColor 1 5}【Haruka】 "...!" 
+{textColor 0 2}Without hesitation, Haruka swiftly rushes out onto the road towards the puppy. 
+{textColor 0 0}【Makoto】 "Haruka!!!" 
+{textColor 0 2}Haruka quickly picks it up in her arms. Immediately afterwards, the bright red frame of the car draws near her... 
+
+
+[000000df] 10: 
+[000000e0]  f: removeBG 1 0 2
+[000000ea] 10: 
+[000000eb]  7: stopBGM
+[000000ec] 10: 
+[000000ed]  8: playSFX se140 1
+[000000f7] 10: 
+[000000f8]  a: waitForSFX
+[000000f9] 10: 
+[000000fa]  8: playSFX SE075 1
+[00000104] 10: 
+[00000105] 19: 
+[00000106] ff: text 03
+{textColor 0 0}【Makoto】 "...!!!" 
+{textColor 0 2}Haruka, who's still holding the dog, draws an arc in midair. 
+{textColor 0 2}While staring at this scene... 
+
+
+[00000109] 10: 
+[0000010a]  2: cmd2 13
+[0000010e] 10: 
+[0000010f]  f: removeBG 0 0 2
+[00000119] 10: 
+[0000011a] 19: 
+[0000011b] ff: text 04
+{textColor 0 2}... I thankfully wake up from this nightmare. 
+{textColor 0 2}... ... ... 
+
+
+[0000011e] 10: 
+[0000011f] 10: bgload 00000000 BG01A 0 1
+[0000012c] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 9
+[00000137] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 25
+[00000143] 10: 
+[00000144] 17: showClock
+[00000145] 10: 
+[00000146] 19: 
+[00000147] ff: text 05
+{textColor 0 2}I feel my whole body covered in sticky sweat.  {textColor 0 2}When I force my mind to awaken, the sun's already risen. 
+{textColor 0 2}I get out of my bed and pace around my room. 
+{textColor 0 2}By my second lap around the room, I finally realize that this is pointless, and stop. 
+
+
+[0000014a] 10: 
+[0000014b]  6: playBGM 9
+[0000014f] 10: 
+[00000150] 19: 
+[00000151] ff: text 06
+{textColor 0 2}――Today is Thursday, April 4th.  {textColor 0 2}I don't have much time left. 
+{textColor 0 2}Before the day is over, I've got to find the decisive difference between Haruka and Kurumi! 
+{textColor 0 2}And then... I need to protect Haruka, no matter what...! 
+{textColor 0 2}To steel my resolve, I repeat this to myself over and over again as I open the door. 
+
+
+[00000154] 10: 
+[00000155]  8: playSFX SE001 1
+[0000015f] 10: 
+[00000160] 10: bgload 00000000 BG02A 4 1
+[0000016d] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 9
+[00000178] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 32
+[00000184] 10: 
+[00000185] 17: showClock
+[00000186] 10: 
+[00000187] 19: 
+[00000188] ff: text 07
+{textColor 0 2}After eating breakfast in the living room, Kurumi, Yuka, and Haruka begin discussing their plans for today. 
+{textColor 0 2}Like last time, Haruka says she's going fishing. 
+{textColor 0 2}And so... 
+
+
+[0000018b] 10: 
+[0000018c] 11: fgload 0 00000000 HA01AB 1 3
+[0000019c] 10: 
+[0000019d] 19: 
+[0000019e] ff: text 08
+{textColor 0 0}【Makoto】 "Say, Haruka? Would it be okay if I went fishing with you?" 
+{textColor 0 2}... I ask her this. 
+
+
+[000001a1] 10: 
+[000001a2] 11: fgload 0 00000000 HA03AB 1 3
+[000001b2] 10: 
+[000001b3] 19: 
+[000001b4] ff: text 09
+{textColor 0 2}Haruka nods in agreement.  {textColor 0 2}She seems to be a little embarrassed as a faint smile forms on her face... 
+
+
+[000001b7] 10: 
+[000001b8] 12: removeFG 0 3
+[000001bf] 10: 
+[000001c0]  f: removeBG 0 0 2
+[000001ca] 10: 
+[000001cb]  7: stopBGM
+[000001cc] 10: 
+[000001cd]  8: playSFX SE080 2
+[000001d7] 10: 
+[000001d8]  9: stopSFX
+[000001d9] 10: 
+[000001da] 10: bgload 00000000 BG15A 4 1
+[000001e7] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 11
+[000001f2] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 35
+[000001fe] 10: 
+[000001ff] 17: showClock
+[00000200] 10: 
+[00000201] 11: fgload 0 00000000 HA01AB 1 3
+[00000211] 10: 
+[00000212]  6: playBGM 2
+[00000216] 10: 
+[00000217]  b: playVoice HL2D4000
+[00000221] 10: 
+[00000222] 19: 
+[00000223] ff: text 0a
+{textColor 1 5}【Haruka】 "Makoto, what's wrong?" 
+{textColor 0 2}I must have spaced out for a while, because her large eyes are suddenly staring directly at me. 
+{textColor 0 0}【Makoto】 "No, it's nothing. I was just thinking a bit." 
+
+
+[00000226] 10: 
+[00000227] 11: fgload 0 00000000 HA05AB 1 3
+[00000237] 10: 
+[00000238]  b: playVoice HL2D4001
+[00000242] 10: 
+[00000243] 19: 
+[00000244] ff: text 0b
+{textColor 1 5}【Haruka】 "... About what?" 
+
+
+[00000247] 10: 
+[00000248] 12: removeFG 0 3
+[0000024f] 10: 
+[00000250] 19: 
+[00000251] ff: text 0c
+{textColor 0 2}Haruka seems a little annoyed, as her cheeks puff up. 
+
+
+[00000254] 10: 
+[00000255] 11: fgload 0 00000000 HA08AB 1 3
+[00000265] 10: 
+[00000266]  b: playVoice HL2D4002
+[00000270] 10: 
+[00000271] 19: 
+[00000272] ff: text 0d
+{textColor 1 5}【Haruka】 "Makoto... is it fun being with me?" 
+{textColor 0 0}【Makoto】 "Of course!" 
+{textColor 0 2}I answer instantly. 
+{textColor 0 2}It seems that Haruka is so sensitive to others' mood shifts that she was able to pick up on my uneasiness just from observing my speech and conduct... 
+{textColor 0 2}(Now that I think about it...) 
+{textColor 0 2}I remember receiving this exact same feeling from Kurumi once... 
+{textColor 0 2}Do the two of them share strong powers of observation and insight, as well as incredible perception? 
+{textColor 0 2}No, wait... I feel like that sensitivity is just a common characteristic amongst girls... 
+
+
+[00000275] 10: 
+[00000276] 11: fgload 0 00000000 HA11AB 1 3
+[00000286] 10: 
+[00000287]  b: playVoice HL2D4003
+[00000291] 10: 
+[00000292] 19: 
+[00000293] ff: text 0e
+{textColor 1 5}【Haruka】 "... Makoto, you've got one." 
+{textColor 0 0}【Makoto】 "Huh? 'Got one'...{delay 5}{delay 5}{delay 5} what do you mean?" 
+
+
+[00000296] 10: 
+[00000297] 12: removeFG 0 3
+[0000029e] 10: 
+[0000029f] 19: 
+[000002a0] ff: text 0f
+{textColor 0 2}Haruka silently points at the sea.  {textColor 0 2}When I look, I see my fishing line is dragging out to sea.. 
+{textColor 0 2}... But shortly afterwards, it stops. 
+
+
+[000002a3] 10: 
+[000002a4] 11: fgload 0 00000000 HA01AB 1 3
+[000002b4] 10: 
+[000002b5]  b: playVoice HL2D4004
+[000002bf] 10: 
+[000002c0] 19: 
+[000002c1] ff: text 10
+{textColor 1 5}【Haruka】 "... Or rather, you did." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}I silently reel in the fishing line and grab the tip, but there's not even bait left. 
+{textColor 0 2}Because I wasn't thinking about fishing, I didn't notice it at all. 
+{textColor 0 2}Whatever. I'm not really in the mood for fishing anyway, so it's not like I'm particularly upset... 
+
+
+[000002c4] 10: 
+[000002c5] 11: fgload 0 00000000 HA07AB 1 3
+[000002d5] 10: 
+[000002d6]  b: playVoice HL2D4005
+[000002e0] 10: 
+[000002e1] 19: 
+[000002e2] ff: text 11
+{textColor 1 5}【Haruka】 "Hee hee hee... looks like you lost." 
+{textColor 0 0}【Makoto】 "Damn... I should be stronger than one measly fish!" 
+{textColor 0 2}I decide to act frustrated just once in front of Haruka. 
+
+
+[000002e5] 10: 
+[000002e6] 11: fgload 0 00000000 HA02AB 1 3
+[000002f6] 10: 
+[000002f7]  b: playVoice HL2D4006
+[00000301] 10: 
+[00000302] 19: 
+[00000303] ff: text 12
+{textColor 1 5}【Haruka】 "It's because you say that that you're not catching anything." 
+{textColor 0 0}【Makoto】 "Ha ha ha... you might be right..." 
+{textColor 0 2}The sunlight sparkles on the ocean.  {textColor 0 2}Haruka's smile is just as radiant as it is. 
+{textColor 0 2}When I see that extremely natural and frank smile, it makes my own existence feel filthy by comparison. 
+{textColor 0 2}If we were the same gender, would this feeling be something akin to jealousy? 
+{textColor 0 2}As I place my next bait on the hook, I absentmindedly think about that. 
+{textColor 0 2}(... They really are similar...) 
+{textColor 0 2}It goes without saying that Kurumi also possesses the same disposition as Haruka. 
+{textColor 0 2}They seem very different on the surface, but they really do resemble each other at that essential part. 
+{textColor 0 2}... So when it comes down to it, what is the difference between them that separates their existences? 
+{textColor 0 2}Something only Haruka has...{delay 5}{delay 5}{delay 5} something Kurumi doesn't have...{delay 5}{delay 5}{delay 5}{delay 5} What is it...? 
+
+
+[00000306] 10: 
+[00000307] 12: removeFG 0 3
+[0000030e] 10: 
+[0000030f]  7: stopBGM
+[00000310] 10: 
+[00000311]  f: removeBG 0 0 2
+[0000031b] 10: 
+[0000031c]  6: playBGM 18
+[00000321] 10: 
+[00000322] 10: bgload 00000000 BG01NN 0 1
+[0000032f] 10: 
+[00000330] 19: 
+[00000331] ff: text 13
+{textColor 0 2}And so, the day ends with nothing special occurring, and with tomorrow swiftly approaching. 
+{textColor 0 2}It feels like watching a sand castle you made start to collapse...{delay 5}{delay 5} Is there nothing I can do after all? 
+{textColor 0 2}I spent the entire day fishing with Haruka, but in the end, I was unable to find out her decisive raison d'etre. 
+{textColor 0 2}When night came around, we had the barbecue party. 
+{textColor 0 2}I tried comparing Kurumi to Haruka by sight, but all I ended up doing was reconfirm that their external similarities and differences won't help me out. 
+{textColor 0 2}All I feel is my sense of restlessness starting to grow stronger.  {textColor 0 2}I only have a day left... 
+{textColor 0 2}(No, wait...) 
+{textColor 0 2}I try looking back on my actions today one more time. 
+{textColor 0 2}I went fishing with Haruka from the morning onwards, and then went to the barbecue... 
+{textColor 0 2}When I think about it carefully, the incident between Haruka and Saki at the barbecue didn't happen this time. 
+{textColor 0 2}Just what does that mean? 
+{textColor 0 2}Does that mean that the shape of history is slowly changing!? 
+{textColor 0 2}Because I was completely focused on Haruka today, I completely overlooked this important event... 
+{textColor 0 2}(Will I... get through this somehow?) 
+{textColor 0 2}The flow of time is not set in stone...  {textColor 0 2}I know that's a fact from the changes I've seen up until now. 
+{textColor 0 2}But even so, I am unable to wipe away this vague feeling of uneasiness. 
+{textColor 0 2}I throw the covers over my head and fall asleep... 
+
+
+[00000334] 10: 
+[00000335]  7: stopBGM
+[00000336] 10: 
+[00000337]  f: removeBG 0 0 0
+[00000341] 10: 
+[00000342] 19: 
+[00000343] ff: text 14
+{textColor 0 2}... ... ... 
+
+
+[00000346] 10: 
+[00000347]  4: jump HL2D5
+[0000034e]  0: 
+[0000034f]  0: 

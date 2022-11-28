@@ -1,0 +1,1290 @@
+[00000038] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 6
+[00000043] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 6
+[0000004e] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[0000005a] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000066] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 6
+[00000071]  0: 
+[00000072]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 00000086 (0002)
+[00000080] 10: 
+[00000081] 1c: cmd1C
+[00000082]  0: 
+[00000083]  7: goto7 00000091 (0003)
+[00000086] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[00000091]  0: 
+[00000092]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 000000a2 (0005)
+[000000a0] 10: 
+[000000a1] 18: cmd18
+[000000a2] 10: 
+[000000a3] 1b: dayIntro 00000000 BGCAL6.cps
+[000000aa] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 67
+[000000b6] 10: 
+[000000b7]  f: removeBG 1 0 2
+[000000c1] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 0
+[000000cc] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 36
+[000000d8] 10: 
+[000000d9] 19: 
+[000000da] ff: text 00
+{textColor 0 2}(...{delay 5}{delay 5}{delay 5}{delay 5} It's{delay 5} chil{delay 5}{delay 5}{delay 5}ly.) 
+{textColor 0 2}(No,{delay 5} it's worse...{delay 5}{delay 5}{delay 5} it's{delay 5}{delay 5}{delay 5} freezing.) 
+
+
+[000000dd] 10: 
+[000000de] 10: bgload 00000000 BG17NR 0 0
+[000000eb] 10: 
+[000000ec]  1: cmd1 26
+[000000f1] 10: 
+[000000f2] 17: showClock
+[000000f3] 10: 
+[000000f4]  8: playSFX SE030 0
+[000000fe] 10: 
+[000000ff] 19: 
+[00000100] ff: text 01
+{textColor 0 2}When my eyes snap open, I discover that my whole body is soaked with water and that I'm chilled to the bone. 
+{textColor 0 2}... Rain?  {textColor 0 2}... It's raining?  {textColor 0 2}Small droplets of water bolt down from the sky. 
+{textColor 0 2}When I look beside me, I see that Haruka is still sleeping.  {textColor 0 2}Although she's sleeping soundly, her body is violently shivering. 
+{textColor 0 2}Haruka and I are already wet to the skin.  {textColor 0 2}No wonder we're cold. 
+
+
+[00000103] 10: 
+[00000104]  9: stopSFX
+[00000105] 10: 
+[00000106] 19: 
+[00000107] ff: text 02
+{textColor 0 2}(We have to quickly return to the lodge...) 
+{textColor 0 2}I shake Haruka. 
+{textColor 0 0}【Makoto】 "Haruka. Hey, Haruka..." 
+
+
+[0000010a] 10: 
+[0000010b] 11: fgload 0 00000000 HA10ABN 1 3
+[0000011b] 10: 
+[0000011c] 19: 
+[0000011d] ff: text 03
+{textColor 0 2}Haruka's eyes slowly open. 
+
+
+[00000120] 10: 
+[00000121]  b: playVoice HL1D5102
+[0000012b] 10: 
+[0000012c] 19: 
+[0000012d] ff: text 04
+{textColor 1 5}【Haruka】 "{delay 5}Makoto{delay 5}...{delay 5}?" 
+
+
+[00000130] 10: 
+[00000131]  6: playBGM 2
+[00000135] 10: 
+[00000136] 19: 
+[00000137] ff: text 05
+{textColor 0 0}【Makoto】 "Are you fully awake?" 
+
+
+[0000013a] 10: 
+[0000013b]  b: playVoice HL1D5103
+[00000145] 10: 
+[00000146] 19: 
+[00000147] ff: text 06
+{textColor 1 5}【Haruka】 "Yes...{delay 5}{delay 5} Ah..." 
+
+
+[0000014a] 10: 
+[0000014b] 11: fgload 0 00000000 HA11ABN 1 3
+[0000015b] 10: 
+[0000015c] 19: 
+[0000015d] ff: text 07
+{textColor 0 2}It seems that Haruka's also finally noticed that it's raining. 
+{textColor 0 0}【Makoto】 "We're completely soaked." 
+{textColor 0 2}All I can do is smile. 
+
+
+[00000160] 10: 
+[00000161] 11: fgload 0 00000000 HA02ABN 1 3
+[00000171] 10: 
+[00000172] 19: 
+[00000173] ff: text 08
+{textColor 0 2}Haruka also smiles a bit and nods. 
+{textColor 0 0}【Makoto】 "Let's go back now." 
+{textColor 0 2}I stand up. 
+
+
+[00000176] 10: 
+[00000177] 12: removeFG 0 3
+[0000017e] 10: 
+[0000017f] 19: 
+[00000180] ff: text 09
+{textColor 0 2}I take Haruka's hand and help her up.  {textColor 0 2}I tug at her hand, expecting her to get up.  {textColor 0 2}However, she doesn't budge. 
+{textColor 0 0}【Makoto】 "Haruka?" 
+
+
+[00000183] 10: 
+[00000184] 11: fgload 0 00000000 HA12AAN 1 3
+[00000194] 10: 
+[00000195] 19: 
+[00000196] ff: text 0a
+{textColor 0 2}Haruka looks up at the sky.  {textColor 0 2}She just seems to be staring at it. 
+{textColor 0 2}I also look up at the sky. 
+
+
+[00000199] 10: 
+[0000019a]  8: playSFX SE030 0
+[000001a4] 10: 
+[000001a5] 19: 
+[000001a6] ff: text 0b
+{textColor 0 2}Only rain clouds can be seen in this darkness.  No... there's also what's falling down from above... the rain.  {textColor 0 2}The rain...?  {textColor 0 2}I see... 
+{textColor 0 2}Haruka is staring at the rain.  {textColor 0 2}The endlessly pouring rain. 
+{textColor 0 2}"Water."  {textColor 0 2}Haruka is looking at the "water" falling from the sky, not showing the slightest hint of movement. 
+{textColor 0 2}Her eyes... are focusing intensely on it. 
+
+
+[000001a9] 10: 
+[000001aa]  9: stopSFX
+[000001ab] 10: 
+[000001ac] 19: 
+[000001ad] ff: text 0c
+{textColor 0 0}【Makoto】 "... Haruka?" 
+{textColor 0 2}I call out to her.  
+
+[000001b0] 10: 
+[000001b1] 11: fgload 0 00000000 HA01AAN 1 3
+[000001c1] 10: 
+[000001c2] 19: 
+[000001c3] ff: text 0d
+{textColor 0 2}Haruka turns towards me.  {textColor 0 2}Her face, wet with "water", has an ethereal beauty to it. 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}I look at her.  {textColor 0 2}Haruka stares right back at me. 
+{textColor 0 0}【Makoto】 "... We're going to catch a cold like this, so... shouldn't we head back?" 
+{textColor 0 2}I finally say this.  {textColor 0 2}Haruka continues to stare. 
+
+
+[000001c6] 10: 
+[000001c7] 11: fgload 0 00000000 HA02AAN 1 3
+[000001d7] 10: 
+[000001d8] 19: 
+[000001d9] ff: text 0e
+{textColor 0 2}She then nods. 
+{textColor 0 2}She walks towards me.  
+
+[000001dc] 10: 
+[000001dd] 11: fgload 0 00000000 HA02ABN 1 3
+[000001ed] 10: 
+[000001ee] 19: 
+[000001ef] ff: text 0f
+{textColor 0 2}I embrace Haruka's body.  {textColor 0 2}We hold each other close as we leave leave Princess Beach. 
+
+
+[000001f2] 10: 
+[000001f3]  f: removeBG 0 4 2
+[000001fd] 10: 
+[000001fe] 12: removeFG 0 3
+[00000205] 10: 
+[00000206] 10: bgload 00000000 bg13nr 4 1
+[00000213] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 0
+[0000021e] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 44
+[0000022a] 10: 
+[0000022b] 17: showClock
+[0000022c] 10: 
+[0000022d]  8: playSFX SE030 0
+[00000237] 10: 
+[00000238] 19: 
+[00000239] ff: text 10
+{textColor 0 2}The rain grows stronger. 
+{textColor 0 2}Haruka and I walk towards the lodge.  However, we walk slowly because of how long we've been out. 
+{textColor 0 2}We don't have an umbrella, so we're already completely soaked. 
+{textColor 0 2}In addition, our clothes are very heavy after absorbing all of that water. 
+
+
+[0000023c] 10: 
+[0000023d]  9: stopSFX
+[0000023e] 10: 
+[0000023f] 19: 
+[00000240] ff: text 11
+{textColor 0 2}I encourage Haruka to cheer myself up. 
+{textColor 0 0}【Makoto】 "When we get back,{delay 5}{delay 5} we can take a bath,{delay 5}{delay 5} change our clothes,{delay 5}{delay 5} and then..." 
+
+
+[00000243] 10: 
+[00000244] 11: fgload 0 00000000 HA02ABN 1 3
+[00000254] 10: 
+[00000255]  b: playVoice HL1D6000
+[0000025f] 10: 
+[00000260] 19: 
+[00000261] ff: text 12
+{textColor 1 5}【Haruka】 "... Sleep for a long time." 
+{textColor 0 2}Haruka continues for me. 
+
+
+[00000264] 10: 
+[00000265]  f: removeBG 0 4 2
+[0000026f] 10: 
+[00000270] 12: removeFG 0 3
+[00000277] 10: 
+[00000278]  7: stopBGM
+[00000279] 10: 
+[0000027a] 10: bgload 00000000 BG13NR 4 1
+[00000287] 10: 
+[00000288] 11: fgload 0 00000000 HA11ABN 1 3
+[00000298] 10: 
+[00000299]  b: playVoice HL1D6001
+[000002a3] 10: 
+[000002a4] 19: 
+[000002a5] ff: text 13
+{textColor 1 5}【Haruka】 "Ah...!" 
+{textColor 0 2}Suddenly, Haruka lets out a small gasp.  {textColor 0 2}It happens just at a point where the forest path is visible from the coastline road. 
+{textColor 0 0}【Makoto】 "What's wrong?" 
+
+
+[000002a8] 10: 
+[000002a9]  b: playVoice HL1D6002
+[000002b3] 10: 
+[000002b4] 19: 
+[000002b5] ff: text 14
+{textColor 1 5}【Haruka】 "Over there..." 
+{textColor 0 2}Haruka points at the end of the road. 
+{textColor 0 0}【Makoto】 "Huh?" 
+{textColor 0 2}When I shift my attention towards the direction she's pointing at...  {textColor 0 2}... I see a lone puppy standing in the corner of the road. 
+{textColor 0 2}It's become sullied with tons of mud. I notice that it doesn't have a collar around its neck, so it doesn't seem to be anyone's pet.  {textColor 0 2}Is it... a stray? 
+
+
+[000002b8] 10: 
+[000002b9] 11: fgload 0 00000000 HA01ABN 1 3
+[000002c9] 10: 
+[000002ca]  b: playVoice HL1D6003
+[000002d4] 10: 
+[000002d5] 19: 
+[000002d6] ff: text 15
+{textColor 1 5}【Haruka】 "That dog..." 
+{textColor 0 0}【Makoto】 "Huh?  Haruka, do you know that dog?" 
+{textColor 0 2}Haruka nods.  Just like that, she approaches the puppy...  {textColor 0 2}She picks it up in her arms, and lovingly pets it on the head. 
+
+
+[000002d9] 10: 
+[000002da]  8: playSFX SE083 1
+[000002e4] 10: 
+[000002e5] 19: 
+[000002e6] ff: text 16
+{textColor 0 2}The puppy barks. 
+
+
+[000002e9] 10: 
+[000002ea]  9: stopSFX
+[000002eb] 10: 
+[000002ec]  6: playBGM 16
+[000002f1] 10: 
+[000002f2]  b: playVoice HL1D6004
+[000002fc] 10: 
+[000002fd] 19: 
+[000002fe] ff: text 17
+{textColor 1 5}【Haruka】 "This dog... is Saki's." 
+{textColor 0 0}【Makoto】 "Saki's...?" 
+{textColor 0 2}I'm a bit surprised that Saki owns a dog. 
+{textColor 0 0}【Makoto】 "Wow... so Saki owns this dog..." 
+
+
+[00000301] 10: 
+[00000302]  b: playVoice HL1D6005
+[0000030c] 10: 
+[0000030d] 19: 
+[0000030e] ff: text 18
+{textColor 1 5}【Haruka】 "It doesn't seem like she... exactly owns it." 
+{textColor 0 0}【Makoto】 "... Huh?" 
+
+
+[00000311] 10: 
+[00000312]  b: playVoice HL1D6006
+[0000031c] 10: 
+[0000031d] 19: 
+[0000031e] ff: text 19
+{textColor 1 5}【Haruka】 "It seems that Saki has always been affectionate to this dog..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000321] 10: 
+[00000322]  b: playVoice HL1D6007
+[0000032c] 10: 
+[0000032d] 19: 
+[0000032e] ff: text 1a
+{textColor 1 5}【Haruka】 "... It seems she's always giving it food." 
+
+
+[00000331] 10: 
+[00000332]  b: playVoice HL1D6008
+[0000033c] 10: 
+[0000033d] 19: 
+[0000033e] ff: text 1b
+{textColor 1 5}【Haruka】 "That's why it got incredibly attached to her..." 
+{textColor 0 0}【Makoto】 "Huh..." 
+
+
+[00000341] 10: 
+[00000342]  b: playVoice HL1D6009
+[0000034c] 10: 
+[0000034d] 19: 
+[0000034e] ff: text 1c
+{textColor 1 5}【Haruka】 "Do you remember...{delay 5} the beef?" 
+{textColor 0 0}【Makoto】 "?" 
+
+
+[00000351] 10: 
+[00000352]  b: playVoice HL1D6010
+[0000035c] 10: 
+[0000035d] 19: 
+[0000035e] ff: text 1d
+{textColor 1 5}【Haruka】 "From the barbecue..." 
+{textColor 0 0}【Makoto】 "Yeah." 
+{textColor 0 2}I remember.  {textColor 0 2}The turmoil from that barbecue... the beef that fell from Saki's bag... 
+
+
+[00000361] 10: 
+[00000362]  b: playVoice HL1D6011
+[0000036c] 10: 
+[0000036d] 19: 
+[0000036e] ff: text 1e
+{textColor 1 5}【Haruka】 "It... seems like she had planned to give it to this puppy." 
+{textColor 0 0}【Makoto】 "... You think so?" 
+
+
+[00000371] 10: 
+[00000372]  b: playVoice HL1D6012
+[0000037c] 10: 
+[0000037d] 19: 
+[0000037e] ff: text 1f
+{textColor 1 5}【Haruka】 "Yes... I do." 
+
+
+[00000381] 10: 
+[00000382]  b: playVoice HL1D6013
+[0000038c] 10: 
+[0000038d] 19: 
+[0000038e] ff: text 20
+{textColor 1 5}【Haruka】 "Saki... She really is a kind girl as well..." 
+{textColor 0 2}I look at Haruka's face. 
+
+
+[00000391] 10: 
+[00000392] 11: fgload 0 00000000 HA08ABN 1 3
+[000003a2] 10: 
+[000003a3]  b: playVoice HL1D6014
+[000003ad] 10: 
+[000003ae] 19: 
+[000003af] ff: text 21
+{textColor 1 5}【Haruka】 "But..." 
+{textColor 0 2}Haruka stops petting the puppy. 
+
+
+[000003b2] 10: 
+[000003b3] 11: fgload 0 00000000 HA09ABN 1 3
+[000003c3] 10: 
+[000003c4]  b: playVoice HL1D6015
+[000003ce] 10: 
+[000003cf] 19: 
+[000003d0] ff: text 22
+{textColor 1 5}【Haruka】 "But... if so, then why...?" 
+
+
+[000003d3] 10: 
+[000003d4]  8: playSFX SE030 0
+[000003de] 10: 
+[000003df] 19: 
+[000003e0] ff: text 23
+{textColor 0 2}Her voice is trembling.  She's crying.  {textColor 0 2}The rain falling from the sky merges with her tear stricken face... 
+{textColor 0 2}Haruka had been trying her best to bottle her tears up, but she's finally releasing them... 
+{textColor 0 2}Haruka and Saki. Just what happened between them!?  {textColor 0 2}It disturbs me. 
+{textColor 0 2}The bell...?  {textColor 0 2}Is it because of the bell...? 
+{textColor 0 2}There's got to be a deeper meaning behind their feud that I'm overlooking or misunderstanding. 
+{textColor 0 2}I need answers.  {textColor 0 2}I make up my mind and decide to ask about it. 
+
+
+[000003e3] 10: 
+[000003e4]  7: stopBGM
+[000003e5] 10: 
+[000003e6] 19: 
+[000003e7] ff: text 24
+{textColor 0 0}【Makoto】 "Haruka... let me ask you just one thing." 
+{textColor 0 2}Only Haruka's face turns towards me. 
+{textColor 0 0}【Makoto】 "Would you tell me about the bell?" 
+
+
+[000003ea] 10: 
+[000003eb] 11: fgload 0 00000000 HA01ABN 1 3
+[000003fb] 10: 
+[000003fc] 19: 
+[000003fd] ff: text 25
+{textColor 1 5}【Haruka】 "!!!" 
+{textColor 0 2}Her thin shoulders tremble with a start. Her expression instantly freezes. 
+{textColor 0 0}【Makoto】 "You can't...? Is it something you can't tell me...?" 
+
+
+[00000400] 10: 
+[00000401] 11: fgload 0 00000000 HA08ABN 1 3
+[00000411] 10: 
+[00000412] 19: 
+[00000413] ff: text 26
+{textColor 0 2}Haruka crosses her arms across her chest as she tries to steady her now trembling body. 
+{textColor 0 0}【Makoto】 "It might put you at ease if you talk, even if it's just with someone as ignorant as me." 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[00000416] 10: 
+[00000417] 11: fgload 0 00000000 HA05ABN 1 3
+[00000427] 10: 
+[00000428] 19: 
+[00000429] ff: text 27
+{textColor 0 2}Before long... she turns about towards me, as if having steeled herself.  And then, she nods. 
+
+
+[0000042c] 10: 
+[0000042d]  b: playVoice HL1D6017
+[00000437] 10: 
+[00000438] 19: 
+[00000439] ff: text 28
+{textColor 1 5}【Haruka】 "I understand... I'll tell you." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}I hold my breath in anticipation, awaiting Haruka's next words. 
+
+
+[0000043c] 10: 
+[0000043d]  9: stopSFX
+[0000043e] 10: 
+[0000043f] 19: 
+[00000440] ff: text 29
+{textColor 0 2}Haruka tries to say something...  {textColor 0 2}... But then, at that exact moment... 
+
+
+[00000443] 10: 
+[00000444] 11: fgload 0 00000000 HA11ABN 1 3
+[00000454] 10: 
+[00000455] 19: 
+[00000456] ff: text 2a
+{textColor 0 2}Haruka's eyes widen. 
+
+
+[00000459] 10: 
+[0000045a]  b: playVoice HL1D6018
+[00000464] 10: 
+[00000465] 19: 
+[00000466] ff: text 2b
+{textColor 1 5}【Haruka】 "...!! ... Saki!?" 
+{textColor 0 0}【Makoto】 "Huh!?" 
+
+
+[00000469] 10: 
+[0000046a] 12: removeFG 0 3
+[00000471] 10: 
+[00000472] 19: 
+[00000473] ff: text 2c
+{textColor 0 2}Haruka's gaze is focused behind me.  {textColor 0 2}I quickly turn around... 
+
+
+[00000476] 10: 
+[00000477] 11: fgload 0 00000000 SA05BAN 2 3
+[00000487] 10: 
+[00000488]  6: playBGM 13
+[0000048c] 10: 
+[0000048d] 19: 
+[0000048e] ff: text 2d
+{textColor 0 2}... To find Saki, frozen in place with an umbrella in hand. 
+{textColor 0 2}She stares at us for a while, standing rigidly in place. 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 0}【Makoto】 "Saki..." 
+
+
+[00000491] 10: 
+[00000492] 12: removeFG 0 0
+[00000499] 10: 
+[0000049a] 19: 
+[0000049b] ff: text 2e
+{textColor 0 2}Suddenly, Saki turns around.  She's trying to head back the way she came. 
+
+
+[0000049e] 10: 
+[0000049f]  7: stopBGM
+[000004a0] 10: 
+[000004a1]  8: playSFX SE085 1
+[000004ab] 10: 
+[000004ac] 19: 
+[000004ad] ff: text 2f
+{textColor 0 2}When it sees this, the puppy jumps out from Haruka's arms.. 
+{textColor 0 2}It bolts off to chase Saki.  {textColor 0 2}It crosses the wet road diagonally... 
+{textColor 0 2}――And in the next instant! 
+
+
+[000004b0] 10: 
+[000004b1]  f: removeBG 1 0 3
+[000004bb] 10: 
+[000004bc] 19: 
+[000004bd] ff: text 30
+{textColor 0 2}A intense flash pierces my eyes.  {textColor 0 2}I reflexively put my hand over my eyes and squint. 
+
+
+[000004c0] 10: 
+[000004c1] 10: bgload 00000000 BG13NR 0 3
+[000004ce] 10: 
+[000004cf] 19: 
+[000004d0] ff: text 31
+{textColor 0 2}When I look, I see a car with its headlights on...  {textColor 0 2}――It's approaching from the other side of the curve! 
+
+
+[000004d3] 10: 
+[000004d4] 11: fgload 0 00000000 SA11BAN 2 0
+[000004e4] 10: 
+[000004e5]  b: playVoice HL1D6019
+[000004ef] 10: 
+[000004f0] 19: 
+[000004f1] ff: text 32
+{textColor 1 6}【Saki】 "!!!" 
+{textColor 0 2}Saki turns around and lets out a small scream. 
+{textColor 0 2}The puppy is running towards Saki at full speed.  {textColor 0 2}It hasn't noticed the car! It can only see Saki, who's right before its eyes! 
+
+
+[000004f4] 10: 
+[000004f5] 12: removeFG 0 3
+[000004fc] 10: 
+[000004fd]  6: playBGM 7
+[00000501] 10: 
+[00000502]  8: playSFX SE130 1
+[0000050c] 10: 
+[0000050d] 19: 
+[0000050e] ff: text 33
+{textColor 0 2}A sharp honk comes from the car! 
+
+
+[00000511] 10: 
+[00000512] 11: fgload 1 00000000 HA04AAN 1 3
+[00000522] 10: 
+[00000523] 19: 
+[00000524] ff: text 34
+{textColor 1 5}【Haruka】 "!!" 
+
+
+[00000527] 10: 
+[00000528] 12: removeFG 1 0
+[0000052f] 10: 
+[00000530] 19: 
+[00000531] ff: text 35
+{textColor 0 2}Haruka suddenly moves.  {textColor 0 2}She rushes out onto the road, running to the puppy. 
+{textColor 0 0}【Makoto】 "――Haruka!" 
+{textColor 0 2}Haruka quickly picks the puppy up in her arms. 
+{textColor 0 2}Immediately afterwards, the bright red frame of the car draws near her! 
+
+
+[00000534] 10: 
+[00000535]  7: stopBGM
+[00000536] 10: 
+[00000537]  8: playSFX SE140 1
+[00000541] 10: 
+[00000542]  1: cmd1 31
+[00000547] 10: 
+[00000548]  2: cmd2 6
+[0000054c] 10: 
+[0000054d]  f: removeBG 1 0 1
+[00000557] 10: 
+[00000558]  2: cmd2 9
+[0000055c] 10: 
+[0000055d]  9: stopSFX
+[0000055e] 10: 
+[0000055f] 19: 
+[00000560] ff: text 36
+{textColor 0 0}【Makoto】 "...!!!!" 
+
+
+[00000563] 10: 
+[00000564]  b: playVoice HL1D6021
+[0000056e] 10: 
+[0000056f] 19: 
+[00000570] ff: text 37
+{textColor 1 6}【Saki】 "!!!!" 
+
+
+[00000573] 10: 
+[00000574]  8: playSFX SE075 1
+[0000057e] 10: 
+[0000057f]  a: waitForSFX
+[00000580] 10: 
+[00000581] 19: 
+[00000582] ff: text 38
+{textColor 0 2}Saki places her hand over her mouth, frozen in place. I can't... move either. 
+{textColor 0 2}Saki and I are watching Haruka's body...{delay 5}{delay 5} which has been sent flying... 
+{textColor 0 2}It all happens as if it's in slow motion.  Haruka's body slowly,{delay 30} slowly draws an arc in midair. 
+
+
+[00000585] 10: 
+[00000586] 10: bgload 00000000 BG13NR 0 1
+[00000593] 10: 
+[00000594]  1: cmd1 26
+[00000599] 10: 
+[0000059a]  8: playSFX SE065 1
+[000005a4] 10: 
+[000005a5] 19: 
+[000005a6] ff: text 39
+{textColor 0 2}Her slender body falls onto the asphalt face-up... as if it's been thrown onto it. 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 2}Time{delay 5}{delay 5}{delay 5}{delay 5} stops. 
+
+
+[000005a9] 10: 
+[000005aa]  9: stopSFX
+[000005ab] 10: 
+[000005ac]  6: playBGM 6
+[000005b0] 10: 
+[000005b1] 19: 
+[000005b2] ff: text 3a
+{textColor 0 2}Haruka had firmly held the puppy against her chest, and it's still there, completely unharmed. 
+{textColor 0 2}The puppy slightly shakes its now soaked head, worms its way out of Haruka's arms, and jumps off of her. 
+{textColor 0 2}It starts to run over towards Saki's feet as if nothing happened... 
+{textColor 0 2}Haruka's body is illuminated by the headlights, her pale figure sticking out in the downpour. 
+{textColor 0 2}My legs won't stop shaking.  I can't move my stiffened limbs.  {textColor 0 2}Saki is also silently standing stock-still, oblivious to the playful puppy at her feet. 
+{textColor 0 0}【Makoto】 "... H-{delay 5}{delay 5}{delay 5}Haru...{delay 5}{delay 5}{delay 5} ka...?" 
+{textColor 0 2}My voice has never trembled this much before in my life. 
+{textColor 0 2}Saki's eyes well with tears, and she slowly shakes her head back and forth. 
+{textColor 0 2}This isn't happening.  This has got to be some kind of mistake...  {textColor 0 2}I refuse to believe that this is reality. 
+
+
+[000005b5] 10: 
+[000005b6]  7: stopBGM
+[000005b7] 10: 
+[000005b8]  f: removeBG 1 0 2
+[000005c2] 10: 
+[000005c3] 19: 
+[000005c4] ff: text 3b
+{textColor 0 2}A red liquid on the asphalt catches my eye.  {textColor 0 2}Blood...  {textColor 0 2}A large quantity of fresh red blood is pouring out of Haruka's body. 
+{textColor 0 2}It slowly begins to spread, soaking the already wet asphalt... 
+{textColor 0 0}【Makoto】 "HARUKAAAAAAAAAAAAAAA!!!!!" 
+{textColor 0 2}I wring out a loud scream from within my body... 
+
+
+[000005c7] 10: 
+[000005c8]  f: removeBG 0 0 1
+[000005d2] 10: 
+[000005d3] 10: bgload 00000000 BG13NR 0 1
+[000005e0] 10: 
+[000005e1]  6: playBGM 10
+[000005e5] 10: 
+[000005e6]  8: playSFX SE030 0
+[000005f0] 10: 
+[000005f1] 19: 
+[000005f2] ff: text 3c
+{textColor 0 2}Anyway, we need an ambulance.  {textColor 0 2}I survey the surrounding area.  {textColor 0 2}But there's no pay phones anywhere around here. 
+{textColor 0 2}I rush over towards Haruka. Maybe I can stop the bleeding.  {textColor 0 2}But I don't know how to do that.  {textColor 0 2}My mind goes completely blank again. 
+{textColor 0 2}Haruka continues to bleed before my eyes, but all I can do is numbly stare, dumbfounded. 
+{textColor 0 2}The driver of the car is the same. 
+{textColor 0 2}But then, I come to my senses. 
+
+
+[000005f5] 10: 
+[000005f6]  9: stopSFX
+[000005f7] 10: 
+[000005f8] 19: 
+[000005f9] ff: text 3d
+{textColor 0 0}【Makoto】 "Please take her to the local clinic!" 
+{textColor 0 2}I turn to the driver, and shout this. 
+{textColor 0 2}The driver nods countless times as he trembles in horror. 
+
+
+[000005fc] 10: 
+[000005fd] 11: fgload 0 00000000 SA04BAN 1 3
+[0000060d] 10: 
+[0000060e]  b: playVoice HL1D6022
+[00000618] 10: 
+[00000619] 19: 
+[0000061a] ff: text 3e
+{textColor 1 6}【Saki】 "Wait! You can't do that!!" 
+{textColor 0 0}【Makoto】 "...!?" 
+
+
+[0000061d] 10: 
+[0000061e]  b: playVoice HL1D6023
+[00000628] 10: 
+[00000629] 19: 
+[0000062a] ff: text 3f
+{textColor 1 6}【Saki】 "We can't leave this to the person who did this to Haruka!" 
+{textColor 0 0}【Makoto】 "Now's not the time to be saying that, is it!?" 
+
+
+[0000062d] 10: 
+[0000062e]  b: playVoice HL1D6024
+[00000638] 10: 
+[00000639] 19: 
+[0000063a] ff: text 40
+{textColor 1 6}【Saki】 "Have you lost your mind!?" 
+{textColor 0 0}【Makoto】 "Saki!" 
+
+
+[0000063d] 10: 
+[0000063e]  b: playVoice HL1D6025
+[00000648] 10: 
+[00000649] 19: 
+[0000064a] ff: text 41
+{textColor 1 6}【Saki】 "Anyway, I'm completely against it!" 
+{textColor 0 0}【Makoto】 "Saki... think carefully. Think about why it is that Haruka went running out on the road in the first place..." 
+
+
+[0000064d] 10: 
+[0000064e] 11: fgload 0 00000000 SA10BAN 1 3
+[0000065e] 10: 
+[0000065f]  b: playVoice HL1D6026
+[00000669] 10: 
+[0000066a] 19: 
+[0000066b] ff: text 42
+{textColor 1 6}【Saki】 "Makoto-kun...!?" 
+{textColor 0 0}【Makoto】 "Anyway, this isn't the time to argue." 
+{textColor 0 0}【Makoto】 "We have to get Haruka to the clinic as soon as possible..." 
+
+
+[0000066e] 10: 
+[0000066f] 11: fgload 0 00000000 SA08BAN 1 3
+[0000067f] 10: 
+[00000680]  b: playVoice HL1D6027
+[0000068a] 10: 
+[0000068b] 19: 
+[0000068c] ff: text 43
+{textColor 1 6}【Saki】 "But, but..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}I stay silent. There's no longer any time to persuade her. 
+{textColor 0 0}【Makoto】 "Help me out!" 
+{textColor 0 2}I ignore Saki and ask the driver this.  The driver nods and lends me a hand.  {textColor 0 2}The two of us gently lift Haruka up into our arms and bring her in the car. 
+{textColor 0 0}【Makoto】 "Saki, hurry up!" 
+
+
+[0000068f] 10: 
+[00000690] 11: fgload 0 00000000 SA05BAN 1 3
+[000006a0] 10: 
+[000006a1]  b: playVoice HL1D6028
+[000006ab] 10: 
+[000006ac] 19: 
+[000006ad] ff: text 44
+{textColor 1 6}【Saki】 "... Understood." 
+
+
+[000006b0] 10: 
+[000006b1] 12: removeFG 0 3
+[000006b8] 10: 
+[000006b9]  8: playSFX SE007 1
+[000006c3] 10: 
+[000006c4] 19: 
+[000006c5] ff: text 45
+{textColor 0 2}Saki and I get into the car.  {textColor 0 2}The driver slams the accelerator while he desperately tries to calm down his frantically trembling body. 
+
+
+[000006c8] 10: 
+[000006c9]  8: playSFX SE102 1
+[000006d3] 10: 
+[000006d4] 19: 
+[000006d5] ff: text 46
+{textColor 0 2}Haruka, Saki, and I ride in the car towards the clinic in the pouring rain... 
+
+
+[000006d8] 10: 
+[000006d9]  2: cmd2 6
+[000006dd] 10: 
+[000006de]  f: removeBG 0 4 2
+[000006e8] 10: 
+[000006e9]  7: stopBGM
+[000006ea] 10: 
+[000006eb] 10: bgload 00000000 BG35NR 4 1
+[000006f8] 10: 
+[000006f9]  1: cmd1 26
+[000006fe] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 2
+[00000709] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 25
+[00000715] 10: 
+[00000716] 17: showClock
+[00000717] 10: 
+[00000718] 19: 
+[00000719] ff: text 47
+{textColor 0 2}It's been approximately half an hour since we arrived at the clinic. 
+
+
+[0000071c] 10: 
+[0000071d]  8: playSFX SE000 1
+[00000727] 10: 
+[00000728] 19: 
+[00000729] ff: text 48
+{textColor 0 2}We woke up the sleeping doctor and quickly brought Haruka into the sickroom. 
+
+
+[0000072c] 10: 
+[0000072d]  2: cmd2 6
+[00000731] 10: 
+[00000732]  f: removeBG 0 0 2
+[0000073c] 10: 
+[0000073d] 10: bgload 00000000 EV_HA10B 0 1
+[0000074a] 10: 
+[0000074b] 19: 
+[0000074c] ff: text 49
+{textColor 0 2}With his skillful handling, the doctor performs "hemostasis treatment", which seems to have at least successfully stopped the bleeding. 
+{textColor 0 2}However, by the looks of things, I know that it's too early to jump to conclusions. 
+
+
+[0000074f] 10: 
+[00000750]  6: playBGM 14
+[00000754] 10: 
+[00000755]  b: playVoice isya000
+[0000075e] 10: 
+[0000075f] 19: 
+[00000760] ff: text 4a
+{textColor 0 0}【Doctor】 "... I hate to tell you this, but..." 
+{textColor 0 2}The doctor says this with a grim expression. 
+
+
+[00000763] 10: 
+[00000764]  b: playVoice isya001
+[0000076d] 10: 
+[0000076e] 19: 
+[0000076f] ff: text 4b
+{textColor 0 0}【Doctor】 "She's already lost most of the blood in her body...{delay 5}{delay 5} Her blood pressure is already considerably low..." 
+{textColor 0 2}A chill runs down my spine.  {textColor 0 2}My throat dries up to the point where I can't even speak. 
+{textColor 0 2}... Certainly, Haruka's face is unbelievably pale. 
+{textColor 0 2}According to the doctor, if a person loses one-third of the blood in their body, then they could die of blood loss. 
+{textColor 0 2}We don't know how much blood Haruka has lost, but it seems there's no mistake that she's in a considerably critical condition right now. 
+
+
+[00000772] 10: 
+[00000773]  b: playVoice isya002
+[0000077c] 10: 
+[0000077d] 19: 
+[0000077e] ff: text 4c
+{textColor 0 0}【Doctor】 "She only... has an hour or two left..." 
+
+
+[00000781] 10: 
+[00000782]  b: playVoice HL1D6030
+[0000078c] 10: 
+[0000078d] 19: 
+[0000078e] ff: text 4d
+{textColor 1 6}【Saki】 "No way!" 
+{textColor 0 0}【Makoto】 "... Can't you...  Can't something be done!?" 
+
+
+[00000791] 10: 
+[00000792]  b: playVoice isya003
+[0000079b] 10: 
+[0000079c] 19: 
+[0000079d] ff: text 4e
+{textColor 0 0}【Doctor】 "A blood transfusion... As long as she has a blood transfusion, she might recover somehow." 
+
+
+[000007a0] 10: 
+[000007a1]  b: playVoice isya004
+[000007aa] 10: 
+[000007ab] 19: 
+[000007ac] ff: text 4f
+{textColor 0 0}【Doctor】 "Her blood type is B-... Are either of you B- or O-?" 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 2}... How can this be!?  {textColor 0 2}There's no one here with the same blood type as Haruka! 
+{textColor 0 0}【Makoto】 "C-Can we request for blood...?" 
+
+
+[000007af] 10: 
+[000007b0]  b: playVoice isya005
+[000007b9] 10: 
+[000007ba] 19: 
+[000007bb] ff: text 50
+{textColor 0 0}【Doctor】 "If they were to transport it via helicopter... in this weather... I estimate that it would roughly take about four hours to arrive." 
+{textColor 0 0}【Makoto】 "F... Four hours!?" 
+
+
+[000007be] 10: 
+[000007bf]  b: playVoice HL1D6031
+[000007c9] 10: 
+[000007ca] 19: 
+[000007cb] ff: text 51
+{textColor 1 6}【Saki】 "No way... Then it'd never make it on time..." 
+
+
+[000007ce] 10: 
+[000007cf]  b: playVoice HL1D6032
+[000007d9] 10: 
+[000007da] 19: 
+[000007db] ff: text 52
+{textColor 1 6}【Saki】 "This can't... this can't be happening!" 
+{textColor 0 2}Saki's voice is trembling. I instinctively grab the doctor. 
+{textColor 0 0}【Makoto】 "Hey! You're a doctor, aren't you!? Do something for her!" 
+
+
+[000007de] 10: 
+[000007df]  b: playVoice isya006
+[000007e8] 10: 
+[000007e9] 19: 
+[000007ea] ff: text 53
+{textColor 0 0}【Doctor】 "... At the very least, if I had blood of the right blood type, I could save her..." 
+{textColor 0 0}【Makoto】 "You've got blood too, don't you!? Why don't you do something with it!?" 
+
+
+[000007ed] 10: 
+[000007ee]  b: playVoice isya007
+[000007f7] 10: 
+[000007f8] 19: 
+[000007f9] ff: text 54
+{textColor 0 0}【Doctor】 "If I had blood of one of the proper blood types, I would, but... I don't." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}I let go of the doctor. I then stagger backwards and collapse to my feet, clutching my head. 
+{textColor 0 2}Fuck... Why!?  Why did it have to turn out this way...  {textColor 0 2}If my blood were of the right type... 
+{textColor 0 2}... and if it meant saving Haruka, I would readily give it all to her!!! 
+
+
+[000007fc] 10: 
+[000007fd]  b: playVoice isya008
+[00000806] 10: 
+[00000807] 19: 
+[00000808] ff: text 55
+{textColor 0 0}【Doctor】 "Since we don't have any blood of the right types... it's unfortunately... too late..." 
+{textColor 0 2}Those words bitterly pierce my heart. 
+
+
+[0000080b] 10: 
+[0000080c]  b: playVoice HL1D6033
+[00000816] 10: 
+[00000817] 19: 
+[00000818] ff: text 56
+{textColor 1 6}【Saki】 "Don't give me that bullshit! Why does Haruka have to die!? Why the hell are you saying something like that!?" 
+{textColor 0 2}Saki yells at the doctor.  She grabs him by the collar of his white coat, and glares at him with tears in her eyes. 
+{textColor 0 0}【Makoto】 "... Stop it, Saki. Stop it..." 
+{textColor 0 2}I pull Saki away from the doctor. 
+
+
+[0000081b] 10: 
+[0000081c]  b: playVoice HL1D6034
+[00000826] 10: 
+[00000827] 19: 
+[00000828] ff: text 57
+{textColor 1 6}【Saki】 "Makoto-kun...!" 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}Even... Even I want to yell at him.  {textColor 0 2}I can't forgive someone who just simply says, "Haruka will die." 
+{textColor 0 2}But... What would that accomplish!?  {textColor 0 2}Even if we did, Haruka will still... 
+
+
+[0000082b] 10: 
+[0000082c]  7: stopBGM
+[0000082d] 10: 
+[0000082e]  b: playVoice HL1D6035
+[00000838] 10: 
+[00000839] 19: 
+[0000083a] ff: text 58
+{textColor 1 6}【Saki】 "... Why... Why... Haruka...?" 
+
+
+[0000083d] 10: 
+[0000083e]  b: playVoice HL1D6036
+[00000848] 10: 
+[00000849] 19: 
+[0000084a] ff: text 59
+{textColor 1 6}【Saki】 "Even though... even though we might have finally understood each other..." 
+{textColor 0 2}Saki approaches Haruka, and falls to her knees.  {textColor 0 2}Haruka's chest is furiously rising up and down.  {textColor 0 2}She's suffering... 
+
+
+[0000084d] 10: 
+[0000084e]  6: playBGM 15
+[00000852] 10: 
+[00000853] 19: 
+[00000854] ff: text 5a
+{textColor 0 2}{delay 5}{delay 5}{delay 5}Des{delay 5}{delay 5}{delay 5}pair{delay 5}{delay 5}...{delay 5}{delay 5}  All I can feel is a sense of despair that's breaking me apart... 
+{textColor 0 2}I can't save her...  {textColor 0 2}{delay 5}Haruka{delay 5} can{delay 5} no{delay 5} longer{delay 5} be{delay 5} s{delay 5}a{delay 5}v{delay 5}e{delay 5}d{delay 5}...{delay 5} 
+{textColor 0 2}Everything before my eyes begins to crumble into very small pieces...  {textColor 0 2}They're crumbling apart just like a sand castle... 
+
+
+[00000857] 10: 
+[00000858]  b: playVoice HL1D6037
+[00000862] 10: 
+[00000863] 19: 
+[00000864] ff: text 5b
+{textColor 1 6}【Saki】 "... I-I'll go call them... I'll go call everyone...!" 
+
+
+[00000867] 10: 
+[00000868]  8: playSFX SE000 1
+[00000872]  0: 
+[00000873]  5: delay 30
+[00000878] 10: 
+[00000879]  8: playSFX SE041 1
+[00000883] 10: 
+[00000884] 19: 
+[00000885] ff: text 5c
+{textColor 0 2}With those words, Saki runs out of the sickroom... 
+{textColor 0 2}She's covering her hand with her mouth...  It seems like she's trying desperately not to burst out into loud sobs... 
+
+
+[00000888] 10: 
+[00000889]  9: stopSFX
+[0000088a] 10: 
+[0000088b]  8: playSFX SE001 1
+[00000895] 10: 
+[00000896] 19: 
+[00000897] ff: text 5d
+{textColor 0 2}The doctor, who sees off Saki, also silently leaves the sickroom... 
+{textColor 0 2}I also see the driver of the car standing in front of the sickroom with a worried expression as the doctor tries to convince him to leave. 
+{textColor 0 2}Only Haruka and I... are left in the sickroom. 
+
+
+[0000089a] 10: 
+[0000089b]  7: stopBGM
+[0000089c] 10: 
+[0000089d]  8: playSFX SE131 0
+[000008a7] 10: 
+[000008a8] 19: 
+[000008a9] ff: text 5e
+{textColor 0 2}The seconds hand of the clock hanging in the sickroom... vacantly marks the passage of time. 
+{textColor 0 2}Time is such a harsh mistress...  It passes away heartlessly without sympathy... 
+
+
+[000008ac] 10: 
+[000008ad]  9: stopSFX
+[000008ae] 10: 
+[000008af] 19: 
+[000008b0] ff: text 5f
+{textColor 0 2}Before I know it, I'm kneeling down by Haruka's side.  {textColor 0 2}Haruka's palms are balled into tight fists. 
+{textColor 0 2}She must be suffering. {delay 5}{delay 5}She must be in pain. {delay 5}{delay 5}She must be so scared... 
+{textColor 0 2}I touch Haruka's hand. 
+{textColor 0 2}Haruka, who was energetic just a few hours ago...  Haruka, who was smiling just hours ago...  Haruka, who was looking at me just a few hours ago... 
+
+
+[000008b3] 10: 
+[000008b4] 10: bgload 00000000 EV_HA10A 0 1
+[000008c1] 10: 
+[000008c2] 19: 
+[000008c3] ff: text 60
+{textColor 0 2}At that moment, Haruka's eyes suddenly open. 
+{textColor 0 0}【Makoto】 "...!" 
+
+
+[000008c6] 10: 
+[000008c7]  b: playVoice HL1D6038
+[000008d1] 10: 
+[000008d2] 19: 
+[000008d3] ff: text 61
+{textColor 1 5}【Haruka】 "Makoto...?" 
+{textColor 0 2}Haruka's eyes are blank.  {textColor 0 2}She stares into space, not noticing me. 
+{textColor 0 0}【Makoto】 "I'm right here...{delay 5}{delay 5}{delay 5} Haruka..." 
+{textColor 0 2}I grasp Haruka's hand.  {textColor 0 2}I grasp it strongly,{delay 5} stronger than ever before, hoping that she'll notice my existence... 
+
+
+[000008d6] 10: 
+[000008d7]  b: playVoice HL1D6039
+[000008e1] 10: 
+[000008e2] 19: 
+[000008e3] ff: text 62
+{textColor 1 5}【Haruka】 "That hurts..." 
+{textColor 0 2}She says this in a weak voice. I frantically lessen the power of my grip. 
+{textColor 0 0}【Makoto】 "S-Sorry..." 
+
+
+[000008e6] 10: 
+[000008e7]  b: playVoice HL1D6040
+[000008f1] 10: 
+[000008f2] 19: 
+[000008f3] ff: text 63
+{textColor 1 5}【Haruka】 "No, don't be..." 
+{textColor 0 2}She continues staring into space. She might not even have the power to turn her own head... 
+
+
+[000008f6] 10: 
+[000008f7]  6: playBGM 21
+[000008fc] 10: 
+[000008fd] 19: 
+[000008fe] ff: text 64
+{textColor 0 0}【Makoto】 "Haruka... Haruka...  I...{delay 5}{delay 5} I{delay 5}{delay 5} don't{delay 5} want{delay 5} to{delay 5} lose {delay 5}you{delay 5}..." 
+{textColor 0 2}Guh.{delay 5}{delay 5} A thick sound comes from inside my chest.  My voice has become tearful, bursting out of me like water gushing from a dam. 
+{textColor 0 0}【Makoto】 "I don't want that.{delay 5}{delay 5}{delay 5} I couldn't bear it..." 
+
+
+[00000901] 10: 
+[00000902]  b: playVoice HL1D6041
+[0000090c] 10: 
+[0000090d] 19: 
+[0000090e] ff: text 65
+{textColor 1 5}【Haruka】 "... It's all right, Makoto." 
+
+
+[00000911] 10: 
+[00000912]  b: playVoice HL1D6042
+[0000091c] 10: 
+[0000091d] 19: 
+[0000091e] ff: text 66
+{textColor 1 5}【Haruka】 "... I'm just someone's replacement, so... even if I die, no one will be hurt by it..." 
+{textColor 0 0}【Makoto】 "Haruka..." 
+{textColor 0 0}【Makoto】 "... You're wrong!{delay 5}{delay 5} ... You're not a substitute for anyone!" 
+
+
+[00000921] 10: 
+[00000922]  b: playVoice HL1D6043
+[0000092c] 10: 
+[0000092d] 19: 
+[0000092e] ff: text 67
+{textColor 1 5}【Haruka】 "I'm sorry, Makoto... I'm a little tired... I guess{delay 5}{delay 5} we shouldn't have gone on that evening stroll after all..." 
+{textColor 0 0}【Makoto】 "... Wh-What are you saying, Haruka!?" 
+
+
+[00000931] 10: 
+[00000932]  b: playVoice HL1D6044
+[0000093c] 10: 
+[0000093d] 19: 
+[0000093e] ff: text 68
+{textColor 1 5}【Haruka】 "I've got to sleep... Yuka's going to scold me for this tomorrow..." 
+
+
+[00000941] 10: 
+[00000942]  7: stopBGM
+[00000943] 10: 
+[00000944] 19: 
+[00000945] ff: text 69
+{textColor 0 2}Her eyes slowly begin to close... 
+{textColor 0 2}No... Wait...{delay 5}{delay 5} Wait...{delay 5}{delay 5}{delay 5} Haruka... 
+
+
+[00000948] 10: 
+[00000949]  b: playVoice HL1D6045
+[00000953] 10: 
+[00000954] 19: 
+[00000955] ff: text 6a
+{textColor 1 5}【Haruka】 "I'm going to sleep now, okay...? Good... night..." 
+
+
+[00000958] 10: 
+[00000959] 10: bgload 00000000 EV_HA10B 0 1
+[00000966] 10: 
+[00000967] 19: 
+[00000968] ff: text 6b
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}Haruka's hand limply slips out of my own and dangles... 
+{textColor 0 2}In the next instant... Something slips out of it. 
+
+
+[0000096b] 10: 
+[0000096c]  8: playSFX SE090 1
+[00000976] 10: 
+[00000977] 19: 
+[00000978] ff: text 6c
+{textColor 0 2}The object lying on the floor... is... 
+
+
+[0000097b]  0: 
+[0000097c]  5: delay 30
+[00000981] 10: 
+[00000982] 10: bgload 00000000 EV_AL02 0 1
+[0000098f] 10: 
+[00000990] 19: 
+[00000991] ff: text 6d
+{textColor 0 2}――It's that bell!! 
+{textColor 0 0}【Makoto】 "!!" 
+{textColor 0 2}Wh... Why?  ... Why does Haruka have that bell?! 
+
+
+[00000994] 10: 
+[00000995] 10: bgload 00000000 ev_ha10B 0 1
+[000009a2] 10: 
+[000009a3] 19: 
+[000009a4] ff: text 6e
+{textColor 0 2}I look at Haruka's face.  It looks peaceful,{delay 5} so very{delay 5} peaceful. 
+{textColor 0 2}Her eyes... will they never open again...? 
+{textColor 0 2}Forget the bell.  Something like that doesn't belong here!!! 
+
+
+[000009a7] 10: 
+[000009a8]  8: playSFX SE091 1
+[000009b2] 10: 
+[000009b3] 19: 
+[000009b4] ff: text 6f
+{textColor 0 2}I kick the fallen bell away. 
+
+
+[000009b7] 10: 
+[000009b8]  8: playSFX SE091 1
+[000009c2] 10: 
+[000009c3] 19: 
+[000009c4] ff: text 70
+{textColor 0 2}The bell rings as it recoils off the wall. 
+
+
+[000009c7] 10: 
+[000009c8]  9: stopSFX
+[000009c9] 10: 
+[000009ca]  6: playBGM 20
+[000009cf] 10: 
+[000009d0] 19: 
+[000009d1] ff: text 71
+{textColor 0 2}My field of vision clouds.{delay 5} And in that instant, I break down weeping.  {textColor 0 2}The tears pour out of me one after another.  I can't stop.  I don't want them to stop. 
+{textColor 0 0}【Makoto】 "Haruka...{delay 5}{delay 5}{delay 5}{delay 5} Haruka..." 
+{textColor 0 2}All I have left...{delay 5}{delay 5}{delay 5} is this unbearable sorrow I feel...{delay 5}{delay 5}{delay 5} from losing Haruka. 
+{textColor 0 2}This sadness becomes a pain in my chest that chops up my heart. 
+
+
+[000009d4] 10: 
+[000009d5]  8: playSFX SE132 1
+[000009df] 10: 
+[000009e0] 19: 
+[000009e1] ff: text 72
+{textColor 0 2}Suddenly, my watch alarm goes off...  {textColor 0 2}The instant I hear that, I am suddenly wrapped up in an intense exhaustion. 
+
+
+[000009e4] 10: 
+[000009e5]  9: stopSFX
+[000009e6] 10: 
+[000009e7]  f: removeBG 1 0 3
+[000009f1] 10: 
+[000009f2] 19: 
+[000009f3] ff: text 73
+{textColor 0 2}Everything before my eyes starts to go white.  {textColor 0 2}It feels like I'm floating in light. 
+{textColor 0 2}Before long, it feels like I'm getting sucked into the other side of the light...  
+
+[000009f6] 10: 
+[000009f7]  7: stopBGM
+[000009f8] 10: 
+[000009f9] 19: 
+[000009fa] ff: text 74
+{textColor 0 2}I{delay 5}{delay 5} lose{delay 5}{delay 5} con{delay 5}{delay 5}scious{delay 5}{delay 5}ness{delay 5}{delay 5}...{delay 5}{delay 5} 
+
+
+[000009fd]  0: 
+[000009fe]  5: delay 120
+[00000a03] 10: 
+[00000a04]  f: removeBG 0 1 1
+[00000a0e] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 0
+[00000a19] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 6
+[00000a24]  0: 
+[00000a25] 19: unknown19 0 3
+[00000a2c]  0: 
+[00000a2d] 19: unknown19 1 3
+[00000a34]  0: 
+[00000a35] 19: unknown19 2 3
+[00000a3c] 10: 
+[00000a3d] 24: cmd24 0
+[00000a41] 10: 
+[00000a42] 22: movie haruka
+[00000a4a]  0: 
+[00000a4b]  5: delay 10
+[00000a4f] 10: 
+[00000a50] 24: cmd24 1
+[00000a54]  0: 
+[00000a55]  5: delay 1
+[00000a59] 10: 
+[00000a5a] 2d: cmd2D 00 0a 01 2d 0a 87 14 00 07
+[00000a64]  0: 
+[00000a65] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 1
+[00000a70] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 0
+[00000a7b] 10: 
+[00000a7c] 23: cmd23
+[00000a7d]  0: 
+[00000a7e] 19: unknown19 0 4
+[00000a85]  0: 
+[00000a86] 19: unknown19 1 4
+[00000a8d]  0: 
+[00000a8e] 19: unknown19 2 4
+[00000a95] 10: 
+[00000a96]  8: playSFX SE094 1
+[00000aa0] 10: 
+[00000aa1]  a: waitForSFX
+[00000aa2]  0: 
+[00000aa3]  5: delay 180
+[00000aa8] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 255
+[00000ab4] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000ac0] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000acc] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 60
+[00000ad8]  0: 
+[00000ad9]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 00000aed (0008)
+[00000ae7] 10: 
+[00000ae8] 1c: cmd1C
+[00000ae9]  0: 
+[00000aea]  7: goto7 00000af8 (0009)
+[00000aed] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[00000af8] 10: 
+[00000af9]  4: jump HL2D1

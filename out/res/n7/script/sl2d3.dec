@@ -1,0 +1,799 @@
+[00000048] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 3
+[00000053] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 3
+[0000005e] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[0000006a] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000076] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 3
+[00000081]  0: 
+[00000082]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 00000096 (0002)
+[00000090] 10: 
+[00000091] 1c: cmd1C
+[00000092]  0: 
+[00000093]  7: goto7 000000a1 (0003)
+[00000096] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[000000a1]  0: 
+[000000a2]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 000000b2 (0005)
+[000000b0] 10: 
+[000000b1] 18: cmd18
+[000000b2] 10: 
+[000000b3] 1b: dayIntro 00000000 BGCAL3.cps
+[000000ba] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 130
+[000000c6] 10: 
+[000000c7] 10: bgload 00000000 BG32A 0 1
+[000000d4] 10: 
+[000000d5]  6: playBGM 8
+[000000d9] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 3
+[000000e4] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 3
+[000000ef] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 9
+[000000fa] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 33
+[00000106] 10: 
+[00000107] 17: showClock
+[00000108] 10: 
+[00000109] 19: 
+[0000010a] ff: text 00
+{textColor 0 2}The morning has arrived. 
+{textColor 0 2}When I enter the living room, everything goes the same way it did last time. 
+{textColor 0 2}When I begin to eat the toast Kurumi brought, Haruka comes in the same way she did last time. 
+{textColor 0 2}Okuhiko is chasing after her... 
+
+
+[0000010d] 10: 
+[0000010e] 11: fgload 1 00000000 OK11CA 0 3
+[0000011e] 10: 
+[0000011f]  b: playVoice SL2D3017
+[00000129] 10: 
+[0000012a] 19: 
+[0000012b] ff: text 01
+{textColor 0 0}【Okuhiko】 "Promise? What promise?" 
+
+
+[0000012e] 10: 
+[0000012f] 11: fgload 0 00000000 HA12AA 2 3
+[0000013f]  0: 
+[00000140]  a: condJump 00 VAR_(28_1e)_a1_34 (28) != (15) (81)->1 (15) (00)  * 00000162 (0006)
+[0000014e] 10: 
+[0000014f]  b: playVoice SL2D3018
+[00000159] 10: 
+[0000015a] 19: 
+[0000015b] ff: text 02
+{textColor 1 5}【Haruka】 "... I'm going fishing today." 
+
+
+[0000015e]  0: 
+[0000015f]  7: goto7 00000172 (0007)
+[00000162] 10: 
+[00000163]  b: playVoice SL2D3077
+[0000016d] 10: 
+[0000016e] 19: 
+[0000016f] ff: text 03
+{textColor 1 5}【Haruka】 "... Today, I'm..." 
+
+
+[00000172] 10: 
+[00000173] 12: removeFG 1 3
+[0000017a] 10: 
+[0000017b] 11: fgload 1 00000000 YU03AA 0 3
+[0000018b] 10: 
+[0000018c]  b: playVoice SL2D3020
+[00000196] 10: 
+[00000197] 19: 
+[00000198] ff: text 04
+{textColor 1 4}【Yuka】 "Hold on. We're scheduled to play tennis today." 
+
+
+[0000019b] 10: 
+[0000019c] 11: fgload 0 00000000 HA01AA 2 3
+[000001ac] 10: 
+[000001ad]  b: playVoice SL2D3021
+[000001b7] 10: 
+[000001b8] 19: 
+[000001b9] ff: text 05
+{textColor 1 5}【Haruka】 "Huh? ... Tennis?" 
+
+
+[000001bc] 10: 
+[000001bd] 11: fgload 1 00000000 YU06AA 0 3
+[000001cd] 10: 
+[000001ce]  b: playVoice SL2D3022
+[000001d8] 10: 
+[000001d9] 19: 
+[000001da] ff: text 06
+{textColor 1 4}【Yuka】 "Haruka, you can't just say 'I'll pass' today. That'd be going against the group leader's orders." 
+
+
+[000001dd] 10: 
+[000001de] 11: fgload 0 00000000 HA08AA 2 3
+[000001ee] 10: 
+[000001ef] 19: 
+[000001f0] ff: text 07
+{textColor 0 2}Haruka looks at me with a troubled expression. 
+
+
+[000001f3] 10: 
+[000001f4] 12: removeFG 1 3
+[000001fb] 10: 
+[000001fc] 11: fgload 1 00000000 OK02CA 0 3
+[0000020c] 10: 
+[0000020d]  b: playVoice SL2D3081
+[00000217] 10: 
+[00000218] 19: 
+[00000219] ff: text 08
+{textColor 0 0}【Okuhiko】 "That's right, Haruka-chan. As planned, we're playing tennis." 
+
+
+[0000021c] 10: 
+[0000021d] 11: fgload 0 00000000 HA12AA 2 3
+[0000022d] 10: 
+[0000022e]  b: playVoice SL2D3024
+[00000238] 10: 
+[00000239] 19: 
+[0000023a] ff: text 09
+{textColor 1 5}【Haruka】 "I made a promise..." 
+
+
+[0000023d] 10: 
+[0000023e]  b: playVoice SL2D3025
+[00000248] 10: 
+[00000249] 19: 
+[0000024a] ff: text 0a
+{textColor 0 0}【Okuhiko】 "It's fine, just cancel that promise." 
+
+
+[0000024d] 10: 
+[0000024e]  b: playVoice SL2D3026
+[00000258] 10: 
+[00000259] 19: 
+[0000025a] ff: text 0b
+{textColor 1 5}【Haruka】 "I have to keep my promise, no matter what!" 
+
+
+[0000025d] 10: 
+[0000025e] 12: removeFG 1 3
+[00000265] 10: 
+[00000266] 11: fgload 1 00000000 KU01BA 0 3
+[00000276] 10: 
+[00000277]  b: playVoice SL2D3031
+[00000281] 10: 
+[00000282] 19: 
+[00000283] ff: text 0c
+{textColor 1 7}【Kurumi】 "Haruka-san, who did you make that promise with?" 
+
+
+[00000286] 10: 
+[00000287]  7: stopBGM
+[00000288] 10: 
+[00000289]  b: playVoice SL2D3032
+[00000293] 10: 
+[00000294] 19: 
+[00000295] ff: text 0d
+{textColor 1 5}【Haruka】 "It was..." 
+{textColor 0 0}【Makoto】 "... With me." 
+
+
+[00000298] 10: 
+[00000299]  6: playBGM 2
+[0000029d] 10: 
+[0000029e] 11: fgload 1 00000000 KU11BA 0 3
+[000002ae] 10: 
+[000002af]  b: playVoice SL2D3033
+[000002b9] 10: 
+[000002ba] 19: 
+[000002bb] ff: text 0e
+{textColor 1 7}【Kurumi】 "Huh?" 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[000002be] 10: 
+[000002bf] 15: removeAllFG 3
+[000002c3]  0: 
+[000002c4]  a: condJump 00 VAR_(28_1e)_a1_34 (28) != (15) (81)->1 (15) (00)  * 000002db (0009)
+[000002d2] 10: 
+[000002d3] 19: 
+[000002d4] ff: text 0f
+{textColor 0 0}【Makoto】 "Haruka and I are going fishing today. We're not going to play tennis." 
+
+
+[000002d7]  0: 
+[000002d8]  7: goto7 000002e0 (000a)
+[000002db] 10: 
+[000002dc] 19: 
+[000002dd] ff: text 10
+{textColor 0 0}【Makoto】 "Haruka and I are going out today. We're not going to play tennis." 
+
+
+[000002e0] 10: 
+[000002e1] 11: fgload 0 00000000 OK11CA 1 3
+[000002f1] 10: 
+[000002f2]  b: playVoice SL2D3034
+[000002fc] 10: 
+[000002fd] 19: 
+[000002fe] ff: text 11
+{textColor 0 0}【Okuhiko】 "Wh-Why is Ishihara saying that? Is this true, Haruka-chan?" 
+
+
+[00000301] 10: 
+[00000302] 13: moveFG 0 0
+[00000309] 10: 
+[0000030a] 11: fgload 1 00000000 HA01AA 2 3
+[0000031a] 10: 
+[0000031b]  b: playVoice SL2D3035
+[00000325] 10: 
+[00000326] 19: 
+[00000327] ff: text 12
+{textColor 1 5}【Haruka】 "Yes." 
+{textColor 0 0}【Makoto】 "So we'll be going now. Sorry Yuka, but we're going to have to ignore your orders." 
+
+
+[0000032a] 10: 
+[0000032b] 15: removeAllFG 3
+[0000032f] 10: 
+[00000330] 11: fgload 0 00000000 YU05AA 1 3
+[00000340] 10: 
+[00000341]  b: playVoice SL2D3036
+[0000034b] 10: 
+[0000034c] 19: 
+[0000034d] ff: text 13
+{textColor 1 4}【Yuka】 "Well, that's fine... The leader's not a dictator, after all..." 
+
+
+[00000350] 10: 
+[00000351] 12: removeFG 0 3
+[00000358] 10: 
+[00000359] 11: fgload 0 00000000 OK11CA 1 3
+[00000369] 10: 
+[0000036a]  b: playVoice SL2D3037
+[00000374] 10: 
+[00000375] 19: 
+[00000376] ff: text 14
+{textColor 0 0}【Okuhiko】 "Just hold on, Yuka-chan. You can't just let them off this easy. Ishihara, you still don't understand? The basis of this seminar is group activities, isn't it?" 
+{textColor 0 0}【Makoto】 "You have no right to say that." 
+
+
+[00000379] 10: 
+[0000037a] 11: fgload 0 00000000 OK05CA 1 3
+[0000038a] 10: 
+[0000038b]  b: playVoice SL2D3038
+[00000395] 10: 
+[00000396] 19: 
+[00000397] ff: text 15
+{textColor 0 0}【Okuhiko】 "What was that!?" 
+
+
+[0000039a] 10: 
+[0000039b] 12: removeFG 0 3
+[000003a2] 10: 
+[000003a3] 19: 
+[000003a4] ff: text 16
+{textColor 0 2}I leave the living room.  {textColor 0 2}Haruka quickly follows me. 
+
+
+[000003a7] 10: 
+[000003a8] 11: fgload 0 00000000 OK08CA 1 3
+[000003b8] 10: 
+[000003b9]  b: playVoice SL2D3039
+[000003c3] 10: 
+[000003c4] 19: 
+[000003c5] ff: text 17
+{textColor 0 0}【Okuhiko】 "Wait, Haruka-chan. What happened between you and Ishihara?" 
+
+
+[000003c8] 10: 
+[000003c9]  b: playVoice SL2D3040
+[000003d3] 10: 
+[000003d4] 19: 
+[000003d5] ff: text 18
+{textColor 1 5}【Haruka】 "... We made a promise." 
+
+
+[000003d8] 10: 
+[000003d9]  b: playVoice SL2D3041
+[000003e3] 10: 
+[000003e4] 19: 
+[000003e5] ff: text 19
+{textColor 0 0}【Okuhiko】 "That's not an explanation. What happened between you and Ishihara yesterday?" 
+
+
+[000003e8] 10: 
+[000003e9]  b: playVoice SL2D3042
+[000003f3] 10: 
+[000003f4] 19: 
+[000003f5] ff: text 1a
+{textColor 1 5}【Haruka】 "I'm not going to tell you." 
+
+
+[000003f8] 10: 
+[000003f9]  b: playVoice SL2D3043
+[00000403] 10: 
+[00000404] 19: 
+[00000405] ff: text 1b
+{textColor 0 0}【Okuhiko】 "Why not?" 
+
+
+[00000408] 10: 
+[00000409]  b: playVoice SL2D3044
+[00000413] 10: 
+[00000414] 19: 
+[00000415] ff: text 1c
+{textColor 1 5}【Haruka】 "This is something between me and Makoto... It doesn't concern you, Okuhiko." 
+
+
+[00000418]  0: 
+[00000419]  a: condJump 00 VAR_(28_1e)_a1_34 (28) != (15) (81)->1 (15) (00)  * 0000043b (000c)
+[00000427] 10: 
+[00000428]  b: playVoice SL2D3045
+[00000432] 10: 
+[00000433] 19: 
+[00000434] ff: text 1d
+{textColor 0 0}【Okuhiko】 "Why are you going fishing with Ishihara? What do you see in that asshole?" 
+
+
+[00000437]  0: 
+[00000438]  7: goto7 0000044b (000d)
+[0000043b] 10: 
+[0000043c]  b: playVoice SL2D3103
+[00000446] 10: 
+[00000447] 19: 
+[00000448] ff: text 1e
+{textColor 0 0}【Okuhiko】 "Why are you going with Ishihara? What do you see in that asshole?" 
+
+
+[0000044b] 10: 
+[0000044c]  b: playVoice SL2D3046
+[00000456] 10: 
+[00000457] 19: 
+[00000458] ff: text 1f
+{textColor 1 5}【Haruka】 "Makoto... trusts me..." 
+
+
+[0000045b] 10: 
+[0000045c]  b: playVoice SL2D3047
+[00000466] 10: 
+[00000467] 19: 
+[00000468] ff: text 20
+{textColor 0 0}【Okuhiko】 "Trust? Ishihara? It's clear as day that this vulgar bastard has some kind of ulterior motive." 
+
+
+[0000046b] 10: 
+[0000046c]  b: playVoice SL2D3048
+[00000476] 10: 
+[00000477] 19: 
+[00000478] ff: text 21
+{textColor 1 5}【Haruka】 "We trust each other. You wouldn't understand..." 
+
+
+[0000047b] 10: 
+[0000047c]  b: playVoice SL2D3049
+[00000486] 10: 
+[00000487] 19: 
+[00000488] ff: text 22
+{textColor 0 0}【Okuhiko】 "You're the one who doesn't understand about Ishihara." 
+
+
+[0000048b] 10: 
+[0000048c]  b: playVoice SL2D3050
+[00000496] 10: 
+[00000497] 19: 
+[00000498] ff: text 23
+{textColor 1 5}【Haruka】 "What's going on between me and Makoto is none of your concern." 
+
+
+[0000049b] 10: 
+[0000049c] 11: fgload 0 00000000 OK01CA 1 3
+[000004ac] 10: 
+[000004ad]  b: playVoice SL2D3051
+[000004b7] 10: 
+[000004b8] 19: 
+[000004b9] ff: text 24
+{textColor 0 0}【Okuhiko】 "You're wrong! It does concern me! Haruka-chan, I-!" 
+{textColor 0 0}【Makoto】 "Okuhiko, stop making a fool of yourself." 
+
+
+[000004bc] 10: 
+[000004bd] 11: fgload 0 00000000 OK04CA 1 3
+[000004cd] 10: 
+[000004ce]  b: playVoice SL2D3052
+[000004d8] 10: 
+[000004d9] 19: 
+[000004da] ff: text 25
+{textColor 0 0}【Okuhiko】 "Shut up. You don't have the right to say anything." 
+{textColor 0 0}【Makoto】 "Whatever... Haruka, shall we go?" 
+
+
+[000004dd] 10: 
+[000004de] 12: removeFG 0 3
+[000004e5] 10: 
+[000004e6] 11: fgload 0 00000000 HA01AB 1 3
+[000004f6] 10: 
+[000004f7]  b: playVoice SL2D3053
+[00000501] 10: 
+[00000502] 19: 
+[00000503] ff: text 26
+{textColor 1 5}【Haruka】 "Wait. Tell him straight." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[00000506] 10: 
+[00000507]  b: playVoice SL2D3054
+[00000511] 10: 
+[00000512] 19: 
+[00000513] ff: text 27
+{textColor 1 5}【Haruka】 "About how you and I... trust each other, no matter what happens... isn't that right?" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000516] 10: 
+[00000517]  b: playVoice SL2D3055
+[00000521] 10: 
+[00000522] 19: 
+[00000523] ff: text 28
+{textColor 1 5}【Haruka】 "Tell Okuhiko. Tell him it doesn't concern him. Tell him we're the only ones who understand." 
+{textColor 0 2}Hold on...  {textColor 0 2}Where did this turn of events... come from...? 
+
+
+[00000526] 10: 
+[00000527]  b: playVoice SL2D3056
+[00000531] 10: 
+[00000532] 19: 
+[00000533] ff: text 29
+{textColor 1 5}【Haruka】 "Why aren't you saying anything?" 
+{textColor 0 0}【Makoto】 "No, I..." 
+
+
+[00000536] 10: 
+[00000537]  b: playVoice SL2D3057
+[00000541] 10: 
+[00000542] 19: 
+[00000543] ff: text 2a
+{textColor 1 5}【Haruka】 "Are you saying we can't trust each other?" 
+{textColor 0 0}【Makoto】 "That's not it, that's not it at all." 
+
+
+[00000546] 10: 
+[00000547]  b: playVoice SL2D3058
+[00000551] 10: 
+[00000552] 19: 
+[00000553] ff: text 2b
+{textColor 0 0}【Okuhiko】 "Haruka-chan, what's so good about this irresponsible bastard?" 
+{textColor 0 0}【Makoto】 "Irresponsible!?" 
+{textColor 0 2}You don't even know the circumstances! 
+{textColor 0 0}【Makoto】 "I trust Haruka!" 
+{textColor 0 0}【Makoto】 "We made a promise last night. I trust Haruka. That's why Haruka trusts me, too!" 
+
+
+[00000556] 10: 
+[00000557]  7: stopBGM
+[00000558] 10: 
+[00000559]  6: playBGM 13
+[0000055d] 10: 
+[0000055e]  8: playSFX SE099 1
+[00000568] 10: 
+[00000569] 19: 
+[0000056a] ff: text 2c
+{textColor 0 2}――Suddenly, a dry sound echoes. 
+{textColor 0 2}Taken aback, we all turn towards the sound. Saki is standing frozen at the front door... 
+{textColor 0 2}Laying at her feet is her basket. 
+
+
+[0000056d] 10: 
+[0000056e] 12: removeFG 0 3
+[00000575] 10: 
+[00000576] 11: fgload 0 00000000 SA08AA 1 3
+[00000586] 10: 
+[00000587]  b: playVoice SL2D3059
+[00000591] 10: 
+[00000592] 19: 
+[00000593] ff: text 2d
+{textColor 1 6}【Saki】 "I see... so you really trust her after all..." 
+{textColor 0 0}【Makoto】 "!!!" 
+{textColor 0 2}Shit! Now that I think about it... this is around the time Saki arrived last time! 
+{textColor 0 0}【Makoto】 "Hold on, Saki!" 
+
+
+[00000596] 10: 
+[00000597]  b: playVoice SL2D3060
+[000005a1] 10: 
+[000005a2] 19: 
+[000005a3] ff: text 2e
+{textColor 1 6}【Saki】 "I-I'll be going now... Farewell." 
+
+
+[000005a6] 10: 
+[000005a7] 12: removeFG 0 3
+[000005ae] 10: 
+[000005af] 19: 
+[000005b0] ff: text 2f
+{textColor 0 0}【Makoto】 "Y-You're wrong. There's a reason for-!" 
+{textColor 0 2}I rush over to Saki as she tries to run. 
+{textColor 0 2}I reach my hand out, but Saki violently slaps it aside. 
+{textColor 0 2}She gives me a piercing glare. 
+
+
+[000005b3] 10: 
+[000005b4]  8: playSFX SE100 1
+[000005be] 10: 
+[000005bf]  a: waitForSFX
+[000005c0] 10: 
+[000005c1] 19: 
+[000005c2] ff: text 30
+{textColor 0 2}Just then, she suddenly crushes the basket. 
+
+
+[000005c5] 10: 
+[000005c6]  8: playSFX SE100 1
+[000005d0] 10: 
+[000005d1]  a: waitForSFX
+[000005d2] 10: 
+[000005d3]  8: playSFX SE100 1
+[000005dd] 10: 
+[000005de]  a: waitForSFX
+[000005df] 10: 
+[000005e0]  8: playSFX SE100 1
+[000005ea] 10: 
+[000005eb] 19: 
+[000005ec] ff: text 31
+{textColor 0 2}She's crushing it!  {textColor 0 2}―――The sound of wood snapping is heard.  {textColor 0 2}―――The basket has now broken apart. 
+{textColor 0 2}Plastic tableware scatters everywhere. Sandwiches come flying out. 
+
+
+[000005ef] 10: 
+[000005f0]  9: stopSFX
+[000005f1] 10: 
+[000005f2] 19: 
+[000005f3] ff: text 32
+{textColor 0 2}Even though I made preparations to prevent it this time... 
+{textColor 0 2}Haruka throws a powerful glance at Saki, then gets closer and closer to her. 
+
+
+[000005f6] 10: 
+[000005f7]  b: playVoice SL2D3061
+[00000601] 10: 
+[00000602] 19: 
+[00000603] ff: text 33
+{textColor 1 5}【Haruka】 "Saki! You're wrong!" 
+
+
+[00000606] 10: 
+[00000607] 11: fgload 1 00000000 SA05AA 1 3
+[00000617] 10: 
+[00000618]  b: playVoice SL2D3062
+[00000622] 10: 
+[00000623] 19: 
+[00000624] ff: text 34
+{textColor 1 6}【Saki】 "Stay away from me!" 
+{textColor 0 2}Even so, Haruka doesn't stop walking. 
+
+
+[00000627] 10: 
+[00000628] 11: fgload 1 00000000 SA04AA 1 3
+[00000638] 10: 
+[00000639]  b: playVoice SL2D3063
+[00000643] 10: 
+[00000644] 19: 
+[00000645] ff: text 35
+{textColor 1 6}【Saki】 "What is it? Get the hell away from me! I have no business with you, you damn clone!" 
+{textColor 1 5}【Haruka】 "!!!" 
+
+
+[00000648] 10: 
+[00000649] 12: removeFG 1 3
+[00000650] 10: 
+[00000651] 11: fgload 1 00000000 OK11CA 0 0
+[00000661] 10: 
+[00000662]  b: playVoice SL2D3065
+[0000066c] 10: 
+[0000066d] 19: 
+[0000066e] ff: text 36
+{textColor 0 0}【Okuhiko】 "Ah..." 
+
+
+[00000671] 10: 
+[00000672] 11: fgload 0 00000000 YU11AA 2 0
+[00000682] 10: 
+[00000683]  b: playVoice SL2D3066
+[0000068d] 10: 
+[0000068e] 19: 
+[0000068f] ff: text 37
+{textColor 1 4}【Yuka】 "Huh?" 
+
+
+[00000692] 10: 
+[00000693] 12: removeFG 1 3
+[0000069a] 10: 
+[0000069b] 11: fgload 1 00000000 KU11BA 0 0
+[000006ab] 10: 
+[000006ac]  b: playVoice SL2D3067
+[000006b6] 10: 
+[000006b7] 19: 
+[000006b8] ff: text 38
+{textColor 1 7}【Kurumi】 "... Clone?" 
+{textColor 0 2}... 
+{textColor 0 2}In the end, the same thing happened. 
+{textColor 0 2}It happened quite a bit earlier than last time, but... 
+{textColor 0 2}I don't really remember what happened after that. 
+{textColor 0 2}I'm unable to think of anything. 
+{textColor 0 2}The shock from this time is nowhere as big as it was last time, but... 
+{textColor 0 2}At any rate, this time, I ended up only hurting both Saki and Haruka... 
+
+
+[000006bb] 10: 
+[000006bc]  f: removeBG 0 0 2
+[000006c6] 10: 
+[000006c7]  7: stopBGM
+[000006c8]  0: 
+[000006c9]  5: delay 48
+[000006ce] 10: 
+[000006cf] 10: bgload 00000000 BG01N 0 1
+[000006dc] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 20
+[000006e8] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 20
+[000006f4] 10: 
+[000006f5] 17: showClock
+[000006f6] 10: 
+[000006f7] 19: 
+[000006f8] ff: text 39
+{textColor 0 2}When I come to my senses, it's already nighttime. 
+{textColor 0 2}After what happened, I've been hiding out in my room. 
+{textColor 0 2}I still haven't found a way to change Saki's situation. 
+{textColor 0 2}As time passes on, I start to get impatient. 
+{textColor 0 2}Despite history somewhat changing, it seems like it's still headed in a similar direction. 
+{textColor 0 2}Lying down on the floor of my room is Saki's broken basket... 
+{textColor 0 2}(I should... try to fix it.) 
+{textColor 0 2}This time, I'll fix it myself. 
+{textColor 0 2}The current me is the only one who can do something that trivial... 
+
+
+[000006fb] 10: 
+[000006fc]  f: removeBG 0 3 2
+[00000706] 10: 
+[00000707]  7: stopBGM
+[00000708] 10: 
+[00000709] 19: 
+[0000070a] ff: text 3a
+{textColor 0 2}... ... ... 
+
+
+[0000070d]  0: 
+[0000070e]  5: delay 60
+[00000713] 10: 
+[00000714] 10: bgload 00000000 BG01N 0 1
+[00000721] 10: 
+[00000722]  6: playBGM 2
+[00000726] 10: 
+[00000727]  8: playSFX SE002 1
+[00000731] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 22
+[0000073d] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 27
+[00000749] 10: 
+[0000074a] 17: showClock
+[0000074b] 10: 
+[0000074c] 11: fgload 0 00000000 HA01CA 1 3
+[0000075c] 10: 
+[0000075d] 19: 
+[0000075e] ff: text 3b
+{textColor 0 2}As I'm fixing the basket, Haruka suddenly comes in. 
+
+
+[00000761] 10: 
+[00000762]  b: playVoice SL2D3129
+[0000076c] 10: 
+[0000076d] 19: 
+[0000076e] ff: text 3c
+{textColor 1 5}【Haruka】 "Is that Saki's?" 
+{textColor 0 0}【Makoto】 "Yeah..." 
+
+
+[00000771] 10: 
+[00000772]  b: playVoice SL2D3130
+[0000077c] 10: 
+[0000077d] 19: 
+[0000077e] ff: text 3d
+{textColor 1 5}【Haruka】 "Have you been fixing it all this time?" 
+{textColor 0 0}【Makoto】 "... Well, yeah." 
+
+
+[00000781] 10: 
+[00000782]  b: playVoice SL2D3131
+[0000078c] 10: 
+[0000078d] 19: 
+[0000078e] ff: text 3e
+{textColor 1 5}【Haruka】 "I'll help." 
+{textColor 0 0}【Makoto】 "It's fine..." 
+
+
+[00000791] 10: 
+[00000792]  b: playVoice SL2D3132
+[0000079c] 10: 
+[0000079d] 19: 
+[0000079e] ff: text 3f
+{textColor 1 5}【Haruka】 "It's my fault... right?" 
+{textColor 0 0}【Makoto】 "That's not true." 
+
+
+[000007a1] 10: 
+[000007a2]  b: playVoice SL2D3133
+[000007ac] 10: 
+[000007ad] 19: 
+[000007ae] ff: text 40
+{textColor 1 5}【Haruka】 "You don't have to cover for me." 
+{textColor 0 0}【Makoto】 "No, it really isn't your fault." 
+
+
+[000007b1] 10: 
+[000007b2] 11: fgload 0 00000000 HA01CB 1 3
+[000007c2] 10: 
+[000007c3]  b: playVoice SL2D3134
+[000007cd] 10: 
+[000007ce] 19: 
+[000007cf] ff: text 41
+{textColor 1 5}【Haruka】 "I'll help." 
+{textColor 0 0}【Makoto】 "I said it's fine." 
+
+
+[000007d2] 10: 
+[000007d3]  b: playVoice SL2D3135
+[000007dd] 10: 
+[000007de] 19: 
+[000007df] ff: text 42
+{textColor 1 5}【Haruka】 "What you're feeling isn't irresponsible, right?" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000007e2] 10: 
+[000007e3]  b: playVoice SL2D3136
+[000007ed] 10: 
+[000007ee] 19: 
+[000007ef] ff: text 43
+{textColor 1 5}【Haruka】 "Even I understand at least that much..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000007f2] 10: 
+[000007f3]  b: playVoice SL2D3137
+[000007fd] 10: 
+[000007fe] 19: 
+[000007ff] ff: text 44
+{textColor 1 5}【Haruka】 "That's why..." 
+{textColor 0 0}【Makoto】 "Haruka... just what happened between you and Saki?" 
+{textColor 0 0}【Makoto】 "You... need to talk properly to her." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "I hate it when I see the two of you like you are right now..." 
+{textColor 0 0}【Makoto】 "Your relationship is strained over a simple misunderstanding." 
+{textColor 0 0}【Makoto】 "Don't you find that strange?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "You might be scared, but I want you to leave it to me..." 
+
+
+[00000802] 10: 
+[00000803]  b: playVoice SL2D3138
+[0000080d] 10: 
+[0000080e] 19: 
+[0000080f] ff: text 45
+{textColor 1 5}【Haruka】 "... All right." 
+{textColor 0 2}As I nod, I hold up the basket I'm fixing. 
+{textColor 0 0}【Makoto】 "I think it'll take until tomorrow morning to fix... It's a really big job, you know?" 
+
+
+[00000812] 10: 
+[00000813] 11: fgload 0 00000000 HA02CB 1 3
+[00000823] 10: 
+[00000824]  b: playVoice SL2D3139
+[0000082e] 10: 
+[0000082f] 19: 
+[00000830] ff: text 46
+{textColor 1 5}【Haruka】 "I understand..." 
+
+
+[00000833] 10: 
+[00000834] 12: removeFG 0 3
+[0000083b] 10: 
+[0000083c] 19: 
+[0000083d] ff: text 47
+{textColor 0 2}Haruka gives me a little smile... 
+
+
+[00000840] 10: 
+[00000841]  7: stopBGM
+[00000842] 10: 
+[00000843]  f: removeBG 0 0 0
+[0000084d] 10: 
+[0000084e]  4: jump SL2D4
+[00000855]  0: 
+[00000856]  0: 
+[00000857]  0: 

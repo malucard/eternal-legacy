@@ -1,0 +1,639 @@
+[0000002c] 10: 
+[0000002d]  7: stopBGM
+[0000002e] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 12
+[00000039] 10: 
+[0000003a] 10: bgload 00000000 BG06E 4 1
+[00000047] 10: 
+[00000048]  6: playBGM 8
+[0000004c] 10: 
+[0000004d] 17: showClock
+[0000004e] 10: 
+[0000004f] 11: fgload 0 00000000 SA01AAD 1 3
+[0000005f] 10: 
+[00000060] 19: 
+[00000061] ff: text 00
+{textColor 0 2}I exit the shop.  Saki is waiting there. 
+{textColor 0 0}【Makoto】 "Well then, ready to go?" 
+{textColor 0 2}Just as I take a step forward... 
+
+
+[00000064] 10: 
+[00000065] 13: moveFG 0 2
+[0000006c] 10: 
+[0000006d] 11: fgload 1 00000000 IZ01AAD 0 3
+[0000007d] 10: 
+[0000007e]  b: playVoice L1D1E253
+[00000088] 10: 
+[00000089] 19: 
+[0000008a] ff: text 01
+{textColor 1 8}【Izumi】 "Wait a minute!" 
+
+
+[0000008d] 10: 
+[0000008e]  b: playVoice L1D1E254
+[00000098] 10: 
+[00000099] 19: 
+[0000009a] ff: text 02
+{textColor 1 6}【Saki】 "Is something wrong?" 
+
+
+[0000009d] 10: 
+[0000009e]  b: playVoice L1D1E255
+[000000a8] 10: 
+[000000a9] 19: 
+[000000aa] ff: text 03
+{textColor 1 8}【Izumi】 "Sorry, I forgot!{delay 5} Buy these as well!" 
+{textColor 0 2}She hands me a small scrap of paper. It's covered in writing. 
+{textColor 0 2}Huh?{delay 5} There's so much stuff on here.{delay 5} We have to buy all of this? 
+
+
+[000000ad] 10: 
+[000000ae]  b: playVoice L1D1E256
+[000000b8] 10: 
+[000000b9] 19: 
+[000000ba] ff: text 04
+{textColor 1 8}【Izumi】 "Also, we have a bike by the side of the shop. Please use it. It'd be easier to bring the groceries back that way." 
+{textColor 0 0}【Makoto】 "True. Just carrying the 22 pounds of rice alone does seem like a pain..." 
+
+
+[000000bd] 10: 
+[000000be] 11: fgload 1 00000000 IZ02AAD 0 3
+[000000ce] 10: 
+[000000cf]  b: playVoice L1D1E257
+[000000d9] 10: 
+[000000da] 19: 
+[000000db] ff: text 05
+{textColor 1 8}【Izumi】 "The key's attached to it.{delay 5}{delay 5} Well then, you two take care." 
+
+
+[000000de] 10: 
+[000000df] 12: removeFG 1 3
+[000000e6] 10: 
+[000000e7] 19: 
+[000000e8] ff: text 06
+{textColor 0 0}【Makoto】 "Thank you very much." 
+{textColor 0 2}I thankfully bow my head as she walks back into the shop. 
+
+
+[000000eb] 10: 
+[000000ec] 12: removeFG 0 3
+[000000f3] 10: 
+[000000f4] 19: 
+[000000f5] ff: text 07
+{textColor 0 0}【Makoto】 "All right then, Saki{delay 5}{delay 5}... san? 
+{textColor 0 2}I lift my head, but I don't see her anymore.  I try looking around.  {textColor 0 2}The setting sun illuminates the road by the shop. 
+{textColor 0 2}On it is Saki, who has already walked far ahead. 
+{textColor 0 2}Huh?{delay 5}{delay 5} What's this?{delay 5}{delay 5} What's going on? 
+{textColor 0 2}I quickly straddle the bike, and chase after Saki. 
+
+
+[000000f8] 10: 
+[000000f9]  7: stopBGM
+[000000fa] 10: 
+[000000fb] 10: bgload 00000000 BG14E 4 1
+[00000108] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 17
+[00000114] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 47
+[00000120] 10: 
+[00000121] 17: showClock
+[00000122] 10: 
+[00000123] 11: fgload 0 00000000 SA01AAD 1 3
+[00000133] 10: 
+[00000134]  6: playBGM 3
+[00000138] 10: 
+[00000139] 19: 
+[0000013a] ff: text 08
+{textColor 0 2}Saki steps away from the bike and continues to walk. 
+{textColor 0 0}【Makoto】 "What's wrong? You can ride in the back, you know." 
+
+
+[0000013d] 10: 
+[0000013e] 11: fgload 0 00000000 SA05AAD 1 3
+[0000014e] 10: 
+[0000014f]  b: playVoice L1D1E258
+[00000159] 10: 
+[0000015a] 19: 
+[0000015b] ff: text 09
+{textColor 1 6}【Saki】 "I'm fine." 
+{textColor 0 0}【Makoto】 "You don't want to go shopping?" 
+
+
+[0000015e] 10: 
+[0000015f]  b: playVoice L1D1E259
+[00000169] 10: 
+[0000016a] 19: 
+[0000016b] ff: text 0a
+{textColor 1 6}【Saki】 "I never said that." 
+{textColor 0 0}【Makoto】 "Don't tell me a bike is too 'unseemingly' for you." 
+
+
+[0000016e] 10: 
+[0000016f] 11: fgload 0 00000000 SA01AAD 1 3
+[0000017f] 10: 
+[00000180]  b: playVoice L1D1E260
+[0000018a] 10: 
+[0000018b] 19: 
+[0000018c] ff: text 0b
+{textColor 1 6}【Saki】 "Not really...{delay 5} That's not what I meant, but-" 
+{textColor 0 0}【Makoto】 "Then get on." 
+
+
+[0000018f] 10: 
+[00000190] 11: fgload 0 00000000 SA08AAD 1 3
+[000001a0] 10: 
+[000001a1] 19: 
+[000001a2] ff: text 0c
+{textColor 0 2}When I stretch out my hand, Saki steps back again. She seems to be trembling. 
+{textColor 0 0}【Makoto】 "Huh?{delay 5}{delay 5} Oh, I see...{delay 5}{delay 5} Now I understand..." 
+
+
+[000001a5] 10: 
+[000001a6]  b: playVoice L1D1E261
+[000001b0] 10: 
+[000001b1] 19: 
+[000001b2] ff: text 0d
+{textColor 1 6}【Saki】 "What?" 
+{textColor 0 0}【Makoto】 "You're scared{delay 5} of bikes?" 
+
+
+[000001b5] 10: 
+[000001b6] 11: fgload 0 00000000 SA05AAD 1 3
+[000001c6] 10: 
+[000001c7]  b: playVoice L1D1E262
+[000001d1] 10: 
+[000001d2] 19: 
+[000001d3] ff: text 0e
+{textColor 1 6}【Saki】 "N-No way! You're wrong!" 
+{textColor 0 0}【Makoto】 "Heh heh...{delay 5} is that so..." 
+
+
+[000001d6] 10: 
+[000001d7]  b: playVoice L1D1E263
+[000001e1] 10: 
+[000001e2] 19: 
+[000001e3] ff: text 0f
+{textColor 1 6}【Saki】 "Stop laughing, you creep!{delay 5} ――I'll do it.{delay 5} I'll get on. Hurry up and head straight there." 
+{textColor 0 0}【Makoto】 "Yes, ma'am." 
+
+
+[000001e6] 10: 
+[000001e7] 12: removeFG 0 3
+[000001ee] 10: 
+[000001ef] 19: 
+[000001f0] ff: text 10
+{textColor 0 2}I wait as Saki slowly sits on the luggage carrier in a side saddle fashion. 
+{textColor 0 2}She looks really nervous. I start silently pedaling. 
+
+
+[000001f3]  0: 
+[000001f4]  5: delay 60
+[000001f9] 10: 
+[000001fa] 19: 
+[000001fb] ff: text 11
+{textColor 0 2}Seeing Saki like this, I... 
+
+[000001fe] ff: text 12
+{textColor 0 2}{choiceOpt 1 -> Get the urge to tease her a bit. }{choiceOpt 2 -> No, I shouldn't be so mean. }
+
+[00000201] 10: 
+[00000202]  3: choice v_a1_08 00 00
+[00000207]  0: 
+[00000208]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000285 (0002)
+[00000216] fe: varop VAR_(28_0a)_a1_01 (14) += (00) 1
+[00000221] 10: 
+[00000222] 10: bgload 00000000 EV_SA11 0 1
+[0000022f] 10: 
+[00000230]  b: playVoice L1D1E264
+[0000023a] 10: 
+[0000023b] 19: 
+[0000023c] ff: text 13
+{textColor 1 6}【Saki】 "KYAA!" 
+{textColor 0 2}Saki instinctively clings to my back. 
+{textColor 0 2}Mission accomplished!{delay 5}{delay 5} For a while, I pedal steadily.  Then I start to pick up speed.  {textColor 0 2}The pleasant afternoon breeze runs through my whole body. 
+{textColor 0 2}The feeling of Saki's breasts pressed against my back isn't so bad, either. 
+
+
+[0000023f] 10: 
+[00000240]  b: playVoice L1D1E265
+[0000024a] 10: 
+[0000024b] 19: 
+[0000024c] ff: text 14
+{textColor 1 6}【Saki】 "Stop!{delay 5} Slow down!" 
+{textColor 0 0}【Makoto】 "Huh?{delay 5}{delay 5} What was that?" 
+{textColor 0 2}I pretend not to hear her. We're coming in on an easy hill, so I increase the bike's speed more and more. 
+{textColor 0 2}We're almost there; I can see the shopping district ahead of the curve. Saki screams louder as I pedal harder. 
+{textColor 0 2}I don't care. I'm getting excited. She's kind of cute when she's upset like this. 
+
+
+[0000024f] 10: 
+[00000250]  b: playVoice L1D1E266
+[0000025a] 10: 
+[0000025b] 19: 
+[0000025c] ff: text 15
+{textColor 1 6}【Saki】 "That's enough!{delay 5} Let me off!" 
+{textColor 0 2}No can do, missy. 
+
+
+[0000025f] 10: 
+[00000260]  7: stopBGM
+[00000261] 10: 
+[00000262]  b: playVoice L1D1E267
+[0000026c] 10: 
+[0000026d] 19: 
+[0000026e] ff: text 16
+{textColor 1 6}【Saki】 "L-{delay 5}{delay 5}L-{delay 5}{delay 5}Look out!" 
+
+
+[00000271] 10: 
+[00000272]  f: removeBG 1 0 3
+[0000027c] 10: 
+[0000027d] 19: 
+[0000027e] ff: text 17
+{textColor 0 2}She suddenly turns my head with her hand. Don't! I can't see! 
+{textColor 0 0}【Makoto】 "I-{delay 5}{delay 5}Idiot!{delay 5}{delay 5} We could've crashed into something. Let go!!" 
+
+
+[00000281]  0: 
+[00000282]  7: goto7 0000038a (0003)
+[00000285] 10: 
+[00000286] 10: bgload 00000000 EV_SA11 0 1
+[00000293] 10: 
+[00000294]  b: playVoice L1D1E268
+[0000029e] 10: 
+[0000029f] 19: 
+[000002a0] ff: text 18
+{textColor 1 6}【Saki】 "KYAA!" 
+{textColor 0 2}Saki immediately clings to my back. Just as I thought. It seems Saki has a phobia of bikes... no, a phobia of speed. 
+{textColor 0 2}I don't want to torment her, so I pedal slowly. 
+{textColor 0 2}At first, Saki was so scared that her arms were wound tight around me, but she got used to it after a while. Now, she has a single hand lightly propped against my back. 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 0}【Makoto】 "...{delay 5}{delay 5} Hey...?" 
+
+
+[000002a3] 10: 
+[000002a4]  b: playVoice L1D1E270
+[000002ae] 10: 
+[000002af] 19: 
+[000002b0] ff: text 19
+{textColor 1 6}【Saki】 "What?" 
+{textColor 0 0}【Makoto】 "...{delay 5}{delay 5} No...{delay 5}{delay 5} it's nothing." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 2}It's quiet between us. 
+{textColor 0 2}Whenever I try to talk to her, Saki just bluntly retaliates. This isn't getting anywhere... 
+{textColor 0 2}The atmosphere's become quite awkward. Guess this the opposite of "time flies when you're having fun", huh...? 
+{textColor 0 2}If I had known things would be going this slow, then should I have sped up even if it would have scared her...? 
+{textColor 0 2}As I'm thinking about that, we soon approach a long decline. 
+{textColor 0 2}It's neither steep nor is it gentle. Because of our combined weight, the bike is going to speed up from the decline. 
+{textColor 0 0}【Makoto】 "We're going to go faster. Hang on tight." 
+
+
+[000002b3] 10: 
+[000002b4]  b: playVoice L1D1E272
+[000002be] 10: 
+[000002bf] 19: 
+[000002c0] ff: text 1a
+{textColor 1 6}【Saki】 "... O-{delay 5}{delay 5}{delay 5}Okay." 
+{textColor 0 2}Saki responds with a faint, trembling voice and nods. She wraps her arms around me again. 
+{textColor 0 2}I begin to pedal towards the hill. 
+{textColor 0 2}Whoosh! 
+
+
+[000002c3] 10: 
+[000002c4]  b: playVoice L1D1E273
+[000002ce] 10: 
+[000002cf] 19: 
+[000002d0] ff: text 1b
+{textColor 1 6}【Saki】 "KYAA!!" 
+{textColor 0 2}Shit!{delay 5}{delay 5} We're going too fast!  {textColor 0 2}We're sliding down the hill road faster than I expected.  {textColor 0 2}Saki clings to my body with all of her might. 
+{textColor 0 2}With this bulging sensation against my back, I start to think that this isn't so bad. 
+
+
+[000002d3] 10: 
+[000002d4]  b: playVoice L1D1E274
+[000002de] 10: 
+[000002df] 19: 
+[000002e0] ff: text 1c
+{textColor 1 6}【Saki】 "No!!{delay 5}{delay 5} You're going too fast!" 
+{textColor 0 2}I reluctantly reach for the brakes after hearing Saki scream this over and over. 
+{textColor 0 2}Where are the brakes...{delay 5}{delay 5} ah, here.  ...{delay 5}{delay 5} Huh? 
+{textColor 0 2}Click,{delay 5}{delay 5} click...{delay 5}{delay 5} I start to get the feeling that something is wrong when nothing happens. 
+{textColor 0 2}The bike shows no signs of slowing down at all.  Oh...{delay 5}{delay 5} crap... 
+
+
+[000002e3] 10: 
+[000002e4]  b: playVoice L1D1E275
+[000002ee] 10: 
+[000002ef] 19: 
+[000002f0] ff: text 1d
+{textColor 1 6}【Saki】 "The brakes!!{delay 5}{delay 5} Hurry up!{delay 5}{delay 5} Slow us down!!" 
+{textColor 0 2}Saki screams hysterically. 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000002f3] 10: 
+[000002f4]  b: playVoice L1D1E276
+[000002fe] 10: 
+[000002ff] 19: 
+[00000300] ff: text 1e
+{textColor 1 6}【Saki】 "Wh-{delay 5}{delay 5}What's wrong!? Hurry up!!" 
+{textColor 0 0}【Makoto】 "...{delay 5}{delay 5} Umm..." 
+
+
+[00000303] 10: 
+[00000304]  b: playVoice L1D1E277
+[0000030e] 10: 
+[0000030f] 19: 
+[00000310] ff: text 1f
+{textColor 1 6}【Saki】 "...{delay 5}{delay 5} Wh-{delay 5}{delay 5}What?" 
+{textColor 0 0}【Makoto】 "It seems...{delay 5}{delay 5} the brakes...{delay 5}{delay 5} aren't working." 
+
+
+[00000313] 10: 
+[00000314]  b: playVoice L1D1E278
+[0000031e] 10: 
+[0000031f] 19: 
+[00000320] ff: text 20
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000323] 10: 
+[00000324]  6: playBGM 13
+[00000328] 10: 
+[00000329]  b: playVoice L1D1E279
+[00000333] 10: 
+[00000334] 19: 
+[00000335] ff: text 21
+{textColor 1 6}【Saki】 "...{delay 5}{delay 5} No way..." 
+{textColor 0 0}【Makoto】 "I'm...{delay 5}{delay 5} dead serious." 
+{textColor 0 2}To say that the bike needs fixing is putting it lightly. 
+{textColor 0 2}There are parts loose here and there, and the chain is disconnected and loose. 
+{textColor 0 2}Izumi-san needs to learn how to take better care of vehicles. 
+{textColor 0 2}But wait...{delay 5}{delay 5} if the brakes aren't working... 
+
+
+[00000338] 10: 
+[00000339]  b: playVoice L1D1E280
+[00000343] 10: 
+[00000344] 19: 
+[00000345] ff: text 22
+{textColor 1 6}【Saki】 "... N...{delay 5}{delay 5} NOOOO!!!" 
+{textColor 0 2}Saki's scream echoes around us. 
+{textColor 0 2}Her grip tightens even more. 
+{textColor 0 0}【Makoto】 "Shit...!" 
+{textColor 0 2}I try to think of ways on how I can reduce our speed.  ... But I'm drawing a blank. 
+
+
+[00000348] 10: 
+[00000349]  b: playVoice L1D1E281
+[00000353] 10: 
+[00000354] 19: 
+[00000355] ff: text 23
+{textColor 1 6}【Saki】 "STOOOOOP!!" 
+{textColor 0 2}Saki's loud screams continue. 
+{textColor 0 2}The bike's rampage continues. Suddenly, I see a curve ahead of us. 
+{textColor 0 2}I instantly turn the handles...{delay 5}{delay 5} 
+
+[00000358] 10: 
+[00000359]  f: removeBG 1 0 3
+[00000363] 10: 
+[00000364] 19: 
+[00000365] ff: text 24
+{textColor 0 2}... but my arms are being pinned down due to Saki's arms. 
+{textColor 0 2}We...{delay 5}{delay 5} We can't turn!! 
+
+
+[00000368] 10: 
+[00000369]  b: playVoice L1D1E282
+[00000373] 10: 
+[00000374] 19: 
+[00000375] ff: text 25
+{textColor 1 6}【Saki】 "Stop! Stop it!!" 
+{textColor 0 2}It seems Saki's terror has reached its peak, as she's fallen into panic. Naturally, she can't see the curve in front of us. 
+{textColor 0 0}【Makoto】 "I-{delay 5}{delay 5}Idiot!{delay 5}{delay 5} Let go of my arm!! There's a curve!!" 
+
+
+[00000378] 10: 
+[00000379]  b: playVoice L1D1E283
+[00000383] 10: 
+[00000384] 19: 
+[00000385] ff: text 26
+{textColor 1 6}【Saki】 "Huh!?{delay 5}{delay 5} ... K-{delay 5}{delay 5}KYAAA!!" 
+
+
+[00000388] 10: 
+[00000389]  7: stopBGM
+[0000038a] 10: 
+[0000038b] 10: bgload 00000000 BG14E 6 1
+[00000398] 10: 
+[00000399]  8: playSFX SE063 1
+[000003a3] 10: 
+[000003a4]  1: cmd1 3
+[000003a8] 10: 
+[000003a9]  1: cmd1 5
+[000003ad] 10: 
+[000003ae]  f: removeBG 1 0 3
+[000003b8] 10: 
+[000003b9]  9: stopSFX
+[000003ba] 10: 
+[000003bb] 10: bgload 00000000 BG06N 0 1
+[000003c8] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 18
+[000003d4] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 36
+[000003e0] 10: 
+[000003e1] 17: showClock
+[000003e2] 10: 
+[000003e3]  6: playBGM 16
+[000003e8] 10: 
+[000003e9] 19: 
+[000003ea] ff: text 27
+{textColor 0 2}――And so, we've finally come back. 
+{textColor 0 2}We drag the bike, with its bent handles, warped saddle, and smashed basket. 
+{textColor 0 2}The bike's tire, along with the rice, saffron, fresh cream, and other groceries that were on the bike have become ridiculously squashed. Obviously, riding the bike back was impossible. 
+{textColor 0 2}Yuka and Izumi-san run over to us. 
+{textColor 0 2}Izumi-san takes the shopping bags from my hands. 
+{textColor 0 2}Just then, I lose my strength and fall down. 
+
+
+[000003ed] 10: 
+[000003ee] 11: fgload 0 00000000 IZ05ABN 1 3
+[000003fe] 10: 
+[000003ff]  b: playVoice L1D1E284
+[00000409] 10: 
+[0000040a] 19: 
+[0000040b] ff: text 28
+{textColor 1 8}【Izumi】 "Ah, you look terrible. We need to disinfect those wounds..." 
+
+
+[0000040e] 10: 
+[0000040f] 12: removeFG 0 3
+[00000416] 10: 
+[00000417] 10: bgload 00000000 BG07N 4 1
+[00000424] 10: 
+[00000425] 11: fgload 0 00000000 YU05AA 1 3
+[00000435] 10: 
+[00000436]  b: playVoice L1D1E285
+[00000440] 10: 
+[00000441] 19: 
+[00000442] ff: text 29
+{textColor 1 4}【Yuka】 "I heard from Saki. I guess the bike wasn't in a condition to be rode like that." 
+{textColor 0 0}【Makoto】 "Is Saki...{delay 5} mad?" 
+
+
+[00000445] 10: 
+[00000446] 11: fgload 0 00000000 YU01AA 1 3
+[00000456] 10: 
+[00000457]  b: playVoice L1D1E286
+[00000461] 10: 
+[00000462] 19: 
+[00000463] ff: text 2a
+{textColor 1 4}【Yuka】 "I don't think so." 
+{textColor 0 0}【Makoto】 "Huh,{delay 5} really?" 
+{textColor 0 2}If that's so, then I'm grateful. 
+
+
+[00000466] 10: 
+[00000467] 12: removeFG 0 3
+[0000046e] 10: 
+[0000046f]  7: stopBGM
+[00000470] 10: 
+[00000471] 11: fgload 0 00000000 SA01AA 1 3
+[00000481] 10: 
+[00000482]  6: playBGM 3
+[00000486] 10: 
+[00000487] 19: 
+[00000488] ff: text 2b
+{textColor 0 2}At that time, Saki comes out from inside. 
+{textColor 0 2}Our eyes meet... 
+
+[0000048b] ff: text 2c
+{textColor 0 2}{choiceOpt 1 -> Try giving her a little smile. }{choiceOpt 2 -> Look away. }
+
+[0000048e] 10: 
+[0000048f]  3: choice v_a1_08 00 00
+[00000494]  0: 
+[00000495]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000545 (0005)
+[000004a3] fe: varop VAR_(28_0a)_a1_01 (14) += (00) 1
+[000004ae] 10: 
+[000004af] 19: 
+[000004b0] ff: text 2d
+{textColor 0 2}Our eyes meet, and I try giving her a little smile. 
+
+
+[000004b3] 10: 
+[000004b4] 11: fgload 0 00000000 SA06AA 1 3
+[000004c4] 10: 
+[000004c5] 19: 
+[000004c6] ff: text 2e
+{textColor 0 2}Saki gives a "hmph", and averts her eyes. She doesn't say a word. 
+{textColor 0 2}(Wait a minute... Yuka!) 
+
+
+[000004c9] 10: 
+[000004ca] 12: removeFG 0 3
+[000004d1] 10: 
+[000004d2] 19: 
+[000004d3] ff: text 2f
+{textColor 0 0}【Makoto】 "What the hell, Yuka? You said she wasn't ma-" 
+{textColor 0 2}As I'm saying this, Izumi-san sprays disinfectant into the wound on my forehead. 
+{textColor 0 0}【Makoto】 "OWWWW!" 
+
+
+[000004d6] 10: 
+[000004d7] 11: fgload 0 00000000 IZ05AB 1 3
+[000004e7] 10: 
+[000004e8]  b: playVoice L1D1E287
+[000004f2] 10: 
+[000004f3] 19: 
+[000004f4] ff: text 30
+{textColor 1 8}【Izumi】 "Put up with it...!" 
+{textColor 0 2}She slaps me lightly on the head. 
+
+
+[000004f7] 10: 
+[000004f8] 12: removeFG 0 3
+[000004ff] 10: 
+[00000500] 11: fgload 0 00000000 YU07AA 2 3
+[00000510] 10: 
+[00000511] 19: 
+[00000512] ff: text 31
+{textColor 0 2}Yuka turns her head, snickering. 
+{textColor 0 2}I feel like somebody is glaring at me. 
+
+
+[00000515] 10: 
+[00000516] 11: fgload 1 00000000 SA01AA 0 3
+[00000526] 10: 
+[00000527] 19: 
+[00000528] ff: text 32
+{textColor 0 2}Saki is staring at me intently. 
+
+
+[0000052b] 10: 
+[0000052c] 11: fgload 1 00000000 SA08AA 0 3
+[0000053c] 10: 
+[0000053d] 19: 
+[0000053e] ff: text 33
+{textColor 0 2}I look at her, but she averts her eyes again. 
+{textColor 0 2}Something then occurs to me.  {textColor 0 2}Why does Saki's face look so pained? 
+
+
+[00000541]  0: 
+[00000542]  7: goto7 000005bd (0006)
+[00000545] 10: 
+[00000546] 12: removeFG 0 3
+[0000054d] 10: 
+[0000054e] 19: 
+[0000054f] ff: text 34
+{textColor 0 2}Our eyes meet, and I immediately look away. 
+{textColor 0 2}It was because of my carelessness that she got hurt. 
+{textColor 0 2}Yuka said otherwise, but she's obviously mad... 
+{textColor 0 2}And at that time, a sharp pain runs through my forehead. Izumi-san sprayed disinfectant into the wound on my forehead. 
+{textColor 0 0}【Makoto】 "OWWWW!" 
+
+
+[00000552] 10: 
+[00000553] 11: fgload 0 00000000 IZ05AB 1 3
+[00000563] 10: 
+[00000564]  b: playVoice L1D1E288
+[0000056e] 10: 
+[0000056f] 19: 
+[00000570] ff: text 35
+{textColor 1 8}【Izumi】 "Put up with it...!" 
+{textColor 0 2}She slaps me lightly on the head. 
+
+
+[00000573] 10: 
+[00000574] 12: removeFG 0 3
+[0000057b] 10: 
+[0000057c] 11: fgload 0 00000000 YU07AA 2 3
+[0000058c] 10: 
+[0000058d] 19: 
+[0000058e] ff: text 36
+{textColor 0 2}Yuka turns her head, snickering. I can suddenly feel a pair of eyes glaring at me. 
+
+
+[00000591] 10: 
+[00000592] 11: fgload 1 00000000 SA01AA 0 3
+[000005a2] 10: 
+[000005a3] 19: 
+[000005a4] ff: text 37
+{textColor 0 2}Saki is staring at me intently. 
+
+
+[000005a7] 10: 
+[000005a8] 11: fgload 1 00000000 SA08AA 0 3
+[000005b8] 10: 
+[000005b9] 19: 
+[000005ba] ff: text 38
+{textColor 0 2}I look at her, but it's Saki this time who looks away. 
+{textColor 0 2}Something then occurs to me.  {textColor 0 2}Why does Saki look so pained? 
+
+
+[000005bd] 10: 
+[000005be]  f: removeBG 0 0 2
+[000005c8] 10: 
+[000005c9] 15: removeAllFG 3
+[000005cd] fe: varop VAR_(28_0a)_a0_1b (14) := (00) 0
+[000005d8]  0: 
+[000005d9]  e: return
+[000005da]  0: 
+[000005db]  0: 

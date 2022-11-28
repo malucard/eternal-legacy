@@ -1,0 +1,2441 @@
+[00000060] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 5
+[0000006b] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 5
+[00000076] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000082] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[0000008e] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 5
+[00000099]  0: 
+[0000009a]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 000000ae (0002)
+[000000a8] 10: 
+[000000a9] 1c: cmd1C
+[000000aa]  0: 
+[000000ab]  7: goto7 000000b9 (0003)
+[000000ae] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[000000b9]  0: 
+[000000ba]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 000000ca (0005)
+[000000c8] 10: 
+[000000c9] 18: cmd18
+[000000ca] 10: 
+[000000cb] 1b: dayIntro 00000000 BGCAL5HA.cps
+[000000d2] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 115
+[000000de] 10: 
+[000000df] 10: bgload 00000000 BG01NN 0 1
+[000000ec] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[000000f7] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 14
+[00000102] 10: 
+[00000103] 17: showClock
+[00000104] 10: 
+[00000105]  8: playSFX SE006 1
+[0000010f] 10: 
+[00000110] 19: 
+[00000111] ff: text 00
+{textColor 0 2}――*Knock*, *knock*! *Knock*, *knock*!  Someone's knocking on the door. 
+{textColor 0 2}(Mmm... Mmm〜...) 
+{textColor 0 2}(Who would come over... so late at night...?) 
+{textColor 0 2}I get up from the bed while I rub my sleepy eyes. 
+
+
+[00000114] 10: 
+[00000115]  8: playSFX SE006 1
+[0000011f] 10: 
+[00000120] 19: 
+[00000121] ff: text 01
+{textColor 0 2}The knocking continues.  {textColor 0 2}I walk over to the door, and open it. 
+
+
+[00000124] 10: 
+[00000125]  8: playSFX SE001 1
+[0000012f] 10: 
+[00000130]  a: waitForSFX
+[00000131] 10: 
+[00000132]  1: cmd1 3
+[00000136] 10: 
+[00000137]  1: cmd1 6
+[0000013b] 10: 
+[0000013c] 19: 
+[0000013d] ff: text 02
+{textColor 0 2}――Wham! 
+{textColor 0 0}【Makoto】 "!?" 
+
+
+[00000140] 10: 
+[00000141]  6: playBGM 2
+[00000145] 10: 
+[00000146] 19: 
+[00000147] ff: text 03
+{textColor 0 2}It's Haruka.  {textColor 0 2}It seems she'd banged her forehead on the door, as she's now rubbing it with a sheepish smile. 
+{textColor 0 0}【Makoto】 "Ah... Did I do that just now?" 
+
+
+[0000014a] 10: 
+[0000014b] 11: fgload 0 00000000 HA02CAN 1 3
+[0000015b] 10: 
+[0000015c]  b: playVoice HL1D5000
+[00000166] 10: 
+[00000167] 19: 
+[00000168] ff: text 04
+{textColor 1 5}【Haruka】 "No, that's not it. I was slightly half-asleep..." 
+{textColor 0 0}【Makoto】 "Really? You were knocking rather loudly for someone who was just 'half-asleep'..." 
+
+
+[0000016b] 10: 
+[0000016c] 11: fgload 0 00000000 HA08CAN 1 3
+[0000017c] 10: 
+[0000017d]  b: playVoice HL1D5001
+[00000187] 10: 
+[00000188] 19: 
+[00000189] ff: text 05
+{textColor 1 5}【Haruka】 "Ah,{delay 5} th-{delay 5}that's..." 
+{textColor 0 2}She falls silent. 
+{textColor 0 2}Haruka's acting kind of funny right now.  {textColor 0 2}She's obviously in some kind of hurry.  {textColor 0 2}She probably fell silent because she sees that I didn't buy her act, and now doesn't know what to say next. 
+{textColor 0 0}【Makoto】 "Sorry. I was just teasing you there." 
+
+
+[0000018c] 10: 
+[0000018d] 11: fgload 0 00000000 HA01CAN 1 3
+[0000019d] 10: 
+[0000019e]  b: playVoice HL1D5002
+[000001a8] 10: 
+[000001a9] 19: 
+[000001aa] ff: text 06
+{textColor 1 5}【Haruka】 "'Teasing'?" 
+{textColor 0 0}【Makoto】 "Yeah, exactly." 
+
+
+[000001ad] 10: 
+[000001ae]  b: playVoice HL1D5003
+[000001b8] 10: 
+[000001b9] 19: 
+[000001ba] ff: text 07
+{textColor 1 5}【Haruka】 "... I see." 
+{textColor 0 0}【Makoto】 "So, what's up?" 
+
+
+[000001bd] 10: 
+[000001be]  b: playVoice HL1D5004
+[000001c8] 10: 
+[000001c9] 19: 
+[000001ca] ff: text 08
+{textColor 1 5}【Haruka】 "Forget it." 
+{textColor 0 0}【Makoto】 "Huh? Why are you telling me to forget it when you've come all the way here...?" 
+
+
+[000001cd] 10: 
+[000001ce]  b: playVoice HL1D5005
+[000001d8] 10: 
+[000001d9] 19: 
+[000001da] ff: text 09
+{textColor 1 5}【Haruka】 "Well, it seems like you were sound asleep." 
+{textColor 0 0}【Makoto】 "Well, yeah... it's really late and I value my sleep." 
+
+
+[000001dd] 10: 
+[000001de]  b: playVoice HL1D5006
+[000001e8] 10: 
+[000001e9] 19: 
+[000001ea] ff: text 0a
+{textColor 1 5}【Haruka】 "I see... just because I can't sleep doesn't mean that others can't either..." 
+{textColor 0 0}【Makoto】 "Of course. It's considered rude to wake people up like that, you know." 
+
+
+[000001ed] 10: 
+[000001ee] 11: fgload 0 00000000 HA08CAN 1 3
+[000001fe] 10: 
+[000001ff]  b: playVoice HL1D5007
+[00000209] 10: 
+[0000020a] 19: 
+[0000020b] ff: text 0b
+{textColor 1 5}【Haruka】 "I'm... sorry." 
+{textColor 0 0}【Makoto】 "Hmm... well, if you understand, it's fine." 
+
+
+[0000020e] 10: 
+[0000020f]  b: playVoice HL1D5008
+[00000219] 10: 
+[0000021a] 19: 
+[0000021b] ff: text 0c
+{textColor 1 5}【Haruka】 "Well then, good night." 
+
+
+[0000021e] 10: 
+[0000021f] 12: removeFG 0 3
+[00000226] 10: 
+[00000227] 19: 
+[00000228] ff: text 0d
+{textColor 0 2}As Haruka turns her back towards me, I impulsively call out for her to stop. 
+{textColor 0 0}【Makoto】 "H-Hey! Hold on!" 
+
+
+[0000022b] 10: 
+[0000022c] 11: fgload 0 00000000 HA01CAN 1 3
+[0000023c] 10: 
+[0000023d]  b: playVoice HL1D5009
+[00000247] 10: 
+[00000248] 19: 
+[00000249] ff: text 0e
+{textColor 1 5}【Haruka】 "Huh?" 
+{textColor 0 0}【Makoto】 "You can't sleep, right?  And besides, didn't you have something you wanted to say to me?" 
+
+
+[0000024c] 10: 
+[0000024d]  b: playVoice HL1D5010
+[00000257] 10: 
+[00000258] 19: 
+[00000259] ff: text 0f
+{textColor 1 5}【Haruka】 "Just now, I said good night. And you also said that you were sound asleep." 
+{textColor 0 2}Haruka's words sting, as if they had slapped me right across the face. I gawk at her, speechless. 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000025c] 10: 
+[0000025d] 11: fgload 0 00000000 HA07CAN 1 3
+[0000026d] 10: 
+[0000026e]  b: playVoice HL1D5011
+[00000278] 10: 
+[00000279] 19: 
+[0000027a] ff: text 10
+{textColor 1 5}【Haruka】 "Isn't this what you call being 'teased'?" 
+{textColor 0 2}Haruka turns around to give me a wide, impish smile. 
+{textColor 0 2}She's beaming. It's the first time I've ever seen an expression like that on her face. 
+{textColor 0 0}【Makoto】 "You pick up on things way too easily..." 
+{textColor 0 2}When she sees how embarrassed I am, Haruka covers her mouth and giggles. I heave a sigh. 
+{textColor 0 0}【Makoto】 "So, what's up?" 
+
+
+[0000027d] 10: 
+[0000027e] 11: fgload 0 00000000 HA01CAN 1 3
+[0000028e] 10: 
+[0000028f]  b: playVoice HL1D5012
+[00000299] 10: 
+[0000029a] 19: 
+[0000029b] ff: text 11
+{textColor 1 5}【Haruka】 "There's a favor I'd like to ask you..." 
+{textColor 0 2}Haruka... wants to ask me a favor?  Just what could it be? 
+
+
+[0000029e] 10: 
+[0000029f]  b: playVoice HL1D5013
+[000002a9] 10: 
+[000002aa] 19: 
+[000002ab] ff: text 12
+{textColor 1 5}【Haruka】 "U-Umm... I couldn't sleep last night either. So when I took a walk outside by myself... I saw some shiranui. I think it was about 4:30 in the morning..." 
+{textColor 0 0}【Makoto】 "Shiranui? You mean like will-o'-the-wisps?" 
+
+
+[000002ae] 10: 
+[000002af]  b: playVoice HL1D5014
+[000002b9] 10: 
+[000002ba] 19: 
+[000002bb] ff: text 13
+{textColor 1 5}【Haruka】 "Right, shiranui... They were very pretty... That's why I was thinking of going to see them again tonight." 
+{textColor 0 0}【Makoto】 "And you want me to go with you?" 
+
+
+[000002be] 10: 
+[000002bf]  b: playVoice HL1D5015
+[000002c9] 10: 
+[000002ca] 19: 
+[000002cb] ff: text 14
+{textColor 1 5}【Haruka】 "... Yes." 
+{textColor 0 2}Well, I don't see why not. I turn on my watch light to check the time. 
+{textColor 0 0}【Makoto】 "Sure, but it's only 1:00. Isn't that too early? I think it'd be best if we got some more sleep, even if it's only for a little bit." 
+{textColor 0 0}【Makoto】 "Because I'm sure tomorrow will also get busy...  I can lend you my watch, if you'd like." 
+
+
+[000002ce] 10: 
+[000002cf]  b: playVoice HL1D5016
+[000002d9] 10: 
+[000002da] 19: 
+[000002db] ff: text 15
+{textColor 1 5}【Haruka】 "No, I'll be fine. Well then, I'll let you sleep for a bit, then come to wake you up afterwards." 
+{textColor 0 0}【Makoto】 "Okay. I'll leave the door unlocked so that you can wake me up if I'm still asleep." 
+
+
+[000002de] 10: 
+[000002df]  b: playVoice HL1D5017
+[000002e9] 10: 
+[000002ea] 19: 
+[000002eb] ff: text 16
+{textColor 1 5}【Haruka】 "All right, I understand. It's a promise." 
+{textColor 0 0}【Makoto】 "... It's a promise." 
+
+
+[000002ee] 10: 
+[000002ef] 12: removeFG 0 3
+[000002f6] 10: 
+[000002f7]  8: playSFX SE002 1
+[00000301] 10: 
+[00000302] 19: 
+[00000303] ff: text 17
+{textColor 0 2}A smile rises on Haruka's lips at those words. Satisfied, she leaves the room. 
+{textColor 0 2}4:30, huh...  I set my watch alarm to that time before I collapse on the bed... 
+
+
+[00000306] 10: 
+[00000307]  7: stopBGM
+[00000308] 10: 
+[00000309]  f: removeBG 0 3 2
+[00000313]  0: 
+[00000314]  5: delay 60
+[00000319] 10: 
+[0000031a] 10: bgload 00000000 BG01NN 0 1
+[00000327] 10: 
+[00000328]  8: playSFX SE132 1
+[00000332] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 4
+[0000033d] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 30
+[00000349] 10: 
+[0000034a] 17: showClock
+[0000034b] 10: 
+[0000034c] 19: 
+[0000034d] ff: text 18
+{textColor 0 2}My watch alarm...  When I hear that sound, I immediately wake up.  And, at the same time... 
+
+
+[00000350] 10: 
+[00000351]  9: stopSFX
+[00000352] 10: 
+[00000353]  8: playSFX SE006 1
+[0000035d] 10: 
+[0000035e] 19: 
+[0000035f] ff: text 19
+{textColor 0 2}... I hear the sound of knocking on the door. 
+
+
+[00000362] 10: 
+[00000363]  9: stopSFX
+[00000364] 10: 
+[00000365]  6: playBGM 2
+[00000369] 10: 
+[0000036a]  b: playVoice H_084_01
+[00000374] 10: 
+[00000375] 19: 
+[00000376] ff: text 1a
+{textColor 1 5}【Haruka】 "... Are you awake?" 
+{textColor 0 2}She slowly asks this in a quiet voice. 
+{textColor 0 0}【Makoto】 "Ah... I'm awake! Wait a minute!" 
+
+
+[00000379] 10: 
+[0000037a]  b: playVoice H_084_02
+[00000384] 10: 
+[00000385] 19: 
+[00000386] ff: text 1b
+{textColor 1 5}【Haruka】 "... Okay." 
+{textColor 0 2}I quickly get off the bed and head out to the living room, where Haruka is waiting... 
+
+
+[00000389] 10: 
+[0000038a]  8: playSFX SE002 1
+[00000394] 10: 
+[00000395] 10: bgload 00000000 BG02NN 4 1
+[000003a2] 10: 
+[000003a3] 11: fgload 0 00000000 HA01AAN 1 3
+[000003b3] 10: 
+[000003b4] 19: 
+[000003b5] ff: text 1c
+{textColor 0 2}I let out a sigh in the quiet, empty room.  {textColor 0 2}I can hear Okuhiko snoring from up in the loft. 
+{textColor 0 0}【Makoto】 "Well then, shall we go?" 
+{textColor 0 2}I ask this with a nod, and Haruka follows suit. 
+
+
+[000003b8] 10: 
+[000003b9] 12: removeFG 0 3
+[000003c0] 10: 
+[000003c1] 19: 
+[000003c2] ff: text 1d
+{textColor 0 2}I start to reach out for the doorknob on the front door.  
+
+[000003c5] 10: 
+[000003c6]  7: stopBGM
+[000003c7] 10: 
+[000003c8] 19: 
+[000003c9] ff: text 1e
+{textColor 0 2}And, at that moment... 
+
+
+[000003cc] 10: 
+[000003cd]  b: playVoice KL1D5000
+[000003d7] 10: 
+[000003d8] 19: 
+[000003d9] ff: text 1f
+{textColor 0 0}【Okuhiko】 "Hey! Wait!" 
+{textColor 0 2}... Okuhiko suddenly shouts in a roaring voice.  {textColor 0 2}When I look up in surprise... 
+
+
+[000003dc] fe: varop VAR_(28_0a)_a1_0b (14) := (00) VAR_(28_0a)_a0_cb
+[000003e8] 14: unsupported 20 
+[000003e9]  0: 
+[000003ea] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cc
+[000003f6] 14: unsupported 20 
+[000003f7]  0: 
+[000003f8] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_cd
+[00000404] 14: unsupported 20 
+[00000405]  0: 
+[00000406] fe: varop VAR_(28_0a)_a1_0b (14) += (00) VAR_(28_0a)_a0_ce
+[00000412] 14: unsupported 20 
+[00000413]  0: 
+[00000414]  0: 
+[00000415]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (80)->0 (15) (00)  * 00000437 (0006)
+[00000423] 10: 
+[00000424]  b: playVoice KL1D5001
+[0000042e] 10: 
+[0000042f] 19: 
+[00000430] ff: text 20
+{textColor 0 0}【Okuhiko】 "This is bad...{delay 5}{delay 5} I...{delay 5}{delay 5} don't have...{delay 5}{delay 5} enough...{delay 5}{delay 5}{delay 5} energy...{delay 5}{delay 5}{delay 5}{delay 5}... Zzz..." 
+
+
+[00000433]  0: 
+[00000434]  7: goto7 000004b0 (000a)
+[00000437]  0: 
+[00000438]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (81)->1 (15) (00)  * 0000045a (0007)
+[00000446] 10: 
+[00000447]  b: playVoice KL1D5002
+[00000451] 10: 
+[00000452] 19: 
+[00000453] ff: text 21
+{textColor 0 0}【Okuhiko】 "Neutrino Energy, Power On! ...{delay 5}{delay 5} Trans〜{delay 5}{delay 5}form! ...{delay 5}{delay 5} There!{delay 5}{delay 5}{delay 5}{delay 5} ... Zzz..." 
+
+
+[00000456]  0: 
+[00000457]  7: goto7 000004b0 (000a)
+[0000045a]  0: 
+[0000045b]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (82)->2 (15) (00)  * 0000047d (0008)
+[00000469] 10: 
+[0000046a]  b: playVoice KL1D5003
+[00000474] 10: 
+[00000475] 19: 
+[00000476] ff: text 22
+{textColor 0 0}【Okuhiko】 "You've shown yourself, Mysterious Hi-Tech Vacuum Cleaner Man...{delay 5}{delay 5} Ugh...{delay 5}{delay 5} He's...{delay 5}{delay 5} sucking...{delay 5}{delay 5} me in...{delay 5}{delay 5}{delay 5}{delay 5} ... Zzz..." 
+
+
+[00000479]  0: 
+[0000047a]  7: goto7 000004b0 (000a)
+[0000047d]  0: 
+[0000047e]  a: condJump 00 VAR_(28_1e)_a1_0b (28) != (15) (83)->3 (15) (00)  * 000004a0 (0009)
+[0000048c] 10: 
+[0000048d]  b: playVoice KL1D5004
+[00000497] 10: 
+[00000498] 19: 
+[00000499] ff: text 23
+{textColor 0 0}【Okuhiko】 "Good work...{delay 5}{delay 5}{delay 5}{delay 5} Zzz..." 
+
+
+[0000049c]  0: 
+[0000049d]  7: goto7 000004b0 (000a)
+[000004a0] 10: 
+[000004a1]  b: playVoice KL1D5005
+[000004ab] 10: 
+[000004ac] 19: 
+[000004ad] ff: text 24
+{textColor 0 0}【Okuhiko】 "Hey! ... Kid!{delay 5}{delay 5} ... Get off of the stage! {delay 5}{delay 5} ... Hey, stop it!{delay 5}{delay 5} ... Don't...{delay 5}{delay 5} lower...{delay 5}{delay 5} that zipper!{delay 5}{delay 5}{delay 5}{delay 5} ... Zzz..." 
+
+
+[000004b0] fe: varop VAR_(28_0a)_a1_0b (14) := (00) 0
+[000004bb] 10: 
+[000004bc] 19: 
+[000004bd] ff: text 25
+{textColor 0 2}... It seems he's just sleeptalking. 
+{textColor 0 2}(Whew... man, what kind of dream is he having anyway...?) 
+{textColor 0 2}I ignore Okuhiko and open the front door... 
+
+
+[000004c0] 10: 
+[000004c1]  8: playSFX SE001 1
+[000004cb] 10: 
+[000004cc]  f: removeBG 0 4 2
+[000004d6] 10: 
+[000004d7] 10: bgload 00000000 BG12N 4 1
+[000004e4] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 4
+[000004ef] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 39
+[000004fb] 10: 
+[000004fc] 17: showClock
+[000004fd] 10: 
+[000004fe] 11: fgload 0 00000000 HA01AAN 1 3
+[0000050e] 10: 
+[0000050f] 19: 
+[00000510] ff: text 26
+{textColor 0 2}Haruka and I begin to walk side-by-side down the hill road that leads to the shoreline.  {textColor 0 2}On the way, Haruka suddenly mutters this. 
+
+
+[00000513] 10: 
+[00000514] 11: fgload 0 00000000 HA02AAN 1 3
+[00000524] 10: 
+[00000525]  b: playVoice HL1D5018
+[0000052f] 10: 
+[00000530] 19: 
+[00000531] ff: text 27
+{textColor 1 5}【Haruka】 "They're so pretty..." 
+{textColor 0 2}Haruka stares at the night sky as a smile graces her lips. 
+
+
+[00000534] 10: 
+[00000535] 12: removeFG 0 3
+[0000053c] 10: 
+[0000053d]  6: playBGM 18
+[00000542] 10: 
+[00000543] 10: bgload 00000000 BG30N 0 1
+[00000550] 10: 
+[00000551] 19: 
+[00000552] ff: text 28
+{textColor 0 2}I also look up at the sky. 
+{textColor 0 2}It's completely covered in stars.  {textColor 0 2}They shine brightly, their light raining down onto the earth. 
+
+
+[00000555] 10: 
+[00000556] 10: bgload 00000000 BG12N 0 1
+[00000563] 10: 
+[00000564] 11: fgload 0 00000000 HA12AAN 1 3
+[00000574] 10: 
+[00000575] 19: 
+[00000576] ff: text 29
+{textColor 0 2}My eyes turn to Haruka. 
+{textColor 0 2}There's a cool and clear beauty to her face as she looks up at the stars. 
+{textColor 0 2}It looks as if all the filthy things the world has burdened her with are starting to be dispelled by the light of the stars...  {textColor 0 2}That's when it hits me. 
+{textColor 0 2}――What does Haruka mean to me...?  {textColor 0 2}My heart clutches at the thought. 
+{textColor 0 2}The memories of the time I've spent with Haruka here over the past few days rush through my mind. 
+{textColor 0 2}At first, I felt like she was just a little girl, unable to get a grip on the world. 
+{textColor 0 2}That's right... I sometimes felt as if I were her father.  {textColor 0 2}No, even now, I still have those protective feelings towards her. 
+{textColor 0 2}But is that truly it?  {textColor 0 2}Is that really all it is...? 
+
+
+[00000579] 10: 
+[0000057a]  f: removeBG 0 4 2
+[00000584] 10: 
+[00000585] 12: removeFG 0 0
+[0000058c] 10: 
+[0000058d] 10: bgload 00000000 BG13ZN 4 1
+[0000059a] 10: 
+[0000059b] 19: 
+[0000059c] ff: text 2a
+{textColor 0 2}When Haruka and I reach the shoreline, the stars twinkle with a beautiful intensity, as if they've reached the time on this night where they shine their brightest. 
+
+
+[0000059f] 10: 
+[000005a0] 10: bgload 00000000 EV_HA05 0 1
+[000005ad] 10: 
+[000005ae] 19: 
+[000005af] ff: text 2b
+{textColor 0 2}As Haruka faces the sea, she looks up towards the starlit sky as if she's yearning to become part of it.  {textColor 0 2}Her face seems anxious, and it feels like she's trying to force herself to smile. 
+{textColor 0 2}It's like I'm seeing the bottom of Haruka's heart. 
+{textColor 0 2}I start to feel a little guilty, so I shift my gaze towards the ocean.  {textColor 0 2}At that moment... 
+{textColor 0 2}Countless lights with tinges of red and yellow rise above the water's surface.  {textColor 0 2}They approach us before bobbing away, flickering. 
+{textColor 0 2}They resemble giant fireflies hovering above the water, swaying to and fro in straight lines. 
+{textColor 0 0}【Makoto】 "Th-this is...?" 
+
+
+[000005b2] 10: 
+[000005b3]  b: playVoice HL1D5019
+[000005bd] 10: 
+[000005be] 19: 
+[000005bf] ff: text 2c
+{textColor 1 5}【Haruka】 "... Shiranui." 
+
+
+[000005c2] 10: 
+[000005c3]  b: playVoice HL1D5020
+[000005cd] 10: 
+[000005ce] 19: 
+[000005cf] ff: text 2d
+{textColor 1 5}【Haruka】 "They move as if they're guiding sailors on ships. No one knows where they came from or why they sway the way they do. That's why they're called shiranui, or 'unknown fire'..." 
+{textColor 0 0}【Makoto】 "Wow..." 
+{textColor 0 0}【Makoto】 "But if I remember correctly... aren't shiranui lights from the shore that refract abnormally due to cold air around the water's surface? That's why they appear to shapeshift, right?" 
+
+
+[000005d2] 10: 
+[000005d3]  b: playVoice HL1D5021
+[000005dd] 10: 
+[000005de] 19: 
+[000005df] ff: text 2e
+{textColor 1 5}【Haruka】 "That's wrong..." 
+{textColor 0 0}【Makoto】 "'Wrong'...? But surely you must have known that. You're way smarter than me, after a-" 
+
+
+[000005e2] 10: 
+[000005e3]  b: playVoice HL1D5022
+[000005ed] 10: 
+[000005ee] 19: 
+[000005ef] ff: text 2f
+{textColor 1 5}【Haruka】 "That's wrong...!" 
+{textColor 0 0}【Makoto】 "Haruka..." 
+
+
+[000005f2] 10: 
+[000005f3]  b: playVoice HL1D5023
+[000005fd] 10: 
+[000005fe] 19: 
+[000005ff] ff: text 30
+{textColor 1 5}【Haruka】 "It has nothing to do with being smart." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000602] 10: 
+[00000603]  b: playVoice HL1D5024
+[0000060d] 10: 
+[0000060e] 19: 
+[0000060f] ff: text 31
+{textColor 1 5}【Haruka】 "That's wrong." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000612] 10: 
+[00000613]  b: playVoice HL1D5025
+[0000061d] 10: 
+[0000061e] 19: 
+[0000061f] ff: text 32
+{textColor 1 5}【Haruka】 "No one knows why they light up." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000622] 10: 
+[00000623]  b: playVoice HL1D5026
+[0000062d] 10: 
+[0000062e] 19: 
+[0000062f] ff: text 33
+{textColor 1 5}【Haruka】 "Nobody knows that." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000632] 10: 
+[00000633]  b: playVoice HL1D5027
+[0000063d] 10: 
+[0000063e] 19: 
+[0000063f] ff: text 34
+{textColor 1 5}【Haruka】 "It'll always remain a mystery..." 
+{textColor 0 0}【Makoto】 "That's why...{delay 5}{delay 5} it's shiranui?" 
+
+
+[00000642] 10: 
+[00000643]  b: playVoice HL1D5028
+[0000064d] 10: 
+[0000064e] 19: 
+[0000064f] ff: text 35
+{textColor 1 5}【Haruka】 "Yes...{delay 5}{delay 5} That's why it's shiranui..." 
+{textColor 0 2}Cool and clear...  {textColor 0 2}Haruka really does give off that kind of feeling. 
+{textColor 0 2}She has something that normal people don't.  {textColor 0 2}I don't know whether or not it's related to her being a clone, but I believe that. 
+{textColor 0 2}(It's like Haruka came from{delay 5}{delay 5} a faraway{delay 5}{delay 5} parallel universe...) 
+
+
+[00000652] 10: 
+[00000653]  7: stopBGM
+[00000654] 10: 
+[00000655]  f: removeBG 0 0 0
+[0000065f]  0: 
+[00000660]  5: delay 60
+[00000665] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 152
+[00000671] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 9
+[0000067c] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 37
+[00000688] 10: 
+[00000689] 17: showClock
+[0000068a] 10: 
+[0000068b]  8: playSFX SE081 1
+[00000695] 10: 
+[00000696]  b: playVoice H_086_01
+[000006a0] 10: 
+[000006a1] 19: 
+[000006a2] ff: text 36
+{textColor 1 5}【???】 "Makoto... Makoto..." 
+{textColor 0 2}Someone's calling my name. 
+{textColor 0 2}... Who is it?  {textColor 0 2}Is this...  Haruka's voice? 
+
+
+[000006a5] 10: 
+[000006a6]  b: playVoice HL1D5029
+[000006b0] 10: 
+[000006b1] 19: 
+[000006b2] ff: text 37
+{textColor 1 5}【Haruka】 "Makoto! Makoto!" 
+{textColor 0 2}(Ugh... let me sleep a little longer. I went to sleep late last night.) 
+{textColor 0 2}As I try to turn over in my sleep, I am met with resistance. 
+
+
+[000006b5] 10: 
+[000006b6]  b: playVoice HL1D5030
+[000006c0] 10: 
+[000006c1] 19: 
+[000006c2] ff: text 38
+{textColor 1 5}【Haruka】 "Hey, Makoto! Makoto!" 
+{textColor 0 2}Haruka grabs my shoulders and rocks them back and forth. 
+{textColor 0 2}I-I get it...  {textColor 0 2}I'm up,{delay 5} I'm up, so... 
+
+
+[000006c5] 10: 
+[000006c6] 10: bgload 00000000 BG01AR 0 1
+[000006d3] 10: 
+[000006d4] 19: 
+[000006d5] ff: text 39
+{textColor 0 2}Wh-Whoa! 
+
+
+[000006d8] 10: 
+[000006d9] 10: bgload 00000000 EV_HA03A 6 1
+[000006e6] 10: 
+[000006e7] 19: 
+[000006e8] ff: text 3a
+{textColor 0 2}When I raise my upper body and open my eyes, I see, mere inches away from me, Haruka's...{delay 5}{delay 5} face!? 
+
+
+[000006eb] 10: 
+[000006ec]  b: playVoice H_086_02
+[000006f6] 10: 
+[000006f7] 19: 
+[000006f8] ff: text 3b
+{textColor 1 5}【Haruka】 "Kyaa...!" 
+
+
+[000006fb] 10: 
+[000006fc]  1: cmd1 3
+[00000700] 10: 
+[00000701]  1: cmd1 6
+[00000705] 10: 
+[00000706]  f: removeBG 1 6 2
+[00000710] 10: 
+[00000711] 19: 
+[00000712] ff: text 3c
+{textColor 0 2}Owww...  We bump our foreheads into each other. 
+{textColor 0 2}I can see stars flying around me. 
+
+
+[00000715] 10: 
+[00000716] 10: bgload 00000000 BG01AR 0 1
+[00000723] 10: 
+[00000724] 11: fgload 0 00000000 HA08AB 1 3
+[00000734] 10: 
+[00000735]  6: playBGM 2
+[00000739] 10: 
+[0000073a]  b: playVoice HL1D5031
+[00000744] 10: 
+[00000745] 19: 
+[00000746] ff: text 3d
+{textColor 1 5}【Haruka】 "Ow..." 
+{textColor 0 2}Haruka frowns as she nurses her sore forehead. 
+{textColor 0 0}【Makoto】 "... Wh-What were you doing, Haruka?" 
+
+
+[00000749] 10: 
+[0000074a] 11: fgload 0 00000000 HA01AB 1 3
+[0000075a] 10: 
+[0000075b]  b: playVoice HL1D5032
+[00000765] 10: 
+[00000766] 19: 
+[00000767] ff: text 3e
+{textColor 1 5}【Haruka】 "Makoto... you were having trouble waking up, so..." 
+{textColor 0 0}【Makoto】 "That's not it, I'm asking why your face was right in front of mine when I opened my eyes." 
+
+
+[0000076a] 10: 
+[0000076b]  b: playVoice HL1D5033
+[00000775] 10: 
+[00000776] 19: 
+[00000777] ff: text 3f
+{textColor 1 5}【Haruka】 "Have you ever read... 'Sleeping Beauty'?" 
+{textColor 0 0}【Makoto】 "W-well... a little...  It's that fairytale by the Grimm Brothers, right?" 
+{textColor 0 2}I've never read it before, but I do have a very vague memory of seeing it in a picture book once... 
+
+
+[0000077a] 10: 
+[0000077b]  b: playVoice HL1D5034
+[00000785] 10: 
+[00000786] 19: 
+[00000787] ff: text 40
+{textColor 1 5}【Haruka】 "The Grimm Brothers' story is 'Briar Rose'――'Sleeping Beauty' was written by Perrault." 
+{textColor 0 0}【Makoto】 "Huh?{delay 5}{delay 5} Oh, really?" 
+
+
+[0000078a] 10: 
+[0000078b]  b: playVoice HL1D5035
+[00000795] 10: 
+[00000796] 19: 
+[00000797] ff: text 41
+{textColor 1 5}【Haruka】 "They're the same story, however." 
+{textColor 0 2}I'm crushed. If that's the case, then don't tell me that... 
+
+
+[0000079a] 10: 
+[0000079b]  b: playVoice HL1D5036
+[000007a5] 10: 
+[000007a6] 19: 
+[000007a7] ff: text 42
+{textColor 1 5}【Haruka】 "There was this princess who slept for hundreds of years, right?" 
+{textColor 0 0}【Makoto】 "Yeah, that's right. And then, a prince finally came to the princess in order to wake her up, and then..." 
+{textColor 0 2}When I get to that point, I stop dead in my tracks. 
+{textColor 0 2}H-Hold on!{delay 5}{delay 5}{delay 5} Then that means... 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}(Haruka... she didn't say "That part doesn't matter," this time...) 
+{textColor 0 2}... 
+
+
+[000007aa] 10: 
+[000007ab] 11: fgload 0 00000000 HA01AA 1 3
+[000007bb] 10: 
+[000007bc]  b: playVoice HL1D5037
+[000007c6] 10: 
+[000007c7] 19: 
+[000007c8] ff: text 43
+{textColor 1 5}【Haruka】 "Now that you're awake, let's go." 
+{textColor 0 2}Haruka tugs at my arm as if nothing had happened. 
+{textColor 0 0}【Makoto】 "G-Go... Where?" 
+{textColor 0 2}I try my best to calmly ask this, even though my heart is racing. 
+
+
+[000007cb] 10: 
+[000007cc]  b: playVoice HL1D5038
+[000007d6] 10: 
+[000007d7] 19: 
+[000007d8] ff: text 44
+{textColor 1 5}【Haruka】 "Fishing." 
+{textColor 0 0}【Makoto】 "Fishing?" 
+{textColor 0 2}Haruka nods firmly as if it were natural. 
+{textColor 0 2}This will make the third day in a row we've gone fishing together...  {textColor 0 2}It seems Haruka's gotten really hooked on it... 
+
+
+[000007db] 10: 
+[000007dc]  b: playVoice HL1D5039
+[000007e6] 10: 
+[000007e7] 19: 
+[000007e8] ff: text 45
+{textColor 1 5}【Haruka】 "Hurry, let's go." 
+{textColor 0 2}It seems that to Haruka, it's already been decided that I'm to go fishing with her.  {textColor 0 2}Even though I still haven't said anything...  {textColor 0 2}Well, it's fun, so I'm okay with that. 
+{textColor 0 2}I quickly begin to get ready.  {textColor 0 2}Haruka firmly watches me. 
+{textColor 0 0}【Makoto】 "Haruka... I'm going to change my clothes soon..." 
+
+
+[000007eb] 10: 
+[000007ec]  b: playVoice HL1D5040
+[000007f6] 10: 
+[000007f7] 19: 
+[000007f8] ff: text 46
+{textColor 1 5}【Haruka】 "Right." 
+{textColor 0 0}【Makoto】 "... I'll be naked, so, uh..." 
+
+
+[000007fb] 10: 
+[000007fc] 11: fgload 0 00000000 HA03AA 1 3
+[0000080c] 10: 
+[0000080d]  b: playVoice HL1D5041
+[00000817] 10: 
+[00000818] 19: 
+[00000819] ff: text 47
+{textColor 1 5}【Haruka】 "R-Right..." 
+{textColor 0 2}Having finally realized it, she quickly averts her eyes and gazes at the floor.  {textColor 0 2}A slight blush rises to her cheeks. 
+
+
+[0000081c] 10: 
+[0000081d]  b: playVoice HL1D5042
+[00000827] 10: 
+[00000828] 19: 
+[00000829] ff: text 48
+{textColor 1 5}【Haruka】 "I'll be waiting by the front door..." 
+
+
+[0000082c] 10: 
+[0000082d] 12: removeFG 0 3
+[00000834] 10: 
+[00000835] 19: 
+[00000836] ff: text 49
+{textColor 0 2}Just like that, she tries to leave the room. 
+{textColor 0 0}【Makoto】 "Haruka..." 
+{textColor 0 2}I call out to her just as she starts leaving.  {textColor 0 2}There's something I have to tell her. 
+
+
+[00000839] 10: 
+[0000083a] 11: fgload 0 00000000 HA01AA 1 3
+[0000084a] 10: 
+[0000084b]  b: playVoice HL1D5043
+[00000855] 10: 
+[00000856] 19: 
+[00000857] ff: text 4a
+{textColor 1 5}【Haruka】 "... What?" 
+{textColor 0 0}【Makoto】 "It was the prince that kissed the princess in 'Sleeping Beauty', not the other way around." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "... That's it." 
+
+
+[0000085a] 10: 
+[0000085b]  b: playVoice HL1D5044
+[00000865] 10: 
+[00000866] 19: 
+[00000867] ff: text 4b
+{textColor 1 5}【Haruka】 "Yes, I understand." 
+{textColor 0 0}【Makoto】 "I wouldn't try to wake up anyone else with that method." 
+
+
+[0000086a] 10: 
+[0000086b]  b: playVoice HL1D5045
+[00000875] 10: 
+[00000876] 19: 
+[00000877] ff: text 4c
+{textColor 1 5}【Haruka】 "All right... If you say so, then I won't." 
+
+
+[0000087a] 10: 
+[0000087b] 12: removeFG 0 3
+[00000882] 10: 
+[00000883] 19: 
+[00000884] ff: text 4d
+{textColor 0 2}With those words, Haruka leaves the room. 
+
+
+[00000887] 10: 
+[00000888]  8: playSFX SE001 1
+[00000892] 10: 
+[00000893]  a: waitForSFX
+[00000894] 10: 
+[00000895]  8: playSFX SE011 1
+[0000089f] 10: 
+[000008a0]  a: waitForSFX
+[000008a1] 10: 
+[000008a2]  7: stopBGM
+[000008a3] 10: 
+[000008a4]  f: removeBG 0 4 2
+[000008ae] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 136
+[000008ba] 10: 
+[000008bb] 10: bgload 00000000 BG15R 4 1
+[000008c8] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 11
+[000008d3] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 4
+[000008de] 10: 
+[000008df] 17: showClock
+[000008e0] 10: 
+[000008e1]  6: playBGM 8
+[000008e5] 10: 
+[000008e6] 19: 
+[000008e7] ff: text 4e
+{textColor 0 2}And thus, the two of us have once again gone to the pier. 
+{textColor 0 2}While setting up the fishing gear, I suddenly look up at the sky.  {textColor 0 2}It's heavily covered with clouds.  {textColor 0 2}We're definitely not getting any good weather today. 
+{textColor 0 2}Even so, Haruka cheerfully dangles her fishing line.  
+
+[000008ea] 10: 
+[000008eb]  8: playSFX SE125 1
+[000008f5] 10: 
+[000008f6] 19: 
+[000008f7] ff: text 4f
+{textColor 0 2}Mine is dangling in the water as well, though, in truth...  My heart's not really into it. 
+
+
+[000008fa] 10: 
+[000008fb]  8: playSFX SE125 1
+[00000905] 10: 
+[00000906] 19: 
+[00000907] ff: text 50
+{textColor 0 2}(Just being able to be with Haruka is enough, right...?) 
+{textColor 0 2}But as usual, my line's not getting a single bite.  {textColor 0 2}Of course, it's just me who's having this problem... 
+
+
+[0000090a] 10: 
+[0000090b] 11: fgload 0 00000000 HA02AB 1 3
+[0000091b] 10: 
+[0000091c]  b: playVoice HL1D5046
+[00000926] 10: 
+[00000927] 19: 
+[00000928] ff: text 51
+{textColor 1 5}【Haruka】 "Wow... I caught another one. Here, look. I caught a really big one this time!" 
+{textColor 0 2}As usual, Haruka keeps wheeling in a multitude of big catches. 
+{textColor 0 2}(Why is she so much better than me?) 
+{textColor 0 2}It's a little frustrating not being able to catch anything, but just seeing Haruka like this makes it all worth it. 
+{textColor 0 2}The days I've spent getting to know this side of her run through my mind. 
+{textColor 0 2}A clone...{delay 5}{delay 5}{delay 5} Saki said with confidence that Haruka is a clone. 
+{textColor 0 2}But why? Even if it's the truth, how did Saki even know about that? 
+{textColor 0 2}The question I had two days ago still floats in my head. 
+{textColor 0 2}And then Haruka said that she was just somebody's copy.  She said that she had no heart. 
+{textColor 0 2}Could... Could any person really not have a heart? 
+{textColor 0 2}It's impossible for me to believe that, as she's having so much fun right now. 
+{textColor 0 2}I try comparing the Haruka I see now to the one I saw when we first met. The difference is huge, isn't it? 
+{textColor 0 2}Haruka has really changed. 
+{textColor 0 2}The current Haruka frequently has very humane expressions. 
+{textColor 0 2}I can definitely feel emotion in them. 
+{textColor 0 2}Little by little, I think that Haruka is finding that which is called her "heart". 
+
+
+[0000092b] 10: 
+[0000092c] 11: fgload 0 00000000 HA10AB 1 3
+[0000093c] 10: 
+[0000093d]  b: playVoice HL1D5047
+[00000947] 10: 
+[00000948] 19: 
+[00000949] ff: text 52
+{textColor 1 5}【Haruka】 "Makoto...?" 
+{textColor 0 2}Haruka's voice pulls me back to reality. 
+{textColor 0 2}It probably looked like I was spacing out.  {textColor 0 2}She's been looking at me curiously as I pondered. 
+
+
+[0000094c] 10: 
+[0000094d]  b: playVoice HL1D5048
+[00000957] 10: 
+[00000958] 19: 
+[00000959] ff: text 53
+{textColor 1 5}【Haruka】 "... Is something wrong?" 
+{textColor 0 0}【Makoto】 "No, it's nothing..." 
+
+
+[0000095c] 10: 
+[0000095d] 11: fgload 0 00000000 HA01AB 1 3
+[0000096d] 10: 
+[0000096e] 19: 
+[0000096f] ff: text 54
+{textColor 1 5}【Haruka】 "???" 
+{textColor 0 0}【Makoto】 "It's just that for some reason or other, I was remembering everything that's happened between us since we first met." 
+
+
+[00000972] 10: 
+[00000973]  b: playVoice HL1D5050
+[0000097d] 10: 
+[0000097e] 19: 
+[0000097f] ff: text 55
+{textColor 1 5}【Haruka】 "You were thinking about me...?" 
+{textColor 0 0}【Makoto】 "Yeah. A lot of things have happened in the last five days, huh?" 
+
+
+[00000982] 10: 
+[00000983] 11: fgload 0 00000000 HA12AB 1 3
+[00000993] 10: 
+[00000994]  7: stopBGM
+[00000995] 10: 
+[00000996] 19: 
+[00000997] ff: text 56
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Haruka...?" 
+
+
+[0000099a] 10: 
+[0000099b]  6: playBGM 2
+[0000099f] 10: 
+[000009a0] 19: 
+[000009a1] ff: text 57
+{textColor 0 2}As Haruka firmly grasps her fishing rod, her eyes keenly focus on the faraway horizon... 
+{textColor 0 2}(A lot of things really did happen...) 
+{textColor 0 2}I indulge in my thoughts again. 
+{textColor 0 2}To Haruka, it's probably been one large series of events.  {textColor 0 2}Her being exposed as a clone... 
+{textColor 0 2}Her receiving Okuhiko's sudden "love confession"...  {textColor 0 2}Her continuous quarrels with Saki, their true circumstances still unknown to me... 
+{textColor 0 2}And also, her first... kiss. 
+
+
+[000009a4] 10: 
+[000009a5]  7: stopBGM
+[000009a6] 10: 
+[000009a7] 19: 
+[000009a8] ff: text 58
+{textColor 0 2}(...) 
+{textColor 0 2}And then, I am taken aback as I realize it. 
+{textColor 0 2}(When... did I start to believe I did it as a favor for Haruka?) 
+{textColor 0 2}I didn't do it as a favor or out of any paternal feelings... 
+{textColor 0 2}I did it to her because of the genuine feelings I have for her... as a... woman... 
+
+
+[000009ab] 10: 
+[000009ac]  6: playBGM 14
+[000009b0] 10: 
+[000009b1] 19: 
+[000009b2] ff: text 59
+{textColor 0 2}(But what about Haruka...?) 
+{textColor 0 2}(What does Haruka... think of me?) 
+{textColor 0 0}【Makoto】 "Haruka..." 
+
+
+[000009b5] 10: 
+[000009b6] 11: fgload 0 00000000 HA01AB 1 3
+[000009c6] 10: 
+[000009c7] 19: 
+[000009c8] ff: text 5a
+{textColor 0 2}Haruka slowly turns her face towards me.  There's not a single drop of emotion to be found in her expression. 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000009cb] 10: 
+[000009cc]  b: playVoice HL1D5051
+[000009d6] 10: 
+[000009d7] 19: 
+[000009d8] ff: text 5b
+{textColor 1 5}【Haruka】 "What is it?" 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}I want to confirm it. What does Haruka think of me? 
+{textColor 0 2}But if Haruka feels that I'm someone like a father to her, then I couldn't bear it.  {textColor 0 2}If she doesn't see me as a man, then... 
+{textColor 0 0}【Makoto】 "No, it's nothing..." 
+
+
+[000009db] 10: 
+[000009dc] 11: fgload 0 00000000 HA12AB 1 3
+[000009ec] 10: 
+[000009ed] 19: 
+[000009ee] ff: text 5c
+{textColor 0 2}Haruka returns her gaze to the ocean.  {textColor 0 2}Her coldness only increases my anxiety.  {textColor 0 2}My uneasiness is starting to eat me alive. 
+{textColor 0 2}(Should I ask her...?{delay 5} Or should I just leave it...?) 
+{textColor 0 2}As I grasp my fishing rod, I continue to worry endlessly... 
+
+
+[000009f1] 10: 
+[000009f2]  7: stopBGM
+[000009f3] 10: 
+[000009f4]  f: removeBG 0 4 2
+[000009fe] 10: 
+[000009ff] 12: removeFG 0 0
+[00000a06] 10: 
+[00000a07] 10: bgload 00000000 BG06R 4 1
+[00000a14] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 12
+[00000a1f] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 35
+[00000a2b] 10: 
+[00000a2c] 17: showClock
+[00000a2d] 10: 
+[00000a2e]  8: playSFX SE004 1
+[00000a38] 10: 
+[00000a39] 19: 
+[00000a3a] ff: text 5d
+{textColor 0 2}When noon arrives, the two of us decide to grab some lunch at Lunabeach as always. 
+
+
+[00000a3d] 10: 
+[00000a3e]  9: stopSFX
+[00000a3f] 10: 
+[00000a40] 10: bgload 00000000 BG07R 4 1
+[00000a4d] 10: 
+[00000a4e] 19: 
+[00000a4f] ff: text 5e
+{textColor 0 2}I look at the lunch menu as Haruka orders a sandwich. 
+
+
+[00000a52] 10: 
+[00000a53] 11: fgload 0 00000000 IZ01AA 2 3
+[00000a63] 10: 
+[00000a64]  6: playBGM 5
+[00000a68] 10: 
+[00000a69]  b: playVoice HL1D5055
+[00000a73] 10: 
+[00000a74] 19: 
+[00000a75] ff: text 5f
+{textColor 1 8}【Izumi】 "Well now, it seems like you two are really hitting it off." 
+{textColor 0 2}Izumi-san teases us as she approaches us. 
+{textColor 0 0}【Makoto】 "No, it's not like..." 
+{textColor 0 2}Feeling a little embarrassed, I instinctively avert my eyes. 
+{textColor 0 2}I throw a fleeting glance at Haruka.  {textColor 0 2}She's silently nibbling her sandwich.  {textColor 0 2}Despite her dainty bites, the way she eats makes me feel that she has a large appetite... 
+
+
+[00000a78] 10: 
+[00000a79] 11: fgload 0 00000000 IZ02AA 2 3
+[00000a89] 10: 
+[00000a8a]  b: playVoice HL1D5056
+[00000a94] 10: 
+[00000a95] 19: 
+[00000a96] ff: text 60
+{textColor 1 8}【Izumi】 "At any rate, Haruka-chan..." 
+
+
+[00000a99] 10: 
+[00000a9a]  b: playVoice HL1D5057
+[00000aa4] 10: 
+[00000aa5] 19: 
+[00000aa6] ff: text 61
+{textColor 1 8}【Izumi】 "This is the third day in a row you've come here for lunch, isn't it? You're not tired of this?" 
+
+
+[00000aa9] 10: 
+[00000aaa] 12: removeFG 0 3
+[00000ab1] 10: 
+[00000ab2] 11: fgload 0 00000000 HA01AB 0 3
+[00000ac2] 10: 
+[00000ac3]  b: playVoice HL1D5058
+[00000acd] 10: 
+[00000ace] 19: 
+[00000acf] ff: text 62
+{textColor 1 5}【Haruka】 "... It's because I like fishing." 
+{textColor 0 2}She says this as bluntly as always... 
+{textColor 0 2}(Hey... you don't have to be so blunt...) 
+{textColor 0 2}Well, I already know by now that's just normal behavior for Haruka... 
+{textColor 0 2}But I've noticed that whenever she's talking to Izumi-san, she always becomes blunter than usual. 
+{textColor 0 2}I scowl as I hold back the urge to scold Haruka for her behavior. That's no way to treat others, after all.  {textColor 0 2}Could it be... that Haruka dislikes Izumi-san? 
+
+
+[00000ad2] 10: 
+[00000ad3] 12: removeFG 0 3
+[00000ada] 10: 
+[00000adb] 11: fgload 0 00000000 IZ01AA 2 3
+[00000aeb] 10: 
+[00000aec]  b: playVoice HL1D5059
+[00000af6] 10: 
+[00000af7] 19: 
+[00000af8] ff: text 63
+{textColor 1 8}【Izumi】 "Well, if you like doing it, then that's fine." 
+{textColor 0 2}Izumi-san turns her attention towards me. 
+
+
+[00000afb] 10: 
+[00000afc] 11: fgload 0 00000000 IZ02AA 2 3
+[00000b0c] 10: 
+[00000b0d]  b: playVoice HL1D5060
+[00000b17] 10: 
+[00000b18] 19: 
+[00000b19] ff: text 64
+{textColor 1 8}【Izumi】 "Makoto-kun, you also come here every day. Is it just because you like fishing?" 
+
+[00000b1c] ff: text 65
+{textColor 0 2}{choiceOpt 1 -> Yeah... }{choiceOpt 2 -> Not exactly... }
+
+[00000b1f] 10: 
+[00000b20]  3: choice v_a1_08 00 00
+[00000b25]  0: 
+[00000b26]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000b6b (000c)
+[00000b34] 10: 
+[00000b35] 19: 
+[00000b36] ff: text 66
+{textColor 0 0}【Makoto】 "Yeah..." 
+{textColor 0 2}I take a bite out of my lunch as I answer. 
+
+
+[00000b39] 10: 
+[00000b3a] 11: fgload 0 00000000 IZ01AA 2 3
+[00000b4a] 10: 
+[00000b4b]  b: playVoice HL1D5061
+[00000b55] 10: 
+[00000b56] 19: 
+[00000b57] ff: text 67
+{textColor 1 8}【Izumi】 "Hmm..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000b5a] 10: 
+[00000b5b] 12: removeFG 0 3
+[00000b62] 10: 
+[00000b63] 19: 
+[00000b64] ff: text 68
+{textColor 0 2}It seems like that wasn't the answer Izumi-san was hoping to hear from me.  {textColor 0 2}Izumi-san returns to the counter, as if having lost interest. 
+
+
+[00000b67]  0: 
+[00000b68]  7: goto7 00000ba9 (000d)
+[00000b6b] fe: varop VAR_(28_0a)_a1_00 (14) += (00) 1
+[00000b76] 10: 
+[00000b77] 19: 
+[00000b78] ff: text 69
+{textColor 0 0}【Makoto】 "Not exactly..." 
+{textColor 0 0}【Makoto】 "Fishing is all right and all...{delay 5}{delay 5} But it's more that I just want to be with Haruka, that's all..." 
+{textColor 0 2}Wh-{delay 5}{delay 5}What am I{delay 5}{delay 5} saying!?  {textColor 0 2}My words cause my face to grow hot. 
+
+
+[00000b7b] 10: 
+[00000b7c] 11: fgload 0 00000000 IZ07AA 2 3
+[00000b8c] 10: 
+[00000b8d]  b: playVoice HL1D5062
+[00000b97] 10: 
+[00000b98] 19: 
+[00000b99] ff: text 6a
+{textColor 1 8}【Izumi】 "Oh my, this was a rather unrefined thing to ask you...{delay 5}{delay 5} Please continue eating." 
+{textColor 0 2}My earlobes get so hot that it feels like steam is coming out of them. 
+{textColor 0 2}(Ugh...{delay 5}{delay 5} I shouldn't have said anything.) 
+
+
+[00000b9c] 10: 
+[00000b9d] 12: removeFG 0 3
+[00000ba4] 10: 
+[00000ba5] 19: 
+[00000ba6] ff: text 6b
+{textColor 0 2}It seems like that was the answer Izumi-san was hoping to hear from me.  {textColor 0 2}She gives me a satisfied nod before returning to the counter. 
+
+
+[00000ba9] 10: 
+[00000baa] 11: fgload 0 00000000 HA12AB 0 3
+[00000bba] 10: 
+[00000bbb]  6: playBGM 2
+[00000bbf] 10: 
+[00000bc0] 19: 
+[00000bc1] ff: text 6c
+{textColor 0 2}Haruka continues to silently eat her sandwich.  {textColor 0 2}It feels like she's completely engrossed in her food. 
+{textColor 0 2}It's obvious that she didn't hear a single word of our conversation just now... 
+
+
+[00000bc4] 10: 
+[00000bc5] 11: fgload 0 00000000 HA01AB 0 3
+[00000bd5] 10: 
+[00000bd6] 19: 
+[00000bd7] ff: text 6d
+{textColor 0 2}Before long... as if noticing my glance, Haruka looks in my direction.  
+
+[00000bda] 10: 
+[00000bdb] 11: fgload 0 00000000 HA02AB 0 3
+[00000beb] 10: 
+[00000bec] 19: 
+[00000bed] ff: text 6e
+{textColor 0 2}A sweet smile rises to her face. 
+{textColor 0 2}(Huh? Who's she looking at?) 
+{textColor 0 2}Wait, it's not like there's anyone else here but me, right? 
+{textColor 0 2}Haruka is showing only me that human-like expression.  {textColor 0 2}That alone makes me happy. 
+
+
+[00000bf0] 10: 
+[00000bf1] 12: removeFG 0 3
+[00000bf8] 10: 
+[00000bf9]  7: stopBGM
+[00000bfa] 10: 
+[00000bfb]  b: playVoice HL1D5063
+[00000c05] 10: 
+[00000c06] 19: 
+[00000c07] ff: text 6f
+{textColor 1 7}【Kurumi】 "Onii-chan♪" 
+
+
+[00000c0a] 10: 
+[00000c0b]  6: playBGM 4
+[00000c0f] 10: 
+[00000c10] 11: fgload 0 00000000 KU07BA 1 3
+[00000c20] 10: 
+[00000c21] 19: 
+[00000c22] ff: text 70
+{textColor 0 2}Kurumi comes over to us after finally finishing her work in the main part of the restaurant. 
+{textColor 0 2}She's carrying a tray in her hands. On it is the coffee I ordered.  {textColor 0 2}However, I am unable to immediately respond to her. 
+{textColor 0 2}My attention is solely focused on Haruka's heartwarming smile. 
+{textColor 0 2}Strong emotions burst from inside me and overwhelm all of my senses...  {textColor 0 2}I smile to myself. 
+
+
+[00000c25] 10: 
+[00000c26] 11: fgload 0 00000000 KU04BB 1 3
+[00000c36] 10: 
+[00000c37]  b: playVoice HL1D5064
+[00000c41] 10: 
+[00000c42] 19: 
+[00000c43] ff: text 71
+{textColor 1 7}【Kurumi】 "Hey, Onii-chan!" 
+{textColor 0 2}Suddenly, Kurumi yanks my ear.  {textColor 0 2}It seems that she's become irritated at me for not answering her. 
+{textColor 0 0}【Makoto】 "O-{delay 5}{delay 5}OWWWWW...!!" 
+
+
+[00000c46] 10: 
+[00000c47] 11: fgload 0 00000000 KU05BB 1 3
+[00000c57] 10: 
+[00000c58]  b: playVoice HL1D5065
+[00000c62] 10: 
+[00000c63] 19: 
+[00000c64] ff: text 72
+{textColor 1 7}【Kurumi】 "Onii-chan! Are you listening!?" 
+{textColor 0 0}【Makoto】 "I'm listening, I'm listening! I'm listening, so let go of me!" 
+
+
+[00000c67] 10: 
+[00000c68] 11: fgload 0 00000000 KU05BA 1 3
+[00000c78] 10: 
+[00000c79] 19: 
+[00000c7a] ff: text 73
+{textColor 0 2}With a sullen, angry expression, Kurumi finally lets go of me. 
+{textColor 0 0}【Makoto】 "Wh-What is it...?" 
+
+
+[00000c7d] 10: 
+[00000c7e] 11: fgload 0 00000000 KU01BA 1 3
+[00000c8e] 10: 
+[00000c8f]  b: playVoice HL1D5066
+[00000c99] 10: 
+[00000c9a] 19: 
+[00000c9b] ff: text 74
+{textColor 1 7}【Kurumi】 "You and the others are going back the day after tomorrow, right?" 
+{textColor 0 0}【Makoto】 "Y-Yeah..." 
+
+
+[00000c9e] 10: 
+[00000c9f] 11: fgload 0 00000000 KU02BA 1 3
+[00000caf] 10: 
+[00000cb0]  b: playVoice HL1D5067
+[00000cba] 10: 
+[00000cbb] 19: 
+[00000cbc] ff: text 75
+{textColor 1 7}【Kurumi】 "So Kurumi wants to make as many memories as possible with you and the others in the time we have left." 
+{textColor 0 0}【Makoto】 "Memories, huh..." 
+
+
+[00000cbf] 10: 
+[00000cc0] 11: fgload 0 00000000 KU07BA 1 3
+[00000cd0] 10: 
+[00000cd1]  b: playVoice HL1D5068
+[00000cdb] 10: 
+[00000cdc] 19: 
+[00000cdd] ff: text 76
+{textColor 1 7}【Kurumi】 "And so... Kurumi was thinking that she'd go sleep over at the lodge tonight〜♪" 
+{textColor 0 0}【Makoto】 "I see..." 
+
+
+[00000ce0] 10: 
+[00000ce1] 11: fgload 0 00000000 KU05BA 1 3
+[00000cf1] 10: 
+[00000cf2]  b: playVoice HL1D5069
+[00000cfc] 10: 
+[00000cfd] 19: 
+[00000cfe] ff: text 77
+{textColor 1 7}【Kurumi】 "Mmph! What's with that tone?" 
+{textColor 0 0}【Makoto】 "Huh? N-No, I didn't mean anything in particular by-" 
+
+
+[00000d01] 10: 
+[00000d02]  7: stopBGM
+[00000d03] 10: 
+[00000d04] 11: fgload 0 00000000 KU04BB 1 3
+[00000d14] 10: 
+[00000d15]  b: playVoice HL1D5070
+[00000d1f] 10: 
+[00000d20] 19: 
+[00000d21] ff: text 78
+{textColor 1 7}【Kurumi】 "Screw you, Onii-chan! Hmph!" 
+
+
+[00000d24] 10: 
+[00000d25]  8: playSFX SE128 1
+[00000d2f] 10: 
+[00000d30]  1: cmd1 3
+[00000d34] 10: 
+[00000d35]  1: cmd1 6
+[00000d39] 10: 
+[00000d3a] 19: 
+[00000d3b] ff: text 79
+{textColor 0 2}Kurumi slaps the coffee cup on the table with all her might! 
+
+
+[00000d3e] 10: 
+[00000d3f]  9: stopSFX
+[00000d40] 10: 
+[00000d41]  6: playBGM 19
+[00000d46] 10: 
+[00000d47] 19: 
+[00000d48] ff: text 7a
+{textColor 0 0}【Makoto】 "H-{delay 5}{delay 5}{delay 5}{delay 5}HOOOT!!" 
+{textColor 0 2}The boiling hot coffee flies in the air and directly hits my pants! 
+{textColor 0 0}【Makoto】 "K-Kurumi... g-get me a dish cloth...!" 
+
+
+[00000d4b] 10: 
+[00000d4c] 11: fgload 0 00000000 KU06BA 1 3
+[00000d5c] 10: 
+[00000d5d]  b: playVoice HL1D5071
+[00000d67] 10: 
+[00000d68] 19: 
+[00000d69] ff: text 7b
+{textColor 1 7}【Kurumi】 "Hmph!" 
+
+
+[00000d6c] 10: 
+[00000d6d] 12: removeFG 0 3
+[00000d74] 10: 
+[00000d75] 19: 
+[00000d76] ff: text 7c
+{textColor 0 2}Kurumi completely ignores me, acting like nothing happened... 
+
+
+[00000d79] 10: 
+[00000d7a] 11: fgload 0 00000000 IZ11AA 2 3
+[00000d8a] 10: 
+[00000d8b]  b: playVoice HL1D5072
+[00000d95] 10: 
+[00000d96] 19: 
+[00000d97] ff: text 7d
+{textColor 1 8}【Izumi】 "Makoto-kun! Are you okay!? You're not burned, are you?" 
+{textColor 0 2}Izumi-san frantically runs over to me.  {textColor 0 2}She quickly hands me a dish towel. 
+{textColor 0 2}... *Wipe, wipe*... *Wipe, wipe*... 
+{textColor 0 2}(Dammit, Kurumi...!) 
+
+
+[00000d9a] 10: 
+[00000d9b]  7: stopBGM
+[00000d9c] 10: 
+[00000d9d] 11: fgload 1 00000000 HA01AA 0 3
+[00000dad] 10: 
+[00000dae] 19: 
+[00000daf] ff: text 7e
+{textColor 0 2}Just then, Haruka suddenly stands up.  
+
+[00000db2] 10: 
+[00000db3] 12: removeFG 1 3
+[00000dba] 10: 
+[00000dbb] 19: 
+[00000dbc] ff: text 7f
+{textColor 0 2}She averts her eyes from Kurumi and Izumi-san, and quickly starts to leave the shop. 
+{textColor 0 2}(???) 
+{textColor 0 2}I give Izumi-san a slight bow, and pursue Haruka outside. 
+
+
+[00000dbf] 10: 
+[00000dc0] 12: removeFG 0 3
+[00000dc7] 10: 
+[00000dc8]  6: playBGM 2
+[00000dcc] 10: 
+[00000dcd]  8: playSFX SE004 1
+[00000dd7] 10: 
+[00000dd8] 10: bgload 00000000 BG06R 4 1
+[00000de5] 10: 
+[00000de6] 11: fgload 0 00000000 HA01AA 1 3
+[00000df6] 10: 
+[00000df7]  b: playVoice HL1D5073
+[00000e01] 10: 
+[00000e02] 19: 
+[00000e03] ff: text 80
+{textColor 1 5}【Haruka】 "Kurumi..." 
+{textColor 0 0}【Makoto】 "Huh?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "What about Kurumi?" 
+
+
+[00000e06] 10: 
+[00000e07]  b: playVoice HL1D5074
+[00000e11] 10: 
+[00000e12] 19: 
+[00000e13] ff: text 81
+{textColor 1 5}【Haruka】 "Kurumi... she seemed happy." 
+{textColor 0 0}【Makoto】 "Huh? What are you saying? She was really pissed off at me, wasn't she...?" 
+
+
+[00000e16] 10: 
+[00000e17]  b: playVoice HL1D5075
+[00000e21] 10: 
+[00000e22] 19: 
+[00000e23] ff: text 82
+{textColor 1 5}【Haruka】 "No... Not that...{delay 5} I mean before that." 
+{textColor 0 0}【Makoto】 "Before that?" 
+
+
+[00000e26] 10: 
+[00000e27]  b: playVoice HL1D5076
+[00000e31] 10: 
+[00000e32] 19: 
+[00000e33] ff: text 83
+{textColor 1 5}【Haruka】 "Kurumi's always so cheerful... she's a good girl." 
+{textColor 0 0}【Makoto】 "Well, she certainly is cheerful... but I don't know if that necessarily makes her a good girl..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Is something wrong?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Haruka?" 
+{textColor 0 2}Haruka's expression hardens.  {textColor 0 2}Seriously, what's wrong...? She's making me worried... 
+
+
+[00000e36] 10: 
+[00000e37] 11: fgload 0 00000000 HA12AA 1 3
+[00000e47] 10: 
+[00000e48]  b: playVoice HL1D5077
+[00000e52] 10: 
+[00000e53] 19: 
+[00000e54] ff: text 84
+{textColor 1 5}【Haruka】 "... It's nothing." 
+{textColor 0 0}【Makoto】 "You say it's nothing, but that's not true, is it?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}But Haruka doesn't answer. 
+{textColor 0 2}No, it's more like she's stubbornly refusing to talk. 
+{textColor 0 2}For the rest of our trip back to the pier, Haruka doesn't say a word... 
+
+
+[00000e57] 10: 
+[00000e58]  7: stopBGM
+[00000e59] 10: 
+[00000e5a]  f: removeBG 0 4 2
+[00000e64] 10: 
+[00000e65] 12: removeFG 0 0
+[00000e6c] 10: 
+[00000e6d] 10: bgload 00000000 BG15R 4 1
+[00000e7a] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 13
+[00000e85] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 39
+[00000e91] 10: 
+[00000e92] 17: showClock
+[00000e93] 10: 
+[00000e94]  6: playBGM 8
+[00000e98] 10: 
+[00000e99] 19: 
+[00000e9a] ff: text 85
+{textColor 0 2}We grab our fishing poles once again. 
+
+
+[00000e9d] 10: 
+[00000e9e]  8: playSFX SE125 1
+[00000ea8] 10: 
+[00000ea9] 11: fgload 0 00000000 HA02AB 1 3
+[00000eb9] 10: 
+[00000eba] 19: 
+[00000ebb] ff: text 86
+{textColor 0 2}The change in Haruka's face due to fishing is miraculous. 
+{textColor 0 2}Although Haruka looked so depressed a short while ago, she's now completely back to being cheerful. 
+{textColor 0 2}Not a single trace of gloom can be found on her beaming face as she enthusiastically fishes. 
+{textColor 0 2}(Mmm... just what's with this quick change in attitude...?) 
+{textColor 0 2}(It's... well, whatever.) 
+{textColor 0 2}Just looking at Haruka's cheerful expression fills me with happiness. 
+{textColor 0 0}【Makoto】 "Hey, Haruka? How about a fishing contest this afternoon?" 
+
+
+[00000ebe] 10: 
+[00000ebf] 11: fgload 0 00000000 HA11AB 1 3
+[00000ecf] 10: 
+[00000ed0]  b: playVoice HL1D5078
+[00000eda] 10: 
+[00000edb] 19: 
+[00000edc] ff: text 87
+{textColor 1 5}【Haruka】 "Huh? Between you and me?{delay 5} Hmm..." 
+
+
+[00000edf] 10: 
+[00000ee0] 11: fgload 0 00000000 HA02AB 1 3
+[00000ef0] 10: 
+[00000ef1]  b: playVoice HL1D5079
+[00000efb] 10: 
+[00000efc] 19: 
+[00000efd] ff: text 88
+{textColor 1 5}【Haruka】 "I accept your challenge..." 
+{textColor 0 0}【Makoto】 "All right! That's the spirit!" 
+{textColor 0 2}And so, against better judgement, I lay down this reckless challenge. 
+{textColor 0 2}Of course, the result is obvious from a mile away... 
+
+
+[00000f00] 10: 
+[00000f01] 12: removeFG 0 3
+[00000f08] 10: 
+[00000f09]  f: removeBG 1 0 2
+[00000f13] 10: 
+[00000f14] 19: 
+[00000f15] ff: text 89
+{textColor 0 2}... ... ... 
+
+
+[00000f18] 10: 
+[00000f19]  f: removeBG 0 0 2
+[00000f23] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 150
+[00000f2f] 10: 
+[00000f30] 10: bgload 00000000 BG15R 0 1
+[00000f3d] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[00000f49] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 43
+[00000f55] 10: 
+[00000f56] 17: showClock
+[00000f57] 10: 
+[00000f58] 11: fgload 0 00000000 HA10AB 1 3
+[00000f68] 10: 
+[00000f69]  b: playVoice HL1D5080
+[00000f73] 10: 
+[00000f74] 19: 
+[00000f75] ff: text 8a
+{textColor 1 5}【Haruka】 "Makoto... you really have no talent for this." 
+{textColor 0 2}Damn.{delay 5}{delay 5}{delay 5} She said it again... 
+{textColor 0 0}【Makoto】 "I know! You don't have to tell me for me to know that!" 
+
+
+[00000f78] 10: 
+[00000f79] 11: fgload 0 00000000 HA02AB 1 3
+[00000f89] 10: 
+[00000f8a]  b: playVoice HL1D5081
+[00000f94] 10: 
+[00000f95] 19: 
+[00000f96] ff: text 8b
+{textColor 1 5}【Haruka】 "It's fine. That's why I'm catching so much- it's to make up for you." 
+{textColor 0 2}Haruka teases me with a coy grin.  {textColor 0 2}However, I'm not annoyed. Not in the slightest... 
+{textColor 0 2}It's not because I'm acting tough or anything like that, but because Haruka is happy...  {textColor 0 2}That's all that's important to me... 
+{textColor 0 2}The setting sun's glow illuminates Haruka's cheeks. 
+
+
+[00000f99] 10: 
+[00000f9a]  7: stopBGM
+[00000f9b] 10: 
+[00000f9c]  f: removeBG 0 0 2
+[00000fa6] 10: 
+[00000fa7] 12: removeFG 0 0
+[00000fae]  0: 
+[00000faf]  5: delay 60
+[00000fb4] 10: 
+[00000fb5] 10: bgload 00000000 BG01NR 0 1
+[00000fc2] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 17
+[00000fce] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 32
+[00000fda] 10: 
+[00000fdb] 17: showClock
+[00000fdc] 10: 
+[00000fdd] 19: 
+[00000fde] ff: text 8c
+{textColor 0 2}Haruka and I return to the lodge. 
+{textColor 0 2}Haruka went to the bathroom, saying she was going to take a shower.  {textColor 0 2}I'm currently lying down on the bed in my room. 
+{textColor 0 2}The five days of camp life up until today... a lot really has happened in them. 
+{textColor 0 2}When I gently close my eyes, the memories up until today are revived like a revolving lantern... 
+
+
+[00000fe1] 10: 
+[00000fe2]  1: cmd1 32
+[00000fe7] 10: 
+[00000fe8]  f: removeBG 1 0 1
+[00000ff2] 10: 
+[00000ff3]  6: playBGM 21
+[00000ff8] 10: 
+[00000ff9] 11: fgload 0 00000000 HA12CB 1 3
+[00001009]  0: 
+[0000100a]  a: condJump 00 VAR_(28_1e)_a1_10 (28) != (15) (81)->1 (15) (00)  * 0000103c (000f)
+[00001018] 10: 
+[00001019]  b: playVoice L1D1A047
+[00001023] 10: 
+[00001024] 19: 
+[00001025] ff: text 8d
+{textColor 1 5}【Haruka】 "Because I..." 
+
+
+[00001028] 10: 
+[00001029]  b: playVoice L1D1A048
+[00001033] 10: 
+[00001034] 19: 
+[00001035] ff: text 8e
+{textColor 1 5}【Haruka】 "Because I... am nothing..." 
+
+
+[00001038]  0: 
+[00001039]  7: goto7 0000105c (0010)
+[0000103c] 10: 
+[0000103d]  b: playVoice L1D1A041
+[00001047] 10: 
+[00001048] 19: 
+[00001049] ff: text 8f
+{textColor 1 5}【Haruka】 "It's because..." 
+
+
+[0000104c] 10: 
+[0000104d]  b: playVoice L1D1A042
+[00001057] 10: 
+[00001058] 19: 
+[00001059] ff: text 90
+{textColor 1 5}【Haruka】 "It's because... I'm different." 
+
+
+[0000105c] 10: 
+[0000105d] 12: removeFG 0 3
+[00001064]  0: 
+[00001065]  5: delay 60
+[0000106a]  0: 
+[0000106b]  a: condJump 00 VAR_(28_1e)_a1_11 (28) != (15) (80)->0 (15) (00)  * 000010d8 (0013)
+[00001079] 10: 
+[0000107a] 11: fgload 0 00000000 HA08AB 1 3
+[0000108a] 10: 
+[0000108b]  b: playVoice L1D1A239
+[00001095] 10: 
+[00001096] 19: 
+[00001097] ff: text 91
+{textColor 1 5}【Haruka】 "I don't understand..." 
+
+
+[0000109a] 10: 
+[0000109b]  b: playVoice L1D1A240
+[000010a5] 10: 
+[000010a6] 19: 
+[000010a7] ff: text 92
+{textColor 1 5}【Haruka】 "Because I... am nothing..." 
+
+
+[000010aa] 10: 
+[000010ab]  b: playVoice L1D1A241
+[000010b5] 10: 
+[000010b6] 19: 
+[000010b7] ff: text 93
+{textColor 1 5}【Haruka】 "Because I have no heart..." 
+
+
+[000010ba] 10: 
+[000010bb]  b: playVoice L1D1A242
+[000010c5] 10: 
+[000010c6] 19: 
+[000010c7] ff: text 94
+{textColor 1 5}【Haruka】 "Because I have no heart... I don't understand." 
+
+
+[000010ca] 10: 
+[000010cb] 12: removeFG 0 3
+[000010d2]  0: 
+[000010d3]  5: delay 60
+[000010d8] 10: 
+[000010d9] 11: fgload 0 00000000 HA01AB 1 3
+[000010e9] 10: 
+[000010ea]  b: playVoice L1D3E011
+[000010f4] 10: 
+[000010f5] 19: 
+[000010f6] ff: text 95
+{textColor 1 5}【Haruka】 "Then why do people kiss?" 
+{textColor 0 0}【Makoto】 "Hmm... It's probably to demonstrate their love and confirm their feelings for each other." 
+
+
+[000010f9] 10: 
+[000010fa]  b: playVoice L1D3E012
+[00001104] 10: 
+[00001105] 19: 
+[00001106] ff: text 96
+{textColor 1 5}【Haruka】 "Confirm...?" 
+
+
+[00001109] 10: 
+[0000110a]  b: playVoice L1D3E013
+[00001114] 10: 
+[00001115] 19: 
+[00001116] ff: text 97
+{textColor 1 5}【Haruka】 "Then... let's kiss." 
+
+
+[00001119] 10: 
+[0000111a] 11: fgload 0 00000000 HA03AB 1 3
+[0000112a] 10: 
+[0000112b]  b: playVoice L1D3E014
+[00001135] 10: 
+[00001136] 19: 
+[00001137] ff: text 98
+{textColor 1 5}【Haruka】 "Let's kiss." 
+
+
+[0000113a] 10: 
+[0000113b] 12: removeFG 0 3
+[00001142]  0: 
+[00001143]  5: delay 60
+[00001148] 10: 
+[00001149] 11: fgload 0 00000000 SA08AA 2 3
+[00001159] 10: 
+[0000115a]  b: playVoice L1D3E060
+[00001164] 10: 
+[00001165] 19: 
+[00001166] ff: text 99
+{textColor 1 6}【Saki】 "Stay away from me." 
+
+
+[00001169] 10: 
+[0000116a] 11: fgload 1 00000000 HA04AA 0 3
+[0000117a] 10: 
+[0000117b] 19: 
+[0000117c] ff: text 9a
+{textColor 1 5}【Haruka】 "..." 
+
+
+[0000117f] 10: 
+[00001180] 11: fgload 0 00000000 SA04AA 2 3
+[00001190] 10: 
+[00001191]  b: playVoice L1D3E061
+[0000119b] 10: 
+[0000119c] 19: 
+[0000119d] ff: text 9b
+{textColor 1 6}【Saki】 "What is it?! Get the hell away from me! I have no business with you, you damn clone...!" 
+
+
+[000011a0] 10: 
+[000011a1] 11: fgload 1 00000000 HA01AA 0 3
+[000011b1] 10: 
+[000011b2] 19: 
+[000011b3] ff: text 9c
+{textColor 1 5}【Haruka】 "――!" 
+
+
+[000011b6] 10: 
+[000011b7] 15: removeAllFG 3
+[000011bb]  0: 
+[000011bc]  5: delay 60
+[000011c1] 10: 
+[000011c2] 11: fgload 0 00000000 HA08AB 1 3
+[000011d2] 10: 
+[000011d3]  b: playVoice L1D4A310
+[000011dd] 10: 
+[000011de] 19: 
+[000011df] ff: text 9d
+{textColor 1 5}【Haruka】 "Will you... will you always help me?" 
+
+
+[000011e2] 10: 
+[000011e3]  b: playVoice L1D4A311
+[000011ed] 10: 
+[000011ee] 19: 
+[000011ef] ff: text 9e
+{textColor 1 5}【Haruka】 "Will you protect me?" 
+
+
+[000011f2]  0: 
+[000011f3]  5: delay 60
+[000011f8] 10: 
+[000011f9] 11: fgload 0 00000000 HA07AB 1 3
+[00001209] 10: 
+[0000120a]  b: playVoice L1D4A312
+[00001214] 10: 
+[00001215] 19: 
+[00001216] ff: text 9f
+{textColor 1 5}【Haruka】 "Forget I ever said anything. I need to stop right here!" 
+
+
+[00001219] 10: 
+[0000121a]  b: playVoice L1D4A313
+[00001224] 10: 
+[00001225] 19: 
+[00001226] ff: text a0
+{textColor 1 5}【Haruka】 "Did I surprise you? Sorry for saying something so weird." 
+
+
+[00001229] 10: 
+[0000122a]  b: playVoice L1D4A314
+[00001234] 10: 
+[00001235] 19: 
+[00001236] ff: text a1
+{textColor 1 5}【Haruka】 "I'll be fine. I have to at least deal with my own problems somehow by myself..." 
+
+
+[00001239] 10: 
+[0000123a] 12: removeFG 0 3
+[00001241]  0: 
+[00001242]  5: delay 60
+[00001247] 10: 
+[00001248] 11: fgload 0 00000000 HA01AB 1 3
+[00001258] 10: 
+[00001259]  b: playVoice HL1D5021
+[00001263] 10: 
+[00001264] 19: 
+[00001265] ff: text a2
+{textColor 1 5}【Haruka】 "That's wrong..." 
+
+
+[00001268] 10: 
+[00001269]  b: playVoice HL1D5024
+[00001273] 10: 
+[00001274] 19: 
+[00001275] ff: text a3
+{textColor 1 5}【Haruka】 "That's wrong." 
+
+
+[00001278] 10: 
+[00001279]  b: playVoice HL1D5025
+[00001283] 10: 
+[00001284] 19: 
+[00001285] ff: text a4
+{textColor 1 5}【Haruka】 "No one knows why they light up." 
+
+
+[00001288] 10: 
+[00001289]  b: playVoice HL1D5026
+[00001293] 10: 
+[00001294] 19: 
+[00001295] ff: text a5
+{textColor 1 5}【Haruka】 "Nobody knows that." 
+
+
+[00001298] 10: 
+[00001299]  b: playVoice HL1D5027
+[000012a3] 10: 
+[000012a4] 19: 
+[000012a5] ff: text a6
+{textColor 1 5}【Haruka】 "It'll always remain a mystery..." 
+
+
+[000012a8] 10: 
+[000012a9]  b: playVoice HL1D5028
+[000012b3] 10: 
+[000012b4] 19: 
+[000012b5] ff: text a7
+{textColor 1 5}【Haruka】 "Yes...{delay 5}{delay 5} That's why it's shiranui..." 
+
+
+[000012b8] 10: 
+[000012b9] 12: removeFG 0 3
+[000012c0]  0: 
+[000012c1]  5: delay 60
+[000012c6] 10: 
+[000012c7] 11: fgload 0 00000000 HA10AB 1 3
+[000012d7] 10: 
+[000012d8]  b: playVoice HL1D5080
+[000012e2] 10: 
+[000012e3] 19: 
+[000012e4] ff: text a8
+{textColor 1 5}【Haruka】 "Makoto... as I thought, you really have no talent for this." 
+
+
+[000012e7] 10: 
+[000012e8] 11: fgload 0 00000000 HA02AB 1 3
+[000012f8] 10: 
+[000012f9]  b: playVoice HL1D5081
+[00001303] 10: 
+[00001304] 19: 
+[00001305] ff: text a9
+{textColor 1 5}【Haruka】 "It's fine. That's why I'm catching so much- it's to make up for you." 
+
+
+[00001308] 10: 
+[00001309] 12: removeFG 0 3
+[00001310] 10: 
+[00001311]  2: cmd2 13
+[00001315] 10: 
+[00001316] 10: bgload 00000000 BG01NR 0 1
+[00001323] 10: 
+[00001324] 19: 
+[00001325] ff: text aa
+{textColor 0 2}To me, who has been a slacker since entering college, all of those memories are just precious personal experiences to me. 
+{textColor 0 2}Now that I think about it, what was the goal of this Camp again...? 
+{textColor 0 2}"From the start, there was no goal. If there truly is one, then it's only to deepen the bonds of friendship between the group members."  {textColor 0 2}... Okuhiko certainly said something like that, didn't he? 
+{textColor 0 2}"Until the last day of the Camp, I can't tell anyone the purpose behind it."  ... Yuka also said something like that. 
+{textColor 0 2}But none of that matters to me anymore. 
+{textColor 0 2}Even though I think the original goal is trivial, I've begun to feel that this Camp has something that's very significant to me. 
+{textColor 0 2}Haruka.  This Camp is where Haruka and I met and got to know each other.  That alone is enough. 
+{textColor 0 2}... This Camp ends the day after tomorrow.  {textColor 0 2}On the afternoon of the 7th, we'll have no choice but to leave here.  {textColor 0 2}And then, we'll return to our ordinary lives. 
+{textColor 0 2}Ordinary lives...  Just what is "ordinary"?  An empty life where nothing happens?  {textColor 0 2}When I think that, I can't help but become melancholic. 
+{textColor 0 2}Before I know it, I begun to wish that I could continue living this way forever. 
+{textColor 0 2}Here, there's Yuka,{delay 5}{delay 5} Saki,{delay 5}{delay 5} Kurumi,{delay 5}{delay 5} Izumi-san,{delay 5}{delay 5} Okuhiko too, I suppose, and of course...  {textColor 0 2}... Haruka. 
+{textColor 0 2}I feel a boundless attachment to these past five days, these days that have passed by dramatically to some extent. 
+{textColor 0 2}No matter how many times, I want these days to continue always...  {textColor 0 2}For eternity... 
+
+
+[00001328] 10: 
+[00001329]  7: stopBGM
+[0000132a] 10: 
+[0000132b]  f: removeBG 0 0 1
+[00001335]  0: 
+[00001336]  5: delay 60
+[0000133b] 10: 
+[0000133c]  f: removeBG 0 0 2
+[00001346] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 20
+[00001352] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 39
+[0000135e] 10: 
+[0000135f] 17: showClock
+[00001360] 10: 
+[00001361]  8: playSFX SE006 1
+[0000136b] 10: 
+[0000136c]  a: waitForSFX
+[0000136d] 10: 
+[0000136e] 19: 
+[0000136f] ff: text ab
+{textColor 0 2}... 
+
+
+[00001372] 10: 
+[00001373]  8: playSFX SE006 1
+[0000137d] 10: 
+[0000137e]  a: waitForSFX
+[0000137f] 10: 
+[00001380] 19: 
+[00001381] ff: text ac
+{textColor 0 2}... 
+
+
+[00001384] 10: 
+[00001385]  8: playSFX SE006 1
+[0000138f] 10: 
+[00001390]  a: waitForSFX
+[00001391] 10: 
+[00001392] 19: 
+[00001393] ff: text ad
+{textColor 0 2}(... Mmm... Mmm〜...) 
+
+
+[00001396] 10: 
+[00001397] 10: bgload 00000000 BG01NR 0 1
+[000013a4] 10: 
+[000013a5] 19: 
+[000013a6] ff: text ae
+{textColor 0 2}My eyes suddenly open.  {textColor 0 2}It seems I unawaringly fell asleep. 
+{textColor 0 0}【Makoto】 "Who is it?" 
+
+
+[000013a9] 10: 
+[000013aa]  8: playSFX SE002 1
+[000013b4] 10: 
+[000013b5] 19: 
+[000013b6] ff: text af
+{textColor 0 2}When I raise half of my body and call out to them, the door opens. 
+
+
+[000013b9] 10: 
+[000013ba]  9: stopSFX
+[000013bb] 10: 
+[000013bc] 11: fgload 0 00000000 HA01AA 1 3
+[000013cc] 10: 
+[000013cd]  6: playBGM 2
+[000013d1] 10: 
+[000013d2] 19: 
+[000013d3] ff: text b0
+{textColor 0 2}Haruka is standing there.  {textColor 0 2}She's staring straight at me. 
+{textColor 0 0}【Makoto】 "What's wrong?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Do you want something?" 
+
+
+[000013d6] 10: 
+[000013d7]  b: playVoice HL1D5085
+[000013e1] 10: 
+[000013e2] 19: 
+[000013e3] ff: text b1
+{textColor 1 5}【Haruka】 "... Outside." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[000013e6] 10: 
+[000013e7]  b: playVoice HL1D5086
+[000013f1] 10: 
+[000013f2] 19: 
+[000013f3] ff: text b2
+{textColor 1 5}【Haruka】 "Would you like... to go outside?" 
+{textColor 0 0}【Makoto】 "Outside...?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "You mean...{delay 5}{delay 5} taking a walk?" 
+{textColor 0 2}Haruka nods. 
+{textColor 0 0}【Makoto】 "Why?" 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "... Well, I don't mind." 
+
+
+[000013f6] 10: 
+[000013f7] 11: fgload 0 00000000 HA02AA 1 3
+[00001407] 10: 
+[00001408] 19: 
+[00001409] ff: text b3
+{textColor 0 2}When I answer, Haruka's face lights up. 
+{textColor 0 2}If I can be with Haruka, then I don't need a reason... 
+
+
+[0000140c] 10: 
+[0000140d]  f: removeBG 0 4 2
+[00001417] 10: 
+[00001418] 12: removeFG 0 0
+[0000141f] 10: 
+[00001420] 10: bgload 00000000 BG12NR 4 1
+[0000142d] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 20
+[00001439] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 52
+[00001445] 10: 
+[00001446] 17: showClock
+[00001447] 10: 
+[00001448] 19: 
+[00001449] ff: text b4
+{textColor 0 2}Haruka and I slowly descend the hill road. 
+{textColor 0 2}The nice weather of the last few days is long gone, to the point that the environment is very chilly. 
+{textColor 0 2}Usually, the ground would feel moderately warm, but now it feels as freezing as a winter's night. 
+{textColor 0 2}If it was just a little bit colder, then there'd be frost collecting on the ground now. 
+{textColor 0 2}We silently advance towards the coastline. 
+{textColor 0 2}(We'll only go as far as "Princess Beach" tonight.) 
+{textColor 0 2}I think this, briefly thinking back to something that happened a few moments ago. 
+{textColor 0 2}When we left the lodge, Haruka had muttered, "I want to go somewhere close where we can see the ocean." 
+
+
+[0000144c] 10: 
+[0000144d] 11: fgload 0 00000000 HA12ABN 1 3
+[0000145d] 10: 
+[0000145e] 19: 
+[0000145f] ff: text b5
+{textColor 0 0}【Makoto】 "I don't think we'll be able to see the stars tonight..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "And there'll be no shiranui either, since there's no difference in temperature between the shore and the sea..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Ah, no... I don't know about that... No one knows why they light up, after all..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "But if it were around the same time as last night, then maybe they would..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}I'm troubled.  {textColor 0 2}What should I say!? 
+{textColor 0 2}There's something I really want to say to her, right?  {textColor 0 2}There's something I want to ask her, right?  {textColor 0 2}I know what it is... 
+{textColor 0 2}――Haruka, what do you think of me? 
+
+
+[00001462] 10: 
+[00001463]  7: stopBGM
+[00001464] 10: 
+[00001465] 19: 
+[00001466] ff: text b6
+{textColor 0 0}【Makoto】 "... Haruka!" 
+
+
+[00001469] 10: 
+[0000146a] 11: fgload 0 00000000 HA01ABN 1 3
+[0000147a] 10: 
+[0000147b]  b: playVoice HL1D5087
+[00001485] 10: 
+[00001486] 19: 
+[00001487] ff: text b7
+{textColor 1 5}【Haruka】 "Huh?" 
+{textColor 0 0}【Makoto】 "Umm..." 
+{textColor 0 2}When I look at Haruka, my mind goes blank. 
+{textColor 0 2}(My mind really has gone blank...) 
+
+
+[0000148a] 10: 
+[0000148b]  b: playVoice HL1D5088
+[00001495] 10: 
+[00001496] 19: 
+[00001497] ff: text b8
+{textColor 1 5}【Haruka】 "What's wrong?" 
+{textColor 0 0}【Makoto】 "A-Ah, no, umm..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Umm..." 
+
+
+[0000149a] 10: 
+[0000149b]  b: playVoice HL1D5089
+[000014a5] 10: 
+[000014a6] 19: 
+[000014a7] ff: text b9
+{textColor 1 5}【Haruka】 "... I wonder if it's cold?" 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[000014aa] 10: 
+[000014ab]  b: playVoice HL1D5090
+[000014b5] 10: 
+[000014b6] 19: 
+[000014b7] ff: text ba
+{textColor 1 5}【Haruka】 "The ocean tonight..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000014ba] 10: 
+[000014bb] 11: fgload 0 00000000 HA02ABN 1 3
+[000014cb] 10: 
+[000014cc]  b: playVoice HL1D5091
+[000014d6] 10: 
+[000014d7] 19: 
+[000014d8] ff: text bb
+{textColor 1 5}【Haruka】 "It'd be nice if it were cold." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000014db] 10: 
+[000014dc] 11: fgload 0 00000000 HA01ABN 1 3
+[000014ec] 10: 
+[000014ed]  b: playVoice HL1D5092
+[000014f7] 10: 
+[000014f8] 19: 
+[000014f9] ff: text bc
+{textColor 1 5}【Haruka】 "... Makoto." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[000014fc] 10: 
+[000014fd]  b: playVoice HL1D5093
+[00001507] 10: 
+[00001508] 19: 
+[00001509] ff: text bd
+{textColor 1 5}【Haruka】 "I wanted to be with you..." 
+{textColor 0 2}Haruka says this, and touches my hand.  {textColor 0 2}The sensation of her palm is very smooth. 
+
+
+[0000150c] 10: 
+[0000150d]  b: playVoice HL1D5094
+[00001517] 10: 
+[00001518] 19: 
+[00001519] ff: text be
+{textColor 1 5}【Haruka】 "That's why..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000151c] 10: 
+[0000151d]  b: playVoice HL1D5095
+[00001527] 10: 
+[00001528] 19: 
+[00001529] ff: text bf
+{textColor 1 5}【Haruka】 "I wanted to go outside with you." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000152c] 10: 
+[0000152d] 11: fgload 0 00000000 HA03ABN 1 3
+[0000153d] 10: 
+[0000153e]  b: playVoice HL1D5096
+[00001548] 10: 
+[00001549] 19: 
+[0000154a] ff: text c0
+{textColor 1 5}【Haruka】 "I wanted... just the two of us to be together..." 
+
+
+[0000154d] 10: 
+[0000154e] 12: removeFG 0 3
+[00001555] 10: 
+[00001556] 19: 
+[00001557] ff: text c1
+{textColor 0 2}Haruka looks down at the ground.  {textColor 0 2}She stops walking. 
+
+
+[0000155a] 10: 
+[0000155b]  6: playBGM 2
+[0000155f] 10: 
+[00001560] 19: 
+[00001561] ff: text c2
+{textColor 0 0}【Makoto】 "Haruka..." 
+{textColor 0 2}My heart is brimming with emotions.  {textColor 0 2}Haruka said it just now.  {textColor 0 2}"I wanted...{delay 5}{delay 5} just the two of us to be together..." 
+{textColor 0 2}Haruka sees me as a man.  {textColor 0 2}She never thought of me as a father-like figure.  {textColor 0 2}My heart feels like it's burst open. 
+{textColor 0 2}I gently squeeze Haruka's hand.  {textColor 0 2}Her warm body heat seeps from her hand into me. 
+{textColor 0 2}And so, Haruka and I once again begin walking towards Princess Beach, holding hands the whole time... 
+
+
+[00001564] 10: 
+[00001565]  f: removeBG 0 4 2
+[0000156f] 10: 
+[00001570] 10: bgload 00000000 BG17NR 4 1
+[0000157d] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 21
+[00001589] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 6
+[00001594] 10: 
+[00001595] 17: showClock
+[00001596] 10: 
+[00001597]  8: playSFX SE020 0
+[000015a1] 10: 
+[000015a2] 19: 
+[000015a3] ff: text c3
+{textColor 0 2}Even after our arrival at Princess Beach, the sky's as gray as ever. 
+{textColor 0 2}The dark clouds block out the stars and moonlight.  {textColor 0 2}Without the light, it's difficult to make out much. 
+{textColor 0 2}I don't mind, though.  {textColor 0 2}Because Haruka is beside me... 
+
+
+[000015a6] 10: 
+[000015a7]  9: stopSFX
+[000015a8] 10: 
+[000015a9] 19: 
+[000015aa] ff: text c4
+{textColor 0 2}Haruka sits down on the beach.  {textColor 0 2}She gets sand on her clothes, but doesn't seem to care in the slightest.  
+
+[000015ad] 10: 
+[000015ae] 11: fgload 0 00000000 HA12ABN 1 3
+[000015be] 10: 
+[000015bf] 19: 
+[000015c0] ff: text c5
+{textColor 0 2}I sit down next to her. 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000015c3] 10: 
+[000015c4]  8: playSFX SE020 0
+[000015ce] 10: 
+[000015cf] 19: 
+[000015d0] ff: text c6
+{textColor 0 2}Haruka firmly stares at the ocean.  {textColor 0 2}Neither of us say anything.  {textColor 0 2}There's no need to. 
+{textColor 0 2}In the darkness, all we can hear is the sound of the waves... 
+
+
+[000015d3] 10: 
+[000015d4]  9: stopSFX
+[000015d5] 10: 
+[000015d6] 19: 
+[000015d7] ff: text c7
+{textColor 0 2}As I stare at Haruka's face as she stares at the ocean with what appears to be obsession, I get the urge to ask her something that I've been curious about this whole time. 
+{textColor 0 0}【Makoto】 "Say, Haruka?" 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[000015da] 10: 
+[000015db] 11: fgload 0 00000000 HA01ABN 1 3
+[000015eb] 10: 
+[000015ec] 19: 
+[000015ed] ff: text c8
+{textColor 0 2}Haruka silently turns her gaze towards me. 
+{textColor 0 0}【Makoto】 "Why is it that you love water so much?" 
+{textColor 0 2}Yes... the ever-persistent "water". 
+{textColor 0 2}Not just the ocean...  Not just the pool...  Not just the drops of water from the dripping faucet... 
+{textColor 0 2}I feel that Haruka has always been attached to "water". 
+{textColor 0 2}It's way beyond the level of "liking or disliking" something... 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[000015f0] 10: 
+[000015f1]  8: playSFX SE020 0
+[000015fb] 10: 
+[000015fc] 19: 
+[000015fd] ff: text c9
+{textColor 0 2}Haruka continues to look at me, but doesn't try to answer. 
+{textColor 0 2}While looking at those alluring eyes, I see uneasiness creeping up inside them. 
+
+
+[00001600] 10: 
+[00001601]  9: stopSFX
+[00001602] 10: 
+[00001603] 19: 
+[00001604] ff: text ca
+{textColor 0 2}(Maybe I asked her something that I shouldn't have...?) 
+{textColor 0 2}Haruka continues to look at me with eyes that seem to shine. 
+{textColor 0 0}【Makoto】 "Ah...{delay 5}{delay 5}{delay 5} no,{delay 5}{delay 5}{delay 5} if you don't want to answer...{delay 5}{delay 5}{delay 5} then that's fine..." 
+{textColor 0 2}Unable to bear it any longer, I say this. 
+
+
+[00001607] 10: 
+[00001608] 11: fgload 0 00000000 HA12ABN 1 3
+[00001618] 10: 
+[00001619]  8: playSFX SE020 1
+[00001623] 10: 
+[00001624] 19: 
+[00001625] ff: text cb
+{textColor 0 2}Haruka once again returns her gaze to the ocean. 
+
+
+[00001628] 10: 
+[00001629]  7: stopBGM
+[0000162a] 10: 
+[0000162b]  9: stopSFX
+[0000162c] 10: 
+[0000162d]  f: removeBG 0 3 2
+[00001637] 10: 
+[00001638] 19: 
+[00001639] ff: text cc
+{textColor 0 2}... ... ... 
+
+
+[0000163c] 10: 
+[0000163d] 10: bgload 00000000 BG17NR 0 1
+[0000164a] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 21
+[00001656] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 29
+[00001662] 10: 
+[00001663] 17: showClock
+[00001664] 10: 
+[00001665]  8: playSFX SE020 0
+[0000166f] 10: 
+[00001670] 19: 
+[00001671] ff: text cd
+{textColor 0 2}How much time has passed since then...?  {textColor 0 2}We continue to stare at the ocean, sitting down on the beach the whole time. 
+
+
+[00001674] 10: 
+[00001675] 11: fgload 0 00000000 HA08ABN 1 3
+[00001685] 10: 
+[00001686]  b: playVoice HL1D5098
+[00001690] 10: 
+[00001691] 19: 
+[00001692] ff: text ce
+{textColor 1 5}【Haruka】 "It's cold..." 
+{textColor 0 2}I hear Haruka mutter this. 
+{textColor 0 2}She's right...  {textColor 0 2}Today's been a chilly day. 
+{textColor 0 2}Plus, it's nighttime, and the sea breeze is blowing directly on the shore.  {textColor 0 2}We'll have to leave if we want to escape it. 
+{textColor 0 2}On the other hand, it doesn't seem like Haruka's in the mood to return to the lodge. 
+{textColor 0 2}I take off my jacket.  {textColor 0 2}If I'm a man, then I have to do this.  {textColor 0 2}I throw my jacket over Haruka's shoulders. 
+
+
+[00001695] 10: 
+[00001696]  9: stopSFX
+[00001697] 10: 
+[00001698] 11: fgload 0 00000000 HA11ABN 1 3
+[000016a8] 10: 
+[000016a9]  b: playVoice HL1D5099
+[000016b3] 10: 
+[000016b4] 19: 
+[000016b5] ff: text cf
+{textColor 1 5}【Haruka】 "Ah..." 
+{textColor 0 2}Slightly surprised, she grips the tips of my jacket. 
+
+
+[000016b8] 10: 
+[000016b9]  b: playVoice HL1D5100
+[000016c3] 10: 
+[000016c4] 19: 
+[000016c5] ff: text d0
+{textColor 1 5}【Haruka】 "You're going to get cold if you do this..." 
+{textColor 0 2}Haruka tries to take the jacket off.  I gently grasp her hand to stop her. 
+
+
+[000016c8] 10: 
+[000016c9] 11: fgload 0 00000000 HA01ABN 1 3
+[000016d9] 10: 
+[000016da]  b: playVoice HL1D5101
+[000016e4] 10: 
+[000016e5] 19: 
+[000016e6] ff: text d1
+{textColor 1 5}【Haruka】 "Makoto...?" 
+{textColor 0 0}【Makoto】 "It's fine." 
+{textColor 0 2}I reassuringly shake my head. 
+{textColor 0 0}【Makoto】 "Because I'm warm..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "And besides..." 
+{textColor 0 2}I wrap my arm around Haruka's shoulders and pull her body towards mine. 
+
+
+[000016e9] 10: 
+[000016ea] 10: bgload 00000000 EV_HA14 0 1
+[000016f7] 10: 
+[000016f8] 19: 
+[000016f9] ff: text d2
+{textColor 0 0}【Makoto】 "As long as we're like this, I'll never get cold..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Right?" 
+{textColor 0 2}Haruka gives me a small, reserved nod. 
+
+
+[000016fc] 10: 
+[000016fd]  8: playSFX SE020 0
+[00001707] 10: 
+[00001708] 19: 
+[00001709] ff: text d3
+{textColor 0 2}The sound of waves breaking on the shore...  {textColor 0 2}We huddle our bodies together while we listen to that peaceful timbre.  {textColor 0 2}Time starts to pass by calmly. 
+{textColor 0 2}Before long...  {textColor 0 2}... We fall into{delay 5}{delay 5} a deep sleep inviting us from far away... 
+
+
+[0000170c] 10: 
+[0000170d]  f: removeBG 0 0 0
+[00001717] 10: 
+[00001718]  9: stopSFX
+[00001719] 10: 
+[0000171a] 12: removeFG 0 3
+[00001721] 10: 
+[00001722]  4: jump HL1D6
+[00001729]  0: 
+[0000172a]  0: 
+[0000172b]  0: 

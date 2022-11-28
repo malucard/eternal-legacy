@@ -1,0 +1,76 @@
+@label ap_START
+
+delay 15
+@setvar v_a0_fb = 6
+dayIntro 00000000 bgcal6
+
+removeBG 0 0 2
+delay 120
+@text  ……ウトウトと、まどろみを覚え始めた頃だった。
+
+playSFX 0 1
+@text 突如、けたたましい音が鳴り響いた。
+bgload 00000000 BG36NN 0 4 0 0 2
+@setvar v_a0_fc = 4
+@setvar v_a0_fd = 54
+showClock
+
+playSFX 108 1
+@text 飛び起きて、ドアの方を見る……。
+fgload 0 00000000 IZ08BAn 1 3
+@text （い、いづみさん……？）
+@text 【いづみ】  「くるみが……」
+@text 【いづみ】  「くるみがいないの！」
+removeBG 0 0 2
+removeFG 0 3
+@label ap_go_to_the_future
+@text  『いつまでも、一緒に……！』
+@text 鈴を取り出して握りしめる。
+bgload 00000000 EV_YU12 0 4 0 0 2
+playBGM 21
+@text 【優夏】  「私も、誠と一緒にいく……」
+@text 【誠】  「！？」
+@text  ……そのまま……
+@text ……鈴を……
+@text ……海に……
+@text ……放った……。
+playSFX 116 1
+removeBG 0 0 2
+playSFX 117 1
+@text と同時に、ごう音を響かせて崩れ落ちる神社……。
+@text 終わった…………。
+@text これで、全部…………。
+@text ——その時、誠が猛然と飛びかかってきた！
+
+delay 60
+@text 激しく地面に叩きつけられるかと思いきや……
+@text ……その勢いは、私達を宙へと舞い上がらせた。
+@text 誠と抱き合ったまま、シッコクの海原に向かって落ちて行く……。
+
+stopSFX
+delay 60
+playSFX 90 1
+@text ……流れ星を見た。
+@text 澄んだ音色を奏でる、希望の星……。
+stopSFX
+stopBGM
+@text それを最後に、私は意識を失った————。
+
+removeBG 0 0 2
+delay 180
+@text  ……………………。
+@text ……………………。
+@text ——真っ黒な空間。
+@text ——そこで、思い出のカケラを見つけた。
+@text ——遠き日の夜、瞬く空と、双子の記憶……。
+@text 『仲のよい２人は、どんな時でも一緒だったんだよ』
+@text 『だから……死ぬ時も一緒でいたかった……』
+@text 『不死身だったポルックスは、ゼウスに頼んだんだ』
+@text 『「自分の不死を解いてくれ」、と』
+@text 『願いの叶えられた２人は仲良く天へと上げられ……』
+@text 『……冬の空に輝く星座になった…………』
+@text ……………………。
+
+playSFX 90 1
+delay 180
+jump c_yuka7.snr

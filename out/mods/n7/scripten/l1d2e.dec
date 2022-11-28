@@ -1,0 +1,60 @@
+[00000014] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 112
+[00000020] 10: 
+[00000021]  6: playBGM 16
+[00000026] 10: 
+[00000027]  f: removeBG 0 6 2
+[00000031] 10: 
+[00000032] 10: bgload 00000000 BG14E 4 1
+[0000003f] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[0000004b] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 42
+[00000057] 10: 
+[00000058] 17: showClock
+[00000059] 10: 
+[0000005a]  1: cmd1 30
+[0000005f] 10: 
+[00000060] 19: 
+[00000061] ff: text 00
+{textColor 0 2}Everyone seems to be at ease on the way back. 
+{textColor 0 2}I guess you could say that the tension in the atmosphere somehow unwinded.  {textColor 0 2}Everybody seems to be relieved that everything turned out all right. 
+{textColor 0 2}The fiery, red sunset is also probably contributing to the calm, feel good mood. 
+{textColor 0 2}However... 
+{textColor 0 2}However, I'm probably the only one still anxious.  {textColor 0 2}It's because of Yuka's words from before we arrived at the harbor... 
+{textColor 0 2}――I have a bad feeling about this. 
+{textColor 0 2}She was right...  {textColor 0 2}Looking back on it, I regret that I didn't listen to what Yuka said at that time. 
+{textColor 0 2}As I walk down the road, I look over my shoulder.  {textColor 0 2}Right now, Yuka is happily smiling while engrossed in a conversation with Izumi-san, who is walking by her side. 
+{textColor 0 2}(A bad feeling, huh...) 
+{textColor 0 2}My mind becomes foggy, as if enveloped in a thick mist... 
+
+
+[00000064] 10: 
+[00000065]  2: cmd2 7
+[00000069] 10: 
+[0000006a]  f: removeBG 0 0 2
+[00000074]  0: 
+[00000075]  5: delay 60
+[0000007a] 10: 
+[0000007b]  8: playSFX SE021 1
+[00000085] 10: 
+[00000086] 10: bgload 00000000 BG07N 0 1
+[00000093] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 19
+[0000009f] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 7
+[000000aa] 10: 
+[000000ab] 17: showClock
+[000000ac] 10: 
+[000000ad] 19: 
+[000000ae] ff: text 01
+{textColor 0 2}When we all return to Lunabeach, we casually relax on the open terrace and continue to chat. 
+{textColor 0 2}We mainly talk about what we were all thinking and doing when Saki was swallowed by that monstrous wave and praising Izumi-san for her heroic act of diving into the ocean and saving her. 
+{textColor 0 2}Izumi-san is unaware of all the compliments she's receiving since she's alone in the kitchen, using whatever food she has to prepare us dinner. 
+{textColor 0 2}We're all ecstatic to eat her wonderful cooking again. 
+{textColor 0 2}In ten years, it wouldn't surprise me if Izumi-san becomes a world renowned chef. 
+
+
+[000000b1] 10: 
+[000000b2]  f: removeBG 0 0 2
+[000000bc] 10: 
+[000000bd]  7: stopBGM
+[000000be] 10: 
+[000000bf]  4: jump L1D2N
+[000000c6]  0: 
+[000000c7]  0: 

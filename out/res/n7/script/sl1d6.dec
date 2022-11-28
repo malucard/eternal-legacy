@@ -1,0 +1,1461 @@
+[00000040] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 6
+[0000004b] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 6
+[00000056] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000062] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[0000006e] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 6
+[00000079]  0: 
+[0000007a]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 0000008e (0002)
+[00000088] 10: 
+[00000089] 1c: cmd1C
+[0000008a]  0: 
+[0000008b]  7: goto7 00000099 (0003)
+[0000008e] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[00000099]  0: 
+[0000009a]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 000000aa (0005)
+[000000a8] 10: 
+[000000a9] 18: cmd18
+[000000aa] 10: 
+[000000ab] 1b: dayIntro 00000000 BGCAL6.cps
+[000000b2] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 74
+[000000be] 10: 
+[000000bf] 10: bgload 00000000 BG01NN 0 1
+[000000cc] 10: 
+[000000cd]  6: playBGM 14
+[000000d1] 10: 
+[000000d2]  8: playSFX SE090 1
+[000000dc] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 6
+[000000e7] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 6
+[000000f2] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[000000fd] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 13
+[00000108] 10: 
+[00000109] 17: showClock
+[0000010a] 10: 
+[0000010b] 19: 
+[0000010c] ff: text 00
+{textColor 0 2}Suddenly, I hear the sound of a ringing bell in the darkness... 
+{textColor 0 2}I fall out of my bed as I try to jump out of it. 
+{textColor 0 2}It's the exact same sound from my hopeless dream... 
+{textColor 0 2}My heart pounds violently. 
+{textColor 0 2}The sound of the bell definitely came from the living room. 
+{textColor 0 2}Despite my body feeling sluggish, I force myself up and run towards the living room. 
+
+
+[0000010f] 10: 
+[00000110] 10: bgload 00000000 BG02NN 4 1
+[0000011d] 10: 
+[0000011e] 19: 
+[0000011f] ff: text 01
+{textColor 0 2}The room is pitch black. It's impossible to see anything. 
+
+
+[00000122] 10: 
+[00000123]  8: playSFX SE090 1
+[0000012d] 10: 
+[0000012e] 19: 
+[0000012f] ff: text 02
+{textColor 0 2}I hear the faint sound of the bell again... 
+{textColor 0 2}And at the same time, I hear the sound of tapping footsteps running down the short staircase on the terrace. 
+{textColor 0 2}――It's coming from outside! 
+{textColor 0 2}I immediately open the front door. 
+
+
+[00000132] 10: 
+[00000133]  f: removeBG 0 4 2
+[0000013d] 10: 
+[0000013e]  8: playSFX SE030 0
+[00000148] 10: 
+[00000149] 10: bgload 00000000 BG00NR 4 1
+[00000156] 10: 
+[00000157]  1: cmd1 26
+[0000015c] 10: 
+[0000015d] 19: 
+[0000015e] ff: text 03
+{textColor 0 2}It's pouring rain outside. 
+
+
+[00000161] 10: 
+[00000162]  9: stopSFX
+[00000163] 10: 
+[00000164] 19: 
+[00000165] ff: text 04
+{textColor 0 2}I rush down the short staircase and plunge into the downpour. 
+{textColor 0 2}Near the entrance of the forest path, I see two bright red lights. 
+{textColor 0 2}It's the tail lights of a car. 
+{textColor 0 2}I see a shadow running towards the car... 
+{textColor 0 2}The shadow has a ponytail that sways with the rain. 
+{textColor 0 2}――Saki!? 
+
+
+[00000168] 10: 
+[00000169]  8: playSFX SE007 1
+[00000173] 10: 
+[00000174] 19: 
+[00000175] ff: text 05
+{textColor 0 2}... The car's door slams shut. 
+{textColor 0 2}The headlights turn on, illuminating the countless falling raindrops in the darkness. 
+{textColor 0 2}When I look closely I see that the car has a white sphere shaped object on its roof, an object I've seen before on certain cars in cities. 
+{textColor 0 2}It seems that it's a taxi. 
+{textColor 0 2}Vroom... the taxi starts driving away in unison with the sound of exhaust coming from its pipe. 
+
+
+[00000178] 10: 
+[00000179]  8: playSFX SE102 1
+[00000183] 10: 
+[00000184] 19: 
+[00000185] ff: text 06
+{textColor 0 2}The bright red tail lights of the taxi get farther and farther away, and the sound of the tires driving on gravel is eventually drowned away by the rain... 
+{textColor 0 2}(That was... that was definitely Saki...) 
+{textColor 0 2}What was she doing at the lodge in the middle of the night...??? 
+{textColor 0 2}And why did she get into a taxi, and where is she going in it...??? 
+{textColor 0 2}I suddenly realize my whole body is soaked with water. 
+{textColor 0 2}I am assaulted by a stinging cold. 
+{textColor 0 2}For now, I'll go back to the lodge. 
+{textColor 0 2}When I turn around, I hear the sound of a window closing. 
+{textColor 0 2}Someone might be awake... 
+{textColor 0 2}I return to the living room while shivering. 
+
+
+[00000188] 10: 
+[00000189]  2: cmd2 6
+[0000018d] 10: 
+[0000018e]  f: removeBG 0 5 2
+[00000198] 10: 
+[00000199] 10: bgload 00000000 BG02NN 5 1
+[000001a6] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 1
+[000001b1] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 21
+[000001bd] 10: 
+[000001be] 17: showClock
+[000001bf] 10: 
+[000001c0] 19: 
+[000001c1] ff: text 07
+{textColor 0 2}I go back in through the front door, and stare in the darkness to check my surroundings. 
+{textColor 0 2}I don't sense anyone else's presence. 
+{textColor 0 2}There's no sign that any of the others are awake. 
+{textColor 0 2}Which means that the sound I heard earlier... the window closing, that is, was just my imagination? 
+{textColor 0 2}When I try thinking of it that way, it feels like the sound of the bell I heard earlier and the taxi were all just illusions. 
+{textColor 0 2}Of course, Saki's ponytail swaying in the rain would be the same... 
+{textColor 0 2}(Am I... still half-asleep?) 
+{textColor 0 2}I must be so overwhelmed that I'm hallucinating. That must be it... 
+{textColor 0 2}In the first place, I can't think of anywhere Saki would go out to this late at night. 
+{textColor 0 2}And in this rain to boot... 
+
+
+[000001c4] 10: 
+[000001c5] 10: bgload 00000000 BG01NN 4 1
+[000001d2] 10: 
+[000001d3] 19: 
+[000001d4] ff: text 08
+{textColor 0 2}As I nod to myself, I return to my room and change my clothes. 
+{textColor 0 2}I once again crawl into my still warm bed, and close my eyes. 
+{textColor 0 2}I strangely feel much less troubled now than before. 
+
+
+[000001d7] 10: 
+[000001d8]  f: removeBG 0 0 0
+[000001e2] 10: 
+[000001e3]  7: stopBGM
+[000001e4]  0: 
+[000001e5]  5: delay 180
+[000001ea] 10: 
+[000001eb] 10: bgload 00000000 BG01AR 0 1
+[000001f8] 10: 
+[000001f9]  6: playBGM 9
+[000001fd] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 8
+[00000208] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 32
+[00000214] 10: 
+[00000215] 17: showClock
+[00000216] 10: 
+[00000217] 19: 
+[00000218] ff: text 09
+{textColor 0 2}I wake up. 
+{textColor 0 2}As usual, the sound of the rain is still echoing. 
+{textColor 0 2}It's an intense sound that feels like it's directly hitting my ears... 
+{textColor 0 2}The downpour is probably still going on. 
+{textColor 0 2}It's a little too loud for me to try to fall asleep again... When I turn over in my bed while having thoughts like that... 
+
+
+[0000021b] 10: 
+[0000021c]  7: stopBGM
+[0000021d] 10: 
+[0000021e]  b: playVoice SL1D6000
+[00000228] 10: 
+[00000229] 19: 
+[0000022a] ff: text 0a
+{textColor 1 8}【Izumi】 "WHAAAAAAAAAAAAAAT!!!?" 
+
+
+[0000022d] 10: 
+[0000022e]  6: playBGM 13
+[00000232] 10: 
+[00000233] 19: 
+[00000234] ff: text 0b
+{textColor 0 2}I hear a loud scream. 
+{textColor 0 2}Feeling uneasy, I jump out of the bed. 
+
+
+[00000237] 10: 
+[00000238] 10: bgload 00000000 BG02AR 4 1
+[00000245] 10: 
+[00000246] 19: 
+[00000247] ff: text 0c
+{textColor 0 2}When I rush into the living room, everyone else gathers in succession. 
+{textColor 0 2}In the center, Izumi-san is flustered, overturning her handbag. 
+{textColor 0 2}Her face is has gone pale, and her eyes are bloodshot.  {textColor 0 2}This isn't like her at all. 
+{textColor 0 0}【Makoto】 "Izumi-san! What happened!?" 
+
+
+[0000024a] 10: 
+[0000024b] 11: fgload 0 00000000 IZ11BA 1 3
+[0000025b] 10: 
+[0000025c]  b: playVoice SL1D6001
+[00000266] 10: 
+[00000267] 19: 
+[00000268] ff: text 0d
+{textColor 1 8}【Izumi】 "Yesterday's proceeds... they're all gone!" 
+{textColor 0 0}【Makoto】 "... What!?" 
+
+
+[0000026b] 10: 
+[0000026c] 13: moveFG 0 0
+[00000273] 10: 
+[00000274] 11: fgload 1 00000000 KU11AA 2 3
+[00000284] 10: 
+[00000285]  b: playVoice SL1D6002
+[0000028f] 10: 
+[00000290] 19: 
+[00000291] ff: text 0e
+{textColor 1 7}【Kurumi】 "Onee-chan, did you look thoroughly?" 
+
+
+[00000294] 10: 
+[00000295]  b: playVoice SL1D6003
+[0000029f] 10: 
+[000002a0] 19: 
+[000002a1] ff: text 0f
+{textColor 1 8}【Izumi】 "Of course!" 
+
+
+[000002a4] 10: 
+[000002a5] 12: removeFG 1 3
+[000002ac] 10: 
+[000002ad] 11: fgload 1 00000000 YU08CA 2 3
+[000002bd] 10: 
+[000002be]  b: playVoice SL1D6004
+[000002c8] 10: 
+[000002c9] 19: 
+[000002ca] ff: text 10
+{textColor 1 4}【Yuka】 "Did you possibly put them down in a different place?" 
+
+
+[000002cd] 10: 
+[000002ce]  b: playVoice SL1D6005
+[000002d8] 10: 
+[000002d9] 19: 
+[000002da] ff: text 11
+{textColor 1 8}【Izumi】 "No way. This is the only place they'd be!" 
+
+
+[000002dd] 10: 
+[000002de] 12: removeFG 1 3
+[000002e5] 10: 
+[000002e6] 11: fgload 1 00000000 OK06CA 2 3
+[000002f6] 10: 
+[000002f7]  b: playVoice SL1D6006
+[00000301] 10: 
+[00000302] 19: 
+[00000303] ff: text 12
+{textColor 0 0}【Okuhiko】 "If that's the case, then they were stolen. That's the only possibility I can think of..." 
+{textColor 0 0}【Makoto】 "'Stolen'... Are you saying one of us stole them!?" 
+
+
+[00000306] 10: 
+[00000307] 12: removeFG 0 3
+[0000030e] 10: 
+[0000030f] 13: moveFG 1 1
+[00000316] 10: 
+[00000317] 11: fgload 1 00000000 OK05CA 1 3
+[00000327] 10: 
+[00000328]  b: playVoice SL1D6008
+[00000332] 10: 
+[00000333] 19: 
+[00000334] ff: text 13
+{textColor 0 0}【Okuhiko】 "Don't be hasty. I wouldn't go as far as to say that." 
+
+
+[00000337] 10: 
+[00000338] 12: removeFG 1 3
+[0000033f] 10: 
+[00000340] 11: fgload 1 00000000 HA01CA 1 3
+[00000350] 10: 
+[00000351]  b: playVoice SL1D6009
+[0000035b] 10: 
+[0000035c] 19: 
+[0000035d] ff: text 14
+{textColor 1 5}【Haruka】 "Are you sure she was the only one stolen from...?" 
+
+
+[00000360] 10: 
+[00000361] 12: removeFG 1 3
+[00000368] 10: 
+[00000369] 11: fgload 1 00000000 IZ11BA 1 3
+[00000379] 10: 
+[0000037a]  b: playVoice SL1D6010
+[00000384] 10: 
+[00000385] 19: 
+[00000386] ff: text 15
+{textColor 1 8}【Izumi】 "What?" 
+
+
+[00000389] 10: 
+[0000038a] 12: removeFG 1 3
+[00000391] 10: 
+[00000392] 11: fgload 1 00000000 HA01CA 0 3
+[000003a2] 10: 
+[000003a3]  b: playVoice SL1D6011
+[000003ad] 10: 
+[000003ae] 19: 
+[000003af] ff: text 16
+{textColor 1 5}【Haruka】 "Maybe all our wallets were stolen from as well..." 
+
+
+[000003b2] 10: 
+[000003b3] 11: fgload 0 00000000 OK06CA 2 3
+[000003c3] 10: 
+[000003c4]  b: playVoice SL1D6012
+[000003ce] 10: 
+[000003cf] 19: 
+[000003d0] ff: text 17
+{textColor 0 0}【Okuhiko】 "It'd be best if we checked them all." 
+
+
+[000003d3] 10: 
+[000003d4] 15: removeAllFG 3
+[000003d8] 10: 
+[000003d9] 19: 
+[000003da] ff: text 18
+{textColor 0 2}Yuka begins to run for her room. 
+{textColor 0 2}Taking that as a signal, we all run off to check our respective wallets. 
+{textColor 0 2}――Several minutes later.  {textColor 0 2}All our faces have gone pale. 
+{textColor 0 2}Though we've all gathered, nobody says a word. 
+{textColor 0 2}Only the sound of the pouring rain can be heard. 
+
+
+[000003dd] 10: 
+[000003de] 11: fgload 0 00000000 YU08CA 1 3
+[000003ee] 10: 
+[000003ef]  b: playVoice SL1D6013
+[000003f9] 10: 
+[000003fa] 19: 
+[000003fb] ff: text 19
+{textColor 1 4}【Yuka】 "What should we do?" 
+{textColor 0 2}Yuka finally speaks. 
+{textColor 0 2}With a concerned expression, Kurumi looks at Izumi-san.  {textColor 0 2}Izumi-san is biting her thumbnail. 
+
+
+[000003fe] 10: 
+[000003ff] 12: removeFG 0 3
+[00000406] 10: 
+[00000407] 11: fgload 0 00000000 HA01CA 1 3
+[00000417] 10: 
+[00000418]  b: playVoice SL1D6014
+[00000422] 10: 
+[00000423] 19: 
+[00000424] ff: text 1a
+{textColor 1 5}【Haruka】 "Perhaps someone amongst us is the culprit." 
+{textColor 0 0}【Makoto】 "Haruka, don't say something so stupid." 
+
+
+[00000427] 10: 
+[00000428]  b: playVoice SL1D6015
+[00000432] 10: 
+[00000433] 19: 
+[00000434] ff: text 1b
+{textColor 1 5}【Haruka】 "It's a possibility." 
+
+
+[00000437] 10: 
+[00000438] 12: removeFG 0 3
+[0000043f] 10: 
+[00000440] 11: fgload 0 00000000 OK08CA 2 3
+[00000450] 10: 
+[00000451]  b: playVoice SL1D6016
+[0000045b] 10: 
+[0000045c] 19: 
+[0000045d] ff: text 1c
+{textColor 0 0}【Okuhiko】 "Yeah, that's true, but there's something that's bugging me." 
+
+
+[00000460] 10: 
+[00000461] 11: fgload 1 00000000 YU08CA 0 3
+[00000471] 10: 
+[00000472]  b: playVoice SL1D6017
+[0000047c] 10: 
+[0000047d] 19: 
+[0000047e] ff: text 1d
+{textColor 1 4}【Yuka】 "What?" 
+{textColor 0 0}【Makoto】 "More importantly, we need to call the police!" 
+
+
+[00000481] 10: 
+[00000482] 11: fgload 0 00000000 OK11CA 2 3
+[00000492] 10: 
+[00000493]  b: playVoice SL1D6018
+[0000049d] 10: 
+[0000049e] 19: 
+[0000049f] ff: text 1e
+{textColor 0 0}【Okuhiko】 "Wait. Before that, I-" 
+{textColor 0 0}【Makoto】 "This isn't the time to be telling us your concerns!" 
+
+
+[000004a2] 10: 
+[000004a3] 11: fgload 1 00000000 YU05CA 0 3
+[000004b3] 10: 
+[000004b4]  b: playVoice SL1D6019
+[000004be] 10: 
+[000004bf] 19: 
+[000004c0] ff: text 1f
+{textColor 1 4}【Yuka】 "He's right. Anyway, the police..." 
+
+
+[000004c3] 10: 
+[000004c4] 15: removeAllFG 3
+[000004c8] 10: 
+[000004c9]  7: stopBGM
+[000004ca] 10: 
+[000004cb] 19: 
+[000004cc] ff: text 20
+{textColor 0 2}I stand in front of the phone and pick up the receiver. 
+{textColor 0 2}As my hands tremble, I'm about to dial the number for the police, when all of the sudden... 
+{textColor 0 2}... The front door quietly opens. 
+
+
+[000004cf] 10: 
+[000004d0]  8: playSFX SE001 1
+[000004da] 10: 
+[000004db]  a: waitForSFX
+[000004dc] 10: 
+[000004dd]  8: playSFX SE030 0
+[000004e7] 10: 
+[000004e8] 19: 
+[000004e9] ff: text 21
+{textColor 0 2}I can hear the loud sound of the rainfall. 
+{textColor 0 2}I turn around, and look towards the front door. 
+
+
+[000004ec] 10: 
+[000004ed]  6: playBGM 9
+[000004f1] 10: 
+[000004f2]  9: stopSFX
+[000004f3] 10: 
+[000004f4] 11: fgload 0 00000000 SA01BA 1 3
+[00000504] 10: 
+[00000505]  b: playVoice SL1D6021
+[0000050f] 10: 
+[00000510] 19: 
+[00000511] ff: text 22
+{textColor 1 6}【Saki】 "Pardon my intrusion! Makoto-kun, are you there?" 
+{textColor 0 0}【Makoto】 "Saki..." 
+{textColor 0 2}I put the receiver down for the time being. 
+{textColor 0 2}Saki enters the living room while wiping the raindrops out of her hair. 
+
+
+[00000514] 10: 
+[00000515] 11: fgload 0 00000000 SA02BA 1 3
+[00000525] 10: 
+[00000526]  b: playVoice SL1D6022
+[00000530] 10: 
+[00000531] 19: 
+[00000532] ff: text 23
+{textColor 1 6}【Saki】 "Sorry for barging in like this, but it's really pouring out there. Sorry, but could I borrow a towel?" 
+{textColor 0 2}Yuka heads towards the kitchen.  {textColor 0 2}Izumi-san slightly raises her head and looks at Saki.  {textColor 0 2}Okuhiko glances at Saki. 
+{textColor 0 2}Haruka slowly steps back.  {textColor 0 2}Kurumi looks at Saki with upturned eyes, her head still hanging downwards. 
+{textColor 0 2}Saki, not noticing how different the others are acting, approaches me. 
+
+
+[00000535] 10: 
+[00000536] 11: fgload 0 00000000 SA03BA 1 3
+[00000546] 10: 
+[00000547]  b: playVoice SL1D6023
+[00000551] 10: 
+[00000552] 19: 
+[00000553] ff: text 24
+{textColor 1 6}【Saki】 "Ah, Makoto-kun... there's a few things I have to tell you, okay?" 
+{textColor 0 0}【Makoto】 "Saki, now's not the best time..." 
+
+
+[00000556] 10: 
+[00000557] 11: fgload 0 00000000 SA01BA 1 3
+[00000567] 10: 
+[00000568]  b: playVoice SL1D6024
+[00000572] 10: 
+[00000573] 19: 
+[00000574] ff: text 25
+{textColor 1 6}【Saki】 "Huh? Is something wrong?" 
+{textColor 0 2}Saki seems to have finally noticed everyone's change in behavior. 
+{textColor 0 2}She tilts her head questioningly as she surveys her surroundings. 
+
+
+[00000577] 10: 
+[00000578] 12: removeFG 0 3
+[0000057f] 10: 
+[00000580] 11: fgload 0 00000000 YU05CA 1 3
+[00000590] 10: 
+[00000591]  b: playVoice SL1D6025
+[0000059b] 10: 
+[0000059c] 19: 
+[0000059d] ff: text 26
+{textColor 1 4}【Yuka】 "A thief broke in." 
+
+
+[000005a0] 10: 
+[000005a1] 12: removeFG 0 3
+[000005a8] 10: 
+[000005a9] 11: fgload 0 00000000 SA11BA 1 3
+[000005b9] 10: 
+[000005ba]  b: playVoice SL1D6026
+[000005c4] 10: 
+[000005c5] 19: 
+[000005c6] ff: text 27
+{textColor 1 6}【Saki】 "What? A thief...?" 
+{textColor 0 0}【Makoto】 "Everyone's money was stolen. All of yesterday's proceeds from Lunabeach are completely gone as well..." 
+
+
+[000005c9] 10: 
+[000005ca] 12: removeFG 0 3
+[000005d1] 10: 
+[000005d2] 11: fgload 0 00000000 OK06CA 0 3
+[000005e2] 10: 
+[000005e3]  b: playVoice SL1D6028
+[000005ed] 10: 
+[000005ee] 19: 
+[000005ef] ff: text 28
+{textColor 0 0}【Okuhiko】 "... Don't tell me... it was you?" 
+
+
+[000005f2] 10: 
+[000005f3] 11: fgload 1 00000000 SA11BA 2 3
+[00000603] 10: 
+[00000604]  b: playVoice SL1D6029
+[0000060e] 10: 
+[0000060f] 19: 
+[00000610] ff: text 29
+{textColor 1 6}【Saki】 "Wha..." 
+
+
+[00000613] 10: 
+[00000614]  b: playVoice SL1D6030
+[0000061e] 10: 
+[0000061f] 19: 
+[00000620] ff: text 2a
+{textColor 0 0}【Okuhiko】 "You came here in the dead of night last night, right? I saw it. I saw you just as you left the lodge. And where did you go on that taxi you got into?" 
+{textColor 0 2}... Then... that really wasn't an illusion after all... 
+
+
+[00000623] 10: 
+[00000624] 15: removeAllFG 3
+[00000628] 10: 
+[00000629] 11: fgload 0 00000000 YU11CA 0 3
+[00000639] 10: 
+[0000063a]  b: playVoice SL1D6031
+[00000644] 10: 
+[00000645] 19: 
+[00000646] ff: text 2b
+{textColor 1 4}【Yuka】 "Is that true?" 
+
+
+[00000649] 10: 
+[0000064a] 12: removeFG 0 3
+[00000651] 10: 
+[00000652] 11: fgload 0 00000000 SA11BA 2 3
+[00000662] 10: 
+[00000663]  b: playVoice SL1D6032
+[0000066d] 10: 
+[0000066e] 19: 
+[0000066f] ff: text 2c
+{textColor 1 6}【Saki】 "I-I..." 
+
+
+[00000672] 10: 
+[00000673] 12: removeFG 0 3
+[0000067a] 10: 
+[0000067b] 11: fgload 0 00000000 OK06CA 0 3
+[0000068b] 10: 
+[0000068c]  b: playVoice SL1D6033
+[00000696] 10: 
+[00000697] 19: 
+[00000698] ff: text 2d
+{textColor 0 0}【Okuhiko】 "You can't say you don't know about it. There was another witness..." 
+
+
+[0000069b] 10: 
+[0000069c] 12: removeFG 0 3
+[000006a3] 10: 
+[000006a4] 11: fgload 0 00000000 YU05CA 2 3
+[000006b4] 10: 
+[000006b5]  b: playVoice SL1D6034
+[000006bf] 10: 
+[000006c0] 19: 
+[000006c1] ff: text 2e
+{textColor 1 4}【Yuka】 "Who?" 
+
+
+[000006c4] 10: 
+[000006c5] 11: fgload 1 00000000 OK06CA 0 3
+[000006d5] 10: 
+[000006d6]  b: playVoice SL1D6035
+[000006e0] 10: 
+[000006e1] 19: 
+[000006e2] ff: text 2f
+{textColor 0 0}【Okuhiko】 "Ishihara... Would you please tell us exactly what you saw?" 
+
+
+[000006e5] 10: 
+[000006e6] 15: removeAllFG 3
+[000006ea] 10: 
+[000006eb] 11: fgload 0 00000000 IZ11BA 1 3
+[000006fb] 10: 
+[000006fc]  b: playVoice SL1D6036
+[00000706] 10: 
+[00000707] 19: 
+[00000708] ff: text 30
+{textColor 1 8}【Izumi】 "Makoto-kun, you saw it?" 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000070b] 10: 
+[0000070c] 12: removeFG 0 3
+[00000713] 10: 
+[00000714] 11: fgload 0 00000000 YU05CA 2 3
+[00000724] 10: 
+[00000725]  b: playVoice SL1D6037
+[0000072f] 10: 
+[00000730] 19: 
+[00000731] ff: text 31
+{textColor 1 4}【Yuka】 "What did you see?" 
+
+
+[00000734] 10: 
+[00000735] 11: fgload 1 00000000 OK05CA 0 3
+[00000745] 10: 
+[00000746]  b: playVoice SL1D6038
+[00000750] 10: 
+[00000751] 19: 
+[00000752] ff: text 32
+{textColor 0 0}【Okuhiko】 "You chased her outside, didn't you? You should have seen her face as well..." 
+
+
+[00000755] 10: 
+[00000756] 11: fgload 0 00000000 YU11CA 2 3
+[00000766] 10: 
+[00000767]  b: playVoice SL1D6039
+[00000771] 10: 
+[00000772] 19: 
+[00000773] ff: text 33
+{textColor 1 4}【Yuka】 "Makoto, you chased her?" 
+{textColor 0 0}【Makoto】 "N-No, I..." 
+
+
+[00000776] 10: 
+[00000777] 11: fgload 1 00000000 OK04CA 0 3
+[00000787] 10: 
+[00000788]  b: playVoice SL1D6040
+[00000792] 10: 
+[00000793] 19: 
+[00000794] ff: text 34
+{textColor 0 0}【Okuhiko】 "Would you stop lying?" 
+{textColor 0 2}I lower my head, fully aware of the others' piercing glares. 
+{textColor 0 2}I lift my face and look towards Saki.  {textColor 0 2}She is staring straight into my eyes. 
+{textColor 0 0}【Makoto】 "... Yeah, I definitely followed them..." 
+
+
+[00000797] 10: 
+[00000798] 12: removeFG 0 3
+[0000079f] 10: 
+[000007a0] 11: fgload 0 00000000 IZ05BA 2 3
+[000007b0] 10: 
+[000007b1]  b: playVoice SL1D6042
+[000007bb] 10: 
+[000007bc] 19: 
+[000007bd] ff: text 35
+{textColor 1 8}【Izumi】 "Who was it?" 
+
+
+[000007c0] 10: 
+[000007c1] 12: removeFG 0 3
+[000007c8] 10: 
+[000007c9] 11: fgload 0 00000000 YU05CA 2 3
+[000007d9] 10: 
+[000007da]  b: playVoice SL1D6043
+[000007e4] 10: 
+[000007e5] 19: 
+[000007e6] ff: text 36
+{textColor 1 4}【Yuka】 "Who!?" 
+
+
+[000007e9] 10: 
+[000007ea]  7: stopBGM
+[000007eb] 10: 
+[000007ec] 12: removeFG 1 3
+[000007f3] 10: 
+[000007f4] 11: fgload 1 00000000 KU05AA 0 3
+[00000804] 10: 
+[00000805] 19: 
+[00000806] ff: text 37
+{textColor 1 7}【Kurumi】 "..." 
+
+
+[00000809] 10: 
+[0000080a] 12: removeFG 0 3
+[00000811] 10: 
+[00000812] 11: fgload 0 00000000 HA10CA 2 3
+[00000822] 10: 
+[00000823] 19: 
+[00000824] ff: text 38
+{textColor 1 5}【Haruka】 "..." 
+
+[00000827] ff: text 39
+{textColor 0 2}{choiceOpt 1 -> "Well, Saki?" }{choiceOpt 2 -> "..." }
+
+[0000082a] 10: 
+[0000082b]  3: choice v_a1_08 00 00
+[00000830]  0: 
+[00000831]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000a43 (0006)
+[0000083f] 10: 
+[00000840] 15: removeAllFG 3
+[00000844] 10: 
+[00000845]  6: playBGM 14
+[00000849] 10: 
+[0000084a] 19: 
+[0000084b] ff: text 3a
+{textColor 0 0}【Makoto】 "Well, Saki?" 
+
+
+[0000084e] 10: 
+[0000084f] 11: fgload 0 00000000 SA08BA 1 3
+[0000085f] 10: 
+[00000860] 19: 
+[00000861] ff: text 3b
+{textColor 1 6}【Saki】 "!!!" 
+
+
+[00000864] 10: 
+[00000865] 12: removeFG 0 3
+[0000086c] 10: 
+[0000086d] 11: fgload 0 00000000 KU08AA 2 3
+[0000087d] 10: 
+[0000087e]  b: playVoice SL1D6047
+[00000888] 10: 
+[00000889] 19: 
+[0000088a] ff: text 3c
+{textColor 1 7}【Kurumi】 "Saki-san, is this true!?" 
+
+
+[0000088d] 10: 
+[0000088e] 11: fgload 1 00000000 HA10CA 0 3
+[0000089e] 10: 
+[0000089f]  b: playVoice SL1D6048
+[000008a9] 10: 
+[000008aa] 19: 
+[000008ab] ff: text 3d
+{textColor 1 5}【Haruka】 "It's written all over her face." 
+
+
+[000008ae] 10: 
+[000008af] 15: removeAllFG 3
+[000008b3] 10: 
+[000008b4] 11: fgload 0 00000000 OK06CA 1 3
+[000008c4] 10: 
+[000008c5]  b: playVoice SL1D6049
+[000008cf] 10: 
+[000008d0] 19: 
+[000008d1] ff: text 3e
+{textColor 0 0}【Okuhiko】 "It's settled then. I've been wondering this whole time what you were doing." 
+
+
+[000008d4] 10: 
+[000008d5] 12: removeFG 0 3
+[000008dc] 10: 
+[000008dd] 19: 
+[000008de] ff: text 3f
+{textColor 0 0}【Makoto】 "Saki... what did you do here... last night?" 
+
+
+[000008e1] 10: 
+[000008e2] 11: fgload 0 00000000 SA08BA 1 3
+[000008f2] 10: 
+[000008f3]  b: playVoice SL1D6050
+[000008fd] 10: 
+[000008fe] 19: 
+[000008ff] ff: text 40
+{textColor 1 6}【Saki】 "I... I didn't do it." 
+
+
+[00000902] 10: 
+[00000903]  b: playVoice SL1D6051
+[0000090d] 10: 
+[0000090e] 19: 
+[0000090f] ff: text 41
+{textColor 1 6}【Saki】 "... I didn't steal anything!" 
+{textColor 0 0}【Makoto】 "Then why don't you explain to all of us what you were doing?" 
+
+
+[00000912] 10: 
+[00000913]  b: playVoice SL1D6052
+[0000091d] 10: 
+[0000091e] 19: 
+[0000091f] ff: text 42
+{textColor 1 6}【Saki】 "I don't know!" 
+{textColor 0 0}【Makoto】 "How can you not know what you did yourself?" 
+
+
+[00000922] 10: 
+[00000923]  b: playVoice SL1D6053
+[0000092d] 10: 
+[0000092e] 19: 
+[0000092f] ff: text 43
+{textColor 1 6}【Saki】 "I don't know what I don't know!" 
+
+
+[00000932] 10: 
+[00000933] 12: removeFG 0 3
+[0000093a] 10: 
+[0000093b] 11: fgload 0 00000000 IZ08BA 1 3
+[0000094b] 10: 
+[0000094c]  b: playVoice SL1D6054
+[00000956] 10: 
+[00000957] 19: 
+[00000958] ff: text 44
+{textColor 1 8}【Izumi】 "Saki-chan... can I ask you one thing? ... Was it you?" 
+
+
+[0000095b] 10: 
+[0000095c] 12: removeFG 0 3
+[00000963] 10: 
+[00000964] 11: fgload 0 00000000 SA08BA 1 3
+[00000974] 10: 
+[00000975] 19: 
+[00000976] ff: text 45
+{textColor 0 2}Saki averts her eyes. She purses her lips, and clenches her hands into fists. 
+
+
+[00000979] 10: 
+[0000097a] 12: removeFG 0 3
+[00000981] 10: 
+[00000982] 11: fgload 0 00000000 IZ08BA 2 3
+[00000992] 10: 
+[00000993]  b: playVoice SL1D6055
+[0000099d] 10: 
+[0000099e] 19: 
+[0000099f] ff: text 46
+{textColor 1 8}【Izumi】 "Saki-chan!?" 
+
+
+[000009a2] 10: 
+[000009a3] 11: fgload 1 00000000 KU08AA 0 3
+[000009b3] 10: 
+[000009b4]  b: playVoice SL1D6056
+[000009be] 10: 
+[000009bf] 19: 
+[000009c0] ff: text 47
+{textColor 1 7}【Kurumi】 "Will you tell us? Will you tell us the truth?" 
+
+
+[000009c3] 10: 
+[000009c4] 15: removeAllFG 3
+[000009c8] 10: 
+[000009c9] 19: 
+[000009ca] ff: text 48
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 0}【Makoto】 "Saki, don't be stubborn at a time like this." 
+
+
+[000009cd] 10: 
+[000009ce] 11: fgload 0 00000000 SA01BA 1 3
+[000009de] 10: 
+[000009df]  b: playVoice SL1D6058
+[000009e9] 10: 
+[000009ea] 19: 
+[000009eb] ff: text 49
+{textColor 1 6}【Saki】 "... Don't you trust me?" 
+{textColor 0 0}【Makoto】 "I do." 
+
+
+[000009ee] 10: 
+[000009ef] 11: fgload 0 00000000 SA08BA 1 3
+[000009ff] 10: 
+[00000a00]  b: playVoice SL1D6059
+[00000a0a] 10: 
+[00000a0b] 19: 
+[00000a0c] ff: text 4a
+{textColor 1 6}【Saki】 "You're lying!" 
+{textColor 0 0}【Makoto】 "No I'm not!" 
+
+
+[00000a0f] 10: 
+[00000a10]  b: playVoice SL1D6060
+[00000a1a] 10: 
+[00000a1b] 19: 
+[00000a1c] ff: text 4b
+{textColor 1 6}【Saki】 "If I'm not lying, then why are you ordering me to explain!?" 
+{textColor 0 0}【Makoto】 "Th-That's..." 
+
+
+[00000a1f] 10: 
+[00000a20]  b: playVoice SL1D6061
+[00000a2a] 10: 
+[00000a2b] 19: 
+[00000a2c] ff: text 4c
+{textColor 1 6}【Saki】 "So you can't trust me unless I use words!?" 
+{textColor 0 0}【Makoto】 "You're wrong! It's because I trust you that I want you to explain!" 
+{textColor 0 2}Saki slowly shakes her head... 
+
+
+[00000a2f] 10: 
+[00000a30]  b: playVoice SL1D6062
+[00000a3a] 10: 
+[00000a3b] 19: 
+[00000a3c] ff: text 4d
+{textColor 1 6}【Saki】 "You're the same, Makoto... All humans are the same!!" 
+
+
+[00000a3f]  0: 
+[00000a40]  7: goto7 00000c7b (0007)
+[00000a43]  0: 
+[00000a44]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 00000c7b (0008)
+[00000a52] fe: varop VAR_(28_0a)_a1_01 (14) += (00) 1
+[00000a5d] 10: 
+[00000a5e] 15: removeAllFG 3
+[00000a62] 10: 
+[00000a63]  6: playBGM 14
+[00000a67] 10: 
+[00000a68] 19: 
+[00000a69] ff: text 4e
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000a6c] 10: 
+[00000a6d]  b: playVoice SL1D6063
+[00000a77] 10: 
+[00000a78] 19: 
+[00000a79] ff: text 4f
+{textColor 0 0}【Okuhiko】 "Hey! Ishihara!?" 
+{textColor 0 0}【Makoto】 "I don't know... I just don't know..." 
+{textColor 0 2}I just want to scream that she's innocent... 
+{textColor 0 2}"You're wrong! It wasn't Saki!"―― I want to so badly, but I can't. 
+{textColor 0 2}That person I saw last night was definitely Saki. 
+{textColor 0 2}That's why I can't cover for her. Even though I want to trust her, I can't. 
+{textColor 0 2}I don't know what to do. 
+{textColor 0 2}My mind is scrambled, and I lose the ability to make any sound judgments. 
+
+
+[00000a7c] 10: 
+[00000a7d] 11: fgload 0 00000000 OK05CA 1 3
+[00000a8d] 10: 
+[00000a8e]  b: playVoice SL1D6064
+[00000a98] 10: 
+[00000a99] 19: 
+[00000a9a] ff: text 50
+{textColor 0 0}【Okuhiko】 "Whatever... Judging from your behavior, you don't even need to say anything for me to know..." 
+
+
+[00000a9d] 10: 
+[00000a9e] 11: fgload 0 00000000 OK06CA 1 3
+[00000aae] 10: 
+[00000aaf]  b: playVoice SL1D6070
+[00000ab9] 10: 
+[00000aba] 19: 
+[00000abb] ff: text 51
+{textColor 0 0}【Okuhiko】 "Saki-chan! What were you doing here last night!?" 
+
+
+[00000abe] 10: 
+[00000abf] 15: removeAllFG 3
+[00000ac3] 10: 
+[00000ac4] 11: fgload 0 00000000 SA08BA 2 3
+[00000ad4] 10: 
+[00000ad5]  b: playVoice SL1D6071
+[00000adf] 10: 
+[00000ae0] 19: 
+[00000ae1] ff: text 52
+{textColor 1 6}【Saki】 "I... I didn't do it." 
+
+
+[00000ae4] 10: 
+[00000ae5]  b: playVoice SL1D6073
+[00000aef] 10: 
+[00000af0] 19: 
+[00000af1] ff: text 53
+{textColor 1 6}【Saki】 "... I didn't steal anything!" 
+
+
+[00000af4] 10: 
+[00000af5] 12: removeFG 0 3
+[00000afc] 10: 
+[00000afd] 11: fgload 0 00000000 OK05CA 0 3
+[00000b0d] 10: 
+[00000b0e]  b: playVoice SL1D6074
+[00000b18] 10: 
+[00000b19] 19: 
+[00000b1a] ff: text 54
+{textColor 0 0}【Okuhiko】 "If that's the case, then why don't you tell us what you were doing?" 
+
+
+[00000b1d] 10: 
+[00000b1e] 12: removeFG 0 3
+[00000b25] 10: 
+[00000b26] 11: fgload 0 00000000 SA08BA 2 3
+[00000b36] 10: 
+[00000b37]  b: playVoice SL1D6075
+[00000b41] 10: 
+[00000b42] 19: 
+[00000b43] ff: text 55
+{textColor 1 6}【Saki】 "I don't know!" 
+
+
+[00000b46] 10: 
+[00000b47] 12: removeFG 0 3
+[00000b4e] 10: 
+[00000b4f] 11: fgload 0 00000000 OK05CA 0 3
+[00000b5f] 10: 
+[00000b60]  b: playVoice SL1D6076
+[00000b6a] 10: 
+[00000b6b] 19: 
+[00000b6c] ff: text 56
+{textColor 0 0}【Okuhiko】 "There's no way you don't know about what you did!" 
+
+
+[00000b6f] 10: 
+[00000b70] 12: removeFG 0 3
+[00000b77] 10: 
+[00000b78] 11: fgload 0 00000000 SA08BA 2 3
+[00000b88] 10: 
+[00000b89]  b: playVoice SL1D6077
+[00000b93] 10: 
+[00000b94] 19: 
+[00000b95] ff: text 57
+{textColor 1 6}【Saki】 "I don't know what I don't know!" 
+
+
+[00000b98] 10: 
+[00000b99] 11: fgload 1 00000000 IZ08BA 0 3
+[00000ba9] 10: 
+[00000baa]  b: playVoice SL1D6078
+[00000bb4] 10: 
+[00000bb5] 19: 
+[00000bb6] ff: text 58
+{textColor 1 8}【Izumi】 "Saki-chan... can I ask you one thing? ... Was it you?" 
+
+
+[00000bb9] 10: 
+[00000bba] 12: removeFG 0 3
+[00000bc1] 10: 
+[00000bc2] 19: 
+[00000bc3] ff: text 59
+{textColor 0 2}Saki averts her eyes. She purses her lips, and clenches her hands into fists. 
+
+
+[00000bc6] 10: 
+[00000bc7]  b: playVoice SL1D6079
+[00000bd1] 10: 
+[00000bd2] 19: 
+[00000bd3] ff: text 5a
+{textColor 1 8}【Izumi】 "Saki-chan!?" 
+
+
+[00000bd6] 10: 
+[00000bd7] 12: removeFG 1 3
+[00000bde] 10: 
+[00000bdf] 11: fgload 1 00000000 KU08AA 2 3
+[00000bef] 10: 
+[00000bf0]  b: playVoice SL1D6080
+[00000bfa] 10: 
+[00000bfb] 19: 
+[00000bfc] ff: text 5b
+{textColor 1 7}【Kurumi】 "Will you tell us? Will you tell us the truth?" 
+{textColor 1 6}【Saki】 "..." 
+
+
+[00000bff] 10: 
+[00000c00] 15: removeAllFG 3
+[00000c04] 10: 
+[00000c05] 19: 
+[00000c06] ff: text 5c
+{textColor 0 0}【Makoto】 "... Saki..." 
+{textColor 0 2}I finally manage to wring my voice out. 
+{textColor 0 2}Saki looks towards me. 
+{textColor 0 2}Her desperate gaze is begging me to help her... 
+
+
+[00000c09] 10: 
+[00000c0a] 11: fgload 0 00000000 SA01BA 1 3
+[00000c1a] 10: 
+[00000c1b]  b: playVoice SL1D6082
+[00000c25] 10: 
+[00000c26] 19: 
+[00000c27] ff: text 5d
+{textColor 1 6}【Saki】 "Makoto-kun... you trust me, right?" 
+{textColor 0 0}【Makoto】 "Yeah... I trust you..." 
+
+
+[00000c2a] 10: 
+[00000c2b] 11: fgload 0 00000000 SA08BA 1 3
+[00000c3b] 10: 
+[00000c3c]  b: playVoice SL1D6083
+[00000c46] 10: 
+[00000c47] 19: 
+[00000c48] ff: text 5e
+{textColor 1 6}【Saki】 "... You're lying!" 
+{textColor 0 0}【Makoto】 "I'm not..." 
+
+
+[00000c4b] 10: 
+[00000c4c]  b: playVoice SL1D6084
+[00000c56] 10: 
+[00000c57] 19: 
+[00000c58] ff: text 5f
+{textColor 1 6}【Saki】 "If you're not lying, then why aren't you saying anything!? Why aren't you saying it wasn't me!?" 
+{textColor 0 0}【Makoto】 "Th-That's..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 0}【Makoto】 "Saki... give an answer so that... everyone will understand..." 
+{textColor 0 0}【Makoto】 "Once you do that, everyone-" 
+
+
+[00000c5b] 10: 
+[00000c5c]  b: playVoice SL1D6085
+[00000c66] 10: 
+[00000c67] 19: 
+[00000c68] ff: text 60
+{textColor 1 6}【Saki】 "So you can't trust me either unless I use words!?" 
+{textColor 0 0}【Makoto】 "You're wrong... I want you to say it because I want to trust you..." 
+{textColor 0 2}Saki slowly shakes her head... 
+
+
+[00000c6b] 10: 
+[00000c6c]  b: playVoice SL1D6086
+[00000c76] 10: 
+[00000c77] 19: 
+[00000c78] ff: text 61
+{textColor 1 6}【Saki】 "You're the same, Makoto... All humans are the same!!" 
+
+
+[00000c7b] 10: 
+[00000c7c] 12: removeFG 0 3
+[00000c83] 10: 
+[00000c84] 19: 
+[00000c85] ff: text 62
+{textColor 0 2}Saki turns back, and bursts out the front door. 
+{textColor 0 0}【Makoto】 "Saki!!" 
+
+
+[00000c88] 10: 
+[00000c89]  f: removeBG 0 0 2
+[00000c93] 10: 
+[00000c94]  7: stopBGM
+[00000c95] 10: 
+[00000c96]  6: playBGM 10
+[00000c9a] 10: 
+[00000c9b]  8: playSFX SE030 0
+[00000ca5] 10: 
+[00000ca6] 10: bgload 00000000 BG12R 4 1
+[00000cb3] 10: 
+[00000cb4]  1: cmd1 26
+[00000cb9] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 8
+[00000cc4] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 49
+[00000cd0] 10: 
+[00000cd1] 17: showClock
+[00000cd2] 10: 
+[00000cd3] 19: 
+[00000cd4] ff: text 63
+{textColor 0 2}Saki begins to descend the forest path, which has practically changed into a marsh, as if she's tumbling down. 
+{textColor 0 2}I desperately chase after her. 
+
+
+[00000cd7] 10: 
+[00000cd8] 10: bgload 00000000 BG13ZR 4 1
+[00000ce5] 10: 
+[00000ce6] 19: 
+[00000ce7] ff: text 64
+{textColor 0 2}I keep running against the pouring rain. 
+{textColor 0 2}I slowly close the distance between Saki and I. 
+{textColor 0 2}Before long, Saki gets onto the road that leads to the cape. 
+{textColor 0 2}Those cherry blossom trees... I also immediately rush onto the tree-lined street. 
+
+
+[00000cea] 10: 
+[00000ceb] 10: bgload 00000000 BG27R 4 1
+[00000cf8] 10: 
+[00000cf9] 19: 
+[00000cfa] ff: text 65
+{textColor 0 2}I chase Saki. 
+{textColor 0 2}If we continue like this, we'll arrive at Viewpoint Park. 
+{textColor 0 2}In other words, a dead end... 
+{textColor 0 2}At that time, what should I say to Saki? 
+{textColor 0 2}What do I even want to say once I catch up with her? 
+{textColor 0 2}"You don't need words..." 
+{textColor 0 2}"I'll become the cat and the cherry blossom tree." 
+{textColor 0 2}I said that to Saki yesterday... 
+{textColor 0 2}Even so... I couldn't completely trust Saki. 
+{textColor 0 2}What am I supposed to say to her now, of all times...? 
+
+
+[00000cfd] 10: 
+[00000cfe]  7: stopBGM
+[00000cff] 10: 
+[00000d00] 10: bgload 00000000 BG19R 4 1
+[00000d0d] 10: 
+[00000d0e] 19: 
+[00000d0f] ff: text 66
+{textColor 0 2}The tip of the cape... the dead end... 
+{textColor 0 2}Saki grips the fence with her back turned to me. 
+{textColor 0 2}I slow down, and cautiously approach her. 
+{textColor 0 2}I hear the sound of waves breaking at the bottom of the cliff. 
+{textColor 0 2}The cold rain intensely beats down on Saki's back. 
+{textColor 0 0}【Makoto】 "Saki..." 
+{textColor 0 2}I call out to her. 
+{textColor 0 2}Saki doesn't try to answer or turn around...  {textColor 0 2}――Suddenly, she begins to cross over the boundary of the dead end! 
+{textColor 0 0}【Makoto】 "Saki!!!" 
+{textColor 0 2}I kick off the wet ground and start running. 
+{textColor 0 2}Saki climbs over the iron fence, and stands on the opposite side of it. 
+{textColor 0 2}She can't be... 
+
+
+[00000d12] 10: 
+[00000d13]  9: stopSFX
+[00000d14] 10: 
+[00000d15]  2: cmd2 6
+[00000d19] 10: 
+[00000d1a]  f: removeBG 0 0 2
+[00000d24] 10: 
+[00000d25]  6: playBGM 20
+[00000d2a] 10: 
+[00000d2b] 10: bgload 00000000 EV_SA10 0 1
+[00000d38] 10: 
+[00000d39]  b: playVoice SL1D6087
+[00000d43] 10: 
+[00000d44] 19: 
+[00000d45] ff: text 67
+{textColor 1 6}【Saki】 "Stay back!" 
+{textColor 0 0}【Makoto】 "...!!" 
+
+
+[00000d48] 10: 
+[00000d49]  b: playVoice SL1D6088
+[00000d53] 10: 
+[00000d54] 19: 
+[00000d55] ff: text 68
+{textColor 1 6}【Saki】 "Don't get any closer!" 
+{textColor 0 2}I come to a halt. 
+{textColor 0 2}The fiercely blowing wind waves through Saki's hair. 
+{textColor 0 0}【Makoto】 "Saki..." 
+{textColor 0 0}【Makoto】 "I... I... I swore to always continue believing in only you... Even though I swore that..." 
+
+
+[00000d58] 10: 
+[00000d59]  b: playVoice SL1D6089
+[00000d63] 10: 
+[00000d64] 19: 
+[00000d65] ff: text 69
+{textColor 1 6}【Saki】 "It's fine... it doesn't matter anymore... It doesn't matter anymore..." 
+{textColor 0 2}Saki glances directly downwards. 
+{textColor 0 2}My chest tightens from the painful look in her eyes. 
+
+
+[00000d68] 10: 
+[00000d69]  b: playVoice SL1D6090
+[00000d73] 10: 
+[00000d74] 19: 
+[00000d75] ff: text 6a
+{textColor 1 6}【Saki】 "No one even gives a shit about me anymore!" 
+{textColor 0 0}【Makoto】 "You're wrong, Saki! That's not..." 
+{textColor 0 2}As I say that, I carefully step towards Saki. 
+{textColor 0 2}And, at that time... 
+{textColor 0 2}Saki quietly raises her dangling left hand, and opens it... 
+{textColor 0 2}Lying there... in her palm is... 
+
+
+[00000d78] 10: 
+[00000d79] 10: bgload 00000000 EV_AL01 0 1
+[00000d86] 10: 
+[00000d87] 19: 
+[00000d88] ff: text 6b
+{textColor 0 2}... the bell. 
+{textColor 0 2}It's that bell. 
+{textColor 0 2}The bell she said she lost... in the ocean. 
+{textColor 0 2}Even though she said Haruka had it now... 
+
+
+[00000d8b] 10: 
+[00000d8c] 10: bgload 00000000 EV_SA10 0 1
+[00000d99] 10: 
+[00000d9a]  b: playVoice SL1D6091
+[00000da4] 10: 
+[00000da5] 19: 
+[00000da6] ff: text 6c
+{textColor 1 6}【Saki】 "I've had it the whole time..." 
+{textColor 0 0}【Makoto】 "Wh-Why...?" 
+
+
+[00000da9] 10: 
+[00000daa]  b: playVoice SL1D6092
+[00000db4] 10: 
+[00000db5] 19: 
+[00000db6] ff: text 6d
+{textColor 1 6}【Saki】 "I was also lying to you." 
+
+
+[00000db9] 10: 
+[00000dba]  b: playVoice SL1D6093
+[00000dc4] 10: 
+[00000dc5] 19: 
+[00000dc6] ff: text 6e
+{textColor 1 6}【Saki】 "I didn't trust you." 
+
+
+[00000dc9] 10: 
+[00000dca]  b: playVoice SL1D6094
+[00000dd4] 10: 
+[00000dd5] 19: 
+[00000dd6] ff: text 6f
+{textColor 1 6}【Saki】 "I don't trust people. I can't trust them... I don't want to trust them!" 
+{textColor 0 0}【Makoto】 "Saki..." 
+
+
+[00000dd9] 10: 
+[00000dda]  b: playVoice SL1D6095
+[00000de4] 10: 
+[00000de5] 19: 
+[00000de6] ff: text 70
+{textColor 1 6}【Saki】 "I never thought of wanting someone to trust me either... I was fine not being trusted!" 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 0}【Makoto】 "Saki... please... listen to me..." 
+{textColor 0 2}I take a step forward. 
+
+
+[00000de9] 10: 
+[00000dea]  b: playVoice SL1D6096
+[00000df4] 10: 
+[00000df5] 19: 
+[00000df6] ff: text 71
+{textColor 1 6}【Saki】 "I told you not to get any closer!" 
+{textColor 0 2}I take another step forward. 
+
+
+[00000df9] 10: 
+[00000dfa]  b: playVoice SL1D6097
+[00000e04] 10: 
+[00000e05] 19: 
+[00000e06] ff: text 72
+{textColor 1 6}【Saki】 "Stay away!" 
+
+
+[00000e09] 10: 
+[00000e0a]  b: playVoice SL1D6098
+[00000e14] 10: 
+[00000e15] 19: 
+[00000e16] ff: text 73
+{textColor 1 6}【Saki】 "Don't get any closer, or I'll really..." 
+{textColor 0 2}I gently reach my hand out. 
+{textColor 0 2}Saki slowly shakes her head. 
+{textColor 0 2}While continuing to keep my hand stretched out, I approach her even more. 
+{textColor 0 0}【Makoto】 "Take my hand..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 0}【Makoto】 "Take my hand, Saki..." 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 2}I take another firm step... at that instant! 
+
+
+[00000e19] 10: 
+[00000e1a]  7: stopBGM
+[00000e1b] 10: 
+[00000e1c] 19: 
+[00000e1d] ff: text 74
+{textColor 0 2}Saki lets go of the fence with her right hand. 
+{textColor 0 2}She gently closes her eyes... 
+{textColor 0 2}... Her body leans backwards. 
+{textColor 0 2}The bell slips and falls from her now powerless left hand... 
+
+
+[00000e20] 10: 
+[00000e21]  f: removeBG 1 0 2
+[00000e2b] 10: 
+[00000e2c]  8: playSFX SE090 1
+[00000e36] 10: 
+[00000e37]  a: waitForSFX
+[00000e38] 10: 
+[00000e39]  8: playSFX SE030 0
+[00000e43] 10: 
+[00000e44] 19: 
+[00000e45] ff: text 75
+{textColor 0 2}And like that... she falls... 
+{textColor 0 2}She falls into the pitch black, alluring darkness... 
+{textColor 0 2}Like a scrap of paper dancing in the wind... 
+{textColor 0 0}【Makoto】 "Saki..." 
+{textColor 0 0}【Makoto】 "Why{delay 5}..." 
+{textColor 0 0}【Makoto】 "Why... Saki..." 
+
+
+[00000e48] 10: 
+[00000e49]  9: stopSFX
+[00000e4a] 10: 
+[00000e4b] 19: 
+[00000e4c] ff: text 76
+{textColor 0 0}【Makoto】 "SAKIIIIIIIIII!!!" 
+
+
+[00000e4f]  0: 
+[00000e50]  5: delay 180
+[00000e55] 10: 
+[00000e56]  f: removeBG 0 1 1
+[00000e60] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 0
+[00000e6b] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 6
+[00000e76]  0: 
+[00000e77] 19: unknown19 0 3
+[00000e7e]  0: 
+[00000e7f] 19: unknown19 1 3
+[00000e86]  0: 
+[00000e87] 19: unknown19 2 3
+[00000e8e] 10: 
+[00000e8f] 24: cmd24 0
+[00000e93] 10: 
+[00000e94] 22: movie saki
+[00000e9a]  0: 
+[00000e9b]  5: delay 10
+[00000e9f] 10: 
+[00000ea0] 24: cmd24 1
+[00000ea4]  0: 
+[00000ea5]  5: delay 1
+[00000ea9] 10: 
+[00000eaa] 2d: cmd2D 00 0a 01 2d 0a 87 14 00 09
+[00000eb4]  0: 
+[00000eb5] fe: varop VAR_(28_0a)_a1_3b (14) := (00) 1
+[00000ec0] fe: varop VAR_(28_0a)_a0_65 (14) := (00) 0
+[00000ecb] 10: 
+[00000ecc] 23: cmd23
+[00000ecd]  0: 
+[00000ece] 19: unknown19 0 4
+[00000ed5]  0: 
+[00000ed6] 19: unknown19 1 4
+[00000edd]  0: 
+[00000ede] 19: unknown19 2 4
+[00000ee5] 10: 
+[00000ee6]  8: playSFX SE094 1
+[00000ef0] 10: 
+[00000ef1]  a: waitForSFX
+[00000ef2]  0: 
+[00000ef3]  5: delay 180
+[00000ef8] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 255
+[00000f04] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000f10] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[00000f1c] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 66
+[00000f28]  0: 
+[00000f29]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 00000f3d (000a)
+[00000f37] 10: 
+[00000f38] 1c: cmd1C
+[00000f39]  0: 
+[00000f3a]  7: goto7 00000f48 (000b)
+[00000f3d] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[00000f48] 10: 
+[00000f49]  4: jump SL2D1

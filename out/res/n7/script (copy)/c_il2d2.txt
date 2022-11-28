@@ -1,0 +1,2260 @@
+[00000030] fe: varop VAR_(28_0a)_a0_fb (14) := (00) 2
+[0000003b] fe: varop VAR_(28_0a)_a0_fe (14) := (00) 2
+[00000046] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 255
+[00000052] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 255
+[0000005e] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 1
+[00000069]  0: 
+[0000006a]  a: condJump 00 VAR_(28_1e)_a1_0e (28) != (15) (80)->0 (15) (00)  * 0000007e (0002)
+[00000078] 10: 
+[00000079] 1c: cmd1C
+[0000007a]  0: 
+[0000007b]  7: goto7 00000089 (0003)
+[0000007e] fe: varop VAR_(28_0a)_a1_0e (14) := (00) 0
+[00000089]  0: 
+[0000008a]  a: condJump 01 VAR_(28_0a)_a0_34 (14) == (01) (80)->0 (01) (00)  * 0000009a (0005)
+[00000098] 10: 
+[00000099] 18: cmd18
+[0000009a] 10: 
+[0000009b] 1b: dayIntro 00000000 BGCAL2.cps
+[000000a2] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 63
+[000000ae] 10: 
+[000000af]  f: removeBG 0 0 1
+[000000b9] 10: 
+[000000ba]  6: playBGM 8
+[000000be] 10: 
+[000000bf] 19: 
+[000000c0] ff: text 00
+{textColor 0 2}The next day...  {textColor 0 2}As promised, we go to the pool. 
+
+
+[000000c3]  0: 
+[000000c4]  a: condJump 00 VAR_(28_1e)_a1_12 (28) != (15) (81)->1 (15) (00)  * 000000db (0006)
+[000000d2] 10: 
+[000000d3] 19: 
+[000000d4] ff: text 01
+{textColor 0 2}Like last time, only Kurumi stays behind at Lunabeach, pretending to be sick. 
+
+
+[000000d7]  0: 
+[000000d8]  7: goto7 000000e0 (0007)
+[000000db] 10: 
+[000000dc] 19: 
+[000000dd] ff: text 02
+{textColor 0 2}Like last time, only Kurumi stays behind at Lunabeach, saying she has a headache. 
+
+
+[000000e0] 10: 
+[000000e1] 19: 
+[000000e2] ff: text 03
+{textColor 0 2}At the pool, despite me and Izumi-san's efforts, Yuka drinks a lot of beer. 
+{textColor 0 2}Naturally, when we get back to the shop, Yuka... 
+
+
+[000000e5] 10: 
+[000000e6]  b: playVoice L1D2A415
+[000000f0] 10: 
+[000000f1] 19: 
+[000000f2] ff: text 04
+{textColor 1 4}【Yuka】 "To... To... To..." 
+
+
+[000000f5] 10: 
+[000000f6]  b: playVoice L1D2A416
+[00000100] 10: 
+[00000101] 19: 
+[00000102] ff: text 05
+{textColor 1 4}【Yuka】 "Toro." 
+
+
+[00000105] 10: 
+[00000106]  b: playVoice L1D2A417
+[00000110] 10: 
+[00000111] 19: 
+[00000112] ff: text 06
+{textColor 1 4}【Yuka】 "Eye wanna eat toro..." 
+
+
+[00000115] 10: 
+[00000116]  b: playVoice L1D2A418
+[00000120] 10: 
+[00000121] 19: 
+[00000122] ff: text 07
+{textColor 1 4}【Yuka】 "I wanna eat shum toro!!" 
+{textColor 0 2}... turns into a nearly uncontrollable, intoxicated drunkard... 
+{textColor 0 2}However, in spite of that, there's no way we can go along with Yuka's selfish request. 
+{textColor 0 2}If we did that, then Saki might nearly drown again. 
+{textColor 0 2}Izumi-san and I manage to talk her out of it, and we invite everyone to go see the cherry blossoms instead. 
+
+
+[00000125] 10: 
+[00000126]  7: stopBGM
+[00000127] 10: 
+[00000128] 19: 
+[00000129] ff: text 08
+{textColor 0 2}... ... ... 
+
+
+[0000012c] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 177
+[00000138] 10: 
+[00000139] 10: bgload 00000000 BG27A 4 1
+[00000146] 10: 
+[00000147]  1: cmd1 17
+[0000014c] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 15
+[00000157] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 47
+[00000163] 10: 
+[00000164] 17: showClock
+[00000165] 10: 
+[00000166]  6: playBGM 16
+[0000016b] 10: 
+[0000016c] 19: 
+[0000016d] ff: text 09
+{textColor 0 2}We arrive at the cherry blossom trees. 
+{textColor 0 2}Right now, Yuka and Kurumi are playfully chasing each other around the lighthouse in Viewpoint Park. 
+{textColor 0 2}The rest of us are still standing on the cherry blossom road, completely stunned. 
+{textColor 0 2}This is Saki, Haruka, and Okuhiko's first time seeing these cherry blossoms. 
+{textColor 0 2}The three of them seem to be under an incredible sense of awe. 
+
+
+[00000170] 10: 
+[00000171] 11: fgload 0 00000000 IZ01BA 1 3
+[00000181] 10: 
+[00000182]  b: playVoice I22D000
+[0000018b] 10: 
+[0000018c] 19: 
+[0000018d] ff: text 0a
+{textColor 1 8}【Izumi】 "'Express your feelings on the Cape of Affection, and carry out those feelings at the Cove of Love.'" 
+{textColor 0 2}Izumi-san is at the edge of the cherry blossom road, absently watching Yuka and Kurumi run around the lighthouse. 
+
+
+[00000190] 10: 
+[00000191] 13: moveFG 0 2
+[00000198] 10: 
+[00000199] 11: fgload 1 00000000 SA01BA 0 3
+[000001a9] 10: 
+[000001aa]  b: playVoice YL2D2062
+[000001b4] 10: 
+[000001b5] 19: 
+[000001b6] ff: text 0b
+{textColor 1 6}【Saki】 "Huh...? What's that?" 
+
+
+[000001b9] 10: 
+[000001ba] 11: fgload 0 00000000 IZ02BA 2 3
+[000001ca] 10: 
+[000001cb]  b: playVoice I22D001
+[000001d4] 10: 
+[000001d5] 19: 
+[000001d6] ff: text 0c
+{textColor 1 8}【Izumi】 "It's an old tradition on this island." 
+
+
+[000001d9] 10: 
+[000001da]  b: playVoice I22D002
+[000001e3] 10: 
+[000001e4] 19: 
+[000001e5] ff: text 0d
+{textColor 1 8}【Izumi】 "If a man and woman confess their feelings for each other under that lighthouse, it's said that their affection will bear fruit..." 
+{textColor 0 2}It's the story she told us on the last 2nd when we were sitting in a circle. 
+{textColor 0 2}Why is Izumi-san so interested in telling the same story twice? 
+{textColor 0 2}I feel like I somewhat understand the reason. 
+
+
+[000001e8] 10: 
+[000001e9] 12: removeFG 1 3
+[000001f0] 10: 
+[000001f1] 11: fgload 1 00000000 OK01AA 0 3
+[00000201] 10: 
+[00000202]  b: playVoice I22D003
+[0000020b] 10: 
+[0000020c] 19: 
+[0000020d] ff: text 0e
+{textColor 0 0}【Okuhiko】 "But Professor?" 
+
+
+[00000210] 10: 
+[00000211]  b: playVoice I22D004
+[0000021a] 10: 
+[0000021b] 19: 
+[0000021c] ff: text 0f
+{textColor 0 0}【Okuhiko】 "From what I've seen of the map, I thought I saw another cape that's near here." 
+
+
+[0000021f] 10: 
+[00000220] 11: fgload 0 00000000 IZ01BA 2 3
+[00000230] 10: 
+[00000231]  b: playVoice I22D005
+[0000023a] 10: 
+[0000023b] 19: 
+[0000023c] ff: text 10
+{textColor 1 8}【Izumi】 "Cape? ... Oh, are you talking about that cape that's a bit to the west from Viewpoint Park?" 
+
+
+[0000023f] 10: 
+[00000240]  b: playVoice I22D006
+[00000249] 10: 
+[0000024a] 19: 
+[0000024b] ff: text 11
+{textColor 0 0}【Okuhiko】 "Right, that's it!" 
+
+
+[0000024e] 10: 
+[0000024f]  b: playVoice I22D007
+[00000258] 10: 
+[00000259] 19: 
+[0000025a] ff: text 12
+{textColor 0 0}【Okuhiko】 "And you know what? I was thinking..." 
+
+
+[0000025d] 10: 
+[0000025e]  b: playVoice I22D008
+[00000267] 10: 
+[00000268] 19: 
+[00000269] ff: text 13
+{textColor 0 0}【Okuhiko】 "If there's a 'Cape of Affection', then perhaps there's something special about that one as well." 
+
+
+[0000026c] 10: 
+[0000026d] 12: removeFG 0 3
+[00000274] 10: 
+[00000275] 11: fgload 0 00000000 HA01AA 2 3
+[00000285] 10: 
+[00000286]  b: playVoice I22D009
+[0000028f] 10: 
+[00000290] 19: 
+[00000291] ff: text 14
+{textColor 1 5}【Haruka】 "... What do you mean?" 
+
+
+[00000294] 10: 
+[00000295] 11: fgload 1 00000000 OK03AA 0 3
+[000002a5] 10: 
+[000002a6]  b: playVoice I22D010
+[000002af] 10: 
+[000002b0] 19: 
+[000002b1] ff: text 15
+{textColor 0 0}【Okuhiko】 "You don't know? On the map is a marker of a shrine's archway on the tip of that cove." 
+
+
+[000002b4] 10: 
+[000002b5] 11: fgload 1 00000000 OK01AA 0 3
+[000002c5] 10: 
+[000002c6]  b: playVoice I22D011
+[000002cf] 10: 
+[000002d0] 19: 
+[000002d1] ff: text 16
+{textColor 0 0}【Okuhiko】 "In other words, there's a shrine there!" 
+
+
+[000002d4] 10: 
+[000002d5]  b: playVoice I22D012
+[000002de] 10: 
+[000002df] 19: 
+[000002e0] ff: text 17
+{textColor 0 0}【Okuhiko】 "I was thinking that if you confessed in front of the shrine instead of under the lighthouse, it'd be as though you were receiving great, divine blessings." 
+
+
+[000002e3] 10: 
+[000002e4] 12: removeFG 0 3
+[000002eb] 10: 
+[000002ec] 11: fgload 0 00000000 IZ06BA 2 3
+[000002fc] 10: 
+[000002fd]  b: playVoice I22D013
+[00000306] 10: 
+[00000307] 19: 
+[00000308] ff: text 18
+{textColor 1 8}【Izumi】 "Hmm... your conjecture might be correct." 
+
+
+[0000030b] 10: 
+[0000030c] 11: fgload 1 00000000 OK02AA 0 3
+[0000031c] 10: 
+[0000031d]  b: playVoice I22D014
+[00000326] 10: 
+[00000327] 19: 
+[00000328] ff: text 19
+{textColor 0 0}【Okuhiko】 "Right?" 
+
+
+[0000032b] 10: 
+[0000032c] 11: fgload 0 00000000 IZ01BA 2 3
+[0000033c] 10: 
+[0000033d]  b: playVoice I22D015
+[00000346] 10: 
+[00000347] 19: 
+[00000348] ff: text 1a
+{textColor 1 8}【Izumi】 "But you know what?" 
+
+
+[0000034b] 10: 
+[0000034c]  b: playVoice I22D016
+[00000355] 10: 
+[00000356] 19: 
+[00000357] ff: text 1b
+{textColor 1 8}【Izumi】 "If you're right, then that legend itself has completely lost all meaning." 
+
+
+[0000035a] 10: 
+[0000035b] 11: fgload 1 00000000 OK01AA 0 3
+[0000036b] 10: 
+[0000036c] 19: 
+[0000036d] ff: text 1c
+{textColor 1 1}【Everyone】 "???" 
+
+
+[00000370] 10: 
+[00000371]  b: playVoice I22D017
+[0000037a] 10: 
+[0000037b] 19: 
+[0000037c] ff: text 1d
+{textColor 1 8}【Izumi】 "Because... there's no longer a shrine at that cape." 
+
+
+[0000037f] 10: 
+[00000380] 11: fgload 1 00000000 OK11AA 0 3
+[00000390] 10: 
+[00000391]  b: playVoice I22D018
+[0000039a] 10: 
+[0000039b] 19: 
+[0000039c] ff: text 1e
+{textColor 0 0}【Okuhiko】 "Huh?" 
+{textColor 0 2}(――What!?) 
+
+
+[0000039f] 10: 
+[000003a0]  b: playVoice I22D019
+[000003a9] 10: 
+[000003aa] 19: 
+[000003ab] ff: text 1f
+{textColor 1 8}【Izumi】 "That shrine was destroyed 21 years ago by an earthquake." 
+
+
+[000003ae] 10: 
+[000003af]  b: playVoice I22D020
+[000003b8] 10: 
+[000003b9] 19: 
+[000003ba] ff: text 20
+{textColor 1 8}【Izumi】 "Of course, because it wasn't rebuilt, I'd say all that's there now is a thicket." 
+
+
+[000003bd] 10: 
+[000003be]  b: playVoice I22D021
+[000003c7] 10: 
+[000003c8] 19: 
+[000003c9] ff: text 21
+{textColor 0 0}【Okuhiko】 "Then... what about what I saw on the map?" 
+
+
+[000003cc] 10: 
+[000003cd]  b: playVoice I22D022
+[000003d6] 10: 
+[000003d7] 19: 
+[000003d8] ff: text 22
+{textColor 1 8}【Izumi】 "It must have been a map made before the earthquake occurred." 
+
+
+[000003db] 10: 
+[000003dc]  b: playVoice I22D023
+[000003e5] 10: 
+[000003e6] 19: 
+[000003e7] ff: text 23
+{textColor 1 8}【Izumi】 "If not, then you must be using an old version that still hasn't been redrawn." 
+
+
+[000003ea] 10: 
+[000003eb] 11: fgload 0 00000000 IZ02BA 2 3
+[000003fb] 10: 
+[000003fc]  b: playVoice I22D024
+[00000405] 10: 
+[00000406] 19: 
+[00000407] ff: text 24
+{textColor 1 8}【Izumi】 "Anyway, the shrine's already gone, so rather than confessing in a deep thicket..." 
+
+
+[0000040a] 10: 
+[0000040b]  b: playVoice I22D025
+[00000414] 10: 
+[00000415] 19: 
+[00000416] ff: text 25
+{textColor 1 8}【Izumi】 "Wouldn't it be lovelier to confess under this lighthouse with the great view after all?" 
+
+
+[00000419] 10: 
+[0000041a] 11: fgload 1 00000000 OK10AA 0 3
+[0000042a] 10: 
+[0000042b]  b: playVoice I22D026
+[00000434] 10: 
+[00000435] 19: 
+[00000436] ff: text 26
+{textColor 0 0}【Okuhiko】 "I see... that's true..." 
+
+
+[00000439] 10: 
+[0000043a] 15: removeAllFG 3
+[0000043e] 10: 
+[0000043f] 19: 
+[00000440] ff: text 27
+{textColor 0 2}Okuhiko is convinced by her answer, but of course, I know everything Izumi-san said just now was a lie. 
+{textColor 0 2}Obviously, it's because I've seen that shrine before... 
+{textColor 0 2}Not only have I seen it, but I've been inside it too... 
+{textColor 0 2}Now that I think about it, on our way back to Lunabeach from the shrine, Kurumi said this... 
+
+
+[00000443] 10: 
+[00000444]  2: cmd2 12
+[00000448] 10: 
+[00000449]  f: removeBG 1 0 1
+[00000453] 10: 
+[00000454]  b: playVoice L1D4N085
+[0000045e] 10: 
+[0000045f] 19: 
+[00000460] ff: text 28
+{textColor 1 7}【Kurumi】 "That shrine... had a very nostalgic scent to it..." 
+
+
+[00000463] 10: 
+[00000464]  b: playVoice L1D4N086
+[0000046e] 10: 
+[0000046f] 19: 
+[00000470] ff: text 29
+{textColor 1 7}【Kurumi】 "It was the smell of the traditional clothes... that Kurumi got as hand-me-downs from Onee-chan when she was younger..." 
+
+
+[00000473] 10: 
+[00000474] 10: bgload 00000000 BG27A 0 1
+[00000481] 10: 
+[00000482]  1: cmd1 17
+[00000487] 10: 
+[00000488] 19: 
+[00000489] ff: text 2a
+{textColor 0 2}(Izumi-san, Kurumi, and the shrine...) 
+{textColor 0 2}(... Do they have some sort of connection?) 
+{textColor 0 2}After that, we quickly move away from the topic of the shrine, and everyone is once again captivated by the beauty of the cherry blossom trees. 
+
+
+[0000048c] 10: 
+[0000048d]  2: cmd2 12
+[00000491] 10: 
+[00000492]  f: removeBG 0 0 2
+[0000049c] 10: 
+[0000049d] 19: 
+[0000049e] ff: text 2b
+{textColor 0 2}... ... ... 
+
+
+[000004a1] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 178
+[000004ad] 10: 
+[000004ae] 10: bgload 00000000 BG19E 0 1
+[000004bb] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[000004c7] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 4
+[000004d2] 10: 
+[000004d3] 17: showClock
+[000004d4] 10: 
+[000004d5] 19: 
+[000004d6] ff: text 2c
+{textColor 0 2}We pass the time in Viewpoint Park idly. 
+{textColor 0 2}One person admires the cherry blossoms in full bloom... Another's thoughts turn to what lies beyond the sea... 
+{textColor 0 2}... and yet another person frolics like an innocent child while trying to claw their way up the lighthouse... 
+{textColor 0 2}This is the first time I've experienced this "past". 
+{textColor 0 2}A new reality has been born in this time. 
+{textColor 0 2}History seems to be in the process of steadily changing. 
+{textColor 0 2}In the end, Saki didn't fall into the ocean, and no one learned about the existence of the Shiki no Mori Shrine. 
+{textColor 0 2}If things continue at this rate, that horrible event will absolutely never repeat itself. 
+{textColor 0 2}The future does not advance towards one predetermined course. 
+{textColor 0 2}It's possible that Izumi-san and I are changing the course of history with our intentions. 
+{textColor 0 2}And in five days, we'll finally escape from this... 
+{textColor 0 2}From this abominable... infinite loop... 
+
+
+[000004d9] 10: 
+[000004da]  f: removeBG 0 4 2
+[000004e4] 10: 
+[000004e5]  7: stopBGM
+[000004e6] 10: 
+[000004e7] 10: bgload 00000000 BG13E 4 1
+[000004f4] 10: 
+[000004f5]  1: cmd1 30
+[000004fa] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[00000506] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 21
+[00000512] 10: 
+[00000513] 17: showClock
+[00000514] 10: 
+[00000515] 19: 
+[00000516] ff: text 2d
+{textColor 0 2}(... From this... infinite loop...) 
+{textColor 0 2}(... Huh?) 
+{textColor 0 2}Suddenly, I feel something bugging me. 
+{textColor 0 2}On the way back to Lunabeach from Viewpoint Park, I purposely slow my pace. 
+{textColor 0 2}As everyone's retreating figures become smaller, I freely think to myself. 
+
+
+[00000519] 10: 
+[0000051a]  2: cmd2 7
+[0000051e] 10: 
+[0000051f]  f: removeBG 0 0 2
+[00000529] 10: 
+[0000052a]  6: playBGM 14
+[0000052e] 10: 
+[0000052f] 18: cmd18
+[00000530] 10: 
+[00000531] 1a: cmd1A 1
+[00000535] 10: 
+[00000536]  1: cmd1 25
+[0000053b] 10: 
+[0000053c] 19: 
+[0000053d] ff: text 2e
+{textColor 0 2}"Infinite loop."  {textColor 0 2}If I think about the situation up until now, that conjecture certainly seems right.  {textColor 0 2}I've been infinitely repeating the days from April 1st to April 6th.  {textColor 0 2}That's why all my premonitions during the last loop were correct.  {textColor 0 2}It's because I had experienced everything before...  {textColor 0 2}I had memories of all of them deep in the nooks of my mind... 
+{textColor 0 2}However, they were all miniscule parts hidden within those nooks.  {textColor 0 2}In short, the memories I had in the last loop were very faint fragments.  {textColor 0 2}Though I sometimes vaguely recalled things right before they happened, those moments were rare; it was as if I had forgotten everything else.  {textColor 0 2}――Then why is it that the current me has such "complete memories"?  {textColor 0 2}... 
+{textColor 0 2}In the first place, just what is "memory"?  {textColor 0 2}What we call a "memory" is something that's etched into your brain, isn't it?  {textColor 0 2}If that's the case, then that means my current brain is the same as my brain just before I time traveled.  {textColor 0 2}If that weren't it, then I couldn't remember the events of the last loop. 
+{textColor 0 2}To put it simply, me and Izumi's brains were somehow transported through space-time into our respective skulls...  {textColor 0 2}... When I think of it like that, I deride myself for having such ridiculous thoughts.   {textColor 0 2}(I need to be more serious!)  {textColor 0 2}(That wouldn't even make a funny joke!)   {textColor 0 2}Although I'm admonishing myself, I try to brainstorm some more... 
+{textColor 0 2}... But from then on, I just keep repeating the same question.   {textColor 0 2}(Then why does the current me have "complete memories"?)  {textColor 0 2}(Just where did these clear "memories" come from?)  {textColor 0 2}(Haah...)   {textColor 0 2}No matter how hard I try, I can't even find the thread end of the solution. 
+
+
+[00000540] 10: 
+[00000541]  2: cmd2 5
+[00000545] 10: 
+[00000546] 18: cmd18
+[00000547] 10: 
+[00000548] 1a: cmd1A 0
+[0000054c] 10: 
+[0000054d]  7: stopBGM
+[0000054e] 10: 
+[0000054f] 10: bgload 00000000 BG13E 0 1
+[0000055c] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[00000568] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 23
+[00000574] 10: 
+[00000575] 17: showClock
+[00000576] 10: 
+[00000577] 19: 
+[00000578] ff: text 2f
+{textColor 0 2}The rest of the group is walking in front of me, the setting sun dying them red. 
+{textColor 0 2}I can clearly see the five of them innocently frolicking. 
+{textColor 0 2}... Huh? Five of them? 
+{textColor 0 2}Now that I think about it, Izumi-san's... 
+
+
+[0000057b] 10: 
+[0000057c] 11: fgload 0 00000000 IZ01BBD 1 3
+[0000058c] 10: 
+[0000058d]  b: playVoice I22D027
+[00000596] 10: 
+[00000597] 19: 
+[00000598] ff: text 30
+{textColor 1 8}【Izumi】 "Hey, Makoto-kun?" 
+{textColor 0 0}【Makoto】 "I-Izumi-san!" 
+
+
+[0000059b] 10: 
+[0000059c] 11: fgload 0 00000000 IZ06BBD 1 3
+[000005ac] 10: 
+[000005ad]  6: playBGM 5
+[000005b1] 10: 
+[000005b2]  b: playVoice I22D028
+[000005bb] 10: 
+[000005bc] 19: 
+[000005bd] ff: text 31
+{textColor 1 8}【Izumi】 "Geez, there's no need to be so surprised, is there?" 
+{textColor 0 0}【Makoto】 "... How long... have you been here?" 
+
+
+[000005c0] 10: 
+[000005c1] 11: fgload 0 00000000 IZ01BBD 1 3
+[000005d1] 10: 
+[000005d2]  b: playVoice I22D029
+[000005db] 10: 
+[000005dc] 19: 
+[000005dd] ff: text 32
+{textColor 1 8}【Izumi】 "All this time..." 
+
+
+[000005e0] 10: 
+[000005e1]  b: playVoice I22D030
+[000005ea] 10: 
+[000005eb] 19: 
+[000005ec] ff: text 33
+{textColor 1 8}【Izumi】 "You didn't notice?" 
+{textColor 0 0}【Makoto】 "N-No... not at all..." 
+{textColor 0 0}【Makoto】 "I was just doing some deep thinking..." 
+
+
+[000005ef] 10: 
+[000005f0] 11: fgload 0 00000000 IZ02BBD 1 3
+[00000600] 10: 
+[00000601]  b: playVoice I22D031
+[0000060a] 10: 
+[0000060b] 19: 
+[0000060c] ff: text 34
+{textColor 1 8}【Izumi】 "'Deep thinking'?" 
+{textColor 0 0}【Makoto】 "U-Um... err..." 
+{textColor 0 0}【Makoto】 "I was thinking about 'memories'..." 
+
+
+[0000060f] 10: 
+[00000610] 11: fgload 0 00000000 IZ01BBD 1 3
+[00000620] 10: 
+[00000621]  b: playVoice I22D032
+[0000062a] 10: 
+[0000062b] 19: 
+[0000062c] ff: text 35
+{textColor 1 8}【Izumi】 "Memories?" 
+{textColor 0 0}【Makoto】 "Right, memories." 
+{textColor 0 0}【Makoto】 "I was thinking about how this is probably an infinite loop..." 
+
+
+[0000062f] 10: 
+[00000630]  b: playVoice I22D033
+[00000639] 10: 
+[0000063a] 19: 
+[0000063b] ff: text 36
+{textColor 1 8}【Izumi】 "...?" 
+{textColor 0 0}【Makoto】 "Oh, whoops..." 
+{textColor 0 0}【Makoto】 "There's no way you'd understand if I said something like that so suddenly, would you?" 
+{textColor 0 0}【Makoto】 "Umm... hmm... How do I explain this...?" 
+{textColor 0 2}When I think about it, I realize that we haven't really had a direct conversation since our talk in the car. 
+{textColor 0 2}I have many things I still want to ask her, but there's been no chances for us to talk alone yet. 
+{textColor 0 2}That's why I haven't talked to Izumi-san about the time travel or the infinite loop... 
+
+
+[0000063e] 10: 
+[0000063f] 11: fgload 0 00000000 IZ02BBD 1 3
+[0000064f] 10: 
+[00000650]  b: playVoice I22D034
+[00000659] 10: 
+[0000065a] 19: 
+[0000065b] ff: text 37
+{textColor 1 8}【Izumi】 "Yes, I see." 
+
+
+[0000065e] 10: 
+[0000065f]  b: playVoice I22D035
+[00000668] 10: 
+[00000669] 19: 
+[0000066a] ff: text 38
+{textColor 1 8}【Izumi】 "It's all right... You don't have explain anything. I think I know what you want to say." 
+{textColor 0 0}【Makoto】 "... Huh?" 
+
+
+[0000066d] 10: 
+[0000066e] 11: fgload 0 00000000 IZ01BBD 1 3
+[0000067e] 10: 
+[0000067f]  b: playVoice I22D036
+[00000688] 10: 
+[00000689] 19: 
+[0000068a] ff: text 39
+{textColor 1 8}【Izumi】 "In other words, it's like this, right?" 
+
+
+[0000068d] 10: 
+[0000068e]  b: playVoice I22D037
+[00000697] 10: 
+[00000698] 19: 
+[00000699] ff: text 3a
+{textColor 1 8}【Izumi】 "In the last history, your correct premonitions were memories of events that would occur in the future." 
+
+
+[0000069c] 10: 
+[0000069d]  b: playVoice I22D038
+[000006a6] 10: 
+[000006a7] 19: 
+[000006a8] ff: text 3b
+{textColor 1 8}【Izumi】 "The things you remembered were experiences you had from the first time you time traveled, so this isn't the first time you've time traveled." 
+
+
+[000006ab] 10: 
+[000006ac]  b: playVoice I22D039
+[000006b5] 10: 
+[000006b6] 19: 
+[000006b7] ff: text 3c
+{textColor 1 8}【Izumi】 "If you begin to think this way, perhaps you've been repeating the days from April 1st through April 6th for an eternity." 
+
+
+[000006ba] 10: 
+[000006bb]  b: playVoice I22D040
+[000006c4] 10: 
+[000006c5] 19: 
+[000006c6] ff: text 3d
+{textColor 1 8}【Izumi】 "In short, this isn't merely time travel..." 
+
+
+[000006c9] 10: 
+[000006ca]  b: playVoice I22D041
+[000006d3] 10: 
+[000006d4] 19: 
+[000006d5] ff: text 3e
+{textColor 1 8}【Izumi】 "... It's an infinite loop." 
+{textColor 0 0}【Makoto】 "Right! That's it!" 
+{textColor 0 0}【Makoto】 "But I can't explain it with that alone..." 
+
+
+[000006d8] 10: 
+[000006d9]  b: playVoice I22D042
+[000006e2] 10: 
+[000006e3] 19: 
+[000006e4] ff: text 3f
+{textColor 1 8}【Izumi】 "By 'it', you mean 'memories'?" 
+{textColor 0 0}【Makoto】 "Yes..." 
+{textColor 0 0}【Makoto】 "Even though when I time traveled this time, I had clear memories of what happened in the past, the time before that, I forgot about nearly everything..." 
+
+
+[000006e7] 10: 
+[000006e8] 11: fgload 0 00000000 IZ02BBD 1 3
+[000006f8] 10: 
+[000006f9]  b: playVoice I22D043
+[00000702] 10: 
+[00000703] 19: 
+[00000704] ff: text 40
+{textColor 1 8}【Izumi】 "And you've been thinking about the reason why this whole time?" 
+{textColor 0 0}【Makoto】 "... Yes." 
+{textColor 0 2}Izumi-san's expression has changed suddenly compared to yesterday. That is to say, it's much clearer. 
+{textColor 0 2}Her face is so serene, as if she's broken through something, or has severed ties with her thoughts... 
+{textColor 0 2}(How can Izumi-san be this calm?) 
+{textColor 0 2}... 
+{textColor 0 2}... Come to think of it, aren't I incredibly calm myself?! 
+{textColor 0 0}【Makoto】 "Hey, Izumi-san?" 
+
+
+[00000707] 10: 
+[00000708] 11: fgload 0 00000000 IZ01BBD 1 3
+[00000718] 10: 
+[00000719]  b: playVoice I22D044
+[00000722] 10: 
+[00000723] 19: 
+[00000724] ff: text 41
+{textColor 1 8}【Izumi】 "Hmm?" 
+{textColor 0 0}【Makoto】 "Is it all right... for us to be like this?" 
+
+
+[00000727] 10: 
+[00000728]  b: playVoice I22D045
+[00000731] 10: 
+[00000732] 19: 
+[00000733] ff: text 42
+{textColor 1 8}【Izumi】 "Huh?" 
+{textColor 0 0}【Makoto】 "Is it really all right for us to stay this carefree?" 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "For now, history is changing the way we want it, so if we keep going at this rate, it feels like this Seminar Camp can end safely..." 
+{textColor 0 0}【Makoto】 "However, in actuality, we don't know a single thing about the fundamental problem, do we?" 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "First of all, is it all right for us to assume that we can break free from this infinite loop, even though we don't even know the cause of time travel?" 
+{textColor 0 0}【Makoto】 "If we hadn't fallen from that cliff, then we could never have time traveled." 
+{textColor 0 0}【Makoto】 "We've always thought this way up until now, but when you think about it really carefully, we have no guarantee that it's true." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "Yes, that's right... we have no guarantee." 
+{textColor 0 0}【Makoto】 "For all we know, we could time travel again on the 6th at that time even if we're sleeping in our beds..." 
+{textColor 0 0}【Makoto】 "Nevertheless, in the end, no one knows if we will or won't time travel." 
+
+
+[00000736] 10: 
+[00000737] 11: fgload 0 00000000 IZ06BBD 1 3
+[00000747] 10: 
+[00000748]  b: playVoice I22D046
+[00000751] 10: 
+[00000752] 19: 
+[00000753] ff: text 43
+{textColor 1 8}【Izumi】 "... Yes, that's right... It might be exactly as you say." 
+{textColor 0 0}【Makoto】 "Then wouldn't it be best for us to determine the cause of the time travel as soon as possible?" 
+{textColor 0 0}【Makoto】 "If we don't, then we may never be able to escape from the infinite loop for all of eternity." 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 2}Izumi-san stays silent. 
+{textColor 0 2}It's as if she's having trouble finding the right words to say. 
+{textColor 0 2}Or could it be something else...? 
+
+
+[00000756] 10: 
+[00000757]  b: playVoice I22D047
+[00000760] 10: 
+[00000761] 19: 
+[00000762] ff: text 44
+{textColor 1 8}【Izumi】 "... Yes... I understand very well what you're saying, Makoto-kun." 
+
+
+[00000765] 10: 
+[00000766] 11: fgload 0 00000000 IZ01BBD 1 3
+[00000776] 10: 
+[00000777]  b: playVoice I22D048
+[00000780] 10: 
+[00000781] 19: 
+[00000782] ff: text 45
+{textColor 1 8}【Izumi】 "But you know... Hmm... How should I put this...?" 
+
+
+[00000785] 10: 
+[00000786]  b: playVoice I22D049
+[0000078f] 10: 
+[00000790] 19: 
+[00000791] ff: text 46
+{textColor 1 8}【Izumi】 "Anyway, there's two things I have to tell you." 
+{textColor 0 0}【Makoto】 "???" 
+
+
+[00000794] 10: 
+[00000795] 11: fgload 0 00000000 IZ06BBD 1 3
+[000007a5] 10: 
+[000007a6]  b: playVoice I22D050
+[000007af] 10: 
+[000007b0] 19: 
+[000007b1] ff: text 47
+{textColor 1 8}【Izumi】 "#1:" 
+
+
+[000007b4] 10: 
+[000007b5]  b: playVoice I22D051
+[000007be] 10: 
+[000007bf] 19: 
+[000007c0] ff: text 48
+{textColor 1 8}【Izumi】 "About the infinite loop..." 
+
+
+[000007c3] 10: 
+[000007c4]  b: playVoice I22D052
+[000007cd] 10: 
+[000007ce] 19: 
+[000007cf] ff: text 49
+{textColor 1 8}【Izumi】 "That might be the case for you, Makoto-kun... but what about me?" 
+{textColor 0 0}【Makoto】 "... Huh?" 
+
+
+[000007d2] 10: 
+[000007d3]  b: playVoice I22D053
+[000007dc] 10: 
+[000007dd] 19: 
+[000007de] ff: text 4a
+{textColor 1 8}【Izumi】 "In the last history, I never had any premonitions." 
+
+
+[000007e1] 10: 
+[000007e2]  b: playVoice I22D054
+[000007eb] 10: 
+[000007ec] 19: 
+[000007ed] ff: text 4b
+{textColor 1 8}【Izumi】 "That's because I didn't have any memories like that within me..." 
+
+
+[000007f0] 10: 
+[000007f1]  b: playVoice I22D055
+[000007fa] 10: 
+[000007fb] 19: 
+[000007fc] ff: text 4c
+{textColor 1 8}【Izumi】 "In other words, to me, this is the first time..." 
+
+
+[000007ff] 10: 
+[00000800]  b: playVoice I22D056
+[00000809] 10: 
+[0000080a] 19: 
+[0000080b] ff: text 4d
+{textColor 1 8}【Izumi】 "This is the first time I've time traveled..." 
+{textColor 0 0}【Makoto】 "... When you put it that way...{delay 15} that certainly...{delay 15} seems true..." 
+
+
+[0000080e] 10: 
+[0000080f]  b: playVoice I22D057
+[00000818] 10: 
+[00000819] 19: 
+[0000081a] ff: text 4e
+{textColor 1 8}【Izumi】 "#2:" 
+
+
+[0000081d] 10: 
+[0000081e]  b: playVoice I22D058
+[00000827] 10: 
+[00000828] 19: 
+[00000829] ff: text 4f
+{textColor 1 8}【Izumi】 "Makoto-kun, you said that it would be best if we determined the cause of the time travel... That's what you think, right?" 
+{textColor 0 0}【Makoto】 "Yes..." 
+
+
+[0000082c] 10: 
+[0000082d] 11: fgload 0 00000000 IZ01BBD 1 3
+[0000083d] 10: 
+[0000083e]  b: playVoice I22D059
+[00000847] 10: 
+[00000848] 19: 
+[00000849] ff: text 50
+{textColor 1 8}【Izumi】 "But you know what? There's no need to do that." 
+{textColor 0 0}【Makoto】 "... W-Why not!?" 
+
+
+[0000084c] 10: 
+[0000084d]  b: playVoice I22D060
+[00000856] 10: 
+[00000857] 19: 
+[00000858] ff: text 51
+{textColor 1 8}【Izumi】 "Because..." 
+
+
+[0000085b] 10: 
+[0000085c]  7: stopBGM
+[0000085d] 10: 
+[0000085e]  b: playVoice I22D061
+[00000867] 10: 
+[00000868] 19: 
+[00000869] ff: text 52
+{textColor 1 8}【Izumi】 "... I've already determined it." 
+{textColor 0 0}【Makoto】 "Wh... What!?" 
+
+
+[0000086c] 10: 
+[0000086d]  b: playVoice I22D062
+[00000876] 10: 
+[00000877] 19: 
+[00000878] ff: text 53
+{textColor 1 8}【Izumi】 "When I was thinking about it last night, I finally found the answer." 
+
+
+[0000087b] 10: 
+[0000087c]  b: playVoice I22D063
+[00000885] 10: 
+[00000886] 19: 
+[00000887] ff: text 54
+{textColor 1 8}【Izumi】 "Of course, I had considered it was a possibility before that..." 
+
+
+[0000088a] 10: 
+[0000088b] 11: fgload 0 00000000 IZ02BBD 1 3
+[0000089b] 10: 
+[0000089c]  b: playVoice I22D064
+[000008a5] 10: 
+[000008a6] 19: 
+[000008a7] ff: text 55
+{textColor 1 8}【Izumi】 "It was on the night of the 5th... Remember how I tried to talk to you about your premonitions?" 
+{textColor 0 0}【Makoto】 "Y-Yeah..." 
+
+
+[000008aa] 10: 
+[000008ab] 11: fgload 0 00000000 IZ01BBD 1 3
+[000008bb] 10: 
+[000008bc]  b: playVoice I22D065
+[000008c5] 10: 
+[000008c6] 19: 
+[000008c7] ff: text 56
+{textColor 1 8}【Izumi】 "But that alone couldn't explain everything about the time travel." 
+
+
+[000008ca] 10: 
+[000008cb]  b: playVoice I22D066
+[000008d4] 10: 
+[000008d5] 19: 
+[000008d6] ff: text 57
+{textColor 1 8}【Izumi】 "For example, the 'memories' you were talking about earlier." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000008d9] 10: 
+[000008da]  b: playVoice I22D067
+[000008e3] 10: 
+[000008e4] 19: 
+[000008e5] ff: text 58
+{textColor 1 8}【Izumi】 "But now I feel like I somehow understand it..." 
+
+
+[000008e8] 10: 
+[000008e9]  b: playVoice I22D068
+[000008f2] 10: 
+[000008f3] 19: 
+[000008f4] ff: text 59
+{textColor 1 8}【Izumi】 "And when this morning came, I was finally able to explain all of the mysteries." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[000008f7] 10: 
+[000008f8] 11: fgload 0 00000000 IZ06BBD 1 3
+[00000908] 10: 
+[00000909]  b: playVoice I22D069
+[00000912] 10: 
+[00000913] 19: 
+[00000914] ff: text 5a
+{textColor 1 8}【Izumi】 "The cause of the time travel..." 
+
+
+[00000917] 10: 
+[00000918]  b: playVoice I22D070
+[00000921] 10: 
+[00000922] 19: 
+[00000923] ff: text 5b
+{textColor 1 8}【Izumi】 "It's..." 
+{textColor 0 2}I instinctively take a deep breath. 
+{textColor 0 2}I'm preparing my body for every single word that Izumi-san is going to say. 
+{textColor 0 2}A tense moment arrives... Even my heart has stopped. 
+{textColor 0 2}――However! 
+
+
+[00000926] 10: 
+[00000927]  b: playVoice I22D071
+[00000930] 10: 
+[00000931] 19: 
+[00000932] ff: text 5c
+{textColor 1 4}【Yuka】 "Heey!" 
+
+
+[00000935] 10: 
+[00000936]  b: playVoice I22D072
+[0000093f] 10: 
+[00000940] 19: 
+[00000941] ff: text 5d
+{textColor 1 4}【Yuka】 "Izumi-san! Makoto!" 
+
+
+[00000944] 10: 
+[00000945]  6: playBGM 1
+[00000949] 10: 
+[0000094a] 19: 
+[0000094b] ff: text 5e
+{textColor 0 2}We can hear Yuka's voice from far away, on the other side of the road... 
+{textColor 0 2}It seems she's running this way. 
+{textColor 0 0}【Makoto】 "Dammit! Why at such an important time!?" 
+
+
+[0000094e] 10: 
+[0000094f]  b: playVoice I22D073
+[00000958] 10: 
+[00000959] 19: 
+[0000095a] ff: text 5f
+{textColor 1 4}【Yuka】 "Hey! Izumi-san!" 
+
+
+[0000095d] 10: 
+[0000095e] 11: fgload 0 00000000 IZ01BBD 1 3
+[0000096e] 10: 
+[0000096f]  b: playVoice I22D074
+[00000978] 10: 
+[00000979] 19: 
+[0000097a] ff: text 60
+{textColor 1 8}【Izumi】 "It can't be helped..." 
+
+
+[0000097d] 10: 
+[0000097e]  b: playVoice I22D075
+[00000987] 10: 
+[00000988] 19: 
+[00000989] ff: text 61
+{textColor 1 8}【Izumi】 "We'll just have to continue this conversation later..." 
+
+
+[0000098c] 10: 
+[0000098d] 12: removeFG 0 3
+[00000994] 10: 
+[00000995] 19: 
+[00000996] ff: text 62
+{textColor 0 2}Just then, Yuka appears from the other side of a sharp turn. 
+
+
+[00000999] 10: 
+[0000099a] 11: fgload 0 00000000 YU05AAD 1 3
+[000009aa] 10: 
+[000009ab]  b: playVoice I22D076
+[000009b4] 10: 
+[000009b5] 19: 
+[000009b6] ff: text 63
+{textColor 1 4}【Yuka】 "Geez, you two are walking so slow!" 
+
+
+[000009b9] 10: 
+[000009ba] 13: moveFG 0 2
+[000009c1] 10: 
+[000009c2] 11: fgload 1 00000000 IZ01BAD 0 3
+[000009d2] 10: 
+[000009d3]  b: playVoice I22D077
+[000009dc] 10: 
+[000009dd] 19: 
+[000009de] ff: text 64
+{textColor 1 8}【Izumi】 "That's not it." 
+
+
+[000009e1] 10: 
+[000009e2]  b: playVoice I22D078
+[000009eb] 10: 
+[000009ec] 19: 
+[000009ed] ff: text 65
+{textColor 1 8}【Izumi】 "You're just too fast." 
+
+
+[000009f0] 10: 
+[000009f1] 11: fgload 0 00000000 YU01AAD 2 3
+[00000a01] 10: 
+[00000a02]  b: playVoice I22D079
+[00000a0b] 10: 
+[00000a0c] 19: 
+[00000a0d] ff: text 66
+{textColor 1 4}【Yuka】 "Huh, really?" 
+
+
+[00000a10] 10: 
+[00000a11] 11: fgload 0 00000000 YU02AAD 2 3
+[00000a21] 10: 
+[00000a22]  b: playVoice I22D080
+[00000a2b] 10: 
+[00000a2c] 19: 
+[00000a2d] ff: text 67
+{textColor 1 4}【Yuka】 "Wait, that doesn't matter!" 
+
+
+[00000a30] 10: 
+[00000a31]  b: playVoice I22D081
+[00000a3a] 10: 
+[00000a3b] 19: 
+[00000a3c] ff: text 68
+{textColor 1 4}【Yuka】 "Anyway, hurry up and come this way♪" 
+
+
+[00000a3f] 10: 
+[00000a40] 15: removeAllFG 3
+[00000a44] 10: 
+[00000a45]  8: playSFX SE041 1
+[00000a4f] 10: 
+[00000a50] 19: 
+[00000a51] ff: text 69
+{textColor 0 2}With that, Yuka grabs Izumi-san's hand, and begins to break off into a run again. 
+
+
+[00000a54] 10: 
+[00000a55]  b: playVoice I22D082
+[00000a5e] 10: 
+[00000a5f] 19: 
+[00000a60] ff: text 6a
+{textColor 1 4}【Yuka】 "Hey, Makoto, you hurry up too!" 
+
+
+[00000a63] 10: 
+[00000a64]  b: playVoice I22D083
+[00000a6d] 10: 
+[00000a6e] 19: 
+[00000a6f] ff: text 6b
+{textColor 1 8}【Izumi】 "H-Hold on... What is it, Yuka-chan?" 
+
+
+[00000a72] 10: 
+[00000a73]  b: playVoice I22D084
+[00000a7c] 10: 
+[00000a7d] 19: 
+[00000a7e] ff: text 6c
+{textColor 1 4}【Yuka】 "It's amazing♪ It's so amazing♪" 
+
+
+[00000a81] 10: 
+[00000a82]  b: playVoice I22D085
+[00000a8b] 10: 
+[00000a8c] 19: 
+[00000a8d] ff: text 6d
+{textColor 1 8}【Izumi】 "'Amazing'... what's amazing?" 
+
+
+[00000a90] 10: 
+[00000a91]  b: playVoice I22D086
+[00000a9a] 10: 
+[00000a9b] 19: 
+[00000a9c] ff: text 6e
+{textColor 1 4}【Yuka】 "They're leaping♪ There's so many of them♪" 
+
+
+[00000a9f] 10: 
+[00000aa0]  b: playVoice I22D087
+[00000aa9] 10: 
+[00000aaa] 19: 
+[00000aab] ff: text 6f
+{textColor 1 8}【Izumi】 "What? I can't guess it from that." 
+
+
+[00000aae] 10: 
+[00000aaf]  b: playVoice I22D088
+[00000ab8] 10: 
+[00000ab9] 19: 
+[00000aba] ff: text 70
+{textColor 1 4}【Yuka】 "It's fine, it's fine♪ You'll know when you see it♪" 
+
+
+[00000abd] 10: 
+[00000abe]  b: playVoice I22D089
+[00000ac7] 10: 
+[00000ac8] 19: 
+[00000ac9] ff: text 71
+{textColor 1 8}【Izumi】 "Oh geez..." 
+
+
+[00000acc] 10: 
+[00000acd]  9: stopSFX
+[00000ace] 10: 
+[00000acf]  7: stopBGM
+[00000ad0] 10: 
+[00000ad1] 19: 
+[00000ad2] ff: text 72
+{textColor 0 2}Before long...  {textColor 0 2}... Izumi-san and Yuka disappear down the curved road. 
+{textColor 0 2}I've been left behind... 
+{textColor 0 2}Suddenly, when I look down at my feet, I see the "fragment of concrete" lying in a corner of the road. 
+{textColor 0 2}It's the piece that I used last night to destroy (well, tried to destroy) the bell. 
+{textColor 0 2}(Now that I think about it... where...) 
+{textColor 0 2}(Where is that bell... right now?) 
+{textColor 0 2}(Is it related to the cause of the time travel?) 
+{textColor 0 2}"Time travel."  {textColor 0 2}"The infinite loop."  {textColor 0 2}"The mystery of our memories."  {textColor 0 2}"The true nature of the bell." 
+{textColor 0 2}The mysteries just keep intensifying the more I mull over them. 
+{textColor 0 2}(I wonder what's on Izumi-san's mind right now.) 
+{textColor 0 2}(Has she really found the key to solving all of these mysteries?) 
+{textColor 0 2}The serenity that I felt just a short time ago vanishes into thin air, as if it never existed. 
+{textColor 0 2}Illuminated by the setting sun, a slick movement on the eastern ocean catches my eye. 
+{textColor 0 2}The black waves repeatedly surge forward, headed towards the shore. 
+
+
+[00000ad5] 10: 
+[00000ad6]  8: playSFX SE020 1
+[00000ae0] 10: 
+[00000ae1] 19: 
+[00000ae2] ff: text 73
+{textColor 0 2}Several dozen dolphin's heads bob out of the waves... 
+{textColor 0 2}Seeing the dolphins playing around in the waves makes me feel somewhat jealous... 
+
+
+[00000ae5] 10: 
+[00000ae6]  f: removeBG 0 0 2
+[00000af0] 10: 
+[00000af1]  9: stopSFX
+[00000af2] 10: 
+[00000af3] 19: 
+[00000af4] ff: text 74
+{textColor 0 2}... ... ... 
+
+
+[00000af7] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 26
+[00000b03] 10: 
+[00000b04] 10: bgload 00000000 BG06N 0 1
+[00000b11] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 19
+[00000b1d] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 48
+[00000b29] 10: 
+[00000b2a] 17: showClock
+[00000b2b] 10: 
+[00000b2c] 19: 
+[00000b2d] ff: text 75
+{textColor 0 2}We eat dinner at Lunabeach, thank Izumi-san, and leave the shop. 
+{textColor 0 2}In the end, Izumi-san and I don't get the chance to talk all alone. 
+{textColor 0 2}Which means, naturally, that I don't get to hear the continuation of her story... 
+{textColor 0 2}(But... it was inevitable...) 
+{textColor 0 2}(So tonight, I will sneak out of the lodge and come here again.) 
+{textColor 0 2}(I'll wait until Kurumi is sleeping, then I'll have all the time I need to hear the story.) 
+{textColor 0 2}As I think about this, I begin to start walking towards the lodge. 
+{textColor 0 2}And, at that time... 
+
+
+[00000b30] 10: 
+[00000b31]  b: playVoice I22D090
+[00000b3a] 10: 
+[00000b3b] 19: 
+[00000b3c] ff: text 76
+{textColor 1 7}【Kurumi】 "Oh!! Almost forgot!" 
+
+
+[00000b3f] 10: 
+[00000b40]  8: playSFX SE005 1
+[00000b4a] 10: 
+[00000b4b] 11: fgload 0 00000000 KU01AAN 1 3
+[00000b5b] 10: 
+[00000b5c] 19: 
+[00000b5d] ff: text 77
+{textColor 0 2}Kurumi slams open the door and comes out. 
+
+
+[00000b60] 10: 
+[00000b61]  9: stopSFX
+[00000b62] 10: 
+[00000b63]  6: playBGM 4
+[00000b67] 10: 
+[00000b68]  b: playVoice KL2D2086
+[00000b72] 10: 
+[00000b73] 19: 
+[00000b74] ff: text 78
+{textColor 1 7}【Kurumi】 "You know what? Kurumi remembered there's something she had to tell you!" 
+{textColor 1 1}【Everyone】 "???" 
+
+
+[00000b77] 10: 
+[00000b78]  b: playVoice KL2D2087
+[00000b82] 10: 
+[00000b83] 19: 
+[00000b84] ff: text 79
+{textColor 1 7}【Kurumi】 "Kurumi has decided to call Okuhiko-kun 'Okkun' from now on♪" 
+
+
+[00000b87] 10: 
+[00000b88]  b: playVoice KL2D2088
+[00000b92] 10: 
+[00000b93] 19: 
+[00000b94] ff: text 7a
+{textColor 0 0}【Okuhiko】 "... Huh?" 
+
+
+[00000b97] 10: 
+[00000b98]  b: playVoice KL2D2089
+[00000ba2] 10: 
+[00000ba3] 19: 
+[00000ba4] ff: text 7b
+{textColor 1 7}【Kurumi】 "And she's decided to call Makoto-kun 'Onii-chan'♪" 
+
+
+[00000ba7] 10: 
+[00000ba8]  b: playVoice KL2D2090
+[00000bb2] 10: 
+[00000bb3] 19: 
+[00000bb4] ff: text 7c
+{textColor 0 0}【Okuhiko】 "Onii-chan?" 
+
+
+[00000bb7] 10: 
+[00000bb8]  b: playVoice KL2D2091
+[00000bc2] 10: 
+[00000bc3] 19: 
+[00000bc4] ff: text 7d
+{textColor 1 4}【Yuka】 "Onii-chan?" 
+
+
+[00000bc7] 10: 
+[00000bc8]  b: playVoice KL2D2092
+[00000bd2] 10: 
+[00000bd3] 19: 
+[00000bd4] ff: text 7e
+{textColor 1 5}【Haruka】 "Onii-chan?" 
+
+
+[00000bd7] 10: 
+[00000bd8] 11: fgload 0 00000000 KU07AAN 1 3
+[00000be8] 10: 
+[00000be9]  b: playVoice KL2D2093
+[00000bf3] 10: 
+[00000bf4] 19: 
+[00000bf5] ff: text 7f
+{textColor 1 7}【Kurumi】 "Is that all right, Onii-chan? 
+{textColor 0 0}【Makoto】 "Y-Yeah... I don't mind..." 
+
+
+[00000bf8] 10: 
+[00000bf9]  b: playVoice KL2D2094
+[00000c03] 10: 
+[00000c04] 19: 
+[00000c05] ff: text 80
+{textColor 1 7}【Kurumi】 "Eheh♪ That's good♪" 
+
+
+[00000c08] 10: 
+[00000c09] 11: fgload 0 00000000 KU02AAN 1 3
+[00000c19] 10: 
+[00000c1a]  b: playVoice KL2D2095
+[00000c24] 10: 
+[00000c25] 19: 
+[00000c26] ff: text 81
+{textColor 1 7}【Kurumi】 "Well then, goodnight guys♪" 
+
+
+[00000c29] 10: 
+[00000c2a] 12: removeFG 0 3
+[00000c31] 10: 
+[00000c32] 19: 
+[00000c33] ff: text 82
+{textColor 0 2}Kurumi goes back into Lunabeach while waving her hand widely. 
+{textColor 0 2}("Onii-chan"... huh.) 
+{textColor 0 2}A somewhat nostalgic feeling flows through me. 
+{textColor 0 2}I slowly walk back to the lodge... 
+
+
+[00000c36] 10: 
+[00000c37]  f: removeBG 0 4 2
+[00000c41] 10: 
+[00000c42]  7: stopBGM
+[00000c43] 10: 
+[00000c44] 19: 
+[00000c45] ff: text 83
+{textColor 0 2}... ... ... 
+
+
+[00000c48] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 180
+[00000c54] 10: 
+[00000c55] 10: bgload 00000000 BG01N 0 1
+[00000c62] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 21
+[00000c6e] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 25
+[00000c7a] 10: 
+[00000c7b] 17: showClock
+[00000c7c] 10: 
+[00000c7d] 19: 
+[00000c7e] ff: text 84
+{textColor 0 2}When we return to the lodge, I take a bath, brush my teeth, and lie down on the bed. 
+{textColor 0 2}I'm planning on going out tonight, so I don't change into my nightclothes. 
+{textColor 0 2}Wearing my normal clothes, I blankly stare at the ceiling. 
+{textColor 0 2}Just then... 
+
+
+[00000c81] 10: 
+[00000c82]  8: playSFX SE006 1
+[00000c8c] 10: 
+[00000c8d] 19: 
+[00000c8e] ff: text 85
+{textColor 0 2}Someone knocks on my door. 
+
+
+[00000c91] 10: 
+[00000c92]  9: stopSFX
+[00000c93] 10: 
+[00000c94] 19: 
+[00000c95] ff: text 86
+{textColor 0 2}The quiet, gentle knock is like a whisper. 
+{textColor 0 2}Now that I think about it, around this time on the last 2nd, I invited Haruka to go fishing with me. 
+{textColor 0 2}... Which means... this is Haruka? 
+{textColor 0 0}【Makoto】 "Come on in." 
+
+
+[00000c98] 10: 
+[00000c99]  8: playSFX SE002 1
+[00000ca3] 10: 
+[00000ca4] 19: 
+[00000ca5] ff: text 87
+{textColor 0 2}As soon as I speak, the person opens the door, revealing themselves to be... 
+
+
+[00000ca8] 10: 
+[00000ca9]  9: stopSFX
+[00000caa] 10: 
+[00000cab] 11: fgload 0 00000000 IZ01BA 1 3
+[00000cbb] 10: 
+[00000cbc]  6: playBGM 5
+[00000cc0] 10: 
+[00000cc1] 19: 
+[00000cc2] ff: text 88
+{textColor 0 0}【Makoto】 "I-Izumi-san!?" 
+
+
+[00000cc5] 10: 
+[00000cc6] 11: fgload 0 00000000 IZ06BA 1 3
+[00000cd6] 10: 
+[00000cd7]  b: playVoice I22D091
+[00000ce0] 10: 
+[00000ce1] 19: 
+[00000ce2] ff: text 89
+{textColor 1 8}【Izumi】 "Shh! Keep your voice down!" 
+{textColor 0 0}【Makoto】 "W-Why are you here, Izumi-san?" 
+
+
+[00000ce5] 10: 
+[00000ce6] 11: fgload 0 00000000 IZ01BA 1 3
+[00000cf6] 10: 
+[00000cf7]  b: playVoice I22D092
+[00000d00] 10: 
+[00000d01] 19: 
+[00000d02] ff: text 8a
+{textColor 1 8}【Izumi】 "Well... I thought you might be concerned..." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[00000d05] 10: 
+[00000d06]  b: playVoice I22D093
+[00000d0f] 10: 
+[00000d10] 19: 
+[00000d11] ff: text 8b
+{textColor 1 8}【Izumi】 "The conversation we had this afternoon... Don't you want to hear the rest of it?" 
+{textColor 0 0}【Makoto】 "Y-Yeah... so you came here to finish it?" 
+
+
+[00000d14] 10: 
+[00000d15]  b: playVoice I22D094
+[00000d1e] 10: 
+[00000d1f] 19: 
+[00000d20] ff: text 8c
+{textColor 1 8}【Izumi】 "Besides that, I know you wanted to hear it no matter what..." 
+
+
+[00000d23] 10: 
+[00000d24]  b: playVoice I22D095
+[00000d2d] 10: 
+[00000d2e] 19: 
+[00000d2f] ff: text 8d
+{textColor 1 8}【Izumi】 "You wanted to know... my thoughts..." 
+
+
+[00000d32] 10: 
+[00000d33] 12: removeFG 0 3
+[00000d3a] 10: 
+[00000d3b] 19: 
+[00000d3c] ff: text 8e
+{textColor 0 2}As she says this, Izumi-san slowly sits down by the bedside. 
+
+
+[00000d3f] 10: 
+[00000d40] 11: fgload 0 00000000 IZ01BB 1 3
+[00000d50] 10: 
+[00000d51]  b: playVoice I22D096
+[00000d5a] 10: 
+[00000d5b] 19: 
+[00000d5c] ff: text 8f
+{textColor 1 8}【Izumi】 "However, I didn't get a chance to talk to you." 
+{textColor 0 0}【Makoto】 "The truth is, I was thinking of going to Lunabeach tonight." 
+{textColor 0 0}【Makoto】 "So it's actually pretty good that you came here..." 
+
+
+[00000d5f] 10: 
+[00000d60] 11: fgload 0 00000000 IZ02BB 1 3
+[00000d70] 10: 
+[00000d71] 19: 
+[00000d72] ff: text 90
+{textColor 0 2}Izumi-san lightly nods countless times, and gently looks into my eyes. 
+{textColor 0 2}However, for a brief moment, I catch a glimpse of a shadow within that kindness. 
+{textColor 0 2}It seems that there's a pain lurking deep in her heart that she's enduring with all she's got... 
+
+
+[00000d75] 10: 
+[00000d76] 11: fgload 0 00000000 IZ05BB 1 3
+[00000d86] 10: 
+[00000d87]  b: playVoice I22D097
+[00000d90] 10: 
+[00000d91] 19: 
+[00000d92] ff: text 91
+{textColor 1 8}【Izumi】 "Makoto-kun? Ready?" 
+{textColor 0 0}【Makoto】 "Y-Yeah..." 
+
+
+[00000d95] 10: 
+[00000d96] 11: fgload 0 00000000 IZ06BB 1 3
+[00000da6] 10: 
+[00000da7]  b: playVoice I22D098
+[00000db0] 10: 
+[00000db1] 19: 
+[00000db2] ff: text 92
+{textColor 1 8}【Izumi】 "Concerning this story, I'm not sure how to talk about it..." 
+
+
+[00000db5] 10: 
+[00000db6]  b: playVoice I22D099
+[00000dbf] 10: 
+[00000dc0] 19: 
+[00000dc1] ff: text 93
+{textColor 1 8}【Izumi】 "It's very... complex." 
+
+
+[00000dc4] 10: 
+[00000dc5]  b: playVoice I22D100
+[00000dce] 10: 
+[00000dcf] 19: 
+[00000dd0] ff: text 94
+{textColor 1 8}【Izumi】 "The cause of the time travel..." 
+
+
+[00000dd3] 10: 
+[00000dd4]  b: playVoice I22D101
+[00000ddd] 10: 
+[00000dde] 19: 
+[00000ddf] ff: text 95
+{textColor 1 8}【Izumi】 "The issue of your memories..." 
+
+
+[00000de2] 10: 
+[00000de3]  b: playVoice I22D102
+[00000dec] 10: 
+[00000ded] 19: 
+[00000dee] ff: text 96
+{textColor 1 8}【Izumi】 "This situation we've been placed in now..." 
+
+
+[00000df1] 10: 
+[00000df2]  b: playVoice I22D103
+[00000dfb] 10: 
+[00000dfc] 19: 
+[00000dfd] ff: text 97
+{textColor 1 8}【Izumi】 "It all comes from a phenomenon that cannot be explained from just one perspective." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000e00] 10: 
+[00000e01] 11: fgload 0 00000000 IZ05BB 1 3
+[00000e11] 10: 
+[00000e12]  b: playVoice I22D104
+[00000e1b] 10: 
+[00000e1c] 19: 
+[00000e1d] ff: text 98
+{textColor 1 8}【Izumi】 "That's why, for sure... I don't think you'll understand this." 
+
+
+[00000e20] 10: 
+[00000e21] 11: fgload 0 00000000 IZ06BB 1 3
+[00000e31] 10: 
+[00000e32]  b: playVoice I22D105
+[00000e3b] 10: 
+[00000e3c] 19: 
+[00000e3d] ff: text 99
+{textColor 1 8}【Izumi】 "No, I don't mean that I think it'll be too difficult to understand..." 
+
+
+[00000e40] 10: 
+[00000e41]  b: playVoice I22D106
+[00000e4a] 10: 
+[00000e4b] 19: 
+[00000e4c] ff: text 9a
+{textColor 1 8}【Izumi】 "It's just... extremely remote from common sense..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000e4f] 10: 
+[00000e50] 11: fgload 0 00000000 IZ05BB 1 3
+[00000e60] 10: 
+[00000e61]  b: playVoice I22D107
+[00000e6a] 10: 
+[00000e6b] 19: 
+[00000e6c] ff: text 9b
+{textColor 1 8}【Izumi】 "First... about 'Curé Syndrome'..." 
+
+
+[00000e6f] 10: 
+[00000e70]  b: playVoice I22D108
+[00000e79] 10: 
+[00000e7a] 19: 
+[00000e7b] ff: text 9c
+{textColor 1 8}【Izumi】 "I'll begin by talking about that..." 
+{textColor 0 0}【Makoto】 "W-Wait a minute!" 
+{textColor 0 0}【Makoto】 "'Curé Syndrome'..." 
+{textColor 0 0}【Makoto】 "Is that somehow connected to the time travel?" 
+
+
+[00000e7e] 10: 
+[00000e7f] 11: fgload 0 00000000 IZ06BB 1 3
+[00000e8f] 10: 
+[00000e90]  b: playVoice I22D109
+[00000e99] 10: 
+[00000e9a] 19: 
+[00000e9b] ff: text 9d
+{textColor 1 8}【Izumi】 "I think that's something you can judge for yourself after I'm done talking." 
+
+
+[00000e9e] 10: 
+[00000e9f]  b: playVoice I22D110
+[00000ea8] 10: 
+[00000ea9] 19: 
+[00000eaa] ff: text 9e
+{textColor 1 8}【Izumi】 "If you don't believe this story, then it's fine..." 
+{textColor 0 0}【Makoto】 "???" 
+
+
+[00000ead] 10: 
+[00000eae]  b: playVoice I22D111
+[00000eb7] 10: 
+[00000eb8] 19: 
+[00000eb9] ff: text 9f
+{textColor 1 8}【Izumi】 "Anyway, will you listen to my story all the way to the end?" 
+{textColor 0 0}【Makoto】 "... Y-Yes." 
+
+
+[00000ebc] 10: 
+[00000ebd] 12: removeFG 0 3
+[00000ec4] 10: 
+[00000ec5]  7: stopBGM
+[00000ec6] 10: 
+[00000ec7] 19: 
+[00000ec8] ff: text a0
+{textColor 0 2}Izumi-san firmly grips the bed sheets. 
+{textColor 0 2}She straightens them, messes them, and keeps repeating these monotonous actions while searching for the chance to open up. 
+{textColor 0 2}Her eyes dart around the room as she runs a hand through her hair. Finally, Izumi-san takes a small breath, and begins talking. 
+
+
+[00000ecb] 10: 
+[00000ecc] 11: fgload 0 00000000 IZ06BB 1 3
+[00000edc] 10: 
+[00000edd]  6: playBGM 11
+[00000ee1] 10: 
+[00000ee2]  b: playVoice I22D112
+[00000eeb] 10: 
+[00000eec] 19: 
+[00000eed] ff: text a1
+{textColor 1 8}【Izumi】 "This is something that I haven't told Okuhiko..." 
+
+
+[00000ef0] 10: 
+[00000ef1]  b: playVoice I22D113
+[00000efa] 10: 
+[00000efb] 19: 
+[00000efc] ff: text a2
+{textColor 1 8}【Izumi】 "I only mentioned two traits of Curé Syndrome yesterday..." 
+
+
+[00000eff] 10: 
+[00000f00]  b: playVoice I22D114
+[00000f09] 10: 
+[00000f0a] 19: 
+[00000f0b] ff: text a3
+{textColor 1 8}【Izumi】 "But there's actually one more..." 
+
+
+[00000f0e] 10: 
+[00000f0f]  b: playVoice I22D115
+[00000f18] 10: 
+[00000f19] 19: 
+[00000f1a] ff: text a4
+{textColor 1 8}【Izumi】 "The very essential 'Third Trait'..." 
+{textColor 0 0}【Makoto】 "The Third... Trait...?" 
+{textColor 0 2}Izumi-san nods. 
+{textColor 0 2}Her gaze is so serious that it's almost frightening... 
+
+
+[00000f1d] 10: 
+[00000f1e]  b: playVoice I22D116
+[00000f27] 10: 
+[00000f28] 19: 
+[00000f29] ff: text a5
+{textColor 1 8}【Izumi】 "Makoto-kun, do you remember?" 
+
+
+[00000f2c] 10: 
+[00000f2d]  b: playVoice I22D117
+[00000f36] 10: 
+[00000f37] 19: 
+[00000f38] ff: text a6
+{textColor 1 8}【Izumi】 "Yesterday, I summed up the First and Second Traits as the 'spreading of delusions', right?" 
+
+
+[00000f3b] 10: 
+[00000f3c]  b: playVoice I22D118
+[00000f45] 10: 
+[00000f46] 19: 
+[00000f47] ff: text a7
+{textColor 1 8}【Izumi】 "But you know what? The phenomenon of the 'spreading of delusions' isn't actually something that uncommon." 
+
+
+[00000f4a] 10: 
+[00000f4b]  b: playVoice I22D119
+[00000f54] 10: 
+[00000f55] 19: 
+[00000f56] ff: text a8
+{textColor 1 8}【Izumi】 "Because the symptoms had already been categorized as a type of another illness, Dr. Cabin didn't have to define them anew." 
+{textColor 0 0}【Makoto】 "Izumi-san, sorry, but can you put that in layman's terms?" 
+
+
+[00000f59] 10: 
+[00000f5a] 11: fgload 0 00000000 IZ05BB 1 3
+[00000f6a] 10: 
+[00000f6b]  b: playVoice I22D120
+[00000f74] 10: 
+[00000f75] 19: 
+[00000f76] ff: text a9
+{textColor 1 8}【Izumi】 "Hmm... in short, it was..." 
+
+
+[00000f79] 10: 
+[00000f7a]  b: playVoice I22D121
+[00000f83] 10: 
+[00000f84] 19: 
+[00000f85] ff: text aa
+{textColor 1 8}【Izumi】 "'The delusion that someone embraces begins to be projected onto another person.'" 
+
+
+[00000f88] 10: 
+[00000f89]  b: playVoice I22D122
+[00000f92] 10: 
+[00000f93] 19: 
+[00000f94] ff: text ab
+{textColor 1 8}【Izumi】 "But that mental illness was already called 'Shared Psychotic Disorder', so it wasn't anything particularly new or unusual either." 
+{textColor 0 0}【Makoto】 "So then... it was like this?" 
+{textColor 0 0}【Makoto】 "In short, when examining Tom's symptoms, Dr. Cabin discovered a different trait that wasn't part of 'Shared Psychotic Disorder'――'The Third Trait'." 
+{textColor 0 0}【Makoto】 "That's precisely why he had to define it with a new name: 'Curé Syndrome'." 
+
+
+[00000f97] 10: 
+[00000f98] 11: fgload 0 00000000 IZ06BB 1 3
+[00000fa8] 10: 
+[00000fa9]  b: playVoice I22D123
+[00000fb2] 10: 
+[00000fb3] 19: 
+[00000fb4] ff: text ac
+{textColor 1 8}【Izumi】 "Yes, that's right..." 
+{textColor 0 0}【Makoto】 "So? What's this 'Third Trait'?" 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "...?" 
+
+
+[00000fb7] 10: 
+[00000fb8] 11: fgload 0 00000000 IZ08BB 1 3
+[00000fc8] 10: 
+[00000fc9]  b: playVoice I22D124
+[00000fd2] 10: 
+[00000fd3] 19: 
+[00000fd4] ff: text ad
+{textColor 1 8}【Izumi】 "I don't think you'll believe this, but..." 
+{textColor 0 0}【Makoto】 "'Won't believe this'... You said that earlier too..." 
+{textColor 0 0}【Makoto】 "Is it that incredible?" 
+
+
+[00000fd7] 10: 
+[00000fd8] 11: fgload 0 00000000 IZ06BB 1 3
+[00000fe8] 10: 
+[00000fe9]  b: playVoice I22D125
+[00000ff2] 10: 
+[00000ff3] 19: 
+[00000ff4] ff: text ae
+{textColor 1 8}【Izumi】 "... Yes..." 
+
+
+[00000ff7] 10: 
+[00000ff8]  b: playVoice I22D126
+[00001001] 10: 
+[00001002] 19: 
+[00001003] ff: text af
+{textColor 1 8}【Izumi】 "... To put it in one word..." 
+
+
+[00001006] 10: 
+[00001007]  b: playVoice I22D127
+[00001010] 10: 
+[00001011] 19: 
+[00001012] ff: text b0
+{textColor 1 8}【Izumi】 "... It's an abnormality..." 
+{textColor 0 0}【Makoto】 "What?" 
+
+
+[00001015] 10: 
+[00001016]  b: playVoice I22D128
+[0000101f] 10: 
+[00001020] 19: 
+[00001021] ff: text b1
+{textColor 1 8}【Izumi】 "If 'The Third Trait' is actually true, then it might overturn the foundation of the way things are in this world..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00001024] 10: 
+[00001025] 11: fgload 0 00000000 IZ05BB 1 3
+[00001035] 10: 
+[00001036]  b: playVoice I22D129
+[0000103f] 10: 
+[00001040] 19: 
+[00001041] ff: text b2
+{textColor 1 8}【Izumi】 "Makoto-kun..." 
+
+
+[00001044] 10: 
+[00001045]  b: playVoice I22D130
+[0000104e] 10: 
+[0000104f] 19: 
+[00001050] ff: text b3
+{textColor 1 8}【Izumi】 "Calmly listen to me." 
+
+
+[00001053] 10: 
+[00001054]  b: playVoice I22D131
+[0000105d] 10: 
+[0000105e] 19: 
+[0000105f] ff: text b4
+{textColor 1 8}【Izumi】 "About Curé Syndrome's 'Third Trait'." 
+
+
+[00001062] 10: 
+[00001063]  b: playVoice I22D132
+[0000106c] 10: 
+[0000106d] 19: 
+[0000106e] ff: text b5
+{textColor 1 8}【Izumi】 "The truth is, it's related to the 'Schrödinger's cat' Kurumi was talking about." 
+{textColor 0 0}【Makoto】 "Schrödinger's cat!?" 
+
+
+[00001071] 10: 
+[00001072] 12: removeFG 0 3
+[00001079] 10: 
+[0000107a]  7: stopBGM
+[0000107b] 10: 
+[0000107c] 19: 
+[0000107d] ff: text b6
+{textColor 0 2}――Then, just before she can reply! 
+
+
+[00001080] 10: 
+[00001081]  8: playSFX SE002 1
+[0000108b] 10: 
+[0000108c] 11: fgload 0 00000000 HA01CA 1 3
+[0000109c] 10: 
+[0000109d] 11: fgload 0 00000000 HA11CA 1 3
+[000010ad] 10: 
+[000010ae]  6: playBGM 2
+[000010b2] 10: 
+[000010b3]  b: playVoice I22D133
+[000010bc] 10: 
+[000010bd] 19: 
+[000010be] ff: text b7
+{textColor 1 5}【Haruka】 "Ah..." 
+{textColor 0 0}【Makoto】 "H-Haruka!" 
+
+
+[000010c1] 10: 
+[000010c2] 13: moveFG 0 0
+[000010c9] 10: 
+[000010ca] 11: fgload 1 00000000 IZ11BA 2 3
+[000010da] 10: 
+[000010db]  b: playVoice I22D134
+[000010e4] 10: 
+[000010e5] 19: 
+[000010e6] ff: text b8
+{textColor 1 8}【Izumi】 "Haruka-chan!" 
+
+
+[000010e9] 10: 
+[000010ea] 11: fgload 0 00000000 HA06CA 0 3
+[000010fa] 10: 
+[000010fb]  b: playVoice I22D135
+[00001104] 10: 
+[00001105] 19: 
+[00001106] ff: text b9
+{textColor 1 5}【Haruka】 "Why are... you here?" 
+{textColor 0 2}Haruka furrows her eyebrows, and tilts her head slightly. 
+{textColor 0 2}Her gaze alternates between Izumi-san and I. 
+
+
+[00001109] 10: 
+[0000110a] 11: fgload 1 00000000 IZ10BA 2 3
+[0000111a] 10: 
+[0000111b]  b: playVoice I22D136
+[00001124] 10: 
+[00001125] 19: 
+[00001126] ff: text ba
+{textColor 1 8}【Izumi】 "E-Er... umm..." 
+
+
+[00001129] 10: 
+[0000112a] 11: fgload 0 00000000 HA10CA 0 3
+[0000113a] 10: 
+[0000113b] 19: 
+[0000113c] ff: text bb
+{textColor 1 5}【Haruka】 "???" 
+{textColor 0 0}【Makoto】 "I brought her with me!" 
+{textColor 0 2}I instinctively blurt these words out of my mouth. 
+
+
+[0000113f] 10: 
+[00001140] 11: fgload 0 00000000 HA01CA 0 3
+[00001150] 10: 
+[00001151]  b: playVoice I22D137
+[0000115a] 10: 
+[0000115b] 19: 
+[0000115c] ff: text bc
+{textColor 1 5}【Haruka】 "You did?" 
+{textColor 0 0}【Makoto】 "Y-Yeah..." 
+
+
+[0000115f] 10: 
+[00001160]  b: playVoice I22D138
+[00001169] 10: 
+[0000116a] 19: 
+[0000116b] ff: text bd
+{textColor 1 5}【Haruka】 "Why?" 
+{textColor 0 0}【Makoto】 "Well, um..." 
+{textColor 0 0}【Makoto】 "... You see, I had a lot of things I wanted to ask her about the Seminar Camp..." 
+
+
+[0000116e] 10: 
+[0000116f]  b: playVoice I22D139
+[00001178] 10: 
+[00001179] 19: 
+[0000117a] ff: text be
+{textColor 1 5}【Haruka】 "Hmm..." 
+
+
+[0000117d] 10: 
+[0000117e] 11: fgload 1 00000000 IZ01BA 2 3
+[0000118e] 10: 
+[0000118f]  b: playVoice I22D140
+[00001198] 10: 
+[00001199] 19: 
+[0000119a] ff: text bf
+{textColor 1 8}【Izumi】 "Haruka-chan, is something wrong?" 
+
+
+[0000119d] 10: 
+[0000119e]  b: playVoice I22D141
+[000011a7] 10: 
+[000011a8] 19: 
+[000011a9] ff: text c0
+{textColor 1 5}【Haruka】 "I have something to ask Makoto." 
+{textColor 0 0}【Makoto】 "M-Me?" 
+{textColor 0 0}【Makoto】 "Could you be talking about... fishing?" 
+
+
+[000011ac] 10: 
+[000011ad] 11: fgload 0 00000000 HA11CA 0 3
+[000011bd] 10: 
+[000011be]  b: playVoice I22D142
+[000011c7] 10: 
+[000011c8] 19: 
+[000011c9] ff: text c1
+{textColor 1 5}【Haruka】 "Y-Yes... that's right..." 
+
+
+[000011cc] 10: 
+[000011cd]  b: playVoice I22D143
+[000011d6] 10: 
+[000011d7] 19: 
+[000011d8] ff: text c2
+{textColor 1 5}【Haruka】 "I wanted you to teach me how to fish..." 
+
+
+[000011db] 10: 
+[000011dc]  b: playVoice I22D144
+[000011e5] 10: 
+[000011e6] 19: 
+[000011e7] ff: text c3
+{textColor 1 5}【Haruka】 "But how did you know that?" 
+{textColor 0 0}【Makoto】 "Huh?" 
+{textColor 0 0}【Makoto】 "Th-That's... well, how do I put it..." 
+{textColor 0 0}【Makoto】 "Intuition... I suppose?" 
+
+
+[000011ea] 10: 
+[000011eb] 15: removeAllFG 3
+[000011ef] 10: 
+[000011f0] 19: 
+[000011f1] ff: text c4
+{textColor 0 2}(Great...) 
+{textColor 0 2}(Why do we have to keep getting interrupted like this?) 
+{textColor 0 2}(Just when we were getting to the most important part of all times...) 
+
+
+[000011f4] 10: 
+[000011f5]  7: stopBGM
+[000011f6] 10: 
+[000011f7] 11: fgload 0 00000000 YU01CA 1 3
+[00001207] 10: 
+[00001208] 19: 
+[00001209] ff: text c5
+{textColor 0 2}Yuka must have heard us talking, for she comes in next. 
+
+
+[0000120c] 10: 
+[0000120d] 11: fgload 0 00000000 YU11CA 1 3
+[0000121d] 10: 
+[0000121e]  b: playVoice I22D145
+[00001227] 10: 
+[00001228] 19: 
+[00001229] ff: text c6
+{textColor 1 4}【Yuka】 "Ah! Izumi-san! What are you doing here!?" 
+
+
+[0000122c] 10: 
+[0000122d] 13: moveFG 0 0
+[00001234] 10: 
+[00001235] 11: fgload 1 00000000 HA01CA 2 3
+[00001245] 10: 
+[00001246]  b: playVoice I22D146
+[0000124f] 10: 
+[00001250] 19: 
+[00001251] ff: text c7
+{textColor 1 5}【Haruka】 "Makoto... brought her to his room." 
+{textColor 0 0}【Makoto】 "D-{delay 5}Don't put it like that!" 
+
+
+[00001254] 10: 
+[00001255] 11: fgload 0 00000000 YU05CA 0 3
+[00001265] 10: 
+[00001266]  6: playBGM 19
+[0000126b] 10: 
+[0000126c]  b: playVoice I22D147
+[00001275] 10: 
+[00001276] 19: 
+[00001277] ff: text c8
+{textColor 1 4}【Yuka】 "Hold on, what's with that?" 
+
+
+[0000127a] 10: 
+[0000127b]  b: playVoice I22D148
+[00001284] 10: 
+[00001285] 19: 
+[00001286] ff: text c9
+{textColor 1 4}【Yuka】 "Is this true, Izumi-san?" 
+
+
+[00001289] 10: 
+[0000128a] 12: removeFG 1 3
+[00001291] 10: 
+[00001292] 11: fgload 1 00000000 IZ10BA 2 3
+[000012a2] 10: 
+[000012a3]  b: playVoice I22D149
+[000012ac] 10: 
+[000012ad] 19: 
+[000012ae] ff: text ca
+{textColor 1 8}【Izumi】 "Y-Yes... in a way..." 
+{textColor 0 0}【Makoto】 "I-Izumi-san, why are you-" 
+
+
+[000012b1] 10: 
+[000012b2] 12: removeFG 1 3
+[000012b9] 10: 
+[000012ba] 11: fgload 1 00000000 HA06CA 2 3
+[000012ca] 10: 
+[000012cb]  b: playVoice I22D150
+[000012d4] 10: 
+[000012d5] 19: 
+[000012d6] ff: text cb
+{textColor 1 5}【Haruka】 "But didn't you say... that you brought her here?" 
+{textColor 0 0}【Makoto】 "Yes, but that's all I said! The way you said makes it sound like Izumi-san and I were... going to..." 
+
+
+[000012d9] 10: 
+[000012da] 12: removeFG 1 3
+[000012e1] 10: 
+[000012e2] 11: fgload 0 00000000 YU04CA 0 3
+[000012f2] 10: 
+[000012f3]  b: playVoice I22D151
+[000012fc] 10: 
+[000012fd] 19: 
+[000012fe] ff: text cc
+{textColor 1 4}【Yuka】 "Geez, Makoto! There's no use in arguing!" 
+
+
+[00001301] 10: 
+[00001302]  b: playVoice I22D152
+[0000130b] 10: 
+[0000130c] 19: 
+[0000130d] ff: text cd
+{textColor 1 4}【Yuka】 "Bringing the 'Professor' to your room, of all people..." 
+
+
+[00001310] 10: 
+[00001311] 11: fgload 0 00000000 YU06CA 0 3
+[00001321] 10: 
+[00001322]  b: playVoice I22D153
+[0000132b] 10: 
+[0000132c] 19: 
+[0000132d] ff: text ce
+{textColor 1 4}【Yuka】 "For God's sake, you've got some nerve..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00001330] 10: 
+[00001331] 14: multifgload2 00000000 YU02CA 0 00000000 IZ10BA 3
+[00001344] 10: 
+[00001345]  b: playVoice I22D154
+[0000134e] 10: 
+[0000134f] 19: 
+[00001350] ff: text cf
+{textColor 1 4}【Yuka】 "There, there, Izumi-san, you're not hurt, are you?" 
+
+
+[00001353] 10: 
+[00001354]  b: playVoice I22D155
+[0000135d] 10: 
+[0000135e] 19: 
+[0000135f] ff: text d0
+{textColor 1 4}【Yuka】 "It's late now, so come and sleep in my room." 
+
+
+[00001362] 10: 
+[00001363] 11: fgload 1 00000000 IZ11BA 2 3
+[00001373] 10: 
+[00001374]  b: playVoice I22D156
+[0000137d] 10: 
+[0000137e] 19: 
+[0000137f] ff: text d1
+{textColor 1 8}【Izumi】 "H-Huh? Th-That's all right, you don't need to..." 
+
+
+[00001382] 10: 
+[00001383]  b: playVoice I22D157
+[0000138c] 10: 
+[0000138d] 19: 
+[0000138e] ff: text d2
+{textColor 1 8}【Izumi】 "Besides, if I don't go back to the shop, Kurumi will-" 
+
+
+[00001391] 10: 
+[00001392] 12: removeFG 0 3
+[00001399] 10: 
+[0000139a] 11: fgload 0 00000000 KU02BA 0 3
+[000013aa] 10: 
+[000013ab]  b: playVoice I22D158
+[000013b4] 10: 
+[000013b5] 19: 
+[000013b6] ff: text d3
+{textColor 1 7}【Kurumi】 "Onee-chan, why did you come here?" 
+
+
+[000013b9] 10: 
+[000013ba] 11: fgload 1 00000000 IZ10BA 2 3
+[000013ca] 10: 
+[000013cb]  b: playVoice I22D159
+[000013d4] 10: 
+[000013d5] 19: 
+[000013d6] ff: text d4
+{textColor 1 8}【Izumi】 "K-Kurumi..." 
+
+
+[000013d9] 10: 
+[000013da]  b: playVoice I22D160
+[000013e3] 10: 
+[000013e4] 19: 
+[000013e5] ff: text d5
+{textColor 1 7}【Kurumi】 "You disappeared so suddenly! Kurumi was looking for you!" 
+
+
+[000013e8] 10: 
+[000013e9] 12: removeFG 0 3
+[000013f0] 10: 
+[000013f1] 11: fgload 0 00000000 YU02CA 0 3
+[00001401] 10: 
+[00001402]  b: playVoice I22D161
+[0000140b] 10: 
+[0000140c] 19: 
+[0000140d] ff: text d6
+{textColor 1 4}【Yuka】 "As you can see, there's no need to worry." 
+
+
+[00001410] 10: 
+[00001411]  b: playVoice I22D162
+[0000141a] 10: 
+[0000141b] 19: 
+[0000141c] ff: text d7
+{textColor 1 4}【Yuka】 "Well? What do you say, Izumi-san?" 
+{textColor 1 8}【Izumi】 "..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000141f] 10: 
+[00001420] 15: removeAllFG 3
+[00001424] 10: 
+[00001425] 11: fgload 0 00000000 OK11CA 1 3
+[00001435] 10: 
+[00001436]  b: playVoice I22D163
+[0000143f] 10: 
+[00001440] 19: 
+[00001441] ff: text d8
+{textColor 0 0}【Okuhiko】 "Huh? What's going on?" 
+
+
+[00001444] 10: 
+[00001445]  b: playVoice I22D164
+[0000144e] 10: 
+[0000144f] 19: 
+[00001450] ff: text d9
+{textColor 0 0}【Okuhiko】 "Why is everyone gathered here?" 
+
+
+[00001453] 10: 
+[00001454]  f: removeBG 0 2 2
+[0000145e] 10: 
+[0000145f]  7: stopBGM
+[00001460] 10: 
+[00001461] 19: 
+[00001462] ff: text da
+{textColor 0 2}... ... ... 
+
+
+[00001465] 10: 
+[00001466]  6: playBGM 14
+[0000146a] 10: 
+[0000146b] 19: 
+[0000146c] ff: text db
+{textColor 0 2}And so, Izumi-san and Kurumi decide to sleep in Yuka's room tonight. 
+{textColor 0 2}I promise to go fishing with Haruka, and crawl under the covers of my bed. 
+{textColor 0 2}"Time travel."  {textColor 0 2}"The infinite loop."  {textColor 0 2}"The mystery of our memories." 
+{textColor 0 2}"The true nature of the bell."  {textColor 0 2}"The Third Trait."  {textColor 0 2}"Schrödinger's cat." 
+{textColor 0 2}Just how are they all connected? 
+{textColor 0 2}I want to ask Izumi-san about the truth right now. 
+{textColor 0 2}But even though I want to, I can't. 
+{textColor 0 2}She's asleep now, stuck between Yuka and Kurumi like a sandwich. 
+{textColor 0 2}(Ah... just what is this "Schrödinger's cat"!?) 
+{textColor 0 2}(What is "The Third Trait"!!?) 
+{textColor 0 2}(How are they related the infinite loop!!!?) 
+{textColor 0 0}【Makoto】 "Haah..." 
+{textColor 0 2}Alone in the dark, all I can do is sigh... 
+
+
+[0000146f] 10: 
+[00001470]  7: stopBGM
+[00001471]  0: 
+[00001472]  5: delay 180
+[00001477] 10: 
+[00001478]  4: jump C_IL2D3
+[00001481]  0: 
+[00001482]  0: 
+[00001483]  0: 

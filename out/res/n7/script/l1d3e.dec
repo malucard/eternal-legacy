@@ -1,0 +1,1989 @@
+[00000078] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 135
+[00000084] 10: 
+[00000085]  8: playSFX SE021 1
+[0000008f] 10: 
+[00000090] 10: bgload 00000000 BG15E 0 1
+[0000009d] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 16
+[000000a9] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 30
+[000000b5] 10: 
+[000000b6] 17: showClock
+[000000b7] 10: 
+[000000b8] 19: 
+[000000b9] ff: text 00
+{textColor 0 2}――And so, we didn't stop fishing until the late afternoon. 
+
+
+[000000bc] 10: 
+[000000bd]  8: playSFX SE080 1
+[000000c7] 10: 
+[000000c8] 19: 
+[000000c9] ff: text 01
+{textColor 0 2}We only took a break to head back to Lunabeach for lunch. We caught nothing, since Haruka released every single fish she caught. 
+{textColor 0 2}Nevertheless, it was surprisingly fun. Afterwards, we returned to fishing and remained that way up until now.  {textColor 0 2}I decide to try ask her about Saki. 
+
+
+[000000cc] 10: 
+[000000cd]  9: stopSFX
+[000000ce] 10: 
+[000000cf]  6: playBGM 2
+[000000d3] 10: 
+[000000d4] 11: fgload 0 00000000 HA01AAD 1 3
+[000000e4] 10: 
+[000000e5] 19: 
+[000000e6] ff: text 02
+{textColor 0 0}【Makoto】 "About what happened between you and Saki..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "When you told me you two were talking about fishing, um... That was a lie, wasn't it?" 
+
+
+[000000e9] 10: 
+[000000ea]  b: playVoice L1D3E000
+[000000f4] 10: 
+[000000f5] 19: 
+[000000f6] ff: text 03
+{textColor 1 5}【Haruka】 "... Yes." 
+{textColor 0 0}【Makoto】 "Then what was it? What did you say to Saki?" 
+
+
+[000000f9] 10: 
+[000000fa]  b: playVoice L1D3E001
+[00000104] 10: 
+[00000105] 19: 
+[00000106] ff: text 04
+{textColor 1 5}【Haruka】 "... If I tell you that, will you answer me honestly?" 
+{textColor 0 0}【Makoto】 "O-Of course..." 
+
+
+[00000109] 10: 
+[0000010a]  b: playVoice L1D3E002
+[00000114] 10: 
+[00000115] 19: 
+[00000116] ff: text 05
+{textColor 1 5}【Haruka】 "Really?" 
+{textColor 0 0}【Makoto】 "... Yeah, I promise you." 
+{textColor 0 2}Haruka puts away the fishing rods, then looks at me. 
+
+
+[00000119] 10: 
+[0000011a]  b: playVoice L1D3E003
+[00000124] 10: 
+[00000125] 19: 
+[00000126] ff: text 06
+{textColor 1 5}【Haruka】 "Have you ever kissed someone?" 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[00000129] 10: 
+[0000012a]  b: playVoice L1D3E004
+[00000134] 10: 
+[00000135] 19: 
+[00000136] ff: text 07
+{textColor 1 5}【Haruka】 "What is a 'kiss'?" 
+{textColor 0 0}【Makoto】 "Hold on. This is what you were asking Saki?" 
+
+
+[00000139] 10: 
+[0000013a]  b: playVoice L1D3E005
+[00000144] 10: 
+[00000145] 19: 
+[00000146] ff: text 08
+{textColor 1 5}【Haruka】 "Yes... I wanted to ask her if she'd kissed someone before." 
+{textColor 0 2}She's lying again. Judging by how those two were acting at that time, there was no way they were talking about that.  {textColor 0 2}Even so, I say... 
+
+[00000149] ff: text 09
+{textColor 0 2}{choiceOpt 1 -> I have. }{choiceOpt 2 -> I haven't. }{choiceOpt 3 -> Umm... }
+
+[0000014c] 10: 
+[0000014d]  3: choice v_a1_08 00 00
+[00000152]  0: 
+[00000153]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000185 (0002)
+[00000161] fe: varop VAR_(28_0a)_a1_00 (14) += (00) 1
+[0000016c] 10: 
+[0000016d] 19: 
+[0000016e] ff: text 0a
+{textColor 0 0}【Makoto】 "I... I have." 
+{textColor 0 2}What am I saying?  {textColor 0 2}The conversation is getting more and more sidetracked. 
+
+
+[00000171] 10: 
+[00000172]  b: playVoice L1D3E006
+[0000017c] 10: 
+[0000017d] 19: 
+[0000017e] ff: text 0b
+{textColor 1 5}【Haruka】 "What does it feel like to kiss someone?" 
+{textColor 0 2}Haruka asks me this with the innocent expression of a curious young girl. 
+{textColor 0 2}T... This is bad. Everything's going at Haruka's pace.  {textColor 0 2}If I don't change the subject soon, then... 
+
+
+[00000181]  0: 
+[00000182]  7: goto7 000001e1 (0004)
+[00000185]  0: 
+[00000186]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000001bd (0003)
+[00000194] 10: 
+[00000195] 19: 
+[00000196] ff: text 0c
+{textColor 0 0}【Makoto】 "I... I haven't." 
+{textColor 0 2}What the hell am I saying? What kind of a response was that!? 
+
+
+[00000199] 10: 
+[0000019a]  b: playVoice L1D3E007
+[000001a4] 10: 
+[000001a5] 19: 
+[000001a6] ff: text 0d
+{textColor 1 5}【Haruka】 "I see..." 
+{textColor 0 2}Haruka drops her head in disappointment. Just what did Haruka want to hear? 
+
+
+[000001a9] 10: 
+[000001aa]  b: playVoice L1D3E008
+[000001b4] 10: 
+[000001b5] 19: 
+[000001b6] ff: text 0e
+{textColor 1 5}【Haruka】 "Makoto... have you ever wanted to kiss someone?" 
+{textColor 0 2}W-What? I don't know how to respond to that... 
+
+
+[000001b9]  0: 
+[000001ba]  7: goto7 000001e1 (0004)
+[000001bd]  0: 
+[000001be]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (82)->2 (15) (00)  * 000001e1 (0005)
+[000001cc] 10: 
+[000001cd] 19: 
+[000001ce] ff: text 0f
+{textColor 0 0}【Makoto】 "Well, um, you see, I'm a guy... so..." 
+{textColor 0 2}Since I'm with Haruka, I try to be blunt. 
+
+
+[000001d1] 10: 
+[000001d2]  b: playVoice L1D3E009
+[000001dc] 10: 
+[000001dd] 19: 
+[000001de] ff: text 10
+{textColor 1 5}【Haruka】 "Have you ever?" 
+
+
+[000001e1] 10: 
+[000001e2] 19: 
+[000001e3] ff: text 11
+{textColor 0 0}【Makoto】 "You shouldn't ask something like that." 
+
+
+[000001e6] 10: 
+[000001e7]  b: playVoice L1D3E010
+[000001f1] 10: 
+[000001f2] 19: 
+[000001f3] ff: text 12
+{textColor 1 5}【Haruka】 "Is... that right?" 
+{textColor 0 0}【Makoto】 "Yeah..." 
+
+
+[000001f6] 10: 
+[000001f7]  b: playVoice L1D3E011
+[00000201] 10: 
+[00000202] 19: 
+[00000203] ff: text 13
+{textColor 1 5}【Haruka】 "Then why do people kiss?" 
+{textColor 0 0}【Makoto】 "Hmm... It's probably to demonstrate their love and confirm their feelings for each other." 
+
+
+[00000206] 10: 
+[00000207]  b: playVoice L1D3E012
+[00000211] 10: 
+[00000212] 19: 
+[00000213] ff: text 14
+{textColor 1 5}【Haruka】 "Confirm...?" 
+{textColor 0 0}【Makoto】 "It's difficult to explain with words..." 
+
+
+[00000216] 10: 
+[00000217]  b: playVoice L1D3E013
+[00000221] 10: 
+[00000222] 19: 
+[00000223] ff: text 15
+{textColor 1 5}【Haruka】 "Then... let's kiss." 
+{textColor 0 0}【Makoto】 "Wh-What!?" 
+
+
+[00000226] 10: 
+[00000227] 11: fgload 0 00000000 HA01ABD 1 3
+[00000237] 10: 
+[00000238]  b: playVoice L1D3E014
+[00000242] 10: 
+[00000243] 19: 
+[00000244] ff: text 16
+{textColor 1 5}【Haruka】 "Let's kiss." 
+
+
+[00000247] 10: 
+[00000248] 12: removeFG 0 3
+[0000024f] 10: 
+[00000250] 19: 
+[00000251] ff: text 17
+{textColor 0 2}Haruka draws her face close to mine. Her expression begins to overwhelm my senses. 
+
+
+[00000254] 10: 
+[00000255]  8: playSFX SE118 1
+[0000025f] 10: 
+[00000260]  1: cmd1 0
+[00000264] 10: 
+[00000265] 19: 
+[00000266] ff: text 18
+{textColor 0 2}My heart feels like it's bursting out of my chest. I steal a glance at Haruka's face. 
+
+
+[00000269] 10: 
+[0000026a] 10: bgload 00000000 EV_HA03D 0 1
+[00000277] 10: 
+[00000278] 19: 
+[00000279] ff: text 19
+{textColor 0 0}【Makoto】 "N-No... I can't kiss you for a reason like that..." 
+
+
+[0000027c] 10: 
+[0000027d]  b: playVoice L1D3E015
+[00000287] 10: 
+[00000288] 19: 
+[00000289] ff: text 1a
+{textColor 1 5}【Haruka】 "Then does that mean you don't feel any affection for me, Makoto...?" 
+
+[0000028c] ff: text 1b
+{textColor 0 2}{choiceOpt 1 -> No, it's not like that... }{choiceOpt 2 -> H... How should I answer that? }
+
+[0000028f] 10: 
+[00000290]  3: choice v_a1_08 00 00
+[00000295]  0: 
+[00000296]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 000002b8 (0006)
+[000002a4] fe: varop VAR_(28_0a)_a1_00 (14) += (00) 1
+[000002af] 10: 
+[000002b0] 19: 
+[000002b1] ff: text 1c
+{textColor 0 0}【Makoto】 "No, it's not like that..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "All right, I understand. Well then, close your eyes." 
+
+
+[000002b4]  0: 
+[000002b5]  7: goto7 000002cc (0007)
+[000002b8]  0: 
+[000002b9]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000002cc (0008)
+[000002c7] 10: 
+[000002c8] 19: 
+[000002c9] ff: text 1d
+{textColor 0 0}【Makoto】 "No... u-um..." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 2}Haruka's face gets gloomy as I struggle over my reply. 
+{textColor 0 2}P-Please don't look at me with that sad face... 
+{textColor 0 2}I decide to not run away and grant Haruka's wish. 
+{textColor 0 0}【Makoto】 "All right, I understand. Well then, close your eyes." 
+
+
+[000002cc] 10: 
+[000002cd]  7: stopBGM
+[000002ce] 10: 
+[000002cf] 10: bgload 00000000 EV_HA03F 0 1
+[000002dc] 10: 
+[000002dd]  6: playBGM 21
+[000002e2] 10: 
+[000002e3] 19: 
+[000002e4] ff: text 1e
+{textColor 0 2}As I speak, Haruka closes her eyes, and I stare at her face. 
+{textColor 0 2}Haruka's cheeks quiver like jelly from nervousness. Her beckoning small lips glisten. 
+{textColor 0 2}I gently kiss Haruka on the forehead. 
+
+
+[000002e7] 10: 
+[000002e8] 10: bgload 00000000 EV_HA03E 0 1
+[000002f5] 10: 
+[000002f6] 19: 
+[000002f7] ff: text 1f
+{textColor 0 2}It was just a peck and lasted for only a moment. 
+{textColor 0 2}For some reason, I feel embarrassed, and quickly draw back. 
+{textColor 0 2}Haruka's eyes suddenly open, and she stares at me. 
+
+
+[000002fa] 10: 
+[000002fb] 10: bgload 00000000 BG15E 0 1
+[00000308] 10: 
+[00000309] 11: fgload 0 00000000 HA03ABD 1 3
+[00000319] 10: 
+[0000031a]  b: playVoice L1D3E016
+[00000324] 10: 
+[00000325] 19: 
+[00000326] ff: text 20
+{textColor 1 5}【Haruka】 "This is...?" 
+{textColor 0 2}When I return Haruka's gaze, a faint blush appears on her cheeks. She quickly averts her gaze towards the ground. 
+{textColor 0 2}I can't comprehend how I feel. It's like happiness... but I can't quite explain it... 
+
+
+[00000329] 10: 
+[0000032a] 12: removeFG 0 3
+[00000331] 10: 
+[00000332] 19: 
+[00000333] ff: text 21
+{textColor 0 2}――The sun is setting. We decide to finish putting away the fishing gear. 
+{textColor 0 2}Our heightened awareness of each other made the trip back to the lodge a quiet one. 
+
+
+[00000336] 10: 
+[00000337]  f: removeBG 0 0 2
+[00000341] 10: 
+[00000342] 19: 
+[00000343] ff: text 22
+{textColor 0 2}Once we return to the lodge, it still feels kinda awkward, so we retreat into our respective rooms. 
+{textColor 0 2}Thank god Yuka and the others aren't back yet. 
+
+
+[00000346] 10: 
+[00000347]  7: stopBGM
+[00000348] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 70
+[00000354] 10: 
+[00000355]  6: playBGM 8
+[00000359] 10: 
+[0000035a] 10: bgload 00000000 BG01E 0 1
+[00000367] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 17
+[00000373] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 44
+[0000037f] 10: 
+[00000380] 17: showClock
+[00000381] 10: 
+[00000382] 19: 
+[00000383] ff: text 23
+{textColor 0 2}Once I finish changing, I throw myself onto the bed. Haruka's face faintly forms on the ceiling. 
+{textColor 0 2}What do I think of Haruka? 
+{textColor 0 2}Do I really just think of her like a daughter? 
+{textColor 0 2}Even so, we kissed...  No, it was just on the forehead. 
+{textColor 0 2}Why didn't I kiss her on the lips back then? 
+
+
+[00000386] 10: 
+[00000387]  7: stopBGM
+[00000388] 10: 
+[00000389] 19: 
+[0000038a] ff: text 24
+{textColor 0 2}At that moment, I hear Okuhiko's voice. As I get out of bed, I wonder what's going on. 
+{textColor 0 2}He sounds furious. I open the window to find Okuhiko on the terrace. 
+{textColor 0 2}He is approaching someone against the wall while yelling at them. 
+{textColor 0 2}I'm getting a bad feeling about this, so I rush out of my room. 
+
+
+[0000038d] 10: 
+[0000038e] 10: bgload 00000000 BG00E 4 1
+[0000039b] 10: 
+[0000039c]  6: playBGM 10
+[000003a0] 10: 
+[000003a1] 19: 
+[000003a2] ff: text 25
+{textColor 0 2}I open the front door, and look towards the terrace. 
+{textColor 0 2}I can see Okuhiko's back. He's talking to...{delay 5} Haruka. From here, I can hear their conversation clearly. 
+
+
+[000003a5] 10: 
+[000003a6]  b: playVoice L1D3E017
+[000003b0] 10: 
+[000003b1] 19: 
+[000003b2] ff: text 26
+{textColor 0 0}【Okuhiko】 "Why did you go fishing with Ishihara? What do you see in that asshole?" 
+
+
+[000003b5] 10: 
+[000003b6]  b: playVoice L1D3E018
+[000003c0] 10: 
+[000003c1] 19: 
+[000003c2] ff: text 27
+{textColor 1 5}【Haruka】 "Makoto...{delay 5}{delay 5} is kind to me..." 
+
+
+[000003c5] 10: 
+[000003c6]  b: playVoice L1D3E019
+[000003d0] 10: 
+[000003d1] 19: 
+[000003d2] ff: text 28
+{textColor 0 0}【Okuhiko】 "Kind?{delay 5}{delay 5} Ishihara?{delay 5}{delay 5} He's nothing but a vulgar bastard. In any case, it's clear as day that he has a ulterior motive." 
+
+
+[000003d5] 10: 
+[000003d6]  b: playVoice L1D3E020
+[000003e0] 10: 
+[000003e1] 19: 
+[000003e2] ff: text 29
+{textColor 1 5}【Haruka】 "We trust each other. You wouldn't understand..." 
+
+
+[000003e5] 10: 
+[000003e6]  b: playVoice L1D3E021
+[000003f0] 10: 
+[000003f1] 19: 
+[000003f2] ff: text 2a
+{textColor 0 0}【Okuhiko】 "You're the one who doesn't understand about Ishihara." 
+
+
+[000003f5] 10: 
+[000003f6]  b: playVoice L1D3E022
+[00000400] 10: 
+[00000401] 19: 
+[00000402] ff: text 2b
+{textColor 1 5}【Haruka】 "What's going on between me and Makoto is none of your concern." 
+
+
+[00000405] 10: 
+[00000406]  b: playVoice L1D3E023
+[00000410] 10: 
+[00000411] 19: 
+[00000412] ff: text 2c
+{textColor 0 0}【Okuhiko】 "You're wrong! It does concern me! Haruka-chan, I...!" 
+{textColor 0 2}Just then, Haruka shoves him aside as she tries to walk away. 
+{textColor 0 2}Before she can, Okuhiko turns around and quickly grabs her by the arm. 
+{textColor 0 2}At that time, their eyes lock onto me. A blush rapidly spreads across Haruka's face. 
+{textColor 0 2}Okuhiko loudly clicks his tongue, and lets go of Haruka's arm. 
+
+
+[00000415] 10: 
+[00000416] 10: bgload 00000000 BG03E 0 1
+[00000423] 10: 
+[00000424] 11: fgload 0 00000000 HA01ABD 1 3
+[00000434] 10: 
+[00000435] 19: 
+[00000436] ff: text 2d
+{textColor 0 2}When I step onto the terrace, Haruka runs right towards me. 
+{textColor 0 0}【Makoto】 "Wow, you sure do have a way with the ladies, Almighty Okuhiko-kun." 
+
+
+[00000439] 10: 
+[0000043a] 12: removeFG 0 3
+[00000441] 10: 
+[00000442] 11: fgload 0 00000000 OK05AAD 1 3
+[00000452] 10: 
+[00000453]  b: playVoice L1D3E024
+[0000045d] 10: 
+[0000045e] 19: 
+[0000045f] ff: text 2e
+{textColor 0 0}【Okuhiko】 "Shut up. You don't have the right to say anything." 
+{textColor 0 0}【Makoto】 "Whatever. Haruka, let's go." 
+
+
+[00000462] 10: 
+[00000463] 12: removeFG 0 3
+[0000046a] 10: 
+[0000046b] 11: fgload 0 00000000 HA01ABD 0 3
+[0000047b] 10: 
+[0000047c]  b: playVoice L1D3E025
+[00000486] 10: 
+[00000487] 19: 
+[00000488] ff: text 2f
+{textColor 1 5}【Haruka】 "Wait. Tell him straight." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[0000048b] 10: 
+[0000048c]  b: playVoice L1D3E026
+[00000496] 10: 
+[00000497] 19: 
+[00000498] ff: text 30
+{textColor 1 5}【Haruka】 "About me and you. About how we trust each other, no matter what happens... isn't that right?" 
+{textColor 0 0}【Makoto】 "Wait a min-" 
+
+
+[0000049b] 10: 
+[0000049c]  b: playVoice L1D3E027
+[000004a6] 10: 
+[000004a7] 19: 
+[000004a8] ff: text 31
+{textColor 1 5}【Haruka】 "Tell Okuhiko. Tell him it doesn't concern him. Tell him we're the only ones who understand." 
+{textColor 0 2}Hey, what's all this about? 
+
+
+[000004ab] 10: 
+[000004ac]  b: playVoice L1D3E028
+[000004b6] 10: 
+[000004b7] 19: 
+[000004b8] ff: text 32
+{textColor 1 5}【Haruka】 "Why aren't you saying anything?" 
+{textColor 0 2}Is she trying to confirm my feelings for her? 
+{textColor 0 2}Up until earlier, wasn't she was the one who said she didn't understand that!? In my silence, Haruka delivers the final blow. 
+
+
+[000004bb] 10: 
+[000004bc]  b: playVoice L1D3E029
+[000004c6] 10: 
+[000004c7] 19: 
+[000004c8] ff: text 33
+{textColor 1 5}【Haruka】 "Are you saying we can't trust each other?" 
+{textColor 0 0}【Makoto】 "That's not it, that's not..." 
+
+
+[000004cb] 10: 
+[000004cc]  b: playVoice L1D3E030
+[000004d6] 10: 
+[000004d7] 19: 
+[000004d8] ff: text 34
+{textColor 1 5}【Haruka】 "So you don't think anything of me at all{delay 5}{delay 5}... even though you gave me a kiss..." 
+
+
+[000004db] 10: 
+[000004dc]  7: stopBGM
+[000004dd] 10: 
+[000004de] 19: 
+[000004df] ff: text 35
+{textColor 0 0}【Makoto】 "...!" 
+
+
+[000004e2] 10: 
+[000004e3] 12: removeFG 0 3
+[000004ea] 10: 
+[000004eb] 11: fgload 0 00000000 OK04AAD 1 3
+[000004fb] 10: 
+[000004fc]  b: playVoice L1D3E031
+[00000506] 10: 
+[00000507] 19: 
+[00000508] ff: text 36
+{textColor 0 0}【Okuhiko】 "Y-You kissed her... Ishihara, you son of a bitch!" 
+{textColor 0 0}【Makoto】 "Listen, Haruka. It wasn't like that at all earlier." 
+
+
+[0000050b] 10: 
+[0000050c]  b: playVoice L1D3E032
+[00000516] 10: 
+[00000517] 19: 
+[00000518] ff: text 37
+{textColor 1 5}【Haruka】 "What do... you mean?" 
+{textColor 0 0}【Makoto】 "It wasn't about how I felt about you. It was because..." 
+
+[0000051b] ff: text 38
+{textColor 0 2}{choiceOpt 1 -> "Because you told me to kiss you..." }{choiceOpt 2 -> "Because..." }
+
+[0000051e] 10: 
+[0000051f]  3: choice v_a1_08 00 00
+[00000524]  0: 
+[00000525]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 0000057c (0009)
+[00000533] fe: varop VAR_(28_0a)_a1_00 (14) -= (00) 3
+[0000053e] 10: 
+[0000053f] 19: 
+[00000540] ff: text 39
+{textColor 0 0}【Makoto】 "Because you told me to ki..." 
+{textColor 0 2}... Wh-What the hell am I saying? 
+{textColor 0 2}I can't understand why I'm saying this. 
+
+
+[00000543] 10: 
+[00000544] 11: fgload 0 00000000 OK04ABD 1 3
+[00000554]  0: 
+[00000555]  5: delay 15
+[00000559] 10: 
+[0000055a] 15: removeAllFG 0
+[0000055e] 10: 
+[0000055f]  8: playSFX SE071 1
+[00000569] 10: 
+[0000056a]  1: cmd1 1
+[0000056e] 10: 
+[0000056f]  1: cmd1 4
+[00000573] 10: 
+[00000574] 19: 
+[00000575] ff: text 3a
+{textColor 0 2}Fortunately, I am interrupted by Okuhiko suddenly punching me. He hits me, and I fall to my knees. 
+{textColor 0 2}I quickly look towards Haruka, and although her face is as expressionless as ever, there's a hint of sorrow in her eyes. 
+{textColor 0 2}She probably heard what I said. 
+
+
+[00000578]  0: 
+[00000579]  7: goto7 000005c5 (000a)
+[0000057c]  0: 
+[0000057d]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 000005c5 (000b)
+[0000058b] 10: 
+[0000058c] 19: 
+[0000058d] ff: text 3b
+{textColor 0 2}Because... 
+
+
+[00000590] 10: 
+[00000591] 11: fgload 0 00000000 OK04ABD 1 3
+[000005a1]  0: 
+[000005a2]  5: delay 15
+[000005a6] 10: 
+[000005a7] 15: removeAllFG 0
+[000005ab] 10: 
+[000005ac]  1: cmd1 1
+[000005b0] 10: 
+[000005b1]  8: playSFX SE071 1
+[000005bb] 10: 
+[000005bc]  1: cmd1 4
+[000005c0] 10: 
+[000005c1] 19: 
+[000005c2] ff: text 3c
+{textColor 0 2}At that instant. Okuhiko punches me right in my face, making me fall to my knees. 
+
+
+[000005c5] 10: 
+[000005c6] 11: fgload 0 00000000 OK04AAD 1 3
+[000005d6] 10: 
+[000005d7]  b: playVoice L1D3E033
+[000005e1] 10: 
+[000005e2] 19: 
+[000005e3] ff: text 3d
+{textColor 0 0}【Okuhiko】 "How could you do that to Haruka-chan...! She doesn't belong to you, dammit!" 
+{textColor 0 2}I spit out saliva and stand up. Okuhiko has seized Haruka's shoulders. 
+
+
+[000005e6] 10: 
+[000005e7]  b: playVoice L1D3E034
+[000005f1] 10: 
+[000005f2] 19: 
+[000005f3] ff: text 3e
+{textColor 0 0}【Okuhiko】 "Haruka-chan, what's so good about this irresponsible bastard?" 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[000005f6] 10: 
+[000005f7]  b: playVoice L1D3E035
+[00000601] 10: 
+[00000602] 19: 
+[00000603] ff: text 3f
+{textColor 0 0}【Okuhiko】 "I'm different. I'm beyond a level of trust with you. I love you...!" 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[00000606] 10: 
+[00000607]  b: playVoice L1D3E036
+[00000611] 10: 
+[00000612] 19: 
+[00000613] ff: text 40
+{textColor 0 0}【Okuhiko】 "You don't understand? Look at me! The man who loves you is right here!" 
+{textColor 0 2}Haruka turns her head away from Okuhiko, and looks at me. Her expression darkens. 
+
+
+[00000616] 10: 
+[00000617] 12: removeFG 0 3
+[0000061e] 10: 
+[0000061f] 11: fgload 0 00000000 HA12ABD 0 3
+[0000062f] 10: 
+[00000630]  b: playVoice L1D3E037
+[0000063a] 10: 
+[0000063b] 19: 
+[0000063c] ff: text 41
+{textColor 1 5}【Haruka】 "I...{delay 5}{delay 5} don't understand...{delay 5}{delay 5} because...{delay 5}{delay 5} I have no heart..." 
+
+
+[0000063f] 10: 
+[00000640]  b: playVoice L1D3E038
+[0000064a] 10: 
+[0000064b] 19: 
+[0000064c] ff: text 42
+{textColor 0 0}【Okuhiko】 "Haruka-chan...!" 
+{textColor 0 0}【Makoto】 "Stop it, Okuhiko! Haruka is starting to find her 'heart'!" 
+
+
+[0000064f] 10: 
+[00000650]  b: playVoice L1D3E039
+[0000065a] 10: 
+[0000065b] 19: 
+[0000065c] ff: text 43
+{textColor 0 0}【Okuhiko】 "Stay out of this. You don't even love her." 
+{textColor 0 0}【Makoto】 "Y-You've already got plenty of other girls, you know... What about Saki?  Why are you constantly hitting on her if you don't even like her?!" 
+
+
+[0000065f] 10: 
+[00000660]  b: playVoice L1D3E040
+[0000066a] 10: 
+[0000066b] 19: 
+[0000066c] ff: text 44
+{textColor 0 0}【Okuhiko】 "You're just trying to take advantage of Haruka-chan's good will." 
+{textColor 0 0}【Makoto】 "Don't screw with me! You've just been jealous ever since Haruka and I made our promise, right?  That's why you chose Saki! Just what do you think Saki is?" 
+
+
+[0000066f] 10: 
+[00000670]  b: playVoice L1D3E041
+[0000067a] 10: 
+[0000067b] 19: 
+[0000067c] ff: text 45
+{textColor 1 5}【Haruka】 "Saki...{delay 5}{delay 5} Not Saki..." 
+{textColor 0 0}【Makoto】 "...!?" 
+
+
+[0000067f] 10: 
+[00000680]  b: playVoice L1D3E042
+[0000068a] 10: 
+[0000068b] 19: 
+[0000068c] ff: text 46
+{textColor 1 5}【Haruka】 "She's...{delay 5}{delay 5} always...{delay 5}{delay 5} stealing...{delay 5}{delay 5} from me..." 
+
+
+[0000068f] 10: 
+[00000690]  b: playVoice L1D3E043
+[0000069a] 10: 
+[0000069b] 19: 
+[0000069c] ff: text 47
+{textColor 0 0}【Okuhiko】 "It's all right, Haruka-chan.{delay 5}{delay 5} Saki-chan has nothing to do with this. I don't care about her. I couldn't give a shit about her...!" 
+
+
+[0000069f] 10: 
+[000006a0]  8: playSFX SE098 1
+[000006aa] 10: 
+[000006ab] 15: removeAllFG 0
+[000006af] 10: 
+[000006b0] 19: 
+[000006b1] ff: text 48
+{textColor 0 2}A dry sound echoes. 
+
+
+[000006b4] 10: 
+[000006b5] 11: fgload 0 00000000 SA08AAD 1 3
+[000006c5] 10: 
+[000006c6] 19: 
+[000006c7] ff: text 49
+{textColor 0 2}Taken aback, we all turn towards the sound. Saki is standing frozen by the front door, carrying her basket. 
+{textColor 0 2}By her feet are tennis rackets, scattered about. 
+
+
+[000006ca] 10: 
+[000006cb]  9: stopSFX
+[000006cc] 10: 
+[000006cd]  6: playBGM 13
+[000006d1] 10: 
+[000006d2]  b: playVoice L1D3E044
+[000006dc] 10: 
+[000006dd] 19: 
+[000006de] ff: text 4a
+{textColor 1 6}【Saki】 "I...{delay 5}{delay 5} I'll be going now...{delay 5}{delay 5} Farewell." 
+
+
+[000006e1] 10: 
+[000006e2]  b: playVoice L1D3E045
+[000006ec] 10: 
+[000006ed] 19: 
+[000006ee] ff: text 4b
+{textColor 0 0}【Okuhiko】 "Y-You're wrong, Saki-chan. There's a reason for...!" 
+
+
+[000006f1] 10: 
+[000006f2] 12: removeFG 0 3
+[000006f9] 10: 
+[000006fa] 19: 
+[000006fb] ff: text 4c
+{textColor 0 2}Saki begins to run away, and Okuhiko rushes after her. 
+{textColor 0 2}She violently slaps Okuhiko's extended hand away. I frantically jump out of the front door. 
+{textColor 0 2}At that time, Yuka and Kurumi return while laughing about something. 
+
+
+[000006fe] 10: 
+[000006ff] 10: bgload 00000000 BG00E 0 3
+[0000070c] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 17
+[00000718] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 52
+[00000724] 10: 
+[00000725] 17: showClock
+[00000726] 10: 
+[00000727]  8: playSFX SE099 1
+[00000731] 10: 
+[00000732] 19: 
+[00000733] ff: text 4d
+{textColor 0 2}Saki throws the basket onto the staircase. She then vexingly crushes it with her foot. 
+
+
+[00000736] 10: 
+[00000737]  8: playSFX SE100 1
+[00000741] 10: 
+[00000742]  a: waitForSFX
+[00000743] 10: 
+[00000744]  8: playSFX SE100 1
+[0000074e] 10: 
+[0000074f]  a: waitForSFX
+[00000750] 10: 
+[00000751]  8: playSFX SE100 1
+[0000075b] 10: 
+[0000075c] 19: 
+[0000075d] ff: text 4e
+{textColor 0 2}She crushes it! The sound of wood snapping is heard. The basket has now broken apart. Plastic tableware scatters everywhere. 
+
+
+[00000760] 10: 
+[00000761]  9: stopSFX
+[00000762] 10: 
+[00000763] 11: fgload 0 00000000 KU11BAD 2 3
+[00000773] 10: 
+[00000774]  b: playVoice L1D3E046
+[0000077e] 10: 
+[0000077f] 19: 
+[00000780] ff: text 4f
+{textColor 1 7}【Kurumi】 "Saki-san...!" 
+
+
+[00000783] 10: 
+[00000784] 11: fgload 1 00000000 YU11AAD 0 3
+[00000794] 10: 
+[00000795]  b: playVoice L1D3E047
+[0000079f] 10: 
+[000007a0] 19: 
+[000007a1] ff: text 50
+{textColor 1 4}【Yuka】 "Wh-What's wrong!?" 
+
+
+[000007a4] 10: 
+[000007a5]  8: playSFX SE042 1
+[000007af] 10: 
+[000007b0] 15: removeAllFG 3
+[000007b4] 10: 
+[000007b5]  9: stopSFX
+[000007b6] 10: 
+[000007b7] 19: 
+[000007b8] ff: text 51
+{textColor 0 2}Yuka and Kurumi rush over to us, their expressions completely changed. 
+{textColor 0 2}Saki won't calm down... 
+{textColor 0 2}Shit... What should I do? 
+
+[000007bb] ff: text 52
+{textColor 0 2}{choiceOpt 1 -> Hold her down with all my might. }{choiceOpt 2 -> Persuade her to calm down. }
+
+[000007be] 10: 
+[000007bf]  3: choice v_a1_08 00 00
+[000007c4]  0: 
+[000007c5]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000840 (000c)
+[000007d3] 10: 
+[000007d4] 19: 
+[000007d5] ff: text 53
+{textColor 0 2}I restrain Saki's body with a full nelson. Despite this, she still tries to crush each of the tableware one by one. 
+{textColor 0 0}【Makoto】 "Saki! Dammit, calm down!!" 
+
+
+[000007d8] 10: 
+[000007d9] 11: fgload 0 00000000 SA04ABD 1 3
+[000007e9] 10: 
+[000007ea]  b: playVoice L1D3E048
+[000007f4] 10: 
+[000007f5] 19: 
+[000007f6] ff: text 54
+{textColor 1 6}【Saki】 "Don't touch me!" 
+
+
+[000007f9] 10: 
+[000007fa]  8: playSFX SE072 1
+[00000804] 10: 
+[00000805] 12: removeFG 0 0
+[0000080c] 10: 
+[0000080d]  1: cmd1 7
+[00000811] 10: 
+[00000812]  1: cmd1 5
+[00000816] 10: 
+[00000817] 19: 
+[00000818] ff: text 55
+{textColor 0 2}Saki sends me flying with tremendous strength. In a daze, I shrink back to the front door. 
+{textColor 0 2}Saki glares at all of us. Alarmed, Yuka and Kurumi cling to each other. 
+{textColor 0 2}Okuhiko is trembling pathetically. As soon as I open my mouth, Saki explodes. 
+
+
+[0000081b] 10: 
+[0000081c] 11: fgload 0 00000000 SA04AAD 1 3
+[0000082c] 10: 
+[0000082d]  b: playVoice L1D3E049
+[00000837] 10: 
+[00000838] 19: 
+[00000839] ff: text 56
+{textColor 1 6}【Saki】 "Don't talk until I say so!" 
+
+
+[0000083c]  0: 
+[0000083d]  7: goto7 00000900 (000d)
+[00000840]  0: 
+[00000841]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 00000900 (000e)
+[0000084f] fe: varop VAR_(28_0a)_a1_01 (14) -= (00) 3
+[0000085a] 10: 
+[0000085b] 19: 
+[0000085c] ff: text 57
+{textColor 0 0}【Makoto】 "Saki, calm down! Getting angry and going on a rampage won't accomplish anything!" 
+
+
+[0000085f] 10: 
+[00000860] 11: fgload 0 00000000 SA04AAD 1 3
+[00000870] 10: 
+[00000871]  b: playVoice S_040_01
+[0000087b] 10: 
+[0000087c] 19: 
+[0000087d] ff: text 58
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 2}Saki looks at me. The anger in her eyes is still blazing like an inferno. 
+{textColor 0 2}... Holy shit... Saki's face all boiled up in rage is truly terrifying. 
+{textColor 0 2}It's because of her strong feelings towards Okuhiko...  {textColor 0 2}It's obvious that she hates him for the heartbreak he just put her through. 
+{textColor 0 0}【Makoto】 "Saki...{delay 5}{delay 5} san. Please...{delay 5}{delay 5}{delay 5} calm down for now." 
+{textColor 0 0}【Makoto】 "Come on, this might just be a huge misunderstanding on everyone's part. Maybe if we talk about it together, we can sort this out and say,{delay 5}{delay 5} 'Oh, so that's all it was' later on." 
+
+
+[00000880] 10: 
+[00000881] 11: fgload 0 00000000 SA06AAD 1 3
+[00000891] 10: 
+[00000892]  b: playVoice L1D3E050
+[0000089c] 10: 
+[0000089d] 19: 
+[0000089e] ff: text 59
+{textColor 1 6}【Saki】 "... Talk about this...{delay 5}{delay 5} together." 
+{textColor 0 0}【Makoto】 "Yes, that's good. Let's do it.{delay 5}{delay 5}{delay 5} Right,{delay 5}{delay 5} Saki..." 
+
+
+[000008a1] 10: 
+[000008a2] 12: removeFG 0 3
+[000008a9] 10: 
+[000008aa] 11: fgload 0 00000000 SA06ABD 1 3
+[000008ba] 10: 
+[000008bb] 19: 
+[000008bc] ff: text 5a
+{textColor 0 2}I place a hand on Saki's shoulder... In that instant, Saki violently flings my hand off of her. 
+
+
+[000008bf] 10: 
+[000008c0] 11: fgload 0 00000000 SA04ABD 1 3
+[000008d0] 10: 
+[000008d1]  b: playVoice L1D3E051
+[000008db] 10: 
+[000008dc] 19: 
+[000008dd] ff: text 5b
+{textColor 1 6}【Saki】 "Don't touch me like I'm your friend!!" 
+{textColor 0 2}Saki's expression is even angrier than before. Did I just add fuel to the fire? 
+
+
+[000008e0] 10: 
+[000008e1]  b: playVoice L1D3E052
+[000008eb] 10: 
+[000008ec] 19: 
+[000008ed] ff: text 5c
+{textColor 1 6}【Saki】 "Hmph... Talk about it together? And just where the hell would we do that? I'm fed up of playing buddy-buddy with all of you!!" 
+{textColor 0 2}I try to open my mouth to see if I can fix the situation, but Saki doesn't even let me do that. 
+
+
+[000008f0] 10: 
+[000008f1]  b: playVoice L1D3E053
+[000008fb] 10: 
+[000008fc] 19: 
+[000008fd] ff: text 5d
+{textColor 1 6}【Saki】 "Don't talk until I say so!" 
+
+
+[00000900] 10: 
+[00000901] 12: removeFG 0 3
+[00000908] 10: 
+[00000909] 11: fgload 1 00000000 YU11AAD 2 3
+[00000919] 10: 
+[0000091a]  b: playVoice L1D3E054
+[00000924] 10: 
+[00000925] 19: 
+[00000926] ff: text 5e
+{textColor 1 4}【Yuka】 "What are you saying, Saki!?" 
+
+
+[00000929] 10: 
+[0000092a] 11: fgload 0 00000000 SA04AAD 0 3
+[0000093a] 10: 
+[0000093b]  b: playVoice L1D3E055
+[00000945] 10: 
+[00000946] 19: 
+[00000947] ff: text 5f
+{textColor 1 6}【Saki】 "Shut up, Yuka! Why don't you just go draw your little pictures like you did back then...!?" 
+
+
+[0000094a] 10: 
+[0000094b] 11: fgload 1 00000000 YU08AAD 2 3
+[0000095b] 10: 
+[0000095c]  b: playVoice L1D3E056
+[00000966] 10: 
+[00000967] 19: 
+[00000968] ff: text 60
+{textColor 1 4}【Yuka】 "... Saki!" 
+
+
+[0000096b] 10: 
+[0000096c] 12: removeFG 1 3
+[00000973] 10: 
+[00000974] 13: moveFG 0 2
+[0000097b] 10: 
+[0000097c] 11: fgload 0 00000000 SA06AAD 2 3
+[0000098c] 10: 
+[0000098d] 11: fgload 1 00000000 OK08AAD 0 3
+[0000099d] 10: 
+[0000099e] 11: fgload 1 00000000 OK11AAD 0 3
+[000009ae] 10: 
+[000009af] 19: 
+[000009b0] ff: text 61
+{textColor 0 0}【Makoto】 "...!?" 
+{textColor 0 2}Saki glares at Okuhiko, whose shoulders shoot up with a start. 
+{textColor 0 2}Kurumi runs over to Saki and clings to her. 
+
+
+[000009b3] 10: 
+[000009b4] 15: removeAllFG 3
+[000009b8] 10: 
+[000009b9] 11: fgload 0 00000000 KU09BAD 1 3
+[000009c9] 10: 
+[000009ca]  b: playVoice L1D3E057
+[000009d4] 10: 
+[000009d5] 19: 
+[000009d6] ff: text 62
+{textColor 1 7}【Kurumi】 "Saki-san, stop! No... Kurumi doesn't want to see you like this...!" 
+
+
+[000009d9] 10: 
+[000009da] 12: removeFG 0 3
+[000009e1] 10: 
+[000009e2] 11: fgload 0 00000000 SA04AAD 1 3
+[000009f2] 10: 
+[000009f3]  b: playVoice L1D3E058
+[000009fd] 10: 
+[000009fe] 19: 
+[000009ff] ff: text 63
+{textColor 1 6}【Saki】 "Don't touch me!" 
+
+
+[00000a02] 10: 
+[00000a03] 12: removeFG 0 0
+[00000a0a] 10: 
+[00000a0b]  8: playSFX SE072 1
+[00000a15] 10: 
+[00000a16]  a: waitForSFX
+[00000a17] 10: 
+[00000a18]  8: playSFX SE065 1
+[00000a22] 10: 
+[00000a23] 19: 
+[00000a24] ff: text 64
+{textColor 0 2}In the next instant, Saki violently thrusts Kurumi away. 
+{textColor 0 2}She throws Kurumi right onto the stairs! Kurumi gasps loudly, and stares dumbfoundedly at Saki. 
+
+[00000a27] ff: text 65
+{textColor 0 2}{choiceOpt 1 -> "Saki...! How could you...!?" }{choiceOpt 2 -> Run over to Kurumi. }
+
+[00000a2a] 10: 
+[00000a2b]  3: choice v_a1_08 00 00
+[00000a30]  0: 
+[00000a31]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000a59 (000f)
+[00000a3f] 10: 
+[00000a40] 11: fgload 0 00000000 SA10AAD 1 3
+[00000a50] 10: 
+[00000a51] 19: 
+[00000a52] ff: text 66
+{textColor 0 0}【Makoto】 "Saki...! How could you...!?" 
+{textColor 1 6}【Saki】 "..." 
+{textColor 0 2}Saki's expression warps into shock. I think she probably realizes what she had just done. 
+
+
+[00000a55]  0: 
+[00000a56]  7: goto7 00000a89 (0010)
+[00000a59]  0: 
+[00000a5a]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 00000a89 (0011)
+[00000a68] fe: varop VAR_(28_0a)_a1_02 (14) += (00) 2
+[00000a73] 10: 
+[00000a74] 11: fgload 0 00000000 SA10AAD 1 3
+[00000a84] 10: 
+[00000a85] 19: 
+[00000a86] ff: text 67
+{textColor 0 0}【Makoto】 "Kurumi-!" 
+{textColor 0 2}I run over to Kurumi. Saki is in a daze, standing stock still. 
+
+
+[00000a89] 10: 
+[00000a8a] 12: removeFG 0 3
+[00000a91] 10: 
+[00000a92]  7: stopBGM
+[00000a93] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 17
+[00000a9f] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 59
+[00000aab] 10: 
+[00000aac] 17: showClock
+[00000aad] 10: 
+[00000aae] 11: fgload 0 00000000 HA01AAD 1 3
+[00000abe] 10: 
+[00000abf] 19: 
+[00000ac0] ff: text 68
+{textColor 0 2}Just then, Haruka comes rushing down the terrace, and quickly helps Kurumi up. 
+
+
+[00000ac3] 10: 
+[00000ac4] 12: removeFG 0 3
+[00000acb] 10: 
+[00000acc] 19: 
+[00000acd] ff: text 69
+{textColor 0 2}The slender Haruka takes her hands and gently strokes Kurumi's back. 
+
+
+[00000ad0] 10: 
+[00000ad1]  6: playBGM 2
+[00000ad5] 10: 
+[00000ad6]  b: playVoice L1D3E059
+[00000ae0] 10: 
+[00000ae1] 19: 
+[00000ae2] ff: text 6a
+{textColor 1 5}【Haruka】 "Are you all right?" 
+{textColor 0 2}*Hic*.  Kurumi begins to sob heavily. 
+{textColor 0 2}Haruka glares sharply at Saki. 
+
+
+[00000ae5] 10: 
+[00000ae6] 11: fgload 0 00000000 HA05AAD 1 3
+[00000af6] 10: 
+[00000af7] 19: 
+[00000af8] ff: text 6b
+{textColor 0 2}She stands up. She starts to get closer and closer to Saki. 
+{textColor 0 2}I automatically hold my breath. 
+
+
+[00000afb] 10: 
+[00000afc] 13: moveFG 0 2
+[00000b03] 10: 
+[00000b04] 11: fgload 1 00000000 SA08AAD 0 3
+[00000b14] 10: 
+[00000b15]  b: playVoice L1D3E060
+[00000b1f] 10: 
+[00000b20] 19: 
+[00000b21] ff: text 6c
+{textColor 1 6}【Saki】 "Stay away from me." 
+{textColor 1 5}【Haruka】 "..." 
+
+
+[00000b24] 10: 
+[00000b25] 11: fgload 1 00000000 SA04AAD 0 0
+[00000b35] 10: 
+[00000b36]  b: playVoice L1D3E061
+[00000b40] 10: 
+[00000b41] 19: 
+[00000b42] ff: text 6d
+{textColor 1 6}【Saki】 "What is it?{delay 5} Get the hell away from me! I have no business with you, you damn clone...!" 
+
+
+[00000b45] 10: 
+[00000b46]  7: stopBGM
+[00000b47] 10: 
+[00000b48] 11: fgload 0 00000000 HA01AAD 2 0
+[00000b58] 10: 
+[00000b59] 19: 
+[00000b5a] ff: text 6e
+{textColor 1 5}【Haruka】 "――!" 
+{textColor 0 0}【Makoto】 "――!" 
+
+
+[00000b5d] 10: 
+[00000b5e]  b: playVoice L1D3E063
+[00000b68] 10: 
+[00000b69] 19: 
+[00000b6a] ff: text 6f
+{textColor 0 0}【Okuhiko】 "――Ah..." 
+
+
+[00000b6d] 10: 
+[00000b6e]  b: playVoice L1D3E064
+[00000b78] 10: 
+[00000b79] 19: 
+[00000b7a] ff: text 70
+{textColor 1 4}【Yuka】 "――Huh?" 
+
+
+[00000b7d] 10: 
+[00000b7e]  b: playVoice L1D3E065
+[00000b88] 10: 
+[00000b89] 19: 
+[00000b8a] ff: text 71
+{textColor 1 7}【Kurumi】 "――Clone?" 
+
+
+[00000b8d] 10: 
+[00000b8e]  6: playBGM 13
+[00000b92] 10: 
+[00000b93] 19: 
+[00000b94] ff: text 72
+{textColor 0 2}In that instant, it feels like the world has stopped. 
+{textColor 0 2}――She says Haruka's a clone. 
+{textColor 0 2}An existence created by using part of some person's cells to artificially fertilize an egg. 
+{textColor 0 2}Duplication, so to speak. 
+{textColor 0 2}Copies... 
+{textColor 0 2}Haruka's a clone? 
+{textColor 0 2}I recall memories of Haruka from two days ago. 
+{textColor 0 2}The Haruka who watched the water dripping from the faucet. 
+
+
+[00000b97]  0: 
+[00000b98]  a: condJump 00 VAR_(28_1e)_a1_11 (28) != (15) (80)->0 (15) (00)  * 00000bab (0013)
+[00000ba6] 10: 
+[00000ba7] 19: 
+[00000ba8] ff: text 73
+{textColor 0 2}The Haruka who drenched her feet in the breaking waves on the beach. 
+
+
+[00000bab]  0: 
+[00000bac]  a: condJump 00 VAR_(28_1e)_a1_04 (28) != (15) (82)->2 (15) (00)  * 00000bbf (0015)
+[00000bba] 10: 
+[00000bbb] 19: 
+[00000bbc] ff: text 74
+{textColor 0 2}Haruka's sweating face as she pedaled the bike. 
+
+
+[00000bbf] 10: 
+[00000bc0] 19: 
+[00000bc1] ff: text 75
+{textColor 0 2}The enthusiastic Haruka who forgot herself as much as she could when she went fishing with me. 
+{textColor 0 2}The Haruka who asked me to kiss her. ――That face. That blushing face. 
+{textColor 0 2}That same Haruka is a clone? 
+{textColor 0 2}I look at Haruka, her expression unwavered, as if she's accepting it... 
+{textColor 0 2}Me and the others look at Saki with dubious eyes. 
+
+
+[00000bc4] 10: 
+[00000bc5] 11: fgload 1 00000000 SA10AAD 0 3
+[00000bd5] 10: 
+[00000bd6]  b: playVoice L1D3E066
+[00000be0] 10: 
+[00000be1] 19: 
+[00000be2] ff: text 76
+{textColor 1 6}【Saki】 "I'm not lying. I know about it. I know...!" 
+
+
+[00000be5] 10: 
+[00000be6] 12: removeFG 0 3
+[00000bed] 10: 
+[00000bee] 11: fgload 0 00000000 OK06AAD 2 3
+[00000bfe] 10: 
+[00000bff]  b: playVoice L1D3E067
+[00000c09] 10: 
+[00000c0a] 19: 
+[00000c0b] ff: text 77
+{textColor 0 0}【Okuhiko】 "... I can't believe it." 
+
+
+[00000c0e] 10: 
+[00000c0f]  b: playVoice L1D3E068
+[00000c19] 10: 
+[00000c1a] 19: 
+[00000c1b] ff: text 78
+{textColor 1 6}【Saki】 "Why don't you look at her face? It's practically written all over it." 
+
+
+[00000c1e] 10: 
+[00000c1f] 11: fgload 0 00000000 OK11AAD 2 3
+[00000c2f] 10: 
+[00000c30]  b: playVoice L1D3E069
+[00000c3a] 10: 
+[00000c3b] 19: 
+[00000c3c] ff: text 79
+{textColor 0 0}【Okuhiko】 "Ugh..." 
+
+
+[00000c3f] 10: 
+[00000c40] 15: removeAllFG 3
+[00000c44] 10: 
+[00000c45] 11: fgload 0 00000000 HA01AAD 1 3
+[00000c55] 10: 
+[00000c56] 19: 
+[00000c57] ff: text 7a
+{textColor 1 5}【Haruka】 "..." 
+
+
+[00000c5a] 10: 
+[00000c5b] 12: removeFG 0 3
+[00000c62] 10: 
+[00000c63] 14: multifgload2 00000000 SA10AAD 0 00000000 OK08AAD 3
+[00000c76] 10: 
+[00000c77]  b: playVoice L1D3E070
+[00000c81] 10: 
+[00000c82] 19: 
+[00000c83] ff: text 7b
+{textColor 1 6}【Saki】 "Do you understand, Okuhiko-kun? This is the true nature of that girl you claim to love." 
+
+
+[00000c86] 10: 
+[00000c87]  b: playVoice L1D3E071
+[00000c91] 10: 
+[00000c92] 19: 
+[00000c93] ff: text 7c
+{textColor 0 0}【Okuhiko】 "Suppose Haruka-chan is a clone... So what? Times have changed. Everyone knows that there's currently about 1-2 clones for every 1000 human grade school kids." 
+
+
+[00000c96] 10: 
+[00000c97]  b: playVoice L1D3E072
+[00000ca1] 10: 
+[00000ca2] 19: 
+[00000ca3] ff: text 7d
+{textColor 1 4}【Yuka】 "Also, nine years ago, a law was passed that legalized the fertilization of clones." 
+
+
+[00000ca6] 10: 
+[00000ca7]  b: playVoice L1D3E073
+[00000cb1] 10: 
+[00000cb2] 19: 
+[00000cb3] ff: text 7e
+{textColor 0 0}【Okuhiko】 "That's right. Saki-chan, it'd be best not to say such trite things. This is something our generation sees as normal, not as something to be scorned." 
+
+
+[00000cb6] 10: 
+[00000cb7] 15: removeAllFG 3
+[00000cbb] 10: 
+[00000cbc] 19: 
+[00000cbd] ff: text 7f
+{textColor 0 2}That's right. The existence of clones is legal. 
+{textColor 0 2}In the past, those who created clones were accused as having committed a grave sin, and the clones themselves were also persecuted by humans... 
+{textColor 0 2}――But why?  {textColor 0 2}Okuhiko's and Yuka's defense sounded a bit off. 
+{textColor 0 2}It sounded empty. Forced. 
+{textColor 0 2}It sounded like Haruka was the first clone they'd actually known was a clone, so they just pulled whatever facts they had on hand to create a so-called "defense". 
+{textColor 0 2}Though... I'm no better. She's the first person I've known was a clone as well. 
+{textColor 0 2}Saki's whole body shakes as she opens her mouth. 
+
+
+[00000cc0] 10: 
+[00000cc1] 11: fgload 0 00000000 SA08AAD 1 3
+[00000cd1] 10: 
+[00000cd2]  b: playVoice L1D3E074
+[00000cdc] 10: 
+[00000cdd] 19: 
+[00000cde] ff: text 80
+{textColor 1 6}【Saki】 "Splendid... What a splendid group of companions this seminar has!" 
+
+
+[00000ce1] 10: 
+[00000ce2] 12: removeFG 0 3
+[00000ce9] 10: 
+[00000cea] 11: fgload 0 00000000 YU11AAD 1 3
+[00000cfa] 10: 
+[00000cfb]  b: playVoice L1D3E075
+[00000d05] 10: 
+[00000d06] 19: 
+[00000d07] ff: text 81
+{textColor 1 4}【Yuka】 "Ah, wait, Saki...!" 
+
+
+[00000d0a] 10: 
+[00000d0b] 12: removeFG 0 3
+[00000d12] 10: 
+[00000d13] 19: 
+[00000d14] ff: text 82
+{textColor 0 2}When she sees Saki begin to run, Yuka chases after her. They head down the road towards the summer house. 
+
+
+[00000d17] 10: 
+[00000d18]  7: stopBGM
+[00000d19] 10: 
+[00000d1a] 19: 
+[00000d1b] ff: text 83
+{textColor 0 2}――I can't see Yuka anymore. She runs past us faster than a raging storm, leaving us stranded. 
+{textColor 0 2}An awkward atmosphere hangs in the air. 
+{textColor 0 2}Though Okuhiko had said clones were not unusual in our society, he still looked rather shocked. 
+{textColor 0 2}The girl he liked is a clone. It's obviously not something familiar to him, so of course he's bothered by it. 
+{textColor 0 2}Kurumi continues to sob heavily. She probably still doesn't comprehend what had just happened. 
+{textColor 0 2}I pick up the pieces of the broken basket. 
+{textColor 0 2}I suddenly feel someone glancing at me, so I raise my head to find Haruka staring straight at me. 
+
+
+[00000d1e] 10: 
+[00000d1f] 11: fgload 0 00000000 HA01AAD 1 3
+[00000d2f] 10: 
+[00000d30] 19: 
+[00000d31] ff: text 84
+{textColor 0 0}【Makoto】 "Is... what Saki said earlier true?" 
+
+
+[00000d34] 10: 
+[00000d35]  b: playVoice L1D3E076
+[00000d3f] 10: 
+[00000d40] 19: 
+[00000d41] ff: text 85
+{textColor 1 5}【Haruka】 "That's why I have no heart..." 
+{textColor 0 0}【Makoto】 "Haruka..." 
+
+
+[00000d44] 10: 
+[00000d45]  b: playVoice L1D3E077
+[00000d4f] 10: 
+[00000d50] 19: 
+[00000d51] ff: text 86
+{textColor 1 5}【Haruka】 "Because I'm just somebody's replacement." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000d54] 10: 
+[00000d55]  b: playVoice L1D3E078
+[00000d5f] 10: 
+[00000d60] 19: 
+[00000d61] ff: text 87
+{textColor 1 5}【Haruka】 "Because I'm nothing more than a copy." 
+{textColor 0 0}【Makoto】 "... That's not-" 
+
+
+[00000d64] 10: 
+[00000d65]  b: playVoice L1D3E079
+[00000d6f] 10: 
+[00000d70] 19: 
+[00000d71] ff: text 88
+{textColor 1 5}【Haruka】 "Surprised?" 
+{textColor 0 0}【Makoto】 "That's not true." 
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "That's not true...!" 
+
+
+[00000d74] 10: 
+[00000d75] 11: fgload 0 00000000 HA12AAD 1 3
+[00000d85] 10: 
+[00000d86]  b: playVoice L1D3E080
+[00000d90] 10: 
+[00000d91] 19: 
+[00000d92] ff: text 89
+{textColor 1 5}【Haruka】 "I see..." 
+
+
+[00000d95] 10: 
+[00000d96] 12: removeFG 0 3
+[00000d9d] 10: 
+[00000d9e] 19: 
+[00000d9f] ff: text 8a
+{textColor 0 2}Haruka quickly looks away from me, and slowly opens the front door. I automatically run after her. 
+{textColor 0 0}【Makoto】 "Haruka!" 
+
+
+[00000da2] 10: 
+[00000da3]  6: playBGM 2
+[00000da7] 10: 
+[00000da8] 11: fgload 0 00000000 HA01AAD 1 3
+[00000db8] 10: 
+[00000db9] 19: 
+[00000dba] ff: text 8b
+{textColor 1 5}【Haruka】 "..." 
+{textColor 0 0}【Makoto】 "Umm... how do I put this..." 
+{textColor 1 5}【Haruka】 "..." 
+
+[00000dbd] ff: text 8c
+{textColor 0 2}{choiceOpt 1 -> "Don't worry about it." }{choiceOpt 2 -> "Honestly... I was a bit surprised." }
+
+[00000dc0] 10: 
+[00000dc1]  3: choice v_a1_08 00 00
+[00000dc6]  0: 
+[00000dc7]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (80)->0 (15) (00)  * 00000e67 (0016)
+[00000dd5] 10: 
+[00000dd6] 19: 
+[00000dd7] ff: text 8d
+{textColor 0 0}【Makoto】 "... Don't worry about it. Whether you're a clone or a copy, Haruka is Haruka. Even if you don't have a heart." 
+
+
+[00000dda] 10: 
+[00000ddb] 11: fgload 0 00000000 HA11AAD 1 3
+[00000deb] 10: 
+[00000dec] 19: 
+[00000ded] ff: text 8e
+{textColor 1 5}【Haruka】 "..." 
+
+
+[00000df0] 10: 
+[00000df1] 11: fgload 0 00000000 HA01AAD 1 3
+[00000e01] 10: 
+[00000e02] 19: 
+[00000e03] ff: text 8f
+{textColor 0 0}【Makoto】 "..." 
+{textColor 0 2}Haruka becomes surprised and takes in a sharp breath. 
+
+
+[00000e06] 10: 
+[00000e07] 12: removeFG 0 3
+[00000e0e] 10: 
+[00000e0f] 19: 
+[00000e10] ff: text 90
+{textColor 0 2}After that, I feel a little hesitant...  After that...  After that, I've run out of things to say. 
+
+
+[00000e13] 10: 
+[00000e14] 11: fgload 0 00000000 HA12AAD 1 3
+[00000e24] 10: 
+[00000e25]  b: playVoice L1D3E081
+[00000e2f] 10: 
+[00000e30] 19: 
+[00000e31] ff: text 91
+{textColor 1 5}【Haruka】 "... I'm happy." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[00000e34] 10: 
+[00000e35]  b: playVoice L1D3E082
+[00000e3f] 10: 
+[00000e40] 19: 
+[00000e41] ff: text 92
+{textColor 1 5}【Haruka】 "I'm happy to hear that from you, Makoto..." 
+
+
+[00000e44] 10: 
+[00000e45] 12: removeFG 0 3
+[00000e4c] 10: 
+[00000e4d] 19: 
+[00000e4e] ff: text 93
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000e51] 10: 
+[00000e52]  8: playSFX SE011 1
+[00000e5c] 10: 
+[00000e5d]  7: stopBGM
+[00000e5e] 10: 
+[00000e5f] 19: 
+[00000e60] ff: text 94
+{textColor 0 2}She closes the door, the sound of her footsteps fading... 
+{textColor 0 2}I stand frozen in place. 
+{textColor 0 2}I'm worried about Haruka's expression just now. She didn't look happy at all... 
+
+
+[00000e63]  0: 
+[00000e64]  7: goto7 00000f02 (0017)
+[00000e67]  0: 
+[00000e68]  a: condJump 00 VAR_(28_1e)_a1_08 (28) != (15) (81)->1 (15) (00)  * 00000f02 (0018)
+[00000e76] fe: varop VAR_(28_0a)_a1_00 (14) += (00) 2
+[00000e81] 10: 
+[00000e82] 19: 
+[00000e83] ff: text 95
+{textColor 0 0}【Makoto】 "Honestly... I was a bit surprised." 
+{textColor 0 2}Though my own words surprise me, I feel that I should be completely honest. 
+{textColor 0 2}Haruka is waiting for me to continue. 
+{textColor 0 0}【Makoto】 "I don't know much about clones, I admit.  {textColor 0 2}Since this is new to me, of course I'm surprised.  But...{delay 5}{delay 5} But you know..." 
+{textColor 0 2}I try to carefully choose my next words. 
+{textColor 0 0}【Makoto】 "Even if you're a clone, Haruka is Haruka.  Nothing has changed between us." 
+
+
+[00000e86] 10: 
+[00000e87] 11: fgload 0 00000000 HA11AAD 1 3
+[00000e97] 10: 
+[00000e98] 19: 
+[00000e99] ff: text 96
+{textColor 1 5}【Haruka】 "..." 
+
+
+[00000e9c] 10: 
+[00000e9d] 11: fgload 0 00000000 HA01AAD 1 3
+[00000ead] 10: 
+[00000eae] 19: 
+[00000eaf] ff: text 97
+{textColor 0 0}【Makoto】 "... Nothing will change." 
+{textColor 0 2}Haruka becomes surprised and takes in a sharp breath. 
+
+
+[00000eb2] 10: 
+[00000eb3] 11: fgload 0 00000000 HA12AAD 1 3
+[00000ec3] 10: 
+[00000ec4]  b: playVoice L1D3E083
+[00000ece] 10: 
+[00000ecf] 19: 
+[00000ed0] ff: text 98
+{textColor 1 5}【Haruka】 "... I'm happy." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[00000ed3] 10: 
+[00000ed4]  b: playVoice L1D3E084
+[00000ede] 10: 
+[00000edf] 19: 
+[00000ee0] ff: text 99
+{textColor 1 5}【Haruka】 "I'm happy to hear that from you, Makoto..." 
+
+
+[00000ee3] 10: 
+[00000ee4] 12: removeFG 0 3
+[00000eeb] 10: 
+[00000eec] 19: 
+[00000eed] ff: text 9a
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00000ef0] 10: 
+[00000ef1]  8: playSFX SE011 1
+[00000efb] 10: 
+[00000efc]  7: stopBGM
+[00000efd] 10: 
+[00000efe] 19: 
+[00000eff] ff: text 9b
+{textColor 0 2}She closes the door, her footsteps fading... 
+{textColor 0 2}I stand frozen in place. 
+{textColor 0 2}I'm worried about Haruka's expression just now. She didn't look very happy... 
+
+
+[00000f02] 10: 
+[00000f03]  f: removeBG 0 0 2
+[00000f0d] 10: 
+[00000f0e] 10: bgload 00000000 BG04E 0 1
+[00000f1b] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 18
+[00000f27] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 14
+[00000f32] 10: 
+[00000f33] 17: showClock
+[00000f34] 10: 
+[00000f35]  6: playBGM 9
+[00000f39] 10: 
+[00000f3a] 19: 
+[00000f3b] ff: text 9c
+{textColor 0 2}I go to Saki's summer house. The chilly late afternoon air pierces my body. 
+{textColor 0 2}――After Haruka went inside, I calmed down the sobbing Kurumi, and tried going to Haruka's room. I called out to her many times, but she didn't leave her room. 
+{textColor 0 2}Did I say something wrong? 
+{textColor 0 2}I then became curious about Saki, who had suddenly exploded in anger. 
+{textColor 0 2}In the first place, how did she know that Haruka was a clone? 
+{textColor 0 2}I intend to get that answer out of her. 
+{textColor 0 2}Just as I'm about to try opening the door, Yuka comes out of from inside. 
+
+
+[00000f3e] 10: 
+[00000f3f] 11: fgload 0 00000000 YU08AAD 1 3
+[00000f4f] 10: 
+[00000f50] 19: 
+[00000f51] ff: text 9d
+{textColor 0 0}【Makoto】 "Yuka! How's Saki doing?" 
+
+
+[00000f54] 10: 
+[00000f55]  b: playVoice L1D3E085
+[00000f5f] 10: 
+[00000f60] 19: 
+[00000f61] ff: text 9e
+{textColor 1 4}【Yuka】 "Until she calms down, I don't think it'll be any good. It was like this in the past too." 
+{textColor 0 0}【Makoto】 "In the past... you mean when you and Saki used to draw together?" 
+
+
+[00000f64] 10: 
+[00000f65]  b: playVoice L1D3E086
+[00000f6f] 10: 
+[00000f70] 19: 
+[00000f71] ff: text 9f
+{textColor 1 4}【Yuka】 "Huh? Well, I guess that's true... Anyway, how's Haruka? 
+{textColor 0 0}【Makoto】 "She still hasn't left her room." 
+
+
+[00000f74] 10: 
+[00000f75]  b: playVoice L1D3E087
+[00000f7f] 10: 
+[00000f80] 19: 
+[00000f81] ff: text a0
+{textColor 1 4}【Yuka】 "I see..." 
+
+
+[00000f84] 10: 
+[00000f85] 12: removeFG 0 3
+[00000f8c] 10: 
+[00000f8d] 19: 
+[00000f8e] ff: text a1
+{textColor 0 2}I can't talk to Saki as she is now.  {textColor 0 2}We head back towards the lodge. 
+
+
+[00000f91] 10: 
+[00000f92] 10: bgload 00000000 BG12E 4 1
+[00000f9f] 10: 
+[00000fa0] 19: 
+[00000fa1] ff: text a2
+{textColor 0 0}【Makoto】 "Hey, Yuka. Is there really that much of a difference between clones and humans?" 
+
+
+[00000fa4] 10: 
+[00000fa5] 11: fgload 0 00000000 YU08AAD 1 3
+[00000fb5] 10: 
+[00000fb6]  b: playVoice L1D3E088
+[00000fc0] 10: 
+[00000fc1] 19: 
+[00000fc2] ff: text a3
+{textColor 1 4}【Yuka】 "Let's see... The only difference I see is how they're born. If they're a copy of someone else's genetic information, then they're like a twin, right?" 
+{textColor 0 0}【Makoto】 "But Haruka says that because she's a copy, she has no 'heart'..." 
+
+
+[00000fc5] 10: 
+[00000fc6]  b: playVoice L1D3E089
+[00000fd0] 10: 
+[00000fd1] 19: 
+[00000fd2] ff: text a4
+{textColor 1 4}【Yuka】 "I've never heard of normal clones ever saying that. There's no way it's possible to not have a 'heart'..." 
+{textColor 0 0}【Makoto】 "I agree. There's absolutely no way she doesn't have a 'heart'." 
+
+
+[00000fd5] 10: 
+[00000fd6]  b: playVoice L1D3E090
+[00000fe0] 10: 
+[00000fe1] 19: 
+[00000fe2] ff: text a5
+{textColor 1 4}【Yuka】 "Kinda feels like a delusion." 
+{textColor 0 0}【Makoto】 "A delusion?" 
+
+
+[00000fe5] 10: 
+[00000fe6]  b: playVoice L1D3E091
+[00000ff0] 10: 
+[00000ff1] 19: 
+[00000ff2] ff: text a6
+{textColor 1 4}【Yuka】 "Like what if Haruka's convinced that she's some kind of special being?" 
+{textColor 0 0}【Makoto】 "A special being..." 
+
+
+[00000ff5] 10: 
+[00000ff6]  b: playVoice L1D3E092
+[00001000] 10: 
+[00001001] 19: 
+[00001002] ff: text a7
+{textColor 1 4}【Yuka】 "Yeah. I have a hunch that she has held on to that delusion..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[00001005] 10: 
+[00001006] 10: bgload 00000000 BG00E 4 1
+[00001013] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 18
+[0000101f] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 18
+[0000102b] 10: 
+[0000102c] 17: showClock
+[0000102d] 10: 
+[0000102e] 19: 
+[0000102f] ff: text a8
+{textColor 0 2}When we return to the lodge, we see Izumi-san jogging up towards us. 
+{textColor 0 2}In her hand, she's carrying a bag full of some ingredients. 
+
+
+[00001032] 10: 
+[00001033]  b: playVoice L1D3E093
+[0000103d] 10: 
+[0000103e] 19: 
+[0000103f] ff: text a9
+{textColor 1 8}【Izumi】 "Makoto-kun! Yuka-chan!" 
+
+
+[00001042] 10: 
+[00001043]  b: playVoice L1D3E094
+[0000104d] 10: 
+[0000104e] 19: 
+[0000104f] ff: text aa
+{textColor 1 4}【Yuka】 "Izumi-san? What about the shop?" 
+
+
+[00001052] 10: 
+[00001053] 11: fgload 0 00000000 IZ01BAD 1 3
+[00001063] 10: 
+[00001064]  b: playVoice L1D3E095
+[0000106e] 10: 
+[0000106f] 19: 
+[00001070] ff: text ab
+{textColor 1 8}【Izumi】 "I closed it early. It's not like any customers would come anyway. Ah, I'm sorry for troubling you with Kurumi, especially you, Makoto-kun!" 
+{textColor 0 0}【Makoto】 "Huh? No, uh... Sorry, please excuse me." 
+
+
+[00001073] 10: 
+[00001074] 12: removeFG 0 3
+[0000107b] 10: 
+[0000107c] 19: 
+[0000107d] ff: text ac
+{textColor 0 2}I'm in no mood to talk to the unusually cheerful Izumi-san right now. 
+{textColor 0 2}Lightly bowing my head, I head back to my room. Izumi-san might think badly of me, but... 
+
+
+[00001080] 10: 
+[00001081]  b: playVoice L1D3E096
+[0000108b] 10: 
+[0000108c] 19: 
+[0000108d] ff: text ad
+{textColor 1 8}【Izumi】 "Is something wrong?" 
+{textColor 0 2}I can hear Izumi-san asking Yuka this from behind my back. 
+
+
+[00001090] 10: 
+[00001091]  f: removeBG 0 0 2
+[0000109b] fe: varop VAR_(28_0a)_a1_3c (14) := (00) 142
+[000010a7] 10: 
+[000010a8] 10: bgload 00000000 BG01E 0 1
+[000010b5] fe: varop VAR_(28_0a)_a0_fc (14) := (00) 18
+[000010c1] fe: varop VAR_(28_0a)_a0_fd (14) := (00) 24
+[000010cd] 10: 
+[000010ce] 17: showClock
+[000010cf] 10: 
+[000010d0] 19: 
+[000010d1] ff: text ae
+{textColor 0 2}I return to my room, and think about Haruka. 
+{textColor 0 2}Yuka's words are bothering me.  {textColor 0 2}Haruka's under the impression that she's a special being?  {textColor 0 2}That's ridiculous! 
+
+
+[000010d4] 10: 
+[000010d5]  8: playSFX SE006 1
+[000010df] 10: 
+[000010e0] 19: 
+[000010e1] ff: text af
+{textColor 0 2}At that time, I hear someone knock on the door. 
+
+
+[000010e4] 10: 
+[000010e5]  8: playSFX SE001 1
+[000010ef] 10: 
+[000010f0] 19: 
+[000010f1] ff: text b0
+{textColor 0 2}When I let out a flat "it's open", Izumi-san opens the door. 
+
+
+[000010f4] 10: 
+[000010f5]  9: stopSFX
+[000010f6] 10: 
+[000010f7]  6: playBGM 5
+[000010fb] 10: 
+[000010fc] 11: fgload 0 00000000 IZ01BAD 1 3
+[0000110c] 10: 
+[0000110d]  b: playVoice L1D3E097
+[00001117] 10: 
+[00001118] 19: 
+[00001119] ff: text b1
+{textColor 1 8}【Izumi】 "Can I come in?" 
+{textColor 0 0}【Makoto】 "Yeah, go ahead... What is it?" 
+
+
+[0000111c] 10: 
+[0000111d]  b: playVoice L1D3E098
+[00001127] 10: 
+[00001128] 19: 
+[00001129] ff: text b2
+{textColor 1 8}【Izumi】 "I heard the story from Yuka-chan about Haruka..." 
+{textColor 0 0}【Makoto】 "Yeah, it doesn't matter anymore... We were just a little shocked to hear the truth about Haruka... No, I think that Haruka is Haruka." 
+
+
+[0000112c] 10: 
+[0000112d]  b: playVoice L1D3E099
+[00001137] 10: 
+[00001138] 19: 
+[00001139] ff: text b3
+{textColor 1 8}【Izumi】 "Do you want to think that there's no difference between humans and clones?" 
+{textColor 0 0}【Makoto】 "Do you think there's a difference?" 
+
+
+[0000113c] 10: 
+[0000113d]  b: playVoice L1D3E100
+[00001147] 10: 
+[00001148] 19: 
+[00001149] ff: text b4
+{textColor 1 8}【Izumi】 "No, but there was a time where people clearly thought differently." 
+{textColor 0 0}【Makoto】 "No, but...!" 
+
+
+[0000114c] 10: 
+[0000114d]  b: playVoice L1D3E101
+[00001157] 10: 
+[00001158] 19: 
+[00001159] ff: text b5
+{textColor 1 8}【Izumi】 "Makoto-kun, do you know what the trigger was that made clone fertilization legal?" 
+{textColor 0 0}【Makoto】 "No..." 
+
+
+[0000115c] 10: 
+[0000115d]  b: playVoice L1D3E102
+[00001167] 10: 
+[00001168] 19: 
+[00001169] ff: text b6
+{textColor 1 8}【Izumi】 "Even though the Clone Control Law was still in effect, a scientist made a clone of his son, who died in an accident. He just wanted to see his son again, no matter the cost..." 
+{textColor 0 0}【Makoto】 "..." 
+
+
+[0000116c] 10: 
+[0000116d]  b: playVoice L1D3E103
+[00001177] 10: 
+[00001178] 19: 
+[00001179] ff: text b7
+{textColor 1 8}【Izumi】 "But when his secret leaked out, he was put on trial. He was sentenced to life imprisonment. That much was considered to be an extremely serious crime..." 
+{textColor 0 0}【Makoto】 "No way..." 
+
+
+[0000117c] 10: 
+[0000117d]  b: playVoice L1D3E104
+[00001187] 10: 
+[00001188] 19: 
+[00001189] ff: text b8
+{textColor 1 8}【Izumi】 "However, when the contents of the cloned boy's testimony was reported, there was a complete turnover of public opinion, which grew powerful enough to lead to the amendment of the law." 
+{textColor 0 0}【Makoto】 "What did that cloned boy say?" 
+
+
+[0000118c] 10: 
+[0000118d]  b: playVoice L1D3E105
+[00001197] 10: 
+[00001198] 19: 
+[00001199] ff: text b9
+{textColor 1 8}【Izumi】 "'Papa didn't do anything wrong. I'm so grateful to Papa. Because Papa is the one who gave me this life...'" 
+{textColor 0 0}【Makoto】 "That was nine years ago... Izumi-san, you remember this quite well." 
+
+
+[0000119c] 10: 
+[0000119d]  b: playVoice L1D3E106
+[000011a7] 10: 
+[000011a8] 19: 
+[000011a9] ff: text ba
+{textColor 1 8}【Izumi】 "My father is currently the authority on genetic engineering. I'm... I'm just repeating what he told me." 
+
+
+[000011ac]  0: 
+[000011ad]  a: condJump 00 VAR_(28_32)_a1_12 (3c) != (29) (80)->0 (29) (08) || VAR_(28_32)_a1_19 (3c) != (29) (80)->0 (29) (00)  * 000011cb (001a)
+[000011c6] 10: 
+[000011c7] 19: 
+[000011c8] ff: text bb
+{textColor 0 2}(Her father is the authority on genetic engineering...?) 
+{textColor 0 2}... Morino...  {textColor 0 2}... Morino...  {textColor 0 2}... Morino... no way... 
+{textColor 0 2}Izumi-san's father is...  {textColor 0 2}――Dr. Shigezo Morino!? 
+{textColor 0 2}If I'm not mistaken, several decades ago, Dr. Morino participated in the Human Genome Project, and was the one who discovered the ground breaking analysis for the DNA sequence, right? 
+{textColor 0 2}I guess it's a small world after all... wait, I have no time to think about that! I need to get back on topic... 
+
+
+[000011cb] 10: 
+[000011cc] 19: 
+[000011cd] ff: text bc
+{textColor 0 0}【Makoto】 "But aren't we past that era already? It's all in the past, isn't it? They've been freed. Human or clone, there's nothing we need to worry about anymore." 
+
+
+[000011d0] 10: 
+[000011d1]  b: playVoice L1D3E107
+[000011db] 10: 
+[000011dc] 19: 
+[000011dd] ff: text bd
+{textColor 1 8}【Izumi】 "That... might not quite be right." 
+{textColor 0 0}【Makoto】 "Huh?" 
+
+
+[000011e0] 10: 
+[000011e1]  b: playVoice L1D3E108
+[000011eb] 10: 
+[000011ec] 19: 
+[000011ed] ff: text be
+{textColor 1 8}【Izumi】 "My friend was also a clone. Her name was Yumemi-chan, but I called her Yume-chan... When she confessed the truth to me, she was quite solemn..." 
+{textColor 0 0}【Makoto】 "Makes sense." 
+
+
+[000011f0] 10: 
+[000011f1]  b: playVoice L1D3E109
+[000011fb] 10: 
+[000011fc] 19: 
+[000011fd] ff: text bf
+{textColor 1 8}【Izumi】 "That's why I told Yume-chan not to worry about it, that Yume-chan was Yume-chan. That's really what I thought. When I did that, Yume-chan's face grew a little sad." 
+{textColor 0 0}【Makoto】 "Why?" 
+
+
+[00001200] 10: 
+[00001201]  b: playVoice L1D3E110
+[0000120b] 10: 
+[0000120c] 19: 
+[0000120d] ff: text c0
+{textColor 1 8}【Izumi】 "Now, I think it's probably... because Yume-chan felt like she had lost herself somehow." 
+{textColor 0 0}【Makoto】 "I don't get it..." 
+
+
+[00001210] 10: 
+[00001211]  b: playVoice L1D3E111
+[0000121b] 10: 
+[0000121c] 19: 
+[0000121d] ff: text c1
+{textColor 1 8}【Izumi】 "Because she'd given up. The law said it was all right, but people's feelings don't change that simply..." 
+{textColor 0 0}【Makoto】 "Then would it have been better to give her special treatment?" 
+
+
+[00001220] 10: 
+[00001221]  b: playVoice L1D3E112
+[0000122b] 10: 
+[0000122c] 19: 
+[0000122d] ff: text c2
+{textColor 1 8}【Izumi】 "I don't think it was like that, but... Hmm, maybe I should have done so?" 
+{textColor 0 0}【Makoto】 "Even if you ask me..." 
+
+
+[00001230] 10: 
+[00001231]  b: playVoice L1D3E113
+[0000123b] 10: 
+[0000123c] 19: 
+[0000123d] ff: text c3
+{textColor 1 8}【Izumi】 "Right... But to Yume-chan, as clone, being told that it didn't matter may have been an even bigger shock." 
+
+
+[00001240] 10: 
+[00001241] 12: removeFG 0 3
+[00001248] 10: 
+[00001249] 19: 
+[0000124a] ff: text c4
+{textColor 0 2}I'm at a loss for words. Once again, Haruka appears in my mind. 
+{textColor 0 2}So back then, did Haruka lie when she said she was happy? 
+
+
+[0000124d] 10: 
+[0000124e]  f: removeBG 0 0 2
+[00001258] 10: 
+[00001259]  7: stopBGM
+[0000125a] 10: 
+[0000125b]  4: jump L1D3N
+[00001262]  0: 
+[00001263]  0: 
